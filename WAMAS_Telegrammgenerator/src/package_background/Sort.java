@@ -5,16 +5,18 @@ import java.util.ArrayList;
 
 public class Sort {
 	
+	private static ArrayList<String> List = new ArrayList<String>();
+	
+	//-----------------------------------Folder 1--------------------------------------------
+	File folder1 = new File("C:\\Users\\fjarz\\Downloads\\interfaceExport\\xsd");
+	String[] strListOfFiles1 = folder1.list();
+	
+	//-----------------------------------Folder 2--------------------------------------------
+	File folder2 = new File("C:\\Users\\fjarz\\Downloads\\interfaceExport\\Incoming");
+	String[] strListOfFiles2 = folder2.list(); 
+	
 	public void start() {
 		
-				//-----------------------------------Folder 1--------------------------------------------
-				File folder1 = new File("C:\\Users\\jhaase\\Downloads\\interfaceExport\\xsd");
-				String[] strListOfFiles1 = folder1.list();
-				
-				//-----------------------------------Folder 2--------------------------------------------
-				File folder2 = new File("C:\\Users\\jhaase\\Downloads\\interfaceExport\\Incoming");
-				String[] strListOfFiles2 = folder2.list();  
-				
 				if(strListOfFiles1.equals(strListOfFiles2)) {
 					System.out.println("Finished List:" + strListOfFiles2);
 					String[] strAllList = strListOfFiles2; 
@@ -44,13 +46,16 @@ public class Sort {
 					ArrayList<String> allList = new ArrayList<String>(n2);
 					allList.retainAll(n1);
 					System.out.println("Finished List: " + allList);
-					
-					int size = allList.size();
-					String[] strAllList = new String[size];
-					for(int i = 0; i < size; i++) {
-						strAllList[i] = allList.get(i); 
-					}
 				}
 		}
+	
+	public ArrayList<String> setString(ArrayList<String> alllist) {
+		List = alllist;
+		return List;
+	}
+	
+	public static ArrayList<String> getString() {
+		return List;
+	}
 }
 	
