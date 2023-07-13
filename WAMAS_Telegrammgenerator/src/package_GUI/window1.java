@@ -70,8 +70,8 @@ public class window1 {
 			@Override
 			public void mouseUp(MouseEvent e) {
 			display.close();
-			WindowMain2_OrderType windowmain2_ordertype = new WindowMain2_OrderType();
-			windowmain2_ordertype.open();
+			WindowMain1_Project windowmain1_project = new WindowMain1_Project();
+			windowmain1_project.open();
 			}
 			
 		});

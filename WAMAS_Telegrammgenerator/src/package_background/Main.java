@@ -1,7 +1,6 @@
 package package_background;
 
 import package_GUI.WindowMain1_Project;
-import package_GUI.WindowMain2_OrderType;
 import package_GUI.WindowExtra1_Project;
 import package_GUI.window1;
 import package_GUI.window2;
@@ -19,7 +18,6 @@ public class Main {
 			window.open();
 			} catch (Exception e) {
 			e.printStackTrace();
-			//"asdas"
 		}
 	}
 }

@@ -3,6 +3,9 @@ package package_GUI;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Button;
+
+import java.util.ArrayList;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Label;
@@ -10,6 +13,7 @@ import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Combo;
+import package_background.Sort;
 
 public class WindowMain1_Project {
 
@@ -41,11 +45,19 @@ public class WindowMain1_Project {
 		ButtonSelectProject.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
 		ButtonSelectProject.setText("Select Project:");
 		
-		String list[] = {"1","2","3"};
+		ArrayList<String> project_list = new ArrayList<String>();
+		
+		project_list = Sort.getString();
+
+		 String[] str = new String[project_list.size()];
+		 
+		 for (int i = 0; i < project_list.size(); i++) {
+	            str[i] = project_list.get(i);
+	        }
 		
 		Combo Combo1 = new Combo(shell, SWT.NONE);
 		Combo1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
-		Combo1.setItems(new String[] {"1", "2", "3", "4", "5", "6"});
+		Combo1.setItems(str);
 		Combo1.setText("...");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -118,8 +130,8 @@ public class WindowMain1_Project {
 							@Override
 							public void widgetSelected(SelectionEvent e) {
 								display.close();
-								WindowMain2_OrderType window2 = new WindowMain2_OrderType();
-								window2.open();
+								window1 window1 = new window1();
+								window1.open();
 			}
 		});
 						ButtonNext1.setText("Next");
