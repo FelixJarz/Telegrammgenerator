@@ -22,7 +22,7 @@ public class ProjectSelector {
 					//Convert to array list for setString-function
 					ArrayList<String> arrMatch = new ArrayList<String>(); 
 		        	for(int i = 0; i <= strIncoming.length - 1; i++) {
-			        	arrMatch.add(strIncoming[i]); 
+			        	arrMatch.add(strIncoming[i]); //Transmitting the array list with extensions 
 		 			} 
 					setString(arrMatch);
 				}else if(strIncoming.equals("")) {	//If the "Incoming"-folder is empty 
