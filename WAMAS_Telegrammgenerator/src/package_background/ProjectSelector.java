@@ -19,6 +19,12 @@ public class ProjectSelector {
 		
 				if(strXSD.equals(strIncoming)) {	//In case the folders match -> Saves the entire compare-process
 					System.out.println(strIncoming);
+					//Convert to array list for setString-function
+					ArrayList<String> arrMatch = new ArrayList<String>(); 
+		        	for(int i = 0; i <= strIncoming.length - 1; i++) {
+			        	arrMatch.add(strIncoming[i]); 
+		 			} 
+					setString(arrMatch);
 				}else if(strIncoming.equals("")) {	//If the "Incoming"-folder is empty 
 					System.out.println("The Incoming-folder is empty."); 
 				}else{ 								//Compares the two folders and finds matching elements
