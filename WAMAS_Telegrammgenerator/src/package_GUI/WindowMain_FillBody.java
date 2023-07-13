@@ -15,8 +15,9 @@ import org.eclipse.swt.events.MouseEvent;
 import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.List;
 
-public class window3 {
+public class WindowMain_FillBody {
 	
+	Display display = Display.getDefault();
 	protected Shell shell;
 	private Text text;
 	private Text Text1;
@@ -39,8 +40,9 @@ public class window3 {
 	 * @param args
 	 */
 	public void main(String[] args) {
+		
 		try {
-			window3 window = new window3();
+			WindowMain_FillBody window = new WindowMain_FillBody();
 			window.open();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -51,7 +53,6 @@ public class window3 {
 	 * Open the window.
 	 */
 	public void open() {
-		Display display = Display.getDefault();
 		createContents();
 		shell.open();
 		shell.layout();
@@ -246,7 +247,7 @@ public class window3 {
 			public void mouseUp(MouseEvent e) {
 				
 				shell.close();
-				window2 nw = new window2();
+				WindowMain_FillHeader nw = new WindowMain_FillHeader();
 				nw.open();
 				
 			}
@@ -262,14 +263,13 @@ public class window3 {
 		
 		Button ButtonNext = new Button(shell, SWT.BORDER);
 		ButtonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
-		ButtonNext.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseUp(MouseEvent e) {
-			}
-		});
 		ButtonNext.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
+				display.close();
+				WindowMain_SelectDirectory window1 = new WindowMain_SelectDirectory();
+				window1.open();
+				
 			}
 		});
 		ButtonNext.setText("Next");

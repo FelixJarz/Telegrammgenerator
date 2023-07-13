@@ -15,7 +15,7 @@ import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Combo;
 import package_background.Sort;
 
-public class WindowMain1_Project {
+public class WindowMain_ProjectSelect {
 
 	protected Shell shell;
 	Display display = Display.getDefault();
@@ -107,7 +107,7 @@ public class WindowMain1_Project {
 					@Override
 					public void widgetSelected(SelectionEvent e) {
 							ButtonCreateNewProject.setEnabled(false);
-							WindowExtra1_Project windowextra1 = new WindowExtra1_Project();
+							WindowExtra_ProjectCreate windowextra1 = new WindowExtra_ProjectCreate();
 							windowextra1.open();
 							ButtonCreateNewProject.setEnabled(true);
 					}
@@ -122,8 +122,8 @@ public class WindowMain1_Project {
 							@Override
 							public void widgetSelected(SelectionEvent e) {
 								display.close();
-								window1 window1 = new window1();
-								window1.open();
+								WindowMain_FillHeader window2 = new WindowMain_FillHeader();
+								window2.open();
 			}
 		});
 						ButtonNext1.setText("Next");

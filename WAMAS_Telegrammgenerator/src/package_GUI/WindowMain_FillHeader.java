@@ -11,7 +11,7 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.layout.GridData;
 
-public class window2 {
+public class WindowMain_FillHeader {
 
 	protected Shell shell;
 	private Button ButtonNext;
@@ -44,7 +44,7 @@ public class window2 {
 	 */
 	public void main(String[] args) {
 		try {
-			window2 window = new window2();
+			WindowMain_FillHeader window = new WindowMain_FillHeader();
 			window.open();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -264,8 +264,8 @@ public class window2 {
 			@Override
 			public void mouseUp(MouseEvent e) {
 				shell.close();
-				window1 nw = new window1();
-				nw.open();
+				WindowMain_ProjectSelect  windowMain1_Project = new WindowMain_ProjectSelect();
+				windowMain1_Project.open();
 				}
 		});
 		ButtonReturn.setText("Return");
@@ -288,7 +288,7 @@ public class window2 {
 			@Override
 			public void mouseUp(MouseEvent e) {
 				shell.close();
-				window3 nw = new window3();
+				WindowMain_FillBody nw = new WindowMain_FillBody();
 				nw.open();
 				
 			

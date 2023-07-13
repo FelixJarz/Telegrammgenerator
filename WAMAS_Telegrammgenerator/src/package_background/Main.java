@@ -1,10 +1,10 @@
 package package_background;
 
-import package_GUI.WindowMain1_Project;
-import package_GUI.WindowExtra1_Project;
-import package_GUI.window1;
-import package_GUI.window2;
-import package_GUI.window3;
+import package_GUI.WindowMain_ProjectSelect;
+import package_GUI.WindowExtra_ProjectCreate;
+import package_GUI.WindowMain_SelectDirectory;
+import package_GUI.WindowMain_FillHeader;
+import package_GUI.WindowMain_FillBody;
 
 public class Main {
 	
@@ -14,7 +14,7 @@ public class Main {
 		sort.start();
 		
 		try {
-			WindowMain1_Project window = new WindowMain1_Project();
+			WindowMain_ProjectSelect window = new WindowMain_ProjectSelect();
 			window.open();
 			} catch (Exception e) {
 			e.printStackTrace();

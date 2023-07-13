@@ -11,7 +11,7 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.layout.GridData;
 
-public class WindowExtra1_Project {
+public class WindowExtra_ProjectCreate {
 
 	protected Shell shell;
 	Display display = Display.getDefault();
@@ -25,7 +25,7 @@ public class WindowExtra1_Project {
 	 */
 	public static void main(String[] args) { 
 		try {
-			WindowExtra1_Project window = new WindowExtra1_Project();
+			WindowExtra_ProjectCreate window = new WindowExtra_ProjectCreate();
 			window.open();
 		} catch (Exception e) {
 			e.printStackTrace();
