@@ -1,4 +1,5 @@
 package package_GUI;
+import package_background.GenerateXmlFile;
 
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
@@ -49,8 +50,10 @@ public class WindowMain_1_ProjectSelect {
 		 
 		Combo Combo1 = new Combo(shell, SWT.NONE);
 		Combo1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
+		
 		Combo1.setItems(str);
 		Combo1.setText("...");
+		
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -121,6 +124,20 @@ public class WindowMain_1_ProjectSelect {
 						ButtonNext1.addSelectionListener(new SelectionAdapter() {
 							@Override
 							public void widgetSelected(SelectionEvent e) {
+
+								String selectedText = Combo1.getText();
+									// alles muss üergeben werden
+								String selectedMasterrecordType = selectedText;
+								String headerSource = "HOST";
+								String headerDestination = "WAMAS";
+								int headerSequence = 0;
+								String headerRecordTypeName = selectedMasterrecordType;
+								String filePath = "C:\\wamas\\workspace\\Telegrammgenerator Material\\XML_Test.xml";
+
+								GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, headerSource,
+										headerDestination, headerSequence, headerRecordTypeName, filePath);
+								generator.generateXmlFile();
+	
 								display.close();
 								WindowMain_2_FillOrdertype window2 = new WindowMain_2_FillOrdertype();
 								window2.open();
