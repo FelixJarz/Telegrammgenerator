@@ -71,8 +71,8 @@ public class WindowMain_5_SelectDirectory {
 			@Override
 			public void mouseUp(MouseEvent e) {
 			display.close();
-			WindowMain_3_FillBody window3 = new WindowMain_3_FillBody();
-			window3.open();
+			WindowMain_4_FillSubheader windowMain_4_FillSubheader = new WindowMain_4_FillSubheader();
+			windowMain_4_FillSubheader.open();
 			}
 			
 		});
