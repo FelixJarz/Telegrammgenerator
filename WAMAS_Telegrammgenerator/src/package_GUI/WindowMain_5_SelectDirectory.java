@@ -58,7 +58,7 @@ public class WindowMain_5_SelectDirectory {
 		
 		combo = new Combo(shell, SWT.NONE);
 		GridData gd_combo = new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1);
-		gd_combo.widthHint = 189;
+		gd_combo.widthHint = 456;
 		combo.setLayoutData(gd_combo);
 		combo.setItems(a);
 		new Label(shell, SWT.NONE);
