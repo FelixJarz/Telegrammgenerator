@@ -217,26 +217,13 @@ public class WindowMain_3_FillBody {
 		
 		Text14 = new Text(shell, SWT.BORDER);
 		Text14.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		
-		Label lblAnzahl = new Label(shell, SWT.NONE);
-		lblAnzahl.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		lblAnzahl.setText("Anzahl:");
-		
-		text = new Text(shell, SWT.BORDER);
-		text.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
-		
-		Label LabelSubheader = new Label(shell, SWT.NONE);
-		LabelSubheader.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		LabelSubheader.setText("Subheader:");
-		
-		Combo combo = new Combo(shell, SWT.NONE);
-		combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
 		String[] a = {"1","2","3"};
-		combo.setItems(a);
-		
-		Button ButtonAdd = new Button(shell, SWT.NONE);
-		ButtonAdd.setText("add");
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -254,11 +241,24 @@ public class WindowMain_3_FillBody {
 		});
 		ButtonReturn.setText("Return");
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
+		
+		Label lblAnzahl = new Label(shell, SWT.NONE);
+		lblAnzahl.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		lblAnzahl.setText("Anzahl:");
+		
+		text = new Text(shell, SWT.BORDER);
+		text.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		
+		Label LabelSubheader = new Label(shell, SWT.NONE);
+		LabelSubheader.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		LabelSubheader.setText("Subheader:");
+		
+		Combo combo = new Combo(shell, SWT.NONE);
+		combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		combo.setItems(a);
+		
+		Button ButtonAdd = new Button(shell, SWT.NONE);
+		ButtonAdd.setText("add");
 		new Label(shell, SWT.NONE);
 		
 		Button ButtonNext = new Button(shell, SWT.BORDER);
