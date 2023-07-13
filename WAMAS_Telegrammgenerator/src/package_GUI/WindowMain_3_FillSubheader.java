@@ -3,7 +3,7 @@ package package_GUI;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
-public class WindowMain_FillSubheader {
+public class WindowMain_3_FillSubheader {
 
 	protected Shell shell;
 
@@ -13,7 +13,7 @@ public class WindowMain_FillSubheader {
 	 */
 	public static void main(String[] args) {
 		try {
-			WindowMain_FillSubheader window = new WindowMain_FillSubheader();
+			WindowMain_3_FillSubheader window = new WindowMain_3_FillSubheader();
 			window.open();
 		} catch (Exception e) {
 			e.printStackTrace();

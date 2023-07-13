@@ -10,7 +10,7 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Combo;
 
-public class WindowMain_SelectDirectory {
+public class WindowMain_5_SelectDirectory {
 
 	protected Shell shell;
 	private Button ButtonReturn;
@@ -21,7 +21,7 @@ public class WindowMain_SelectDirectory {
 
 	public static void main(String[] args) {
 		try {
-			WindowMain_SelectDirectory window = new WindowMain_SelectDirectory();
+			WindowMain_5_SelectDirectory window = new WindowMain_5_SelectDirectory();
 			window.open();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -71,7 +71,7 @@ public class WindowMain_SelectDirectory {
 			@Override
 			public void mouseUp(MouseEvent e) {
 			display.close();
-			WindowMain_FillBody window3 = new WindowMain_FillBody();
+			WindowMain_4_FillBody window3 = new WindowMain_4_FillBody();
 			window3.open();
 			}
 			

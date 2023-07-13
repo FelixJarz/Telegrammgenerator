@@ -15,7 +15,7 @@ import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Combo;
 import package_background.Sort;
 
-public class WindowMain_ProjectSelect {
+public class WindowMain_1_ProjectSelect {
 
 	protected Shell shell;
 	Display display = Display.getDefault();
@@ -122,7 +122,7 @@ public class WindowMain_ProjectSelect {
 							@Override
 							public void widgetSelected(SelectionEvent e) {
 								display.close();
-								WindowMain_FillOrdertype window2 = new WindowMain_FillOrdertype();
+								WindowMain_2_FillOrdertype window2 = new WindowMain_2_FillOrdertype();
 								window2.open();
 			}
 		});
