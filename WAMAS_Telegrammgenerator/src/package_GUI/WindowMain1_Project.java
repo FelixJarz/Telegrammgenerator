@@ -44,17 +44,9 @@ public class WindowMain1_Project {
 		ButtonSelectProject.setAlignment(SWT.CENTER);
 		ButtonSelectProject.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
 		ButtonSelectProject.setText("Select Project:");
-		
-		ArrayList<String> project_list = new ArrayList<String>();
-		
-		project_list = Sort.getString();
 
-		 String[] str = new String[project_list.size()];
+		String[] str = Sort.getString();
 		 
-		 for (int i = 0; i < project_list.size(); i++) {
-	            str[i] = project_list.get(i);
-	        }
-		
 		Combo Combo1 = new Combo(shell, SWT.NONE);
 		Combo1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
 		Combo1.setItems(str);

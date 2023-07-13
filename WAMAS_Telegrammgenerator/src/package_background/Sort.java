@@ -46,6 +46,12 @@ public class Sort {
 					allList.retainAll(n1);
 					System.out.println("Finished List: " + allList);
 					setString(allList);
+					
+					int size = allList.size();
+					String[] strAllList = new String[size];
+					for(int i = 0; i < size; i++) {
+						strAllList[i] = allList.get(i); 
+					}
 				}
 		}
 	
@@ -54,8 +60,14 @@ public class Sort {
 		return List;
 	}
 	
-	public static ArrayList<String> getString() {
-		return List;
+	public static String[] getString() {
+		
+		String[] str = new String[List.size()];
+
+		for (int i = 0; i < List.size(); i++) {
+            str[i] = List.get(i);
+		}
+		return str;   
 	}
 }
 	
