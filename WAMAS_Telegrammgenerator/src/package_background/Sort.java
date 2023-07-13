@@ -8,15 +8,16 @@ public class Sort {
 	public void start() {
 		
 				//-----------------------------------Folder 1--------------------------------------------
-				File folder1 = new File("C:\\Users\\fjarz\\Downloads\\interfaceExport\\xsd");
+				File folder1 = new File("C:\\Users\\jhaase\\Downloads\\interfaceExport\\xsd");
 				String[] strListOfFiles1 = folder1.list();
 				
 				//-----------------------------------Folder 2--------------------------------------------
-				File folder2 = new File("C:\\Users\\fjarz\\Downloads\\interfaceExport\\Incoming");
-				String[] strListOfFiles2 = folder2.list(); 
+				File folder2 = new File("C:\\Users\\jhaase\\Downloads\\interfaceExport\\Incoming");
+				String[] strListOfFiles2 = folder2.list();  
 				
 				if(strListOfFiles1.equals(strListOfFiles2)) {
-					System.out.println(strListOfFiles2);
+					System.out.println("Finished List:" + strListOfFiles2);
+					String[] strAllList = strListOfFiles2; 
 				}else if(strListOfFiles2.equals("")) {
 					System.out.println("List 2 empty"); 
 				}else{ 
@@ -29,7 +30,7 @@ public class Sort {
 			        	n1.add(new1[i]); 
 		 			} 
 				
-		        
+		        	
 		        	String[] new2 = folder2.list();
 		        	for (int i = 0; i <= strListOfFiles2.length - 1; i++) {
 		        		new2[i] = strListOfFiles2[i].substring(0,strListOfFiles2[i].lastIndexOf("."));
@@ -43,6 +44,12 @@ public class Sort {
 					ArrayList<String> allList = new ArrayList<String>(n2);
 					allList.retainAll(n1);
 					System.out.println("Finished List: " + allList);
+					
+					int size = allList.size();
+					String[] strAllList = new String[size];
+					for(int i = 0; i < size; i++) {
+						strAllList[i] = allList.get(i); 
+					}
 				}
 		}
 }

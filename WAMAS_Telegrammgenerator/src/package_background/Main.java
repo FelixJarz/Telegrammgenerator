@@ -19,7 +19,6 @@ public class Main {
 			window.open();
 			} catch (Exception e) {
 			e.printStackTrace();
-			//"asdas"
 		}
 	}
 }
