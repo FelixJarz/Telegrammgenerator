@@ -30,8 +30,7 @@ public class Sort {
 		        	for(int i = 0; i <= new1.length - 1; i++) {
 			        	n1.add(new1[i]); 
 		 			} 
-				
-		        
+		        	
 		        	String[] new2 = folder2.list();
 		        	for (int i = 0; i <= strListOfFiles2.length - 1; i++) {
 		        		new2[i] = strListOfFiles2[i].substring(0,strListOfFiles2[i].lastIndexOf("."));
