@@ -126,7 +126,7 @@ public class WindowMain_1_ProjectSelect {
 							public void widgetSelected(SelectionEvent e) {
 
 								String selectedText = Combo1.getText();
-
+									// alles muss üergeben werden
 								String selectedMasterrecordType = selectedText;
 								String headerSource = "HOST";
 								String headerDestination = "WAMAS";
