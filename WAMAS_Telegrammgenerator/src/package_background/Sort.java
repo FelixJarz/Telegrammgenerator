@@ -8,11 +8,11 @@ public class Sort {
 	private static ArrayList<String> List = new ArrayList<String>();
 	
 	//-----------------------------------Folder 1--------------------------------------------
-	File folder1 = new File("C:\\Users\\fjarz\\Downloads\\interfaceExport\\xsd");
+	File folder1 = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\xsd");
 	String[] strListOfFiles1 = folder1.list();
 	
 	//-----------------------------------Folder 2--------------------------------------------
-	File folder2 = new File("C:\\Users\\fjarz\\Downloads\\interfaceExport\\Incoming");
+	File folder2 = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\Incoming");
 	String[] strListOfFiles2 = folder2.list(); 
 	
 	public void start() {
