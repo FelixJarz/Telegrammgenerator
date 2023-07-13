@@ -69,7 +69,7 @@ public class WindowMain_FillBody {
 	protected void createContents() {
 		shell = new Shell();
 		shell.setSize(700, 400);
-		shell.setText("window 3");
+		shell.setText("Fill Body and select Subheader");
 		shell.setLayout(new GridLayout(9, false));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -247,7 +247,7 @@ public class WindowMain_FillBody {
 			public void mouseUp(MouseEvent e) {
 				
 				shell.close();
-				WindowMain_FillHeader nw = new WindowMain_FillHeader();
+				WindowMain_FillOrdertype nw = new WindowMain_FillOrdertype();
 				nw.open();
 				
 			}

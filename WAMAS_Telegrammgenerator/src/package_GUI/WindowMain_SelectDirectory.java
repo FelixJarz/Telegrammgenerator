@@ -43,8 +43,9 @@ public class WindowMain_SelectDirectory {
 	protected void createContents() {
 		shell = new Shell();
 		shell.setSize(600, 179);
+		
+		shell.setText("Select Directory");
 
-		shell.setText("window 1");
 		shell.setLayout(new GridLayout(2, false));
 		String[] a = {"1","2","3"};
 		new Label(shell, SWT.NONE);
@@ -86,7 +87,7 @@ public class WindowMain_SelectDirectory {
 			public void mouseUp(MouseEvent e) {				
 			}
 		});
-		ButtonNext.setText("weiter");
+		ButtonNext.setText("Next");
 		
 	}
 }

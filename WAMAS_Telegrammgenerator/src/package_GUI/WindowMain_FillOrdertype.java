@@ -11,7 +11,7 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.layout.GridData;
 
-public class WindowMain_FillHeader {
+public class WindowMain_FillOrdertype {
 
 	protected Shell shell;
 	private Button ButtonNext;
@@ -44,7 +44,7 @@ public class WindowMain_FillHeader {
 	 */
 	public void main(String[] args) {
 		try {
-			WindowMain_FillHeader window = new WindowMain_FillHeader();
+			WindowMain_FillOrdertype window = new WindowMain_FillOrdertype();
 			window.open();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -73,7 +73,7 @@ public class WindowMain_FillHeader {
 		
 		shell = new Shell();
 		shell.setSize(500, 361);
-		shell.setText("window 2");
+		shell.setText("Fill Odertype");
 		shell.setLayout(new GridLayout(13, false));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -83,7 +83,7 @@ public class WindowMain_FillHeader {
 		new Label(shell, SWT.NONE);
 		
 		LabelFillFull = new Label(shell, SWT.CENTER);
-		LabelFillFull.setText("Fill Full");
+		LabelFillFull.setText("Fill Odertype");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);

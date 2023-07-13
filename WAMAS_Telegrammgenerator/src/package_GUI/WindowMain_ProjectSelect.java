@@ -122,7 +122,7 @@ public class WindowMain_ProjectSelect {
 							@Override
 							public void widgetSelected(SelectionEvent e) {
 								display.close();
-								WindowMain_FillHeader window2 = new WindowMain_FillHeader();
+								WindowMain_FillOrdertype window2 = new WindowMain_FillOrdertype();
 								window2.open();
 			}
 		});
