@@ -5,7 +5,6 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Button;
 
 import java.io.File;
-
 import javax.swing.JFileChooser;
 
 import org.eclipse.swt.SWT;
