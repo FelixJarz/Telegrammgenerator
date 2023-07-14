@@ -18,7 +18,7 @@ public class WindowExtra_ProjectCreate {
 	private Text text;
 	private Text text_1;
 	private Text text_2;
-
+	
 	/**
 	 * Launch the application.
 	 * @param args
