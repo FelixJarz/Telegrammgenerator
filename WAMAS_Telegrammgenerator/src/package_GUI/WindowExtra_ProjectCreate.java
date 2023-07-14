@@ -3,6 +3,11 @@ package package_GUI;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Button;
+
+import java.io.File;
+
+import javax.swing.JFileChooser;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -91,7 +96,29 @@ public class WindowExtra_ProjectCreate {
 		
 		TextIEDir = new Text(shell, SWT.BORDER);
 		TextIEDir.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
+		
+		Button btnChooseLocation_1 = new Button(shell, SWT.NONE);
+		btnChooseLocation_1.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				JFileChooser chooser = new JFileChooser();
+				String windowTitle = "Explorer";
+				//chooser.showOpenDialog(null);
+				chooser.setCurrentDirectory(new java.io.File("."));
+				chooser.setDialogTitle(windowTitle);
+				chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+				chooser.setAcceptAllFileFilterUsed(false);
+				File f = chooser.getCurrentDirectory();
+				String IEDir = f.getAbsolutePath();				//TextSaveDir.setText(filename); 
+				if (chooser.showOpenDialog(chooser) == JFileChooser.APPROVE_OPTION) { 
+					TextIEDir.setText(IEDir);
+				      }
+				else {
+				    System.out.println("No Selection ");
+				}
+			}
+		});
+		btnChooseLocation_1.setText("Choose Location");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -104,7 +131,29 @@ public class WindowExtra_ProjectCreate {
 		
 		TextSaveDir = new Text(shell, SWT.BORDER);
 		TextSaveDir.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
+		
+		Button btnChooseLocation = new Button(shell, SWT.NONE);
+		btnChooseLocation.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				JFileChooser chooser = new JFileChooser();
+				String windowTitle = "Explorer";
+				//chooser.showOpenDialog(null);
+				chooser.setCurrentDirectory(new java.io.File("."));
+				chooser.setDialogTitle(windowTitle);
+				chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+				chooser.setAcceptAllFileFilterUsed(false);
+				File f = chooser.getCurrentDirectory();
+				String saveDir = f.getAbsolutePath();				//TextSaveDir.setText(filename); 
+				if (chooser.showOpenDialog(chooser) == JFileChooser.APPROVE_OPTION) { 
+					TextSaveDir.setText(saveDir);
+				      }
+				else {
+				    System.out.println("No Selection ");
+				}
+			}
+		});
+		btnChooseLocation.setText("Choose Location");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
