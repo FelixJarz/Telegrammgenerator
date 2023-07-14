@@ -11,7 +11,7 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Combo;
 
-public class WindowMain_4_FillSubheader {
+public class WindowMain_5_FillSubheader {
 	
 	Display display = Display.getDefault();
 
@@ -23,7 +23,7 @@ public class WindowMain_4_FillSubheader {
 	 */
 	public static void main(String[] args) {
 		try {
-			WindowMain_4_FillSubheader window = new WindowMain_4_FillSubheader();
+			WindowMain_5_FillSubheader window = new WindowMain_5_FillSubheader();
 			window.open();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -108,7 +108,7 @@ public class WindowMain_4_FillSubheader {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				display.close();
-				WindowMain_3_FillBody windowMain_3_FillBody = new WindowMain_3_FillBody();
+				WindowMain_4_FillBody windowMain_3_FillBody = new WindowMain_4_FillBody();
 				windowMain_3_FillBody.open();
 			}
 		});

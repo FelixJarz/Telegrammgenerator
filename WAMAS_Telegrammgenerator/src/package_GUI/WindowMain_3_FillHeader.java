@@ -11,7 +11,7 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.layout.GridData;
 
-public class WindowMain_2_FillOrdertype {
+public class WindowMain_3_FillHeader {
 
 	protected Shell shell;
 	private Button ButtonNext;
@@ -44,7 +44,7 @@ public class WindowMain_2_FillOrdertype {
 	 */
 	public void main(String[] args) {
 		try {
-			WindowMain_2_FillOrdertype window = new WindowMain_2_FillOrdertype();
+			WindowMain_3_FillHeader window = new WindowMain_3_FillHeader();
 			window.open();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -288,7 +288,7 @@ public class WindowMain_2_FillOrdertype {
 			@Override
 			public void mouseUp(MouseEvent e) {
 				shell.close();
-				WindowMain_3_FillBody nw = new WindowMain_3_FillBody();
+				WindowMain_4_FillBody nw = new WindowMain_4_FillBody();
 				nw.open();
 				
 			

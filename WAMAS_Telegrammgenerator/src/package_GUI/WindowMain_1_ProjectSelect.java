@@ -14,7 +14,7 @@ import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Combo;
-import package_background.Sort;
+import package_background.ProjectSelector;
 
 public class WindowMain_1_ProjectSelect {
 
@@ -46,7 +46,7 @@ public class WindowMain_1_ProjectSelect {
 		ButtonSelectProject.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
 		ButtonSelectProject.setText("Select Project:");
 
-		String[] str = Sort.getString();
+		String[] str = ProjectSelector.getString();
 		 
 		Combo Combo1 = new Combo(shell, SWT.NONE);
 		Combo1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
@@ -139,7 +139,7 @@ public class WindowMain_1_ProjectSelect {
 								generator.generateXmlFile();
 	
 								display.close();
-								WindowMain_2_FillOrdertype window2 = new WindowMain_2_FillOrdertype();
+								WindowMain_3_FillHeader window2 = new WindowMain_3_FillHeader();
 								window2.open();
 			}
 		});
