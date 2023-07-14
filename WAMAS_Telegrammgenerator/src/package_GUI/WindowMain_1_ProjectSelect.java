@@ -21,6 +21,9 @@ public class WindowMain_1_ProjectSelect {
 	protected Shell shell;
 	Display display = Display.getDefault();
 
+	/**
+	 * @wbp.parser.entryPoint
+	 */
 	public void open() {
 		
 		createContents();

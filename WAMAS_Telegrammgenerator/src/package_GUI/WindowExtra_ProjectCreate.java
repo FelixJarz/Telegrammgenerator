@@ -15,9 +15,10 @@ public class WindowExtra_ProjectCreate {
 
 	protected Shell shell;
 	Display display = Display.getDefault();
-	private Text text;
-	private Text text_1;
-	private Text text_2;
+	private Text TextProjectName;
+	private Text TextVersionNumber;
+	private Text TextIEDir;
+	private Text TextSaveDir;
 	
 	/**
 	 * Launch the application.
@@ -58,25 +59,12 @@ public class WindowExtra_ProjectCreate {
 		shell.setText("Extra Window");
 		shell.setLayout(new GridLayout(4, false));
 		
-		Label lblProjectName = new Label(shell, SWT.NONE);
-		lblProjectName.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-		lblProjectName.setText("Project name:");
+		Label LabelProjectName = new Label(shell, SWT.NONE);
+		LabelProjectName.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		LabelProjectName.setText("Project name:");
 		
-		text = new Text(shell, SWT.BORDER);
-		text.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label LabelExample1 = new Label(shell, SWT.NONE);
-		LabelExample1.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-		LabelExample1.setText("Example:");
-		
-		text_1 = new Text(shell, SWT.BORDER);
-		text_1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		TextProjectName = new Text(shell, SWT.BORDER);
+		TextProjectName.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -84,20 +72,38 @@ public class WindowExtra_ProjectCreate {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label LabelExample2 = new Label(shell, SWT.NONE);
-		LabelExample2.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-		LabelExample2.setText("Example:");
+		Label LabelVersion = new Label(shell, SWT.NONE);
+		LabelVersion.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		LabelVersion.setText("Version:");
 		
-		text_2 = new Text(shell, SWT.BORDER);
-		text_2.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		TextVersionNumber = new Text(shell, SWT.BORDER);
+		TextVersionNumber.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
+		
+		Label LabelInterfaceExports = new Label(shell, SWT.NONE);
+		LabelInterfaceExports.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		LabelInterfaceExports.setText("Interface Exports:");
+		
+		TextIEDir = new Text(shell, SWT.BORDER);
+		TextIEDir.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		
+		Label lblSave = new Label(shell, SWT.NONE);
+		lblSave.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		lblSave.setText("Save:");
+		
+		TextSaveDir = new Text(shell, SWT.BORDER);
+		TextSaveDir.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -126,5 +132,21 @@ public class WindowExtra_ProjectCreate {
 		ButtonConfirm.setText("Confirm");
 
 	}
-
+	
+	/*private void checkButtonConfirm() { 
+	        if(TextProjectName.getText().isEmpty()){
+	            ButtonConfirm.setEnabled(false);
+	        }
+	        else if(TextVersionNumber.getText().isEmpty()){
+	            ButtonConfirm.setEnabled(false);
+	        }
+	        else if (TextIEDir.getText().isEmpty()) {
+	            ButtonConfirm.setEnabled(false);     
+	        }
+	        else if (TextSaveDir.getText().isEmpty()) {
+	            ButtonConfirm.setEnabled(false);     
+	        }else {
+	            ButtonConfirm.setEnabled(true);
+	        }
+	    }*/
 }
