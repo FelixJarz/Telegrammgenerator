@@ -148,6 +148,7 @@ public class WindowExtra_ProjectCreate {
 		new Label(shell, SWT.NONE);
 		
 		Button ButtonReturn = new Button(shell, SWT.NONE);
+		ButtonReturn.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		ButtonReturn.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -155,16 +156,40 @@ public class WindowExtra_ProjectCreate {
 			}
 		});
 		ButtonReturn.setText("Return");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		
-		Button ButtonConfirm = new Button(shell, SWT.NONE);
-		ButtonConfirm.setEnabled(false);
-		ButtonConfirm.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
-		ButtonConfirm.addSelectionListener(new SelectionAdapter() {
+		Button ButtonNext = new Button(shell, SWT.NONE);
+		ButtonNext.setEnabled(false);
+		ButtonNext.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				shell.close();
+			}
+		});
+		ButtonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
+		ButtonNext.setText("Next");
+		
+		Button ButtonConfirm = new Button(shell, SWT.NONE);
+		ButtonConfirm.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 2, 1));
+		ButtonConfirm.addSelectionListener(new SelectionAdapter() {
+			
+			WindowExtra_Error windowExtra_Extra = new WindowExtra_Error();
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				if(TextProjectName.getText().isEmpty()) {
+					ButtonNext.setEnabled(false);
+					windowExtra_Extra.open();
+				}else if(TextVersionNumber.getText().isEmpty()){
+					ButtonNext.setEnabled(false);
+					windowExtra_Extra.open();
+				}else if(TextIEDir.getText().isEmpty()) {
+					ButtonNext.setEnabled(false);
+					windowExtra_Extra.open();
+				}else if(TextSaveDir.getText().isEmpty()) {
+					ButtonNext.setEnabled(false);
+					windowExtra_Extra.open();
+				}else {
+					ButtonNext.setEnabled(true);
+				}
 			}
 		});
 		ButtonConfirm.setText("Confirm");
