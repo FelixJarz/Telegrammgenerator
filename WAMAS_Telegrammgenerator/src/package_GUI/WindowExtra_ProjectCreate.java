@@ -102,15 +102,12 @@ public class WindowExtra_ProjectCreate {
 			public void widgetSelected(SelectionEvent e) {
 				JFileChooser chooser = new JFileChooser();
 				String windowTitle = "Explorer";
-				//chooser.showOpenDialog(null);
-				chooser.setCurrentDirectory(new java.io.File("."));
 				chooser.setDialogTitle(windowTitle);
 				chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-				chooser.setAcceptAllFileFilterUsed(false);
-				File f = chooser.getCurrentDirectory();
-				String IEDir = f.getAbsolutePath();				//TextSaveDir.setText(filename); 
 				if (chooser.showOpenDialog(chooser) == JFileChooser.APPROVE_OPTION) { 
-					TextIEDir.setText(IEDir);
+					File f = chooser.getSelectedFile();
+					String ieDir = f.getAbsolutePath();	
+					TextIEDir.setText(ieDir);
 				      }
 				else {
 				    System.out.println("No Selection ");
@@ -137,14 +134,11 @@ public class WindowExtra_ProjectCreate {
 			public void widgetSelected(SelectionEvent e) {
 				JFileChooser chooser = new JFileChooser();
 				String windowTitle = "Explorer";
-				//chooser.showOpenDialog(null);
-				chooser.setCurrentDirectory(new java.io.File("."));
 				chooser.setDialogTitle(windowTitle);
 				chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-				chooser.setAcceptAllFileFilterUsed(false);
-				File f = chooser.getCurrentDirectory();
-				String saveDir = f.getAbsolutePath();				//TextSaveDir.setText(filename); 
 				if (chooser.showOpenDialog(chooser) == JFileChooser.APPROVE_OPTION) { 
+					File f = chooser.getSelectedFile();
+					String saveDir = f.getAbsolutePath();	
 					TextSaveDir.setText(saveDir);
 				      }
 				else {
