@@ -17,22 +17,6 @@ public class WindowMain_5_FillSubheader {
 
 	protected Shell shell;
 
-	/**
-	 * Launch the application.
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		try {
-			WindowMain_5_FillSubheader window = new WindowMain_5_FillSubheader();
-			window.open();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
-	 * Open the window.
-	 */
 	public void open() {
 		createContents();
 		shell.open();
@@ -43,10 +27,8 @@ public class WindowMain_5_FillSubheader {
 			}
 		}
 	}
-
-	/**
-	 * Create contents of the window.
-	 */
+	
+//-----------------------------------------------GUI Objects-------------------------------------------------------------------
 	protected void createContents() {
 		
 		shell = new Shell();
@@ -69,23 +51,23 @@ public class WindowMain_5_FillSubheader {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Combo combo_1 = new Combo(shell, SWT.NONE);
-		combo_1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 5, 1));
+		Combo combo1 = new Combo(shell, SWT.NONE);
+		combo1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 5, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Combo combo_2 = new Combo(shell, SWT.NONE);
-		combo_2.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 5, 1));
+		Combo combo2 = new Combo(shell, SWT.NONE);
+		combo2.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 5, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Combo combo_3 = new Combo(shell, SWT.NONE);
-		combo_3.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 5, 1));
+		Combo combo3 = new Combo(shell, SWT.NONE);
+		combo3.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 5, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Combo combo_4 = new Combo(shell, SWT.NONE);
-		combo_4.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 5, 1));
+		Combo combo4 = new Combo(shell, SWT.NONE);
+		combo4.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 5, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -102,9 +84,10 @@ public class WindowMain_5_FillSubheader {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Button ButtonReturn = new Button(shell, SWT.NONE);
-		ButtonReturn.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-		ButtonReturn.addSelectionListener(new SelectionAdapter() {
+//-----------------------------------------------Buttons with Listener-------------------------------------------------------------------
+		Button buttonReturn = new Button(shell, SWT.NONE);
+		buttonReturn.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
+		buttonReturn.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				display.close();
@@ -112,21 +95,21 @@ public class WindowMain_5_FillSubheader {
 				windowMain_3_FillBody.open();
 			}
 		});
-		ButtonReturn.setText("Return");
+		buttonReturn.setText("Return");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Button ButtonNext = new Button(shell, SWT.NONE);
-		ButtonNext.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-		ButtonNext.addSelectionListener(new SelectionAdapter() {
+		Button buttonNext = new Button(shell, SWT.NONE);
+		buttonNext.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
+		buttonNext.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				display.close();
 			}
 		});
-		ButtonNext.setText("Next");
+		buttonNext.setText("Next");
 	}
 }

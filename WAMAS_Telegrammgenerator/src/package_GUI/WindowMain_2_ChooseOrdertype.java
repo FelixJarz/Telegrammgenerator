@@ -14,31 +14,14 @@ import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
+
 public class WindowMain_2_ChooseOrdertype {
 
-	private static final Object[] String = null;
 	protected Shell shell;
 	Display display = Display.getDefault();
 	protected Combo combo;
 	protected int prevOrdertypeSize = 3;
 
-
-	/**
-	 * Launch the application.
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		try {
-			WindowMain_2_ChooseOrdertype window = new WindowMain_2_ChooseOrdertype();
-			window.open();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
-	 * Open the window.
-	 */
 	public void open() {
 		createContents();
 		shell.open();
@@ -50,18 +33,16 @@ public class WindowMain_2_ChooseOrdertype {
 		}
 	}
 
-	/**
-	 * Create contents of the window.
-	 */
+//-----------------------------------------------GUI Objects-------------------------------------------------------------------
 	protected void createContents() {
 		shell = new Shell();
 		shell.setSize(450, 229);
 		shell.setText("SWT Application");
 		shell.setLayout(new GridLayout(3, false));
 		
-		Label LabelChooseOdertype = new Label(shell, SWT.NONE);
-		LabelChooseOdertype.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		LabelChooseOdertype.setText("Choose Ordertype");
+		Label labelChooseOdertype = new Label(shell, SWT.NONE);
+		labelChooseOdertype.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		labelChooseOdertype.setText("Choose Ordertype");
 				
 		//Start class ProjectSelector to sort all the ordertypes
 		ProjectSelector select = new ProjectSelector();
@@ -74,6 +55,7 @@ public class WindowMain_2_ChooseOrdertype {
 		combo.setItems(listOfOdertypes);
 		combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		
+		//Previous Odertypes will be shown
 		String[] prevOrdertypes = new String[prevOrdertypeSize];
 		String[] newOrdertypes = new String[10];
 		for(int i = 0; i < 10 - 1; i++) {
@@ -102,27 +84,28 @@ public class WindowMain_2_ChooseOrdertype {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label lblPreviousOrdertypes = new Label(shell, SWT.NONE);
-		lblPreviousOrdertypes.setText("Previous Ordertypes:");
+		Label labelPreviousOrdertypes = new Label(shell, SWT.NONE);
+		labelPreviousOrdertypes.setText("Previous Ordertypes:");
 		
-		Label lblOrdertype = new Label(shell, SWT.NONE);
-		lblOrdertype.setText(newOrdertypes[0]);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label lblOrdertype_1 = new Label(shell, SWT.NONE);
-		lblOrdertype_1.setText(newOrdertypes[1]);
+		Label labelOrdertype1 = new Label(shell, SWT.NONE);
+		labelOrdertype1.setText(newOrdertypes[0]);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label lblOrdertype_2 = new Label(shell, SWT.NONE);
-		lblOrdertype_2.setText(newOrdertypes[2]);
+		Label labelOrdertype2 = new Label(shell, SWT.NONE);
+		labelOrdertype2.setText(newOrdertypes[1]);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		
+		Label labelOrdertype3 = new Label(shell, SWT.NONE);
+		labelOrdertype3.setText(newOrdertypes[2]);
 		
 		new Label(shell, SWT.NONE);
 		//ButtonNext.setEnabled(false);
 		
-		Button ButtonReturn = new Button(shell, SWT.NONE);
-		ButtonReturn.addSelectionListener(new SelectionAdapter() {
+//-----------------------------------------------Buttons with Listener-------------------------------------------------------------------
+		Button buttonReturn = new Button(shell, SWT.NONE);
+		buttonReturn.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				display.close();
@@ -130,23 +113,23 @@ public class WindowMain_2_ChooseOrdertype {
 				windowMain_1_ProjectSelect.open();
 			}
 		});
-		ButtonReturn.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
-		ButtonReturn.setText("Return");
+		buttonReturn.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
+		buttonReturn.setText("Return");
 		new Label(shell, SWT.NONE);
 		
-		Button ButtonNext = new Button(shell, SWT.NONE);
-		ButtonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
-		ButtonNext.setEnabled(false);
+		Button buttonNext = new Button(shell, SWT.NONE);
+		buttonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
+		buttonNext.setEnabled(false);
 		
 		
 		combo.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				ButtonNext.setEnabled(true);
+				buttonNext.setEnabled(true);
 			}
 		});
 		
-		ButtonNext.addSelectionListener(new SelectionAdapter() {
+		buttonNext.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 			String selectedText = combo.getText();
@@ -158,7 +141,7 @@ public class WindowMain_2_ChooseOrdertype {
 			int headerSequence = 0;
 			
 			String headerOrdertype = selectedOrdertype;
-			String filePath = "C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\XMLOutput_Test\\Test.xml";
+			String filePath = "C:\\wamas\\workspace\\Telegrammgenerator Material\\XML_Test.xml";
 
 			String selectedMasterrecordType = null;
 			GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrdertype, headerSource,
@@ -171,6 +154,6 @@ public class WindowMain_2_ChooseOrdertype {
 			
 			}
 		});
-		ButtonNext.setText("Next");
+		buttonNext.setText("Next");
 	}
 }

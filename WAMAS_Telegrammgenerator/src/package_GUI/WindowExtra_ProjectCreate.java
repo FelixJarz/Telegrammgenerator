@@ -12,14 +12,9 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.layout.GridData;
-import org.eclipse.swt.events.ModifyListener;
-import org.eclipse.swt.events.ModifyEvent;
-import package_GUI.WindowMain_1_ProjectSelect;
 
 public class WindowExtra_ProjectCreate {
 
-
-	protected Shell shell;
 	private Text TextProjectName;
 	private Text TextVersionNumber;
 	private Text TextIEDir;
@@ -31,23 +26,8 @@ public class WindowExtra_ProjectCreate {
 	private String fileFullName;
 	
 	private Display display;
+	protected Shell shell;
 	
-	/**
-	 * Launch the application.
-	 * @param args
-	 */
-	public static void main(String[] args) { 
-		try {
-			WindowExtra_ProjectCreate window = new WindowExtra_ProjectCreate();
-			window.open();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
-	 * Open the window.
-	 */
 	public void open() {
 		shell = new Shell();
 		display = Display.getDefault();

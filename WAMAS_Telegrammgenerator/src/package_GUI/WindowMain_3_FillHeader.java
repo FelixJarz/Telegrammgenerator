@@ -14,48 +14,30 @@ import org.eclipse.swt.layout.GridData;
 public class WindowMain_3_FillHeader {
 
 	protected Shell shell;
-	private Button ButtonNext;
-	private Button ButtonReturn;
-	private Text Text1;
-	private Text Text2;
-	private Text Text3;
-	private Text Text4;
-	private Text Text5;
-	private Text Text6;
-	private Label Label7;
-	private Label Label8;
-	private Label Label9;
-	private Label Label10;
-	private Label Label11;
-	private Label Label12;
-	private Text Text7;
-	private Text Text8;
-	private Text Text9;
-	private Text Text10;
-	private Text Text11;
-	private Text Text12;
-	private Label LabelFillFull;
+	private Button buttonNext;
+	private Button buttonReturn;
+	private Text text1;
+	private Text text3;
+	private Text text5;
+	private Text text7;
+	private Text text9;
+	private Text text11;
+	private Label label2;
+	private Label label4;
+	private Label label6;
+	private Label label8;
+	private Label label10;
+	private Label label12;
+	private Text text2;
+	private Text text4;
+	private Text text6;
+	private Text text8;
+	private Text text10;
+	private Text text12;
+	private Label labelFillFull;
 	
 	Display display = Display.getDefault();
 
-
-	/**
-	 * Launch the application.
-	 * @param args
-	 * @wbp.parser.entryPoint
-	 */
-	public void main(String[] args) {
-		try {
-			WindowMain_3_FillHeader window = new WindowMain_3_FillHeader();
-			window.open();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
-	 * Open the window.
-	 */
 	public void open() {
 		createContents();
 		shell.open();
@@ -66,10 +48,7 @@ public class WindowMain_3_FillHeader {
 			}
 		}
 	}
-
-	/**
-	 * Create contents of the window.
-	 */
+//-----------------------------------------------GUI Objects-------------------------------------------------------------------
 	protected void createContents() {
 		
 		shell = new Shell();
@@ -83,8 +62,8 @@ public class WindowMain_3_FillHeader {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		LabelFillFull = new Label(shell, SWT.CENTER);
-		LabelFillFull.setText("Fill Odertype");
+		labelFillFull = new Label(shell, SWT.CENTER);
+		labelFillFull.setText("Fill full");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -107,161 +86,161 @@ public class WindowMain_3_FillHeader {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label Label1 = new Label(shell, SWT.CENTER);
-		Label1.setAlignment(SWT.CENTER);
-		Label1.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		Label1.setText("a");
+		Label label1 = new Label(shell, SWT.CENTER);
+		label1.setAlignment(SWT.CENTER);
+		label1.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		label1.setText("label1");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Text1 = new Text(shell, SWT.BORDER);
-		Text1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label7 = new Label(shell, SWT.NONE);
-		Label7.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		Label7.setText("g");
-		new Label(shell, SWT.NONE);
-		
-		Text7 = new Text(shell, SWT.BORDER);
-		Text7.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		text1 = new Text(shell, SWT.BORDER);
+		text1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label Label2 = new Label(shell, SWT.CENTER);
-		Label2.setAlignment(SWT.CENTER);
-		Label2.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		Label2.setText("b");
-		new Label(shell, SWT.NONE);
+		label2 = new Label(shell, SWT.NONE);
+		label2.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		label2.setText("label2");
 		new Label(shell, SWT.NONE);
 		
-		Text2 = new Text(shell, SWT.BORDER);
-		Text2.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		text2 = new Text(shell, SWT.BORDER);
+		text2.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label8 = new Label(shell, SWT.NONE);
-		Label8.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		Label8.setText("h");
-		new Label(shell, SWT.NONE);
-		
-		Text8 = new Text(shell, SWT.BORDER);
-		Text8.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
+		Label label3 = new Label(shell, SWT.CENTER);
+		label3.setAlignment(SWT.CENTER);
+		label3.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		label3.setText("label3");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label Label3 = new Label(shell, SWT.NONE);
-		Label3.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		Label3.setText("c");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Text3 = new Text(shell, SWT.BORDER);
-		Text3.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		text3 = new Text(shell, SWT.BORDER);
+		text3.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label9 = new Label(shell, SWT.NONE);
-		Label9.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		Label9.setText("i");
+		label4 = new Label(shell, SWT.NONE);
+		label4.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		label4.setText("label4");
 		new Label(shell, SWT.NONE);
 		
-		Text9 = new Text(shell, SWT.BORDER);
-		Text9.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label Label4 = new Label(shell, SWT.NONE);
-		Label4.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		Label4.setText("d");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Text4 = new Text(shell, SWT.BORDER);
-		Text4.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		text4 = new Text(shell, SWT.BORDER);
+		text4.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label10 = new Label(shell, SWT.NONE);
-		Label10.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		Label10.setText("j");
-		new Label(shell, SWT.NONE);
-		
-		Text10 = new Text(shell, SWT.BORDER);
-		Text10.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
+		Label label5 = new Label(shell, SWT.NONE);
+		label5.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		label5.setText("label5");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label Label5 = new Label(shell, SWT.NONE);
-		Label5.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		Label5.setText("e");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Text5 = new Text(shell, SWT.BORDER);
-		Text5.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		text5 = new Text(shell, SWT.BORDER);
+		text5.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label11 = new Label(shell, SWT.NONE);
-		Label11.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		Label11.setText("k");
+		label6 = new Label(shell, SWT.NONE);
+		label6.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		label6.setText("label6");
 		new Label(shell, SWT.NONE);
 		
-		Text11 = new Text(shell, SWT.BORDER);
-		Text11.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label Label6 = new Label(shell, SWT.NONE);
-		Label6.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, false, false, 1, 1));
-		Label6.setText("f");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Text6 = new Text(shell, SWT.BORDER);
-		Text6.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		text6 = new Text(shell, SWT.BORDER);
+		text6.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label12 = new Label(shell, SWT.NONE);
-		Label12.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		Label12.setText("l");
+		Label label7 = new Label(shell, SWT.NONE);
+		label7.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		label7.setText("label7");
+		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Text12 = new Text(shell, SWT.BORDER);
-		Text12.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
+		text7 = new Text(shell, SWT.BORDER);
+		text7.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
+		label8 = new Label(shell, SWT.NONE);
+		label8.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		label8.setText("label8");
+		new Label(shell, SWT.NONE);
 		
-		ButtonReturn = new Button(shell, SWT.BORDER);
-		ButtonReturn.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, false, false, 1, 1));
-		ButtonReturn.addMouseListener(new MouseAdapter() {
+		text8 = new Text(shell, SWT.BORDER);
+		text8.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		
+		Label label9 = new Label(shell, SWT.NONE);
+		label9.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		label9.setText("label9");
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		
+		text9 = new Text(shell, SWT.BORDER);
+		text9.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		
+		label10 = new Label(shell, SWT.NONE);
+		label10.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		label10.setText("label10");
+		new Label(shell, SWT.NONE);
+		
+		text10 = new Text(shell, SWT.BORDER);
+		text10.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		
+		Label label11 = new Label(shell, SWT.NONE);
+		label11.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, false, false, 1, 1));
+		label11.setText("label11");
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		
+		text11 = new Text(shell, SWT.BORDER);
+		text11.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		
+		label12 = new Label(shell, SWT.NONE);
+		label12.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		label12.setText("label12");
+		new Label(shell, SWT.NONE);
+		
+		text12 = new Text(shell, SWT.BORDER);
+		text12.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		
+//-----------------------------------------------Buttons with Listener-------------------------------------------------------------------
+		buttonReturn = new Button(shell, SWT.BORDER);
+		buttonReturn.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, false, false, 1, 1));
+		buttonReturn.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseUp(MouseEvent e) {
 				display.close();
@@ -269,7 +248,8 @@ public class WindowMain_3_FillHeader {
 				windowMain_2_ChooseOdtertype.open();
 				}
 		});
-		ButtonReturn.setText("Return");
+		
+		buttonReturn.setText("Return");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -282,21 +262,16 @@ public class WindowMain_3_FillHeader {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		
-		ButtonNext = new Button(shell, SWT.BORDER);
-		ButtonNext.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, false, false, 1, 1));
-		ButtonNext.addMouseListener(new MouseAdapter() {
+		buttonNext = new Button(shell, SWT.BORDER);
+		buttonNext.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, false, false, 1, 1));
+		buttonNext.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseUp(MouseEvent e) {
 				display.close();
 				WindowMain_4_FillBody nw = new WindowMain_4_FillBody();
-				nw.open();
-				
-			
+				nw.open();		
 			}
-			
-
 		});	
-		ButtonNext.setText("Next");
+		buttonNext.setText("Next");
 	}
 }
