@@ -10,6 +10,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
+		
 		ProjectSelector select = new ProjectSelector();
 		select.getFinishedProjectList();
 		
