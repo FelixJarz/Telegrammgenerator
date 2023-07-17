@@ -193,6 +193,7 @@ public class WindowExtra_ProjectCreate {
 					ButtonNext.setEnabled(false);
 					TextSaveDir.setMessage("All fields must be filled!");
 				}else {
+					
 					ButtonNext.setEnabled(true);
 				}
 			}
