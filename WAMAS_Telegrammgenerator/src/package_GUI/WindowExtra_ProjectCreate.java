@@ -41,12 +41,10 @@ public class WindowExtra_ProjectCreate {
 			}
 		}
 
+//-----------------------------------------------GUI Objects-------------------------------------------------------------------
 	public void close() {
 		shell.close();
 	}
-	/**
-	 * Create contents of the window.
-	 */
 	protected void createContents() {
 		shell = new Shell();
 		shell.setSize(450, 344);
@@ -83,6 +81,7 @@ public class WindowExtra_ProjectCreate {
 		TextIEDir.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 3, 1));
 		new Label(shell, SWT.NONE);
 		
+//-----------------------------------------------Buttons with Listener / Labels-------------------------------------------------------------------
 		Button ButtonLocationIE = new Button(shell, SWT.NONE);
 		ButtonLocationIE.addSelectionListener(new SelectionAdapter() {
 			@Override
@@ -112,6 +111,8 @@ public class WindowExtra_ProjectCreate {
 		TextSaveDir = new Text(shell, SWT.BORDER);
 		TextSaveDir.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 3, 1));
 		new Label(shell, SWT.NONE);
+		
+		
 		
 		Button ButtonLocationSave = new Button(shell, SWT.NONE);
 		ButtonLocationSave.addSelectionListener(new SelectionAdapter() {
@@ -143,9 +144,7 @@ public class WindowExtra_ProjectCreate {
 				shell.close();
 				WindowMain_1_ProjectSelect windowMain_1_ProjectSelect = new WindowMain_1_ProjectSelect();
 				windowMain_1_ProjectSelect.open();
-
-
-				
+	
 			}
 		});
 		ButtonReturn.setText("Return");
@@ -170,7 +169,6 @@ public class WindowExtra_ProjectCreate {
 			}
 		});
 		
-
 		
 		ButtonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		ButtonNext.setText("Next");
