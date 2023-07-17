@@ -14,8 +14,6 @@ import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
-import org.eclipse.swt.events.ModifyListener;
-import org.eclipse.swt.events.ModifyEvent;
 public class WindowMain_2_ChooseOrdertype {
 
 	protected Shell shell;
@@ -67,8 +65,6 @@ public class WindowMain_2_ChooseOrdertype {
 		ProjectSelector select = new ProjectSelector();
 		select.getFinishedProjectList();
 		
-		String[] listOfOdertypes = ProjectSelector.getString();
-		
 		//fill the dropdown menu with the ordertypes
 		Combo combo = new Combo(shell, SWT.NONE);
 		combo.setItems(listOfOdertypes);
@@ -94,8 +90,6 @@ public class WindowMain_2_ChooseOrdertype {
 		ButtonNext.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				
-			//Creation of the XML-File with the chosen ordertype 
 			String selectedText = combo.getText();
 				
 			String selectedOrdertype = selectedText;
@@ -105,7 +99,6 @@ public class WindowMain_2_ChooseOrdertype {
 			int headerSequence = 0;
 			
 			String headerOrdertype = selectedOrdertype;
-			String filePath = "C:\\wamas\\workspace\\Telegrammgenerator Material\\XML_Test.xml";
 
 			String selectedMasterrecordType = null;
 			GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrdertype, headerSource,

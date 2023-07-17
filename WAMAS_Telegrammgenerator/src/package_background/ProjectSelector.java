@@ -8,11 +8,6 @@ public class ProjectSelector {
 	private static ArrayList<String> tempList = new ArrayList<String>();
 	
 	//Definition of the XSD folder 
-	File folderXSD = new File("C:\\wamas\\workspace\\Telegrammgenerator Material\\interfaceExport\\xsd");
-	String[] strXSD = folderXSD.list();
-	
-	//Definition of the Incoming folder 
-	File folderIncoming = new File("C:\\wamas\\workspace\\Telegrammgenerator Material\\interfaceExport\\Incoming");
 	String[] strIncoming = folderIncoming.list(); 
 	
 	public void getFinishedProjectList() {
