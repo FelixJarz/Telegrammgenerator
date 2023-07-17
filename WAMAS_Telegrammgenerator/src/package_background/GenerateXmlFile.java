@@ -11,21 +11,32 @@ import java.util.Date;
 
 public class GenerateXmlFile {
 
-    private String selectedMasterrecordType;
+    private String selectedMasterrecordType = "placeholder";
     private String headerSource;
     private String headerDestination;
     private int headerSequence;
+    
     private String headerRecordTypeName;
+    private String headerOrderType;
     private String filePath;
+    private String selectedOrderType;
 
-    public GenerateXmlFile(String selectedMasterrecordType, String headerSource, String headerDestination, int headerSequence, String headerRecordTypeName, String filePath) {
+    public GenerateXmlFile(String selectedMasterrecordType, String selectedOrderType, String headerSource, String headerDestination, 
+    		String headerRecordTypeName, int headerSequence,  String headerOrderType,String filePath) {
       
     	this.selectedMasterrecordType = selectedMasterrecordType;
+    	this.selectedOrderType = selectedOrderType;
+    	
         this.headerSource = headerSource;
         this.headerDestination = headerDestination;
         this.headerSequence = headerSequence;
+        
         this.headerRecordTypeName = headerRecordTypeName;
+        this.headerOrderType = headerOrderType;
+        
+        
         this.filePath = filePath;
+      
     }
 
     public void generateXmlFile() {
@@ -37,6 +48,7 @@ public class GenerateXmlFile {
             Element rootElement = doc.createElement("Masterrecords");
             doc.appendChild(rootElement);
 
+           
             Element headerElement = doc.createElement("header");
             rootElement.appendChild(headerElement);
 
@@ -52,6 +64,10 @@ public class GenerateXmlFile {
             headerSequenceElement.appendChild(doc.createTextNode(String.valueOf(headerSequence)));
             headerElement.appendChild(headerSequenceElement);
 
+            
+            
+            
+            // machen sachen
             Element headerCreationTimeElement = doc.createElement("HEADER_CREATIONTIME");
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             headerCreationTimeElement.appendChild(doc.createTextNode(dateFormat.format(new Date())));
@@ -61,11 +77,21 @@ public class GenerateXmlFile {
             headerRecordTypeNameElement.appendChild(doc.createTextNode(headerRecordTypeName));
             headerElement.appendChild(headerRecordTypeNameElement);
 
+            Element headerOrderTypeElement = doc.createElement("HEADER_ORDERTYPE");
+            headerOrderTypeElement.appendChild(doc.createTextNode(headerOrderType));
+            headerElement.appendChild(headerOrderTypeElement);
+            
+            
+            
             Element masterrecordElement = doc.createElement("Masterrecord");
             rootElement.appendChild(masterrecordElement);
-
             masterrecordElement.setAttribute("Type", selectedMasterrecordType);
 
+            Element orderTypeElement = doc.createElement("OrderType");
+            rootElement.appendChild(orderTypeElement);
+            orderTypeElement.setAttribute("Type", selectedOrderType);
+            
+            
             Element field1Element = doc.createElement("Field1");
             field1Element.appendChild(doc.createTextNode("Value1")); // Replace with field1Value
             masterrecordElement.appendChild(field1Element);
@@ -91,14 +117,17 @@ public class GenerateXmlFile {
 
     public static void main(String[] args) {
         String selectedMasterrecordType = "MasterrecordType1";
+        String selectedOrderType = "OrderType1";
         String headerSource = "HOST";
         String headerDestination = "WAMAS";
         int headerSequence = 0;
         String headerRecordTypeName = selectedMasterrecordType;
-        String filePath = "C:\\wamas\\workspace\\Telegrammgenerator Material\\XML_Test.xml";
+        String headerOrderType = selectedOrderType;
 
-        GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, headerSource, headerDestination,
-                headerSequence, headerRecordTypeName, filePath);
+        String filePath = "C:\\Users\\ahelmbe\\Downloads\\XMLOutput\\Test2.xml";
+
+        GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType,selectedOrderType, headerSource, headerDestination,headerRecordTypeName,
+                headerSequence,filePath, headerOrderType );
         generator.generateXmlFile();
     }
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Masterrecords>
+    <header>
+        <HEADER_SOURCE>HOST</HEADER_SOURCE>
+        <HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+        <HEADER_SEQUENCE>0</HEADER_SEQUENCE>
+        <HEADER_CREATIONTIME>2023-07-14 10:18:48</HEADER_CREATIONTIME>
+        <HEADER_RECORDTYPENAME>C:\Users\ahelmbe\Downloads\XMLOutput\Test2.xml</HEADER_RECORDTYPENAME>
+        <HEADER_ORDERTYPE>C:\Users\ahelmbe\Downloads\XMLOutput\Test2.xml</HEADER_ORDERTYPE>
+    </header>
+    <Masterrecord Type="">
+        <Field1>Value1</Field1>
+        <Field2>123</Field2>
+    </Masterrecord>
+    <OrderType Type="DEBMAS06"/>
+</Masterrecords>
