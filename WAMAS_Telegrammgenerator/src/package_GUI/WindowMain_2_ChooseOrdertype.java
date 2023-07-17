@@ -1,5 +1,6 @@
 package package_GUI;
 
+import org.eclipse.core.commands.Command;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
@@ -85,10 +86,33 @@ public class WindowMain_2_ChooseOrdertype {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
+		new Label(shell, SWT.NONE);
+		//ButtonNext.setEnabled(false);
+		
+		Button ButtonReturn = new Button(shell, SWT.NONE);
+		ButtonReturn.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				display.close();
+				WindowMain_1_ProjectSelect windowMain_1_ProjectSelect = new WindowMain_1_ProjectSelect();
+				windowMain_1_ProjectSelect.open();
+			}
+		});
+		ButtonReturn.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
+		ButtonReturn.setText("Return");
+		new Label(shell, SWT.NONE);
+		
 		Button ButtonNext = new Button(shell, SWT.NONE);
 		ButtonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
+		ButtonNext.setEnabled(false);
 		
-
+		combo.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				ButtonNext.setEnabled(true);
+			}
+		});
+		
 		ButtonNext.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -115,22 +139,10 @@ public class WindowMain_2_ChooseOrdertype {
 			}
 		});
 		ButtonNext.setText("Next");
-		ButtonNext.setEnabled(false);
 		
-		Button ButtonReturn = new Button(shell, SWT.NONE);
-		ButtonReturn.addSelectionListener(new SelectionAdapter() {
-			@Override
-			public void widgetSelected(SelectionEvent e) {
-				display.close();
-				WindowMain_1_ProjectSelect windowMain_1_ProjectSelect = new WindowMain_1_ProjectSelect();
-				windowMain_1_ProjectSelect.open();
-			}
-		});
-		ButtonReturn.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
-		ButtonReturn.setText("Return");
-		new Label(shell, SWT.NONE);
 		
-		Button ButtonConfirm = new Button(shell, SWT.NONE);
+		
+		/*Button ButtonConfirm = new Button(shell, SWT.NONE);
 		ButtonConfirm.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -142,7 +154,7 @@ public class WindowMain_2_ChooseOrdertype {
 			}
 		});
 		ButtonConfirm.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
-		ButtonConfirm.setText("Confirm");
+		ButtonConfirm.setText("Confirm");*/
 
 	}
 }
