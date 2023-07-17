@@ -125,7 +125,7 @@ public class WindowMain_2_ChooseOrdertype {
 			int headerSequence = 0;
 			
 			String headerOrdertype = selectedOrdertype;
-			String filePath = "C:\\wamas\\workspace\\Telegrammgenerator Material\\XML_Test.xml";
+			String filePath = "C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\XMLOutput_Test\\Test.xml";
 
 			String selectedMasterrecordType = null;
 			GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrdertype, headerSource,
