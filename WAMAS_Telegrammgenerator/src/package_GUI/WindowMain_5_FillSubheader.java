@@ -125,8 +125,8 @@ public class WindowMain_5_FillSubheader {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				display.close();
-				WindowMain_5_SelectDirectory windowMain_5_SelectDirectory = new WindowMain_5_SelectDirectory();
-				windowMain_5_SelectDirectory.open();
+				//WindowMain_5_SelectDirectory windowMain_5_SelectDirectory = new WindowMain_5_SelectDirectory();
+				//windowMain_5_SelectDirectory.open();
 			}
 		});
 		ButtonNext.setText("Next");
