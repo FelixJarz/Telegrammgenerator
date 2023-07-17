@@ -16,9 +16,11 @@ import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 public class WindowMain_2_ChooseOrdertype {
 
+	private static final Object[] String = null;
 	protected Shell shell;
 	Display display = Display.getDefault();
 	protected Combo combo;
+	protected int prevOrdertypeSize = 3;
 
 
 	/**
@@ -72,18 +74,49 @@ public class WindowMain_2_ChooseOrdertype {
 		combo.setItems(listOfOdertypes);
 		combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		
+		String[] prevOrdertypes = new String[prevOrdertypeSize];
+		String[] newOrdertypes = new String[10];
+		for(int i = 0; i < 10 - 1; i++) {
+			newOrdertypes[i] = "Ordertype" + i+1;
+		}
+		
+		combo.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				for(int i = 0; i < prevOrdertypeSize - 1; i++) {
+					if(i == prevOrdertypeSize - 1) {
+						prevOrdertypes[i] = newOrdertypes[i];
+					}else {
+						newOrdertypes[i+1] = prevOrdertypes[i];
+					}
+				}
+				newOrdertypes[0] = combo.getText();
+				for(int i = 0; i < prevOrdertypeSize - 1; i++) {
+					prevOrdertypes[i] = newOrdertypes[i];
+				}
+			}
+		});
+		
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
+		
+		Label lblPreviousOrdertypes = new Label(shell, SWT.NONE);
+		lblPreviousOrdertypes.setText("Previous Ordertypes:");
+		
+		Label lblOrdertype = new Label(shell, SWT.NONE);
+		lblOrdertype.setText(newOrdertypes[0]);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
+		
+		Label lblOrdertype_1 = new Label(shell, SWT.NONE);
+		lblOrdertype_1.setText(newOrdertypes[1]);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
+		
+		Label lblOrdertype_2 = new Label(shell, SWT.NONE);
+		lblOrdertype_2.setText(newOrdertypes[2]);
 		
 		new Label(shell, SWT.NONE);
 		//ButtonNext.setEnabled(false);
@@ -104,6 +137,7 @@ public class WindowMain_2_ChooseOrdertype {
 		Button ButtonNext = new Button(shell, SWT.NONE);
 		ButtonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		ButtonNext.setEnabled(false);
+		
 		
 		combo.addSelectionListener(new SelectionAdapter() {
 			@Override
@@ -138,22 +172,5 @@ public class WindowMain_2_ChooseOrdertype {
 			}
 		});
 		ButtonNext.setText("Next");
-		
-		
-		
-		/*Button ButtonConfirm = new Button(shell, SWT.NONE);
-		ButtonConfirm.addSelectionListener(new SelectionAdapter() {
-			@Override
-			public void widgetSelected(SelectionEvent e) {
-				if(combo.getText().isEmpty()) {
-					ButtonNext.setEnabled(false);
-				}else {
-					ButtonNext.setEnabled(true);
-				}
-			}
-		});
-		ButtonConfirm.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
-		ButtonConfirm.setText("Confirm");*/
-
 	}
 }
