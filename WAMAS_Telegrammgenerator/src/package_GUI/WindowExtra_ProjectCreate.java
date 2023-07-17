@@ -164,6 +164,12 @@ public class WindowExtra_ProjectCreate {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				
+				String filePath = TextSaveDir.getText();
+				String fileName = TextProjectName.getText();
+				
+				WindowMain_1_ProjectSelect folder = new WindowMain_1_ProjectSelect();
+				folder.CreateFolder(filePath, fileName);
+
 				shell.close();
 			}
 		});
