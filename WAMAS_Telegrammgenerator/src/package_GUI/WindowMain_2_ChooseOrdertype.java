@@ -65,6 +65,8 @@ public class WindowMain_2_ChooseOrdertype {
 		ProjectSelector select = new ProjectSelector();
 		select.getFinishedProjectList();
 		
+		String[] listOfOdertypes = ProjectSelector.getString();
+		
 		//fill the dropdown menu with the ordertypes
 		Combo combo = new Combo(shell, SWT.NONE);
 		combo.setItems(listOfOdertypes);
@@ -99,6 +101,7 @@ public class WindowMain_2_ChooseOrdertype {
 			int headerSequence = 0;
 			
 			String headerOrdertype = selectedOrdertype;
+			String filePath = "C:\\wamas\\workspace\\Telegrammgenerator Material\\XML_Test.xml";
 
 			String selectedMasterrecordType = null;
 			GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrdertype, headerSource,
