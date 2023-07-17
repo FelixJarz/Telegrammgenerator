@@ -95,8 +95,8 @@ public class WindowExtra_ProjectCreate {
 		TextIEDir.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 3, 1));
 		new Label(shell, SWT.NONE);
 		
-		Button btnChooseLocation_1 = new Button(shell, SWT.NONE);
-		btnChooseLocation_1.addSelectionListener(new SelectionAdapter() {
+		Button ButtonLocationIE = new Button(shell, SWT.NONE);
+		ButtonLocationIE.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				JFileChooser chooser = new JFileChooser();
@@ -113,20 +113,20 @@ public class WindowExtra_ProjectCreate {
 				}
 			}
 		});
-		btnChooseLocation_1.setText("Choose Location");
+		ButtonLocationIE.setText("Choose Location");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label lblSave = new Label(shell, SWT.NONE);
-		lblSave.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		lblSave.setText("Save:");
+		Label LabelSave = new Label(shell, SWT.NONE);
+		LabelSave.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		LabelSave.setText("Save:");
 		
 		TextSaveDir = new Text(shell, SWT.BORDER);
 		TextSaveDir.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 3, 1));
 		new Label(shell, SWT.NONE);
 		
-		Button btnChooseLocation = new Button(shell, SWT.NONE);
-		btnChooseLocation.addSelectionListener(new SelectionAdapter() {
+		Button ButtonLocationSave = new Button(shell, SWT.NONE);
+		ButtonLocationSave.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				JFileChooser chooser = new JFileChooser();
@@ -143,7 +143,7 @@ public class WindowExtra_ProjectCreate {
 				}
 			}
 		});
-		btnChooseLocation.setText("Choose Location");
+		ButtonLocationSave.setText("Choose Location");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
@@ -172,21 +172,26 @@ public class WindowExtra_ProjectCreate {
 		ButtonConfirm.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 2, 1));
 		ButtonConfirm.addSelectionListener(new SelectionAdapter() {
 			
-			WindowExtra_Error windowExtra_Extra = new WindowExtra_Error();
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				if(TextProjectName.getText().isEmpty()) {
 					ButtonNext.setEnabled(false);
-					windowExtra_Extra.open();
+					TextProjectName.setMessage("All fields must be filled!");
+					TextVersionNumber.setMessage("All fields must be filled!");
+					TextIEDir.setMessage("All fields must be filled!");
+					TextSaveDir.setMessage("All fields must be filled!");
 				}else if(TextVersionNumber.getText().isEmpty()){
 					ButtonNext.setEnabled(false);
-					windowExtra_Extra.open();
+					TextVersionNumber.setMessage("All fields must be filled!");
+					TextIEDir.setMessage("All fields must be filled!");
+					TextSaveDir.setMessage("All fields must be filled!");
 				}else if(TextIEDir.getText().isEmpty()) {
 					ButtonNext.setEnabled(false);
-					windowExtra_Extra.open();
+					TextIEDir.setMessage("All fields must be filled!");
+					TextSaveDir.setMessage("All fields must be filled!");
 				}else if(TextSaveDir.getText().isEmpty()) {
 					ButtonNext.setEnabled(false);
-					windowExtra_Extra.open();
+					TextSaveDir.setMessage("All fields must be filled!");
 				}else {
 					ButtonNext.setEnabled(true);
 				}
