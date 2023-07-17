@@ -5,13 +5,12 @@ import java.util.ArrayList;
 
 public class ProjectSelector {
 	
+
 //-----------------------------------------------read xsd folder-------------------------------------------------------------------
 	private static ArrayList<String> tempList = new ArrayList<String>();
 	
 	File folderXSD = new File("C:\\wamas\\workspace\\Telegrammgenerator Material\\interfaceExport\\xsd");
     String[] strXSD = folderXSD.list();
-
-    
 
 //-----------------------------------------------read Incoming folder-------------------------------------------------------------------
     File folderIncoming = new File("C:\\wamas\\workspace\\Telegrammgenerator Material\\interfaceExport\\Incoming");
@@ -20,17 +19,20 @@ public class ProjectSelector {
 //-----------------------------------------------Function for sorting all the Header-------------------------------------------------------------------
 	public void getFinishedProjectList() {
 		
-				if(strXSD.equals(strIncoming)) {	//In case the folders match -> Saves the entire compare-process
+				if(strXSD.equals(strIncoming)) {	
+					//In case the folders match -> Saves the entire compare-process
 					System.out.println(strIncoming);
 					//Convert to array list for setString-function
 					ArrayList<String> arrMatch = new ArrayList<String>(); 
 		        	for(int i = 0; i <= strIncoming.length - 1; i++) {
-			        	arrMatch.add(strIncoming[i]); //Transmitting the array list with extensions 
+			        	arrMatch.add(strIncoming[i]);  
 		 			} 
 					setString(arrMatch);
-				}else if(strIncoming.equals("")) {	//If the "Incoming"-folder is empty 
+				}else if(strIncoming.equals("")) {	
+					//If the "Incoming"-folder is empty
 					System.out.println("The Incoming-folder is empty."); 
-				}else{ 								//Compares the two folders and finds matching elements
+				}else{ 								
+					//Compares the two folders and finds matching elements
 					//Remove the extensions
 					String[] strXSDRemoved = folderXSD.list();
 		        	for (int i = 0; i <= strXSD.length - 1; i++) {
