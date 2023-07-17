@@ -17,13 +17,15 @@ import org.eclipse.swt.widgets.Combo;
 public class WindowMain_1_ProjectSelect {
 
 	protected Shell shell;
+	private String projectName;
+	private Combo combo;
 	Display display = Display.getDefault();
 
 	/**
 	 * @wbp.parser.entryPoint
 	 */
 	public void open() {
-		
+		shell = new Shell();
 		createContents();
 		shell.open();
 		shell.layout();
@@ -47,11 +49,10 @@ public class WindowMain_1_ProjectSelect {
 		ButtonSelectProject.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
 		ButtonSelectProject.setText("Select Project:");
 
-		Combo Combo1 = new Combo(shell, SWT.NONE);
-		Combo1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
+		combo = new Combo(shell, SWT.NONE);
+		combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
 		
-		
-		Combo1.setText("...");
+
 		
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -108,10 +109,9 @@ public class WindowMain_1_ProjectSelect {
 				ButtonCreateNewProject.addSelectionListener(new SelectionAdapter() {
 					@Override
 					public void widgetSelected(SelectionEvent e) {
-							ButtonCreateNewProject.setEnabled(false);
+							display.close();
 							WindowExtra_ProjectCreate windowextra1 = new WindowExtra_ProjectCreate();
 							windowextra1.open();
-							ButtonCreateNewProject.setEnabled(true);
 					}
 				});
 				ButtonCreateNewProject.setText("Create new project");
@@ -150,7 +150,11 @@ public class WindowMain_1_ProjectSelect {
 	            System.out.println("Der Ordner existiert bereits.");
 	        }
 	    }
-}
+	
+	public void getProjectname(String input) {
+		projectName = input;
+		}
+	}
 	 
 
 
