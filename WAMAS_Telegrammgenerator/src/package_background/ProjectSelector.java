@@ -5,17 +5,18 @@ import java.util.ArrayList;
 
 public class ProjectSelector {
 	
-	//Temporary list to store the matching elements 
+
+//-----------------------------------------------read xsd folder-------------------------------------------------------------------
 	private static ArrayList<String> tempList = new ArrayList<String>();
 	
-	//Definition of the XSD folder 
-	File folderXSD = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\xsd");
+	File folderXSD = new File("C:\\wamas\\workspace\\Telegrammgenerator Material\\interfaceExport\\xsd");
     String[] strXSD = folderXSD.list();
 
-    //Definition of the Incoming folder
-    File folderIncoming = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\Incoming");
+//-----------------------------------------------read Incoming folder-------------------------------------------------------------------
+    File folderIncoming = new File("C:\\wamas\\workspace\\Telegrammgenerator Material\\interfaceExport\\Incoming");
 	String[] strIncoming = folderIncoming.list(); 
 	
+//-----------------------------------------------Function for sorting all the Header-------------------------------------------------------------------
 	public void getFinishedProjectList() {
 		
 				if(strXSD.equals(strIncoming)) {	
@@ -66,7 +67,7 @@ public class ProjectSelector {
 		return tempList;
 	}
 	
-	//Getter function to get the finished list (converted to string array) from outside this class 
+//------------Getter function to get the finished list (converted to string array) from outside this class -----------------------------
 	public static String[] getString() {
 		
 		String[] tempStr = new String[tempList.size()];

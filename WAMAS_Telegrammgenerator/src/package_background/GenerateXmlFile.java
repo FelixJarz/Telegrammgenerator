@@ -66,8 +66,6 @@ public class GenerateXmlFile {
 
             
             
-            
-            // machen sachen
             Element headerCreationTimeElement = doc.createElement("HEADER_CREATIONTIME");
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             headerCreationTimeElement.appendChild(doc.createTextNode(dateFormat.format(new Date())));
@@ -80,6 +78,7 @@ public class GenerateXmlFile {
             Element headerOrderTypeElement = doc.createElement("HEADER_ORDERTYPE");
             headerOrderTypeElement.appendChild(doc.createTextNode(headerOrderType));
             headerElement.appendChild(headerOrderTypeElement);
+            
             
             
             

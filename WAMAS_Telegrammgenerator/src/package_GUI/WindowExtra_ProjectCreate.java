@@ -15,34 +15,26 @@ import org.eclipse.swt.layout.GridData;
 
 public class WindowExtra_ProjectCreate {
 
+
 	protected Shell shell;
 	private Text textProjectName;
 	private Text textVersionNumber;
 	private Text textIEDir;
 	private Text textSaveDir;
+	private Text TextProjectName;
+	private Text TextVersionNumber;
+	private Text TextIEDir;
+	private Text TextSaveDir;
 	
 	private String filePath;
 	private String fileName;
 	private String fileVersionNumber;
 	private String fileFullName;
 	
-	private Display display;	
-	/**
-	 * Launch the application.
-	 * @param args
-	 */
-	public static void main(String[] args) { 
-		try {
-			WindowExtra_ProjectCreate windowExtra_ProjectCreate = new WindowExtra_ProjectCreate();
-			windowExtra_ProjectCreate.open();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 
-	/**
-	 * Open the window.
-	 */
+	private Display display;	
+	protected Shell shell;
+  
 	public void open() {
 		shell = new Shell();
 		display = Display.getDefault();
@@ -56,12 +48,10 @@ public class WindowExtra_ProjectCreate {
 			}
 		}
 
+//-----------------------------------------------GUI Objects-------------------------------------------------------------------
 	public void close() {
 		shell.close();
 	}
-	/**
-	 * Create contents of the window.
-	 */
 	protected void createContents() {
 		shell = new Shell();
 		shell.setSize(450, 344);
@@ -98,9 +88,11 @@ public class WindowExtra_ProjectCreate {
 		textIEDir.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 3, 1));
 		new Label(shell, SWT.NONE);
 		
+//-----------------------------------------------Buttons with Listener / Labels-------------------------------------------------------------------
 		//In case the button is pressed -> File Explorer opens and you can choose a location 
 		Button buttonLocationIE = new Button(shell, SWT.NONE);
 		buttonLocationIE.addSelectionListener(new SelectionAdapter() {
+
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				JFileChooser chooser = new JFileChooser();
@@ -132,6 +124,7 @@ public class WindowExtra_ProjectCreate {
 		//In case the button is pressed -> File Explorer opens and you can choose a location 
 		Button buttonLocationSave = new Button(shell, SWT.NONE);
 		buttonLocationSave.addSelectionListener(new SelectionAdapter() {
+
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				JFileChooser chooser = new JFileChooser();
@@ -190,7 +183,7 @@ public class WindowExtra_ProjectCreate {
 		
 		buttonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		buttonNext.setText("Next");
-		
+	
 		//Button to confirm if all necessary fields are filled 
 		Button buttonConfirm = new Button(shell, SWT.NONE);
 		buttonConfirm.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 2, 1));
