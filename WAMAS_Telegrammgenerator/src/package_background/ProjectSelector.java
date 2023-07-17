@@ -8,13 +8,13 @@ public class ProjectSelector {
 //-----------------------------------------------read xsd folder-------------------------------------------------------------------
 	private static ArrayList<String> tempList = new ArrayList<String>();
 	
-	File folderXSD = new File("C:\\wamas\\workspace\\Telegrammgenerator Material\\interfaceExport\\xsd");
+	File folderXSD = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\xsd");
     String[] strXSD = folderXSD.list();
 
     
 
 //-----------------------------------------------read Incoming folder-------------------------------------------------------------------
-    File folderIncoming = new File("C:\\wamas\\workspace\\Telegrammgenerator Material\\interfaceExport\\Incoming");
+    File folderIncoming = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\Incoming");
 	String[] strIncoming = folderIncoming.list(); 
 	
 //-----------------------------------------------Function for sorting all the Header-------------------------------------------------------------------

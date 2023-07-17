@@ -59,7 +59,7 @@ public class WindowMain_2_ChooseOrdertype {
 		String[] prevOrdertypes = new String[prevOrdertypeSize];
 		String[] newOrdertypes = new String[10];
 		for(int i = 0; i < 10 - 1; i++) {
-			newOrdertypes[i] = "Ordertype" + i+1;
+			newOrdertypes[i] = "Ordertype" + (i+1);
 		}
 		
 		combo.addSelectionListener(new SelectionAdapter() {
