@@ -35,6 +35,8 @@ public class WindowMain_3_FillHeader {
 	private Text Text11;
 	private Text Text12;
 	private Label LabelFillFull;
+	
+	Display display = Display.getDefault();
 
 
 	/**
@@ -55,7 +57,6 @@ public class WindowMain_3_FillHeader {
 	 * Open the window.
 	 */
 	public void open() {
-		Display display = Display.getDefault();
 		createContents();
 		shell.open();
 		shell.layout();
@@ -263,7 +264,7 @@ public class WindowMain_3_FillHeader {
 		ButtonReturn.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseUp(MouseEvent e) {
-				shell.close();
+				display.close();
 				WindowMain_2_ChooseOrdertype  windowMain_2_ChooseOdtertype = new WindowMain_2_ChooseOrdertype();
 				windowMain_2_ChooseOdtertype.open();
 				}
@@ -287,7 +288,7 @@ public class WindowMain_3_FillHeader {
 		ButtonNext.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseUp(MouseEvent e) {
-				shell.close();
+				display.close();
 				WindowMain_4_FillBody nw = new WindowMain_4_FillBody();
 				nw.open();
 				

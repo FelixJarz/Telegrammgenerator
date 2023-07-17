@@ -14,16 +14,23 @@ import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.events.ModifyListener;
 import org.eclipse.swt.events.ModifyEvent;
+import package_GUI.WindowMain_1_ProjectSelect;
 
 public class WindowExtra_ProjectCreate {
 
 
 	protected Shell shell;
-	Display display = Display.getDefault();
 	private Text TextProjectName;
 	private Text TextVersionNumber;
 	private Text TextIEDir;
 	private Text TextSaveDir;
+	
+	private String filePath;
+	private String fileName;
+	private String fileVersionNumber;
+	private String fileFullName;
+	
+	private Display display;
 	
 	/**
 	 * Launch the application.
@@ -42,6 +49,8 @@ public class WindowExtra_ProjectCreate {
 	 * Open the window.
 	 */
 	public void open() {
+		shell = new Shell();
+		display = Display.getDefault();
 			createContents();
 			shell.open();
 			shell.layout();
@@ -152,6 +161,11 @@ public class WindowExtra_ProjectCreate {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				shell.close();
+				WindowMain_1_ProjectSelect windowMain_1_ProjectSelect = new WindowMain_1_ProjectSelect();
+				windowMain_1_ProjectSelect.open();
+
+
+				
 			}
 		});
 		ButtonReturn.setText("Return");
@@ -162,15 +176,22 @@ public class WindowExtra_ProjectCreate {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				
-				String filePath = TextSaveDir.getText();
-				String fileName = TextProjectName.getText();
+				filePath = TextSaveDir.getText();
+				fileName = TextProjectName.getText();
+				fileVersionNumber = TextVersionNumber.getText();
+				fileFullName = fileName + "_" + fileVersionNumber;
 				
-				WindowMain_1_ProjectSelect folder = new WindowMain_1_ProjectSelect();
-				folder.CreateFolder(filePath, fileName);
+				WindowMain_1_ProjectSelect project = new WindowMain_1_ProjectSelect();
+				display.close();
+				project.open();
+				project.CreateFolder(filePath, fileFullName);
+				project.getProjectname(fileFullName);
 
-				shell.close();
 			}
 		});
+		
+
+		
 		ButtonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		ButtonNext.setText("Next");
 		

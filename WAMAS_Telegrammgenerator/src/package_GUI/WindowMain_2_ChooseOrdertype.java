@@ -108,7 +108,7 @@ public class WindowMain_2_ChooseOrdertype {
 					headerDestination, filePath, headerSequence, headerOrdertype, filePath);
 			generator.generateXmlFile();
 			
-			shell.close();
+			display.close();
 			WindowMain_3_FillHeader window3 = new WindowMain_3_FillHeader();
 			window3.open();
 			
