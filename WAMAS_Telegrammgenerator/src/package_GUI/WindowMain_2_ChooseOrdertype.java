@@ -16,9 +16,11 @@ import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 public class WindowMain_2_ChooseOrdertype {
 
+	private static final Object[] String = null;
 	protected Shell shell;
 	Display display = Display.getDefault();
 	protected Combo combo;
+	protected int prevOrdertypeSize = 3;
 
 
 	/**
@@ -72,50 +74,52 @@ public class WindowMain_2_ChooseOrdertype {
 		combo.setItems(listOfOdertypes);
 		combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
+		String[] prevOrdertypes = new String[prevOrdertypeSize];
+		String[] newOrdertypes = new String[10];
+		for(int i = 0; i < 10 - 1; i++) {
+			newOrdertypes[i] = "Ordertype" + i+1;
+		}
 		
-		Button ButtonNext = new Button(shell, SWT.NONE);
-		ButtonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
-		
-
-		ButtonNext.addSelectionListener(new SelectionAdapter() {
+		combo.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-			String selectedText = combo.getText();
-				
-			String selectedOrdertype = selectedText;
-			
-			String headerSource = "HOST";
-			String headerDestination = "WAMAS";
-			int headerSequence = 0;
-			
-			String headerOrdertype = selectedOrdertype;
-			String filePath = "C:\\wamas\\workspace\\Telegrammgenerator Material\\XML_Test.xml";
-
-			String selectedMasterrecordType = null;
-			GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrdertype, headerSource,
-					headerDestination, filePath, headerSequence, headerOrdertype, filePath);
-			generator.generateXmlFile();
-			
-			display.close();
-			WindowMain_3_FillHeader window3 = new WindowMain_3_FillHeader();
-			window3.open();
-			
+				for(int i = 0; i < prevOrdertypeSize - 1; i++) {
+					if(i == prevOrdertypeSize - 1) {
+						prevOrdertypes[i] = newOrdertypes[i];
+					}else {
+						newOrdertypes[i+1] = prevOrdertypes[i];
+					}
+				}
+				newOrdertypes[0] = combo.getText();
+				for(int i = 0; i < prevOrdertypeSize - 1; i++) {
+					prevOrdertypes[i] = newOrdertypes[i];
+				}
 			}
 		});
-		ButtonNext.setText("Next");
-		ButtonNext.setEnabled(false);
+		
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		
+		Label lblPreviousOrdertypes = new Label(shell, SWT.NONE);
+		lblPreviousOrdertypes.setText("Previous Ordertypes:");
+		
+		Label lblOrdertype = new Label(shell, SWT.NONE);
+		lblOrdertype.setText(newOrdertypes[0]);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		
+		Label lblOrdertype_1 = new Label(shell, SWT.NONE);
+		lblOrdertype_1.setText(newOrdertypes[1]);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		
+		Label lblOrdertype_2 = new Label(shell, SWT.NONE);
+		lblOrdertype_2.setText(newOrdertypes[2]);
+		
+		new Label(shell, SWT.NONE);
+		//ButtonNext.setEnabled(false);
 		
 		Button ButtonReturn = new Button(shell, SWT.NONE);
 		ButtonReturn.addSelectionListener(new SelectionAdapter() {
@@ -130,19 +134,43 @@ public class WindowMain_2_ChooseOrdertype {
 		ButtonReturn.setText("Return");
 		new Label(shell, SWT.NONE);
 		
-		Button ButtonConfirm = new Button(shell, SWT.NONE);
-		ButtonConfirm.addSelectionListener(new SelectionAdapter() {
+		Button ButtonNext = new Button(shell, SWT.NONE);
+		ButtonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
+		ButtonNext.setEnabled(false);
+		
+		
+		combo.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				if(combo.getText().isEmpty()) {
-					ButtonNext.setEnabled(false);
-				}else {
-					ButtonNext.setEnabled(true);
-				}
+				ButtonNext.setEnabled(true);
 			}
 		});
-		ButtonConfirm.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
-		ButtonConfirm.setText("Confirm");
+		
+		ButtonNext.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+			String selectedText = combo.getText();
+				
+			String selectedOrdertype = selectedText;
+			
+			String headerSource = "HOST";
+			String headerDestination = "WAMAS";
+			int headerSequence = 0;
+			
+			String headerOrdertype = selectedOrdertype;
+			String filePath = "C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\XMLOutput_Test\\Test.xml";
 
+			String selectedMasterrecordType = null;
+			GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrdertype, headerSource,
+					headerDestination, filePath, headerSequence, headerOrdertype, filePath);
+			generator.generateXmlFile();
+			
+			display.close();
+			WindowMain_3_FillHeader window3 = new WindowMain_3_FillHeader();
+			window3.open();
+			
+			}
+		});
+		ButtonNext.setText("Next");
 	}
 }
