@@ -1,6 +1,5 @@
 package package_GUI;
 
-import org.eclipse.core.commands.Command;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
