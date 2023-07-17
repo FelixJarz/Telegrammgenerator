@@ -4,7 +4,7 @@ package package_GUI;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Button;
-
+import java.io.File;
 import java.util.ArrayList;
 
 import org.eclipse.swt.SWT;
@@ -133,4 +133,26 @@ public class WindowMain_1_ProjectSelect {
 		});
 						ButtonNext1.setText("Next");
 	}
+
+
+	public void CreateFolder (String folderPath, String folderName)
+	{
+			String folderPathGenerated = folderPath + "/" + folderName;
+        
+				File folder = new File(folderPathGenerated);
+	        
+	        if (!folder.exists()) {
+	            boolean created = folder.mkdirs();
+	            if (created) {
+	                System.out.println("Ordner wurde erfolgreich erstellt.");
+	            } else {
+	                System.out.println("Fehler beim Erstellen des Ordners.");
+	            }
+	        } else {
+	            System.out.println("Der Ordner existiert bereits.");
+	        }
+	    }
 }
+	 
+
+

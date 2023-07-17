@@ -8,11 +8,6 @@ public class ProjectSelector {
 	private static ArrayList<String> tempList = new ArrayList<String>();
 	
 	//Definition of the XSD folder 
-	File folderXSD = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\xsd");
-	String[] strXSD = folderXSD.list();
-	
-	//Definition of the Incoming folder 
-	File folderIncoming = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\Incoming");
 	String[] strIncoming = folderIncoming.list(); 
 	
 	public void getFinishedProjectList() {
@@ -65,11 +60,11 @@ public class ProjectSelector {
 	//Getter function to get the finished list (converted to string array) from outside this class 
 	public static String[] getString() {
 		
-		String[] str = new String[tempList.size()];
+		String[] tempStr = new String[tempList.size()];
 
 		for (int i = 0; i < tempList.size(); i++) {
-            str[i] = tempList.get(i);
+            tempStr[i] = tempList.get(i);
 		}
-		return str;   
+		return tempStr;   
 	}
 }

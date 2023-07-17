@@ -9,10 +9,6 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		
-		ProjectSelector select = new ProjectSelector();
-		select.getFinishedProjectList();
-		
 		try {
 			WindowMain_1_ProjectSelect window = new WindowMain_1_ProjectSelect();
 			window.open();

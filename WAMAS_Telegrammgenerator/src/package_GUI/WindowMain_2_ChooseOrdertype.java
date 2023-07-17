@@ -14,12 +14,12 @@ import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
-import org.eclipse.swt.events.SelectionListener;
-import java.util.function.Consumer;
-
 public class WindowMain_2_ChooseOrdertype {
 
 	protected Shell shell;
+	Display display = Display.getDefault();
+	protected Combo combo;
+
 
 	/**
 	 * Launch the application.
@@ -38,7 +38,6 @@ public class WindowMain_2_ChooseOrdertype {
 	 * Open the window.
 	 */
 	public void open() {
-		Display display = Display.getDefault();
 		createContents();
 		shell.open();
 		shell.layout();
@@ -54,31 +53,25 @@ public class WindowMain_2_ChooseOrdertype {
 	 */
 	protected void createContents() {
 		shell = new Shell();
-		shell.setSize(450, 300);
+		shell.setSize(450, 229);
 		shell.setText("SWT Application");
-		shell.setLayout(new GridLayout(4, false));
+		shell.setLayout(new GridLayout(3, false));
 		
-		Label lblChooseOrdertype = new Label(shell, SWT.NONE);
-		lblChooseOrdertype.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		lblChooseOrdertype.setText("Choose Ordertype");
+		Label LabelChooseOdertype = new Label(shell, SWT.NONE);
+		LabelChooseOdertype.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		LabelChooseOdertype.setText("Choose Ordertype");
+				
+		//Start class ProjectSelector to sort all the ordertypes
+		ProjectSelector select = new ProjectSelector();
+		select.getFinishedProjectList();
 		
-		String[] str = ProjectSelector.getString(); 
-
+		//fill the dropdown menu with the ordertypes
 		Combo combo = new Combo(shell, SWT.NONE);
-		combo.setItems(str);
-		/*combo.addSelectionListener(new SelectionAdapter() {
-			@SuppressWarnings("unused")
-			public SelectionListener widgetDefaultSelectedAdapter(Consumer<SelectionEvent> c) {
-				String selElement = combo.getText(); 
-				System.out.println("Approved");
-				return (SelectionListener) null;
-			}
-		});*/
-		
-		//SelectionListener listener = new SelectionListener(); 
-		//combo.addSelectionListener(listener);
-		
+		combo.setItems(listOfOdertypes);
 		combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+		
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -90,37 +83,11 @@ public class WindowMain_2_ChooseOrdertype {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label lblPreviousOrdertypes = new Label(shell, SWT.NONE);
-		lblPreviousOrdertypes.setText("Previous Ordertypes:");
+		Button ButtonNext = new Button(shell, SWT.NONE);
+		ButtonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		
-		Label lblNewLabel = new Label(shell, SWT.NONE);
-		lblNewLabel.setText("New Label");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label lblNewLabel_1 = new Label(shell, SWT.NONE);
-		lblNewLabel_1.setText("New Label");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label lblNewLabel_2 = new Label(shell, SWT.NONE);
-		lblNewLabel_2.setText("New Label");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Button btnNewButton = new Button(shell, SWT.NONE);
-		btnNewButton.setText("Back");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Button btnNewButton_1 = new Button(shell, SWT.NONE);
-		btnNewButton_1.addSelectionListener(new SelectionAdapter() {
+
+		ButtonNext.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 			String selectedText = combo.getText();
@@ -132,7 +99,6 @@ public class WindowMain_2_ChooseOrdertype {
 			int headerSequence = 0;
 			
 			String headerOrdertype = selectedOrdertype;
-			String filePath = "C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\XMLOutput_Test\\Test.xml";
 
 			String selectedMasterrecordType = null;
 			GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrdertype, headerSource,
@@ -145,7 +111,35 @@ public class WindowMain_2_ChooseOrdertype {
 			
 			}
 		});
-		btnNewButton_1.setText("Next");
+		ButtonNext.setText("Next");
+		ButtonNext.setEnabled(false);
+		
+		Button ButtonReturn = new Button(shell, SWT.NONE);
+		ButtonReturn.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				display.close();
+				WindowMain_1_ProjectSelect windowMain_1_ProjectSelect = new WindowMain_1_ProjectSelect();
+				windowMain_1_ProjectSelect.open();
+			}
+		});
+		ButtonReturn.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
+		ButtonReturn.setText("Return");
+		new Label(shell, SWT.NONE);
+		
+		Button ButtonConfirm = new Button(shell, SWT.NONE);
+		ButtonConfirm.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				if(combo.getText().isEmpty()) {
+					ButtonNext.setEnabled(false);
+				}else {
+					ButtonNext.setEnabled(true);
+				}
+			}
+		});
+		ButtonConfirm.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
+		ButtonConfirm.setText("Confirm");
 
 	}
 }

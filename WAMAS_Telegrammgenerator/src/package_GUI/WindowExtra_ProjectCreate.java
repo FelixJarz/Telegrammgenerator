@@ -3,10 +3,8 @@ package package_GUI;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Button;
-
 import java.io.File;
 import javax.swing.JFileChooser;
-
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -18,6 +16,7 @@ import org.eclipse.swt.events.ModifyListener;
 import org.eclipse.swt.events.ModifyEvent;
 
 public class WindowExtra_ProjectCreate {
+
 
 	protected Shell shell;
 	Display display = Display.getDefault();
@@ -162,6 +161,13 @@ public class WindowExtra_ProjectCreate {
 		ButtonNext.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
+				
+				String filePath = TextSaveDir.getText();
+				String fileName = TextProjectName.getText();
+				
+				WindowMain_1_ProjectSelect folder = new WindowMain_1_ProjectSelect();
+				folder.CreateFolder(filePath, fileName);
+
 				shell.close();
 			}
 		});
@@ -192,8 +198,7 @@ public class WindowExtra_ProjectCreate {
 				}else if(TextSaveDir.getText().isEmpty()) {
 					ButtonNext.setEnabled(false);
 					TextSaveDir.setMessage("All fields must be filled!");
-				}else {
-					
+				}else {		
 					ButtonNext.setEnabled(true);
 				}
 			}
