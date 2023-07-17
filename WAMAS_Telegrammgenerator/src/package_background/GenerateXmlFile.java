@@ -124,7 +124,7 @@ public class GenerateXmlFile {
         String headerRecordTypeName = selectedMasterrecordType;
         String headerOrderType = selectedOrderType;
 
-        String filePath = "C:\\Users\\ahelmbe\\Downloads\\XMLOutput\\Test2.xml";
+        String filePath = "C:\\wamas\\workspace\\Telegrammgenerator Material\\XML_Test.xml";
 
         GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType,selectedOrderType, headerSource, headerDestination,headerRecordTypeName,
                 headerSequence,filePath, headerOrderType );

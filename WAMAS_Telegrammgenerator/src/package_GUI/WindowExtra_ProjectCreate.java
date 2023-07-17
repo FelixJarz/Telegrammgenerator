@@ -19,6 +19,7 @@ import org.eclipse.swt.events.ModifyEvent;
 
 public class WindowExtra_ProjectCreate {
 
+
 	protected Shell shell;
 	Display display = Display.getDefault();
 	private Text TextProjectName;
@@ -168,7 +169,7 @@ public class WindowExtra_ProjectCreate {
 				
 				WindowMain_1_ProjectSelect folder = new WindowMain_1_ProjectSelect();
 				folder.CreateFolder(filePath, fileName);
-				
+
 				shell.close();
 			}
 		});
@@ -199,8 +200,7 @@ public class WindowExtra_ProjectCreate {
 				}else if(TextSaveDir.getText().isEmpty()) {
 					ButtonNext.setEnabled(false);
 					TextSaveDir.setMessage("All fields must be filled!");
-				}else {
-					
+				}else {		
 					ButtonNext.setEnabled(true);
 				}
 			}

@@ -264,8 +264,8 @@ public class WindowMain_3_FillHeader {
 			@Override
 			public void mouseUp(MouseEvent e) {
 				shell.close();
-				WindowMain_1_ProjectSelect  windowMain1_Project = new WindowMain_1_ProjectSelect();
-				windowMain1_Project.open();
+				WindowMain_2_ChooseOrdertype  windowMain_2_ChooseOdtertype = new WindowMain_2_ChooseOrdertype();
+				windowMain_2_ChooseOdtertype.open();
 				}
 		});
 		ButtonReturn.setText("Return");
