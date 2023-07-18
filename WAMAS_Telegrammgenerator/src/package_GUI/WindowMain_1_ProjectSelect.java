@@ -32,10 +32,13 @@ public class WindowMain_1_ProjectSelect {
 	}
 
 //-----------------------------------------------GUI Objects-------------------------------------------------------------------
+	/**
+	 * @wbp.parser.entryPoint
+	 */
 	protected void createContents() {
 		
 		shell = new Shell();
-		shell.setSize(495, 353);
+		shell.setSize(495, 226);
 		shell.setText("Project");
 		shell.setLayout(new GridLayout(3, false));
 		
@@ -52,41 +55,6 @@ public class WindowMain_1_ProjectSelect {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label labelPrevious = new Label(shell, SWT.NONE);
-		labelPrevious.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-		labelPrevious.setText("Previous projects:");
-		
-		Label label1 = new Label(shell, SWT.NONE);
-		label1.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-		label1.setText("New Label");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-				
-		Label label2 = new Label(shell, SWT.NONE);
-		label2.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-		label2.setText("New Label");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label label3 = new Label(shell, SWT.NONE);
-		label3.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-		label3.setText("New Label");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label label4 = new Label(shell, SWT.NONE);
-		label4.setLayoutData(new GridData(SWT.CENTER, SWT.TOP, false, false, 1, 1));
-		label4.setText("New Label");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-				
-		Label label5 = new Label(shell, SWT.NONE);
-		GridData gd_label5 = new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1);
-		gd_label5.heightHint = 20;
-		label5.setLayoutData(gd_label5);
-		label5.setText("New Label");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -114,10 +82,19 @@ public class WindowMain_1_ProjectSelect {
 				
 						
 		buttonNext1.setLayoutData(new GridData(SWT.RIGHT, SWT.FILL, false, false, 1, 1));
+		buttonNext1.setEnabled(false);
+		
+		//combo.setItems(ProjectDir);
+		combo.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				buttonNext1.setEnabled(true);
+			}
+		});
 		buttonNext1.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e){
-				display.close();
+				shell.close();
 				WindowMain_2_ChooseOrdertype window2 = new WindowMain_2_ChooseOrdertype();
 				window2.open();
 			}

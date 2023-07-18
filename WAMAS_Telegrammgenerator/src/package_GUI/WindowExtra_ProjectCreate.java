@@ -161,7 +161,7 @@ public class WindowExtra_ProjectCreate {
 				fileFullName = fileName + "_" + fileVersionNumber;
 				
 				WindowMain_1_ProjectSelect project = new WindowMain_1_ProjectSelect();
-				display.close();
+				shell.close();
 				project.open();
 				project.CreateFolder(filePath, fileFullName);
 				project.getProjectname(fileFullName);
