@@ -12,19 +12,14 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.layout.GridData;
+import package_background.ProjectSelector;
 
 public class WindowExtra_ProjectCreate {
 
-
-	protected Shell shell;
 	private Text textProjectName;
 	private Text textVersionNumber;
 	private Text textIEDir;
 	private Text textSaveDir;
-	private Text TextProjectName;
-	private Text TextVersionNumber;
-	private Text TextIEDir;
-	private Text TextSaveDir;
 	
 	private String filePath;
 	private String fileName;
@@ -175,8 +170,8 @@ public class WindowExtra_ProjectCreate {
 				WindowMain_1_ProjectSelect project = new WindowMain_1_ProjectSelect();
 				shell.close();
 				project.open();
-				project.CreateFolder(filePath, fileFullName);
-				project.getProjectname(fileFullName);
+				ProjectSelector.CreateFolder(filePath, fileFullName);
+				ProjectSelector.getProjectname(fileFullName);
 
 			}
 		});
