@@ -1,5 +1,10 @@
 package package_GUI;
 
+import java.awt.Canvas;
+
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
@@ -21,7 +26,8 @@ public class WindowMain_2_ChooseOrdertype {
 	Display display = Display.getDefault();
 	protected Combo combo;
 	protected int prevOrdertypeSize = 3;
-
+	
+	WindowMain_2_ChooseOrdertype m = new WindowMain_2_ChooseOrdertype();
 	public void open() {
 		createContents();
 		shell.open();
@@ -117,10 +123,10 @@ public class WindowMain_2_ChooseOrdertype {
 		buttonReturn.setText("Return");
 		new Label(shell, SWT.NONE);
 		
+		Icon icon = new ImageIcon("C:\\Users\\jhaase\\Downloads\\astral-unicorn.jpg");
 		Button buttonNext = new Button(shell, SWT.NONE);
 		buttonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		buttonNext.setEnabled(false);
-		
 		
 		combo.addSelectionListener(new SelectionAdapter() {
 			@Override
