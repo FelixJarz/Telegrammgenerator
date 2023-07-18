@@ -62,10 +62,6 @@ public class GenerateXmlFile {
             headerSequenceElement.appendChild(doc.createTextNode(String.valueOf(headerSequence)));
             headerElement.appendChild(headerSequenceElement);
 
-
-
-
-            // machen sachen
             Element headerCreationTimeElement = doc.createElement("HEADER_CREATIONTIME");
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             headerCreationTimeElement.appendChild(doc.createTextNode(dateFormat.format(new Date())));
@@ -78,8 +74,6 @@ public class GenerateXmlFile {
             Element headerOrderTypeElement = doc.createElement("HEADER_ORDERTYPE");
             headerOrderTypeElement.appendChild(doc.createTextNode(headerOrderType));
             headerElement.appendChild(headerOrderTypeElement);
-
-
 
             Element masterrecordElement = doc.createElement("Masterrecord");
             rootElement.appendChild(masterrecordElement);
@@ -121,8 +115,7 @@ public class GenerateXmlFile {
         int headerSequence = 0;
         String headerRecordTypeName = selectedMasterrecordType;
         String headerOrderType = selectedOrderType;
-
-        String filePath = "C:\\Users\\ahelmbe\\Downloads\\XMLOutput\\Test4.xml";
+        String filePath = "C:\\wamas\\workspace\\Telegrammgenerator Material\\XML_Test.xml";
 
         GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrderType, headerSource, headerDestination, headerRecordTypeName,
                 headerSequence, headerOrderType, filePath);

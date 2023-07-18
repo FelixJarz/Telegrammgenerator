@@ -1,11 +1,9 @@
 package package_GUI;
 
-
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Button;
 import java.io.File;
-import java.util.ArrayList;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridLayout;
@@ -14,7 +12,6 @@ import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Combo;
-import package_background.ProjectSelector;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -27,12 +24,10 @@ public class WindowMain_1_ProjectSelect {
 
 	protected Shell shell;
 	Display display = Display.getDefault();
+	String projectName;
 
-	/**
-	 * @wbp.parser.entryPoint
-	 */
 	public void open() {
-		
+		shell = new Shell();
 		createContents();
 		shell.open();
 		shell.layout();
@@ -43,24 +38,24 @@ public class WindowMain_1_ProjectSelect {
 		}
 	}
 
+//-----------------------------------------------GUI Objects-------------------------------------------------------------------
+	/**
+	 * @wbp.parser.entryPoint
+	 */
 	protected void createContents() {
 		
-		
 		shell = new Shell();
-		shell.setSize(495, 353);
+		shell.setSize(495, 226);
 		shell.setText("Project");
 		shell.setLayout(new GridLayout(3, false));
 		
-		Label ButtonSelectProject = new Label(shell, SWT.NONE);
-		ButtonSelectProject.setAlignment(SWT.CENTER);
-		ButtonSelectProject.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-		ButtonSelectProject.setText("Select Project:");
-
-		Combo Combo1 = new Combo(shell, SWT.NONE);
-		Combo1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
-		
-		
-		Combo1.setText("...");
+		Label buttonSelectProject = new Label(shell, SWT.NONE);
+		buttonSelectProject.setAlignment(SWT.CENTER);
+		buttonSelectProject.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
+		buttonSelectProject.setText("Select Project:");
+	
+		Combo combo = new Combo(shell, SWT.NONE);
+		combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
 		
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -68,86 +63,58 @@ public class WindowMain_1_ProjectSelect {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
-		
-		Label LabelPrevious = new Label(shell, SWT.NONE);
-		LabelPrevious.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-		LabelPrevious.setText("Previous projects:");
-		
-		Label Label1 = new Label(shell, SWT.NONE);
-		Label1.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-		Label1.setText("New Label");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		
+		
+//---------------------------------------------------Buttons with Listener--------------------------------------------------------
 				
-				Label Label2 = new Label(shell, SWT.NONE);
-				Label2.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-				Label2.setText("New Label");
-				new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
-		
-		Label Label3 = new Label(shell, SWT.NONE);
-		Label3.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-		Label3.setText("New Label");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label Label4 = new Label(shell, SWT.NONE);
-		Label4.setLayoutData(new GridData(SWT.CENTER, SWT.TOP, false, false, 1, 1));
-		Label4.setText("New Label");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-				
-				Label Label5 = new Label(shell, SWT.NONE);
-				GridData gd_Label5 = new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1);
-				gd_Label5.heightHint = 20;
-				Label5.setLayoutData(gd_Label5);
-				Label5.setText("New Label");
-				new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
-				
-		
-				
-				Button ButtonCreateNewProject = new Button(shell, SWT.NONE);
-				ButtonCreateNewProject.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
-				ButtonCreateNewProject.addSelectionListener(new SelectionAdapter() {
-					@Override
-					public void widgetSelected(SelectionEvent e) {
-							ButtonCreateNewProject.setEnabled(false);
-							WindowExtra_ProjectCreate windowextra1 = new WindowExtra_ProjectCreate();
-							windowextra1.open();
-							ButtonCreateNewProject.setEnabled(true);
-					}
-				});
-				ButtonCreateNewProject.setText("Create new project");
-				new Label(shell, SWT.NONE);
-				Button ButtonNext1 = new Button(shell, SWT.CENTER);
-				
-						
-						ButtonNext1.setLayoutData(new GridData(SWT.RIGHT, SWT.FILL, false, false, 1, 1));
-						ButtonNext1.addSelectionListener(new SelectionAdapter() {
-							@Override
-							public void widgetSelected(SelectionEvent e) {
-
-								display.close();
-								WindowMain_2_ChooseOrdertype window2 = new WindowMain_2_ChooseOrdertype();
-								window2.open();
+		Button buttonCreateNewProject = new Button(shell, SWT.NONE);
+		buttonCreateNewProject.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false, 1, 1));
+		buttonCreateNewProject.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+					display.close();
+					WindowExtra_ProjectCreate windowextra1 = new WindowExtra_ProjectCreate();
+					windowextra1.open();
 			}
 		});
-						ButtonNext1.setText("Next");
+		buttonCreateNewProject.setText("Create new project");
+		new Label(shell, SWT.NONE);
+		Button buttonNext1 = new Button(shell, SWT.CENTER);
+				
+						
+		buttonNext1.setLayoutData(new GridData(SWT.RIGHT, SWT.FILL, false, false, 1, 1));
+		buttonNext1.setEnabled(false);
+		
+		//combo.setItems(ProjectDir);
+		combo.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				buttonNext1.setEnabled(true);
+			}
+		});
+		buttonNext1.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e){
+				shell.close();
+				WindowMain_2_ChooseOrdertype window2 = new WindowMain_2_ChooseOrdertype();
+				window2.open();
+			}
+		});
+		buttonNext1.setText("Next");
 	}
 
-
+//----------------------------------------------------Functions------------------------------------------------------------
 	public void CreateFolder (String folderPath, String folderName)
 	{
 			String folderPathGenerated = folderPath + "/" + folderName;
-        
 				File folder = new File(folderPathGenerated);
-	        
+				
 	        if (!folder.exists()) {
 	            boolean created = folder.mkdirs();
 	            if (created) {
@@ -160,6 +127,7 @@ public class WindowMain_1_ProjectSelect {
 	        }
 	    }
 	
+
 	public void UnzipFolder(String folderPath, String folderName) {
 		String zipFilePath = folderPath + File.separator + folderName + ".zip";
 	    File zipFile = new File(zipFilePath);
@@ -204,6 +172,10 @@ public class WindowMain_1_ProjectSelect {
     }
 	
 }}
+	public void getProjectname(String input) {
+		projectName = input;
+		}
+	}
 	 
 
 
