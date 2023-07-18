@@ -21,7 +21,7 @@ public class WindowMain_2_ChooseOrdertype {
 	Display display = Display.getDefault();
 	protected Combo combo;
 	protected int prevOrdertypeSize = 3;
-
+	
 	public void open() {
 		createContents();
 		shell.open();
@@ -59,7 +59,7 @@ public class WindowMain_2_ChooseOrdertype {
 		String[] prevOrdertypes = new String[prevOrdertypeSize];
 		String[] newOrdertypes = new String[10];
 		for(int i = 0; i < 10 - 1; i++) {
-			newOrdertypes[i] = "Ordertype" + i+1;
+			newOrdertypes[i] = "Ordertype" + (i+1);
 		}
 		
 		combo.addSelectionListener(new SelectionAdapter() {
@@ -108,7 +108,7 @@ public class WindowMain_2_ChooseOrdertype {
 		buttonReturn.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				display.close();
+				shell.close();
 				WindowMain_1_ProjectSelect windowMain_1_ProjectSelect = new WindowMain_1_ProjectSelect();
 				windowMain_1_ProjectSelect.open();
 			}
@@ -120,7 +120,6 @@ public class WindowMain_2_ChooseOrdertype {
 		Button buttonNext = new Button(shell, SWT.NONE);
 		buttonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		buttonNext.setEnabled(false);
-		
 		
 		combo.addSelectionListener(new SelectionAdapter() {
 			@Override
@@ -141,7 +140,7 @@ public class WindowMain_2_ChooseOrdertype {
 			int headerSequence = 0;
 			
 			String headerOrdertype = selectedOrdertype;
-			String filePath = "C:\\wamas\\workspace\\Telegrammgenerator Material\\XML_Test.xml";
+			String filePath = "C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\XMLOutput_Test\\Test.xml";
 
 			String selectedMasterrecordType = null;
 			GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrdertype, headerSource,
@@ -151,7 +150,6 @@ public class WindowMain_2_ChooseOrdertype {
 			display.close();
 			WindowMain_3_FillHeader window3 = new WindowMain_3_FillHeader();
 			window3.open();
-			
 			}
 		});
 		buttonNext.setText("Next");

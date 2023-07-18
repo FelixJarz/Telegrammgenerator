@@ -4,7 +4,7 @@ import package_GUI.WindowMain_1_ProjectSelect;
 
 public class Main {
 	
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
 		try {
 			WindowMain_1_ProjectSelect window = new WindowMain_1_ProjectSelect();
