@@ -157,7 +157,6 @@ public class WindowMain_2_ChooseOrdertype {
 			display.close();
 			WindowMain_3_FillHeader window3 = new WindowMain_3_FillHeader();
 			window3.open();
-			
 			}
 		});
 		buttonNext.setText("Next");
