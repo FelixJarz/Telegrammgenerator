@@ -16,6 +16,13 @@ import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Combo;
 import package_background.ProjectSelector;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
+
 public class WindowMain_1_ProjectSelect {
 
 	protected Shell shell;
@@ -152,7 +159,51 @@ public class WindowMain_1_ProjectSelect {
 	            System.out.println("Der Ordner existiert bereits.");
 	        }
 	    }
-}
+	
+	public void UnzipFolder(String folderPath, String folderName) {
+		String zipFilePath = folderPath + File.separator + folderName + ".zip";
+	    File zipFile = new File(zipFilePath);
+	    
+	    if (!zipFile.exists() || !zipFile.isFile()) {
+	        System.out.println("Die angegebene Datei ist keine ZIP-Datei.");
+	        return;
+	    }
+	    
+	    byte[] buffer = new byte[1024];
+	    try (ZipInputStream zipInputStream = new ZipInputStream(new FileInputStream(zipFile))) {
+	        File outputFolder = new File(folderPath);
+	        if (!outputFolder.exists()) {
+	            outputFolder.mkdirs();
+	        }
+	        
+	        ZipEntry zipEntry = zipInputStream.getNextEntry();
+	        while (zipEntry != null) {
+	            String entryPath = folderPath + File.separator + zipEntry.getName();
+	            if (!zipEntry.isDirectory()) {
+	                File entryFile = new File(entryPath);
+	                entryFile.getParentFile().mkdirs();
+	                
+	                try (FileOutputStream outputStream = new FileOutputStream(entryFile)) {
+	                    int length;
+	                    while ((length = zipInputStream.read(buffer)) > 0) {
+	                        outputStream.write(buffer, 0, length);
+	                    }
+	                }
+	            } else {
+	                File dir = new File(entryPath);
+	                dir.mkdirs();
+	            }
+	            
+	            zipEntry = zipInputStream.getNextEntry();
+	        }
+	        
+	        System.out.println("Die ZIP-Datei wurde erfolgreich entpackt.");
+	    } catch (IOException e) {
+	        System.out.println("Fehler beim Entpacken der ZIP-Datei: " + e.getMessage());
+	    }
+    }
+	
+}}
 	 
 
 

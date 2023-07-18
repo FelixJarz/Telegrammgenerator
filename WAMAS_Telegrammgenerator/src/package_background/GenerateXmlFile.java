@@ -15,28 +15,26 @@ public class GenerateXmlFile {
     private String headerSource;
     private String headerDestination;
     private int headerSequence;
-    
+
     private String headerRecordTypeName;
     private String headerOrderType;
     private String filePath;
     private String selectedOrderType;
 
-    public GenerateXmlFile(String selectedMasterrecordType, String selectedOrderType, String headerSource, String headerDestination, 
-    		String headerRecordTypeName, int headerSequence,  String headerOrderType,String filePath) {
-      
-    	this.selectedMasterrecordType = selectedMasterrecordType;
-    	this.selectedOrderType = selectedOrderType;
-    	
+    public GenerateXmlFile(String selectedMasterrecordType, String selectedOrderType, String headerSource, String headerDestination,
+                           String headerRecordTypeName, int headerSequence,  String headerOrderType, String filePath) {
+
+        this.selectedMasterrecordType = selectedMasterrecordType;
+        this.selectedOrderType = selectedOrderType;
+
         this.headerSource = headerSource;
         this.headerDestination = headerDestination;
         this.headerSequence = headerSequence;
-        
+
         this.headerRecordTypeName = headerRecordTypeName;
         this.headerOrderType = headerOrderType;
-        
-        
+
         this.filePath = filePath;
-      
     }
 
     public void generateXmlFile() {
@@ -48,7 +46,7 @@ public class GenerateXmlFile {
             Element rootElement = doc.createElement("Masterrecords");
             doc.appendChild(rootElement);
 
-           
+
             Element headerElement = doc.createElement("header");
             rootElement.appendChild(headerElement);
 
@@ -64,9 +62,9 @@ public class GenerateXmlFile {
             headerSequenceElement.appendChild(doc.createTextNode(String.valueOf(headerSequence)));
             headerElement.appendChild(headerSequenceElement);
 
-            
-            
-            
+
+
+
             // machen sachen
             Element headerCreationTimeElement = doc.createElement("HEADER_CREATIONTIME");
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -80,9 +78,9 @@ public class GenerateXmlFile {
             Element headerOrderTypeElement = doc.createElement("HEADER_ORDERTYPE");
             headerOrderTypeElement.appendChild(doc.createTextNode(headerOrderType));
             headerElement.appendChild(headerOrderTypeElement);
-            
-            
-            
+
+
+
             Element masterrecordElement = doc.createElement("Masterrecord");
             rootElement.appendChild(masterrecordElement);
             masterrecordElement.setAttribute("Type", selectedMasterrecordType);
@@ -90,8 +88,8 @@ public class GenerateXmlFile {
             Element orderTypeElement = doc.createElement("OrderType");
             rootElement.appendChild(orderTypeElement);
             orderTypeElement.setAttribute("Type", selectedOrderType);
-            
-            
+
+
             Element field1Element = doc.createElement("Field1");
             field1Element.appendChild(doc.createTextNode("Value1")); // Replace with field1Value
             masterrecordElement.appendChild(field1Element);
@@ -104,7 +102,7 @@ public class GenerateXmlFile {
             Transformer transformer = transformerFactory.newTransformer();
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
             DOMSource source = new DOMSource(doc);
-            
+
 
             StreamResult result = new StreamResult(new File(filePath));
             transformer.transform(source, result);
@@ -124,10 +122,10 @@ public class GenerateXmlFile {
         String headerRecordTypeName = selectedMasterrecordType;
         String headerOrderType = selectedOrderType;
 
-        String filePath = "C:\\Users\\ahelmbe\\Downloads\\XMLOutput\\Test2.xml";
+        String filePath = "C:\\Users\\ahelmbe\\Downloads\\XMLOutput\\Test4.xml";
 
-        GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType,selectedOrderType, headerSource, headerDestination,headerRecordTypeName,
-                headerSequence,filePath, headerOrderType );
+        GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrderType, headerSource, headerDestination, headerRecordTypeName,
+                headerSequence, headerOrderType, filePath);
         generator.generateXmlFile();
     }
 }
