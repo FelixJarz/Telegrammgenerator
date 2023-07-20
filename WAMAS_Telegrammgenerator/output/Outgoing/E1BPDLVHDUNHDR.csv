@@ -1,0 +1,6 @@
+# E1BPDLVHDUNHDR;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Outbound order number;OutboundOrder;oboNo;;S;20;0;X;;The outbound order number is part of the unique identifier of the outbound order.;;DELIV_NUMB
+2;External LU-ID;LoadUnit;extLuId;;S;20;0;X;;This information is not analyzed by the system and has no controlling effect.;;HDL_UNIT_EXID
+3;Kind of external HU identification;;;;S;1;0;X;;;;HDL_UNIT_EXID_TY
+4;Packaging container;;;;S;18;0;X;;;;SHIP_MAT
+5;Packaging kind;;;;S;4;0;X;;;;SH_MAT_TYP

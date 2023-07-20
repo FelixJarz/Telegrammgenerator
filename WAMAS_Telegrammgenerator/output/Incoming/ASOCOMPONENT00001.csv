@@ -1,0 +1,8 @@
+# ASOCOMPONENT00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;AssemblyComponent;compItem.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Assembly order;AssemblyComponent;AssemblyActivity.AssemblyOrder.orderNo;assemblyOrderNo;S;20;0;X;X;The assembly order number is part of the unique identifier of the assembly order.;
+3;Kit component number;AssemblyComponent;compNo;assemblyComponentNo;N;3;0;X;;The ID of the assembly component.;
+4;Kit component item number;StockObject;sia.pkv.Item.itemNo;itemNo;S;20;0;X;X; Is a part of the unique identification of an item. ;
+5;Kit component variant;StockObject;sia.pkv.Item.variant;variant;S;10;0;X;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+6;BQU / WQU;StockObject;sia.pkv.numBquWqu;numBquWqu;D;12;3;;;Defines the number of base quantity units for the warehouse quantity as a factor. This value is calculated automatically and cannot be changed by the user.This factor is stored redundantly to gain performance during the process and in dialogs.To avoid rounding errors, the number of dual quantity units is stored as a fraction.;
+7;Quantity per kit;;;assemblyComponentKitQty;D;12;0;X;;Quantity of components per kit (in BQU);

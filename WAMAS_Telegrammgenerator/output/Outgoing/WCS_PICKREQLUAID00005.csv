@@ -1,0 +1,4 @@
+# WCS_PICKREQLUAID00005;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Picking order;PickingOrder;orderId;orderId;S;10;0;X;;The unique ID of this picking order.;
+2;Loading aid;LoadUnit;LoadAid.loadAidId;loadAidId;S;10;0;X;X;Unique identification of a loading aid (see LoadAid).;
+3;Loading unit cubature;LoadUnit;LoadUnitCubature.cubatureId;cubatureId;S;10;0;;X;Unique identifier of the loading unit cubature.;

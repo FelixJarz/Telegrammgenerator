@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This sample file contains a system message with a transport demand sent 
+	to WCS. -->
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<header>
+			<FULL>
+				<HEADER_SOURCE>WCS1</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_CREATIONTIME>20140618163512</HEADER_CREATIONTIME>
+				<HEADER_SEQUENCE>1</HEADER_SEQUENCE>
+				<HEADER_RECORDTYPENAME>WCS_TRANSPORTDEMAND00005</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<WCS_TRANSPORTDEMAND00005>
+				<stoLocId>WCS1-IN-1</stoLocId>
+				<luOrigin>Test Center</luOrigin>
+				<luId>000000000000000220</luId>
+				<loadAidId>ISO1</loadAidId>
+				<cubatureId>ISO1_50</cubatureId>
+				<barcodes>2634789653452, 3947589231548, 9387452369456</barcodes>
+			</WCS_TRANSPORTDEMAND00005>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>

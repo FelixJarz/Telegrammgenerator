@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="ASO00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="Amount_baseQty" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="assemblyOrderNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="assemblyOrderType" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="batch" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbDate" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="cdNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="csia1" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia10" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia11" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia12" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia13" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia14" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia15" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia16" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia17" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia18" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia19" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia2" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia20" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia3" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia4" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia5" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia6" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia7" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia8" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia9" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="gow" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="numBquWqu" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="prodDate" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="reservationNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stockRating" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="sysPartnerStockGroup" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="whLoc" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="ASOCOMPONENT00001" type="ASO00001_ASOCOMPONENT00001" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="ASOCONSUMABLES00001" type="ASO00001_ASOCONSUMABLES00001" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="ASOPARTNER00001" type="ASO00001_ASOPARTNER00001" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ASO00001_ASOCOMPONENT00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="assemblyComponentKitQty" type="DECIMAL_12_0" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="assemblyComponentNo" type="NUMERIC_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="assemblyOrderNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="numBquWqu" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ASO00001_ASOCONSUMABLES00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="assemblyConsumablesNo" type="DECIMAL_3_0" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="assemblyOrderNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ASO00001_ASOPARTNER00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="assemblyOrderNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="partnerId" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="roleKind" type="ENUM_WoPartnerRoleKind_IC" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,6 @@
+# E1KONP;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Condition type;;;;S;4;0;X;;;;KSCHL
+2;Condition unit;;;;S;3;0;X;;;;KMEIN
+3;Rate (condition quantity or percentage);;;;D;16;2;X;;;;KBETR
+4;Condition pricing unit;;;;D;5;0;X;;;;KPEIN
+5;Rate unit (currency or percentage);;;;S;5;0;X;;;;KONWA

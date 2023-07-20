@@ -1,0 +1,4 @@
+# ASRS_RELOCATIONREQACK00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;LU-ID;LoadUnit;luId;luId;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+2;Relocation state;;;status;E;7;0;X;;It refers to the state of the relocation.;com.wamas.wms.biz.asrs.lib.di.relocationrequest.AsrsRelocationRequestStatus
+3;Error reason;;;reason;S;100;0;;;It refers to the reason for an error during a relocation.;

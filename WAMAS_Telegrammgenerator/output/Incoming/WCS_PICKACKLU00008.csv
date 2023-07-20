@@ -1,0 +1,15 @@
+# WCS_PICKACKLU00008;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Picking order;PickingOrder;orderId;orderId;S;10;0;X;;The unique ID of this picking order.;
+2;LU-ID;LoadUnit;luId;luId;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+3;LU origin;LoadUnit;luOrigin;luOrigin;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+4;Loading aid;LoadUnit;LoadAid.loadAidId;loadAidId;S;10;0;X;X;Unique identification of a loading aid (see LoadAid).;
+5;Loading unit cubature;LoadUnit;LoadUnitCubature.cubatureId;cubatureId;S;10;0;X;X;Unique identifier of the loading unit cubature.;
+6;LU location;WcsPickAckLu;StoLoc.stoLocId;stoLocId;S;20;0;X;X;The identifier of the storage location per warehouse location.;
+7;Gross weight;StockObjectBundle;keyData.grossWeight.value;grossWeight;D;12;3;;;Specifies the value (or amount) in weight unit which was entered by a user.;
+8;Gross weight unit;StockObjectBundle;keyData.grossWeight.unit.id;grossWeightUnit;S;5;0;;X;Uniquely identifies the weight unit.;
+9;Origin of gross weight;StockObjectBundle;keyData.weightKind;weightKind;E;10;0;;;The kind of the gross weight.;
+10;LU finished;WcsPickAckLu;luFinished;luFinished;B;1;0;X;;Represents a boolean value, which is false by default.;
+11;LU-ID;LoadUnit;master.luId;masterLuId;S;20;0;;X;Is part of the unique identification of a stock object bundle.;
+12;LU origin;LoadUnit;master.luOrigin;masterLuOrigin;S;20;0;;X;Is part of the unique identification of a stock object bundle.;
+13;Shipping label printed;WcsPickAckLu;shippingLabelPrinted;shippingLabelPrinted;B;1;0;;;Represents a boolean value, which is false by default.;
+14;Packing list printed;WcsPickAckLu;packingListPrinted;packingListPrinted;B;1;0;;;Represents a boolean value, which is false by default.;

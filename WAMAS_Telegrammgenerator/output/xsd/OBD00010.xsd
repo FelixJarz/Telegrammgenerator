@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="OBD00010">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="cashOnDeliveryUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="cashOnDeliveryValue" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="category" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="conditionSite" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="deliveryTime" type="WamasDateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="departureTime" type="WamasDateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="dock" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="loadingTime" type="WamasDateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="obdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="obdSplitAllowed" type="ENUM_RestrictionKind_UNY" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="obdTypeId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="outgoingArea" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="planLoadDepTime" type="WamasDateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="planLoadLoadId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="planLoadLoadingSeq" type="NUMERIC_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="planLoadSysPartner" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="planLoadTemplate" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="planLoadUnloadingSeq" type="NUMERIC_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="priority" type="NUMERIC_1" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="reductionAllowed" type="ENUM_RestrictionKind_UNY" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="roundingByRules" type="ENUM_RoundingKind_UNY" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="shippingCategory" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="shippingMethod" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stagingArea" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stagingTime" type="WamasDateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stoLocId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="termOfDelivery" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="whLoc" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="OBDEXTREF00006" type="OBD00010_OBDEXTREF00006" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="OBDL00007" type="OBD00010_OBDL00007" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="OBDPARTNER00008" type="OBD00010_OBDPARTNER00008" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="OBDTEXT00001" type="OBD00010_OBDTEXT00001" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="OBD00010_OBDEXTREF00006">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="extRefKey" type="STRING_64" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="extRefVal1" type="STRING_512" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="extRefVal2" type="STRING_512" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="obdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="OBD00010_OBDL00007">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="OutboundDeliveryLine_goodsOwnerReplacementKind" type="ENUM_ReplacementKind_UNA" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="OutboundDeliveryLine_stockRatingReplacementKind" type="ENUM_ReplacementKind_UNA" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="accessStrat" type="ENUM_AccessStrategyExtended_UFL" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="baseQty" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="batch" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbDate" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="cd1" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="cdNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="csia1" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia10" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia11" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia12" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia13" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia14" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia15" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia16" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia17" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia18" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia19" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia2" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia20" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia3" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia4" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia5" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia6" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia7" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia8" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia9" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="deliveryToleranceLower" type="DECIMAL_5_2" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="deliveryToleranceUpper" type="DECIMAL_5_2" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="equPerStrat" type="ENUM_EquivalentPeriodStrategyExtended_UMS" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="gow" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemReplacementKind" type="ENUM_ReplacementKind_UNA" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="lineType" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="numBquWqu" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="obdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="orderedLuId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="pickingGroup" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="prodDate" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="remainingLifeUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="remainingLifeValue" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="reservationNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stockGroupId" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stockRating" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="sysPartnerLine" type="NUMERIC_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="tgow" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="wholeLuResMode" type="ENUM_WholeLuReservationMode_UBSMN" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="OBDLEXTREF00006" type="OBD00010_OBDLEXTREF00006" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="OBDLTEXT00001" type="OBD00010_OBDLTEXT00001" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="OBD00010_OBDLEXTREF00006">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="extRefKey" type="STRING_64" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="extRefVal1" type="STRING_512" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="extRefVal2" type="STRING_512" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="obdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="sysPartnerLine" type="NUMERIC_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="OBD00010_OBDLTEXT00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="langId" type="STRING_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="obdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="sequence" type="NUMERIC_7" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="sysPartnerLine" type="NUMERIC_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="textLineText" type="STRING_256" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="textLineTypeClientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="textLineTypeId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="OBD00010_OBDPARTNER00008">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="city" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="country" type="STRING_2" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="district" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="email" type="STRING_255" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="exchangePartner" type="ENUM_Tristate_UYN" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="fax" type="STRING_40" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="gln" type="STRING_13" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="language" type="STRING_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="name" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="name2" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="name3" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="name4" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="obdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="partnerId" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="phone" type="STRING_40" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="region" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="roleKind" type="ENUM_ObdPartnerRoleKind_CSCFOIF" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="street" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="timeZone" type="STRING_100" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="title" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="webSite" type="STRING_40" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="zipCode" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="OBD00010_OBDTEXT00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="langId" type="STRING_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="obdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="sequence" type="NUMERIC_7" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="textLineText" type="STRING_256" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="textLineTypeClientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="textLineTypeId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

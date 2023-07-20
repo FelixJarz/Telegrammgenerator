@@ -1,0 +1,4 @@
+# WCS_REPLDEMANDACK00006;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;ID;WcsReplDemand;replDemandId;id;N;18;0;X;;Replenishment demand id;
+2;Delivered quantity;WcsReplDemand;delivered.baseQty;deliveredQty;D;12;3;X;;The item quantity specification in its administration unit (base quantity unit). All state calculations, delivery fulfilled checks and so on are based on the base quantity. The dual quantity has no effect for those calculations. ;
+3;# Transport orders;WcsReplDemand;deliveredTpo;deliveredTpo;N;5;0;X;;Delivered transport orders specifically generated for this demand.;

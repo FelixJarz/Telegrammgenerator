@@ -1,0 +1,4 @@
+# E1BPE1MATHEAD;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Item number;Item;itemNo;;S;20;0;X;; Is a part of the unique identification of an item. ;;MATERIAL
+2;Goods category;Item;goodsCategory.id;;S;10;0;X;X; Is part of the unique identification of a goods category. ;;MATL_GROUP
+3;Item type;Item;itemType.id;;S;10;0;X;X;Unique identifier of an ItemType.;;MATL_TYPE

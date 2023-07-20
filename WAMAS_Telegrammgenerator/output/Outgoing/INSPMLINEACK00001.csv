@@ -1,0 +1,5 @@
+# INSPMLINEACK00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Transaction ID;;;transactionId;S;25;0;X;;Transaction ID of received message;
+2;Line;;;line;N;5;0;X;;Error line;
+3;Error Category;;;errorCategory;E;30;0;X;;Error category;com.wamas.wms.core.di.InSpmAckErrorCategory
+4;Error description;;;errorDescription;S;200;0;X;;Error description;

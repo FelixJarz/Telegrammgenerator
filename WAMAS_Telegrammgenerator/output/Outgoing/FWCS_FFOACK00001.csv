@@ -1,0 +1,10 @@
+# FWCS_FFOACK00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;FulfillmentOrder;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Fulfillment order;FulfillmentOrder;orderId;orderId;S;20;0;X;;Fulfillment order ID;
+3;LU-ID;FulfillmentOrder;luId;luId;S;20;0;;;ID of the LU. Used in case of IG or replenishment.;
+4;Reference number;FulfillmentOrder;orderReference;orderReference;S;20;0;;;Optional reference number for the order from the system partner.;
+5;Fulfillment order stage;FwcsFfoAckOutSpmDest;ffoStage;stage;E;24;0;X;;FFO stage;
+6;Start time;FulfillmentOrder;startTime;startTime;DT;14;0;;;Start time;
+7;Finish time;FulfillmentOrder;finishTime;finishTime;DT;14;0;;;Finish time;
+8;Full;LoadUnit;OgLuExt.state.full;luFull;B;1;0;;;Tells if the OgLuExt has been declared as full.;
+9;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

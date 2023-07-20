@@ -1,0 +1,26 @@
+# ITEMQTYUNIT00008;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;ItemQtyUnit;PackagingVersion.Item.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Item number;ItemQtyUnit;PackagingVersion.Item.itemNo;itemNo;S;20;0;X;X; Is a part of the unique identification of an item. ;
+3;Variant;ItemQtyUnit;PackagingVersion.Item.variant;variant;S;10;0;X;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+4;Denominator;ItemQtyUnit;factor.denominator;denominator;D;9;3;X;;The bottom of the fraction.;
+5;Quantity unit;ItemQtyUnit;qtyUnit.id;qtyUnit;S;5;0;X;X; Is part of the unique identification of a quantity unit. ;
+6;Numerator;ItemQtyUnit;factor.numerator;numerator;D;9;3;X;;Defines the number of quantity units in the reference unit. ;
+7;Reference quantity unit;ItemQtyUnit;referenceQtyUnit.id;referenceQtyUnit;S;5;0;?;X; Is part of the unique identification of a quantity unit. ;
+8;Gross weight;ItemQtyUnit;grossWeight.value;grossWeight;D;12;3;;;Specifies the value (or amount) in weight unit which was entered by a user.;
+9;Gross weight unit;ItemQtyUnit;grossWeight.unit.id;grossWeightUnit;S;5;0;;X;Uniquely identifies the weight unit.;
+10;Length;ItemQtyUnit;length.value;length;D;12;3;;;Specifies the value (or amount) in length unit which was entered by a user.;
+11;Length unit;ItemQtyUnit;length.unit.id;lengthUnit;S;5;0;;X;Uniquely identifies the length unit.;
+12;Width;ItemQtyUnit;width.value;width;D;12;3;;;Specifies the value (or amount) in length unit which was entered by a user.;
+13;Width unit;ItemQtyUnit;width.unit.id;widthUnit;S;5;0;;X;Uniquely identifies the length unit.;
+14;Height;ItemQtyUnit;height.value;height;D;12;3;;;Specifies the value (or amount) in length unit which was entered by a user.;
+15;Height unit;ItemQtyUnit;height.unit.id;heightUnit;S;5;0;;X;Uniquely identifies the length unit.;
+16;Volume;ItemQtyUnit;volume.value;volume;D;12;3;;;Specifies the value (or amount) in volume unit which was entered by a user.;
+17;Volume unit;ItemQtyUnit;volume.unit.id;volumeUnit;S;5;0;;X;Uniquely identifies the volume unit.;
+18;Stacking factor;ItemQtyUnit;stackingFactor;stackingFactor;N;3;0;;;The stacking factor is the indication of the percentage by which the volume is increased at stacking a second item quantity unit of the same item (e.g. bucket: stacking factor 3% 1 bucket 100% 2 buckets: 103% with each bucket, the volume is increased by 3% of a bucket). The stacking factor "can be null", that means if it is null, the stacking factor is not used by the volume calculation (min. value = 1%).;
+19;Whole loading unit;ItemQtyUnit;wholeLu;wholeLu;B;1;0;;;Indicates whether this item quantity unit is used to mark a loading unit as whole loading unit for incoming goods process. It's also used to calculate the number of whole loading units for capacatiy planing.;
+20;Layer;ItemQtyUnit;layer;layer;B;1;0;;;Indicates whether this item quantity represents one layer of a loading unit.;
+21;Default loading unit cubature;ItemQtyUnit;loadUnitCubature.cubatureId;loadUnitCubature;S;10;0;;X;Unique identifier of the loading unit cubature.;
+22;Empties Item number;ItemQtyUnit;empties.itemNo;emptiesItemNo;S;20;0;;X; Is a part of the unique identification of an item. ;
+23;Empties Variant;ItemQtyUnit;empties.variant;emptiesVariant;S;10;0;;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+24;Is sales quantity unit;ItemQtyUnit;isSalesQtyUnit;isSalesQtyUnit;B;1;0;;;If true means is a sales quantity unit, otherwise not.;
+25;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

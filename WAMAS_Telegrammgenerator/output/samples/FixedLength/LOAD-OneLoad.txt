@@ -1,0 +1,4 @@
+#This sample file contains one load with one consignment.
+HOST      WAMAS                                   120180924143413LOAD00008                     LD1000001               1WAMAS     20180924143421Default   Default   0NORMAL
+HOST      WAMAS                                   220180924143413CONSIGNMENT00007              LD1000001               1WAMAS     1000001             WAMAS         1    1          2018092415414320180924144143201809241441430OG                  SA 1      OG-01               
+HOST      WAMAS                                   320180924143413LOADTRANSPORTVEHICLE00006     LD1000001               1WAMAS              1Truck           0NORMAL

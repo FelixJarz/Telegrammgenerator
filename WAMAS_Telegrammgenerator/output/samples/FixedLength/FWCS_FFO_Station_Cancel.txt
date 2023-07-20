@@ -1,0 +1,2 @@
+#This sample file cancels one FWCS fulfillment order station line
+WMS       WAMAS     1                             120210823000000FWCS_FFOSTATIONLINECANCEL000011         4                   PBL-02                                  NORMAL

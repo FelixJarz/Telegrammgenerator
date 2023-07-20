@@ -1,0 +1,8 @@
+# E1WVINH;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Inventory demand number;InventoryDemand;invNo;;S;20;0;X;;Is part of the unique identification of the InventoryDemand.;;IBLNR
+2;SAP storage location;SysPartnerStockGroup;sapStockAttr.sapStgeLoc;;S;20;0;X;;Is the unique identification of a SAP storage location.;;LGORT
+3;Earliest release time;InventoryDemand;earliestRelTime;;DA;8;0;;;A datetime provides the day, month, year and hour, minute and second of a point in time.;;GIDAT
+4;SAP plant;SysPartnerStockGroup;sapStockAttr.sapPlant;;S;10;0;X;;Is the unique identification of a SAP plant.;;FILIALE
+5;User identifier;SystemUser;userId;;S;20;0;X;;A human readable unique name of a user. This name is typically used to write activity protocol or history entries.;;DNAME
+6;Date of inventory demand completion;;;;DA;8;0;X;;;;DDATE
+7;Time of inventory demand completion;;;;S;6;0;X;;;;DTIME

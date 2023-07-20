@@ -1,0 +1,7 @@
+# WCS_PICKREQLINEEXTREF00005;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Picking order;PickingOrder;orderId;orderId;S;10;0;X;;The unique ID of this picking order.;
+2;Picking order line;;;lineId;N;5;0;X;;Sample RecordTypeTag.createNonModeled(...) with documentation text;
+3;Key;ExternalReference;extRefKey;extRefKey;S;64;0;;;The external reference key;
+4;Value 1;ExternalReference;value1;extRefVal1;S;512;0;;;The first value associated to the key. Can be empty.;
+5;Value 2;ExternalReference;value2;extRefVal2;S;512;0;;;The second value associated to the key. Can be empty.;
+6;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

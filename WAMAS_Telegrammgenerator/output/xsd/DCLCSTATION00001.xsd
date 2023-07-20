@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="DCLCSTATION00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="DcLcStation_forceSequential" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="DcLcStation_locationOut_stoLocId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="DcLcStation_location_stoLocId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="DcLcStation_masterpickface_stoLocId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="DcLcStation_pickingArea_WhLoc_whLocId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DcLcStation_pickingArea_areaId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="DcLcStation_stationId" type="STRING_25" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="DCLCCFG00001" type="DCLCSTATION00001_DCLCCFG00001" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="DCLCSTATION00001_DCLCCFG00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="DcLcCfg_WhLoc_whLocId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DcLcCfg_cfgId" type="STRING_25" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DcLcCfg_dcCfg_id" type="STRING_25" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DcLcCfg_hostIp" type="STRING_40" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DcLcCfg_port" type="DECIMAL_6_0" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="DCLCLINE00001" type="DCLCSTATION00001_DCLCLINE00001" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="DCLCSTATION00001_DCLCGADGET00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="DcLcGadget_gadgetId" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DcLcGadget_location_stoLocId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DcLcGadget_pickSequence" type="DECIMAL_10_0" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="DcLcGadget_station_stationId" type="STRING_25" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DcLcGadget_type" type="ENUM_GadgetType_PMS" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="DCLCGADGETASSOCIATION00001" type="DCLCSTATION00001_DCLCGADGETASSOCIATION00001" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="DCLCSTATION00001_DCLCGADGETASSOCIATION00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="DcLcGadgetAssociation_associated_gadgetId" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DcLcGadgetAssociation_associated_line_cfg_WhLoc_whLocId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DcLcGadgetAssociation_associated_line_cfg_cfgId" type="STRING_25" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DcLcGadgetAssociation_associated_line_lineId" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="DCLCSTATION00001_DCLCLINE00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="DcLcLine_lineId" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="DCLCGADGET00001" type="DCLCSTATION00001_DCLCGADGET00001" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

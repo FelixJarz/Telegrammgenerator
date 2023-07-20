@@ -1,0 +1,3 @@
+# ASRS_RETRORDERACK00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Retrieval order number;RetrievalOrder;retrievalOrderNo;retrievalOrderNo;S;20;0;X;;Each Retrieval Order has a unique identifier the retrieval order number;
+2;State;RetrievalOrder;state;state;E;10;0;X;;Defines the possible states for retrieval order state.;

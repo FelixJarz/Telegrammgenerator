@@ -1,0 +1,5 @@
+# E1BPOBDLVITEMORG;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Outbound order line;OutboundOrderLine;line;;S;10;0;X;;It is part of the unique identification of the outbound order line. When the line was created via the interface, it is equal to the 'sysPartnerLine'.;;ITM_NUMBER
+2;Outbound order number;OutboundOrder;oboNo;;S;20;0;X;;The outbound order number is part of the unique identifier of the outbound order.;;DELIV_NUMB
+3;Variant;Item;variant;;S;10;0;X;; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;;PLANT
+4;SAP storage location;SysPartnerStockGroup;sapStockAttr.sapStgeLoc;;S;20;0;X;;Is the unique identification of a SAP storage location.;;STGE_LOC

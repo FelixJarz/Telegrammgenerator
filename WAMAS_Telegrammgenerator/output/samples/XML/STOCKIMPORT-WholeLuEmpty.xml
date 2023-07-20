@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<!--Stock object has maximum quantity. -->
+		<header>
+			<FULL>
+				<HEADER_SOURCE>HOST</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_SEQUENCE>0</HEADER_SEQUENCE>
+				<HEADER_CREATIONTIME>20180913115656</HEADER_CREATIONTIME>
+				<HEADER_RECORDTYPENAME>STOCKIMPORT00010</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<STOCKIMPORT00010>
+				<whLoc>Test Center</whLoc>
+				<stoLocId>1-01-01-08</stoLocId>
+				<clientId>1</clientId>
+				<itemNo>100010001</itemNo>
+				<variant>00000</variant>
+				<numBquWqu>10.000</numBquWqu>
+				<stockRating>100</stockRating>
+				<gow>1_2</gow>
+				<batch>test batch</batch>
+				<bbDate>20200522</bbDate>
+				<prodDate>20190501</prodDate>
+				<reservationNo>test resNo</reservationNo>
+				<csia1></csia1>
+				<csia2></csia2>
+				<csia3></csia3>
+				<csia4></csia4>
+				<csia5></csia5>
+				<csia6></csia6>
+				<csia7></csia7>
+				<csia8></csia8>
+				<csia9></csia9>
+				<csia10></csia10>
+				<csia11></csia11>
+				<csia12></csia12>
+				<csia13></csia13>
+				<csia14></csia14>
+				<csia15></csia15>
+				<csia16></csia16>
+				<csia17></csia17>
+				<csia18></csia18>
+				<csia19></csia19>
+				<csia20></csia20>
+				<registrationTime>20110601130000</registrationTime>
+				<baseQty>10</baseQty>
+				<dualQty></dualQty>
+				<luId>119832</luId>
+				<loadAidId>Box_1</loadAidId>
+				<cubatureId>Box_100</cubatureId>
+				<systemLu>0</systemLu>
+				<lastInvTime>20110531161514</lastInvTime>
+				<layout>Box_4</layout>
+				<luComp>1</luComp>
+				<wholeLu></wholeLu>
+				<recordState>NORMAL</recordState>
+			</STOCKIMPORT00010>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>

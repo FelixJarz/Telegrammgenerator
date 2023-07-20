@@ -1,0 +1,5 @@
+# E1SHP_OBDLV_SPLIT_DECENTRAL;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Outbound order number;OutboundOrder;oboNo;;S;20;0;X;;The outbound order number is part of the unique identifier of the outbound order.;;DELIVERY
+2;Outbound delivery number;OutboundDelivery;obdNo;;S;20;0;X;;Each outbound delivery has an unique identifier, the outbound delivery number. Outbound deliveries of different clients and system partners can however have the same delivery number.;;DELIVERYNEW
+3;Split items belong to;;;;S;1;0;X;;;;DELIVERYITEMSBELONGTO
+4;Business process;;;;S;4;0;X;;;;BUSINESSPROCESS

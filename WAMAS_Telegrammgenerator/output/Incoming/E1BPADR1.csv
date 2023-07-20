@@ -1,0 +1,18 @@
+# E1BPADR1;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Partner address number;;;;S;10;0;X;;;;ADDR_NO
+2;Name;PartnerAddress;addr.name;;S;35;0;X;;Name of a company or a person.;;NAME
+3;Name 2;PartnerAddress;addr.name2;;S;35;0;X;;Name of a company or a person.;;NAME_2
+4;Name 3;PartnerAddress;addr.name3;;S;35;0;X;;Name of a company or a person.;;NAME_3
+5;Name 4;PartnerAddress;addr.name4;;S;35;0;X;;Name of a company or a person.;;NAME_4
+6;Country;PartnerAddress;addr.Country.countryId;;S;2;0;X;X;The unique identifier for a country. ISO 3166-1 Alpha 2 Code.;;COUNTRY
+7;City;PartnerAddress;addr.city;;S;35;0;X;;It is part of the address.;;CITY
+8;ZIP code;PartnerAddress;addr.zipCode;;S;10;0;X;;ZIP code of the city origin.;;POSTL_COD1
+9;Street;PartnerAddress;addr.street;;S;35;0;X;;Street and street (house) number or post office box.;;STREET
+10;Language key;;;;S;6;0;X;;;;LANGU
+11;Phone;PartnerAddress;addr.phone;;S;40;0;X;;Phone number.;;TEL1_NUMBR
+12;Phone number extension;;;;S;10;0;X;;;;TEL1_EXT
+13;Fax;PartnerAddress;addr.fax;;S;40;0;X;;Fax number.;;FAX_NUMBER
+14;Fax number extension;;;;S;10;0;X;;;;FAX_EXTENS
+15;House number;;;;S;10;0;X;;;;HOUSE_NO
+16;District;PartnerAddress;addr.district;;S;35;0;X;;The district of an address;;DISTRICT
+17;Region;PartnerAddress;addr.region;;S;35;0;X;;Possible content: province, federal state, canton, area, county;;REGION

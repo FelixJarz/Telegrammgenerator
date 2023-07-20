@@ -1,0 +1,11 @@
+# ITEMWHLOC00005;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;ItemWhLoc;Item.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Item number;ItemWhLoc;Item.itemNo;itemNo;S;20;0;X;X; Is a part of the unique identification of an item. ;
+3;Variant;ItemWhLoc;Item.variant;variant;S;10;0;X;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+4;Warehouse location;ItemWhLoc;WhLoc.whLocId;whLoc;S;20;0;X;X;The identifier of the warehouse location.;
+5;Delivery category;ItemWhLoc;delCat.id;delCat;S;10;0;;X;The identification of the delivery category.;
+6;Incoming goods area;ItemWhLoc;defIgArea.areaId;defIgArea;S;10;0;;X;A unique ID for this incoming goods area within the WhLoc;
+7;Minimum stock level (BQU);ItemWhLoc;minimumStock;minStock;D;12;3;;;The smallest quantity of base quantity units of an item that should be available in a warehouse.;
+8;Critical stock level (BQU);ItemWhLoc;criticalStock;criticalStock;D;12;3;;;Safety quantity for identifying potential minimum stock levels as early as possible.;
+9;Delivery planning category;ItemWhLoc;delPlanCat.id;delPlanningCat;S;10;0;;X;The identification of the delivery category.;
+10;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

@@ -1,0 +1,4 @@
+# INSPMACK00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Transaction ID;;;transactionId;S;25;0;X;;Transaction ID of received message;
+2;State;;;status;E;10;0;X;;Processing state;com.wamas.wms.core.di.InSpmAckStatus
+3;Master record type;;;referencedRecordType;S;30;0;X;;Master record type of received message;

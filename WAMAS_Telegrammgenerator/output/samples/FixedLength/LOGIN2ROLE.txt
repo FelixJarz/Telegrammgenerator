@@ -1,0 +1,2 @@
+#This sample file contains a LOGIN2ROLE for administrators.
+HOST      WAMAS                                   120180926125115LOGIN2ROLE00005               admin               DESKTOPAdministrator       0

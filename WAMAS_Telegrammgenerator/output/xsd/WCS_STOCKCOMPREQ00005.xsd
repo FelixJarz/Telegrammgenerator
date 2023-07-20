@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="WCS_STOCKCOMPREQ00005">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="pkv" type="NUMERIC_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="requestNo" type="NUMERIC_7" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

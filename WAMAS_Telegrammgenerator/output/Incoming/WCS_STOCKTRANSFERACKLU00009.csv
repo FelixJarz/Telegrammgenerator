@@ -1,0 +1,12 @@
+# WCS_STOCKTRANSFERACKLU00009;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Request number;;;requestNo;N;7;0;X;;;
+2;Sequence number;WcsStockTransferLu;seqNo;seqNo;N;5;0;X;;Sequence number;
+3;LU-ID;LoadUnit;luId;luId;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+4;LU origin;LoadUnit;luOrigin;luOrigin;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+5;Finished;;;completeFlag;B;1;0;X;;;
+6;Remaining quantity;;;remainingFlag;B;1;0;X;;;
+7;Storage location;StockObject;StockObjectBundle.stoLoc.stoLocId;luLocation;S;20;0;;X;The identifier of the storage location per warehouse location.;
+8;LU-ID;LoadUnit;master.luId;masterLuId;S;20;0;;X;Is part of the unique identification of a stock object bundle.;
+9;LU origin;LoadUnit;master.luOrigin;masterLuOrigin;S;20;0;;X;Is part of the unique identification of a stock object bundle.;
+10;Error;;;luError;B;1;0;;;;
+11;Error description;;;errorReason;S;200;0;;;;

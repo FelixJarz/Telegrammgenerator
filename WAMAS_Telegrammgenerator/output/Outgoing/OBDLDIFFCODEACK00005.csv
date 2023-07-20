@@ -1,0 +1,8 @@
+# OBDLDIFFCODEACK00005;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;ObdlDifferenceCode;OutboundDeliveryLine.OutboundDelivery.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Outbound delivery number;ObdlDifferenceCode;OutboundDeliveryLine.OutboundDelivery.obdNo;obdNo;S;20;0;X;X;Each outbound delivery has an unique identifier, the outbound delivery number. Outbound deliveries of different clients and system partners can however have the same delivery number.;
+3;System partner;ObdlDifferenceCode;OutboundDeliveryLine.OutboundDelivery.sysPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;System partner line;ObdlDifferenceCode;OutboundDeliveryLine.sysPartnerLine;sysPartnerLine;N;10;0;X;;The associated line of the initial system partner telegram. If a delivery line is added within WAMAS, then this number is set to 0.;
+5;Outbound delivery line;ObdlDifferenceCode;OutboundDeliveryLine.line;line;N;10;0;X;X;It is part of the unique identification of the outbound delivery line. When the line was created via the interface, it is equal to the 'sysPartnerLine'.;
+6;Quantity;ObdlDifferenceCode;diffAmount.baseQty;baseQty;SD;14;3;X;;The item quantity specification in its administration unit (base quantity unit). All state calculations, delivery fulfilled checks and so on are based on the base quantity. The dual quantity has no effect for those calculations. ;
+7;Difference code OG;ObdlDifferenceCode;diffCode.diffCodeId;diffCodeId;S;20;0;X;X;The ID of the outgoing goods difference code.;

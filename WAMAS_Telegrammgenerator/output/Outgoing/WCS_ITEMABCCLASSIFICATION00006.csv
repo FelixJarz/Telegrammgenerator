@@ -1,0 +1,7 @@
+# WCS_ITEMABCCLASSIFICATION00006;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;Client;clientId;clientId;S;10;0;X;;Is the unique identification of a client.;
+2;Item number;Item;itemNo;itemNo;S;20;0;X;; Is a part of the unique identification of an item. ;
+3;Variant;Item;variant;variant;S;10;0;X;; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+4;ABC value;ItemAbcClassification;abcValue;abcValue;N;3;0;X;;The ABC value is a simplified measurement for classifying the rating of a thing. Typical examples in logistics are the ratings of storage locations and items.A = 1 - 333 (good)B = 334 - 666 (medium)C = 667 - 999 (poor);
+5;Strategic warehouse area;ItemAbcClassification;stratArea.areaId;stratArea;S;10;0;;X;ID;
+6;Data state;;;state;E;6;0;X;;;com.wamas.wms.core.di.recordtypes.WcsRecordTypeState

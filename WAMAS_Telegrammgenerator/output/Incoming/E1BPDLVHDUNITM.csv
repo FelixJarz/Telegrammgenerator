@@ -1,0 +1,8 @@
+# E1BPDLVHDUNITM;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Inbound delivery number;InboundDelivery;ibdNo;;S;20;0;X;;The inbound delivery number is part of the unique identifier of the inbound delivery.;;DELIV_NUMB
+2;Inbound delivery line;InboundDeliveryLine;line;;S;10;0;X;;The line number is part of the unique identifier of the inbound delivery line.;;DELIV_ITEM
+3;LU-ID of advised LU;AdvisedLu;luId;;S;20;0;X;;The LU-ID of the physical LU;;HDL_UNIT_EXID_INTO
+4;Item number;Item;itemNo;;S;20;0;X;; Is a part of the unique identification of an item. ;;MATERIAL
+5;Batch;InboundDeliveryLine;iga.batch;;S;20;0;;;The batch concerning the ordered or delivered goods.;;BATCH
+6;Base quantity unit;Item;baseQtyUnit.id;;S;5;0;X;X; Is part of the unique identification of a quantity unit. ;;BASE_UOM_ISO
+7;Ordered quantity;InboundDeliveryLine;orderAmount;;D;12;3;X;;The order amount copied from the inbound delivery note. This amount must not be changed during processing the delivery line.;;PACK_QTY_BASE

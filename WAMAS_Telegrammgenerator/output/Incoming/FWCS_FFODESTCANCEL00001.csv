@@ -1,0 +1,5 @@
+# FWCS_FFODESTCANCEL00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;FulfillmentOrderDestination;FulfillmentOrder.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Fulfillment order;FulfillmentOrderDestination;FulfillmentOrder.orderId;orderId;S;20;0;X;X;Fulfillment order ID;
+3;Storage location;FulfillmentOrderDestination;stoLoc.stoLocId;stoLocId;S;20;0;X;X;The identifier of the storage location per warehouse location.;
+4;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

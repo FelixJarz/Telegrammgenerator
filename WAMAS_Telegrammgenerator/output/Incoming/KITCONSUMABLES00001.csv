@@ -1,0 +1,8 @@
+# KITCONSUMABLES00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;KitConsumables;Kit.Item.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Item number;KitConsumables;Kit.Item.itemNo;itemNo;S;20;0;X;X; Is a part of the unique identification of an item. ;
+3;Variant;KitConsumables;Kit.Item.variant;variant;S;10;0;X;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+4;Consumables number;KitConsumables;consNo;kitConsumableNo;S;3;0;X;;The ID of the kit consumables;
+5;Consumables item number;KitConsumables;Kit.Item.itemNo;kitConsumableItemNo;S;20;0;X;X; Is a part of the unique identification of an item. ;
+6;Consumables variant;KitConsumables;Kit.Item.variant;kitConsumableVariant;S;10;0;X;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+7;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

@@ -1,0 +1,9 @@
+# E1MARCM;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Function message;;;;S;3;0;X;;;;MSGFN
+2;Variant;Item;variant;;S;10;0;X;; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;;WERKS
+3;Assortment;Item;assortment;;S;10;0;X;;Other End (assortment): Optional grouping of an item.;;LADGR
+4;Warehouse quantity unit;Item;PackagingVersion.whQtyUnit.id;;S;5;0;X;X; Is part of the unique identification of a quantity unit. ;;AUSME
+5;Duration;Item;OgItem.remainingLife.value;;S;12;0;X;;Specifies the value (or amount) in the duration unit entered by the user.;;MAXLZ
+6;Time unit;Item;OgItem.remainingLife.unit;;S;5;0;X;;Other End (unit): Defines the duration unit in which this value (triple) was entered by a user.;;LZEIH
+7;Replacement item;Item;ReplacementItem;;S;20;0;X;;;;NFMAT
+8;Batch stock mode;Item;batchStockMode;;S;1;0;X;;Strategy for registration of the batch in the GUI. Only relevant for dialogs of the domains inventory and stock adjustment.;;XCHPF

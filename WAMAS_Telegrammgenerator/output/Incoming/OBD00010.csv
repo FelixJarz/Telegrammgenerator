@@ -1,0 +1,31 @@
+# OBD00010;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;OutboundDelivery;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Outbound delivery number;OutboundDelivery;obdNo;obdNo;S;20;0;X;;Each outbound delivery has an unique identifier, the outbound delivery number. Outbound deliveries of different clients and system partners can however have the same delivery number.;
+3;Warehouse location;OutboundDelivery;whLoc.whLocId;whLoc;S;20;0;X;X;The identifier of the warehouse location.;
+4;Outbound delivery type;OutboundDelivery;type.obdTypeId;obdTypeId;S;20;0;X;X;The identifier for the outbound delivery type. Each client may maintain multiple, unique delivery types.;
+5;Delivery time;OutboundDelivery;deliveryTime;deliveryTime;DT;14;0;;;The time the delivery reaches the customer.;
+6;Staging time;OutboundDelivery;stagingTime;stagingTime;DT;14;0;;;The date/time when all loading units of this delivery have to be in the staging area.;
+7;Loading time;OutboundDelivery;loadingTime;loadingTime;DT;14;0;;;The date/time when all loading units of this delivery have to be loaded.;
+8;Departure time;OutboundDelivery;departureTime;departureTime;DT;14;0;;;The time the delivery leaves the warehouse.;
+9;Requested shipping method;OutboundDelivery;shippingMethod.methodId;shippingMethod;S;10;0;;X;Unique identification of a shipping method.;
+10;Requested shipping category;OutboundDelivery;reqShippingCategory.categoryId;shippingCategory;S;10;0;;X;Unique identification of a shipping category (see ShippingCategory).;
+11;Priority;OutboundDelivery;priority;priority;N;1;0;;;Defines the priority of this delivery.;
+12;Cash on delivery;OutboundDelivery;cashOnDelivery.value;cashOnDeliveryValue;D;12;3;;;Specifies the value (or amount) in currency unit which was entered by a user.;
+13;Cash on delivery unit;OutboundDelivery;cashOnDelivery.unit.id;cashOnDeliveryUnit;S;5;0;;X;Uniquely identifies the currency unit.;
+14;Delivery condition Site;OutboundDelivery;deCond.site;conditionSite;S;20;0;;;Delivery location;
+15;Terms of delivery;OutboundDelivery;deCond.termOfDelivery.id;termOfDelivery;S;10;0;;X;Part of the unique identifier.;
+16;Delivery category;OutboundDelivery;category.id;category;S;10;0;;X;The identification of the delivery category.;
+17;Outgoing goods area;OutboundDelivery;loadingPoint.area.areaId;outgoingArea;S;10;0;;X;The unique ID of this area within the WhLoc;
+18;Dock;OutboundDelivery;loadingPoint.dock.dockId;dock;S;10;0;;X;The unique ID of the dock;
+19;Staging area;OutboundDelivery;loadingPoint.staging.areaId;stagingArea;S;10;0;;X;Unique ID for the staging area.;
+20;Storage location;OutboundDelivery;loadingPoint.stoLoc.stoLocId;stoLocId;S;20;0;;X;The identifier of the storage location per warehouse location.;
+21;Split allowed;OutboundDelivery;obdRestr.splitAllowed;obdSplitAllowed;E;9;0;;;Defines whether splitting an OBO or OBD is allowed.;
+22;Reduction allowed;OutboundDelivery;obdRestr.reductionAllowed;reductionAllowed;E;9;0;;;Defines if reducing the ordered (released) quantity is allowed.;
+23;Rounding by Rules;OutboundDelivery;roundingByRules;roundingByRules;E;9;0;;;Defines if rounding rules should apply.;
+24;Plan load Departure time;OutboundDelivery;planLoad.departureTime;planLoadDepTime;DT;14;0;;;The time the load leaves the warehouse.;
+25;Plan load Load;OutboundDelivery;planLoad.loadId;planLoadLoadId;S;20;0;;;The load ID identifies the load to which the OBD should be added in case this is requested by the OBD type(e.g. 'load creation kind' = 'predefined').;
+26;Plan load Load template;OutboundDelivery;planLoad.template;planLoadTemplate;S;20;0;;;The load template which should be used in case the load needs to be created.;
+27;Plan load System partner;OutboundDelivery;planLoad.sysPartner;planLoadSysPartner;S;10;0;;;The system partner of the load.;
+28;Plan load Loading sequence;OutboundDelivery;planLoad.loadingSeq;planLoadLoadingSeq;N;5;0;;;The loading sequence determines the order of the OBD for loading;
+29;Plan load Unloading sequence;OutboundDelivery;planLoad.unloadingSeq;planLoadUnloadingSeq;N;5;0;;;The unloading sequence defines the order of the OBD for unloading.;
+30;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

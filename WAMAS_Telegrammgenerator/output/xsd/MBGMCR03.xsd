@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="MBGMCR03">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="CreationDate" type="WamasDate" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="CreationTime" type="xsd:time" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Extension" type="STRING_30" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="IDocNumber" type="STRING_16" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="IDocType" type="STRING_30" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Mandt" type="STRING_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="MessageType" type="STRING_30" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvpor" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvprn" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvprt" type="STRING_2" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Serial" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndpor" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndprn" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndprt" type="STRING_2" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="E1MBGMCR" type="MBGMCR03_E1MBGMCR" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="MBGMCR03_E1BP2017_GM_CODE">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="PostingKey4SysPAssignment_sysPartnerFields_shortDesc" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="MBGMCR03_E1BP2017_GM_HEAD_01">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="DocumentDate" type="WamasDate" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DocumentReferenceNumber" type="STRING_16" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="HeaderText" type="STRING_25" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PostingDate" type="WamasDate" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="ReservationControl" type="STRING_1" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="MBGMCR03_E1BP2017_GM_ITEM_CREATE">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="CostCenter_id" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DifferenceConfirmation_amountTo" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DifferenceConfirmation_batch_from" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DifferenceConfirmation_batch_to" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DifferenceConfirmation_packagingVersionTo_Item_itemNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="DifferenceConfirmation_packagingVersion_Item_itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_line" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDelivery_ibdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_baseQtyUnit_id" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="MovePlant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="MoveStorageLocation" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PostingKey4SysPAssignment_sysPartnerFields_moveReason" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PostingKey4SysPAssignment_sysPartnerPostingKey" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="SysPartnerStockGroup_sapStockAttr_sapPlant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="SysPartnerStockGroup_sapStockAttr_sapStgeLoc" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="SysPartnerStockGroup_sapStockAttr_sapStockType" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="MBGMCR03_E1MBGMCR">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="E1BP2017_GM_CODE" type="MBGMCR03_E1BP2017_GM_CODE" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BP2017_GM_HEAD_01" type="MBGMCR03_E1BP2017_GM_HEAD_01" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BP2017_GM_ITEM_CREATE" type="MBGMCR03_E1BP2017_GM_ITEM_CREATE" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

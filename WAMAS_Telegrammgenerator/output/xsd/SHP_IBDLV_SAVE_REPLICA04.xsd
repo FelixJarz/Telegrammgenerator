@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="SHP_IBDLV_SAVE_REPLICA04">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="CreationDate" type="WamasDate" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="CreationTime" type="xsd:time" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Extension" type="STRING_30" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="IDocNumber" type="STRING_16" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="IDocType" type="STRING_30" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Mandt" type="STRING_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="MessageType" type="STRING_30" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvpor" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvprn" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvprt" type="STRING_2" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Serial" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndpor" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndprn" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndprt" type="STRING_2" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="E1SHP_IBDLV_SAVE_REPLICA" type="SHP_IBDLV_SAVE_REPLICA04_E1SHP_IBDLV_SAVE_REPLICA" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_IBDLV_SAVE_REPLICA04_E1BPADR1">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="AddressNumber" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="FaxExt" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="HouseNumber" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="LangKeyOfPartner" type="STRING_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_Country_countryId" type="STRING_2" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_city" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_district" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_fax" type="STRING_40" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_name" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_name2" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_name3" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_name4" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_phone" type="STRING_40" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_region" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_street" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_zipCode" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PhoneExt" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_IBDLV_SAVE_REPLICA04_E1BPDLVDEADLN">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="InboundDelivery_ibdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="TimeInUTC" type="STRING_14" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="TimeType" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_IBDLV_SAVE_REPLICA04_E1BPDLVHDUNHDR">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="AdvisedLu_luId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDelivery_ibdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_IBDLV_SAVE_REPLICA04_E1BPDLVHDUNITM">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="AdvisedLu_luId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_iga_batch" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_line" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_orderAmount" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDelivery_ibdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_baseQtyUnit_id" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_IBDLV_SAVE_REPLICA04_E1BPDLVITEMRPO">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="ExtDocumentNumber" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="ExtItemNumberRef" type="STRING_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_line" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDelivery_ibdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_IBDLV_SAVE_REPLICA04_E1BPDLVITEMSTTR">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="InboundDeliveryLine_line" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDelivery_ibdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_IBDLV_SAVE_REPLICA04_E1BPDLVPARTNER">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="AddressNumber" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDelivery_ibdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerRole" type="STRING_17" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Partner_partnerId" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_IBDLV_SAVE_REPLICA04_E1BPDLVTXTITEM">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="InboundDeliveryLine_textLineGroup_TextLine_Language_langId" type="STRING_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_textLineGroup_TextLine_TextType_textTypeId" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_textLineGroup_TextLine_id" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_textLineGroup_TextLine_sequence" type="STRING_7" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_textLineGroup_TextLine_text" type="STRING_256" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_IBDLV_SAVE_REPLICA04_E1BPIBDLVHDR">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="InboundDelivery_deliveryNoteNo" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDelivery_ibdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDelivery_type_ibdTypeId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_IBDLV_SAVE_REPLICA04_E1BPIBDLVITEM">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="InboundDeliveryLine_deliveryTolerance_lower" type="DECIMAL_3_1" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_deliveryTolerance_upper" type="DECIMAL_3_1" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_iga_batch" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_iga_bbDate" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_iga_reservationNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_line" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDeliveryLine_orderAmount" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDelivery_ibdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_PackagingVersion_ItemQtyUnit_numBaseQtyUnits_denominator" type="NUMERIC_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_PackagingVersion_ItemQtyUnit_numBaseQtyUnits_numerator" type="NUMERIC_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_baseQtyUnit_id" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OverdeliveryUnlimited" type="STRING_1" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="StockIdentifyingAttributes_prodDate" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="SysPartnerStockGroup_sapStockAttr_sapSpecStock" type="STRING_1" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="SysPartnerStockGroup_sapStockAttr_sapStockType" type="STRING_25" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_IBDLV_SAVE_REPLICA04_E1BPIBDLVITEMORG">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="InboundDeliveryLine_line" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InboundDelivery_ibdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="SysPartnerStockGroup_sapStockAttr_sapStgeLoc" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_IBDLV_SAVE_REPLICA04_E1SHP_IBDLV_SAVE_REPLICA">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="SenderSystem" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="E1BPADR1" type="SHP_IBDLV_SAVE_REPLICA04_E1BPADR1" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPDLVDEADLN" type="SHP_IBDLV_SAVE_REPLICA04_E1BPDLVDEADLN" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPDLVHDUNHDR" type="SHP_IBDLV_SAVE_REPLICA04_E1BPDLVHDUNHDR" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPDLVHDUNITM" type="SHP_IBDLV_SAVE_REPLICA04_E1BPDLVHDUNITM" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPDLVITEMRPO" type="SHP_IBDLV_SAVE_REPLICA04_E1BPDLVITEMRPO" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPDLVITEMSTTR" type="SHP_IBDLV_SAVE_REPLICA04_E1BPDLVITEMSTTR" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPDLVPARTNER" type="SHP_IBDLV_SAVE_REPLICA04_E1BPDLVPARTNER" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPDLVTXTITEM" type="SHP_IBDLV_SAVE_REPLICA04_E1BPDLVTXTITEM" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPIBDLVHDR" type="SHP_IBDLV_SAVE_REPLICA04_E1BPIBDLVHDR" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPIBDLVITEM" type="SHP_IBDLV_SAVE_REPLICA04_E1BPIBDLVITEM" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPIBDLVITEMORG" type="SHP_IBDLV_SAVE_REPLICA04_E1BPIBDLVITEMORG" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

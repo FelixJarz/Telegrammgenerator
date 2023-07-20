@@ -1,0 +1,2 @@
+#This sample file finalizes one FWCS fulfillment order item line
+WMS       WAMAS     1                             120210823000000FWCS_FFOITEMLINEFINALIZE00001 1         2                            1NORMAL

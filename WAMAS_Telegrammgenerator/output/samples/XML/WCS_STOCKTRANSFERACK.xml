@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This sample file contains a system message with a stock transfer acknowledgement 
+	response from WCS. -->
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<header>
+			<FULL>
+				<HEADER_SOURCE>WCS1</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_SEQUENCE>1</HEADER_SEQUENCE>
+				<HEADER_CREATIONTIME>2014041310394122</HEADER_CREATIONTIME>
+				<HEADER_RECORDTYPENAME>WCS_STOCKTRANSFERACK00009</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<WCS_STOCKTRANSFERACK00009>
+				<requestNo>1</requestNo>
+			    <seqNo>1</seqNo>
+				<WCS_STOCKTRANSFERACKLU00009>
+					<requestNo>1</requestNo>
+			        <seqNo>1</seqNo>
+					<luOrigin>Test Center</luOrigin>
+					<luId>LU-ID-TO-BE-REPLACED</luId>
+					<completeFlag>1</completeFlag>
+					<remainingFlag>0</remainingFlag>
+					<WCS_STOCKTRANSFERACKSO00009>
+						<requestNo>1</requestNo>
+			            <seqNo>1</seqNo>
+						<luOrigin>Test Center</luOrigin>
+						<luId>LU-ID-TO-BE-REPLACED</luId>
+						<stockObjectNo>1</stockObjectNo>
+						<baseQty>8</baseQty>
+						<dualQty>0</dualQty>
+					</WCS_STOCKTRANSFERACKSO00009>
+				</WCS_STOCKTRANSFERACKLU00009>
+			</WCS_STOCKTRANSFERACK00009>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>

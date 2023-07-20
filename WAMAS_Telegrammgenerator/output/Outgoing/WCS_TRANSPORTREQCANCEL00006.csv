@@ -1,0 +1,3 @@
+# WCS_TRANSPORTREQCANCEL00006;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;LU-ID;LoadUnit;luId;luId;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+2;LU origin;LoadUnit;luOrigin;luOrigin;S;20;0;X;;Is part of the unique identification of a stock object bundle.;

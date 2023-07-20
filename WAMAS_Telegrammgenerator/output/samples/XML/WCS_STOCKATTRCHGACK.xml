@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This sample file contains a system message with a stock attribute change 
+	acknowledgement response from WCS. -->
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<header>
+			<FULL>
+				<HEADER_SOURCE>WCS1</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_SEQUENCE>1</HEADER_SEQUENCE>
+				<HEADER_CREATIONTIME>2014041310394122</HEADER_CREATIONTIME>
+				<HEADER_RECORDTYPENAME>WCS_STOCKATTRCHGACK00006</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<WCS_STOCKATTRCHGACK00006>
+				<clientId>2</clientId>
+				<itemNo>300020001</itemNo>
+				<variant>00000</variant>
+				<pkv>1</pkv>
+				<gowFrom>2_1</gowFrom>
+				<stockRatingFrom>100</stockRatingFrom>
+				<bbDateFrom>20141022</bbDateFrom>
+				<batchFrom>Batch2Pick</batchFrom>
+				<prodDateFrom>20130522</prodDateFrom>
+				<reservationNoFrom>Resno2Pick</reservationNoFrom>
+				<cdNoFrom>Cdno2Pick</cdNoFrom>
+				<csia1From>Csia1_2P</csia1From>
+				<csia3From>Csia3_2P</csia3From>
+				<gowTo>2_1</gowTo>
+				<stockRatingTo>200</stockRatingTo>
+				<bbDateTo>20141022</bbDateTo>
+				<batchTo>Batch2Pick</batchTo>
+				<prodDateTo>20130522</prodDateTo>
+				<reservationNoTo>Resno2Pick</reservationNoTo>
+				<cdNoTo>Cdno2Pick</cdNoTo>
+				<baseQty>30</baseQty>
+				<postingKey>Inventory</postingKey>
+				<dualQty>0</dualQty>
+			</WCS_STOCKATTRCHGACK00006>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>

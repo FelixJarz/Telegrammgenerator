@@ -1,0 +1,4 @@
+# FWCS_AFRAMESTOLOCUPDATE00002;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Warehouse location;StoLoc;WhLoc.whLocId;whLoc;S;20;0;X;X;The identifier of the warehouse location.;
+2;Storage location;StoLoc;stoLocId;currentStoLocId;S;20;0;X;;The identifier of the storage location per warehouse location.;
+3;Storage location;StoLoc;stoLocId;newStoLocId;S;20;0;X;;The identifier of the storage location per warehouse location.;

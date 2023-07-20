@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="WCS_TRANSPORTREQ00007">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="cubatureId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="grossWeight" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grossWeightUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="loadAidId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="luId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="luOrigin" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="orderId" type="NUMERIC_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="priority" type="NUMERIC_1" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stoLocId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="update" type="boolean" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="weightKind" type="ENUM_WeightKind_CM" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="WCS_PRINTMETADATA00007" type="WCS_TRANSPORTREQ00007_WCS_PRINTMETADATA00007" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="WCS_TRANSPORTREQDEST00005" type="WCS_TRANSPORTREQ00007_WCS_TRANSPORTREQDEST00005" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="WCS_TRANSPORTREQEXTREF00005" type="WCS_TRANSPORTREQ00007_WCS_TRANSPORTREQEXTREF00005" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="WCS_TRANSPORTREQ00007_WCS_PRINTMETADATA00007">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="addrCity" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="addrCountry" type="STRING_2" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="addrDistrict" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="addrEmail" type="STRING_255" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="addrFax" type="STRING_40" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="addrGln" type="STRING_13" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="addrName" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="addrName2" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="addrName3" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="addrName4" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="addrPhone" type="STRING_40" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="addrRegion" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="addrStreet" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="addrTitle" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="addrZipCode" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="deliveryTime" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="departureTime" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="externalRef" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="loadingTime" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="obdNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="obdType" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="orderId" type="NUMERIC_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="partnerId" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="partnerRoleKind" type="ENUM_ObdPartnerRoleKind_CSCFOIF" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="shippingCategory" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="shippingMethod" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stagingTime" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="vatId" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="WCS_TRANSPORTREQ00007_WCS_TRANSPORTREQDEST00005">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="destinationGroup" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="orderId" type="NUMERIC_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="sequence" type="NUMERIC_7" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stoLocId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="WCS_TRANSPORTREQ00007_WCS_TRANSPORTREQEXTREF00005">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="extRefKey" type="STRING_64" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="extRefVal1" type="STRING_512" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="extRefVal2" type="STRING_512" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="orderId" type="NUMERIC_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

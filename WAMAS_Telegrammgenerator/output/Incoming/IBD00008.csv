@@ -1,0 +1,15 @@
+# IBD00008;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;InboundDelivery;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Inbound delivery number;InboundDelivery;ibdNo;ibdNo;S;20;0;X;;The inbound delivery number is part of the unique identifier of the inbound delivery.;
+3;Warehouse location;InboundDelivery;whLoc.whLocId;whLoc;S;20;0;X;X;The identifier of the warehouse location.;
+4;Inbound delivery type;InboundDelivery;type.ibdTypeId;ibdTypeId;S;20;0;X;X;The identifier for an inbound delivery type.;
+5;From Delivery time slot;InboundDelivery;deliveryTimeSlot.from;deliveryTimeSlotFrom;DT;14;0;;;Date and time without seconds. See: DATETIME;
+6;To Delivery time slot;InboundDelivery;deliveryTimeSlot.to;deliveryTimeSlotTo;DT;14;0;;;Date and time without seconds. See: DATETIME;
+7;Delivery note number;InboundDelivery;deliveryNoteNo;deliveryNoteNo;S;35;0;;;The number of the delivery note.;
+8;Delivery note date;InboundDelivery;deliveryNoteDate;deliveryNoteDate;DA;8;0;;;The date of the delivery note.;
+9;Priority;InboundDelivery;priority;priority;N;1;0;;;0 = lowest priority9 = highest priority;
+10;Incoming goods area;InboundDelivery;unloadingPoint.area.areaId;incomingArea;S;10;0;;X;A unique ID for this incoming goods area within the WhLoc;
+11;Dock;InboundDelivery;unloadingPoint.dock.dockId;dock;S;10;0;;X;The unique ID of the dock;
+12;Staging area;InboundDelivery;unloadingPoint.staging.areaId;stagingArea;S;10;0;;X;Unique ID for the staging area.;
+13;Storage location;InboundDelivery;unloadingPoint.stoLoc.stoLocId;stoLocId;S;20;0;;X;The identifier of the storage location per warehouse location.;
+14;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

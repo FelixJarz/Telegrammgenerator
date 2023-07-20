@@ -1,0 +1,4 @@
+# E1BPE1MAW1RT;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Function message;;;;S;3;0;X;;;;FUNCTION
+2;Item number;Item;itemNo;;S;20;0;X;; Is a part of the unique identification of an item. ;;MATERIAL
+3;Quantity unit;Item;PackagingVersion.ItemQtyUnit.qtyUnit;;S;5;0;X;;Other End (qtyUnit): The quantity unit defines the physical unit with which an item is counted or measured. In many cases, quantity is measured in "piece" or "piece per box". When dealing with small items or bulk goods, items are usually managed by weight.;;SALES_UNIT_ISO

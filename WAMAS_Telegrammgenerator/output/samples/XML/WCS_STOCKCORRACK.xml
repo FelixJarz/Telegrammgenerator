@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This sample file contains a system message with a stock correction acknowledgement 
+	response from WCS. -->
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<header>
+			<FULL>
+				<HEADER_SOURCE>WCS1</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_SEQUENCE>1</HEADER_SEQUENCE>
+				<HEADER_CREATIONTIME>2014031310394122</HEADER_CREATIONTIME>
+				<HEADER_RECORDTYPENAME>WCS_STOCKCORRACK00007</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<WCS_STOCKCORRACK00007>
+				<clientId>2</clientId>
+				<itemNo>300020001</itemNo>
+				<variant>00000</variant>
+				<pkv>1</pkv>
+				<gow>2_1</gow>
+				<stockRating>100</stockRating>
+				<bbDate>20200611</bbDate>
+				<batch>Batch2Pick</batch>
+				<prodDate>20190612</prodDate>
+				<reservationNo>Resno2Pick</reservationNo>
+				<cdNo>Cdno2Pick</cdNo>
+				<csia1>csia_one</csia1>
+				<csia2>123</csia2>
+				<csia3>csia_three</csia3>
+				<baseQty>4</baseQty>
+				<postingKey>Inventory</postingKey>
+				<dualQty>4</dualQty>
+			</WCS_STOCKCORRACK00007>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>

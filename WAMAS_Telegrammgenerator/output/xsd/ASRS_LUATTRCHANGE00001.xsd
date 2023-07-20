@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="ASRS_LUATTRCHANGE00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="luId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="storageAttribute1" type="STRING_100" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="storageAttribute2" type="STRING_100" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="storageAttribute3" type="STRING_100" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="storageDuration" type="ENUM_AsrsStorageDuration_SL" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

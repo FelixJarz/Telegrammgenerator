@@ -1,0 +1,9 @@
+# IBOACK00008;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;InboundOrder;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Inbound order number;InboundOrder;iboNo;iboNo;S;20;0;X;;The inbound order number is part of the unique identifier of the inbound order.;
+3;System partner;InboundOrder;sysPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;Warehouse location;InboundOrder;whLoc.whLocId;whLoc;S;20;0;X;X;The identifier of the warehouse location.;
+5;Inbound order type;InboundOrder;type.iboTypeId;iboTypeId;S;20;0;X;X;The identifier for an inbound order type.;
+6;Order time;InboundOrder;orderTime;orderTime;DT;14;0;X;;The time the order has been created.;
+7;Priority;InboundOrder;priority;priority;N;1;0;;;Defines the priority of the inbound order.;
+8;Main state;InboundOrder;state.mainState;mainState;S;13;0;X;;Defines the inbound order main state.;

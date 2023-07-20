@@ -1,0 +1,28 @@
+# LOADLUACK00011;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Consignment ID;LoadLoadingUnit;obd.consignment.consignmentId;consId;S;20;0;X;X;Identifies a consignment (together with the system partner) uniquely.;
+2;System partner Consignment;LoadLoadingUnit;obd.consignment.sysPartner.id;consSystemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+3;Load LU-ID;LoadLoadingUnit;loadLuId;loadLuId;S;20;0;X;;Identifies a load loading unit (together with the system partner) uniquely.;
+4;System partner Load loading unit;LoadLoadingUnit;sysPartner.id;loadSystemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+5;Load loading unit kind;LoadLoadingUnit;kind;loadingKind;E;15;0;X;;Defines the kind of the load loading unit. These data is stored here to find the fitting load LU during OG process.;
+6;Loading aid;LoadLoadingUnit;LoadAid.loadAidId;loadAidId;S;10;0;X;X;Unique identification of a loading aid (see LoadAid).;
+7;Loading unit cubature;LoadLoadingUnit;LoadUnitCubature.cubatureId;loadUnitCubature;S;10;0;X;X;Unique identifier of the loading unit cubature.;
+8;Plan loading unit stage;;;shipPlanLuStage;E;10;0;X;;;com.wamas.wms.biz.di.nonmodelenums.LoadLuStage
+9;LU kind;;;luKind;S;15;0;X;;;
+10;Picking group;LoadLoadingUnit;shipmentPlanLu.pickingGroup;pickingGroup;S;20;0;;;Different picking groups are picked to different picking loading units.;
+11;LU-ID;LoadLoadingUnit;shipmentLu.luId;shipmentLuId;S;20;0;?;X;Is part of the unique identification of a stock object bundle.;
+12;Shipment plan LU;LoadLoadingUnit;shipmentPlanLu.planLuId;shipmentPlanLuId;N;10;0;?;X;Each shipment plan loading unit carries a different identifier.;
+13;Master LU-ID;LoadLoadingUnit;shipmentLu.master.luId;masterLuId;S;20;0;?;X;Is part of the unique identification of a stock object bundle.;
+14;Loading aid;LoadLoadingUnit;shipmentLu.master.LoadAid.loadAidId;masterLoadAidId;S;10;0;?;X;Unique identification of a loading aid (see LoadAid).;
+15;Loading unit cubature;LoadLoadingUnit;shipmentLu.master.LoadUnitCubature.cubatureId;masterLoadUnitCubature;S;10;0;?;X;Unique identifier of the loading unit cubature.;
+16;Gross weight;LoadLoadingUnit;keyData.grossWeight.value;grossWeight;D;12;3;;;Specifies the value (or amount) in weight unit which was entered by a user.;
+17;Gross weight unit;LoadLoadingUnit;keyData.grossWeight.unit.id;grossWeightUnit;S;5;0;;X;Uniquely identifies the weight unit.;
+18;Goods volume;LoadLoadingUnit;keyData.goodsVolume.value;goodsVolumeValue;D;12;3;;;Specifies the value (or amount) in volume unit which was entered by a user.;
+19;Goods volume unit;LoadLoadingUnit;keyData.goodsVolume.unit.id;goodsVolumeUnit;S;5;0;;X;Uniquely identifies the volume unit.;
+20;Dangerous goods points;LoadLoadingUnit;keyData.danGoodsPoints;danGoodsPoints;N;15;0;;;Total of all dangerous goods points.;
+21;X;LoadUnit;grossDimension.x.value;dimensionX;D;12;3;;;Specifies the value (or amount) in length unit which was entered by a user.;
+22;X unit;LoadUnit;grossDimension.x.unit.id;dimensionXUnit;S;5;0;;X;Uniquely identifies the length unit.;
+23;Y;LoadUnit;grossDimension.y.value;dimensionY;D;12;3;;;Specifies the value (or amount) in length unit which was entered by a user.;
+24;Y unit;LoadUnit;grossDimension.y.unit.id;dimensionYUnit;S;5;0;;X;Uniquely identifies the length unit.;
+25;Z;LoadUnit;grossDimension.z.value;dimensionZ;D;12;3;;;Specifies the value (or amount) in length unit which was entered by a user.;
+26;Z unit;LoadUnit;grossDimension.z.unit.id;dimensionZUnit;S;5;0;;X;Uniquely identifies the length unit.;
+27;Can be split;;;Can_be_split;B;1;0;;;;

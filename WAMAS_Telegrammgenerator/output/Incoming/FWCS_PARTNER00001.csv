@@ -1,0 +1,10 @@
+# FWCS_PARTNER00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;Partner;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Partner;Partner;partnerId;partnerId;S;15;0;X;;Unique identification of a partner object.;
+3;Name;Partner;PartnerAddress.addr.name;firstName;S;35;0;;;Name of a company or a person.;
+4;Name 2;Partner;PartnerAddress.addr.name2;lastName;S;35;0;;;Name of a company or a person.;
+5;Country;Partner;PartnerAddress.addr.Country.countryId;countryId;S;2;0;;X;The unique identifier for a country. ISO 3166-1 Alpha 2 Code.;
+6;ZIP code;Partner;PartnerAddress.addr.zipCode;zipCode;S;10;0;;;ZIP code of the city origin.;
+7;City;Partner;PartnerAddress.addr.city;city;S;35;0;;;It is part of the address.;
+8;Street;Partner;PartnerAddress.addr.street;street;S;35;0;;;Street and street (house) number or post office box.;
+9;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

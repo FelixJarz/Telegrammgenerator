@@ -1,0 +1,14 @@
+# LOADACK00011;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Load;Load;loadId;loadId;S;20;0;X;;The load ID identifies the load, together with the consecutive number and the system partner, uniquely. The load ID is taken from the shipment frequency or the plan load (outbound delivery) depending on the ‘load creation kind’ of the outbound delivery type.;
+2;Consecutive number;Load;consecutiveNo;consecutiveNo;N;10;0;X;;;
+3;System partner;Load;sysPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;Departure time;Load;departureTime;departureTime;DT;14;0;X;;The time the load leaves the warehouse.;
+5;Load type;Load;type.loadTypeId;loadTypeId;S;10;0;X;X;Unique identifier of a load type.;
+6;Shipping method;Load;shippingMethod.methodId;shippingMethod;S;10;0;X;X;Unique identification of a shipping method.;
+7;Main state;Load;state.mainState;mainState;E;8;0;X;;Defines the load main state.;
+8;Load progress;Load;state.loadProgress;loadProgress;E;20;0;X;;Defines the load progress of the load;
+9;Load progress state;Load;state.loadProgressState;loadProgressState;E;20;0;X;;Defines the load progress state;
+10;Limits # Dangerous goods points (actual);Load;limit.actDanGoodsPoints;danGoodsPoints;N;15;0;;;∑ Total dangerous goods points;
+11;Reviewed;Load;state.reviewed;reviewed;B;1;0;X;;Defines whether the load has been reviewed;
+12;Dissolved;Load;state.dissolved;dissolve;B;1;0;X;;Defines whether the load is dissolved;
+13;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

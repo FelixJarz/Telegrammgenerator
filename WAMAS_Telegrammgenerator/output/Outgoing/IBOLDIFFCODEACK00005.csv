@@ -1,0 +1,8 @@
+# IBOLDIFFCODEACK00005;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;IbolDifferenceCode;InboundOrderLine.InboundOrder.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Inbound order number;IbolDifferenceCode;InboundOrderLine.InboundOrder.iboNo;iboNo;S;20;0;X;X;The inbound order number is part of the unique identifier of the inbound order.;
+3;System partner;IbolDifferenceCode;InboundOrderLine.InboundOrder.sysPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;System partner line;IbolDifferenceCode;InboundOrderLine.sysPartnerLine;sysPartnerLine;N;10;0;X;;If this value is greater than 0, that means the inbound order line was created via interface, line number corresponds to the line number of the system partner.If this value is 0, this means this inbound order line has been created by WAMAS.;
+5;Inbound order line;IbolDifferenceCode;InboundOrderLine.line;line;N;10;0;X;X;The line number is part of the unique identifier of the inbound order line.;
+6;Quantity;IbolDifferenceCode;diffAmount.baseQty;baseQty;SD;14;3;X;;The item quantity specification in its administration unit (base quantity unit). All state calculations, delivery fulfilled checks and so on are based on the base quantity. The dual quantity has no effect for those calculations. ;
+7;Difference code IG;IbolDifferenceCode;diffCode.diffCodeId;diffCodeId;S;20;0;X;X;The ID of the incoming goods difference code.;

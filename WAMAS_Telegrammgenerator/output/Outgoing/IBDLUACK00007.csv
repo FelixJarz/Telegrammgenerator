@@ -1,0 +1,11 @@
+# IBDLUACK00007;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;InboundDelivery;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Inbound delivery number;InboundDelivery;ibdNo;ibdNo;S;20;0;X;;The inbound delivery number is part of the unique identifier of the inbound delivery.;
+3;System partner;InboundDelivery;sysPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;LU-ID;LoadUnit;luId;luId;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+5;Master LU-ID;LoadUnit;master.luId;masterLuId;S;20;0;;X;Is part of the unique identification of a stock object bundle.;
+6;Loading aid;LoadUnit;LoadAid.loadAidId;loadAidId;S;10;0;X;X;Unique identification of a loading aid (see LoadAid).;
+7;Loading unit cubature;LoadUnit;LoadUnitCubature.cubatureId;cubatureId;S;10;0;X;X;Unique identifier of the loading unit cubature.;
+8;Gross weight;LoadUnit;keyData.grossWeight.value;grossWeight;D;12;3;;;Specifies the value (or amount) in weight unit which was entered by a user.;
+9;Gross weight unit;LoadUnit;keyData.grossWeight.unit.id;grossWeightUnit;S;5;0;;X;Uniquely identifies the weight unit.;
+10;Origin of gross weight;LoadUnit;keyData.weightKind;weightKind;E;10;0;;;The kind of the gross weight.;

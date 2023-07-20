@@ -1,0 +1,6 @@
+# ASRS_LUATTRCHANGE00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;LU-ID;LoadUnit;luId;luId;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+2;Storage duration;;;storageDuration;E;5;0;X;;It defines how long a loading unit is expected to be stored in the warehouse.;com.wamas.wms.biz.asrs.lib.di.AsrsStorageDuration
+3;Storage attribute 1;;;storageAttribute1;S;100;0;;;It refers to a customizable stock-identifying attribute, which is considered during the storage location search.;
+4;Storage attribute 2;;;storageAttribute2;S;100;0;;;It refers to a customizable stock-identifying attribute, which is considered during the storage location search.;
+5;Storage attribute 3;;;storageAttribute3;S;100;0;;;It refers to a customizable stock-identifying attribute, which is considered during the storage location search.;

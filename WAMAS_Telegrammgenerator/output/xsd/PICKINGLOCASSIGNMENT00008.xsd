@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="PICKINGLOCASSIGNMENT00008">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="areaId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="blockAutoRepl" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="cdNo" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="enableNegativeStock" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="goodsCategory" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="gow" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="groupId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="invPickThPerc" type="NUMERIC_4" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="invPickThQty" type="DECIMAL_12_0" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="invPickThUnitId" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="invPickThUnitKind" type="ENUM_QuantityUnitKindExt_BWO" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="invReplThPerc" type="NUMERIC_4" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="invReplThQty" type="DECIMAL_12_0" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="invReplThUnitId" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="invReplThUnitKind" type="ENUM_QuantityUnitKindExt_BWO" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="manuReplBlock4Mobile" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="minPickQty" type="DECIMAL_12_0" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="minPickUnitId" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="minPickUnitKind" type="ENUM_QuantityUnitKindExt_BWO" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="numBquWqu" type="DECIMAL_9_0" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="removeWholeLuFlag" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="replCritPrioIncrement" type="NUMERIC_1" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="replCritThPerc" type="NUMERIC_4" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="replCritThQty" type="DECIMAL_12_0" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="replCritThUnitId" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="replCritThUnitKind" type="ENUM_QuantityUnitKindExt_BWO" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="replNormThPerc" type="NUMERIC_4" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="replNormThQty" type="DECIMAL_12_0" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="replNormThUnitId" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="replNormThUnitKind" type="ENUM_QuantityUnitKindExt_BWO" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stoLocId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stockRating" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="validityFrom" type="WamasDateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="validityTo" type="WamasDateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="whLoc" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="wholeQtyUnitId" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="wholeQtyUnitKind" type="ENUM_WholeUnitKind_NBWO" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="PLAGOODSOWNER00006" type="PICKINGLOCASSIGNMENT00008_PLAGOODSOWNER00006" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="PLASTOCKRATING00006" type="PICKINGLOCASSIGNMENT00008_PLASTOCKRATING00006" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="PICKINGLOCASSIGNMENT00008_PLAGOODSOWNER00006">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="gow" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="PICKINGLOCASSIGNMENT00008_PLASTOCKRATING00006">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="stockRating" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

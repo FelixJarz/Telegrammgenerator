@@ -1,0 +1,4 @@
+#This sample file contains a system message with a stock transfer acknowledgement response from WCS.
+WCS1      WAMAS     1                             100991009020000WCS_STOCKTRANSFERACK00009           1    1
+WCS1      WAMAS     1                             200991009020000WCS_STOCKTRANSFERACKLU00009         1    1LU-ID-TO-BE-REPLACEDTest Center         10                                                                                                                                                                                                                                                                     
+WCS1      WAMAS     1                             300991009020000WCS_STOCKTRANSFERACKSO00009         1    1LU-ID-TO-BE-REPLACEDTest Center                          1000000008000000000000000                                                                                                    

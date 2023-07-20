@@ -1,0 +1,5 @@
+# SOL00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Shipping order number;ShippingOrderLine;ShippingOrder.soNo;soNo;S;20;0;X;X;;
+2;Shipping order line;ShippingOrderLine;line;line;N;10;0;X;;;
+3;Sequence number;ShippingOrderLine;sequenceNo;sequence;N;7;0;X;;A long value used for attributes, which specify a sequence used for ordering or sorting (see guideline "Rules and Recommendations for the Data Model"). Is not related with an Oracle sequence, which is represented by the IDENTIFIER model element.;
+4;LU-ID;ShippingOrderLine;loadUnit.luId;luId;S;20;0;X;X;Is part of the unique identification of a stock object bundle.;

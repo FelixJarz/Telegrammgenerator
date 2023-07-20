@@ -1,0 +1,6 @@
+# WCS_PICKACKDIFFCODE00005;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Picking order;PickingOrder;orderId;orderId;S;10;0;X;;The unique ID of this picking order.;
+2;Picking order line;;;lineId;N;5;0;X;;Sample RecordTypeTag.createNonModeled(...) with documentation text;
+3;Difference quantity;ObdlDifferenceCode;diffAmount.baseQty;baseQty;D;12;3;X;;The item quantity specification in its administration unit (base quantity unit). All state calculations, delivery fulfilled checks and so on are based on the base quantity. The dual quantity has no effect for those calculations. ;
+4;Difference reason;;;diffReason;E;20;0;X;;;com.wamas.wms.dataaccess.iface.di.WcsDiffReason
+5;Difference info;;;diffInfo;S;100;0;;;;

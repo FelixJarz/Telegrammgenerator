@@ -1,0 +1,3 @@
+# PLASTOCKRATING00006;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;PickingLocAssignment;client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Stock rating;PlaStockRating;stockRating;stockRating;S;15;0;X;;Local End (assignedPlas): Represents the picking location assigments associated with the stock rating.Other End (stockRating): Defines Stock rating of picking location assignment.;

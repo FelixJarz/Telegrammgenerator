@@ -1,0 +1,9 @@
+# WCS_STOCKTRANSFERACKSO00009;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Request number;;;requestNo;N;7;0;X;;;
+2;Sequence number;;;seqNo;N;5;0;X;;;
+3;LU-ID;LoadUnit;luId;luId;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+4;LU origin;LoadUnit;luOrigin;luOrigin;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+5;Content number;StockObject;no;stockObjectNo;N;18;0;X;;Unique identification of a stock object.;
+6;Quantity;StockObject;amount.baseQty;baseQty;D;12;3;X;;The item quantity specification in its administration unit (base quantity unit). All state calculations, delivery fulfilled checks and so on are based on the base quantity. The dual quantity has no effect for those calculations. ;
+7;Dual quantity;StockObject;amount.dualQty;dualQty;D;12;3;?;;The quantity measure for dual items. This quantity is needed in addition to the base quantity in order to uniquely identify the item. ;
+8;Info text;;;infoText;S;100;0;;;;

@@ -1,0 +1,2 @@
+#This sample file contains a system message with a stock attribute change acknowledgement response from WCS.
+WCS1;WAMAS;;1;00991009020000;WCS_STOCKATTRCHGACK00006;2;300020001;00000;1;2_1;100;20141022;Batch2Pick;20130522;Resno2Pick;Cdno2Pick;Csia1_2P;;Csia3_2P;;;;;;;;;;;;;;;;;;2_1;200;20141022;Batch2Pick;20130522;Resno2Pick;Cdno2Pick;;;;;;;;;;;;;;;;;;;;;30;Inventory;0

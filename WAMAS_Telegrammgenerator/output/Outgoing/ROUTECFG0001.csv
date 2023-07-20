@@ -1,0 +1,4 @@
+# ROUTECFG0001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Vertex (from);;;VertexFrom;S;20;0;X;;;
+2;Vertex (to);;;VertexTo;S;20;0;X;;;
+3;Costs;;;Costs;D;10;3;X;;;

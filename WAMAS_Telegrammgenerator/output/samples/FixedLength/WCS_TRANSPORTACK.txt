@@ -1,0 +1,2 @@
+#This sample file contains a system message with a transport acknowledgement response from WCS.
+WCS1      WAMAS     1                             120140618163512WCS_TRANSPORTACK00006         000000000000000220  Test Center         WCS1-OG-2           FINISHED  Success                                                                                             

@@ -1,0 +1,25 @@
+# IBDPARTNER00008;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;IbdPartnerRole;InboundDelivery.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Inbound delivery number;IbdPartnerRole;InboundDelivery.ibdNo;ibdNo;S;20;0;X;X;The inbound delivery number is part of the unique identifier of the inbound delivery.;
+3;Inbound delivery partner role;IbdPartnerRole;roleKind;roleKind;E;17;0;X;;Defines the different roles that partners of an inbound delivery can have.;
+4;Partner;IbdPartnerRole;igPartner.Partner.partnerId;partnerId;S;15;0;X;X;Unique identification of a partner object.;
+5;Exchange partner;;;exchangePartner;E;9;0;;;;com.wamas.wms.core.di.recordtypes.Tristate
+6;Title;IbdPartnerRole;addr.title;title;S;35;0;;;Special designation of a company or the degree of a person.;
+7;Name;IbdPartnerRole;addr.name;name;S;35;0;;;Name of a company or a person.;
+8;Name 2;IbdPartnerRole;addr.name2;name2;S;35;0;;;Name of a company or a person.;
+9;Name 3;IbdPartnerRole;addr.name3;name3;S;35;0;;;Name of a company or a person.;
+10;Name 4;IbdPartnerRole;addr.name4;name4;S;35;0;;;Name of a company or a person.;
+11;Street;IbdPartnerRole;addr.street;street;S;35;0;;;Street and street (house) number or post office box.;
+12;City;IbdPartnerRole;addr.city;city;S;35;0;;;It is part of the address.;
+13;District;IbdPartnerRole;addr.district;district;S;35;0;;;The district of an address;
+14;Region;IbdPartnerRole;addr.region;region;S;35;0;;;Possible content: province, federal state, canton, area, county;
+15;Country;IbdPartnerRole;addr.Country.countryId;country;S;2;0;;X;The unique identifier for a country. ISO 3166-1 Alpha 2 Code.;
+16;ZIP code;IbdPartnerRole;addr.zipCode;zipCode;S;10;0;;;ZIP code of the city origin.;
+17;Phone;IbdPartnerRole;addr.phone;phone;S;40;0;;;Phone number.;
+18;Fax;IbdPartnerRole;addr.fax;fax;S;40;0;;;Fax number.;
+19;Email;IbdPartnerRole;addr.email;email;S;255;0;;;An email address.;
+20;Website;IbdPartnerRole;addr.website;webSite;S;40;0;;;The address of the website.;
+21;GLN;IbdPartnerRole;addr.gln;gln;S;13;0;;;The global location number (GLN), as well as the international location number, is used to identify the denotation of companies on an international level, including the address. It is a thirteen digit number comprising a three digit prefix EAN-country reference. The number is determined by the GS1 organisations.;
+22;Language;IbdPartnerRole;addr.Language.langId;language;S;6;0;X;X;Is the unique identifaction of a language, in compliance with ISO 639-2/B Alpha 3 Code. In case ISO specifies more than one code, the B-Code variant is used (ger instead of deu). If a particular language has regional differences, the 2-character country code according to ISO-3166 is used (eng-US, eng-UK, ger-CH, ger-AT, ger-DE).Info: ISO 639 is the set of international standards that lists short codes for language names.See also: LANGISOALPHA2ID.;
+23;Time zone;IbdPartnerRole;addr.timezone;timeZone;S;100;0;;;Timezone value, for e.g. "Europe/Vienna".;
+24;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

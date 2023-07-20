@@ -1,0 +1,2 @@
+# E1BP2017_GM_CODE;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;System partner short description;PostingKey4SysPAssignment;sysPartnerFields.shortDesc;;S;20;0;X;;Contains a short description that is acknowledged to SAP in the MBGMCR IDoc in the field GM_CODE.;;GM_CODE

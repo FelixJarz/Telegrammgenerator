@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="WVINVE03">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="CreationDate" type="WamasDate" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="CreationTime" type="xsd:time" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Extension" type="STRING_30" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="IDocNumber" type="STRING_16" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="IDocType" type="STRING_30" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Mandt" type="STRING_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="MessageType" type="STRING_30" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvpor" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvprn" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvprt" type="STRING_2" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Serial" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndpor" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndprn" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndprt" type="STRING_2" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="E1WVINH" type="WVINVE03_E1WVINH" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="WVINVE03_E1WVINH">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="FinalizeDate" type="WamasDate" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="FinalizeTime" type="STRING_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InventoryDemand_earliestRelTime" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="InventoryDemand_invNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="SysPartnerStockGroup_sapStockAttr_sapPlant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="SysPartnerStockGroup_sapStockAttr_sapStgeLoc" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="SystemUser_userId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="E1WVINI" type="WVINVE03_E1WVINI" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="WVINVE03_E1WVINI">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="ARTNRQualifier" type="STRING_1" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="CountConfirmation_actualAmount" type="DECIMAL_20_1" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InventoryDemandLine_line" type="NUMERIC_9" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="InventoryDemand_invNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="ItemSpecificRestriction_batch" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Item_baseQtyUnit_id" type="STRING_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_itemNo" type="STRING_18" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockRating_id" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ZeroQtyIndicator" type="STRING_1" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

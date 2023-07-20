@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This sample file contains a system message with a replenishment demand 
+	sent to WCS. -->
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<header>
+			<FULL>
+				<HEADER_SOURCE>WCS1</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_TRANSACTIONID>1</HEADER_TRANSACTIONID>
+				<HEADER_SEQUENCE>1</HEADER_SEQUENCE>
+				<HEADER_CREATIONTIME>2014031310394122</HEADER_CREATIONTIME>
+				<HEADER_RECORDTYPENAME>WCS_REPLDEMAND00006</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<WCS_REPLDEMAND00006>
+				<id>1</id>
+				<priority>5</priority>
+				<clientId>1</clientId>
+				<itemNo>200010002</itemNo>
+				<variant>00000</variant>
+				<pkv>1</pkv>
+				<gow>1_1</gow>
+				<stockRating>100</stockRating>
+				<bbDate></bbDate>
+				<batch></batch>
+				<prodDate>20100605</prodDate>
+				<reservationNo></reservationNo>
+				<locationId>2-01-02-02</locationId>
+				<baseQty>768</baseQty>
+				<dualQty>0</dualQty>
+				<maxNumOfTpo>3</maxNumOfTpo>
+				<stagingTime>20201231235912</stagingTime>
+			</WCS_REPLDEMAND00006>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>

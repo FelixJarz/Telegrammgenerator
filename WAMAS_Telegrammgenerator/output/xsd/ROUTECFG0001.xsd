@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="ROUTECFG0001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="Costs" type="DECIMAL_10_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="VertexFrom" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="VertexTo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

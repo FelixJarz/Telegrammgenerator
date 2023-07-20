@@ -1,0 +1,5 @@
+# AFRAMECHANNELREPLLOC00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Warehouse location;AframeChannelReplenishmentLoc;channel.module.aframe.WhLoc.whLocId;whLoc;S;20;0;X;X;The identifier of the warehouse location.;
+2;A-Frame;AframeChannelReplenishmentLoc;channel.module.aframe.aframeId;aframeId;S;10;0;X;X;Name of the A-Frame;
+3;Hardware A-Frame channel address;AframeChannelReplenishmentLoc;channel.channelAddress;channelAddress;N;6;0;X;X;The unique channel within the scope of an A-Frame.;
+4;Storage location;AframeChannelReplenishmentLoc;channel.stoLoc.stoLocId;stoLocId;S;20;0;;X;The identifier of the storage location per warehouse location.;

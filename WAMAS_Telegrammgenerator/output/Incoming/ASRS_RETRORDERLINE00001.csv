@@ -1,0 +1,4 @@
+# ASRS_RETRORDERLINE00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Retrieval order number;RetrievalOrderLine;RetrievalOrder.retrievalOrderNo;retrievalOrderNo;S;20;0;X;X;Each Retrieval Order has a unique identifier the retrieval order number;
+2;LU-ID;RetrievalOrderLine;LoadUnit.luId;luId;S;20;0;X;X;Is part of the unique identification of a stock object bundle.;
+3;Display text;RetrievalOrderLine;displayText;displayText;S;100;0;;;Display text;

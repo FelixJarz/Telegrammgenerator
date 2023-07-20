@@ -1,0 +1,5 @@
+#This sample file contains a system message group with three system message group descriptions.
+HOST      WAMAS                                   120180925110704SYSMSGGROUP00001              group1                                                                                              
+HOST      WAMAS                                   220180925110704SYSMSGGROUPDESC00001          group1                                                                                              eng   Group                         
+HOST      WAMAS                                   320180925110704SYSMSGGROUPDESC00001          group1                                                                                              fra   Groupe                        
+HOST      WAMAS                                   420180925110704SYSMSGGROUPDESC00001          group1                                                                                              rum   Grup                          

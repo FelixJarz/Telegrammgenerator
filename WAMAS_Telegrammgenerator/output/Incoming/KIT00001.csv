@@ -1,0 +1,6 @@
+# KIT00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;Kit;Item.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Item number;Kit;Item.itemNo;itemNo;S;20;0;X;X; Is a part of the unique identification of an item. ;
+3;Variant;Kit;Item.variant;variant;S;10;0;X;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+4;Display assembly order;Kit;displayAssemblyOrder;KitDisplayAssemblyOrderKind;E;12;0;;;Defines when an assembly order is show to the user.;
+5;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

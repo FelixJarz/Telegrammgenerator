@@ -1,0 +1,3 @@
+HOST      WAMAS                                   120200921133144AFRAMECHANNELREPLLOC00001     Test Center         AF01      10009 AF01-L-L1-M01-C09   
+HOST      WAMAS                                   220200921133144REPLLOC00001                  RES1-F1-01-10-U     
+HOST      WAMAS                                   320200921133144REPLLOC00001                  RES2-F1-01-09-U     

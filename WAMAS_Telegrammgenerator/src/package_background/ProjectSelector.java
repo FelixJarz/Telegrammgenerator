@@ -102,7 +102,7 @@ public class ProjectSelector {
 	    }
 	
 
-	public static void UnzipFolder(String folderPath, String folderName) {
+	public static void UnzipFolder(String folderPath, String folderName, String outputFolderPath) {
 		String zipFilePath = folderPath + File.separator + folderName + ".zip";
 	    File zipFile = new File(zipFilePath);
 	    
@@ -117,12 +117,13 @@ public class ProjectSelector {
 	        if (!outputFolder.exists()) {
 	            outputFolder.mkdirs();
 	        }
+	     
 	        
 	        ZipEntry zipEntry = zipInputStream.getNextEntry();
 	        while (zipEntry != null) {
-	            String entryPath = folderPath + File.separator + zipEntry.getName();
+	            String entryPath = outputFolderPath + File.separator + zipEntry.getName(); 
 	            if (!zipEntry.isDirectory()) {
-	                File entryFile = new File(entryPath);
+	                File entryFile = new File(entryPath); 
 	                entryFile.getParentFile().mkdirs();
 	                
 	                try (FileOutputStream outputStream = new FileOutputStream(entryFile)) {

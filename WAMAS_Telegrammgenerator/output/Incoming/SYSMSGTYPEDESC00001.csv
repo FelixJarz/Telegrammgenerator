@@ -1,0 +1,5 @@
+# SYSMSGTYPEDESC00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;System message category;SysMsgCategory;msgCategoryId;msgCategoryId;S;50;0;X;;The system message category ID identifies the the category a system message belongs.;
+2;System message type description;SysMsgTypeDesc;SysMsgType;typeDesc;S;6;0;X;;Defines the system message type description of the system message type.;
+3;System message type description;SysMsgTypeDesc;Language;language;S;6;0;X;;Defines the language of the system message type description.;
+4;Description;;;description;S;300;0;;;;

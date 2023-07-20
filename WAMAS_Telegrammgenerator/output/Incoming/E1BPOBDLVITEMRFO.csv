@@ -1,0 +1,7 @@
+# E1BPOBDLVITEMRFO;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Outbound order number;OutboundOrder;oboNo;;S;20;0;X;;The outbound order number is part of the unique identifier of the outbound order.;;DELIV_NUMB
+2;Outbound order line;OutboundOrderLine;line;;S;10;0;X;;It is part of the unique identification of the outbound order line. When the line was created via the interface, it is equal to the 'sysPartnerLine'.;;ITM_NUMBER
+3;Sales document number;;;;S;10;0;X;;;;DOC_NUMBER
+4;Sales document line number;;;;S;6;0;X;;;;ITM_NUMBER_REF
+5;Order number of the customer;;;;S;35;0;X;;;;PURCH_NO_C
+6;OBDL number of the customer;;;;S;6;0;X;;;;PO_ITM_NO

@@ -1,0 +1,8 @@
+# E1BPDLVHDUNITM;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Outbound order number;OutboundOrder;oboNo;;S;20;0;X;;The outbound order number is part of the unique identifier of the outbound order.;;DELIV_NUMB
+2;Delivered quantity;OutboundOrderLine;deliveredAmount;;D;12;3;X;;The amount actually delivered to the partner;;PACK_QTY_BASE
+3;External LU-ID;LoadUnit;extLuId;;S;20;0;X;;This information is not analyzed by the system and has no controlling effect.;;HDL_UNIT_EXID_INTO
+4;Base quantity unit;Item;baseQtyUnit.id;;S;5;0;X;X; Is part of the unique identification of a quantity unit. ;;BASE_UOM_ISO
+5;Outbound order line;OutboundOrderLine;line;;S;10;0;X;;It is part of the unique identification of the outbound order line. When the line was created via the interface, it is equal to the 'sysPartnerLine'.;;DELIV_ITEM
+6;Item number;Item;itemNo;;S;20;0;X;; Is a part of the unique identification of an item. ;;MATERIAL
+7;Batch;OutboundOrderLine;oga.batch;;S;20;0;;;Batch of the item.;;BATCH

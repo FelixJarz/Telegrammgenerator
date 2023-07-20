@@ -1,0 +1,27 @@
+# OBOACK00011;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;OutboundOrder;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Outbound order number;OutboundOrder;oboNo;oboNo;S;20;0;X;;The outbound order number is part of the unique identifier of the outbound order.;
+3;System partner;OutboundOrder;sysPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;Warehouse location;OutboundOrder;whLoc.whLocId;whLoc;S;20;0;X;X;The identifier of the warehouse location.;
+5;Outbound order type;OutboundOrder;type.oboTypeId;oboTypeId;S;20;0;X;X;The identifier for an outbound order type.;
+6;Order time;OutboundOrder;orderTime;orderTime;DT;14;0;;;The time the order has been created.;
+7;Requested shipping method;OutboundOrder;reqShippingMethod.methodId;shippingMethod;S;10;0;;X;Unique identification of a shipping method.;
+8;Requested shipping category;OutboundOrder;reqShippingCategory.categoryId;shippingCategory;S;10;0;;X;Unique identification of a shipping category (see ShippingCategory).;
+9;Priority;OutboundOrder;priority;priority;N;1;0;;;Defines the priority of the outbound order.;
+10;Released # WQU;OutboundOrder;keyD.rel.numWhQtyUnits;relNumWhQtyUnits;N;10;0;;;The number of warehouse quantity units of an outbound order line or the whole outbound order.;
+11;Released # Dangerous goods points;OutboundOrder;keyD.rel.totDanGoodsPoints;relTotDanGoodsPoints;N;15;0;;;The total number of dangerous goods points of an outbound order line or the whole outbound order.;
+12;Released Total gross weight;OutboundOrder;keyD.rel.totGrWt.value;relTotGrWtValue;D;12;3;;;Specifies the value (or amount) in weight unit which was entered by a user.;
+13;Released Total gross weight unit;OutboundOrder;keyD.rel.totGrWt.unit.id;totGrWtUnit;S;5;0;;X;Uniquely identifies the weight unit.;
+14;Released Total volume;OutboundOrder;keyD.rel.totVol.value;relTotVolValue;D;12;3;;;Specifies the value (or amount) in volume unit which was entered by a user.;
+15;Released Total volume unit;OutboundOrder;keyD.rel.totVol.unit.id;relTotVolUnit;S;5;0;;X;Uniquely identifies the volume unit.;
+16;Released # Lines;OutboundOrder;keyD.numLines;relNumLines;N;5;0;;;The number of not removed outbound order lines.;
+17;Released # Primary lines;OutboundOrder;keyD.numPrimaryLines;relNumPrimaryLines;N;5;0;;;The number of not removed primary lines.;
+18;Delivered # WQU;OutboundOrder;keyD.del.numWhQtyUnits;delNumWhQtyUnits;N;10;0;;;The number of warehouse quantity units of an outbound order line or the whole outbound order.;
+19;Delivered # Dangerous goods points;OutboundOrder;keyD.del.totDanGoodsPoints;delTotDanGoodsPoints;N;15;0;;;The total number of dangerous goods points of an outbound order line or the whole outbound order.;
+20;Delivered Total gross weight;OutboundOrder;keyD.del.totGrWt.value;delTotGrWtValue;D;12;3;;;Specifies the value (or amount) in weight unit which was entered by a user.;
+21;Delivered Total gross weight unit;OutboundOrder;keyD.del.totGrWt.unit.id;delTotGrWtUnit;S;5;0;;X;Uniquely identifies the weight unit.;
+22;Delivered Total volume;OutboundOrder;keyD.del.totVol.value;delTotVolValue;D;12;3;;;Specifies the value (or amount) in volume unit which was entered by a user.;
+23;Delivered Total volume unit;OutboundOrder;keyD.del.totVol.unit.id;delTotVolUnit;S;5;0;;X;Uniquely identifies the volume unit.;
+24;Main state;OutboundOrder;state.mainState;mainState;E;8;0;X;;Defines the outbound order main state.;
+25;Release state;OutboundOrder;state.releaseState;releaseState;E;25;0;X;;Represents the outbound order release state.;
+26;Canceled;OutboundOrder;state.canceled;canceled;B;1;0;X;;Is set to true if the outbound order has been canceled.;

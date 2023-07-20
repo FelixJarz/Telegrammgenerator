@@ -1,0 +1,10 @@
+# OBDLTEXT00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;OutboundDeliveryLine;OutboundDelivery.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Outbound delivery number;OutboundDeliveryLine;OutboundDelivery.obdNo;obdNo;S;20;0;X;X;Each outbound delivery has an unique identifier, the outbound delivery number. Outbound deliveries of different clients and system partners can however have the same delivery number.;
+3;System partner line;OutboundDeliveryLine;sysPartnerLine;sysPartnerLine;N;10;0;X;;The associated line of the initial system partner telegram. If a delivery line is added within WAMAS, then this number is set to 0.;
+4;Client;TextLine;TextType.client.clientId;textLineTypeClientId;S;10;0;X;X;Is the unique identification of a client.;
+5;Text type;TextLine;TextType.textTypeId;textLineTypeId;S;10;0;X;X; Is a part of the unique identification of a text type. ;
+6;Language;TextLine;Language;langId;S;6;0;X;;;
+7;Sequence;TextLine;sequence;sequence;N;7;0;X;;A long value used for attributes, which specify a sequence used for ordering or sorting (see guideline "Rules and Recommendations for the Data Model"). Is not related with an Oracle sequence, which is represented by the IDENTIFIER model element.;
+8;Text;TextLine;text;textLineText;S;256;0;X;;The text that text template or multi language text of text types for various processes holds.;
+9;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

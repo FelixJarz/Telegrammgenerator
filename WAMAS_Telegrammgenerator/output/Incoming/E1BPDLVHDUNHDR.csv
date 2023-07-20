@@ -1,0 +1,3 @@
+# E1BPDLVHDUNHDR;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Inbound delivery number;InboundDelivery;ibdNo;;S;20;0;X;;The inbound delivery number is part of the unique identifier of the inbound delivery.;;DELIV_NUMB
+2;LU-ID of advised LU;AdvisedLu;luId;;S;20;0;X;;The LU-ID of the physical LU;;HDL_UNIT_EXID

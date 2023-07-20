@@ -1,0 +1,8 @@
+# DCLCSTATION00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;DC-LC station ID;DcLcStation;stationId;DcLcStation_stationId;S;25;0;X;;Id of a Station.;
+2;Storage location;DcLcStation;masterpickface.stoLocId;DcLcStation_masterpickface_stoLocId;S;20;0;;X;The identifier of the storage location per warehouse location.;
+3;Warehouse location;DcLcStation;pickingArea.WhLoc.whLocId;DcLcStation_pickingArea_WhLoc_whLocId;S;20;0;X;X;The identifier of the warehouse location.;
+4;Picking area;DcLcStation;pickingArea.areaId;DcLcStation_pickingArea_areaId;S;10;0;;X;A unique ID of the area within the WhLoc;
+5;Storage location;DcLcStation;location.stoLocId;DcLcStation_location_stoLocId;S;20;0;;X;The identifier of the storage location per warehouse location.;
+6;Storage location;DcLcStation;locationOut.stoLocId;DcLcStation_locationOut_stoLocId;S;20;0;;X;The identifier of the storage location per warehouse location.;
+7;Force sequential picking mode;DcLcStation;forceSequential;DcLcStation_forceSequential;B;5;0;;;Force sequential picking mode;

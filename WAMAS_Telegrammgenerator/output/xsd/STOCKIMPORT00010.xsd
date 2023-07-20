@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="STOCKIMPORT00010">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="baseQty" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="batch" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbDate" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="csia1" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia10" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia11" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia12" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia13" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia14" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia15" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia16" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia17" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia18" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia19" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia2" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia20" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia3" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia4" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia5" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia6" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia7" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia8" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia9" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="cubatureId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="dualQty" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="gow" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="lastInvTime" type="WamasDateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="layout" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="loadAidId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="luComp" type="NUMERIC_2" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="luId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="numBquWqu" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="offsetX" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="offsetXunit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="offsetY" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="offsetYunit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="offsetZ" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="offsetZunit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="prodDate" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="registrationTime" type="WamasDateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="reservationNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="sequence" type="NUMERIC_7" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stoLocId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="stockRating" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="systemLu" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="whLoc" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="wholeLu" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

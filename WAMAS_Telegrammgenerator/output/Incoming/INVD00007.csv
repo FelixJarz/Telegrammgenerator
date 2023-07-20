@@ -1,0 +1,7 @@
+# INVD00007;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Inventory demand number;InventoryDemand;invNo;invNo;S;20;0;X;;Is part of the unique identification of the InventoryDemand.;
+2;Warehouse location;InventoryDemand;whLoc.whLocId;whLoc;S;20;0;X;X;The identifier of the warehouse location.;
+3;Inventory demand type;InventoryDemand;type.typeId;typeId;S;20;0;X;X;Is part of the unique identification of an InventoryDemandType.;
+4;Priority;InventoryDemand;priority;priority;N;1;0;;;Defines the priority of the InventoryDemand. If inventory orders are created out of the InventoryDemand the priority will be copied to all created inventory orders.;
+5;Earliest release time;InventoryDemand;earliestRelTime;earliestRelTime;DT;14;0;;;A datetime provides the day, month, year and hour, minute and second of a point in time.;
+6;Basic strategy;InventoryDemand;strategy;strategy;E;6;0;;;Defines the basic strategy of the InventoryDemand.;

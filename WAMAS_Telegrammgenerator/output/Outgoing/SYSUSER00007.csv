@@ -1,0 +1,18 @@
+# SYSUSER00007;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;User identifier;SystemUser;userId;userId;S;20;0;X;;A human readable unique name of a user. This name is typically used to write activity protocol or history entries.;
+2;Profile identifier;SystemUser;RegionalProfile.profileId;profileId;S;10;0;X;X;Profile identifier.;
+3;Date of birth;SystemUser;userInfo.dateOfBirth;dateOfBirth;DA;8;0;;;Date of birth.;
+4;Employee number;SystemUser;userInfo.empNo;empNo;S;10;0;;;Employee number;
+5;First name;SystemUser;userInfo.firstName;firstName;S;35;0;;;First name.;
+6;Gender;SystemUser;userInfo.gender;gender;E;9;0;;;The user's gender.;
+7;Last name;SystemUser;userInfo.lastName;lastName;S;35;0;X;;Last name.;
+8;Middle name;SystemUser;userInfo.midName;midName;S;35;0;;;Middle name.;
+9;Title;SystemUser;userInfo.title;title;S;15;0;;;Title of the user (e.g: Dr, Msc, Bsc,..).;
+10;City;SystemUser;address.city;city;S;35;0;;;It is part of the address.;
+11;Email;SystemUser;address.email;email;S;255;0;;;An email address.;
+12;Phone;SystemUser;address.phone;phone;S;40;0;;;Phone number.;
+13;Region;SystemUser;address.region;region;S;35;0;;;Possible content: province, federal state, canton, area, county;
+14;Street;SystemUser;address.street;street;S;35;0;;;Street and street (house) number or post office box.;
+15;ZIP code;SystemUser;address.zipCode;zipCode;S;10;0;;;ZIP code of the city origin.;
+16;Country;SystemUser;address.Country.countryId;country;S;2;0;;X;The unique identifier for a country. ISO 3166-1 Alpha 2 Code.;
+17;Time zone;SystemUser;address.timezone;timeZone;S;100;0;;;Timezone value, for e.g. "Europe/Vienna".;

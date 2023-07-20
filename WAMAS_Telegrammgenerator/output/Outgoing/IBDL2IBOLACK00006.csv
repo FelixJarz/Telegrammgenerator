@@ -1,0 +1,11 @@
+# IBDL2IBOLACK00006;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;InboundDelivery;Client.clientId;ibdClientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Inbound delivery number;InboundDelivery;ibdNo;ibdNo;S;20;0;X;;The inbound delivery number is part of the unique identifier of the inbound delivery.;
+3;System partner;InboundDelivery;sysPartner.id;ibdSystemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;System partner line;InboundDeliveryLine;sysPartnerLine;ibdSystemPartnerLine;N;10;0;X;;The associated line of the initial system partner telegram. If a delivery line is added within WAMAS, then this number is set to 0.;
+5;Inbound delivery line;InboundDeliveryLine;line;ibdLine;N;10;0;X;;The line number is part of the unique identifier of the inbound delivery line.;
+6;Client;InboundOrder;Client.clientId;iboClientId;S;10;0;X;X;Is the unique identification of a client.;
+7;Inbound order number;InboundOrder;iboNo;iboNo;S;20;0;X;;The inbound order number is part of the unique identifier of the inbound order.;
+8;System partner;InboundOrder;sysPartner.id;iboSystemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+9;System partner line;InboundOrderLine;sysPartnerLine;iboSystemPartnerLine;N;10;0;X;;If this value is greater than 0, that means the inbound order line was created via interface, line number corresponds to the line number of the system partner.If this value is 0, this means this inbound order line has been created by WAMAS.;
+10;Inbound order line;InboundOrderLine;line;iboLine;N;10;0;X;;The line number is part of the unique identifier of the inbound order line.;

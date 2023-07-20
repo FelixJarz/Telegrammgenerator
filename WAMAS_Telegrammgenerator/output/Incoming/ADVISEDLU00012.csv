@@ -1,0 +1,18 @@
+# ADVISEDLU00012;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;AdvisedLu;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;LU-ID of advised LU;AdvisedLu;luId;luId;S;20;0;X;;The LU-ID of the physical LU;
+3;Warehouse location;AdvisedLu;WhLoc.whLocId;whLoc;S;20;0;X;X;The identifier of the warehouse location.;
+4;Advised LU type;AdvisedLu;type.typeId;typeId;S;20;0;X;X;It's part of the unique identification of the advised LU type.;
+5;LU origin;AdvisedLu;luOrigin;luOrigin;S;20;0;;;Needed for cross docking 1 and 2.;
+6;Loading aid;AdvisedLu;LoadAid.loadAidId;loadAidId;S;10;0;;X;Unique identification of a loading aid (see LoadAid).;
+7;Loading unit cubature;AdvisedLu;LoadUnitCubature.cubatureId;cubatureId;S;10;0;;X;Unique identifier of the loading unit cubature.;
+8;Gross weight;AdvisedLu;keyData.grossWeight.value;grossWeight;D;12;3;;;Specifies the value (or amount) in weight unit which was entered by a user.;
+9;Gross weight unit;AdvisedLu;keyData.grossWeight.unit.id;grossWeightUnit;S;5;0;;X;Uniquely identifies the weight unit.;
+10;Origin of gross weight;AdvisedLu;keyData.weightKind;weightKind;E;10;0;;;The kind of the gross weight.;
+11;Incoming goods area;AdvisedLu;unloadingPoint.area.areaId;incomingArea;S;10;0;;X;A unique ID for this incoming goods area within the WhLoc;
+12;Dock;AdvisedLu;unloadingPoint.dock.dockId;dock;S;10;0;;X;The unique ID of the dock;
+13;Staging area;AdvisedLu;unloadingPoint.staging.areaId;stagingArea;S;10;0;;X;Unique ID for the staging area.;
+14;Storage location;AdvisedLu;unloadingPoint.stoLoc.stoLocId;stoLocId;S;20;0;;X;The identifier of the storage location per warehouse location.;
+15;Cross Docking 1;AdvisedLu;cd1;cd1;B;1;0;;;Indicates whether this LU is intended for cross docking 1. This means that this LU will be directlyused for an outbound delivery and be converted to be a shipment LU without any picking involved.;
+16;Delivery time;AdvisedLu;deliveryTime;deliveryTime;DT;14;0;;;Expected delivery time.;
+17;Master LU-ID;AdvisedLu;master.luId;masterLuId;S;20;0;;X;The LU-ID of the physical LU;

@@ -1,0 +1,22 @@
+# E1LFA1M;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;ID;PartnerAddress;id;;N;10;0;X;;Unique identification of a partner adress object.;;ADRNR
+2;Partner;Partner;partnerId;;S;15;0;X;;Unique identification of a partner object.;;LIFNR
+3;Title;PartnerAddress;addr.title;;S;35;0;X;;Special designation of a company or the degree of a person.;;ANRED
+4;Name;PartnerAddress;addr.name;;S;35;0;X;;Name of a company or a person.;;NAME1
+5;Name 2;PartnerAddress;addr.name2;;S;35;0;X;;Name of a company or a person.;;NAME2
+6;Name 3;PartnerAddress;addr.name3;;S;35;0;X;;Name of a company or a person.;;NAME3
+7;Name 4;PartnerAddress;addr.name4;;S;35;0;X;;Name of a company or a person.;;NAME4
+8;Country;PartnerAddress;addr.Country.countryId;;S;2;0;X;X;The unique identifier for a country. ISO 3166-1 Alpha 2 Code.;;LAND1
+9;City;PartnerAddress;addr.city;;S;35;0;X;;It is part of the address.;;ORT01
+10;ZIP code;PartnerAddress;addr.zipCode;;S;10;0;X;;ZIP code of the city origin.;;PSTLZ
+11;Street;PartnerAddress;addr.street;;S;35;0;X;;Street and street (house) number or post office box.;;STRAS
+12;Language key;;;;S;6;0;X;;;;SPRAS
+13;Phone;PartnerAddress;addr.phone;;S;40;0;X;;Phone number.;;TELF1
+14;Fax;PartnerAddress;addr.fax;;S;40;0;X;;Fax number.;;TELFX
+15;District;PartnerAddress;addr.district;;S;35;0;X;;The district of an address;;ORT02
+16;Region;PartnerAddress;addr.region;;S;35;0;X;;Possible content: province, federal state, canton, area, county;;REGIO
+17;Global location number (part 1);;;;S;7;0;X;;;;BBBNR
+18;Global location number (part 2);;;;S;5;0;X;;;;BBSNR
+19;Verification code for location number;;;;S;1;0;X;;;;BUBKZ
+20;Function message;;;;S;3;0;X;;;;MSGFN
+21;Master data state;Partner;state;;S;1;0;X;;The master data state defines usage rules of master data records or configuration records.It complements the RecordState that holds the record's basic state.See also: RecordState.;;LOEVM

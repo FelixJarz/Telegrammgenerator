@@ -1,0 +1,17 @@
+# E1BP2017_GM_ITEM_CREATE;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Posting key for system partner;PostingKey4SysPAssignment;sysPartnerPostingKey;;S;20;0;X;;Defines the posting key id for the system partner.;;MOVE_TYPE
+2;Movement reason of system partner;PostingKey4SysPAssignment;sysPartnerFields.moveReason;;S;20;0;X;;Contains a move reason that is acknowledged to SAP in the MBGMCR IDoc in the field MOVE_REAS.;;MOVE_REAS
+3;Item number;DifferenceConfirmation;packagingVersion.Item.itemNo;;S;20;0;X;X; Is a part of the unique identification of an item. ;;MATERIAL
+4;SAP plant;SysPartnerStockGroup;sapStockAttr.sapPlant;;S;10;0;X;;Is the unique identification of a SAP plant.;;PLANT
+5;Item number;DifferenceConfirmation;packagingVersionTo.Item.itemNo;;S;20;0;;X; Is a part of the unique identification of an item. ;;MOVE_MAT
+6;Destination plant;;;;S;10;0;X;;;;MOVE_PLANT
+7;SAP storage location;SysPartnerStockGroup;sapStockAttr.sapStgeLoc;;S;20;0;X;;Is the unique identification of a SAP storage location.;;STGE_LOC
+8;SAP move storage location;;;;S;20;0;X;;;;MOVE_STLOC
+9;SAP stock type;SysPartnerStockGroup;sapStockAttr.sapStockType;;S;20;0;X;;Is the unique identification of a SAP stock type.;;STCK_TYPE
+10;Cost center;CostCenter;id;;S;20;0;X;;Uniquely identifies the cost center for a particular client.;;COSTCENTER
+11;Quantity (to);DifferenceConfirmation;amountTo;;D;12;3;X;;This quantity is only set if the quantity has been changed in the stock adjustment. It stores the changed (new) quantity.;;ENTRY_QNT
+12;Base quantity unit;Item;baseQtyUnit.id;;S;5;0;X;X; Is part of the unique identification of a quantity unit. ;;ENTRY_UOM_ISO
+13;Batch (from);DifferenceConfirmation;batch.from;;S;20;0;X;;Stores the unchanged (old) batch.;;BATCH
+14;Batch (to);DifferenceConfirmation;batch.to;;S;20;0;X;;Stores the changed (new) batch.;;MOVE_BATCH
+15;Inbound delivery number;InboundDelivery;ibdNo;;S;20;0;X;;The inbound delivery number is part of the unique identifier of the inbound delivery.;;DELIV_NUMB_TO_SEARCH
+16;Inbound delivery line;InboundDeliveryLine;line;;S;10;0;X;;The line number is part of the unique identifier of the inbound delivery line.;;DELIV_ITEM_TO_SEARCH

@@ -1,0 +1,10 @@
+# OBDLOADAIDACK00004;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;OutboundDelivery;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Outbound delivery number;OutboundDelivery;obdNo;obdNo;S;20;0;X;;Each outbound delivery has an unique identifier, the outbound delivery number. Outbound deliveries of different clients and system partners can however have the same delivery number.;
+3;System partner;OutboundDelivery;sysPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;Loading aid;OutboundDelivery;OgLuExt.loadAid.LoadAid;loadAidId;S;10;0;X;;Other End (LoadAid): Contains the loading aid that has been registered for the OgLuExt.;
+5;# OK;RegisteredLoadAid;numOk;registeredLaOk;N;5;0;;;Contains the delivered quantity for a certain loading aid and OgLuExt.;
+6;# Not OK;RegisteredLoadAid;numNotOk;registeredLaNotOk;N;5;0;;;Contains the not exchangeable quantity for a loading aid and OgLuExt.;
+7;Item number;LoadAidItem;Item.itemNo;itemNo;S;20;0;;X; Is a part of the unique identification of an item. ;
+8;Variant;LoadAidItem;Item.variant;variant;S;10;0;;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+9;Partner;OutboundDelivery;partnerRole.ogPartner.Partner.partnerId;partnerId;S;15;0;X;X;Unique identification of a partner object.;

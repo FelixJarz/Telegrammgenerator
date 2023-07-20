@@ -1,0 +1,2 @@
+# ASRS_LUREPORTREQACK00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Request number;;;requestNo;S;20;0;X;;This field contains the identifier of the request.;

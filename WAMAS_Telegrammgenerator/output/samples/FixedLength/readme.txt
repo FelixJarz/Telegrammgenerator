@@ -1,0 +1,3 @@
+- before importing telegrams IBDLV00001 and OBDLV00001 , please import telegram ARTCREATE, since it creates the item needed for the inbound/outbound deliveries.
+- delete the SAP Record Type configurations from DI009 that postfix the partner's ID (or manually create the partner 1;1_1C and 1;1_1D)
+- telegrams CREMAS and DEBMAS will not work due to some constraints violation in table OgPartner (e.g. item replacement kind is not handled in IDocIbdPostProcessor)

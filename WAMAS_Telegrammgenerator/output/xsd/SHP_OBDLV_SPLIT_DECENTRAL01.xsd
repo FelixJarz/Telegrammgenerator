@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="SHP_OBDLV_SPLIT_DECENTRAL01">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="CreationDate" type="WamasDate" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="CreationTime" type="xsd:time" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Extension" type="STRING_30" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="IDocNumber" type="STRING_16" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="IDocType" type="STRING_30" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Mandt" type="STRING_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="MessageType" type="STRING_30" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvpor" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvprn" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvprt" type="STRING_2" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Serial" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndpor" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndprn" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndprt" type="STRING_2" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="E1SHP_OBDLV_SPLIT_DECENTRAL" type="SHP_OBDLV_SPLIT_DECENTRAL01_E1SHP_OBDLV_SPLIT_DECENTRAL" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_OBDLV_SPLIT_DECENTRAL01_E1BPOBDLVITEMDSP">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="CurrQtyId" type="STRING_1" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_PackagingVersion_ItemQtyUnit_numBaseQtyUnits_denominator" type="NUMERIC_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_PackagingVersion_ItemQtyUnit_numBaseQtyUnits_numerator" type="NUMERIC_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_baseQtyUnit_id" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundDeliveryLine_deliveredAmount" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundOrderLine_line" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundOrder_oboNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_OBDLV_SPLIT_DECENTRAL01_E1SHP_OBDLV_SPLIT_DECENTRAL">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="BusinessProcessId" type="STRING_4" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DeliveryItemsBelongToId" type="STRING_1" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundDelivery_obdNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundOrder_oboNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="E1BPOBDLVITEMDSP" type="SHP_OBDLV_SPLIT_DECENTRAL01_E1BPOBDLVITEMDSP" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,7 @@
+# HEADER FULL;Description;Datatype;Length;Mandatory;Documentation
+1;InSPM source;S;10;X;
+2;InSPM destination;S;10;X;
+3;Transaction ID of inSPM;S;25;;
+4;InSPM sequence number;N;6;X;
+5;InSPM creation time;DT;14;X;
+6;InSPM record type name;S;30;X;

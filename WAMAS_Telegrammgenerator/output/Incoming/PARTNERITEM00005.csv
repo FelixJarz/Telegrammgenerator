@@ -1,0 +1,9 @@
+# PARTNERITEM00005;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;PartnerItem;partner.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Partner;PartnerItem;partner.partnerId;partnerId;S;15;0;X;X;Unique identification of a partner object.;
+3; Item number;PartnerItem;item.itemNo;itemNo;S;20;0;X;X; Is a part of the unique identification of an item. ;
+4; Variant;PartnerItem;item.variant;variant;S;10;0;X;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+5;Partner item number;PartnerItem;partnerItemNo;partnerItemNo;S;20;0;;; Partner-specific item number ;
+6;Partner item description;PartnerItem;partnerItemDescription;partnerItemDesc;S;40;0;;; Partner-specific item description. ;
+7;Partner item description 2;PartnerItem;partnerItemDescription2;partnerItemDesc2;S;40;0;;; Partner-specific item description. ;
+8;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

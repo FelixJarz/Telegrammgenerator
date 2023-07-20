@@ -1,0 +1,8 @@
+# E1BPE1MARART;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Function message;;;;S;3;0;X;;;;FUNCTION
+2;Item number;Item;itemNo;;S;20;0;X;; Is a part of the unique identification of an item. ;;MATERIAL
+3;Base quantity unit;Item;baseQtyUnit.id;;S;5;0;X;X; Is part of the unique identification of a quantity unit. ;;BASE_UOM_ISO
+4;Item alias;Item;ItemAlias.itemAliasNo;;S;20;0;X;X;Item alias number. The meaning of this number is defined by ItemAlias.kind.;;OLD_MAT_NO
+5;Remaining shelf life;Item;IgItem.remLife;;S;17;0;X;;Contains all attributes relevant for the checking of the remaining life.;;MINREMLIFE
+6;Delete flag;;;;S;1;0;X;;;;DEL_FLAG
+7;Expiration date period;;;;S;6;0;X;;;;PERIOD_IND_EXPIRATION_DATE

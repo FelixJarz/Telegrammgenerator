@@ -1,0 +1,6 @@
+# ASRS_LUREPORTREQDETAILACK00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Request number;;;requestNo;S;20;0;X;;This field contains the identifier of the request.;
+2;LU-ID;LoadUnit;luId;luId;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+3;Storage location;LoadUnit;stoLoc;stoLocId;S;20;0;X;;Other End (stoLoc): Actual storage location of the stock object bundle.;
+4;Storage location purpose in ASRS;AsrsStoLocPurposeAssignment;asrsStoLocPurpose;stoLocPurpose;E;20;0;X;;Defines the StoLoc purpose used in ASRS_LUINFOACK00001;
+5;Last movement;LoadUnit;lastMovement;lastMovement;DT;14;0;X;;Indicates the latest movement time (e.g. of a loading unit).;

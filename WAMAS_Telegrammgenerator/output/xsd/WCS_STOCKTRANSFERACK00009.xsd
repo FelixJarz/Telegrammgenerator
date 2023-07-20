@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="WCS_STOCKTRANSFERACK00009">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="requestNo" type="NUMERIC_7" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="seqNo" type="NUMERIC_5" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="WCS_STOCKTRANSFERACKLU00009" type="WCS_STOCKTRANSFERACK00009_WCS_STOCKTRANSFERACKLU00009" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="WCS_STOCKTRANSFERACK00009_WCS_STOCKTRANSFERACKLU00009">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="completeFlag" type="boolean" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="errorReason" type="STRING_200" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="luError" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="luId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="luLocation" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="luOrigin" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="masterLuId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="masterLuOrigin" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="remainingFlag" type="boolean" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="requestNo" type="NUMERIC_7" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="seqNo" type="NUMERIC_5" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="WCS_STOCKTRANSFERACKSO00009" type="WCS_STOCKTRANSFERACK00009_WCS_STOCKTRANSFERACKSO00009" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="WCS_STOCKTRANSFERACK00009_WCS_STOCKTRANSFERACKSO00009">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="baseQty" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="dualQty" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="infoText" type="STRING_100" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="luId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="luOrigin" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="requestNo" type="NUMERIC_7" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="seqNo" type="NUMERIC_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="stockObjectNo" type="NUMERIC_18" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

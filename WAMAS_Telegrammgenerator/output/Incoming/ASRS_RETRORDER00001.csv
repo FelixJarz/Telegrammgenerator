@@ -1,0 +1,3 @@
+# ASRS_RETRORDER00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Retrieval order number;RetrievalOrder;retrievalOrderNo;retrievalOrderNo;S;20;0;X;;Each Retrieval Order has a unique identifier the retrieval order number;
+2;Release;RetrievalOrder;release;release;B;1;0;;;It indicates if a retrieval order should be released automatically.;

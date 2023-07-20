@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<header>
+			<FULL>
+				<HEADER_SOURCE>WMS</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_TRANSACTIONID>3</HEADER_TRANSACTIONID>
+				<HEADER_SEQUENCE>0</HEADER_SEQUENCE>
+				<HEADER_CREATIONTIME>20210825000000</HEADER_CREATIONTIME>
+				<HEADER_RECORDTYPENAME>FWCS_PARTNER00001</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<FWCS_PARTNER00001>
+				<clientId>1</clientId>
+				<partnerId>4004</partnerId>
+				<firstName>Lck</firstName>
+				<lastName>T</lastName>
+				<countryId>BM</countryId>
+				<zipCode>4444</zipCode>
+				<city>Parkville</city>
+				<street>Nest Avenue</street>
+				<recordState></recordState>
+			</FWCS_PARTNER00001>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>
+

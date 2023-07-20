@@ -1,0 +1,6 @@
+# E1BP2017_GM_HEAD_01;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Posting date;;;;DA;8;0;X;;;;PSTNG_DATE
+2;Document date;;;;DA;8;0;X;;;;DOC_DATE
+3;Reservation control;;;;S;1;0;X;;;;EXT_WMS
+4;Header text;;;;S;25;0;X;;;;HEADER_TXT
+5;Document reference number;;;;S;16;0;X;;;;REF_DOC_NO

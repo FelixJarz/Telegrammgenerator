@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="WCS_STOCKATTRCHGREQ00006">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="batchFrom" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="batchTo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbDateFrom" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbDateTo" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="cdNoFrom" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="cdNoTo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="csia10From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia10To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia11From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia11To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia12From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia12To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia13From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia13To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia14From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia14To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia15From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia15To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia16From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia16To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia17From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia17To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia18From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia18To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia19From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia19To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia1From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia1To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia20From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia20To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia2From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia2To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia3From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia3To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia4From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia4To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia5From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia5To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia6From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia6To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia7From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia7To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia8From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia8To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia9From" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csia9To" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="gowFrom" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="gowTo" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="pkv" type="NUMERIC_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="prodDateFrom" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="prodDateTo" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="reservationNoFrom" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="reservationNoTo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stockRatingFrom" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="stockRatingTo" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

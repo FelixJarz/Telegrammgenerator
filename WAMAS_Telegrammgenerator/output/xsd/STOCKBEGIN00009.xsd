@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="STOCKBEGIN00009">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="StockReportRequest_csia_csia01" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia02" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia03" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia04" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia05" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia06" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia07" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia08" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia09" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia10" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia11" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia12" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia13" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia14" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia15" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia16" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia17" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia18" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia19" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia20" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia01" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia02" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia03" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia04" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia05" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia06" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia07" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia08" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia09" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia10" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia11" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia12" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia13" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia14" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia15" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia16" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia17" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia18" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia19" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia20" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="batch" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbDateFrom" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbDateTo" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="cdNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="gow" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByBBD" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByBatch" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByCdNo" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByClientId" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByGow" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByIbdl" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByLU" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByLuComp" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByLuLayout" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByPD" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByRes" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByStoLoc" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByStockGrp" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByWhLoc" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="includeZeroAmount" type="boolean" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="prodDateFrom" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="prodDateTo" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="requestId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="reservationNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stockGroupId" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="systemPartner" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="whLoc" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="STOCKACK00009" type="STOCKBEGIN00009_STOCKACK00009" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="STOCKEND00008" type="STOCKBEGIN00009_STOCKEND00008" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="STOCKBEGIN00009_STOCKACK00009">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="StockObject_sia_csia_csia01" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia02" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia03" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia04" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia05" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia06" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia07" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia08" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia09" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia10" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia11" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia12" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia13" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia14" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia15" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia16" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia17" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia18" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia19" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockObject_sia_csia_csia20" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="baseQty" type="DECIMAL_14_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="batch" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbDate" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="cdNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="dualQty" type="DECIMAL_14_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="gow" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ibdLine" type="NUMERIC_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ibdNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ibdSystemPartner" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="invLine" type="NUMERIC_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="invNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="invSystemPartner" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="invSystemPartnerLine" type="NUMERIC_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="layout" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="luComp" type="STRING_2" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="luId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="masterLuId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="numBquWqu" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="prodDate" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="requestId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="reservationNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stoLocId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stockGroupId" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="systemPartner" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="whLoc" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="STOCKBEGIN00009_STOCKEND00008">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="StockReportRequest_csia_csia01" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia02" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia03" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia04" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia05" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia06" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia07" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia08" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia09" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia10" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia11" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia12" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia13" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia14" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia15" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia16" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia17" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia18" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia19" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_csia_csia20" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia01" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia02" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia03" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia04" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia05" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia06" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia07" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia08" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia09" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia10" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia11" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia12" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia13" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia14" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia15" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia16" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia17" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia18" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia19" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="StockReportRequest_stockGrouping_csia20" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="batch" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbDateFrom" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbDateTo" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="cdNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="gow" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByBBD" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByBatch" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByCdNo" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByClientId" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByGow" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByIbdl" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByLU" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByLuComp" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByLuLayout" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByPD" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByRes" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByStoLoc" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByStockGrp" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grpByWhLoc" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="includeZeroAmount" type="boolean" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="prodDateFrom" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="prodDateTo" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="requestId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="reservationNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stockGroupId" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="systemPartner" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="whLoc" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

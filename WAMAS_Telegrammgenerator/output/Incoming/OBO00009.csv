@@ -1,0 +1,13 @@
+# OBO00009;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;OutboundOrder;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Outbound order number;OutboundOrder;oboNo;oboNo;S;20;0;X;;The outbound order number is part of the unique identifier of the outbound order.;
+3;Warehouse location;OutboundOrder;whLoc.whLocId;whLoc;S;20;0;X;X;The identifier of the warehouse location.;
+4;Outbound order type;OutboundOrder;type.oboTypeId;oboTypeId;S;20;0;X;X;The identifier for an outbound order type.;
+5;Order time;OutboundOrder;orderTime;orderTime;DT;14;0;;;The time the order has been created.;
+6;Requested shipping method;OutboundOrder;reqShippingMethod.methodId;shippingMethod;S;10;0;;X;Unique identification of a shipping method.;
+7;Requested shipping category;OutboundOrder;reqShippingCategory.categoryId;shippingCategory;S;10;0;;X;Unique identification of a shipping category (see ShippingCategory).;
+8;Priority;OutboundOrder;priority;priority;N;1;0;;;Defines the priority of the outbound order.;
+9;Split allowed;OutboundOrder;obdRestr.splitAllowed;obdSplitAllowed;E;9;0;;;Defines whether splitting an OBO or OBD is allowed.;
+10;Reduction allowed;OutboundOrder;obdRestr.reductionAllowed;reductionAllowed;E;9;0;;;Defines if reducing the ordered (released) quantity is allowed.;
+11;Rounding by Rules;OutboundOrder;roundingByRules;roundingByRules;E;9;0;;;Defines if rounding rules should apply.;
+12;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

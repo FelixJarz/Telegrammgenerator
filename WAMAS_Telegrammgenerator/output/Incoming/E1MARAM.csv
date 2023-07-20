@@ -1,0 +1,10 @@
+# E1MARAM;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Function message;;;;S;3;0;X;;;;MSGFN
+2;Item number;Item;itemNo;;S;20;0;X;; Is a part of the unique identification of an item. ;;MATNR
+3;Item;Item;goodsCategory;;S;10;0;X;;Other End (goodsCategory): Optional grouping of an item.;;MATKL
+4;Item type;Item;itemType.id;;S;10;0;X;X;Unique identifier of an ItemType.;;MTART
+5;Base quantity unit;Item;baseQtyUnit.id;;S;5;0;X;X; Is part of the unique identification of a quantity unit. ;;MEINS
+6;Item alias;Item;ItemAlias.itemAliasNo;;S;20;0;X;X;Item alias number. The meaning of this number is defined by ItemAlias.kind.;;BISMT
+7;Remaining shelf life;Item;IgItem.remLife;;S;17;0;X;;Contains all attributes relevant for the checking of the remaining life.;;MHDRZ
+8;Delete flag;;;;S;1;0;X;;;;LVORM
+9;Expiration date period;;;;S;6;0;X;;;;IPRKZ

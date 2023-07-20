@@ -1,0 +1,7 @@
+# OBDEXTREFACK00006;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;OutboundDelivery;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Outbound delivery number;OutboundDelivery;obdNo;obdNo;S;20;0;X;;Each outbound delivery has an unique identifier, the outbound delivery number. Outbound deliveries of different clients and system partners can however have the same delivery number.;
+3;System partner;OutboundDelivery;sysPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;Key;ExternalReference;extRefKey;extRefKey;S;64;0;;;The external reference key;
+5;Value 1;ExternalReference;value1;extRefVal1;S;512;0;;;The first value associated to the key. Can be empty.;
+6;Value 2;ExternalReference;value2;extRefVal2;S;512;0;;;The second value associated to the key. Can be empty.;

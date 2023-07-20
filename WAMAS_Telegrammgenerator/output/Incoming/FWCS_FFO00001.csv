@@ -1,0 +1,15 @@
+# FWCS_FFO00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;FulfillmentOrder;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Fulfillment order;FulfillmentOrder;orderId;orderId;S;20;0;X;;Fulfillment order ID;
+3;Reference number;FulfillmentOrder;orderReference;orderReference;S;20;0;;;Optional reference number for the order from the system partner.;
+4;LU-ID;FulfillmentOrder;luId;luId;S;20;0;;;ID of the LU. Used in case of IG or replenishment.;
+5;Loading aid;FulfillmentOrder;LoadAid.loadAidId;loadAidId;S;10;0;;X;Unique identification of a loading aid (see LoadAid).;
+6;Loading unit cubature;FulfillmentOrder;LoadUnitCubature.cubatureId;loadUnitCubatureId;S;10;0;;X;Unique identifier of the loading unit cubature.;
+7;FOG graph;FulfillmentOrder;fogGraph.fogGraphId;fogGraphId;S;10;0;;X;ID;
+8;Partner;FulfillmentOrder;partner.partnerId;partnerId;S;15;0;;X;Unique identification of a partner object.;
+9;Staging time;FulfillmentOrder;stagingTime;stagingTime;DT;12;0;;;Date and time of staging;
+10;Fulfillment order group;FulfillmentOrder;orderGroup;orderGroup;S;40;0;;;Grouping of orders for filtering in dialogs, can be filled with e.g. tour number, load number.;
+11;Staging area;FulfillmentOrder;stagingArea.areaId;stagingArea;S;10;0;;X;Unique ID for the staging area.;
+12;Printing requested;FulfillmentOrder;flags.printingRequested;printingRequested;B;1;0;;;If set something has to be printed for the LU.;
+13;Check requested;FulfillmentOrder;flags.checkingRequested;checkingRequested;B;1;0;;;If set LU must be diverted to final check station.;
+14;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

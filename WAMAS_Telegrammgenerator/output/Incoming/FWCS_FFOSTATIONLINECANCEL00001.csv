@@ -1,0 +1,6 @@
+# FWCS_FFOSTATIONLINECANCEL00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;FulfillmentOrderStationLine;FulfillmentOrder.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Fulfillment order;FulfillmentOrderStationLine;FulfillmentOrder.orderId;orderId;S;20;0;X;X;Fulfillment order ID;
+3;Conveyor station;FulfillmentOrderStationLine;conveyorStation.id;conveyorStationId;S;20;0;;X;The ID of the conveyor station;
+4;Conveyor station group;FulfillmentOrderStationLine;conveyorStationGroup.id;conveyorStationGroupId;S;20;0;;X;The ID of the conveyor station group;
+5;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

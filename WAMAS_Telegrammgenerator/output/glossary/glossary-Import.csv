@@ -1,0 +1,96 @@
+﻿Original;ger;spa;fra;por-BR;ita;Occurrences
+A-Frame;A-Frame;A-Frame;A-Frame;A-Frame;A-Frame;AFRAMECHANNELREPLLOC00001
+BBD BBD;BBD BBD;BBD BBD;BBD BBD;BBD BBD;BBD BBD;STOCKIMPORT00010
+BQU / WQU;BME / LME;UE / UV;UQB / UGS;UBQ / UQD;UQB / UQM;PICKINGLOCASSIGNMENT00008 STOCKIMPORT00010
+Batch;Charge;Lote;Lot;Lote;Lotto;STOCKIMPORT00010
+CSIA 01;ABIA 01;AAIE 01;AISA 01;AAIE 01;AQSP 01;STOCKIMPORT00010
+CSIA 02;ABIA 02;AAIE 02;AISA 02;AAIE 02;AQSP 02;STOCKIMPORT00010
+CSIA 03;ABIA 03;AAIE 03;AISA 03;AAIE 03;AQSP 03;STOCKIMPORT00010
+CSIA 04;ABIA 04;AAIE 04;AISA 04;AAIE 04;AQSP 04;STOCKIMPORT00010
+CSIA 05;ABIA 05;AAIE 05;AISA 05;AAIE 05;AQSP 05;STOCKIMPORT00010
+CSIA 06;ABIA 06;AAIE 06;AISA 06;AAIE 06;AQSP 06;STOCKIMPORT00010
+CSIA 07;ABIA 07;AAIE 07;AISA 07;AAIE 07;AQSP 07;STOCKIMPORT00010
+CSIA 08;ABIA 08;AAIE 08;AISA 08;AAIE 08;AQSP 08;STOCKIMPORT00010
+CSIA 09;ABIA 09;AAIE 09;AISA 09;AAIE 09;AQSP 09;STOCKIMPORT00010
+CSIA 10;ABIA 10;AAIE 10;AISA 10;AAIE 10;AQSP 10;STOCKIMPORT00010
+CSIA 11;ABIA 11;AAIE 11;AISA 11;AAIE 11;AQSP 11;STOCKIMPORT00010
+CSIA 12;ABIA 12;AAIE 12;AISA 12;AAIE 12;AQSP 12;STOCKIMPORT00010
+CSIA 13;ABIA 13;AAIE 13;AISA 13;AAIE 13;AQSP 13;STOCKIMPORT00010
+CSIA 14;ABIA 14;AAIE 14;AISA 14;AAIE 14;AQSP 14;STOCKIMPORT00010
+CSIA 15;ABIA 15;AAIE 15;AISA 15;AAIE 15;AQSP 15;STOCKIMPORT00010
+CSIA 16;ABIA 16;AAIE 16;AISA 16;AAIE 16;AQSP 16;STOCKIMPORT00010
+CSIA 17;ABIA 17;AAIE 17;AISA 17;AAIE 17;AQSP 17;STOCKIMPORT00010
+CSIA 18;ABIA 18;AAIE 18;AISA 18;AAIE 18;AQSP 18;STOCKIMPORT00010
+CSIA 19;ABIA 19;AAIE 19;AISA 19;AAIE 19;AQSP 19;STOCKIMPORT00010
+CSIA 20;ABIA 20;AAIE 20;AISA 20;AAIE 20;AQSP 20;STOCKIMPORT00010
+Client;Klient;Cliente;Client;Requerente;Cliente;PICKINGLOCASSIGNMENT00008 PLAGOODSOWNER00006 PLASTOCKRATING00006 STOCKIMPORT00010
+Critical threshold Percentage;Critical threshold Percentage;Critical threshold Percentage;Critical threshold Percentage;Critical threshold Percentage;Critical threshold Percentage;PICKINGLOCASSIGNMENT00008
+Critical threshold Quantity unit kind;Critical threshold Quantity unit kind;Critical threshold Quantity unit kind;Critical threshold Quantity unit kind;Critical threshold Quantity unit kind;Critical threshold Quantity unit kind;PICKINGLOCASSIGNMENT00008
+Critical threshold Quantity unit;Critical threshold Quantity unit;Critical threshold Quantity unit;Critical threshold Quantity unit;Critical threshold Quantity unit;Critical threshold Quantity unit;PICKINGLOCASSIGNMENT00008
+Critical threshold Quantity;Critical threshold Quantity;Critical threshold Quantity;Critical threshold Quantity;Critical threshold Quantity;Critical threshold Quantity;PICKINGLOCASSIGNMENT00008
+Cross Docking;Cross Docking;Cross Docking;Cross docking;Cross Docking;Cross Docking;PICKINGLOCASSIGNMENT00008
+DC-LC station ID;DC-LC Stations-ID;ID de la estación de CD-CL;ID de station DC-LC;ID de estação DC-LC;ID postazione CD-CL;DCLCGADGET00001 DCLCSTATION00001
+Data state;Datenstatus;Estado de los datos;État de données;Status de dados;Stato dei dati;STOCKIMPORT00010
+Device ID;Geräte-ID;ID del dispositivo;ID du dispositif;ID de dispositivo;ID dispositivo;DCLCGADGET00001 DCLCGADGETASSOCIATION00001
+Device controller;Device Controller;Controlador de medio;Contrôleur de dispositif;Controlador de dispositivo;Controller di dispositivo;DCLCCFG00001
+Device type;Gerätetyp;Tipo de dispositivo;Type de dispositif;Tipo de dispositivo;Tipo di dispositivo;DCLCGADGET00001
+Disable automatic replenishment;Automatischen Nachschub deaktivieren;Desactivar reposición automática;Déactiver le réapprovisionnement automatique;Desativar reaprovisionamento automático;Disattiva rifornimento automatico;PICKINGLOCASSIGNMENT00008
+Disable manual replenishment;Manuellen Nachschub deaktivieren;Desactivar reposición manual;Désactiver le réapprovisionnement manuel;Desativar reaprovisionamento manual;Disattiva rifornimento manuale;PICKINGLOCASSIGNMENT00008
+Dual quantity;Dualmenge;Cantidad dual;Quantité duale;Quantidade dual;Quantità duale;STOCKIMPORT00010
+Enable negative stock;Negativen Bestand aktivieren;Activar existencias negativas;Permettre du stock négatif;Habilitar estoque negativo;Attiva scorta negativa;PICKINGLOCASSIGNMENT00008
+Force sequential picking mode;Sequentiellen Kommissioniermodus erzwingen;Modo de picking secuencial forzado;Forcer le mode de prélèvement séquentiel;Forçar modo de separação de pedidos sequencial;Forza modo di picking sequenziale;DCLCSTATION00001
+From;Von;Desde;De;De;Da;PICKINGLOCASSIGNMENT00008
+Goods category;Warengruppe;Grupo de mercancías;Groupe de marchandises;Categoria de mercadorias;Gruppo di merci;PICKINGLOCASSIGNMENT00008
+Goods owner;Wareneigentümer;Propietario de las mercancías;Propriétaire de la marchandise;Proprietário da mercadoria;Proprietario della merce;PICKINGLOCASSIGNMENT00008 PLAGOODSOWNER00006 STOCKIMPORT00010
+Hardware A-Frame channel address;Adresse Hardware-A-Frame-Kanal;Dirección de canal de A-Frame de hardware;Adresse du canal A-Frame matériel;Endereço de canal A-Frame de hardware;Indirizzo hardware canale A-Frame ;AFRAMECHANNELREPLLOC00001
+IP address of line controller;IP-Adresse von Line Controller;Dirección IP del controlador de línea;Adresse IP du contrôleur de ligne;Endereço IP do Line Controller;Indirizzo IP del controller di linea;DCLCCFG00001
+Inventory threshold for picking Percentage;Inventory threshold for picking Percentage;Inventory threshold for picking Percentage;Inventory threshold for picking Percentage;Inventory threshold for picking Percentage;Inventory threshold for picking Percentage;PICKINGLOCASSIGNMENT00008
+Inventory threshold for picking Quantity unit kind;Inventory threshold for picking Quantity unit kind;Inventory threshold for picking Quantity unit kind;Inventory threshold for picking Quantity unit kind;Inventory threshold for picking Quantity unit kind;Inventory threshold for picking Quantity unit kind;PICKINGLOCASSIGNMENT00008
+Inventory threshold for picking Quantity unit;Inventory threshold for picking Quantity unit;Inventory threshold for picking Quantity unit;Inventory threshold for picking Quantity unit;Inventory threshold for picking Quantity unit;Inventory threshold for picking Quantity unit;PICKINGLOCASSIGNMENT00008
+Inventory threshold for picking Quantity;Inventory threshold for picking Quantity;Inventory threshold for picking Quantity;Inventory threshold for picking Quantity;Inventory threshold for picking Quantity;Inventory threshold for picking Quantity;PICKINGLOCASSIGNMENT00008
+Inventory threshold for replenishment Percentage;Inventory threshold for replenishment Percentage;Inventory threshold for replenishment Percentage;Inventory threshold for replenishment Percentage;Inventory threshold for replenishment Percentage;Inventory threshold for replenishment Percentage;PICKINGLOCASSIGNMENT00008
+Inventory threshold for replenishment Quantity unit kind;Inventory threshold for replenishment Quantity unit kind;Inventory threshold for replenishment Quantity unit kind;Inventory threshold for replenishment Quantity unit kind;Inventory threshold for replenishment Quantity unit kind;Inventory threshold for replenishment Quantity unit kind;PICKINGLOCASSIGNMENT00008
+Inventory threshold for replenishment Quantity unit;Inventory threshold for replenishment Quantity unit;Inventory threshold for replenishment Quantity unit;Inventory threshold for replenishment Quantity unit;Inventory threshold for replenishment Quantity unit;Inventory threshold for replenishment Quantity unit;PICKINGLOCASSIGNMENT00008
+Inventory threshold for replenishment Quantity;Inventory threshold for replenishment Quantity;Inventory threshold for replenishment Quantity;Inventory threshold for replenishment Quantity;Inventory threshold for replenishment Quantity;Inventory threshold for replenishment Quantity;PICKINGLOCASSIGNMENT00008
+Item number;Artikelnummer;Número de artículo;Le numéro d'article;Número de item;Numero dell'articolo;PICKINGLOCASSIGNMENT00008 STOCKIMPORT00010
+LU compartment;LE-Fach;Compartimento de UT;Compartiment UC;Compartimento da UT;Compartimento UdC;STOCKIMPORT00010
+LU layout;LE-Layout;Diseño UT;Configuration d'UC;Layout da UT;Layout UdC;STOCKIMPORT00010
+LU-ID;LE-ID;ID UT;ID UC;ID-UT;ID UdC;STOCKIMPORT00010
+Last inventory time;Letzter Inventurtermin;Último momento de inventario;Dernière date d'inventaire;Última hora de inventário;Ultimo tempo di inventario;STOCKIMPORT00010
+Line ID;Zeilen-ID;ID de línea;ID de ligne;ID de linha;Identificazione riga;DCLCGADGETASSOCIATION00001 DCLCLINE00001
+Line controller ID;Line Controller-ID;ID de controlador de línea;ID du contrôleur de ligne;ID do controlador de linha;ID controller di linea;DCLCCFG00001 DCLCGADGETASSOCIATION00001
+Loading aid;Ladehilfsmittel;Medio auxiliar de transporte;Auxiliaire de chargement;Meio auxiliar de transporte;Base di carico;STOCKIMPORT00010
+Loading unit cubature;Ladeeinheitenkubatur;Cubicación de unidades de transporte;Cubature d'unité de chargement;Cubatura da unidade de transporte;Cubatura dell'unità di carico;STOCKIMPORT00010
+Normal threshold Percentage;Normal threshold Percentage;Normal threshold Percentage;Normal threshold Percentage;Normal threshold Percentage;Normal threshold Percentage;PICKINGLOCASSIGNMENT00008
+Normal threshold Quantity unit kind;Normal threshold Quantity unit kind;Normal threshold Quantity unit kind;Normal threshold Quantity unit kind;Normal threshold Quantity unit kind;Normal threshold Quantity unit kind;PICKINGLOCASSIGNMENT00008
+Normal threshold Quantity unit;Normal threshold Quantity unit;Normal threshold Quantity unit;Normal threshold Quantity unit;Normal threshold Quantity unit;Normal threshold Quantity unit;PICKINGLOCASSIGNMENT00008
+Normal threshold Quantity;Normal threshold Quantity;Normal threshold Quantity;Normal threshold Quantity;Normal threshold Quantity;Normal threshold Quantity;PICKINGLOCASSIGNMENT00008
+Picking area;Kommissionierbereich;Zona de picking;Zone de prélèvement;Área de separação de pedidos;Area di picking;DCLCSTATION00001 PICKINGLOCASSIGNMENT00008
+Picking location group;Kommissionierplatzgruppe;Grupo de ubicaciones de picking;Groupe de postes de prélèvement;Grupo de local de separação de pedidos;Gruppo dei posti di picking;PICKINGLOCASSIGNMENT00008
+Picking quantity (min.) Quantity unit kind;Picking quantity (min.) Quantity unit kind;Picking quantity (min.) Quantity unit kind;Picking quantity (min.) Quantity unit kind;Picking quantity (min.) Quantity unit kind;Picking quantity (min.) Quantity unit kind;PICKINGLOCASSIGNMENT00008
+Picking quantity (min.) Quantity unit;Picking quantity (min.) Quantity unit;Picking quantity (min.) Quantity unit;Picking quantity (min.) Quantity unit;Picking quantity (min.) Quantity unit;Picking quantity (min.) Quantity unit;PICKINGLOCASSIGNMENT00008
+Picking quantity (min.) Quantity;Picking quantity (min.) Quantity;Picking quantity (min.) Quantity;Picking quantity (min.) Quantity;Picking quantity (min.) Quantity;Picking quantity (min.) Quantity;PICKINGLOCASSIGNMENT00008
+Picking sequence;Kommissionierreihenfolge;Secuencia de picking;Ordre séquentiel de prélèvement;Seguência de separação de pedidos;Sequenza di picking;DCLCGADGET00001
+Port of line controller;Port von Line Controller;Puerto del controlador de línea;Port du contrôleur de ligne;Port do Line Controller;Porta del controller di linea;DCLCCFG00001
+Priority increment for critical replenishment;Prioritätserhöhung für kritischen Nachschub;Incremento de prioridad de la reposición crítica;Incrément de priorité pour le réapprovisionnement critique;Incremento de prioridade para reaprovisionamento crítico;Aumento della priorità per il rifornimento critico;PICKINGLOCASSIGNMENT00008
+Production date;Produktionsdatum;Fecha de producción;Date de production;Data de produção;Data di produzione;STOCKIMPORT00010
+Quantity;Menge;Cantidad;Quantité;Quantidade;Quantità;STOCKIMPORT00010
+Registration time;Registrierungszeit;Tiempo de registro;Temps de saisie;Hora de registro;Tempo di registrazione;STOCKIMPORT00010
+Remove whole LU flag;Ganz-LE-Kennzeichen entfernen;Eliminar flag de UT completa;Supprimer l'indicateur d'unité de chargement entière;Remover sinal de UT completa;Rimuovi flag unità di carico completa;PICKINGLOCASSIGNMENT00008
+Reservation number;Reservierungsnummer;Número de reserva;Numéro de réserv.;Número de reserva;Numero prenotazione;STOCKIMPORT00010
+Sequence within storage compartment;Reihenfolge innerhalb des Lagerfachs;Orden dentro del compartimento de almacenaje;Ordre séquentiel à l'intérieur du compartiment d’entreposage;Sequência dentro do compartimento de depósito;Sequenza all'interno del compartimento;STOCKIMPORT00010
+Stock rating;Bestandsklassifizierung;Clasificación de existencias;Classification de stock;Classificação de estoque;Classificazione della scorta;PICKINGLOCASSIGNMENT00008 PLASTOCKRATING00006 STOCKIMPORT00010
+Storage location;Lagerplatz;Ubicación;Emplacement;Local de depósito;Posto di stoccaggio;AFRAMECHANNELREPLLOC00001 DCLCGADGET00001 DCLCSTATION00001 FWCS_AFRAMESTOLOCUPDATE00002 PICKINGLOCASSIGNMENT00008 REPLLOC00001 STOCKIMPORT00010
+System loading unit;Systemladeeinheit;Unidad de transporte de sistema;Unité de chargement de système;Unidade de transporte do sistema;UdC di sistema;STOCKIMPORT00010
+To;Bis;Hasta;À;Para;A;PICKINGLOCASSIGNMENT00008
+Variant;Variante;Variante;Variante;Variante;Variante;PICKINGLOCASSIGNMENT00008 STOCKIMPORT00010
+Warehouse location;Lagerstandort;Almacén;Site de stockage;Localidade de depósito;Magazzino;AFRAMECHANNELREPLLOC00001 DCLCCFG00001 DCLCGADGETASSOCIATION00001 DCLCSTATION00001 FWCS_AFRAMESTOLOCUPDATE00002 PICKINGLOCASSIGNMENT00008 STOCKIMPORT00010
+Whole loading unit;Ganz-Ladeeinheit;Unidad de transporte completa;Unité de chargement entière;Unidade de transporte completa;Unità di carico completa;STOCKIMPORT00010
+Whole quantity unit restriction Quantity unit;Whole quantity unit restriction Quantity unit;Whole quantity unit restriction Quantity unit;Whole quantity unit restriction Quantity unit;Whole quantity unit restriction Quantity unit;Whole quantity unit restriction Quantity unit;PICKINGLOCASSIGNMENT00008
+Whole quantity unit;Gesamtmengeneinheit;Unidad de medida completa;Unité de quantité entière;Unidade de quantidade completa;Unità quantitativa completa;PICKINGLOCASSIGNMENT00008
+X offset unit;X offset unit;X offset unit;X offset unit;X offset unit;X offset unit;STOCKIMPORT00010
+X offset;X Offset;Offset X;Offset X;Offset X;Offset X;STOCKIMPORT00010
+Y offset unit;Y offset unit;Y offset unit;Y offset unit;Y offset unit;Y offset unit;STOCKIMPORT00010
+Y offset;Y Offset;Offset Y;Offset Y;Offset Y;Offset Y;STOCKIMPORT00010
+Z offset unit;Z offset unit;Z offset unit;Z offset unit;Z offset unit;Z offset unit;STOCKIMPORT00010
+Z offset;Z-Offset;Offset Z;Offset Z;Offset Z;Offset Z;STOCKIMPORT00010

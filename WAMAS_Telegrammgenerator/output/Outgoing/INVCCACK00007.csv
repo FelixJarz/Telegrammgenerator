@@ -1,0 +1,15 @@
+# INVCCACK00007;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Inventory demand number;CountConfirmation;orderLine.lineRestr.demandLine.InventoryDemand.invNo;invNo;S;20;0;X;X;Is part of the unique identification of the InventoryDemand.;
+2;System partner;CountConfirmation;orderLine.InventoryOrder.SystemPartner.id;invSystemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+3;System partner line;CountConfirmation;orderLine.lineRestr.demandLine.sysPartnerLine;invSystemPartnerLine;N;5;0;X;;This class contains the length of the INV line.;
+4;Inventory demand line;CountConfirmation;orderLine.lineRestr.demandLine.line;invLine;N;10;0;X;X;Is part of the unique identification of the InventoryDemandLine.;
+5;Line;CountConfirmation;line;confId;N;5;0;X;;Is part of the unique identification of a CountConfirmation.;
+6;Target quantity;CountConfirmation;targetAmount.baseQty;targetBaseQty;D;12;3;;;The item quantity specification in its administration unit (base quantity unit). All state calculations, delivery fulfilled checks and so on are based on the base quantity. The dual quantity has no effect for those calculations. ;
+7;Target dual quantity;CountConfirmation;targetAmount.dualQty;targetDualQty;D;12;3;?;;The quantity measure for dual items. This quantity is needed in addition to the base quantity in order to uniquely identify the item. ;
+8;Actual quantity;CountConfirmation;actualAmount.baseQty;actualBaseQty;D;12;3;;;The item quantity specification in its administration unit (base quantity unit). All state calculations, delivery fulfilled checks and so on are based on the base quantity. The dual quantity has no effect for those calculations. ;
+9;Actual dual quantity;CountConfirmation;actualAmount.dualQty;actualDualQty;D;12;3;?;;The quantity measure for dual items. This quantity is needed in addition to the base quantity in order to uniquely identify the item. ;
+10;Empty location inventory;CountConfirmation;emptyLocationInv;emptyLoc;B;1;0;;;Is only relevant for storage location oriented inventory. It defines if we have to do an empty location inventory of a storage location.;
+11;Inventory error kind;CountConfirmation;InventoryError.kind;invErrKind;E;30;0;;;Contains the inventory error kind. The inventory error kind must be selected by the user who does the inventory.;
+12;Inventory error description;CountConfirmation;InventoryError.description;invErrDesc;S;30;0;;;Contains additional information about the inventory error. This information can be entered by the user who does the inventory.;
+13;Counted on;CountConfirmation;countedAt;countedAt;DT;14;0;;;A datetime provides the day, month, year and hour, minute and second of a point in time.;
+14;User identifier;CountConfirmation;user.userId;countedBy;S;35;0;;X;A human readable unique name of a user. This name is typically used to write activity protocol or history entries.;

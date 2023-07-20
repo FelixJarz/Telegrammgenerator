@@ -1,0 +1,5 @@
+#This sample file contains a system message origin with three system message origin descriptions.
+HOST      WAMAS                                   120180925112001SYSMSGORIGIN00002             Archiving server                                                      
+HOST      WAMAS                                   220180925112001SYSMSGORIGINDESC00002         Archiving server                                                      eng   Archiving server              
+HOST      WAMAS                                   320180925112001SYSMSGORIGINDESC00002         Archiving server                                                      fra   Serveur d'archivage           
+HOST      WAMAS                                   420180925112001SYSMSGORIGINDESC00002         Archiving server                                                      rum   Server arhivare               

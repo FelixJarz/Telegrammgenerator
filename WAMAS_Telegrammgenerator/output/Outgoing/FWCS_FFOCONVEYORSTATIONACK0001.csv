@@ -1,0 +1,6 @@
+# FWCS_FFOCONVEYORSTATIONACK0001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Time of diversion;LoadUnit;lastMovement;divertTime;DT;14;0;X;;Indicates the latest movement time (e.g. of a loading unit).;
+2;Diversion reason;;;divertReason;S;50;0;;;Reason of diversion (e.g. error).;
+3;Conveyor station;FulfillmentOrderStationLine;conveyorStation.id;conveyorStationId;S;20;0;;X;The ID of the conveyor station;
+4;Gross weight;LoadUnit;keyData.grossWeight;grossWeight;D;15;0;;;The gross weight of the stock object bundle.Redundant data management for performance reasons.This weight is required in connection with the storage location search (field load calculation) and the outgoing goods process.;
+5;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

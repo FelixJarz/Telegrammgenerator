@@ -1,0 +1,26 @@
+# PARTNER00008;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;Partner;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Partner;Partner;partnerId;partnerId;S;15;0;X;;Unique identification of a partner object.;
+3;Partner category;Partner;category.partnerCatId;category;S;15;0;;X;Unique identification of a partner category (see PartnerCategory).;
+4;Supplier;Partner;kind.supplier;supplier;B;1;0;X;;Partner is a supplier.;
+5;Customer;Partner;kind.customer;customer;B;1;0;X;;Partner is a customer.;
+6;Freight carrier;Partner;kind.freightCarrier;freightCarrier;B;1;0;X;;Partner is a freight carrier.;
+7;VAT ID;Partner;vatId;vatId;S;15;0;;;Value-added tax identification number.;
+8;Loading aid account;Partner;laAccount.id;laAccount;S;10;0;;X;Unique identifier of a loading aid account;
+9;Outbound delivery block;OgPartner;obdBlock;obdBlock;B;1;0;;;The 'Outbound delivery block' flag is considered in automatic and manual release actions of outbound deliveries.The control center user can override this warning manually.Once 'Release for picking' was done/carried out, the 'Outbound delivery block' flag is not considered anymore.;
+10;Difference code OG;OgPartner;lockDiffCode.diffCodeId;ogDefCode;S;20;0;;X;The ID of the outgoing goods difference code.;
+11;Split allowed;OgPartner;obdRestr.splitAllowed;obdSplitAllowed;E;9;0;;;Defines whether splitting an OBO or OBD is allowed.;
+12;Reduction allowed;OgPartner;obdRestr.reductionAllowed;reductionAllowed;E;9;0;;;Defines if reducing the ordered (released) quantity is allowed.;
+13;Replacement goods owner;OgPartner;goodsOwnerReplacementKind;gowReplacementKind;E;19;0;;;Defines which replacement kind is allowed for a line.;
+14;Replacement stock rating;OgPartner;stockRatingReplacementKind;stockRatingReplacementKind;E;19;0;;;Defines which replacement kind is allowed for a line.;
+15;Replacement item;OgPartner;itemReplacementKind;itemReplacementKind;E;19;0;;;Defines which replacement kind is allowed for a line.;
+16;Access strategy;OgPartner;timeBasedAccStrat.accessStrat;accessStrat;E;4;0;;;Specifies which kind of access strategy shall be used for the partner for the whole LU planning.;
+17;Equivalent period strategy;OgPartner;timeBasedAccStrat.equPerStrat;equPerStrat;E;6;0;;;Specifies which kind of equivalent period strategy shall be used for the partner for the whole LU planning.;
+18;Warehouse quantity units requested;OgPartner;restrAccStrat.wholeWhQtyUnits;wholeWhQtyUnits;E;9;0;;;Defines whether only whole warehouse quantity units should be delivered.;
+19;Loading unit weight (max.);OgPartner;maxLUWeight.value;maxLUWeight;D;12;3;;;Specifies the value (or amount) in weight unit which was entered by a user.;
+20;Loading unit weight (max.) unit;OgPartner;maxLUWeight.unit.id;maxLUWeightUnit;S;5;0;;X;Uniquely identifies the weight unit.;
+21;Loading unit height (max.);OgPartner;maxLUHeight.value;maxLUHeight;D;12;3;;;Specifies the value (or amount) in length unit which was entered by a user.;
+22;Loading unit height (max.) unit;OgPartner;maxLUHeight.unit.id;maxLUHeightUnit;S;5;0;;X;Uniquely identifies the length unit.;
+23;Rounding by Rules;OgPartner;roundingByRules;roundingByRules;E;9;0;;;Defines if rounding rules should apply.;
+24;Over-delivery allowed;IgPartner;overDeliveryAllowed;igOverDeliveryAllowed;E;9;0;;;Specifies wether over-delivery is allowed for the specific IgPartner.;
+25;Data state (extended);;;recordState;E;13;0;;;;com.wamas.wms.core.di.recordtypes.RecordStateExtended

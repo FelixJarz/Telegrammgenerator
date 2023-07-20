@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="SYSMSGGROUP00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="msgGroupName" type="STRING_100" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="SYSMSGGROUPDESC00001" type="SYSMSGGROUP00001_SYSMSGGROUPDESC00001" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SYSMSGGROUP00001_SYSMSGGROUPDESC00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="description" type="STRING_30" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="language" type="STRING_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="msgGroupName" type="STRING_100" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

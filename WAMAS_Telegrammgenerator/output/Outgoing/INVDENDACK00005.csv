@@ -1,0 +1,4 @@
+# INVDENDACK00005;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Inventory demand;InventoryDemand;invNo;invNo;S;20;0;X;;Is part of the unique identification of the InventoryDemand.;
+2;System partner;InventoryDemand;SystemPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+3;Warehouse location;InventoryDemand;whLoc.whLocId;whLoc;S;20;0;X;X;The identifier of the warehouse location.;

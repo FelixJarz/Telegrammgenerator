@@ -1,0 +1,8 @@
+# ITEMDESC00005;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;ItemDesc;Item.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Item number;ItemDesc;Item.itemNo;itemNo;S;20;0;X;X; Is a part of the unique identification of an item. ;
+3;Variant;ItemDesc;Item.variant;variant;S;10;0;X;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+4;Item description;ItemDesc;description;description;S;40;0;X;;First line of the item description.;
+5;Item description 2;ItemDesc;description2;description2;S;40;0;;;Second line of the item description.;
+6;Language;ItemDesc;Language.langId;language;S;6;0;X;X;Is the unique identifaction of a language, in compliance with ISO 639-2/B Alpha 3 Code. In case ISO specifies more than one code, the B-Code variant is used (ger instead of deu). If a particular language has regional differences, the 2-character country code according to ISO-3166 is used (eng-US, eng-UK, ger-CH, ger-AT, ger-DE).Info: ISO 639 is the set of international standards that lists short codes for language names.See also: LANGISOALPHA2ID.;
+7;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

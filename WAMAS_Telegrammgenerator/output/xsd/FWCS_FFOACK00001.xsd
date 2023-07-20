@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="FWCS_FFOACK00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="finishTime" type="WamasDateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="luFull" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="luId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="orderId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="orderReference" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stage" type="ENUM_FwcsFfoStage_RESCSIPCRF" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="startTime" type="WamasDateTime" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="FWCS_FFOCONVEYORSTATIONACK0001" type="FWCS_FFOACK00001_FWCS_FFOCONVEYORSTATIONACK0001" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="FWCS_FFOITEMLINEACK00001" type="FWCS_FFOACK00001_FWCS_FFOITEMLINEACK00001" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="FWCS_FFOPICKACK00001" type="FWCS_FFOACK00001_FWCS_FFOPICKACK00001" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="FWCS_FFOSTATIONLINEACK00001" type="FWCS_FFOACK00001_FWCS_FFOSTATIONLINEACK00001" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="FWCS_FFOACK00001_FWCS_FFOCONVEYORSTATIONACK0001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="conveyorStationId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="divertReason" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="divertTime" type="WamasDateTime" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="grossWeight" type="DECIMAL_15_0" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="FWCS_FFOACK00001_FWCS_FFOITEMLINEACK00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="numBquWqu" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="orderedWqu" type="DECIMAL_6_0" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="pickedWqu" type="DECIMAL_6_0" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="sysPartnerLine" type="NUMERIC_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="FWCS_FFOACK00001_FWCS_FFOPICKACK00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="areaId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="emptyLoc" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="numBquWqu" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="orderedWqu" type="DECIMAL_6_0" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="pickedWqu" type="DECIMAL_6_0" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stoLocId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="sysPartnerLine" type="NUMERIC_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="FWCS_FFOACK00001_FWCS_FFOSTATIONLINEACK00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="conveyorStationGroupId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="conveyorStationId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="divertTime" type="WamasDateTime" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="grossWeight" type="DECIMAL_15_0" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

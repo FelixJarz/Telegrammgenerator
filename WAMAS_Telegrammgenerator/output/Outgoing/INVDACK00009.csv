@@ -1,0 +1,7 @@
+# INVDACK00009;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Inventory demand number;InventoryDemand;invNo;invNo;S;20;0;X;;Is part of the unique identification of the InventoryDemand.;
+2;System partner;InventoryDemand;SystemPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+3;Warehouse location;InventoryDemand;whLoc.whLocId;whLoc;S;20;0;X;X;The identifier of the warehouse location.;
+4;Inventory demand type;InventoryDemand;type.typeId;typeId;S;20;0;X;X;Is part of the unique identification of an InventoryDemandType.;
+5;Finishing user;InventoryDemand;finUser;finUser;S;20;0;;;User who finalized the inventory demand;
+6;Finish time;InventoryDemand;finishTime;finTime;DT;14;0;;;Defines the time the inventory demand has been finished.;

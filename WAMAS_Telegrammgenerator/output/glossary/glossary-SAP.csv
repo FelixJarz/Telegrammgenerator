@@ -1,0 +1,147 @@
+﻿Original;ger;spa;fra;por-BR;ita;Occurrences
+Actual quantity;Istmenge;Cantidad real;Quantité réelle;Quantidade efetiva;Quantità effettiva;E1WVINI
+Advised LU type;Avisierter LE-Typ;Tipo de UT avisada;Type d'UC notifiée;Tipo de UT anunciada;Tipo di unità di carico preannunciata;E1BPDLVHDUNHDR E1BPDLVHDUNITM
+Assortment;Sortiment;Surtido;Assortiment;Sortimento;Assortimento;E1BPE1MARCRT E1MARCM
+BBD;MHD;FCP;DLC;DV;SCAD;E1BPIBDLVITEM
+Base quantity unit;Basismengeneinheit;Unidad de existencias;Unité de quantité de base;Unidade de quantidade básica;Unità di quantità di base;E1BP2017_GM_ITEM_CREATE E1BPDLVHDUNITM E1BPE1MARART E1BPIBDLVITEM E1BPIBDLVITEMCON E1BPOBDLVITEM E1BPOBDLVITEMCON E1BPOBDLVITEMDSP E1MARAM E1WVINI
+Batch (from);Charge (von);Lote (de);Lot (de);Lote (de);Lotto (da);E1BP2017_GM_ITEM_CREATE
+Batch (to);Charge (auf);Lote (a);Lot (à);Lote (para);Lotto (a);E1BP2017_GM_ITEM_CREATE
+Batch stock mode;Chargen-Bestandsführungsmodus;Gestión de existencias por lote;Mode de stockage lot;Modo de controle de estoque de lote;Modalità di gestione delle scorte relativa al lotto;E1BPE1MARCRT E1MARCM
+Batch;Charge;Lote;Lot;Lote;Lotto;E1BPDLVHDUNITM E1BPIBDLVITEM E1BPOBDLVITEM E1BPOBDLVITEMCON E1WVINI
+Business process;Geschäftsprozess;Proceso comercial;Processus d'entreprise;Processo de negócio;Processo aziendale;E1SHP_OBDLV_SPLIT_DECENTRAL
+Change delivered quantity;Liefermenge ändern;Cambiar cantidad entregada;Modifier la quantité livrée;Alterar quantidade de fornecimento;Modifica quantità fornita;E1BPIBDLVITEMCTRLCON E1BPOBDLVITEMCTRLCON
+Change ext. delivery identification;Ext. Lieferungsidentifikation ändern;Cambiar identificación de entrega ext.;Changer l'identification de livraison ext.;Alterar identificação ext. de fornecimento;Modifica identificazione consegna est.;E1BPIBDLVHDRCTRLCON
+City;Stadt;Lugar;Ville;Cidade;Città;E1BPADR1 E1KNA1M E1LFA1M
+Condition pricing unit;Konditionspreiseinheit;Unidad de precios de condición;Unité de prix de condition;Unidade de preço da condição;Unità di prezzo della condizione;E1KONP
+Condition type;Bedingungstyp;Tipo de estado;Type de condition;Tipo de condição;Tipo di condizione;E1KONP
+Condition unit;Konditionsmengeneinheit;Unidad de condición;Unité de condition;Unidade de condição;Unità di condizione;E1KONP
+Confirm outbound delivery date;Auslieferungsdatum bestätigen;Confirmar fecha de suministro;Confirmer la date de distribution;Confirmar a data de expedição;Conferma data della consegna in uscita;E1BPOBDLVHDRCTRLCON
+Cost center;Kostenstelle;Centro de coste;Centre de coûts;Centro de custos;Voce di costo;E1BP2017_GM_ITEM_CREATE
+Country;Land;País;Pays;País;Paese;E1BPADR1 E1KNA1M E1LFA1M
+Creation date;Anlegedatum;Fecha de creación;Date de création;Data de criação;Data di creazione;ARTMAS05 COND_A04 CREMAS05 DEBMAS06 DEBMAS07 MATMAS05 MBGMCR03 SHP_IBDLV_CONFIRM_DECENTRAL03 SHP_IBDLV_SAVE_REPLICA04 SHP_OBDLV_CONFIRM_DECENTRAL04 SHP_OBDLV_SAVE_REPLICA05 SHP_OBDLV_SPLIT_DECENTRAL01 WVINVE03
+Creation time;Anlegezeit;Hora de creación;Temps de création;Horário de criação;Data e ora di creazione;ARTMAS05 COND_A04 CREMAS05 DEBMAS06 DEBMAS07 MATMAS05 MBGMCR03 SHP_IBDLV_CONFIRM_DECENTRAL03 SHP_IBDLV_SAVE_REPLICA04 SHP_OBDLV_CONFIRM_DECENTRAL04 SHP_OBDLV_SAVE_REPLICA05 SHP_OBDLV_SPLIT_DECENTRAL01 WVINVE03
+Custom field 1;Kundenspezifisches Feld 1;Campo personalizado 1;Champ d'utilisateur 1;Campo personalizado 1;Campo personalizzato 1;E1BPEXTC
+Custom field 2;Kundenspezifisches Feld 2;Campo personalizado 2;Champ d'utilisateur 2;Campo personalizador 2;Campo personalizzato 2;E1BPEXTC
+Custom field 3;Kundenspezifisches Feld 3;Campo personalizado 3;Champ d'utilisateur 3;Campo personalizado 3;Campo personalizzato 3;E1BPEXTC
+Custom field 4;Kundenspezifisches Feld 4;Campo personalizado 4;Champ d'utilisateur 4;Campo personalizado 4;Campo personalizzato 4;E1BPEXTC
+Date of inventory demand completion;Datum der Inventurbedarfserfüllung;Fecha de finalización de necesidad de inventario;Date d'achèvement du besoin d'inventaire;Data do término da necessidade de inventário;Data di completamento richiesta inventario;E1WVINH
+Delete flag;Löschkennzeichen;Código de borrado;Indicateur de suppression;Código de exclusão;Flag cancellazione;E1BPE1MARART E1MARAM
+Delete line;Zeile löschen;Borrar línea;Supprimer ligne;Excluir linha;Elimina riga;E1BPOBDLVITEMCTRLCON
+Delete outbound order;WA-Auftrag löschen;Eliminar orden EM;Supprimer l'ordre de sortie de marchandises;Excluir pedido de SM;Elimina ordine di uscita merci;E1BPOBDLVHDRCTRLCON
+Delivered quantity;Liefermenge;Cantidad entregada;Quantité de livraison;Quantidade de fornecimento;Quantità fornita;E1BPDLVHDUNITM E1BPIBDLVITEMCON E1BPOBDLVITEMCON E1BPOBDLVITEMDSP
+Delivery note number;Lieferscheinnummer;Número de albarán de entrega;Numéro de bon de livraison;Número da nota de fornecimento;Numero bolla di consegna;E1BPIBDLVHDR E1BPIBDLVHDRCON
+Denominator;Nenner;Denominad;Dénominateur;Denominador;Denominatore;E1BPE1MARMRT E1BPIBDLVITEM E1BPIBDLVITEMCON E1BPOBDLVITEM E1BPOBDLVITEMCON E1BPOBDLVITEMDSP E1MARMM
+Destination plant;Zielwerk;Planta destinataria;Installation de destination;Planta de destino;Impianto di destinazione;E1BP2017_GM_ITEM_CREATE
+District;Bezirk;Distrito;District;Distrito;Zona;E1BPADR1 E1KNA1M E1LFA1M
+Document date;Belegdatum;Fecha del comprobante;Date du justificatif;Data do documento;Data documento;E1BP2017_GM_HEAD_01
+Document reference number;Dokumentenreferenznummer;Número de referencia del comprobante;Numéro de référence de document;Número de referência do documento;Numero di riferimento documento;E1BP2017_GM_HEAD_01
+Duration;Dauer;Duración;Durée;Duração;Durata;E1BPE1MARCRT E1MARCM
+Earliest release time;Früheste Freigabezeit;Primer momento de aprobación posible;Heure de mise à disposition la plus tôt possible;Primeiro prazo de liberação;Momento di approvazione più presto possibile;E1WVINH
+Expiration date period;Ablaufdatumsdauer;Periodo de fechas de caducidad;Période d'expiration;Período da data de expiração;Periodo di scadenza;E1BPE1MARART E1MARAM
+External LU-ID;Externe LE-ID;ID UT externo;ID UC externe;ID-UT externa;ID UdC esterno;E1BPDLVHDUNHDR E1BPDLVHDUNITM
+Fax number extension;Faxnummererweiterung;Extensión de número de fax;Extension du numéro de fax;Extensão do número de fax;Numero fax diretto;E1BPADR1
+Fax;Fax;Fax;Fax;Fax;Fax;E1BPADR1 E1KNA1M E1LFA1M
+Function message;Funktionsmeldung;Aviso de función;Message de fonction;Mensagem de função;Funzione messaggio;E1BPE1MAKTRT E1BPE1MARART E1BPE1MARCRT E1BPE1MARMRT E1BPE1MAW1RT E1BPE1MEANRT E1BPE1VARKEY E1KNA1M E1LFA1M E1MAKTM E1MARAM E1MARCM E1MARMM E1MEANM
+Global location number (part 1);Global Location Number (Teil 1);Global Location Number (parte 1);Global location number (partie 1);Global Location Number (parte 1);Global Location Number (parte 1);E1KNA1M E1LFA1M
+Global location number (part 2);Global Location Number (Teil 2) ;Global Location Number (parte 2);Global location number (partie 2);Global Location Number (parte 2);Global Location Number (parte 2);E1KNA1M E1LFA1M
+Goods category;Warengruppe;Grupo de mercancías;Groupe de marchandises;Categoria de mercadorias;Gruppo di merci;E1BPE1MATHEAD
+Header text;Kopftext;Texto de encabezado;Texte d'en-tête;Texto de cabeçalho;Testo dell'intestazione;E1BP2017_GM_HEAD_01
+House number;Hausnummer;Número de vivienda;Numéro de la maison;Número da casa;Numero civico;E1BPADR1
+ID;ID;ID;ID;ID;ID;E1BPDLVTXTITEM E1LFA1M
+IDoc extension;IDoc-Erweiterung;Extensión de IDoc;Extension iDoc;Extensão IDoc;Estensione IDoc;ARTMAS05 COND_A04 CREMAS05 DEBMAS06 DEBMAS07 MATMAS05 MBGMCR03 SHP_IBDLV_CONFIRM_DECENTRAL03 SHP_IBDLV_SAVE_REPLICA04 SHP_OBDLV_CONFIRM_DECENTRAL04 SHP_OBDLV_SAVE_REPLICA05 SHP_OBDLV_SPLIT_DECENTRAL01 WVINVE03
+IDoc number;IDoc-Nummer;Número IDoc;Numéro IDoc;Número IDoc;Numero IDoc;ARTMAS05 COND_A04 CREMAS05 DEBMAS06 DEBMAS07 MATMAS05 MBGMCR03 SHP_IBDLV_CONFIRM_DECENTRAL03 SHP_IBDLV_SAVE_REPLICA04 SHP_OBDLV_CONFIRM_DECENTRAL04 SHP_OBDLV_SAVE_REPLICA05 SHP_OBDLV_SPLIT_DECENTRAL01 WVINVE03
+IDoc type;IDoc-Typ;Tipo de IDoc;Type d'IDoc;Tipo de IDoc;Tipo di IDoc;ARTMAS05 COND_A04 CREMAS05 DEBMAS06 DEBMAS07 MATMAS05 MBGMCR03 SHP_IBDLV_CONFIRM_DECENTRAL03 SHP_IBDLV_SAVE_REPLICA04 SHP_OBDLV_CONFIRM_DECENTRAL04 SHP_OBDLV_SAVE_REPLICA05 SHP_OBDLV_SPLIT_DECENTRAL01 WVINVE03
+Inbound delivery line;Anlieferungszeile;Línea de entrega;Ligne de livraison;Linha de recebimento;Riga della consegna in arrivo;E1BP2017_GM_ITEM_CREATE E1BPDLVHDUNITM E1BPDLVITEMRPO E1BPDLVITEMSTTR E1BPIBDLVITEM E1BPIBDLVITEMCON E1BPIBDLVITEMCTRLCON E1BPIBDLVITEMORG
+Inbound delivery number;Anlieferungsnummer;Número de entrega;Numéro de livraison;Número de recebimento;Numero della consegna in arrivo;E1BP2017_GM_ITEM_CREATE E1BPDLVDEADLN E1BPDLVHDUNHDR E1BPDLVHDUNITM E1BPDLVITEMRPO E1BPDLVITEMSTTR E1BPDLVPARTNER E1BPIBDLVHDR E1BPIBDLVHDRCON E1BPIBDLVHDRCTRLCON E1BPIBDLVITEM E1BPIBDLVITEMCON E1BPIBDLVITEMCTRLCON E1BPIBDLVITEMORG E1SHP_IBDLV_CONFIRM_DECENTR
+Inbound delivery type;Anlieferungstyp;Tipo de entrega;Type de livraison;Tipo de recebimento;Tipo di consegna in arrivo;E1BPIBDLVHDR
+Inventory demand line;Inventurbedarfszeile;Línea de solicitud de inventario;Ligne de besoin d'inventaire;Linha de necessidade de inventário;Riga di richiesta inventario;E1WVINI
+Inventory demand number;Inventurbedarfsnummer;Número de solicitud de inventario;Numéro du besoin d'inventaire;Número da necessidade de inventário;Numero della richiesta inventario;E1WVINH E1WVINI
+Item alias number;Artikel-Aliasnummer;Número de artículo alias;Le numéro d'article alias;Número de adicional de item;Numero alias di articolo;E1BPE1MEANRT E1MEANM
+Item alias;Artikel-Alias;Artículo alias;Article alias;Adicional de item;Alias di articolo;E1BPE1MARART E1MARAM
+Item description;Artikelbezeichnung;Denominación del artículo;La désignation d'article;Descrição de item;Descrizione dell'articolo;E1BPE1MAKTRT E1MAKTM
+Item number;Artikelnummer;Número de artículo;Le numéro d'article;Número de item;Numero dell'articolo;E1BP2017_GM_ITEM_CREATE E1BPDLVHDUNITM E1BPE1MAKTRT E1BPE1MARART E1BPE1MARCRT E1BPE1MARMRT E1BPE1MATHEAD E1BPE1MAW1RT E1BPE1MEANRT E1BPE1VARKEY E1BPIBDLVITEM E1BPIBDLVITEMCON E1BPOBDLVITEM E1BPOBDLVITEMCON E1MARAM E1WVINI
+Item type;Artikeltyp;Tipo de artículo;Type d'article;Tipo de item;Tipo di articolo;E1BPE1MATHEAD E1MARAM
+Item;Artikel;Artículo;Article;Item;Articolo;E1KOMG E1MARAM
+Kind of external HU identification;Art der externen HU-Erkennung;Tipo de identificación de UT externa;Type d'identification UM externe;Tipo de identificação HU externa;Tipo di identificazione unità di movimentazione esterna;E1BPDLVHDUNHDR
+LU-ID of advised LU;LE-ID der avisierten LE;ID UT de UT avisada;ID UC de l’UC notifiée;ID-UT da UT anunciada;ID UdC dell'UdC preannunciata;E1BPDLVHDUNHDR E1BPDLVHDUNITM
+Language key ISO;Sprachschlüssel ISO;Clave de idioma ISO;Clé de langue ISO;Código de idioma ISO;Codice lingua ISO;E1KNA1M
+Language key;Sprachschlüssel;Clave de idioma;Clé de langue;Código de idioma;Codice lingua;E1BPADR1 E1KNA1M E1LFA1M
+Language;Sprache;Idioma;Langage;Idioma;Lingua;E1BPDLVTXTITEM E1BPE1MAKTRT E1MAKTM
+Length unit;Längeneinheit;Unidad de longitud;Unité de longueur;Unidade de comprimento;Unità di lunghezza;E1BPE1MARMRT E1MARMM
+Length;Länge;Longitud;Longueur;Comprimento;Lunghezza;E1BPE1MARMRT E1MARMM
+Lower tolerance [%];Unterer Toleranzwert [%];Tolerancia inferior [%];Tolérance inférieure [%];Tolerância inferior [%];Tolleranza inferiore [%];E1BPIBDLVITEM E1BPOBDLVITEM
+Master data state;Stammdatenstatus;Estado de datos maestros;État des données de base;Estado de dados básicos;Stato dei dati anagrafici;E1KNA1M E1LFA1M
+Message type;Meldungstyp;Tipo de mensaje;Type de message;Tipo de mensagem;Tipo di messaggio;ARTMAS05 COND_A04 CREMAS05 DEBMAS06 DEBMAS07 MATMAS05 MBGMCR03 SHP_IBDLV_CONFIRM_DECENTRAL03 SHP_IBDLV_SAVE_REPLICA04 SHP_OBDLV_CONFIRM_DECENTRAL04 SHP_OBDLV_SAVE_REPLICA05 SHP_OBDLV_SPLIT_DECENTRAL01 WVINVE03
+Movement reason of system partner;Bewegungsgrund des Systempartners;Motivo de movimiento del socio de sistemas;Raison du mouvement du partenaire système;Motivo de movimento do parceiro de sistema;Motivo di movimentazione del partner di sistema;E1BP2017_GM_ITEM_CREATE
+Name 2;Name 2;Nombre 2;Nom 2;Nome 2;Nome 2;E1BPADR1 E1KNA1M E1LFA1M
+Name 3;Name 3;Nombre 3;Nom 3;Nome 3;Nome 3;E1BPADR1 E1KNA1M E1LFA1M
+Name 4;Name 4;Nombre 4;Nom 4;Nome 4;Nome 4;E1BPADR1 E1KNA1M E1LFA1M
+Name;Name;Nombre;Nom;Nome;Nome;E1BPADR1 E1KNA1M E1LFA1M
+Numerator;Zähler;Numerador;Numérateur;Numerador;Numeratore;E1BPE1MARMRT E1BPIBDLVITEM E1BPIBDLVITEMCON E1BPOBDLVITEM E1BPOBDLVITEMCON E1BPOBDLVITEMDSP E1MARMM
+OBDL number of the customer;AULZ-Nummer des Kunden;Número de LSUM del cliente;Numéro de LDD du client;Número LiEx do cliente;Numero RCIU del cliente;E1BPOBDLVITEMRFO
+Order number of the customer;Auftragsnummer des Kunden;Número de orden del cliente;Numéro de l'ordre de client;Número de pedido do cliente;Numero d'ordine del cliente;E1BPOBDLVITEMRFO
+Ordered quantity;Bestellmenge;Cantidad pedida;Quantité commandée;Quantidade encomendada;Quantità ordinata;E1BPDLVHDUNITM E1BPIBDLVITEM E1BPOBDLVITEM
+Outbound delivery number;Auslieferungsnummer;Número de suministro;Numéro de distribution;Número de expedição;Numero della consegna in uscita;E1SHP_OBDLV_SPLIT_DECENTRAL
+Outbound order line;WA-Auftragszeile;Línea de orden EM;Ligne d'ordre de sortie de marchandises;Linha de pedido de SM;Riga d'ordine UM;E1BPDLVHDUNITM E1BPDLVITEMRPO E1BPDLVITEMSTTR E1BPDLVPARTNER E1BPOBDLVITEM E1BPOBDLVITEMCON E1BPOBDLVITEMCTRLCON E1BPOBDLVITEMDSP E1BPOBDLVITEMORG E1BPOBDLVITEMRFO
+Outbound order number;WA-Auftragsnummer;Número de orden EM;Numéro d'ordre de sortie;Número de pedido de SM;Numero dell'ordine UM;E1BPDLVDEADLN E1BPDLVHDUNHDR E1BPDLVHDUNITM E1BPDLVITEMRPO E1BPDLVITEMSTTR E1BPDLVPARTNER E1BPOBDLVHDR E1BPOBDLVHDRCON E1BPOBDLVHDRCTRLCON E1BPOBDLVITEM E1BPOBDLVITEMCON E1BPOBDLVITEMCTRLCON E1BPOBDLVITEMDSP E1BPOBDLVITEMORG E1BPOBDLVITEMRFO E1SHP_OBDLV_CONFIRM_DECENTR E1SHP_OBDLV_SPLIT_DECENTRAL
+Outbound order type;WA-Auftragstyp;Tipo de orden EM;Type d'ordre SM;Tipo de pedido de SM;Tipo di ordine UM;E1BPOBDLVHDR
+Packaging container;Verpackungscontainer;Contenedor de embalaje;Conteneur d'emballage;Contêiner de embalagem;Contenitore di imballaggio;E1BPDLVHDUNHDR
+Packaging kind;Verpackungsart;Tipo de embalaje;Type d'emballage;Tipo de embalagem;Tipo di imballaggio;E1BPDLVHDUNHDR
+Partner address number;Partneradressennummer;Número de dirección del socio;Numéro de l'adresse partenaire;Número de endereço do parceiro;Numero dell'indirizzo del partner;E1BPADR1 E1BPDLVPARTNER
+Partner role;Partnerrolle;Papel de socio;Rôle de partenaire;Papel de parceiro;Ruolo del partner;E1BPDLVPARTNER
+Partner;Partner;Socio;Partenaire;Parceiro;Partner;E1BPDLVPARTNER E1KNA1M E1LFA1M
+Phone number extension;Durchwahlnummer;Extensión de número de teléfono;Extension du numéro de téléphone;Extensão do número de telefone;Numero di telefono diretto;E1BPADR1
+Phone;Telefon;Teléfono;Téléphone;Telefone;Telefono;E1BPADR1 E1KNA1M E1LFA1M
+Post item movement;Artikelbewegung buchen;Registrar movimiento de artículo;Enregistrer le déplacement d'article;Contabilizar movimento de item;Registra movimentazione articolo;E1BPIBDLVHDRCTRLCON E1BPOBDLVHDRCTRLCON
+Posting date;Buchungsdatum;Fecha de registro;Date de comptabilisation;Data de lançamento contábil;Data di registrazione;E1BP2017_GM_HEAD_01
+Posting key for system partner;Buchungsschlüssel für Systempartner;Código de registro del socio de sistemas;Clé de comptabilisation pour partenaire système;Código de reserva para parceiro de sistema;Chiave registrazione per partner di sistema;E1BP2017_GM_ITEM_CREATE
+Production date;Produktionsdatum;Fecha de producción;Date de production;Data de produção;Data di produzione;E1BPIBDLVITEM
+Qualifier for the 'ARTNR' field;Kennzeichnung für 'ARTNR' Feld;Calificador para el campo "ARTNR";Qualifiant pour le champ 'ARTNR';Qualificador para o campo 'ARTNR';Qualificatore per il campo 'ARTNR';E1WVINI
+Quantity (to);Menge (bis);Cantidad (hasta);Quantité (à);Quantidade (até);Quantità (a);E1BP2017_GM_ITEM_CREATE
+Quantity unit;Mengeneinheit;Unidad de medida;Unité de quantité;Unidade de quantidade;Unità quantitativa;E1BPE1MARMRT E1BPE1MAW1RT E1BPE1MEANRT E1MARMM E1MEANM
+Quantity;Menge;Cantidad;Quantité;Quantidade;Quantità;E1BPDLVHDUNITM
+Rate (condition quantity or percentage);Konditionsbetrag oder –prozentsatz;Grado (porcentaje o cantidad de condición);Taux (quantité de condition ou pourcentage);Preço (montante ou porcentagem da condição);Tariffa (quantità condizionata o percentuale);E1KONP
+Rate unit (currency or percentage);Konditionseinheit (Währung oder Prozentsatz);Unidad de frecuencia (divisa o porcentaje);Unité de taux (devise ou pourcentage);Unidade de índice (moeda ou porcentagem);Unità di tariffa (valuta o percentuale);E1KONP
+Receiver partner number;Empfängerpartnernummer;Número de socio del receptor;Numéro de partenaire du destinataire;Número de parceiro receptor;Numero di partner ricevitore;ARTMAS05 COND_A04 CREMAS05 DEBMAS06 DEBMAS07 MATMAS05 MBGMCR03 SHP_IBDLV_CONFIRM_DECENTRAL03 SHP_IBDLV_SAVE_REPLICA04 SHP_OBDLV_CONFIRM_DECENTRAL04 SHP_OBDLV_SAVE_REPLICA05 SHP_OBDLV_SPLIT_DECENTRAL01 WVINVE03
+Receiver partner type;Empfängerpartnertyp;Tipo de socio receptor;Type de partenaire du destinataire;Tipo de parceiro receptor;Tipo di partner ricevitore;ARTMAS05 COND_A04 CREMAS05 DEBMAS06 DEBMAS07 MATMAS05 MBGMCR03 SHP_IBDLV_CONFIRM_DECENTRAL03 SHP_IBDLV_SAVE_REPLICA04 SHP_OBDLV_CONFIRM_DECENTRAL04 SHP_OBDLV_SAVE_REPLICA05 SHP_OBDLV_SPLIT_DECENTRAL01 WVINVE03
+Receiver port;Empfänger-Port;Puerto del receptor;Port du récepteur;Porta receptora;Porta del ricevitore;ARTMAS05 COND_A04 CREMAS05 DEBMAS06 DEBMAS07 MATMAS05 MBGMCR03 SHP_IBDLV_CONFIRM_DECENTRAL03 SHP_IBDLV_SAVE_REPLICA04 SHP_OBDLV_CONFIRM_DECENTRAL04 SHP_OBDLV_SAVE_REPLICA05 SHP_OBDLV_SPLIT_DECENTRAL01 WVINVE03
+Region;Region;Región;Région;Região;Regione;E1BPADR1 E1KNA1M E1LFA1M
+Remaining shelf life;Resthaltbarkeit;Durabilidad restante;Durée de conservation restante;Vida de prateleira restante;Durata residua;E1BPE1MARART E1MARAM
+Replacement item;Ersatzartikel;Artículo sustitutorio;Article de remplacement;Item substituto;Articolo di sostituzione;E1BPE1MARCRT E1MARCM
+Reservation control;Reservierungssteuerung;Control de reserva;Contrôle de réservation;Controle de reserva;Controllo prenotazione;E1BP2017_GM_HEAD_01
+Reservation number;Reservierungsnummer;Número de reserva;Numéro de réserv.;Número de reserva;Numero prenotazione;E1BPIBDLVITEM E1BPOBDLVITEM
+SAP move storage location;SAP Lagerplatz bewegen;Ubicación de movimiento SAP;SAP déplacer l'emplacement;SAP mover local de depósito; ;E1BP2017_GM_ITEM_CREATE
+SAP plant;SAP-Werk;Planta SAP;Installation SAP;Planta SAP;Impianto SAP;E1BP2017_GM_ITEM_CREATE E1WVINH
+SAP special stock type;SAP-Sonderbestandskennzeichen;Tipo de existencias especial SAP;Type de stock spécial SAP;Classificação de estoque especial SAP;Tipo di scorta speciale SAP;E1BPIBDLVITEM E1BPOBDLVITEM
+SAP stock type;SAP-Bestandstyp;Tipo de existencias SAP;Type de stock SAP;Classificação de estoque SAP;Tipo di scorta SAP;E1BP2017_GM_ITEM_CREATE E1BPIBDLVITEM E1BPOBDLVITEM
+SAP storage location;SAP-Lagerort;Ubicación SAP;Emplacement SAP;Local de depósito SAP;Posto di stoccaggio SAP;E1BP2017_GM_ITEM_CREATE E1BPIBDLVITEMORG E1BPOBDLVITEMORG E1WVINH
+SAP-Client;SAP-Mandant;Mandante-SAP;Client SAP;Requerente SAP;Cliente SAP;ARTMAS05 COND_A04 CREMAS05 DEBMAS06 DEBMAS07 MATMAS05 MBGMCR03 SHP_IBDLV_CONFIRM_DECENTRAL03 SHP_IBDLV_SAVE_REPLICA04 SHP_OBDLV_CONFIRM_DECENTRAL04 SHP_OBDLV_SAVE_REPLICA05 SHP_OBDLV_SPLIT_DECENTRAL01 WVINVE03
+Sales document line number;Verkaufsdokument Zeilennummer;Número de línea de comprobante de ventas;Numéro de ligne du justificatif de ventes;Número de linha do comprovante de venda;Numero riga documento di vendita;E1BPDLVITEMRPO E1BPOBDLVITEMRFO
+Sales document number;Verkaufsdokumentennummer;Número de comprobante de ventas;Numéro du justificatif de ventes;Número de comprovante de venda;Numero documento di vendita;E1BPDLVITEMRPO E1BPOBDLVITEMRFO
+Sender partner number;Senderpartnernummer;Número de socio de emisor;Numéro de partenaire de l'expéditeur;Número de parceiro emissor;Numero di partner trasmettitore;ARTMAS05 COND_A04 CREMAS05 DEBMAS06 DEBMAS07 MATMAS05 MBGMCR03 SHP_IBDLV_CONFIRM_DECENTRAL03 SHP_IBDLV_SAVE_REPLICA04 SHP_OBDLV_CONFIRM_DECENTRAL04 SHP_OBDLV_SAVE_REPLICA05 SHP_OBDLV_SPLIT_DECENTRAL01 WVINVE03
+Sender partner type;Senderpartnertyp;Tipo de socio de emisor;Type de partenaire de l'expéditeur;Tipo de parceiro emissor;Tipo di partner trasmettitore;ARTMAS05 COND_A04 CREMAS05 DEBMAS06 DEBMAS07 MATMAS05 MBGMCR03 SHP_IBDLV_CONFIRM_DECENTRAL03 SHP_IBDLV_SAVE_REPLICA04 SHP_OBDLV_CONFIRM_DECENTRAL04 SHP_OBDLV_SAVE_REPLICA05 SHP_OBDLV_SPLIT_DECENTRAL01 WVINVE03
+Sender port;Sender-Port;Puerto del emisor;Port d'expédition;Porta emissora;Porta del trasmettitore;ARTMAS05 COND_A04 CREMAS05 DEBMAS06 DEBMAS07 MATMAS05 MBGMCR03 SHP_IBDLV_CONFIRM_DECENTRAL03 SHP_IBDLV_SAVE_REPLICA04 SHP_OBDLV_CONFIRM_DECENTRAL04 SHP_OBDLV_SAVE_REPLICA05 SHP_OBDLV_SPLIT_DECENTRAL01 WVINVE03
+Sender system;Sendersystem;Instalación emisor;Système d'envoi;Sistema emissor;Sistema trasmettitore;E1SHP_IBDLV_SAVE_REPLICA
+Serial;SN;Serie;Sériel;Serial;Seriale;ARTMAS05 COND_A04 CREMAS05 DEBMAS06 DEBMAS07 MATMAS05 MBGMCR03 SHP_IBDLV_CONFIRM_DECENTRAL03 SHP_IBDLV_SAVE_REPLICA04 SHP_OBDLV_CONFIRM_DECENTRAL04 SHP_OBDLV_SAVE_REPLICA05 SHP_OBDLV_SPLIT_DECENTRAL01 WVINVE03
+Split items belong to;Splittartikel gehören zu;Los artículos divididos pertenecen a;Articles fractionnés appartiennent à;Itens de divisão pertencem a;Gli articoli frammentati appartengono a;E1SHP_OBDLV_SPLIT_DECENTRAL
+Stock rating;Bestandsklassifizierung;Clasificación de existencias;Classification de stock;Classificação de estoque;Classificazione della scorta;E1WVINI
+Street;Straße;Calle;Rue;Rua;Via;E1BPADR1 E1KNA1M E1LFA1M
+System partner short description;Systempartner-Kurzbezeichnung;Denominación breve del socio de sistemas;Désignation abrégée du partenaire système;Descrição resumida de parceiro de sistema;Descrizione breve del partner di sistema;E1BP2017_GM_CODE
+Text line;Textzeile;Línea de texto;Ligne de texte;Linha de texto;Riga di testo;E1BPDLVTXTITEM
+Text type;Texttyp;Tipo de texto;Type de texte;Tipo de texto;Tipo di testo;E1BPDLVTXTITEM
+Time in UTC;Zeit in UTC;Tiempo en UTC;Temps en UTC;Horário em UTC;Ora UTC;E1BPDLVDEADLN
+Time of inventory demand completion;Inventurbedarfsabschlusszeit;Hora de finalización de necesidad de inventario;Temps d'achèvement du besoin d'inventaire;Hora do término da necessidade de inventário;Ora di completamento richiesta inventario;E1WVINH
+Time type;Zeitart;Tipo de hora;Type de temps;Tipo de tempo;Tipo di tempo;E1BPDLVDEADLN
+Time unit;Zeiteinheit;Unidad de tiempo;Unité de temps;Unidade de tempo;Unità di tempo;E1BPE1MARCRT E1MARCM
+Title;Titel;Título;Titre;Título;Titolo;E1KNA1M E1LFA1M
+Unlimited over-delivery allowed;Unbegrenzte Überlieferung erlaubt;Exceso de suministro ilimitado permitido;Livraison excédentaire illimitée autorisée;Fornecimento a mais permitido;Consegna in eccesso illimitata ammessa;E1BPIBDLVITEM
+Upper tolerance [%];Oberer Toleranzwert [%];Tolerancia superior [%];Tolérance supérieure [%];Tolerância superior [%];Tolleranza superiore [%];E1BPIBDLVITEM E1BPOBDLVITEM
+User identifier;Benutzer-ID;Identificador de usuario;Identification d'utilisateur;Identificador de usuário;Identificazione utente;E1WVINH
+Variant;Variante;Variante;Variante;Variante;Variante;E1BPE1MARCRT E1BPIBDLVITEMORG E1BPOBDLVITEMORG E1MARCM
+Verification code for location number;Prüfnummer für Platznummer;Código de confirmación para número de posición;Numéro de contrôle pour numéro de position;Dígito verificador para número de posição;Codice di controllo per numero posizione;E1KNA1M E1LFA1M
+Volume;Volumen;Volumen;Volume;Volume;Volume;E1BPE1MARMRT E1MARMM
+Warehouse quantity unit;Lagermengeneinheit;Unidad de almacenamiento;Unité de gestion de stock;Unidade de quantidade de depósito;Unità quantitativa di magazzino;E1BPE1MARCRT E1MARCM
+Weight unit;Gewichtseinheit;Unidad de peso;Unité de poids;Unidade de peso;Unità di peso;E1BPE1MARMRT E1MARMM
+Weight;Gewicht;Peso;Poids;Peso;Peso;E1BPE1MARMRT E1MARMM
+ZIP code;PLZ;Código postal;Code postal;CEP;CAP;E1BPADR1 E1KNA1M E1LFA1M
+Zero quantity indicator;Nullmengenindikator;Indicador de cantidad cero;Indicateur de quantité zéro;Indicador de quantidade zero;Indicatore quantità a zero;E1WVINI

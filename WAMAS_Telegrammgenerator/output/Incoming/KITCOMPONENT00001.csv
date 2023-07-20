@@ -1,0 +1,10 @@
+# KITCOMPONENT00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;KitComponent;Kit.Item.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Item number;KitComponent;Kit.Item.itemNo;itemNo;S;20;0;X;X; Is a part of the unique identification of an item. ;
+3;Variant;KitComponent;Kit.Item.variant;variant;S;10;0;X;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+4;Kit component number;KitComponent;compNo;kitCompNo;S;3;0;X;;The ID of the kit component;
+5;Quantity per kit;;;quantity;D;12;3;X;;Quantity of components per kit (in BQU);
+6;BQU / WQU;;;numBquWqu;D;12;3;;;Base quantity unit / warehouse quantity unit of the component if specifically requested (if filled, the quantity per kit must be a multiple of this factor);
+7;Kit component item number;KitComponent;Kit.Item.itemNo;kitCompItemNo;S;20;0;X;X; Is a part of the unique identification of an item. ;
+8;Kit component variant;KitComponent;Kit.Item.variant;kitCompVariant;S;10;0;X;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+9;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

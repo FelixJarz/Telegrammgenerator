@@ -1,0 +1,5 @@
+#This sample file contains a system message category with three system message category descriptions.
+HOST      WAMAS                                   120180925105822SYSMSGCATEGORY00001           ARCHIVING                                         
+HOST      WAMAS                                   220180925105822SYSMSGCATEGORYDESC00001       ARCHIVING                                         eng   Archiving                     
+HOST      WAMAS                                   320180925105822SYSMSGCATEGORYDESC00001       ARCHIVING                                         fra   Archiver                      
+HOST      WAMAS                                   420180925105822SYSMSGCATEGORYDESC00001       ARCHIVING                                         rum   Se arhivează                  

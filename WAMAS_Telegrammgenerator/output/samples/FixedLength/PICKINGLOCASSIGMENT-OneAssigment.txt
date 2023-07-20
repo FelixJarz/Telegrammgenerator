@@ -1,0 +1,4 @@
+#This sample file contains one picking location assignment.
+HOST      WAMAS                                   120180924160729PICKINGLOCASSIGNMENT00008     Test Center         pWHA2     pgWHA2a                       1         100010001           00000     000000010                                      000000000002  BQU       BQU                   BQU                       BQU          00              BQU                       BQU         000                              
+HOST      WAMAS                                   220180924160729PLAGOODSOWNER00006            1         1_1            
+HOST      WAMAS                                   320180924160729PLASTOCKRATING00006           1         100            

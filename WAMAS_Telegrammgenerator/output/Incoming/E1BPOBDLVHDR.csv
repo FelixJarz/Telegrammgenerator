@@ -1,0 +1,3 @@
+# E1BPOBDLVHDR;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Outbound order number;OutboundOrder;oboNo;;S;20;0;X;;The outbound order number is part of the unique identifier of the outbound order.;;DELIV_NUMB
+2;Outbound order type;OutboundOrder;type.oboTypeId;;S;20;0;X;X;The identifier for an outbound order type.;;DLV_TYPE

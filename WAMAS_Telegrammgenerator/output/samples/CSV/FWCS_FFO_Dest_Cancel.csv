@@ -1,0 +1,2 @@
+#This sample file cancels one FWCS fulfillment order destination
+WMS;WAMAS;1;1;20210823000000;FWCS_FFODESTCANCEL00001;1;3;C01/141/11;NORMAL

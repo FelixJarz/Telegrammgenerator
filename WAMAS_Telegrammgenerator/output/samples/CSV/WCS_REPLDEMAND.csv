@@ -1,0 +1,2 @@
+#This sample file contains a system message with a replenishment demand sent to WCS.
+WCS1;WAMAS;1;1;00991009020000;WCS_REPLDEMAND00006;1;5;1;200010002;00000;1;1_1;100;;;20100605;;;;;;;;;;;;;;;;;;;;;;;2-01-02-02;768;0;20201231235912;3

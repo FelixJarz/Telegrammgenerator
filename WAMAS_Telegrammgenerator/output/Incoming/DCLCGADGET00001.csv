@@ -1,0 +1,6 @@
+# DCLCGADGET00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Device ID;DcLcGadget;gadgetId;DcLcGadget_gadgetId;S;5;0;X;;Id of a Gadget (e.g. PickFace) of a line.;
+2;Picking sequence;DcLcGadget;pickSequence;DcLcGadget_pickSequence;D;10;0;;;Represents the order of the lights, which are given by a pick.;
+3;Device type;DcLcGadget;type;DcLcGadget_type;E;20;0;X;;Defines the type of the Gadget.;
+4;Storage location;DcLcGadget;location.stoLocId;DcLcGadget_location_stoLocId;S;20;0;X;X;The identifier of the storage location per warehouse location.;
+5;DC-LC station ID;DcLcGadget;station.stationId;DcLcGadget_station_stationId;S;25;0;X;X;Id of a Station.;

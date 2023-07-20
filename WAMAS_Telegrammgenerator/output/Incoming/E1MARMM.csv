@@ -1,0 +1,13 @@
+# E1MARMM;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Function message;;;;S;3;0;X;;;;MSGFN
+2;Quantity unit;Item;PackagingVersion.ItemQtyUnit.qtyUnit;;S;5;0;X;;Other End (qtyUnit): The quantity unit defines the physical unit with which an item is counted or measured. In many cases, quantity is measured in "piece" or "piece per box". When dealing with small items or bulk goods, items are usually managed by weight.;;MEINH
+3;Denominator;Item;PackagingVersion.ItemQtyUnit.numBaseQtyUnits.denominator;;N;6;0;X;;The bottom of the fraction.;;UMREN
+4;Numerator;Item;PackagingVersion.ItemQtyUnit.numBaseQtyUnits.numerator;;N;6;0;X;;Defines the number of quantity units in the reference unit. ;;UMREZ
+5;Length unit;Item;PackagingVersion.ItemQtyUnit.length.unit;;S;5;0;X;;Other End (unit): Defines the length unit in which this value (triple) was entered by a user.;;MEABM
+6;Length;Item;PackagingVersion.ItemQtyUnit.length.value;;D;12;3;X;;Specifies the value (or amount) in length unit which was entered by a user.;;LAENG
+7;Length;Item;PackagingVersion.ItemQtyUnit.width.value;;D;12;3;X;;Specifies the value (or amount) in length unit which was entered by a user.;;BREIT
+8;Length;Item;PackagingVersion.ItemQtyUnit.height.value;;D;12;3;X;;Specifies the value (or amount) in length unit which was entered by a user.;;HOEHE
+9;Volume;Item;PackagingVersion.ItemQtyUnit.volume.unit;;S;5;0;X;;Other End (unit): Defines the volume unit in which this value (triple) was entered by a user.;;VOLEH
+10;Volume;Item;PackagingVersion.ItemQtyUnit.volume.value;;D;12;3;X;;Specifies the value (or amount) in volume unit which was entered by a user.;;VOLUM
+11;Weight unit;Item;PackagingVersion.ItemQtyUnit.grossWeight.unit;;S;5;0;X;;Other End (unit): Defines the weight unit in which this value (triple) was entered by a user.;;GEWEI
+12;Weight;Item;PackagingVersion.ItemQtyUnit.grossWeight.value;;D;12;3;X;;Specifies the value (or amount) in weight unit which was entered by a user.;;BRGEW

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="ASRS_RETRORDER00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="release" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="retrievalOrderNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="ASRS_RETRORDERDEST00001" type="ASRS_RETRORDER00001_ASRS_RETRORDERDEST00001" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="ASRS_RETRORDERLINE00001" type="ASRS_RETRORDER00001_ASRS_RETRORDERLINE00001" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ASRS_RETRORDER00001_ASRS_RETRORDERDEST00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="retrievalOrderNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="stoLocId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ASRS_RETRORDER00001_ASRS_RETRORDERLINE00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="displayText" type="STRING_100" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="luId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="retrievalOrderNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

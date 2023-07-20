@@ -1,0 +1,3 @@
+# PLAGOODSOWNER00006;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;PickingLocAssignment;client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Goods owner;PlaGoodsOwner;gow;gow;S;15;0;X;;Other End (gow): Defines Goods owner of picking location assignment.;

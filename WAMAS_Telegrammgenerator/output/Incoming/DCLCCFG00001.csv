@@ -1,0 +1,6 @@
+# DCLCCFG00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Warehouse location;DcLcCfg;WhLoc.whLocId;DcLcCfg_WhLoc_whLocId;S;20;0;X;X;The identifier of the warehouse location.;
+2;Line controller ID;DcLcCfg;cfgId;DcLcCfg_cfgId;S;25;0;X;;The DC-LC ID.;
+3;IP address of line controller;DcLcCfg;hostIp;DcLcCfg_hostIp;S;40;0;X;;The IP address of the connected line controller.;
+4;Port of line controller;DcLcCfg;port;DcLcCfg_port;D;6;0;X;;The port of the line controller to connect.;
+5;Device controller;DcLcCfg;dcCfg.id;DcLcCfg_dcCfg_id;S;25;0;X;X;Unique identification of an SOC communication channel.;

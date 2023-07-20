@@ -1,0 +1,6 @@
+# WCS_INVENTORYACK00007;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Inventory order number;InventoryOrder;invNo;invNo;S;20;0;X;;Is part of the unique identification of an InventoryOrder.;
+2;Inventory order line number;InventoryOrderLine;line;invLine;N;5;0;X;;Is part of the unique identification of the InventoryOrderLine.;
+3;System partner;InventoryOrder;SystemPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;Error description;;;errorDesc;S;30;0;;;;
+5;Cancel flag;;;cancelFlag;B;1;0;;;;

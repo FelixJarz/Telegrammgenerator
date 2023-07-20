@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<!--This sample file contains a system message type with three system message 
+			type descriptions. -->
+		<header>
+			<FULL>
+				<HEADER_SOURCE>HOST</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_SEQUENCE>0</HEADER_SEQUENCE>
+				<HEADER_CREATIONTIME>20180925112454</HEADER_CREATIONTIME>
+				<HEADER_RECORDTYPENAME>SYSMSGTYPE00002</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<SYSMSGTYPE00002>
+				<msgCategoryId>ARCHIVING</msgCategoryId>
+				<msgTypeNo>1</msgTypeNo>
+				<archive>1</archive>
+				<display>1</display>
+				<finishMode>AUTOMATIC</finishMode>
+				<classification>FATAL</classification>
+				<priority>30</priority>
+				<SYSMSGTYPEDESC00001>
+					<msgCategoryId>ARCHIVING</msgCategoryId>
+					<typeDesc>1</typeDesc>
+					<language>fra</language>
+					<description>Archivier</description>
+				</SYSMSGTYPEDESC00001>
+				<SYSMSGTYPEDESC00001>
+					<msgCategoryId>ARCHIVING</msgCategoryId>
+					<typeDesc>1</typeDesc>
+					<language>rum</language>
+					<description>Se arhivează</description>
+				</SYSMSGTYPEDESC00001>
+				<SYSMSGTYPEDESC00001>
+					<msgCategoryId>ARCHIVING</msgCategoryId>
+					<typeDesc>1</typeDesc>
+					<language>eng</language>
+					<description>Archiving</description>
+				</SYSMSGTYPEDESC00001>
+			</SYSMSGTYPE00002>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>

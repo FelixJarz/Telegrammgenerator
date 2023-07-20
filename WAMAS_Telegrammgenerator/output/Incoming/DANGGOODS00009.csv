@@ -1,0 +1,31 @@
+# DANGGOODS00009;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;Item;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Item number;Item;itemNo;itemNo;S;20;0;X;; Is a part of the unique identification of an item. ;
+3;Variant;Item;variant;variant;S;10;0;X;; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+4;UN number;DangerousGoods;unNumber;unNumber;S;4;0;X;;UN-number;
+5;Dangerous goods quantity / base quantity;DangerousGoods;dgQty;dgQty;D;6;3;;;Dangerous goods quantity/base quantity;
+6;Dangerous goods quantity unit;DangerousGoods;dgQtyUnit;dgQtyUnit;S;2;0;;;Dangerous goods quantity unit;
+7;Class;DangerousGoods;dgiClass;dgiClass;S;5;0;;;Dangerous goods class;
+8;Classification code;DangerousGoods;classifCode;classifCode;S;20;0;;;Classification code;
+9;Packing group;DangerousGoods;packingGroup;packingGroup;S;115;0;;;Packing group;
+10;Labels;DangerousGoods;labels;labels;S;20;0;;;Labels;
+11;Special provisions;DangerousGoods;specialProvs;specialProvs;S;40;0;;;Special provisions;
+12;Limited Quantities;DangerousGoods;limitedQtys;limitedQtys;S;20;0;;;Limited Quantities;
+13;Excepted Quantities;DangerousGoods;exceptedQtys;exceptedQtys;S;20;0;;;Excepted Quantities;
+14;Packing instructions;DangerousGoods;packingInstr;packingInstr;S;45;0;;;Packing instructions;
+15;Special packing provisions;DangerousGoods;specialPackingProv;specialPackingProv;S;70;0;;;Special packing provisions;
+16;Mixed packing provisions;DangerousGoods;mixedPackingProv;mixedPackingProv;S;25;0;;;Mixed packing provisions;
+17;Instructions for portable tanks and bulk containers;DangerousGoods;ptbcInstr;ptbcInstr;S;40;0;;;Portable tank and bulk container instructions;
+18;Special provisions for portable tanks and bulk containers;DangerousGoods;ptbcSpecialProv;ptbcSpecialProv;S;20;0;;;Portable tank and bulk container special provisions;
+19;Tank codes for ADR tanks;DangerousGoods;adrTankCodes;adrTankCodes;S;120;0;;;Tank codes for ADR tanks;
+20;Special provisions for ADR tanks;DangerousGoods;adrTankSpecialProv;adrTankSpecialProv;S;120;0;;;Special provisions for ADR tanks;
+21;Vehicle for tank carriage;DangerousGoods;tankCarriageVehicle;tankCarriageVehicle;S;10;0;;;Vehicle for tank carriage;
+22;Transport category;DangerousGoods;transportCateg;transportCateg;S;1;0;;;Transport category;
+23;Tunnel restriction code;DangerousGoods;tunnelRestrCode;tunnelRestrCode;S;15;0;;;Tunnel restriction code;
+24;Special provisions for carriage - Packages;DangerousGoods;carriagePackagesSp;carriagePackagesSp;S;50;0;;;Special provisions for carriage - Packages;
+25;Special provisions for carriage - Bulk;DangerousGoods;carriageBulkSp;carriageBulkSp;S;30;0;;;Special provisions for carriage - Bulk;
+26;Special provisions for carriage - Loading, unloading and handling;DangerousGoods;carriageLoadUnloadSp;carriageLoadUnloadSp;S;50;0;;;Special provisions for carriage - Loading and unloading;
+27;Special provisions for carriage - Operation;DangerousGoods;carriageOperationSp;carriageOperationSp;S;20;0;;;Special provisions for carriage - Operation;
+28;Hazard identification number;DangerousGoods;hazardIdNum;hazardIdNum;S;10;0;;;Hazard identification number;
+29;Dangerous goods info text;DangerousGoods;dgInfoText;dgInfoText;S;512;0;;;Dangerous goods info text;
+30;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

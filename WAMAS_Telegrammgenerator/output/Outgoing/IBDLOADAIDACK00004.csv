@@ -1,0 +1,12 @@
+# IBDLOADAIDACK00004;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;InboundDelivery;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Inbound delivery number;InboundDelivery;ibdNo;ibdNo;S;20;0;X;;The inbound delivery number is part of the unique identifier of the inbound delivery.;
+3;System partner;InboundDelivery;sysPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;Loading aid;InboundDelivery;InitialRegisteredLa.LoadAid;loadAidId;S;10;0;X;;Other End (LoadAid): The loading aid the initial registered quantity is concerned to.;
+5;# Initially registered LAs;InboundDelivery;InitialRegisteredLa.qty;registeredLaInitial;N;5;0;;;Number of initially registered LA;
+6;# OK;InboundDelivery;IgStockBundleData.IgRegisteredLoadAid.quantities.ok;registeredLaOk;N;5;0;;;The number of delivered ones.;
+7;# Not OK;InboundDelivery;IgStockBundleData.IgRegisteredLoadAid.quantities.notOk;registeredLaNotOk;N;5;0;;;The number of the ones that cannot be exchanged (maybe damaged, etc.).;
+8;# Internal;InboundDelivery;IgStockBundleData.IgRegisteredLoadAid.quantities.internal;registeredLaInternal;N;5;0;;;The number of the ones that were added internally (e.g. belts, etc.).;
+9;Partner;InboundDelivery;partnerRole.igPartner.Partner.partnerId;partnerId;S;15;0;X;X;Unique identification of a partner object.;
+10;Item number;LoadAidItem;Item.itemNo;itemNo;S;20;0;;X; Is a part of the unique identification of an item. ;
+11;Variant;LoadAidItem;Item.variant;variant;S;10;0;;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;

@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<!--This sample file creates an inbound delivery with one inbound delivery line.-->
+<SHP_IBDLV_SAVE_REPLICA04>
+    <IDOC BEGIN="1">
+        <EDI_DC40 SEGMENT="1">
+            <TABNAM>EDI_DC40</TABNAM>
+            <MANDT>800</MANDT>
+            <DOCNUM>0000000001323910</DOCNUM>
+            <DOCREL>702</DOCREL>
+            <STATUS>30</STATUS>
+            <DIRECT>1</DIRECT>
+            <OUTMOD>4</OUTMOD>
+            <IDOCTYP>SHP_IBDLV_SAVE_REPLICA04</IDOCTYP>
+            <MESTYP>SHP_IBDLV_SAVE_REPLICA</MESTYP>
+            <SNDPOR>SAPECR</SNDPOR>
+            <SNDPRT>LS</SNDPRT>
+            <SNDPRN>ER1CLNT800</SNDPRN>
+            <RCVPOR>WAMAS</RCVPOR>
+            <RCVPRT>LS</RCVPRT>
+            <RCVPRN>WAMAS</RCVPRN>
+            <CREDAT>20120221</CREDAT>
+            <CRETIM>101339</CRETIM>
+            <SERIAL>20120221101339</SERIAL>
+        </EDI_DC40>
+        <E1SHP_IBDLV_SAVE_REPLICA SEGMENT="1">
+            <SENDER_SYSTEM>ER1CLNT800</SENDER_SYSTEM>
+            <E1BPIBDLVHDR SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <TOTAL_WGHT>1007.640</TOTAL_WGHT>
+                <NET_WEIGHT>805.140</NET_WEIGHT>
+                <UNIT_OF_WT>KG</UNIT_OF_WT>
+                <UNIT_OF_WT_ISO>KGM</UNIT_OF_WT_ISO>
+                <VOLUME>4173.120</VOLUME>
+                <VOLUMEUNIT>CDM</VOLUMEUNIT>
+                <VOLUMEUNIT_ISO>DMQ</VOLUMEUNIT_ISO>
+                <NOSHPUNITS>00000</NOSHPUNITS>
+                <DLV_TYPE>EL</DLV_TYPE>
+                <DLV_PRIO>00</DLV_PRIO>
+                <SD_DOC_CAT>7</SD_DOC_CAT>
+            </E1BPIBDLVHDR>
+            <E1BPIBDLVHDRORG SEGMENT="1">
+                <SHIP_POINT>2701</SHIP_POINT>
+                <WHSE_NO>271</WHSE_NO>
+            </E1BPIBDLVHDRORG>
+            <E1BPDLVCONTROL SEGMENT="1">
+                <RECV_WHS_NO>271</RECV_WHS_NO>
+                <RECV_SYS>WAMAS</RECV_SYS>
+            </E1BPDLVCONTROL>
+            <E1BPDLVPARTNER SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <ITM_NUMBER>000000</ITM_NUMBER>
+                <PARTN_ROLE>LF</PARTN_ROLE>
+                <PARTNER_NO>1_1</PARTNER_NO>
+                <ADDRESS_NO>0000182573</ADDRESS_NO>
+            </E1BPDLVPARTNER>
+            <E1BPADR1 SEGMENT="1">
+                <ADDR_NO>0000182573</ADDR_NO>
+                <NAME>DR. OETKER AG</NAME>
+                <NAME_4>DR. OETKER AG 4</NAME_4>
+                <CITY>WINZNAU</CITY>
+                <POSTL_COD1>4652</POSTL_COD1>
+                <STREET>POSTFACH</STREET>
+                <HOUSE_NO>11</HOUSE_NO>
+                <COUNTRY>CH</COUNTRY>
+                <DISTRICT>distr</DISTRICT>
+                <LANGU>D</LANGU>
+                <REGION>SO</REGION>
+                <SORT1>OETKEWINZN</SORT1>
+                <TIME_ZONE>CET</TIME_ZONE>
+                <ADR_NOTES>VERRECHNUNG DEB 536111 HUDCS 18.03.03</ADR_NOTES>
+                <TEL1_NUMBR>062 285</TEL1_NUMBR>
+                <TEL1_EXT>5353</TEL1_EXT>
+                <FAX_NUMBER>062 285</FAX_NUMBER>
+                <FAX_EXTENS>5377</FAX_EXTENS>
+                <STREET_LNG>POSTFACH</STREET_LNG>
+                <TRANSPZONE>0000000001</TRANSPZONE>
+                <E1BPADR11 SEGMENT="1">
+                    <COUNTRYISO>CH</COUNTRYISO>
+                    <LANGU_ISO>DE</LANGU_ISO>
+                    <LANGU_CR>D</LANGU_CR>
+                    <LANGUCRISO>DE</LANGUCRISO>
+                </E1BPADR11>
+            </E1BPADR1>
+            <E1BPDLVDEADLN SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <TIMETYPE>WSHDRLFDAT</TIMETYPE>
+                <TIMESTAMP_UTC>20120221093600</TIMESTAMP_UTC>
+                <TIMEZONE>CET</TIMEZONE>
+            </E1BPDLVDEADLN>
+            <E1BPDLVDEADLN SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <TIMETYPE>WSHDRWADTI</TIMETYPE>
+                <TIMESTAMP_UTC>0</TIMESTAMP_UTC>
+                <TIMEZONE>CET</TIMEZONE>
+            </E1BPDLVDEADLN>
+            <E1BPDLVDEADLN SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <TIMETYPE>WSHDRTDDAT</TIMETYPE>
+                <TIMESTAMP_UTC>0</TIMESTAMP_UTC>
+                <TIMEZONE>CET</TIMEZONE>
+            </E1BPDLVDEADLN>
+            <E1BPIBDLVITEM SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <ITM_NUMBER>000010</ITM_NUMBER>
+                <MATERIAL>000000000003010576</MATERIAL>
+                <SHORT_TEXT>Dr.Oetker Pizza Ristor.Tonno TK 355G</SHORT_TEXT>
+                <VEND_MAT>261400</VEND_MAT>
+                <DLV_QTY>324.000</DLV_QTY>
+                <SALES_UNIT_ISO>ZCO</SALES_UNIT_ISO>
+                <SALES_UNIT>CO</SALES_UNIT>
+                <DLV_QTY_STOCK>2268.000</DLV_QTY_STOCK>
+                <BASE_UOM>ST</BASE_UOM>
+                <BASE_UOM_ISO>PCE</BASE_UOM_ISO>
+                <CONV_UNIT_NOM>7</CONV_UNIT_NOM>
+                <CONV_UNIT_DENOM>1</CONV_UNIT_DENOM>
+                <NET_WEIGHT>805.140</NET_WEIGHT>
+                <GROSS_WT>1007.640</GROSS_WT>
+                <UNIT_OF_WT_ISO>KGM</UNIT_OF_WT_ISO>
+                <UNIT_OF_WT>KG</UNIT_OF_WT>
+                <VOLUME>4173.120</VOLUME>
+                <VOLUMEUNIT_ISO>DMQ</VOLUMEUNIT_ISO>
+                <VOLUMEUNIT>CDM</VOLUMEUNIT>
+                <HIERARITEM>000000</HIERARITEM>
+                <LOADINGGRP>0120</LOADINGGRP>
+                <TRANS_GRP>0001</TRANS_GRP>
+                <DLV_GROUP>000</DLV_GROUP>
+                <EAN_UPC>4001724819325</EAN_UPC>
+                <ITEM_CATEG>ELN</ITEM_CATEG>
+                <OVERDEL_UNLIM>X</OVERDEL_UNLIM>
+                <OVERDELTOL>0.0</OVERDELTOL>
+                <UNDER_TOL>0.0</UNDER_TOL>
+                <WHSE_MVMT>000</WHSE_MVMT>
+                <EXPIRYDATE>00000000</EXPIRYDATE>
+                <MOVE_TYPE>101</MOVE_TYPE>
+                <MOVE_TYPE_WM>101</MOVE_TYPE_WM>
+                <MVT_IND>B</MVT_IND>
+                <CUM_BTCH_QTY>0.000</CUM_BTCH_QTY>
+                <CUM_BTCH_GR_WT>0.000</CUM_BTCH_GR_WT>
+                <CUM_BTCH_NT_WT>0.000</CUM_BTCH_NT_WT>
+                <CUM_BTCH_VOL>0.000</CUM_BTCH_VOL>
+                <MATL_GROUP>2143</MATL_GROUP>
+                <MATL_TYPE>HAWA</MATL_TYPE>
+                <DEL_QTY_FLO>  3.2400000000000000E+02</DEL_QTY_FLO>
+                <CONV_FACT>  0.0000000000000000E+00</CONV_FACT>
+                <DLV_QTY_ST_FLO>  2.2680000000000000E+03</DLV_QTY_ST_FLO>
+                <CUMBTCHQTYSU_FLO>  0.0000000000000000E+00</CUMBTCHQTYSU_FLO>
+                <CUMBTCHQTYSU>0.000</CUMBTCHQTYSU>
+                <INSPLOT>000000000000</INSPLOT>
+                <PROD_DATE>00000000</PROD_DATE>
+            </E1BPIBDLVITEM>
+            <E1BPIBDLVITEMORG SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <ITM_NUMBER>000010</ITM_NUMBER>
+                <PLANT>1008</PLANT>
+                <STGE_LOC>001N</STGE_LOC>
+            </E1BPIBDLVITEMORG>
+            <E1BPDLVITEMSTTR SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <ITM_NUMBER>000010</ITM_NUMBER>
+            </E1BPDLVITEMSTTR>
+            <E1BPDLVCOBLITEM SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <ITM_NUMBER>000010</ITM_NUMBER>
+                <PROFIT_CTR>0000001027</PROFIT_CTR>
+                <PROFIT_SEGM_NO>0000000000</PROFIT_SEGM_NO>
+                <S_ORD_ITEM>000000</S_ORD_ITEM>
+                <ORDER_ITNO>0000</ORDER_ITNO>
+            </E1BPDLVCOBLITEM>
+            <E1BPDLVTXTHDR SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <DELIV_ITEM>000000</DELIV_ITEM>
+                <TEXT_ID>0002</TEXT_ID>
+                <LANGU>D</LANGU>
+                <LANGU_ISO>DE</LANGU_ISO>
+                <FORM>SYSTEM</FORM>
+                <LINESIZE>072</LINESIZE>
+            </E1BPDLVTXTHDR>
+            <E1BPDLVTXTHDR SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <DELIV_ITEM>000010</DELIV_ITEM>
+                <TEXT_ID>0001</TEXT_ID>
+                <LANGU>D</LANGU>
+                <LANGU_ISO>de</LANGU_ISO>
+                <FORM>SYSTEM</FORM>
+                <LINESIZE>072</LINESIZE>
+            </E1BPDLVTXTHDR>
+            <E1BPDLVTXTITEM SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <DELIV_ITEM>000000</DELIV_ITEM>
+                <TEXT_ID>0002</TEXT_ID>
+                <LANGU>D</LANGU>
+                <LANGU_ISO>de</LANGU_ISO>
+                <LINE_NUMB>1</LINE_NUMB>
+                <FORMAT_COL>*</FORMAT_COL>
+                <TEXT_LINE>Das ist ein Kopftext,</TEXT_LINE>
+            </E1BPDLVTXTITEM>
+            <E1BPDLVTXTITEM SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <DELIV_ITEM>000000</DELIV_ITEM>
+                <TEXT_ID>0002</TEXT_ID>
+                <LANGU>D</LANGU>
+                <LANGU_ISO>de</LANGU_ISO>
+                <LINE_NUMB>2</LINE_NUMB>
+                <FORMAT_COL>*</FORMAT_COL>
+                <TEXT_LINE>mit mehreren Zeilen</TEXT_LINE>
+            </E1BPDLVTXTITEM>
+            <E1BPDLVTXTITEM SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <DELIV_ITEM>000000</DELIV_ITEM>
+                <TEXT_ID>0002</TEXT_ID>
+                <LANGU>D</LANGU>
+                <LANGU_ISO>de</LANGU_ISO>
+                <LINE_NUMB>3</LINE_NUMB>
+                <FORMAT_COL>*</FORMAT_COL>
+                <TEXT_LINE>Juhu, Karl</TEXT_LINE>
+            </E1BPDLVTXTITEM>
+            <E1BPDLVTXTITEM SEGMENT="1">
+                <DELIV_NUMB>0180010761</DELIV_NUMB>
+                <DELIV_ITEM>000010</DELIV_ITEM>
+                <TEXT_ID>0001</TEXT_ID>
+                <LANGU>D</LANGU>
+                <LANGU_ISO>de</LANGU_ISO>
+                <LINE_NUMB>1</LINE_NUMB>
+                <FORMAT_COL>*</FORMAT_COL>
+                <TEXT_LINE>Das ist ein</TEXT_LINE>
+            </E1BPDLVTXTITEM>
+        </E1SHP_IBDLV_SAVE_REPLICA>
+    </IDOC>
+</SHP_IBDLV_SAVE_REPLICA04>

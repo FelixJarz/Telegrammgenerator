@@ -1,0 +1,263 @@
+﻿Original;ger;spa;fra;por-BR;ita;Occurrences
+# Transport orders (max.);# Transportaufträge (max.);N° órdenes de transporte (máx.);# ordres de transport (max.);Nº de pedidos de transporte (máx.);N° ordini di trasporto (max.);WCS_REPLDEMAND00006
+ABC value;ABC-Wert;Valor ABC;Valeur ABC;Valor ABC;Valore ABC;WCS_ITEMABCCLASSIFICATION00006
+Allowed new LUs;Erlaubte neue LE;UT nuevas permitidas;UCs nouvelles autorisées;Permitidas novas UTs;Nuove unità di carico consentite;WCS_PICKREQ00010
+Assortment;Sortiment;Surtido;Assortiment;Sortimento;Assortimento;WCS_INVENTORYREQ00007 WCS_ITEM00009
+Automatic conversion mode IG;Automatic conversion mode IG;Automatic conversion mode IG;Automatic conversion mode IG;Automatic conversion mode IG;Automatic conversion mode IG;WCS_ITEM00009
+Automatic conversion mode OG;Automatic conversion mode OG;Automatic conversion mode OG;Automatic conversion mode OG;Automatic conversion mode OG;Automatic conversion mode OG;WCS_ITEM00009
+Automatic conversion mode;Automatischer Umrechnungsmodus;Modo de conversión automática;Mode de conversion automatique;Modo de conversão automática;Modo di conversione automatica;WCS_ITEM00009
+Availability check OG;Availability check OG;Availability check OG;Availability check OG;Availability check OG;Availability check OG;WCS_ITEM00009
+BBD From;BBD From;BBD From;BBD From;BBD From;BBD From;WCS_INVENTORYREQ00007
+BBD New value;BBD New value;BBD New value;BBD New value;BBD New value;BBD New value;WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006
+BBD Old value;BBD Old value;BBD Old value;BBD Old value;BBD Old value;BBD Old value;WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006
+BBD To;BBD To;BBD To;BBD To;BBD To;BBD To;WCS_INVENTORYREQ00007
+BBD registration IG;BBD registration IG;BBD registration IG;BBD registration IG;BBD registration IG;BBD registration IG;WCS_ITEM00009
+BBD registration OG;BBD registration OG;BBD registration OG;BBD registration OG;BBD registration OG;BBD registration OG;WCS_ITEM00009
+BBD stock mode;MHD-Bestandsführungsmodus;Gestión de existencias por FCP;Mode de stockage DLC;Modo de controle de estoque de DV;Modo di gestione delle scorte SCAD;WCS_ITEM00009
+BBD;MHD;FCP;DLC;DV;SCAD;WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+BQU / WQU;BME / LME;UE / UV;UQB / UGS;UBQ / UQD;UQB / UQM;WCS_ITEMALIAS00006
+BQU net weight unit;BQU net weight unit;BQU net weight unit;BQU net weight unit;BQU net weight unit;BQU net weight unit;WCS_ITEM00009 WCS_PACKAGINGVERSION00007
+BQU net weight;BME Nettogewicht;Peso neto de UE;Poids net UQB;Peso líquido da UBQ;Peso netto unità di quantità di base;WCS_ITEM00009 WCS_PACKAGINGVERSION00007
+Barcodes;Barcodes;Códigos de barras;Code à barres;Códigos de barras;Codici a barre;WCS_TRANSPORTDEMAND00005
+Base quantity unit;Basismengeneinheit;Unidad de existencias;Unité de quantité de base;Unidade de quantidade básica;Unità di quantità di base;WCS_ITEM00009
+Batch New value;Batch New value;Batch New value;Batch New value;Batch New value;Batch New value;WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006
+Batch Old value;Batch Old value;Batch Old value;Batch Old value;Batch Old value;Batch Old value;WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006
+Batch registration IG;Batch registration IG;Batch registration IG;Batch registration IG;Batch registration IG;Batch registration IG;WCS_ITEM00009
+Batch registration OG;Batch registration OG;Batch registration OG;Batch registration OG;Batch registration OG;Batch registration OG;WCS_ITEM00009
+Batch stock mode;Chargen-Bestandsführungsmodus;Gestión de existencias por lote;Mode de stockage lot;Modo de controle de estoque de lote;Modalità di gestione delle scorte relativa al lotto;WCS_ITEM00009
+Batch;Charge;Lote;Lot;Lote;Lotto;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 01 registration;Erfassung ABIA 01;Registro de AAIE 01;Enregistrement AISA 01;Registro AAIE 01;Registrazione AQSP 01;WCS_ITEM00009
+CSIA 01 stock mode;ABIA 01 Bestandsmodus;Gestión de existencias de AAIE 01;Mode de stockage AISA 01;Modo de estoque AAIE 01;Modo gestione scorte AQSP 01;WCS_ITEM00009
+CSIA 01;ABIA 01;AAIE 01;AISA 01;AAIE 01;AQSP 01;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 02 registration;Erfassung ABIA 02;Registro de AAIE 02;Enregistrement AISA 02;Registro AAIE 02;Registrazione AQSP 02;WCS_ITEM00009
+CSIA 02 stock mode;ABIA 02 Bestandsmodus;Gestión de existencias de AAIE 02;Mode de stockage AISA 02;Modo de estoque AAIE 02;Modo gestione scorte AQSP 02;WCS_ITEM00009
+CSIA 02;ABIA 02;AAIE 02;AISA 02;AAIE 02;AQSP 02;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 03 registration;Erfassung ABIA 03;Registro de AAIE 03;Enregistrement AISA 03;Registro AAIE 03;Registrazione AQSP 03;WCS_ITEM00009
+CSIA 03 stock mode;ABIA 03 Bestandsmodus;Gestión de existencias de AAIE 03;Mode de stockage AISA 03;Modo de estoque AAIE 03;Modo gestione scorte AQSP 03;WCS_ITEM00009
+CSIA 03;ABIA 03;AAIE 03;AISA 03;AAIE 03;AQSP 03;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 04 registration;Erfassung ABIA 04;Registro de AAIE 04;Enregistrement AISA 04;Registro AAIE 04;Registrazione AQSP 04;WCS_ITEM00009
+CSIA 04 stock mode;ABIA 04 Bestandsmodus;Gestión de existencias de AAIE 04;Mode de stockage AISA 04;Modo de estoque AAIE 04;Modo gestione scorte AQSP 04;WCS_ITEM00009
+CSIA 04;ABIA 04;AAIE 04;AISA 04;AAIE 04;AQSP 04;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 05 registration;Erfassung ABIA 05;Registro de AAIE 05;Enregistrement AISA 05;Registro AAIE 05;Registrazione AQSP 05;WCS_ITEM00009
+CSIA 05 stock mode;ABIA 05 Bestandsmodus;Gestión de existencias de AAIE 05;Mode de stockage AISA 05;Modo de estoque AAIE 05;Modo gestione scorte AQSP 05;WCS_ITEM00009
+CSIA 05;ABIA 05;AAIE 05;AISA 05;AAIE 05;AQSP 05;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 06 registration;Erfassung ABIA 06;Registro de AAIE 06;Enregistrement AISA 06;Registro AAIE 06;Registrazione AQSP 06;WCS_ITEM00009
+CSIA 06 stock mode;ABIA 06 Bestandsmodus;Gestión de existencias de AAIE 06;Mode de stockage AISA 06;Modo de estoque AAIE 06;Modo gestione scorte AQSP 06;WCS_ITEM00009
+CSIA 06;ABIA 06;AAIE 06;AISA 06;AAIE 06;AQSP 06;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 07 registration;Erfassung ABIA 07;Registro de AAIE 07;Enregistrement AISA 07;Registro AAIE 07;Registrazione AQSP 07;WCS_ITEM00009
+CSIA 07 stock mode;ABIA 07 Bestandsmodus;Gestión de existencias de AAIE 07;Mode de stockage AISA 07;Modo de estoque AAIE 07;Modo gestione scorte AQSP 07;WCS_ITEM00009
+CSIA 07;ABIA 07;AAIE 07;AISA 07;AAIE 07;AQSP 07;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 08 registration;Erfassung ABIA 08;Registro de AAIE 08;Enregistrement AISA 08;Registro AAIE 08;Registrazione AQSP 08;WCS_ITEM00009
+CSIA 08 stock mode;ABIA 08 Bestandsmodus;Gestión de existencias de AAIE 08;Mode de stockage AISA 08;Modo de estoque AAIE 08;Modo gestione scorte AQSP 08;WCS_ITEM00009
+CSIA 08;ABIA 08;AAIE 08;AISA 08;AAIE 08;AQSP 08;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 09 registration;Erfassung ABIA 09;Registro de AAIE 09;Enregistrement AISA 09;Registro AAIE 09;Registrazione AQSP 09;WCS_ITEM00009
+CSIA 09 stock mode;ABIA 09 Bestandsmodus;Gestión de existencias de AAIE 09;Mode de stockage AISA 09;Modo de estoque AAIE 09;Modo gestione scorte AQSP 09;WCS_ITEM00009
+CSIA 09;ABIA 09;AAIE 09;AISA 09;AAIE 09;AQSP 09;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 10 registration;Erfassung ABIA 10;Registro de AAIE 10;Enregistrement AISA 10;Registro AAIE 10;Registrazione AQSP 10;WCS_ITEM00009
+CSIA 10 stock mode;ABIA 10 Bestandsmodus;Gestión de existencias de AAIE 10;Mode de stock AISA 10;Modo de estoque AAIE 10;Modo gestione scorte AQSP 10;WCS_ITEM00009
+CSIA 10;ABIA 10;AAIE 10;AISA 10;AAIE 10;AQSP 10;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 11 registration;Erfassung ABIA 11;Registro de AAIE 11;Enregistrement AISA 11;Registro AAIE 11;Registrazione AQSP 11;WCS_ITEM00009
+CSIA 11 stock mode;ABIA 11 Bestandsmodus;Gestión de existencias de AAIE 11;Mode de stock AISA 11;Modo de estoque AAIE 11;Modo gestione scorte AQSP 11;WCS_ITEM00009
+CSIA 11;ABIA 11;AAIE 11;AISA 11;AAIE 11;AQSP 11;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 12 registration;Erfassung ABIA 12;Registro de AAIE 12;Enregistrement AISA 12;Registro AAIE 12;Registrazione AQSP 12;WCS_ITEM00009
+CSIA 12 stock mode;ABIA 12 Bestandsmodus;Gestión de existencias de AAIE 12;Mode de stock AISA 12;Modo de estoque AAIE 12;Modo gestione scorte AQSP 12;WCS_ITEM00009
+CSIA 12;ABIA 12;AAIE 12;AISA 12;AAIE 12;AQSP 12;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 13 registration;Erfassung ABIA 13;Registro de AAIE 13;Enregistrement AISA 13;Registro AAIE 13;Registrazione AQSP 13;WCS_ITEM00009
+CSIA 13 stock mode;ABIA 13 Bestandsmodus;Gestión de existencias de AAIE 13;Mode de stock AISA 13;Modo de estoque AAIE 13;Modo gestione scorte AQSP 13;WCS_ITEM00009
+CSIA 13;ABIA 13;AAIE 13;AISA 13;AAIE 13;AQSP 13;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 14 registration;Erfassung ABIA 14;Registro de AAIE 14;Enregistrement AISA 14;Registro AAIE 14;Registrazione AQSP 14;WCS_ITEM00009
+CSIA 14 stock mode;ABIA 14 Bestandsmodus;Gestión de existencias de AAIE 14;Mode de stockage AISA 14;Modo de estoque AAIE 14;Modo gestione scorte AQSP 14;WCS_ITEM00009
+CSIA 14;ABIA 14;AAIE 14;AISA 14;AAIE 14;AQSP 14;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 15 registration;Erfassung ABIA 15;Registro de AAIE 15;Enregistrement AISA 15;Registro AAIE 15;Registrazione AQSP 15;WCS_ITEM00009
+CSIA 15 stock mode;ABIA 15 Bestandsmodus;Gestión de existencias de AAIE 15;Mode de stock AISA 15;Modo de estoque AAIE 15;Modo gestione scorte AQSP 15;WCS_ITEM00009
+CSIA 15;ABIA 15;AAIE 15;AISA 15;AAIE 15;AQSP 15;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 16 registration;Erfassung ABIA 16;Registro de AAIE 16;Enregistrement AISA 16;Registro AAIE 16;Registrazione AQSP 16;WCS_ITEM00009
+CSIA 16 stock mode;ABIA 16 Bestandsmodus;Gestión de existencias de AAIE 16;Mode de stockage AISA 16;Modo de estoque AAIE 16;Modo gestione scorte AQSP 16;WCS_ITEM00009
+CSIA 16;ABIA 16;AAIE 16;AISA 16;AAIE 16;AQSP 16;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 17 registration;Erfassung ABIA 17;Registro de AAIE 17;Enregistrement AISA 17;Registro AAIE 17;Registrazione AQSP 17;WCS_ITEM00009
+CSIA 17 stock mode;ABIA 17 Bestandsmodus;Gestión de existencias de AAIE 17;Mode de stockage AISA 17;Modo de estoque AAIE 17;Modo gestione scorte AQSP 17;WCS_ITEM00009
+CSIA 17;ABIA 17;AAIE 17;AISA 17;AAIE 17;AQSP 17;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 18 registration;Erfassung ABIA 18;Registro de AAIE 18;Enregistrement AISA 18;Registro AAIE 18;Registrazione AQSP 18;WCS_ITEM00009
+CSIA 18 stock mode;ABIA 18 Bestandsmodus;Gestión de existencias de AAIE 18;Mode de stock AISA 18;Modo de estoque AAIE 18;Modo gestione scorte AQSP 18;WCS_ITEM00009
+CSIA 18;ABIA 18;AAIE 18;AISA 18;AAIE 18;AQSP 18;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 19 registration;Erfassung ABIA 19;Registro de AAIE 19;Enregistrement AISA 19;Registro AAIE 19;Registrazione AQSP 19;WCS_ITEM00009
+CSIA 19 stock mode;ABIA 19 Bestandsmodus;Gestión de existencias de AAIE 19;Mode de stock AISA 19;Modo de estoque AAIE 19;Modo gestione scorte AQSP 19;WCS_ITEM00009
+CSIA 19;ABIA 19;AAIE 19;AISA 19;AAIE 19;AQSP 19;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+CSIA 20 registration;Erfassung ABIA 20;Registro de AAIE 20;Enregistrement AISA 20;Registro AAIE 20;Registrazione AQSP 20;WCS_ITEM00009
+CSIA 20 stock mode;ABIA 20 Bestandsmodus;Gestión de existencias de AAIE 20;Mode de stockage AISA 20;Modo de estoque AAIE 20;Modo gestione scorte AQSP 20;WCS_ITEM00009
+CSIA 20;ABIA 20;AAIE 20;AISA 20;AAIE 20;AQSP 20;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+Cancel flag;Stornierungskennzeichen;Cancelar flag;Annuler l'indicateur;Cancelar código;Annulla flag;WCS_INVENTORYREQ00007
+Changed quantity;Geänderte Menge;Cantidad cambiada;Quantité modifiée;Quantidade alterada;Quantità modificata;WCS_STOCKATTRCHGACK00006 WCS_STOCKCORRACK00007
+Check remaining shelf life IG;Check remaining shelf life IG;Check remaining shelf life IG;Check remaining shelf life IG;Check remaining shelf life IG;Check remaining shelf life IG;WCS_ITEM00009
+City;Stadt;Lugar;Ville;Cidade;Città;WCS_PRINTMETADATA00007
+Client;Klient;Cliente;Client;Requerente;Cliente;WCS_INVENTORYREQ00007 WCS_ITEM00009 WCS_ITEMABCCLASSIFICATION00006 WCS_ITEMALIAS00006 WCS_ITEMDESC00005 WCS_ITEMQTYUNIT00007 WCS_PACKAGINGVERSION00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCOMPREQ00005 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+Content number;Inhaltsnummer;Número de contenido;Numéro de contenu;Número de conteúdo;Numero contenuto;WCS_STOCKTRANSFERACKSO00009
+Country;Land;País;Pays;País;Paese;WCS_PRINTMETADATA00007
+Cross Docking No. New value;Cross Docking No. New value;Cross Docking No. New value;Cross Docking No. New value;Cross Docking No. New value;Cross Docking No. New value;WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006
+Cross Docking No. Old value;Cross Docking No. Old value;Cross Docking No. Old value;Cross Docking No. Old value;Cross Docking No. Old value;Cross Docking No. Old value;WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006
+Cross Docking No.;Cross Docking-Nr.;N.° Cross Docking;Numéro de cross docking;Nº de Cross Docking;N° Cross Docking;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+Current LU location;Aktuelle LE-Position;Posición de la UT actual;Position d'UC actuelle;Posição atual da UT;Posizione attuale dell'unità di carico;WCS_TRANSPORTACK00006 WCS_TRANSPORTDEMAND00005
+Data state;Datenstatus;Estado de los datos;État de données;Status de dados;Stato dei dati;WCS_ITEM00009 WCS_ITEMABCCLASSIFICATION00006 WCS_ITEMALIAS00006 WCS_ITEMDESC00005 WCS_ITEMQTYUNIT00007 WCS_PACKAGINGVERSION00007 WCS_PICKREQEXTREF00005 WCS_PICKREQLINEEXTREF00005
+Default loading unit cubature;Standard-Ladeeinheiten-Kubatur;Cubicación de unidades de transporte predeterminada;Cubature d'unité de chargement par défaut;Cubatura padrão da unidade de transporte;Cubatura dell'unità di carico predefinita;WCS_ITEMQTYUNIT00007
+Delivery time;Liefertermin;Hora de entrega;Délais de livraison;Prazo de fornecimento;Data di consegna;WCS_PRINTMETADATA00007
+Denominator;Nenner;Denominad;Dénominateur;Denominador;Denominatore;WCS_ITEMQTYUNIT00007
+Departure time;Abfahrtstermin;Tiempo de salida;Heure de départ;Horário de partida;Ora di partenza;WCS_PRINTMETADATA00007
+Difference info;Differenzinfo;Información de diferencia;Info de divergence;Informação de diferença;Informazioni deviazione;WCS_PICKACKDIFFCODE00005
+Difference quantity;Differenzmenge;Cantidad de diferencias;Quantité de divergence;Quantidade de diferença;Quantità di deviazione;WCS_PICKACKDIFFCODE00005
+Difference reason;Grund der Differenz;Razón de la diferencia;Raison de la divergence;Motivo da diferença;Motivo della deviazione;WCS_PICKACKDIFFCODE00005
+District;Bezirk;Distrito;District;Distrito;Zona;WCS_PRINTMETADATA00007
+Dock;Tor;Muelle;Porte;Portão;Varco;WCS_PICKREQ00010
+Dual item;Dualartikel;Artículo dual;Article dual;Item dual;Articoli duali;WCS_ITEM00009
+Dual quantity unit;Dualmengeneinheit;Unidad dual de medida;Unité de quantité duale;Unidade de quantidade dual;Unità di quantità duale;WCS_ITEM00009
+Dual quantity;Dualmenge;Cantidad dual;Quantité duale;Quantidade dual;Quantità duale;WCS_PICKACKSO00008 WCS_STOCKATTRCHGACK00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERACKSO00009 WCS_STOCKTRANSFERREQSO00009
+Dual warehouse quantity unit;Duallagermengeneinheit;Unidad dual de almacenamiento;Unité de gestion de stock duale;Unidade de quantidade dual de depósito;Unità di quantità duale di magazzino;WCS_ITEM00009 WCS_PACKAGINGVERSION00007
+Editing remaining dual quantity allowed IG;Editing remaining dual quantity allowed IG;Editing remaining dual quantity allowed IG;Editing remaining dual quantity allowed IG;Editing remaining dual quantity allowed IG;Editing remaining dual quantity allowed IG;WCS_ITEM00009
+Editing remaining dual quantity allowed OG;Editing remaining dual quantity allowed OG;Editing remaining dual quantity allowed OG;Editing remaining dual quantity allowed OG;Editing remaining dual quantity allowed OG;Editing remaining dual quantity allowed OG;WCS_ITEM00009
+Editing remaining dual quantity allowed;Bearbeiten der Rest-Dualmenge erlaubt;Se permite editar la cantidad dual restante;Éditer la quantité duale restante est permis;Permitido editar a quantidade dual restante;Modifica della quantità duale residua consentita;WCS_ITEM00009
+Editing remaining quantity allowed IG;Editing remaining quantity allowed IG;Editing remaining quantity allowed IG;Editing remaining quantity allowed IG;Editing remaining quantity allowed IG;Editing remaining quantity allowed IG;WCS_ITEM00009
+Editing remaining quantity allowed OG;Editing remaining quantity allowed OG;Editing remaining quantity allowed OG;Editing remaining quantity allowed OG;Editing remaining quantity allowed OG;Editing remaining quantity allowed OG;WCS_ITEM00009
+Editing remaining quantity allowed;Bearbeiten der Restmenge erlaubt;Se permite editar la cantidad restante;Éditer la quantité restante est permis;Permitido editar a quantidade restante;Modifica della quantità residua consentita;WCS_ITEM00009
+Email;E-Mail;E-Mail;Courriel;E-Mail;Email;WCS_PRINTMETADATA00007
+Empties item Item number;Empties item Item number;Empties item Item number;Empties item Item number;Empties item Item number;Empties item Item number;WCS_ITEMQTYUNIT00007
+Empties item Variant;Empties item Variant;Empties item Variant;Empties item Variant;Empties item Variant;Empties item Variant;WCS_ITEMQTYUNIT00007
+Error description;Fehlerbeschreibung;Descripción de error;Désignation d'erreur;Descrição de erro;Descrizione errore;WCS_STOCKTRANSFERACKLU00009
+Error;Fehler;Error;Erreur;Erro;Errore;WCS_STOCKTRANSFERACKLU00009
+External reference;Externe Referenz;Referencia externa;Référence extérieure;Referência externa;Riferimento esterno;WCS_PRINTMETADATA00007
+Fax;Fax;Fax;Fax;Fax;Fax;WCS_PRINTMETADATA00007
+Finished;Fertig;Terminado;Finalisé;Finalizado;Finito;WCS_STOCKTRANSFERACKLU00009
+GLN;GLN;GLN;GLN;GLN;GLN;WCS_PRINTMETADATA00007
+Goods category;Warengruppe;Grupo de mercancías;Groupe de marchandises;Categoria de mercadorias;Gruppo di merci;WCS_INVENTORYREQ00007 WCS_ITEM00009
+Goods owner New value;Goods owner New value;Goods owner New value;Goods owner New value;Goods owner New value;Goods owner New value;WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006
+Goods owner Old value;Goods owner Old value;Goods owner Old value;Goods owner Old value;Goods owner Old value;Goods owner Old value;WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006
+Goods owner;Wareneigentümer;Propietario de las mercancías;Propriétaire de la marchandise;Proprietário da mercadoria;Proprietario della merce;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+Goods value unit;Goods value unit;Goods value unit;Goods value unit;Goods value unit;Goods value unit;WCS_ITEM00009
+Goods value;Warenwert;Valor de mercancías;Valeur de la marchandise;Valor de mercadoria;Valore della merce;WCS_ITEM00009
+Gross weight unit;Gross weight unit;Gross weight unit;Gross weight unit;Gross weight unit;Gross weight unit;WCS_ITEMQTYUNIT00007 WCS_PICKACKLU00008 WCS_PICKACKSO00008 WCS_STOCKTRANSFERREQLU00008 WCS_STOCKTRANSFERREQSO00009 WCS_TRANSPORTREQ00007
+Gross weight;Bruttogewicht;Peso bruto;Poids brut;Preso bruto;Peso lordo;WCS_ITEMQTYUNIT00007 WCS_PICKACKLU00008 WCS_PICKACKSO00008 WCS_STOCKTRANSFERREQLU00008 WCS_STOCKTRANSFERREQSO00009 WCS_TRANSPORTREQ00007
+Height unit;Height unit;Height unit;Height unit;Height unit;Height unit;WCS_ITEMQTYUNIT00007
+Height;Höhe;Altura;Hauteur;Altura;Altezza;WCS_ITEMQTYUNIT00007
+ID;ID;ID;ID;ID;ID;WCS_REPLDEMAND00006
+Inbound order;WE-Auftrag;Orden RM;Ordre d'entrée de marchandises;Pedido de EM;Ordine di ingresso merci;WCS_PRINTMETADATA00007
+Info text;Infotext;Texto informativo;Texte info;Texto info;Testo informativo;WCS_INVENTORYREQ00007 WCS_STOCKTRANSFERACKSO00009 WCS_TRANSPORTACK00006
+Inventory order line number;Inventurauftragszeilennummer;Número de línea de orden de inventario;Numéro de la ligne d'ordre d'inventaire;Número da linha de pedido de inventário;Numero della riga di ordine d'inventario;WCS_INVENTORYREQ00007 WCS_STOCKCORRACK00007
+Inventory order number;Inventurauftragsnummer;Número de orden de inventario;Numéro d'ordre d'inventaire;Número de pedido de inventário;Numero di ordine di inventario;WCS_INVENTORYREQ00007 WCS_STOCKCORRACK00007
+Item alias kind;Artikel-Aliasart;Tipo de artículo alias;Le type d'article alias;Tipo de adicional de item;Tipo di alias di articolo;WCS_ITEMALIAS00006
+Item alias number;Artikel-Aliasnummer;Número de artículo alias;Le numéro d'article alias;Número de adicional de item;Numero alias di articolo;WCS_ITEMALIAS00006
+Item class;Artikelklasse;Clase de artículo;Classe d'article;Classe de item;Classe di articolo;WCS_ITEM00009
+Item description 2;Artikelbezeichnung 2;Denominación de artículo 2;Désignation d'article 2;Descrição de item 2;Descrizione dell'articolo 2;WCS_ITEMDESC00005
+Item description;Artikelbezeichnung;Denominación del artículo;La désignation d'article;Descrição de item;Descrizione dell'articolo;WCS_ITEMDESC00005
+Item equivalence period unit;Item equivalence period unit;Item equivalence period unit;Item equivalence period unit;Item equivalence period unit;Item equivalence period unit;WCS_ITEM00009
+Item equivalence period;Artikelgleichwertigkeitsdauer;Período de equivalencia del artículo;Fenêtre temporelle d'équivalence;Período de equivalência de itens;Periodo di equivalenza degli articoli;WCS_ITEM00009
+Item kind;Artikelart;Tipo de artículo;Type d'article;Tipo de item;Tipo di articolo;WCS_INVENTORYREQ00007
+Item number;Artikelnummer;Número de artículo;Le numéro d'article;Número de item;Numero dell'articolo;WCS_INVENTORYREQ00007 WCS_ITEM00009 WCS_ITEMABCCLASSIFICATION00006 WCS_ITEMALIAS00006 WCS_ITEMDESC00005 WCS_ITEMQTYUNIT00007 WCS_PACKAGINGVERSION00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCOMPREQ00005 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+Item type;Artikeltyp;Tipo de artículo;Type d'article;Tipo de item;Tipo di articolo;WCS_ITEM00009
+Key;Schlüssel;Clave;Clé;Legenda;Nome;WCS_PICKREQEXTREF00005 WCS_PICKREQLINEEXTREF00005 WCS_TRANSPORTREQEXTREF00005
+LU finished;LE fertig;UT finalizada;UC finalisée;UT finalizada;UdC completata;WCS_PICKACKLU00008
+LU location;LE-Platz;Posición de la UT;Position d'UC;Posição da UT;Posizione unità di carico;WCS_PICKACKLU00008
+LU origin;LE-Ursprung;Origen de UT;L'origine de l'UC;UT de origem;Origine unità di carico;WCS_PICKACKLU00008 WCS_PICKACKSO00008 WCS_STOCKTRANSFERACKLU00009 WCS_STOCKTRANSFERACKSO00009 WCS_STOCKTRANSFERREQCANCEL00007 WCS_STOCKTRANSFERREQLU00008 WCS_STOCKTRANSFERREQSO00009 WCS_TRANSPORTACK00006 WCS_TRANSPORTDEMAND00005 WCS_TRANSPORTREQ00007 WCS_TRANSPORTREQCANCEL00006
+LU-ID;LE-ID;ID UT;ID UC;ID-UT;ID UdC;WCS_PICKACKLU00008 WCS_PICKACKSO00008 WCS_PICKREQ00010 WCS_STOCKTRANSFERACKLU00009 WCS_STOCKTRANSFERACKSO00009 WCS_STOCKTRANSFERREQCANCEL00007 WCS_STOCKTRANSFERREQLU00008 WCS_STOCKTRANSFERREQSO00009 WCS_TRANSPORTACK00006 WCS_TRANSPORTDEMAND00005 WCS_TRANSPORTREQ00007 WCS_TRANSPORTREQCANCEL00006
+Language;Sprache;Idioma;Langage;Idioma;Lingua;WCS_ITEMDESC00005
+Length unit;Length unit;Length unit;Length unit;Length unit;Length unit;WCS_ITEMQTYUNIT00007
+Length;Länge;Longitud;Longueur;Comprimento;Lunghezza;WCS_ITEMQTYUNIT00007
+Loading aid;Ladehilfsmittel;Medio auxiliar de transporte;Auxiliaire de chargement;Meio auxiliar de transporte;Base di carico;WCS_ITEM00009 WCS_PICKACKLU00008 WCS_PICKREQLUAID00005 WCS_STOCKTRANSFERREQLU00008 WCS_TRANSPORTDEMAND00005 WCS_TRANSPORTREQ00007
+Loading time;Verladetermin;Hora de carga;Date et heure de chargement;Tempo de carga;Ora di caricamento;WCS_PRINTMETADATA00007
+Loading unit cubature;Ladeeinheitenkubatur;Cubicación de unidades de transporte;Cubature d'unité de chargement;Cubatura da unidade de transporte;Cubatura dell'unità di carico;WCS_PICKACKLU00008 WCS_PICKREQLUAID00005 WCS_STOCKTRANSFERREQLU00008 WCS_TRANSPORTDEMAND00005 WCS_TRANSPORTREQ00007
+Lower entry tolerance Absolute value;Lower entry tolerance Absolute value;Lower entry tolerance Absolute value;Lower entry tolerance Absolute value;Lower entry tolerance Absolute value;Lower entry tolerance Absolute value;WCS_ITEM00009
+Lower entry tolerance Percentage;Lower entry tolerance Percentage;Lower entry tolerance Percentage;Lower entry tolerance Percentage;Lower entry tolerance Percentage;Lower entry tolerance Percentage;WCS_ITEM00009
+Master loading unit LU origin;Master loading unit LU origin;Master loading unit LU origin;Master loading unit LU origin;Master loading unit LU origin;Master loading unit LU origin;WCS_STOCKTRANSFERREQLU00008
+Master loading unit LU-ID;Master loading unit LU-ID;Master loading unit LU-ID;Master loading unit LU-ID;Master loading unit LU-ID;Master loading unit LU-ID;WCS_STOCKTRANSFERREQLU00008
+Max. remaining shelf life IG;Max. remaining shelf life IG;Max. remaining shelf life IG;Max. remaining shelf life IG;Max. remaining shelf life IG;Max. remaining shelf life IG;WCS_ITEM00009
+Max. remaining shelf life unit IG;Max. remaining shelf life unit IG;Max. remaining shelf life unit IG;Max. remaining shelf life unit IG;Max. remaining shelf life unit IG;Max. remaining shelf life unit IG;WCS_ITEM00009
+Min. remaining shelf life IG;Min. remaining shelf life IG;Min. remaining shelf life IG;Min. remaining shelf life IG;Min. remaining shelf life IG;Min. remaining shelf life IG;WCS_ITEM00009
+Min. remaining shelf life unit IG;Min. remaining shelf life unit IG;Min. remaining shelf life unit IG;Min. remaining shelf life unit IG;Min. remaining shelf life unit IG;Min. remaining shelf life unit IG;WCS_ITEM00009
+Monitoring interval IG;Monitoring interval IG;Monitoring interval IG;Monitoring interval IG;Monitoring interval IG;Monitoring interval IG;WCS_ITEM00009
+Monitoring interval unit IG;Monitoring interval unit IG;Monitoring interval unit IG;Monitoring interval unit IG;Monitoring interval unit IG;Monitoring interval unit IG;WCS_ITEM00009
+Monitoring kind IG;Monitoring kind IG;Monitoring kind IG;Monitoring kind IG;Monitoring kind IG;Monitoring kind IG;WCS_ITEM00009
+Name 2;Name 2;Nombre 2;Nom 2;Nome 2;Nome 2;WCS_PRINTMETADATA00007
+Name 3;Name 3;Nombre 3;Nom 3;Nome 3;Nome 3;WCS_PRINTMETADATA00007
+Name 4;Name 4;Nombre 4;Nom 4;Nome 4;Nome 4;WCS_PRINTMETADATA00007
+Name;Name;Nombre;Nom;Nome;Nome;WCS_PRINTMETADATA00007
+Numerator;Zähler;Numerador;Numérateur;Numerador;Numeratore;WCS_ITEMQTYUNIT00007
+Ordered quantity;Bestellmenge;Cantidad pedida;Quantité commandée;Quantidade encomendada;Quantità ordinata;WCS_PICKREQLINE00008
+Origin of gross weight;Quelle des Bruttogewichts;Origen de peso bruto;Origine du poids brut;Origem do peso bruto;Origine del peso lordo;WCS_PICKACKLU00008 WCS_STOCKTRANSFERREQLU00008 WCS_TRANSPORTREQ00007
+Outbound delivery block OG;Outbound delivery block OG;Outbound delivery block OG;Outbound delivery block OG;Outbound delivery block OG;Outbound delivery block OG;WCS_ITEM00009
+Outbound delivery number;Auslieferungsnummer;Número de suministro;Numéro de distribution;Número de expedição;Numero della consegna in uscita;WCS_PRINTMETADATA00007
+Outbound delivery partner role;Auslieferungspartnerrolle;Papel de socio de suministro;Rôle de partenaire de distribution;Papel de parceiro de expedição;Ruolo del partner della consegna in uscita;WCS_PRINTMETADATA00007
+Outbound delivery type;Auslieferungstyp;Tipo de suministro;Type de distribution;Tipo de expedição;Tipo di consegna in uscita;WCS_PRINTMETADATA00007
+Outgoing goods area;Warenausgangsbereich;Zona de expedición de mercancías;Zone de sortie de marchandises;Área de saída de mercadorias;Area di uscita merci;WCS_PICKREQ00010
+Over-delivery tolerance [%];Überlieferungstoleranz [%];Tolerancia a exceso de suministro [%];Limite de livraison excédentaire [%];Tolerância de fornecimento a maior [%];Tolleranza per consegna in eccesso [%];WCS_PICKREQLINE00008
+Packaging version specified;Verpackungsversion angegeben;Versión de embalaje especificada;Version d'emballage donnée;Versão de embalagem especificada;Versione di imballaggio specificata;WCS_PICKREQLINE00008
+Packaging version;Verpackungsversion;Versión de embalaje;Version d'emballage;Versão de embalagem;Versione di imballaggio;WCS_INVENTORYREQ00007 WCS_ITEMQTYUNIT00007 WCS_PACKAGINGVERSION00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCOMPREQ00005 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+Packing list printed;Packliste gedruckt;Listado de embalaje impreso;Liste de chargement imprimée;Romaneio impresso;Distinta dei colli stampata;WCS_PICKACKLU00008
+Packing sequence;Packreihenfolge;Orden de empaquetado;Séquence d’emballage;Sequência de empacotamento;Sequenza di imballaggio;WCS_ITEM00009 WCS_PACKAGINGVERSION00007
+Partner;Partner;Socio;Partenaire;Parceiro;Partner;WCS_PRINTMETADATA00007
+Phone;Telefon;Teléfono;Téléphone;Telefone;Telefono;WCS_PRINTMETADATA00007
+Picking order finished;Kommissionierauftrag fertiggestellt;La orden de picking terminada;Ordre de prélèvement finalisé;Pedido de separação de pedidos finalizado;Ordine di picking è stato completato.;WCS_PICKACK00008
+Picking order line;Kommissionierauftragszeile;Línea de la orden de picking;Ligne d'ordre de prélèvement;Linha de pedido de separação de pedidos;Riga ordine di picking;WCS_PICKACKDIFFCODE00005 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_PICKREQLINEEXTREF00005
+Picking order;Kommissionierauftrag;Orden de picking;Ordre de prélèvement;Pedido de separação de pedidos;Ordine di picking;WCS_PICKACK00008 WCS_PICKACKDIFFCODE00005 WCS_PICKACKLU00008 WCS_PICKACKSO00008 WCS_PICKREQ00010 WCS_PICKREQEXTREF00005 WCS_PICKREQLINE00008 WCS_PICKREQLINEEXTREF00005 WCS_PICKREQLUAID00005
+Picking reason;Kommissioniergrund;Motivo de picking;Raison du prélèvement;Motivo da separação de pedidos;Motivo di picking;WCS_PICKREQ00010
+Posting key;Buchungsschlüssel;Código de registro;Clé de comptabilisation;Código de reserva;Chiave registrazione;WCS_STOCKATTRCHGACK00006 WCS_STOCKCORRACK00007
+Priority;Priorität;Prioridad;Priorité;Prioridade;Priorità;WCS_PICKREQ00010 WCS_REPLDEMAND00006 WCS_TRANSPORTREQ00007
+Production date From;Production date From;Production date From;Production date From;Production date From;Production date From;WCS_INVENTORYREQ00007
+Production date New value;Production date New value;Production date New value;Production date New value;Production date New value;Production date New value;WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006
+Production date Old value;Production date Old value;Production date Old value;Production date Old value;Production date Old value;Production date Old value;WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006
+Production date To;Production date To;Production date To;Production date To;Production date To;Production date To;WCS_INVENTORYREQ00007
+Production date registration IG;Production date registration IG;Production date registration IG;Production date registration IG;Production date registration IG;Production date registration IG;WCS_ITEM00009
+Production date registration OG;Production date registration OG;Production date registration OG;Production date registration OG;Production date registration OG;Production date registration OG;WCS_ITEM00009
+Production date registration;Produktionsdatumsregistrierung;Registro de fecha de producción;Enregistrement de la date de production;Registro de data de fabricação;Registrazione della data di produzione;WCS_ITEM00009
+Production date;Produktionsdatum;Fecha de producción;Date de production;Data de produção;Data di produzione;WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+Quantity unit;Mengeneinheit;Unidad de medida;Unité de quantité;Unidade de quantidade;Unità quantitativa;WCS_ITEMALIAS00006 WCS_ITEMQTYUNIT00007
+Quantity;Menge;Cantidad;Quantité;Quantidade;Quantità;WCS_PICKACKSO00008 WCS_STOCKCOMPACKLINE00006 WCS_STOCKTRANSFERACKSO00009 WCS_STOCKTRANSFERREQSO00009
+Reference quantity unit;Referenzmengeneinheit;Unidad de medida de referencia;Unité de quantité de référence;Unidade de quantidade de referência;Unità quantitativa di riferimento;WCS_ITEMQTYUNIT00007
+Region;Region;Región;Région;Região;Regione;WCS_PRINTMETADATA00007
+Remaining quantity;Restmenge;Cantidad básica restante;Quantité restante;Quantidade básica residual;Quantità residua;WCS_STOCKTRANSFERACKLU00009
+Remaining shelf life OG;Remaining shelf life OG;Remaining shelf life OG;Remaining shelf life OG;Remaining shelf life OG;Remaining shelf life OG;WCS_ITEM00009
+Remaining shelf life check during picking OG;Remaining shelf life check during picking OG;Remaining shelf life check during picking OG;Remaining shelf life check during picking OG;Remaining shelf life check during picking OG;Remaining shelf life check during picking OG;WCS_ITEM00009
+Remaining shelf life unit OG;Remaining shelf life unit OG;Remaining shelf life unit OG;Remaining shelf life unit OG;Remaining shelf life unit OG;Remaining shelf life unit OG;WCS_ITEM00009
+Request number;Anforderungsnummer;Solicitar número;Numéro de demande;Número de solicitação;Numero richiesta;WCS_STOCKCOMPACK00006 WCS_STOCKCOMPACKEND00005 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCOMPREQ00005 WCS_STOCKTRANSFERACK00009 WCS_STOCKTRANSFERACKLU00009 WCS_STOCKTRANSFERACKSO00009 WCS_STOCKTRANSFERREQ00009 WCS_STOCKTRANSFERREQLU00008 WCS_STOCKTRANSFERREQSO00009
+Requested dual quantity;Angeforderte Dualmenge;Cantidad dual solicitada;Qté duale requise;Quantidade dual solicitada;Quantità duale richiesta;WCS_REPLDEMAND00006
+Requested quantity;Angeforderte Menge;Cantidad solicitada;Quantité demandée;Quantidade solicitada;Quantità richiesta;WCS_REPLDEMAND00006
+Required loading aid;Erforderliches Ladehilfsmittel;Medio auxiliar de transporte necesario;Auxiliaire de chargement requis;Meio auxiliar de transporte necessário;Base di carico necessaria;WCS_ITEM00009
+Reservation number New value;Reservation number New value;Reservation number New value;Reservation number New value;Reservation number New value;Reservation number New value;WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006
+Reservation number Old value;Reservation number Old value;Reservation number Old value;Reservation number Old value;Reservation number Old value;Reservation number Old value;WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006
+Reservation number;Reservierungsnummer;Número de reserva;Numéro de réserv.;Número de reserva;Numero prenotazione;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+Sequence number;Reihenfolgenummer;Número de secuencia;Numéro d'ordre;Número Sequencial;Numero di sequenza;WCS_PICKACK00008 WCS_STOCKTRANSFERACK00009 WCS_STOCKTRANSFERACKLU00009 WCS_STOCKTRANSFERACKSO00009
+Sequence;Reihenfolge;Orden;Ordre séquentiel;Sequência;Sequenza;WCS_TRANSPORTREQDEST00005
+Shipping category;Versandkategorie;Categoría de envío;Catégorie d'expédition;Categoria de expedição;Categoria di spedizione;WCS_PRINTMETADATA00007
+Shipping label printed;Versandetikett gedruckt;Etiqueta de envío impresa;Étiquette d'expédition imprimée;Etiqueta de expedição impressa;Etichetta di spedizione stampata;WCS_PICKACKLU00008
+Shipping method;Versandart;Tipo de envío;Type d'expédition;Tipo de envio;Tipo di spedizione;WCS_PRINTMETADATA00007
+Source location;Quellplatz;Posición de origen;Position source;Local de origem;Origine;WCS_STOCKTRANSFERREQ00009
+Stacking category;Stapelkategorie;Categoría de apilado;Catégorie d'empilage;Categoria de empilhamento;Categoria di pila;WCS_ITEM00009
+Stacking factor;Stapelfaktor;Factor de apilado;Facteur d'empilage;Fator de empilhamento;Fattore di pila;WCS_ITEMQTYUNIT00007
+Staging area;Bereitstellfläche;Zona de disposición;Surface de mise à disposition;Área de disposição;Area di approntamento;WCS_PICKREQ00010
+Staging time;Bereitstelltermin;Hora de disposición;Date de mise à disposition;Prazo de disponibilização;Termine di approntamento;WCS_PICKREQ00010 WCS_PRINTMETADATA00007 WCS_REPLDEMAND00006
+State;Status;Estado;État;Estado;Stato;WCS_PICKREQLINE00008 WCS_TRANSPORTACK00006
+Stock object;Bestandsobjekt;Objeto de existencias;Objet du stock;Objeto de estoque;Stock object;WCS_STOCKTRANSFERREQSO00009
+Stock rating New value;Stock rating New value;Stock rating New value;Stock rating New value;Stock rating New value;Stock rating New value;WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006
+Stock rating Old value;Stock rating Old value;Stock rating Old value;Stock rating Old value;Stock rating Old value;Stock rating Old value;WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006
+Stock rating;Bestandsklassifizierung;Clasificación de existencias;Classification de stock;Classificação de estoque;Classificazione della scorta;WCS_INVENTORYREQ00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+Storage location;Lagerplatz;Ubicación;Emplacement;Local de depósito;Posto di stoccaggio;WCS_PICKREQ00010 WCS_REPLDEMAND00006 WCS_STOCKTRANSFERACKLU00009 WCS_TRANSPORTREQ00007 WCS_TRANSPORTREQDEST00005
+Strategic warehouse area;Strategischer Lagerbereich;Zona de almacén estratégica;Zone d'entrepôt stratégique;Área de depósito estratégica;Area di magazzino strategica;WCS_ITEMABCCLASSIFICATION00006
+Street;Straße;Calle;Rue;Rua;Via;WCS_PRINTMETADATA00007
+System partner;Systempartner;Socio de sistemas;Partenaire système;Parceiro de sistema;Partner di sistema;WCS_INVENTORYREQ00007 WCS_STOCKCORRACK00007
+Time-based access mode;Zeitbezogener Zugriffsmodus;Modo de acceso a base de tiempos;Mode d'accès en fonction du temps;Modo de acesso baseado no tempo;Modo di accesso in base al tempo;WCS_ITEM00009
+Title;Titel;Título;Titre;Título;Titolo;WCS_PRINTMETADATA00007
+Transfer location;Übergabeposition;Posición de traspaso;Position de transfert;Posição de entrega;Posizione di trasferimento;WCS_PICKREQ00010
+Transfer quantity;Transfermenge;Cantidad de reubicación;Transférer la quantité;Quantidade de realocação;Quantità di trasferimento;WCS_STOCKTRANSFERREQSO00009
+Transport destination group;Transportzielgruppe;Grupo de destino de transporte;Groupe de destination du transport;Grupo de destino de transporte;Gruppo destinazioni trasporto;WCS_TRANSPORTREQDEST00005
+Transport order;Transportauftrag;Orden de transporte;Ordre de transport;Pedido de transporte;Ordine di trasporto;WCS_TRANSPORTREQ00007 WCS_TRANSPORTREQDEST00005 WCS_TRANSPORTREQEXTREF00005
+Under-delivery tolerance [%];Unterlieferungstoleranz [%];Tolerancia a exceso de suministro [%];Limite de livraison incomplète [%];Tolerância de fornecimento a menor [%];Tolleranza per consegna in difetto [%];WCS_PICKREQLINE00008
+Update;Update;Actualizar;Mise à jour;Atualização;Aggiornamento;WCS_PICKREQ00010 WCS_STOCKTRANSFERREQ00009 WCS_TRANSPORTREQ00007
+Upper entry tolerance Absolute value;Upper entry tolerance Absolute value;Upper entry tolerance Absolute value;Upper entry tolerance Absolute value;Upper entry tolerance Absolute value;Upper entry tolerance Absolute value;WCS_ITEM00009
+Upper entry tolerance Percentage;Upper entry tolerance Percentage;Upper entry tolerance Percentage;Upper entry tolerance Percentage;Upper entry tolerance Percentage;Upper entry tolerance Percentage;WCS_ITEM00009
+VAT ID;UID-Nr;Id. del IVA;ID TVA;ID VAT;Numero di partita IVA;WCS_PRINTMETADATA00007
+Value 1;Wert 1;Valor 1;Valeur 1;Valor 1;Valore 1;WCS_PICKREQEXTREF00005 WCS_PICKREQLINEEXTREF00005 WCS_TRANSPORTREQEXTREF00005
+Value 2;Wert 2;Valor 2;Valeur 2;Valor 2;Valore 2;WCS_PICKREQEXTREF00005 WCS_PICKREQLINEEXTREF00005 WCS_TRANSPORTREQEXTREF00005
+Variant;Variante;Variante;Variante;Variante;Variante;WCS_INVENTORYREQ00007 WCS_ITEM00009 WCS_ITEMABCCLASSIFICATION00006 WCS_ITEMALIAS00006 WCS_ITEMDESC00005 WCS_ITEMQTYUNIT00007 WCS_PACKAGINGVERSION00007 WCS_PICKACKSO00008 WCS_PICKREQLINE00008 WCS_REPLDEMAND00006 WCS_STOCKATTRCHGACK00006 WCS_STOCKATTRCHGREQ00006 WCS_STOCKCOMPACKLINE00006 WCS_STOCKCOMPREQ00005 WCS_STOCKCORRACK00007 WCS_STOCKTRANSFERREQSO00009
+Volume unit;Volume unit;Volume unit;Volume unit;Volume unit;Volume unit;WCS_ITEMQTYUNIT00007
+Volume;Volumen;Volumen;Volume;Volume;Volume;WCS_ITEMQTYUNIT00007
+Warehouse quantity unit;Lagermengeneinheit;Unidad de almacenamiento;Unité de gestion de stock;Unidade de quantidade de depósito;Unità quantitativa di magazzino;WCS_ITEM00009 WCS_PACKAGINGVERSION00007
+Whole loading unit;Ganz-Ladeeinheit;Unidad de transporte completa;Unité de chargement entière;Unidade de transporte completa;Unità di carico completa;WCS_ITEMQTYUNIT00007
+Width unit;Width unit;Width unit;Width unit;Width unit;Width unit;WCS_ITEMQTYUNIT00007
+Width;Breite;Ancho;Largeur;Largura;Larghezza;WCS_ITEMQTYUNIT00007
+ZIP code;PLZ;Código postal;Code postal;CEP;CAP;WCS_PRINTMETADATA00007

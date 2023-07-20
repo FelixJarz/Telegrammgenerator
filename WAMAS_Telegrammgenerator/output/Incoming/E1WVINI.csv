@@ -1,0 +1,10 @@
+# E1WVINI;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Inventory demand number;InventoryDemand;invNo;;S;20;0;X;;Is part of the unique identification of the InventoryDemand.;;IBLNR
+2;Inventory demand line;InventoryDemandLine;line;;N;9;0;X;;Is part of the unique identification of the InventoryDemandLine.;;ZEILI
+3;Item number;Item;itemNo;;S;18;0;;; Is a part of the unique identification of an item. ;;ARTNR
+4;Batch;ItemSpecificRestriction;batch;;S;20;0;;;Only stock objects matching this batch are relevant for inventory.;;CHARG
+5;Stock rating;StockRating;id;;S;15;0;;;Unique identification of a stock rating object.;;BSTAR
+6;Qualifier for the 'ARTNR' field;;;;S;1;0;X;;;;QUALARTNR
+7;Actual quantity;CountConfirmation;actualAmount;;D;20;1;X;;This quantity is set after the inventory of the StockObject has been finished. It contains the quantity the SystemUser has entered during inventory for the StockObject.;;ERFMG
+8;Base quantity unit;Item;baseQtyUnit.id;;S;3;0;X;X; Is part of the unique identification of a quantity unit. ;;ERFME
+9;Zero quantity indicator;;;;S;1;0;;;;;XNULL

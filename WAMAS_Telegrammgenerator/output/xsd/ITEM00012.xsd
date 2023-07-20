@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="ITEM00012">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="assortment" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="autoConvMode" type="ENUM_AutoConvMode_DEE" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="baseQtyUnit" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="batchStockMode" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="bbDateStockMode" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="billingcategory" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="countryOrigin" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration01" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration02" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration03" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration04" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration05" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration06" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration07" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration08" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration09" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration10" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration11" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration12" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration13" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration14" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration15" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration16" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration17" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration18" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration19" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaIgRegistration20" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration01" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration02" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration03" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration04" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration05" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration06" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration07" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration08" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration09" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration10" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration11" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration12" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration13" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration14" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration15" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration16" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration17" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration18" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration19" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaOgRegistration20" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode01" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode02" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode03" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode04" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode05" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode06" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode07" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode08" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode09" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode10" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode11" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode12" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode13" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode14" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode15" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode16" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode17" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode18" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode19" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="csiaStockMode20" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="customsTariffNo" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="deliveryToleranceLower" type="DECIMAL_5_2" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="deliveryToleranceUpper" type="DECIMAL_5_2" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="dualItem" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="dualQtyUnit" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="editBaseQty" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="editDualQty" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="goodsCategory" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="goodsValue" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="goodsValueUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="igAutoConvMode" type="ENUM_AutoConvMode_DEE" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="igBatchRegistration" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="igBbDateRegistration" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="igEditBaseQty" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="igEditDualQty" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="igGtinConrolIntKind" type="ENUM_IgGtinVerificationKind_GNAIF" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="igGtinVerificationInt" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="igGtinVerificationIntUnit" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="igItemMonInterval" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="igItemMonIntervalUnit" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="igItemMonitoringKind" type="ENUM_IgMdMonitoringKind_GNAIFT" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="igMaxRemLife" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="igMaxRemLifeUnit" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="igMinRemLife" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="igMinRemLifeUnit" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="igOverDeliveryAllowed" type="ENUM_IGOverDeliveryAllowed_UNY" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="igProdDateRegistration" type="ENUM_IGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="igRemLifeCheck" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemClass" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemEquivPeriod" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemEquivPeriodUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemType" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemWeight" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemWeightUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="loadAidId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="lowerEntryTolAbsolute" type="DECIMAL_9_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="lowerEntryTolPercentage" type="DECIMAL_5_2" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="ogAutoConvMode" type="ENUM_AutoConvMode_DEE" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ogAvailabilityCheck" type="ENUM_AvailabilityCheck_YN" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ogBatchRegistration" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ogBbDateRegistration" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ogEditBaseQty" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ogEditDualQty" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ogObdBlock" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ogProdDateRegistration" type="ENUM_OGRegistrationMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ogRemLifeCheck" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ogRemainingLife" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="ogRemainingLifeUnit" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="ogReqLoadAidId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="packSequence" type="NUMERIC_1" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="prodDateStockMode" type="ENUM_StockAttributeMode_NOM" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordStateExtended_NDLD" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="scpQtyUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stackingCategory" type="STRING_30" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="timeBasedAccMode" type="ENUM_TimeBasedAccessMode_RBP" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="transferIbdl" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="upperEntryTolAbsolute" type="DECIMAL_9_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="upperEntryTolPercentage" type="DECIMAL_5_2" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="whDualQtyUnit" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="whQtyUnit" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="DANGGOODS00009" type="ITEM00012_DANGGOODS00009" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="DANGGOODSDESC00006" type="ITEM00012_DANGGOODSDESC00006" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="ITEMABCCLASSIFICATION00006" type="ITEM00012_ITEMABCCLASSIFICATION00006" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="ITEMALIAS00006" type="ITEM00012_ITEMALIAS00006" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="ITEMDESC00005" type="ITEM00012_ITEMDESC00005" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="ITEMQTYUNIT00008" type="ITEM00012_ITEMQTYUNIT00008" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="ITEMWHLOC00005" type="ITEM00012_ITEMWHLOC00005" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="KIT00001" type="ITEM00012_KIT00001" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="KITCOMPONENT00001" type="ITEM00012_KITCOMPONENT00001" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="KITCONSUMABLES00001" type="ITEM00012_KITCONSUMABLES00001" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="REPLACEMENTITEM00005" type="ITEM00012_REPLACEMENTITEM00005" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ITEM00012_DANGGOODS00009">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="adrTankCodes" type="STRING_120" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="adrTankSpecialProv" type="STRING_120" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="carriageBulkSp" type="STRING_30" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="carriageLoadUnloadSp" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="carriageOperationSp" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="carriagePackagesSp" type="STRING_50" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="classifCode" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="dgInfoText" type="STRING_512" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="dgQty" type="DECIMAL_6_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="dgQtyUnit" type="STRING_2" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="dgiClass" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="exceptedQtys" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="hazardIdNum" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="labels" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="limitedQtys" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="mixedPackingProv" type="STRING_25" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="packingGroup" type="STRING_115" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="packingInstr" type="STRING_45" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ptbcInstr" type="STRING_40" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ptbcSpecialProv" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="specialPackingProv" type="STRING_70" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="specialProvs" type="STRING_40" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="tankCarriageVehicle" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="transportCateg" type="STRING_1" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="tunnelRestrCode" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="unNumber" type="STRING_4" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ITEM00012_DANGGOODSDESC00006">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="langId" type="STRING_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="nameAndDesc" type="STRING_512" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ITEM00012_ITEMABCCLASSIFICATION00006">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="abcValue" type="NUMERIC_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stratArea" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="whLoc" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ITEM00012_ITEMALIAS00006">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemAliasNo" type="STRING_30" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="kind" type="ENUM_ItemAliasKind_GAV" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="numBquWqu" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="qtyUnit" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ITEM00012_ITEMDESC00005">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="description" type="STRING_40" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="description2" type="STRING_40" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="language" type="STRING_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ITEM00012_ITEMQTYUNIT00008">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="denominator" type="DECIMAL_9_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="emptiesItemNo" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="emptiesVariant" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grossWeight" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="grossWeightUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="height" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="heightUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="isSalesQtyUnit" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="layer" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="length" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="lengthUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="loadUnitCubature" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="numerator" type="DECIMAL_9_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="qtyUnit" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="referenceQtyUnit" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="stackingFactor" type="NUMERIC_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="volume" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="volumeUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="wholeLu" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="width" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="widthUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ITEM00012_ITEMWHLOC00005">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="criticalStock" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="defIgArea" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="delCat" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="delPlanningCat" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="minStock" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="whLoc" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ITEM00012_KIT00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="KitDisplayAssemblyOrderKind" type="ENUM_KitDisplayAssemblyOrderKind_AAA" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ITEM00012_KITCOMPONENT00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="kitCompItemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="kitCompNo" type="STRING_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="kitCompVariant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="numBquWqu" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="quantity" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ITEM00012_KITCONSUMABLES00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="kitConsumableItemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="kitConsumableNo" type="STRING_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="kitConsumableVariant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="ITEM00012_REPLACEMENTITEM00005">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="replItemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="replVariant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="sequence" type="NUMERIC_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

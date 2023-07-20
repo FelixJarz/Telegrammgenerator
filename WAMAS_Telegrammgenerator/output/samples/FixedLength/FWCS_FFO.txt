@@ -1,0 +1,5 @@
+#This sample file contains a FWCS fulfillment order with one fulfillment order item line, station line and destination.
+WMS       WAMAS     1                             120210816000000FWCS_FFO00001                 1         2                                                           Box_1     Box_100                                                                                          00NORMAL
+WMS       WAMAS     1                             220210816000000FWCS_FFODEST00001             1         2                   SHL02                         NORMAL
+WMS       WAMAS     1                             320210816000000FWCS_FFOITEMLINE00001         1         2                            1Pbl01_0002          1         000000010000000001                              NORMAL
+WMS       WAMAS     1                             420210816000000FWCS_FFOSTATIONLINE00001      1         2                   PBL-02                                  NORMAL

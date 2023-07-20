@@ -1,0 +1,2 @@
+# DCLCLINE00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Line ID;DcLcLine;lineId;DcLcLine_lineId;S;5;0;X;;Id of one Line of a Line Controller.;

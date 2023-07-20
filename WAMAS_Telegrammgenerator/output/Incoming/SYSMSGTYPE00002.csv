@@ -1,0 +1,8 @@
+# SYSMSGTYPE00002;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;System message type;SysMsgType;SysMsgCategory;msgCategoryId;S;50;0;X;;;
+2;System message type;SysMsgType;msgTypeNo;msgTypeNo;S;6;0;X;;Each system message type has an unique identifier, the system message type number. System message types of different system message categories can however have the same system message number.;
+3;System message type;SysMsgType;archive;archive;B;1;0;X;;Whether the finished system message will bemoved to the archive.;
+4;System message type;SysMsgType;display;display;B;1;0;X;;Whether the message is visible to the user.;
+5;System message type;SysMsgType;finishMode;finishMode;S;9;0;X;;Whether a system message has to be finished by a user or a subsystem or after an amount of time.;
+6;System message type;SysMsgType;classification;classification;S;5;0;X;;The classification of a system message.;
+7;System message type;SysMsgType;priority;priority;S;2;0;X;;0 = lowest priority99 = highest priority;

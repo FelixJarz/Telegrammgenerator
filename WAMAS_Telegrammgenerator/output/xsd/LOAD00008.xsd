@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="LOAD00008">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="consecutiveNo" type="NUMERIC_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="departureTime" type="WamasDateTime" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="loadId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="loadTypeId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="reviewed" type="boolean" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="shippingMethod" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="systemPartner" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="CONSIGNMENT00007" type="LOAD00008_CONSIGNMENT00007" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="LOADLU00005" type="LOAD00008_LOADLU00005" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="LOADTRANSPORTVEHICLE00006" type="LOAD00008_LOADTRANSPORTVEHICLE00006" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="LOAD00008_CONSIGNMENT00007">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="category" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="consId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="consSystemPartner" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="consecutiveNo" type="NUMERIC_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="deliveryTime" type="WamasDateTime" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="dock" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="loadId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="loadSystemPartner" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="loadingSeq" type="NUMERIC_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="loadingTime" type="WamasDateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="outgoingArea" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="priority" type="NUMERIC_1" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stagingArea" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stagingTime" type="WamasDateTime" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="stoLocId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="unloadingSeq" type="NUMERIC_5" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="LOAD00008_LOADLU00005">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="consId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="consSystemPartner" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="loadLuId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="loadSystemPartner" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="LOAD00008_LOADTRANSPORTVEHICLE00006">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="consecutiveNo" type="NUMERIC_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="loadId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="sequence" type="NUMERIC_7" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="systemPartner" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="vehicleId" type="NUMERIC_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="vehicleTypeId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

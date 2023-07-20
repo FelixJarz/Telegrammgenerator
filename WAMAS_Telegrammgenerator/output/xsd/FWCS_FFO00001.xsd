@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="FWCS_FFO00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="checkingRequested" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="fogGraphId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="loadAidId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="loadUnitCubatureId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="luId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="orderGroup" type="STRING_40" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="orderId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="orderReference" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="partnerId" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="printingRequested" type="boolean" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stagingArea" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stagingTime" type="WamasDateTimeReduced" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="FWCS_FFODEST00001" type="FWCS_FFO00001_FWCS_FFODEST00001" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="FWCS_FFOITEMLINE00001" type="FWCS_FFO00001_FWCS_FFOITEMLINE00001" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="FWCS_FFOSTATIONLINE00001" type="FWCS_FFO00001_FWCS_FFOSTATIONLINE00001" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="FWCS_FFO00001_FWCS_FFODEST00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="orderId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stoLocId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="FWCS_FFO00001_FWCS_FFOITEMLINE00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="numBquWqu" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="orderId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="orderedWqu" type="DECIMAL_6_0" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="stoLocId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="sysPartnerLine" type="NUMERIC_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="variant" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="FWCS_FFO00001_FWCS_FFOSTATIONLINE00001">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="conveyorStationGroupId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="conveyorStationId" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="orderId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="recordState" type="ENUM_RecordState_ND" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DI_TELEGRAM>
+	<header>
+		<FULL>
+			<HEADER_SOURCE>WAMAS</HEADER_SOURCE>
+			<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+			<HEADER_SEQUENCE>0</HEADER_SEQUENCE>
+			<HEADER_CREATIONTIME>20210722020300</HEADER_CREATIONTIME>
+			<HEADER_RECORDTYPENAME>STOCKREQ00007</HEADER_RECORDTYPENAME>
+		</FULL>
+	</header>
+	<body>
+		<STOCKREQ00007>
+			<requestId>SRQZeroAmountXml</requestId>
+			<whLoc>Test Center</whLoc>
+			<includeZeroAmount>1</includeZeroAmount>
+		</STOCKREQ00007>
+	</body>
+</DI_TELEGRAM>
+

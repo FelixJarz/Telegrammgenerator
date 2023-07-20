@@ -1,0 +1,28 @@
+# CONSIGNMENTADDRACK00008;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Load;Consignment;load.loadId;loadId;S;20;0;X;X;The load ID identifies the load, together with the consecutive number and the system partner, uniquely. The load ID is taken from the shipment frequency or the plan load (outbound delivery) depending on the ‘load creation kind’ of the outbound delivery type.;
+2;Consecutive number;Consignment;load.consecutiveNo;consecutiveNo;N;10;0;X;X;;
+3;System partner Load;Consignment;load.sysPartner.id;loadSystemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;Consignment ID;Consignment;consignmentId;consId;S;20;0;X;;Identifies a consignment (together with the system partner) uniquely.;
+5;System partner Consignment;Consignment;sysPartner.id;consSystemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+6;Kind of address;Consignment;obd.partnerRole.roleKind;roleKind;E;17;0;X;X;Defines the different roles that partners for an outbound delivery can have.;
+7;Client;Consignment;obd.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+8;Partner;Consignment;obd.partnerRole.ogPartner.Partner.partnerId;partnerId;S;15;0;X;X;Unique identification of a partner object.;
+9;Title;Consignment;obd.partnerRole.addr.title;title;S;35;0;;;Special designation of a company or the degree of a person.;
+10;Name;Consignment;obd.partnerRole.addr.name;name;S;35;0;;;Name of a company or a person.;
+11;Name 2;Consignment;obd.partnerRole.addr.name2;name2;S;35;0;;;Name of a company or a person.;
+12;Name 3;Consignment;obd.partnerRole.addr.name3;name3;S;35;0;;;Name of a company or a person.;
+13;Name 4;Consignment;obd.partnerRole.addr.name4;name4;S;35;0;;;Name of a company or a person.;
+14;Street;Consignment;obd.partnerRole.addr.street;street;S;35;0;;;Street and street (house) number or post office box.;
+15;City;Consignment;obd.partnerRole.addr.city;city;S;35;0;;;It is part of the address.;
+16;District;Consignment;obd.partnerRole.addr.district;district;S;35;0;;;The district of an address;
+17;Region;Consignment;obd.partnerRole.addr.region;region;S;35;0;;;Possible content: province, federal state, canton, area, county;
+18;Country;Consignment;obd.partnerRole.addr.Country.countryId;country;S;2;0;;X;The unique identifier for a country. ISO 3166-1 Alpha 2 Code.;
+19;ZIP code;Consignment;obd.partnerRole.addr.zipCode;zipCode;S;10;0;;;ZIP code of the city origin.;
+20;Phone;Consignment;obd.partnerRole.addr.phone;phone;S;40;0;;;Phone number.;
+21;Fax;Consignment;obd.partnerRole.addr.fax;fax;S;40;0;;;Fax number.;
+22;Email;Consignment;obd.partnerRole.addr.email;email;S;255;0;;;An email address.;
+23;Website;Consignment;obd.partnerRole.addr.website;webSite;S;40;0;;;The address of the website.;
+24;GLN;Consignment;obd.partnerRole.addr.gln;gln;S;13;0;;;The global location number (GLN), as well as the international location number, is used to identify the denotation of companies on an international level, including the address. It is a thirteen digit number comprising a three digit prefix EAN-country reference. The number is determined by the GS1 organisations.;
+25;Language;Consignment;obd.partnerRole.addr.Language.langId;language;S;6;0;X;X;Is the unique identifaction of a language, in compliance with ISO 639-2/B Alpha 3 Code. In case ISO specifies more than one code, the B-Code variant is used (ger instead of deu). If a particular language has regional differences, the 2-character country code according to ISO-3166 is used (eng-US, eng-UK, ger-CH, ger-AT, ger-DE).Info: ISO 639 is the set of international standards that lists short codes for language names.See also: LANGISOALPHA2ID.;
+26;Time zone;Consignment;obd.partnerRole.addr.timezone;timeZone;S;100;0;;;Timezone value, for e.g. "Europe/Vienna".;
+27;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

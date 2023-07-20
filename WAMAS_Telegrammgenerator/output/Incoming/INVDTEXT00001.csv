@@ -1,0 +1,8 @@
+# INVDTEXT00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Inventory demand number;InventoryDemand;invNo;invNo;S;20;0;X;;Is part of the unique identification of the InventoryDemand.;
+2;Client;TextLine;TextType.client.clientId;textLineTypeClientId;S;10;0;X;X;Is the unique identification of a client.;
+3;Text type;TextLine;TextType.textTypeId;textLineTypeId;S;10;0;X;X; Is a part of the unique identification of a text type. ;
+4;Language;TextLine;Language;langId;S;6;0;X;;;
+5;Sequence;TextLine;sequence;sequence;N;7;0;X;;A long value used for attributes, which specify a sequence used for ordering or sorting (see guideline "Rules and Recommendations for the Data Model"). Is not related with an Oracle sequence, which is represented by the IDENTIFIER model element.;
+6;Text;TextLine;text;textLineText;S;256;0;X;;The text that text template or multi language text of text types for various processes holds.;
+7;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

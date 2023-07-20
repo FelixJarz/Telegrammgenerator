@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This sample file calculates and sets the goods value of an item.-->
+<COND_A04>
+  <IDOC BEGIN="1">
+    <EDI_DC40 SEGMENT="1">
+      <TABNAM>EDI_DC40</TABNAM>
+      <MANDT>800</MANDT>
+      <DOCNUM>0000000001458250</DOCNUM>
+      <DOCREL>702</DOCREL>
+      <STATUS>30</STATUS>
+      <DIRECT>1</DIRECT>
+      <OUTMOD>2</OUTMOD>
+      <IDOCTYP>COND_A04</IDOCTYP>
+      <MESTYP>COND_A</MESTYP>
+      <SNDPOR>SAPECR</SNDPOR>
+      <SNDPRT>LS</SNDPRT>
+      <SNDPRN>ER1CLNT800</SNDPRN>
+      <RCVPOR>WAMAS</RCVPOR>
+      <RCVPRT>LS</RCVPRT>
+      <RCVPRN>WAMAS</RCVPRN>
+      <CREDAT>20121203</CREDAT>
+      <CRETIM>102504</CRETIM>
+      <SERIAL>20121203102504</SERIAL>
+    </EDI_DC40>
+    <E1KOMG SEGMENT="1">
+      <KVEWE>A</KVEWE>
+      <KOTABNR>073</KOTABNR>
+      <KAPPL>V</KAPPL>
+      <KSCHL>VKP0</KSCHL>
+      <VAKEY>100010000000000003010570ST</VAKEY>
+      <VKORG>1000</VKORG>
+      <VTWEG>10</VTWEG>
+      <MATNR>000000000100010001</MATNR>
+      <VRKME>PCE</VRKME>
+      <EVRTP>00000</EVRTP>
+      <POSNR>000000</POSNR>
+      <ANZSN>0000000000</ANZSN>
+      <PRODH1>00</PRODH1>
+      <PRODH2>00</PRODH2>
+      <PRODH3>00</PRODH3>
+      <VAKEY_LONG>100010000000000003010570ST</VAKEY_LONG>
+      <E1KONH SEGMENT="1">
+        <KNUMH>0001189887</KNUMH>
+        <DATAB>20120313</DATAB>
+        <DATBI>99991231</DATBI>
+        <E1KONP SEGMENT="1">
+          <KSCHL>VKP0</KSCHL>
+          <STFKZ>A</STFKZ>
+          <KSTBM>0.000</KSTBM>
+          <KSTBW>0.00</KSTBW>
+          <KRECH>C</KRECH>
+          <KBETR>100.99</KBETR>
+          <KONWA>EUR</KONWA>
+          <KPEIN>1</KPEIN>
+          <KMEIN>PKG</KMEIN>
+          <KUMZA>0</KUMZA>
+          <KUMNE>0</KUMNE>
+          <MEINS>PCE</MEINS>
+          <MXWRT>0.00</MXWRT>
+          <GKWRT>0.00</GKWRT>
+          <KWAEH>CHF</KWAEH>
+          <KUNNR>V120</KUNNR>
+          <LIFNR>V100</LIFNR>
+          <ZAEHK_IND>01</ZAEHK_IND>
+          <KBRUE>0.00</KBRUE>
+          <VALTG>00</VALTG>
+          <VALDT>00000000</VALDT>
+          <ANZAUF>00</ANZAUF>
+          <MIKBAS>0.000</MIKBAS>
+          <MXKBAS>0.000</MXKBAS>
+          <KOMXWRT>0.00</KOMXWRT>
+          <KLF_STG>0000</KLF_STG>
+          <KLF_KAL>0000</KLF_KAL>
+        </E1KONP>
+      </E1KONH>
+    </E1KOMG>
+  </IDOC>
+</COND_A04>

@@ -1,0 +1,15 @@
+# SHP_OBDLV_CONFIRM_DECENTRAL04;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;SAP-Client;;;;S;3;0;X;;;;MANDT
+2;IDoc number;;;;S;16;0;X;;;;DOCNUM
+3;IDoc type;;;;S;30;0;X;;;;IDOCTYP
+4;Message type;;;;S;30;0;X;;;;MESTYP
+5;Sender port;;;;S;10;0;X;;;;SNDPOR
+6;Sender partner type;;;;S;2;0;X;;;;SNDPRT
+7;Sender partner number;;;;S;10;0;X;;;;SNDPRN
+8;Receiver port;;;;S;10;0;X;;;;RCVPOR
+9;Receiver partner type;;;;S;2;0;X;;;;RCVPRT
+10;Receiver partner number;;;;S;10;0;X;;;;RCVPRN
+11;Creation date;;;;DA;8;0;X;;;;CREDAT
+12;Creation time;;;;TI;6;0;X;;;;CRETIM
+13;Serial;;;;S;20;0;X;;;;SERIAL
+14;IDoc extension;;;;S;30;0;;;;;CIMTYP

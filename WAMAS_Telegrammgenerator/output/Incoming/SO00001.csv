@@ -1,0 +1,5 @@
+# SO00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Shipping order number;ShippingOrder;soNo;soNo;S;20;0;X;;;
+2;Warehouse location;ShippingOrder;WhLoc.whLocId;whLoc;S;20;0;X;X;The identifier of the warehouse location.;
+3;Dock;ShippingOrder;dock.dockId;dock;S;10;0;X;X;The unique ID of the dock;
+4;Outgoing goods area;ShippingOrder;ogArea.areaId;areaId;S;10;0;X;X;The unique ID of this area within the WhLoc;

@@ -1,0 +1,2 @@
+# REPLLOC00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Storage location;StoLoc;stoLocId;replLocId;S;20;0;X;;The identifier of the storage location per warehouse location.;

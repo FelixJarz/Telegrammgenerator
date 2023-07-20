@@ -13,13 +13,13 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.layout.GridData;
 import package_background.ProjectSelector;
+import package_background.SessionData_Singleton;
 
 public class WindowExtra_ProjectCreate {
 
 	private Text textProjectName;
 	private Text textVersionNumber;
 	private Text textIEDir;
-	private Text textSaveDir;
 	
 	private String filePath;
 	private String fileName;
@@ -47,9 +47,12 @@ public class WindowExtra_ProjectCreate {
 	public void close() {
 		shell.close();
 	}
+	/**
+	 * @wbp.parser.entryPoint
+	 */
 	protected void createContents() {
 		shell = new Shell();
-		shell.setSize(450, 344);
+		shell.setSize(450, 265);
 		shell.setText("Extra Window");
 		shell.setLayout(new GridLayout(4, false));
 		
@@ -87,7 +90,7 @@ public class WindowExtra_ProjectCreate {
 		//In case the button is pressed -> File Explorer opens and you can choose a location 
 		Button buttonLocationIE = new Button(shell, SWT.NONE);
 		buttonLocationIE.addSelectionListener(new SelectionAdapter() {
-
+			
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				JFileChooser chooser = new JFileChooser();
@@ -104,39 +107,7 @@ public class WindowExtra_ProjectCreate {
 				}
 			}
 		});
-		buttonLocationIE.setText("Choose Location");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label labelSave = new Label(shell, SWT.NONE);
-		labelSave.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		labelSave.setText("Save:");
-		
-		textSaveDir = new Text(shell, SWT.BORDER);
-		textSaveDir.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 3, 1));
-		new Label(shell, SWT.NONE);
-		
-		//In case the button is pressed -> File Explorer opens and you can choose a location 
-		Button buttonLocationSave = new Button(shell, SWT.NONE);
-		buttonLocationSave.addSelectionListener(new SelectionAdapter() {
-
-			@Override
-			public void widgetSelected(SelectionEvent e) {
-				JFileChooser chooser = new JFileChooser();
-				String windowTitle = "Explorer";
-				chooser.setDialogTitle(windowTitle);
-				chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-				if (chooser.showOpenDialog(chooser) == JFileChooser.APPROVE_OPTION) { 
-					File f = chooser.getSelectedFile();
-					String saveDir = f.getAbsolutePath();	
-					textSaveDir.setText(saveDir);
-				      }
-				else {
-				    System.out.println("No Selection ");
-				}
-			}
-		});
-		buttonLocationSave.setText("Choose Location");
+		buttonLocationIE.setText("Interface Export folder Directory");
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
@@ -162,17 +133,18 @@ public class WindowExtra_ProjectCreate {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				
-				filePath = textSaveDir.getText();
+				filePath = "C:\\Telegrammgenerator\\Projects"; 
 				fileName = textProjectName.getText();
 				fileVersionNumber = textVersionNumber.getText();
 				fileFullName = fileName + "_" + fileVersionNumber;
 				
+				ProjectSelector.CreateFolder(filePath, fileFullName);
+				ProjectSelector.getProjectname(fileFullName);
+				ProjectSelector.UnzipFolder(textIEDir.getText(), "interfaceExport", "C:\\Telegrammgenerator\\Output"); 
+				
 				WindowMain_1_ProjectSelect project = new WindowMain_1_ProjectSelect();
 				shell.close();
 				project.open();
-				ProjectSelector.CreateFolder(filePath, fileFullName);
-				ProjectSelector.getProjectname(fileFullName);
-
 			}
 		});
 		
@@ -191,19 +163,13 @@ public class WindowExtra_ProjectCreate {
 					textProjectName.setMessage("All fields must be filled!");
 					textVersionNumber.setMessage("All fields must be filled!");
 					textIEDir.setMessage("All fields must be filled!");
-					textSaveDir.setMessage("All fields must be filled!");
 				}else if(textVersionNumber.getText().isEmpty()){
 					buttonNext.setEnabled(false);
 					textVersionNumber.setMessage("All fields must be filled!");
 					textIEDir.setMessage("All fields must be filled!");
-					textSaveDir.setMessage("All fields must be filled!");
 				}else if(textIEDir.getText().isEmpty()) {
 					buttonNext.setEnabled(false);
 					textIEDir.setMessage("All fields must be filled!");
-					textSaveDir.setMessage("All fields must be filled!");
-				}else if(textSaveDir.getText().isEmpty()) {
-					buttonNext.setEnabled(false);
-					textSaveDir.setMessage("All fields must be filled!");
 				}else {		
 					buttonNext.setEnabled(true);
 				}
@@ -212,3 +178,21 @@ public class WindowExtra_ProjectCreate {
 		buttonConfirm.setText("Confirm");
 	}
 }
+
+
+/*
+JFileChooser chooser = new JFileChooser();
+String windowTitle = "Explorer";
+chooser.setDialogTitle(windowTitle);
+chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+if (chooser.showOpenDialog(chooser) == JFileChooser.APPROVE_OPTION) { 
+	File f = chooser.getSelectedFile();
+	String saveDir = f.getAbsolutePath();	
+	textSaveDir.setText(saveDir);
+      }
+else {
+    System.out.println("No Selection ");
+}
+
+
+*/

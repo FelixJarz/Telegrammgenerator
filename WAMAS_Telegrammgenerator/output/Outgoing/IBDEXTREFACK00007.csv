@@ -1,0 +1,7 @@
+# IBDEXTREFACK00007;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;InboundDelivery;Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Inbound delivery number;InboundDelivery;ibdNo;ibdNo;S;20;0;X;;The inbound delivery number is part of the unique identifier of the inbound delivery.;
+3;System partner;InboundDelivery;sysPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;Key;ExternalReference;extRefKey;extRefKey;S;64;0;;;The external reference key;
+5;Value 1;ExternalReference;value1;extRefVal1;S;512;0;;;The first value associated to the key. Can be empty.;
+6;Value 2;ExternalReference;value2;extRefVal2;S;512;0;;;The second value associated to the key. Can be empty.;

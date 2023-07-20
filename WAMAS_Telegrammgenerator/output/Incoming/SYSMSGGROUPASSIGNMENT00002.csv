@@ -1,0 +1,6 @@
+# SYSMSGGROUPASSIGNMENT00002;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;System message group assignment;SysMsgGroupAssignment;id;id;S;10;0;X;;An identifier is a unique artificial numerical expression.;
+2;System message group;SysMsgGroup;msgGroupName;msgGroupName;S;100;0;X;;The name of the system message group;
+3;System message origin;SysMsgOrigin;msgOriginId;msgOriginId;S;70;0;X;;The system message origin ID identifies the the origin of a system message.;
+4;System message category;SysMsgCategory;msgCategoryId;msgCategoryId;S;50;0;X;;The system message category ID identifies the the category a system message belongs.;
+5;System message type;SysMsgType;msgTypeNo;msgTypeNo;S;6;0;X;;Each system message type has an unique identifier, the system message type number. System message types of different system message categories can however have the same system message number.;

@@ -1,0 +1,5 @@
+# LOGIN2ROLE00005;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Login;Login;loginId;loginId;S;20;0;X;;A unique name which allows identifying the system user when logging into a system domain.;
+2;Application;Login;applicationId;applicationId;E;7;0;X;;The application identifier.;
+3;Role;Role;roleId;roleId;S;20;0;X;;Primary identifier of a particular role.;
+4;Default role;Login2Role;defaultRole;defaultRole;B;1;0;X;;Marks the role which should be preselected for the particular login.;

@@ -1,0 +1,13 @@
+# LAACCOUNTENTRYACK00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Loading aid account;LaAccountEntry;laAccount;laAccount;S;10;0;X;;;
+2;LA account entry number;LaAccountEntry;entryNo;laAccountEntryId;N;10;0;X;;The unique identifier of the LA account entry.;
+3;Loading aid;LaAccountEntry;loadAid;loadAidId;S;10;0;X;;;
+4;Client;LaAccountEntry;partner.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+5;Partner;LaAccountEntry;partner.partnerId;partnerId;S;15;0;X;X;Unique identification of a partner object.;
+6;Quantity;LaAccountEntry;quantity;quantity;N;6;0;X;;The quantity of loading aids.;
+7;Created during;LaAccountEntry;processOfCreation;laProcess;E;13;0;X;;The process of creation holds the information during which use case the entry was created (e.g. LA registration, LA exchange, ...);
+8;Loading aid ticket;LaAccountEntry;laTicket;laTicket;S;10;0;;;The LA ticket connected to the LA account entry is either the LA ticket which was created during the LA exchange or the LA ticket which was redeemed.;
+9;Inbound delivery;LaAccountEntry;ibd;ibdNo;S;20;0;;;In case the LA account entry was created during some IG use cases (LA exchange, LA registration) the IG reference is stored.;
+10;Outbound delivery;LaAccountEntry;obd;obdNo;S;20;0;;;In case the LA account entry was created during some OG use cases (LA exchange, LA registration) the OG reference is stored.;
+11;Additional information;LaAccountEntry;info;infoText;S;256;0;;;Additional information relevant for the LA account entry.;
+12;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

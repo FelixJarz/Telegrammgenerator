@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="SYSUSER00007">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="city" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="country" type="STRING_2" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="dateOfBirth" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="email" type="STRING_255" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="empNo" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="firstName" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="gender" type="ENUM_Gender_UMF" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="lastName" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="midName" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="phone" type="STRING_40" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="profileId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="region" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="street" type="STRING_35" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="timeZone" type="STRING_100" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="title" type="STRING_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="userId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="zipCode" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="LOGIN00007" type="SYSUSER00007_LOGIN00007" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SYSUSER00007_LOGIN00007">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="applicationId" type="ENUM_ApplicationId_DM" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="changeRequest" type="boolean" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="changedAt" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="dataAccessProfile" type="NUMERIC_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="expireAt" type="WamasDate" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="externalAuthenticated" type="boolean" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="externalManaged" type="boolean" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="locked" type="boolean" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="loginId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="password" type="STRING_150" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="passwordPolicy" type="NUMERIC_18" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="singleInstance" type="boolean" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="superuser" type="boolean" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="whLoc" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

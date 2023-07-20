@@ -1,0 +1,4 @@
+# E1MEANM;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Function message;;;;S;3;0;X;;;;MSGFN
+2;Item alias number;Item;ItemAlias.itemAliasNo;;S;30;0;X;X;Item alias number. The meaning of this number is defined by ItemAlias.kind.;;EAN11
+3;Quantity unit;Item;ItemAlias.qtyUnit.id;;S;5;0;X;X; Is part of the unique identification of a quantity unit. ;;MEINH

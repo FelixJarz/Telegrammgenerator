@@ -1,0 +1,2 @@
+#This sample file contains a system message group assignment.
+HOST      WAMAS                                   120180925111108SYSMSGGROUPASSIGNMENT00002    1         Group 1                                                                                             Archiving server                                                      ARCHIVING                                         1     

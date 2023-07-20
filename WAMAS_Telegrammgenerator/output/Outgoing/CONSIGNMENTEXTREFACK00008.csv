@@ -1,0 +1,9 @@
+# CONSIGNMENTEXTREFACK00008;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Load;Consignment;load.loadId;loadId;S;20;0;X;X;The load ID identifies the load, together with the consecutive number and the system partner, uniquely. The load ID is taken from the shipment frequency or the plan load (outbound delivery) depending on the ‘load creation kind’ of the outbound delivery type.;
+2;Consecutive number;Consignment;load.consecutiveNo;consecutiveNo;N;10;0;X;X;;
+3;System partner Load;Consignment;load.sysPartner.id;loadSystemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;Consignment ID;Consignment;consignmentId;consId;S;20;0;X;;Identifies a consignment (together with the system partner) uniquely.;
+5;System partner Consignment;Consignment;sysPartner.id;consSystemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+6;Key;ExternalReference;extRefKey;extRefKey;S;64;0;;;The external reference key;
+7;Value 1;ExternalReference;value1;extRefVal1;S;512;0;;;The first value associated to the key. Can be empty.;
+8;Value 2;ExternalReference;value2;extRefVal2;S;512;0;;;The second value associated to the key. Can be empty.;

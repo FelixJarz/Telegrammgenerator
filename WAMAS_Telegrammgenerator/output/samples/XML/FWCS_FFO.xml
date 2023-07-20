@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<!--This sample file contains one fulfillment order.-->
+		<header>
+			<FULL>
+				<HEADER_SOURCE>WMS</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_TRANSACTIONID>1</HEADER_TRANSACTIONID>
+				<HEADER_SEQUENCE>0</HEADER_SEQUENCE>
+				<HEADER_CREATIONTIME>22220202222222</HEADER_CREATIONTIME>
+				<HEADER_RECORDTYPENAME>FWCS_FFO00001</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<FWCS_FFO00001>
+				<clientId>1</clientId>
+				<orderId>3</orderId>
+				<fogGraphId>default</fogGraphId>
+				<loadAidId>Box_1</loadAidId>
+				<loadUnitCubatureId>Box_100</loadUnitCubatureId>
+				<recordState>NORMAL</recordState>
+				<FWCS_FFOITEMLINE00001>
+					<clientId>1</clientId>
+					<orderId>3</orderId>
+					<sysPartnerLine>1</sysPartnerLine>
+					<itemNo>Pbl01_0003</itemNo>
+					<variant>1</variant>
+					<numBquWqu>10</numBquWqu>
+					<orderedWqu>1</orderedWqu>
+					<recordState>NORMAL</recordState>
+				</FWCS_FFOITEMLINE00001>
+				<FWCS_FFOSTATIONLINE00001>
+					<clientId>1</clientId>
+					<orderId>3</orderId>
+					<conveyorStationId>PBL-03</conveyorStationId>
+					<recordState>NORMAL</recordState>
+				</FWCS_FFOSTATIONLINE00001>
+				<FWCS_FFODEST00001>
+					<clientId>1</clientId>
+					<orderId>3</orderId>
+					<stoLocId>SHL03</stoLocId>
+					<recordState>NORMAL</recordState>
+				</FWCS_FFODEST00001>			
+			</FWCS_FFO00001>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>

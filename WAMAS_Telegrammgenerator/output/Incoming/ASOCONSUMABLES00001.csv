@@ -1,0 +1,6 @@
+# ASOCONSUMABLES00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;AssemblyConsumables;consItem.Client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Assembly order;AssemblyConsumables;AssemblyActivity.AssemblyOrder.orderNo;assemblyOrderNo;S;20;0;X;X;The assembly order number is part of the unique identifier of the assembly order.;
+3;Consumables number;AssemblyConsumables;consNo;assemblyConsumablesNo;D;3;0;X;;The ID of the assembly consumables.;
+4;Item;AssemblyConsumables;consItem.itemNo;itemNo;S;20;0;X;X; Is a part of the unique identification of an item. ;
+5;Item;AssemblyConsumables;consItem.variant;variant;S;10;0;X;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;

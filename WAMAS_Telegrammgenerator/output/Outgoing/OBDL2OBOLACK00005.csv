@@ -1,0 +1,11 @@
+# OBDL2OBOLACK00005;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;OutboundDelivery;Client.clientId;obdClientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Outbound delivery number;OutboundDeliveryLine;OutboundDelivery.obdNo;obdNo;S;20;0;X;X;Each outbound delivery has an unique identifier, the outbound delivery number. Outbound deliveries of different clients and system partners can however have the same delivery number.;
+3;System partner;OutboundDelivery;sysPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;System partner line;OutboundDeliveryLine;sysPartnerLine;sysPartnerLine;N;10;0;X;;The associated line of the initial system partner telegram. If a delivery line is added within WAMAS, then this number is set to 0.;
+5;Outbound delivery line;OutboundDeliveryLine;line;obdLine;N;10;0;X;;It is part of the unique identification of the outbound delivery line. When the line was created via the interface, it is equal to the 'sysPartnerLine'.;
+6;Client;OutboundOrder;Client.clientId;oboClientId;S;10;0;X;X;Is the unique identification of a client.;
+7;Outbound order number;OutboundOrderLine;OutboundOrder.oboNo;oboNo;S;20;0;X;X;The outbound order number is part of the unique identifier of the outbound order.;
+8;System partner;OutboundOrder;sysPartner.id;oboSystemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+9;System partner line;OutboundOrderLine;sysPartnerLine;oboSystemPartnerLine;N;10;0;X;;The associated line of the initial system partner telegram. If an order line is added within WAMAS, then this number is set to 0.;
+10;Outbound order line;OutboundOrderLine;line;oboLine;N;10;0;X;;It is part of the unique identification of the outbound order line. When the line was created via the interface, it is equal to the 'sysPartnerLine'.;

@@ -1,0 +1,4 @@
+# SYSMSGORIGINDESC00002;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;System message origin description;SysMsgOriginDesc;SysMsgOrigin;msgOriginId;S;70;0;X;;Defines the system message origin description of the system message origin.;
+2;System message origin description;SysMsgOriginDesc;Language;language;S;6;0;X;;Defines the language of the system message origin description.;
+3;Description;SysMsgOriginDesc;description;description;S;30;0;X;;Language dependent description of the system message origin.;

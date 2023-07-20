@@ -1,0 +1,2 @@
+#This sample file contains a system message with a stock correction acknowledgement response from WCS.
+WCS1;WAMAS;;1;00991009020000;WCS_STOCKCORRACK00007;2;300020001;00000;1;2_1;100;20200611;Batch2Pick;20190612;Resno2Pick;Cdno2Pick;csia_one;123;csia_three;;;;;;;;;;;;;;;;;;4;Inventory;4;;;

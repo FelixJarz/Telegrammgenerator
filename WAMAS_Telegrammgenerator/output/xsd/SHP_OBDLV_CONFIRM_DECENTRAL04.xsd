@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="SHP_OBDLV_CONFIRM_DECENTRAL04">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="CreationDate" type="WamasDate" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="CreationTime" type="xsd:time" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Extension" type="STRING_30" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="IDocNumber" type="STRING_16" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="IDocType" type="STRING_30" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Mandt" type="STRING_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="MessageType" type="STRING_30" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvpor" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvprn" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvprt" type="STRING_2" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Serial" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndpor" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndprn" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndprt" type="STRING_2" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="E1SHP_OBDLV_CONFIRM_DECENTR" type="SHP_OBDLV_CONFIRM_DECENTRAL04_E1SHP_OBDLV_CONFIRM_DECENTR" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPDLVDEADLN">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="OutboundOrder_oboNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="TimeStampUTC" type="WamasDateTime" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="TimeType" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPDLVHDUNHDR">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="LoadUnit_extLuId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="LuIdentification" type="STRING_1" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundOrder_oboNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PackagingContainer" type="STRING_18" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PackagingKind" type="STRING_4" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPDLVHDUNITM">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="Item_baseQtyUnit_id" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="LoadUnit_extLuId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundOrderLine_deliveredAmount" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundOrderLine_line" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundOrderLine_oga_batch" type="STRING_20" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="OutboundOrder_oboNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPEXTC">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="CustomField1" type="STRING_250" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="CustomField2" type="STRING_250" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="CustomField3" type="STRING_250" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="CustomField4" type="STRING_250" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPOBDLVHDRCON">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="OutboundOrder_oboNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPOBDLVHDRCTRLCON">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="DeleteObo" type="STRING_1" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundOrder_oboNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PostItemMov" type="STRING_1" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="UseOrderDate" type="STRING_1" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPOBDLVITEMCON">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="Item_PackagingVersion_ItemQtyUnit_numBaseQtyUnits_denominator" type="NUMERIC_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_PackagingVersion_ItemQtyUnit_numBaseQtyUnits_numerator" type="NUMERIC_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_baseQtyUnit_id" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Item_itemNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundOrderLine_deliveredAmount" type="DECIMAL_12_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundOrderLine_line" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundOrderLine_oga_batch" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundOrder_oboNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPOBDLVITEMCTRLCON">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="ChangeDeliveryQty" type="STRING_1" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="DeleteObol" type="STRING_1" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundOrderLine_line" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="OutboundOrder_oboNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="SHP_OBDLV_CONFIRM_DECENTRAL04_E1SHP_OBDLV_CONFIRM_DECENTR">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="OutboundOrder_oboNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="E1BPDLVDEADLN" type="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPDLVDEADLN" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPDLVHDUNHDR" type="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPDLVHDUNHDR" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPDLVHDUNITM" type="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPDLVHDUNITM" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPEXTC" type="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPEXTC" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPOBDLVHDRCON" type="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPOBDLVHDRCON" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPOBDLVHDRCTRLCON" type="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPOBDLVHDRCTRLCON" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPOBDLVITEMCON" type="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPOBDLVITEMCON" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="E1BPOBDLVITEMCTRLCON" type="SHP_OBDLV_CONFIRM_DECENTRAL04_E1BPOBDLVITEMCTRLCON" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,7 @@
+# WCS_TRANSPORTDEMAND00005;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Current LU location;LoadUnit;stoLoc.stoLocId;stoLocId;S;20;0;X;X;The identifier of the storage location per warehouse location.;
+2;LU-ID;LoadUnit;luId;luId;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+3;LU origin;LoadUnit;luOrigin;luOrigin;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+4;Loading aid;LoadUnit;LoadAid.loadAidId;loadAidId;S;10;0;;X;Unique identification of a loading aid (see LoadAid).;
+5;Loading unit cubature;LoadUnit;LoadUnitCubature.cubatureId;cubatureId;S;10;0;;X;Unique identifier of the loading unit cubature.;
+6;Barcodes;;;barcodes;S;255;0;;;;

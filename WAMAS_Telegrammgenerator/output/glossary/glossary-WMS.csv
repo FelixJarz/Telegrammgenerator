@@ -1,0 +1,593 @@
+﻿Original;ger;spa;fra;por-BR;ita;Occurrences
+ Item number; Item number; Item number; Item number; Item number; Item number;PARTNERITEM00005
+ Variant; Variant; Variant; Variant; Variant; Variant;PARTNERITEM00005
+# Hierarchical LUs;# Hierarchische LE;N° UT jerárquicas;# UCs hiérarchiques;Nº de UTs hierárquicas;N° UdC gerarchiche;CONSIGNMENTACK00012
+# Initially registered LAs;# Initial registrierte LHM;N.º de MAT registrados inicialmente;# d’ACs saisis initialement;Nº MATs inicialmente registrados;N. di BdC registrate inizialmente;IBDLOADAIDACK00004
+# Internal;# Intern;Número interno;# interne;# Interno;N° interne;IBDLOADAIDACK00004
+# Normalized floor spaces;# normierte Bodenflächen;N° de superficies normalizadas;# de surfaces normalisées;# Superfícies normalizadas;N° superfici normalizzate;CONSIGNMENTACK00012
+# Not OK;# Nicht OK;N.° no conforme;# Pas OK;# Não OK;N° not OK;IBDLOADAIDACK00004 OBDLOADAIDACK00004
+# OK;# OK;N.° conforme;# OK;# OK;N° OK;IBDLOADAIDACK00004 OBDLOADAIDACK00004
+# Picking LUs;# Kommissionier-LE;N° de UT de picking;# UCs de prélèvement;# UTs de separação de pedidos;N° unità di carico di picking;CONSIGNMENTACK00012
+# Sub LUs;# Sub-LE;N° sub-UT;# sous-UCs;Nº de sub-UTs;N° UdC secondarie;CONSIGNMENTACK00012
+# Whole LUs;# Ganz-LE;N° de UT completas;# UCs entières;# UTs completas;N° unità di carico complete;CONSIGNMENTACK00012
+ABC value;ABC-Wert;Valor ABC;Valeur ABC;Valor ABC;Valore ABC;ITEMABCCLASSIFICATION00006
+Access strategy;Zugriffsstrategie;Estrategia de acceso;Stratégie d'accès;Estratégias de acesso;Strategie di accesso;OBDL00007 OBOL00007 PARTNER00008
+Actual dual quantity;Ist-Dualmenge;Cantidad dual real;Qté duale réelle;Quantidade dual efetiva;Quantità duale effettiva;INVCCACK00007
+Actual quantity;Istmenge;Cantidad real;Quantité réelle;Quantidade efetiva;Quantità effettiva;INVCCACK00007
+Additional information;Zusätzliche Information;Más información;Information supplémentaire;Informação adicional;Informazioni aggiuntive;LAACCOUNTENTRYACK00001
+Advised LU line type;Typ avisierte LE-Zeile;Tipo de línea de UT avisada;Type de la ligne d'UC notifiée;Tipo de linha de UT anunciada;Tipo di riga unità di carico preannunciata;ADVISEDLULINE00009
+Advised LU type;Avisierter LE-Typ;Tipo de UT avisada;Type d'UC notifiée;Tipo de UT anunciada;Tipo di unità di carico preannunciata;ADVISEDLU00012
+Application;Anwendung;Aplicación;Application;Aplicação;Applicazione;LOGIN00007 LOGIN2ROLE00005
+Assembled quantity;Assemblierte Menge;Cantidad ensamblada;Quantité assemblée;Quantidade montada;Quantità assemblata;ASOACK00001
+Assembly order number;Assemblierungsauftragsnummer;Número de orden de ensamblaje;Numéro d'ordre d’assemblage;Número de pedido de montagem;Numero ordine di assemblaggio;ASO00001 ASOACK00001 STOCKADJ00008
+Assembly order partner role;Assemblierungsauftrags-Partnerrolle;Función de socio de orden de ensamblaje;Rôle de partenaire de l’ordre d’assemblage;Papel de parceiro de pedido de montagem;Ruolo del partner nell'ordine di assemblaggio;ASOPARTNER00001
+Assembly order type;Assemblierungsauftragstyp;Tipo de orden de ensamblaje;Type d'ordre d’assemblage;Tipo de pedido de montagem;Tipo di ordine di assemblaggio;ASO00001
+Assembly order;Assemblierungsauftrag;Orden de ensamblaje;Ordre d’assemblage;Pedido de montagem;Ordine di assemblaggio;ASOCOMPONENT00001 ASOCONSUMABLES00001 ASOPARTNER00001
+Assortment;Sortiment;Surtido;Assortiment;Sortimento;Assortimento;INVDL00005 INVDLACK00006 ITEM00012
+Automatic conversion mode IG;Automatic conversion mode IG;Automatic conversion mode IG;Automatic conversion mode IG;Automatic conversion mode IG;Automatic conversion mode IG;ITEM00012
+Automatic conversion mode OG;Automatic conversion mode OG;Automatic conversion mode OG;Automatic conversion mode OG;Automatic conversion mode OG;Automatic conversion mode OG;ITEM00012
+Automatic conversion mode;Automatischer Umrechnungsmodus;Modo de conversión automática;Mode de conversion automatique;Modo de conversão automática;Modo di conversione automatica;ITEM00012
+Automatic transfer of inbound delivery line to stock object;Automatische Übernahme der Anlieferungszeile am Bestandsobjekt;Transferencia automática de línea de entrega al objeto de existencias;Transfert automatique de la ligne de livraison à l'objet du stock;Transferência automática da linha de recebimento ao objeto de estoque;Trasferimento automatico della riga della consegna in arrivo allo stock object;ITEM00012
+Availability check OG;Availability check OG;Availability check OG;Availability check OG;Availability check OG;Availability check OG;ITEM00012
+BBD From;BBD From;BBD From;BBD From;BBD From;BBD From;INVDL00005 INVDLACK00006 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+BBD To;BBD To;BBD To;BBD To;BBD To;BBD To;INVDL00005 INVDLACK00006 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+BBD registration IG;BBD registration IG;BBD registration IG;BBD registration IG;BBD registration IG;BBD registration IG;ITEM00012
+BBD registration OG;BBD registration OG;BBD registration OG;BBD registration OG;BBD registration OG;BBD registration OG;ITEM00012
+BBD stock mode;MHD-Bestandsführungsmodus;Gestión de existencias por FCP;Mode de stockage DLC;Modo de controle de estoque de DV;Modo di gestione delle scorte SCAD;ITEM00012
+BBD;MHD;FCP;DLC;DV;SCAD;ADVISEDLULINE00009 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008
+BQU / WQU;BME / LME;UE / UV;UQB / UGS;UBQ / UQD;UQB / UQM;ADVISEDLULINE00009 ASO00001 ASOCOMPONENT00001 FWCS_FFOITEMLINE00001 FWCS_FFOITEMLINEACK00001 FWCS_FFOPICKACK00001 FWCS_ITEMALIAS00001 FWCS_PACKAGINGVERSION00001 FWCS_PICKINGLOCASSIGNMENT00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 ITEMALIAS00006 KITCOMPONENT00001 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008
+BQU net weight unit;BQU net weight unit;BQU net weight unit;BQU net weight unit;BQU net weight unit;BQU net weight unit;FWCS_PACKAGINGVERSION00001 ITEM00012
+BQU net weight;BME Nettogewicht;Peso neto de UE;Poids net UQB;Peso líquido da UBQ;Peso netto unità di quantità di base;FWCS_PACKAGINGVERSION00001 ITEM00012
+Base quantity unit;Basismengeneinheit;Unidad de existencias;Unité de quantité de base;Unidade de quantidade básica;Unità di quantità di base;ITEM00012
+Basic strategy;Grundlegende Strategie;Estrategia básica;Stratégie de base;Estratégia básica;Strategia di base;INVD00007
+Batch registration IG;Batch registration IG;Batch registration IG;Batch registration IG;Batch registration IG;Batch registration IG;ITEM00012
+Batch registration OG;Batch registration OG;Batch registration OG;Batch registration OG;Batch registration OG;Batch registration OG;ITEM00012
+Batch stock mode;Chargen-Bestandsführungsmodus;Gestión de existencias por lote;Mode de stockage lot;Modo de controle de estoque de lote;Modalità di gestione delle scorte relativa al lotto;ITEM00012
+Batch;Charge;Lote;Lot;Lote;Lotto;ADVISEDLULINE00009 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Billing category;Verrechnungskategorie;Categoría de facturación;Catégorie de facturation;Categoria de faturamento;Categoria di fatturazione;ITEM00012
+CSIA 01 registration;Erfassung ABIA 01;Registro de AAIE 01;Enregistrement AISA 01;Registro AAIE 01;Registrazione AQSP 01;ITEM00012
+CSIA 01 stock mode;ABIA 01 Bestandsmodus;Gestión de existencias de AAIE 01;Mode de stockage AISA 01;Modo de estoque AAIE 01;Modo gestione scorte AQSP 01;ITEM00012
+CSIA 01;ABIA 01;AAIE 01;AISA 01;AAIE 01;AQSP 01;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 02 registration;Erfassung ABIA 02;Registro de AAIE 02;Enregistrement AISA 02;Registro AAIE 02;Registrazione AQSP 02;ITEM00012
+CSIA 02 stock mode;ABIA 02 Bestandsmodus;Gestión de existencias de AAIE 02;Mode de stockage AISA 02;Modo de estoque AAIE 02;Modo gestione scorte AQSP 02;ITEM00012
+CSIA 02;ABIA 02;AAIE 02;AISA 02;AAIE 02;AQSP 02;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 03 registration;Erfassung ABIA 03;Registro de AAIE 03;Enregistrement AISA 03;Registro AAIE 03;Registrazione AQSP 03;ITEM00012
+CSIA 03 stock mode;ABIA 03 Bestandsmodus;Gestión de existencias de AAIE 03;Mode de stockage AISA 03;Modo de estoque AAIE 03;Modo gestione scorte AQSP 03;ITEM00012
+CSIA 03;ABIA 03;AAIE 03;AISA 03;AAIE 03;AQSP 03;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 04 registration;Erfassung ABIA 04;Registro de AAIE 04;Enregistrement AISA 04;Registro AAIE 04;Registrazione AQSP 04;ITEM00012
+CSIA 04 stock mode;ABIA 04 Bestandsmodus;Gestión de existencias de AAIE 04;Mode de stockage AISA 04;Modo de estoque AAIE 04;Modo gestione scorte AQSP 04;ITEM00012
+CSIA 04;ABIA 04;AAIE 04;AISA 04;AAIE 04;AQSP 04;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 05 registration;Erfassung ABIA 05;Registro de AAIE 05;Enregistrement AISA 05;Registro AAIE 05;Registrazione AQSP 05;ITEM00012
+CSIA 05 stock mode;ABIA 05 Bestandsmodus;Gestión de existencias de AAIE 05;Mode de stockage AISA 05;Modo de estoque AAIE 05;Modo gestione scorte AQSP 05;ITEM00012
+CSIA 05;ABIA 05;AAIE 05;AISA 05;AAIE 05;AQSP 05;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 06 registration;Erfassung ABIA 06;Registro de AAIE 06;Enregistrement AISA 06;Registro AAIE 06;Registrazione AQSP 06;ITEM00012
+CSIA 06 stock mode;ABIA 06 Bestandsmodus;Gestión de existencias de AAIE 06;Mode de stockage AISA 06;Modo de estoque AAIE 06;Modo gestione scorte AQSP 06;ITEM00012
+CSIA 06;ABIA 06;AAIE 06;AISA 06;AAIE 06;AQSP 06;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 07 registration;Erfassung ABIA 07;Registro de AAIE 07;Enregistrement AISA 07;Registro AAIE 07;Registrazione AQSP 07;ITEM00012
+CSIA 07 stock mode;ABIA 07 Bestandsmodus;Gestión de existencias de AAIE 07;Mode de stockage AISA 07;Modo de estoque AAIE 07;Modo gestione scorte AQSP 07;ITEM00012
+CSIA 07;ABIA 07;AAIE 07;AISA 07;AAIE 07;AQSP 07;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 08 registration;Erfassung ABIA 08;Registro de AAIE 08;Enregistrement AISA 08;Registro AAIE 08;Registrazione AQSP 08;ITEM00012
+CSIA 08 stock mode;ABIA 08 Bestandsmodus;Gestión de existencias de AAIE 08;Mode de stockage AISA 08;Modo de estoque AAIE 08;Modo gestione scorte AQSP 08;ITEM00012
+CSIA 08;ABIA 08;AAIE 08;AISA 08;AAIE 08;AQSP 08;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 09 registration;Erfassung ABIA 09;Registro de AAIE 09;Enregistrement AISA 09;Registro AAIE 09;Registrazione AQSP 09;ITEM00012
+CSIA 09 stock mode;ABIA 09 Bestandsmodus;Gestión de existencias de AAIE 09;Mode de stockage AISA 09;Modo de estoque AAIE 09;Modo gestione scorte AQSP 09;ITEM00012
+CSIA 09;ABIA 09;AAIE 09;AISA 09;AAIE 09;AQSP 09;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 10 registration;Erfassung ABIA 10;Registro de AAIE 10;Enregistrement AISA 10;Registro AAIE 10;Registrazione AQSP 10;ITEM00012
+CSIA 10 stock mode;ABIA 10 Bestandsmodus;Gestión de existencias de AAIE 10;Mode de stock AISA 10;Modo de estoque AAIE 10;Modo gestione scorte AQSP 10;ITEM00012
+CSIA 10;ABIA 10;AAIE 10;AISA 10;AAIE 10;AQSP 10;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 11 registration;Erfassung ABIA 11;Registro de AAIE 11;Enregistrement AISA 11;Registro AAIE 11;Registrazione AQSP 11;ITEM00012
+CSIA 11 stock mode;ABIA 11 Bestandsmodus;Gestión de existencias de AAIE 11;Mode de stock AISA 11;Modo de estoque AAIE 11;Modo gestione scorte AQSP 11;ITEM00012
+CSIA 11;ABIA 11;AAIE 11;AISA 11;AAIE 11;AQSP 11;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 12 registration;Erfassung ABIA 12;Registro de AAIE 12;Enregistrement AISA 12;Registro AAIE 12;Registrazione AQSP 12;ITEM00012
+CSIA 12 stock mode;ABIA 12 Bestandsmodus;Gestión de existencias de AAIE 12;Mode de stock AISA 12;Modo de estoque AAIE 12;Modo gestione scorte AQSP 12;ITEM00012
+CSIA 12;ABIA 12;AAIE 12;AISA 12;AAIE 12;AQSP 12;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 13 registration;Erfassung ABIA 13;Registro de AAIE 13;Enregistrement AISA 13;Registro AAIE 13;Registrazione AQSP 13;ITEM00012
+CSIA 13 stock mode;ABIA 13 Bestandsmodus;Gestión de existencias de AAIE 13;Mode de stock AISA 13;Modo de estoque AAIE 13;Modo gestione scorte AQSP 13;ITEM00012
+CSIA 13;ABIA 13;AAIE 13;AISA 13;AAIE 13;AQSP 13;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 14 registration;Erfassung ABIA 14;Registro de AAIE 14;Enregistrement AISA 14;Registro AAIE 14;Registrazione AQSP 14;ITEM00012
+CSIA 14 stock mode;ABIA 14 Bestandsmodus;Gestión de existencias de AAIE 14;Mode de stockage AISA 14;Modo de estoque AAIE 14;Modo gestione scorte AQSP 14;ITEM00012
+CSIA 14;ABIA 14;AAIE 14;AISA 14;AAIE 14;AQSP 14;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 15 registration;Erfassung ABIA 15;Registro de AAIE 15;Enregistrement AISA 15;Registro AAIE 15;Registrazione AQSP 15;ITEM00012
+CSIA 15 stock mode;ABIA 15 Bestandsmodus;Gestión de existencias de AAIE 15;Mode de stock AISA 15;Modo de estoque AAIE 15;Modo gestione scorte AQSP 15;ITEM00012
+CSIA 15;ABIA 15;AAIE 15;AISA 15;AAIE 15;AQSP 15;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 16 registration;Erfassung ABIA 16;Registro de AAIE 16;Enregistrement AISA 16;Registro AAIE 16;Registrazione AQSP 16;ITEM00012
+CSIA 16 stock mode;ABIA 16 Bestandsmodus;Gestión de existencias de AAIE 16;Mode de stockage AISA 16;Modo de estoque AAIE 16;Modo gestione scorte AQSP 16;ITEM00012
+CSIA 16;ABIA 16;AAIE 16;AISA 16;AAIE 16;AQSP 16;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 17 registration;Erfassung ABIA 17;Registro de AAIE 17;Enregistrement AISA 17;Registro AAIE 17;Registrazione AQSP 17;ITEM00012
+CSIA 17 stock mode;ABIA 17 Bestandsmodus;Gestión de existencias de AAIE 17;Mode de stockage AISA 17;Modo de estoque AAIE 17;Modo gestione scorte AQSP 17;ITEM00012
+CSIA 17;ABIA 17;AAIE 17;AISA 17;AAIE 17;AQSP 17;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 18 registration;Erfassung ABIA 18;Registro de AAIE 18;Enregistrement AISA 18;Registro AAIE 18;Registrazione AQSP 18;ITEM00012
+CSIA 18 stock mode;ABIA 18 Bestandsmodus;Gestión de existencias de AAIE 18;Mode de stock AISA 18;Modo de estoque AAIE 18;Modo gestione scorte AQSP 18;ITEM00012
+CSIA 18;ABIA 18;AAIE 18;AISA 18;AAIE 18;AQSP 18;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 19 registration;Erfassung ABIA 19;Registro de AAIE 19;Enregistrement AISA 19;Registro AAIE 19;Registrazione AQSP 19;ITEM00012
+CSIA 19 stock mode;ABIA 19 Bestandsmodus;Gestión de existencias de AAIE 19;Mode de stock AISA 19;Modo de estoque AAIE 19;Modo gestione scorte AQSP 19;ITEM00012
+CSIA 19;ABIA 19;AAIE 19;AISA 19;AAIE 19;AQSP 19;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+CSIA 20 registration;Erfassung ABIA 20;Registro de AAIE 20;Enregistrement AISA 20;Registro AAIE 20;Registrazione AQSP 20;ITEM00012
+CSIA 20 stock mode;ABIA 20 Bestandsmodus;Gestión de existencias de AAIE 20;Mode de stockage AISA 20;Modo de estoque AAIE 20;Modo gestione scorte AQSP 20;ITEM00012
+CSIA 20;ABIA 20;AAIE 20;AISA 20;AAIE 20;AQSP 20;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Can be split;Kann gesplittet werden;Puede ser dividida;Divisable;Pode ser dividida;Può essere frammentata. ;LOADLUACK00011
+Canceled;Storniert;Anulado;Annulé;Cancelado;Annullato;CONSIGNMENTACK00012 OBDACK00011 OBOACK00011
+Cash on delivery unit;Cash on delivery unit;Cash on delivery unit;Cash on delivery unit;Cash on delivery unit;Cash on delivery unit;OBD00010 OBDACK00011
+Cash on delivery;Nachnahme;Pago en efectivo en el momento de la entrega;Contre remboursement;Pagamento contra entrega;Spedizione contrassegno;OBD00010 OBDACK00011
+Change password;Passwort ändern;Cambiar contraseña;Modification du mot de passe;Mudar senha;Modifica password;LOGIN00007
+Check remaining shelf life IG;Check remaining shelf life IG;Check remaining shelf life IG;Check remaining shelf life IG;Check remaining shelf life IG;Check remaining shelf life IG;ITEM00012
+Check requested;Kontrolle angefordert;Check requested;Contrôle demandé;Check requested;Check requested;FWCS_FFO00001
+City;Stadt;Lugar;Ville;Cidade;Città;CONSIGNMENTADDRACK00008 FWCS_PARTNER00001 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003 SYSUSER00007
+Class;Klasse;Clase;Classe;Classe;Classe;DANGGOODS00009
+Classification code;Klassifizierungscode;Código de clasificación;Code de classification;Código de classificação;Codice di classificazione;DANGGOODS00009 LOADLUDETAILACK00009 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 SHIPMENTLUDETAILACK00002
+Client;Klient;Cliente;Client;Requerente;Cliente;ADVISEDLU00012 ADVISEDLULINE00009 ASO00001 ASOACK00001 ASOCOMPONENT00001 ASOCONSUMABLES00001 ASOPARTNER00001 CONSIGNMENTADDRACK00008 DANGGOODS00009 DANGGOODSDESC00006 FWCS_FFO00001 FWCS_FFOACK00001 FWCS_FFOCANCEL00001 FWCS_FFODEST00001 FWCS_FFODESTCANCEL00001 FWCS_FFOFINALIZE00001 FWCS_FFOITEMLINE00001 FWCS_FFOITEMLINECANCEL00001 FWCS_FFOITEMLINEFINALIZE00001 FWCS_FFOSTATIONLINE00001 FWCS_FFOSTATIONLINECANCEL00001 FWCS_FFOSTATIONLINEFINISH00001 FWCS_ITEM00001 FWCS_ITEMALIAS00001 FWCS_ITEMDESC00001 FWCS_PACKAGINGVERSION00001 FWCS_PARTNER00001 FWCS_PICKINGLOCASSIGNMENT00001 IBD00008 IBDACK00012 IBDEXTREF00006 IBDEXTREFACK00007 IBDL00006 IBDL2IBOLACK00006 IBDLACK00006 IBDLDETAILACK00006 IBDLDIFFCODEACK00005 IBDLEXTREF00006 IBDLEXTREFACK00007 IBDLOADAIDACK00004 IBDLTEXT00001 IBDLUACK00007 IBDLUDETAILACK00009 IBDPARTNER00008 IBDPARTNERACK00008 IBDTEXT00001 IBO00008 IBOACK00008 IBOEXTREF00006 IBOEXTREFACK00006 IBOL00007 IBOLACK00006 IBOLDIFFCODEACK00005 IBOLEXTREF00006 IBOLEXTREFACK00007 IBOLTEXT00001 IBOPARTNER00008 IBOPARTNERACK00008 IBOTEXT00001 INVDL00005 INVDLACK00006 INVDLTEXT00001 INVDPARTNER00007 INVDTEXT00001 ITEM00012 ITEMABCCLASSIFICATION00006 ITEMALIAS00006 ITEMDESC00005 ITEMQTYUNIT00008 ITEMWHLOC00005 KIT00001 KITCOMPONENT00001 KITCONSUMABLES00001 LAACCOUNTENTRYACK00001 LOADLUDETAILACK00009 LOGIN00007 OBD00010 OBDACK00011 OBDEXTREF00006 OBDEXTREFACK00006 OBDL00007 OBDL2OBOLACK00005 OBDLACK00009 OBDLDETAILACK00008 OBDLDIFFCODEACK00005 OBDLEXTREF00006 OBDLEXTREFACK00006 OBDLOADAIDACK00004 OBDLTEXT00001 OBDLUACK00008 OBDLUDETAILACK00009 OBDPARTNER00008 OBDPARTNERACK00008 OBDTEXT00001 OBO00009 OBOACK00011 OBOEXTREF00006 OBOL00007 OBOLEXTREF00006 OBOLTEXT00001 OBOPARTNER00008 OBOTEXT00001 PARTNER00008 PARTNERADDR00007 PARTNERITEM00005 REPLACEMENTITEM00005 SHIPMENTLUACK00003 SHIPMENTLUDETAILACK00002 SHIPMENTLUOBOACK00001 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Consecutive number;Fortlaufende Nummer;Número consecutivo;Nombre consécutif;Número sequencial;Numero consecutivo;CONSIGNMENT00007 CONSIGNMENTACK00012 CONSIGNMENTADDRACK00008 LOAD00008 LOADACK00011 LOADTRANSPORTVEHICLE00006 LOADTRANSPORTVEHICLEACK00006
+Consignment ID;Sendungs-ID;Id. de envío;ID d'expédition;ID de envio;Identificazione spedizione;CONSIGNMENT00007 CONSIGNMENTACK00012 CONSIGNMENTADDRACK00008 LOADLUACK00011 LOADLUDETAILACK00009
+Consignment;Sendung;Envío;Expédition;Envio;Spedizione;LOADLU00005
+Consumables item number;Verbrauchsmaterialartikelnummer;Número de artículo de consumibles;Numéro d’article des consommables;Número de item de consumíveis;Numero dell'articolo consumabili;KITCONSUMABLES00001
+Consumables number;Verbrauchsmaterialnummer;Número de consumibles;Numéro des consommables;Número de consumíveis;Numero di consumabili;ASOCONSUMABLES00001 KITCONSUMABLES00001
+Consumables variant;Verbrauchsmaterialvariante;Variante de consumibles;Variante des consommables;Variante de consumíveis;Variante di consumabili;KITCONSUMABLES00001
+Content kind;Inhaltsart;Tipo de contenido;Type du contenu;Tipo de conteúdo;Tipo di contenuto;INVDL00005 INVDLACK00006
+Content number;Inhaltsnummer;Número de contenido;Numéro de contenu;Número de conteúdo;Numero contenuto;IBDLUDETAILACK00009 LOADLUDETAILACK00009 OBDLUDETAILACK00009 SHIPMENTLUDETAILACK00002
+Conveyor station group;Förderanlagenstationsgruppe;Conveyor station group;Groupe de station de l’installation de convoyage;Conveyor station group;Conveyor station group;FWCS_FFOSTATIONLINE00001 FWCS_FFOSTATIONLINEACK00001 FWCS_FFOSTATIONLINECANCEL00001 FWCS_FFOSTATIONLINEFINISH00001
+Conveyor station;Förderanlagenstation;Estación de transportador;Station de l'installation de convoyage;Estação do sistema de transporte;Stazione di movimentazione;FWCS_FFOCONVEYORSTATIONACK0001 FWCS_FFOSTATIONLINE00001 FWCS_FFOSTATIONLINEACK00001 FWCS_FFOSTATIONLINECANCEL00001 FWCS_FFOSTATIONLINEFINISH00001
+Cost center;Kostenstelle;Centro de coste;Centre de coûts;Centro de custos;Voce di costo;STOCKADJ00008
+Counted on;Gezählt am;Contado el;Compté le;Contado em;Conteggio eseguito il;INVCCACK00007
+Country of origin;Herkunftsland;País de origen;Pays d'origine;País de origem;Paese di origine;ITEM00012
+Country;Land;País;Pays;País;Paese;CONSIGNMENTADDRACK00008 FWCS_PARTNER00001 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003 SYSUSER00007
+Created during;Erstellt während;Creado durante;Créé durant;Criado durante;Creata durante;LAACCOUNTENTRYACK00001
+Critical stock level (BQU);Kritische Bestandsebene (BME);Nivel de existencias crítico (UE);Taux critique de stock (UQB);Nível de estoque crítico (UBQ);Livello di scorta critico (UQB);ITEMWHLOC00005
+Cross Docking 1;Cross Docking 1;Cross Docking 1;Cross-docking 1;Cross Docking 1;Cross Docking 1;ADVISEDLU00012 OBDL00007 OBDLACK00009
+Cross Docking No.;Cross Docking-Nr.;N.° Cross Docking;Numéro de cross docking;Nº de Cross Docking;N° Cross Docking;ADVISEDLULINE00009 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Cross Docking number;Cross Docking-Nummer;Número de Cross Docking;Numéro de cross docking;Número de Cross Docking;Numero Cross Docking;STOCKADJ00008
+Customer;Kunde;Cliente;Client;Cliente;Cliente;PARTNER00008
+Customs tariff number;Zolltarifnummer;Código arancelario;Position tarifaire;Número da tarifa aduaneira;Numero della tariffa doganale;ITEM00012
+Dangerous goods description;Gefahrgutbezeichnung;Denominación de mercancía peligrosa;Désignation des marchandises dangereuses;Descrição de material perigoso;Descrizione merce pericolosa;DANGGOODSDESC00006
+Dangerous goods info text;Gefahrgut-Infotext;Texto informativo de mercancía peligrosa;Texte informatif des marchandises dangereuses;Texto de informação de material perigoso;Testo informativo merce pericolosa;DANGGOODS00009
+Dangerous goods points;Gefahrgutpunkte;Nivel de peligro;Points de marchandises dangereuses;Pontos de materiais perigosos;Punti per merci pericolose;LOADLUACK00011 LOADLUDETAILACK00009 OBDLUACK00008 OBDLUDETAILACK00009 SHIPMENTLUACK00003 SHIPMENTLUDETAILACK00002
+Dangerous goods quantity / base quantity;Gefahrgutmenge / Basismenge;Cantidad de mercancía peligrosa/cantidad básica;Quantité marchandises dangereuses / quantité de base;Quantidade de material perigoso / Quantidade básica;Quantità / quantità di base merce pericolosa;DANGGOODS00009
+Dangerous goods quantity unit;Gefahrgut-Mengeneinheit;Unidad de medida de mercancía peligrosa;Unité de quantité des marchandises dangereuses;Unidade de quantidade de material perigoso;Unità quantitativa merce pericolosa;DANGGOODS00009
+Data access profile;Datenzugriffsprofil;Perfil de acceso a datos;Profil d'accès aux données;Perfil de acesso de dados;Profilo di accesso dati;LOGIN00007
+Data state (extended);Datenstatus (erweitert);Estado de fecha (ampliada);État de données (étendu);Status de dados (estendido);Stato dei dati (esteso);ITEM00012 PARTNER00008
+Data state;Datenstatus;Estado de los datos;État de données;Status de dados;Stato dei dati;CONSIGNMENTACK00012 CONSIGNMENTADDRACK00008 DANGGOODS00009 DANGGOODSDESC00006 FWCS_FFO00001 FWCS_FFOACK00001 FWCS_FFOCANCEL00001 FWCS_FFOCONVEYORSTATIONACK0001 FWCS_FFODEST00001 FWCS_FFODESTCANCEL00001 FWCS_FFOFINALIZE00001 FWCS_FFOITEMLINE00001 FWCS_FFOITEMLINEACK00001 FWCS_FFOITEMLINECANCEL00001 FWCS_FFOITEMLINEFINALIZE00001 FWCS_FFOPICKACK00001 FWCS_FFOSTATIONLINE00001 FWCS_FFOSTATIONLINEACK00001 FWCS_FFOSTATIONLINECANCEL00001 FWCS_FFOSTATIONLINEFINISH00001 FWCS_ITEM00001 FWCS_ITEMALIAS00001 FWCS_ITEMDESC00001 FWCS_PACKAGINGVERSION00001 FWCS_PARTNER00001 FWCS_PICKINGLOCASSIGNMENT00001 IBD00008 IBDEXTREF00006 IBDLEXTREF00006 IBDLTEXT00001 IBDPARTNER00008 IBDTEXT00001 IBO00008 IBOEXTREF00006 IBOLEXTREF00006 IBOLTEXT00001 IBOPARTNER00008 IBOTEXT00001 INVDLTEXT00001 INVDTEXT00001 ITEMABCCLASSIFICATION00006 ITEMALIAS00006 ITEMDESC00005 ITEMQTYUNIT00008 ITEMWHLOC00005 KIT00001 KITCOMPONENT00001 KITCONSUMABLES00001 LAACCOUNTENTRYACK00001 LOAD00008 LOADACK00011 LOADTRANSPORTVEHICLE00006 LOADTRANSPORTVEHICLEACK00006 OBD00010 OBDEXTREF00006 OBDLEXTREF00006 OBDLTEXT00001 OBDPARTNER00008 OBDTEXT00001 OBO00009 OBOEXTREF00006 OBOLEXTREF00006 OBOLTEXT00001 OBOPARTNER00008 OBOTEXT00001 PARTNERADDR00007 PARTNERITEM00005 REPLACEMENTITEM00005
+Date of birth;Geburtsdatum;Fecha de nacimiento;Date de naissance;Data de nascimento;Data di nascita;SYSUSER00007
+Default loading unit cubature;Standard-Ladeeinheiten-Kubatur;Cubicación de unidades de transporte predeterminada;Cubature d'unité de chargement par défaut;Cubatura padrão da unidade de transporte;Cubatura dell'unità di carico predefinita;ITEMQTYUNIT00008
+Default role;Standardrolle;Papel predeterminado;Rôle par défaut;Papel padrão;Ruolo del partner predefinito;LOGIN2ROLE00005
+Delivered # Dangerous goods points;Delivered # Dangerous goods points;Delivered # Dangerous goods points;Delivered # Dangerous goods points;Delivered # Dangerous goods points;Delivered # Dangerous goods points;OBOACK00011
+Delivered # Hierarchical shipment LUs;Delivered # Hierarchical shipment LUs;Delivered # Hierarchical shipment LUs;Delivered # Hierarchical shipment LUs;Delivered # Hierarchical shipment LUs;Delivered # Hierarchical shipment LUs;OBDACK00011
+Delivered # Picking shipment LUs;Delivered # Picking shipment LUs;Delivered # Picking shipment LUs;Delivered # Picking shipment LUs;Delivered # Picking shipment LUs;Delivered # Picking shipment LUs;OBDACK00011
+Delivered # Sub shipment LUs;Delivered # Sub shipment LUs;Delivered # Sub shipment LUs;Delivered # Sub shipment LUs;Delivered # Sub shipment LUs;Delivered # Sub shipment LUs;OBDACK00011
+Delivered # WQU;Delivered # WQU;Delivered # WQU;Delivered # WQU;Delivered # WQU;Delivered # WQU;OBDACK00011 OBOACK00011
+Delivered # Whole shipment LUs;Delivered # Whole shipment LUs;Delivered # Whole shipment LUs;Delivered # Whole shipment LUs;Delivered # Whole shipment LUs;Delivered # Whole shipment LUs;OBDACK00011
+Delivered Total dangerous goods points;Delivered Total dangerous goods points;Delivered Total dangerous goods points;Delivered Total dangerous goods points;Delivered Total dangerous goods points;Delivered Total dangerous goods points;OBDACK00011 OBDLACK00009 OBDLDETAILACK00008
+Delivered Total gross weight unit;Delivered Total gross weight unit;Delivered Total gross weight unit;Delivered Total gross weight unit;Delivered Total gross weight unit;Delivered Total gross weight unit;OBDACK00011 OBOACK00011
+Delivered Total gross weight;Delivered Total gross weight;Delivered Total gross weight;Delivered Total gross weight;Delivered Total gross weight;Delivered Total gross weight;OBDACK00011 OBOACK00011
+Delivered Total volume unit;Delivered Total volume unit;Delivered Total volume unit;Delivered Total volume unit;Delivered Total volume unit;Delivered Total volume unit;OBDACK00011 OBOACK00011
+Delivered Total volume;Delivered Total volume;Delivered Total volume;Delivered Total volume;Delivered Total volume;Delivered Total volume;OBDACK00011 OBOACK00011
+Delivered dual quantity;Gelieferte Dualmenge;Cantidad dual entregada;Quantité duale livrée;Quantidade dual fornecida;Quantità duale fornita;IBDLACK00006 IBOLACK00006 OBDLACK00009
+Delivered quantity;Liefermenge;Cantidad entregada;Quantité de livraison;Quantidade de fornecimento;Quantità fornita;FWCS_FFOITEMLINEACK00001 FWCS_FFOPICKACK00001 IBDLACK00006 IBOLACK00006 OBDLACK00009
+Delivery category;Ausliefergruppe;Grupo de expedición de mercancías;Groupe de livraison;Categoria de fornecimento;Gruppo di uscita;CONSIGNMENT00007 CONSIGNMENTACK00012 ITEMWHLOC00005 OBD00010 OBDACK00011
+Delivery condition Site;Delivery condition Site;Delivery condition Site;Delivery condition Site;Delivery condition Site;Delivery condition Site;OBD00010 OBDACK00011
+Delivery note date;Lieferscheindatum;Fecha del albarán de entrega;Date du bon de livraison;Data da nota de fornecimento;Data della bolla di consegna;IBD00008 IBDACK00012
+Delivery note number;Lieferscheinnummer;Número de albarán de entrega;Numéro de bon de livraison;Número da nota de fornecimento;Numero bolla di consegna;IBD00008 IBDACK00012
+Delivery planning category;Auslieferplanungsgruppe;Categoría de planificación de suministro;Groupe de planification de livraison;Grupo de planejamento de fornecimento;Categoria di pianificazione delle consegne;ITEMWHLOC00005
+Delivery time slot From;Delivery time slot From;Delivery time slot From;Delivery time slot From;Delivery time slot From;Delivery time slot From;CONSIGNMENTACK00012
+Delivery time slot To;Delivery time slot To;Delivery time slot To;Delivery time slot To;Delivery time slot To;Delivery time slot To;CONSIGNMENTACK00012
+Delivery time;Liefertermin;Hora de entrega;Délais de livraison;Prazo de fornecimento;Data di consegna;ADVISEDLU00012 CONSIGNMENT00007 CONSIGNMENTACK00012 OBD00010 OBDACK00011
+Denominator;Nenner;Denominad;Dénominateur;Denominador;Denominatore;ITEMQTYUNIT00008
+Departure time;Abfahrtstermin;Tiempo de salida;Heure de départ;Horário de partida;Ora di partenza;CONSIGNMENTACK00012 LOAD00008 LOADACK00011 OBD00010 OBDACK00011
+Difference code IG;Differenzcode WE;Código de diferencia RM;Code de divergence EM;Código de diferença EM;Codice di differenza IM;IBDLDIFFCODEACK00005 IBOLDIFFCODEACK00005
+Difference code OG;Differenzcode WA;Código de diferencia EM;Code de divergence SM;Código de diferença de SM;Codice di differenza UM;OBDLDIFFCODEACK00005 PARTNER00008
+Display assembly order;Assemblierungsauftrag anzeigen;Visualización de orden de ensamblaje;Afficher l'ordre d’assemblage;Exibir pedido de montagem;Visualizza ordine di assemblaggio;KIT00001
+Dissolved;Aufgelöst;Disuelto;Dissout;Dissolvido;Annullato;LOADACK00011
+District;Bezirk;Distrito;District;Distrito;Zona;CONSIGNMENTADDRACK00008 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003
+Diversion reason;Ausschleusungsgrund;Diversion reason;Raison de transfert;Diversion reason;Diversion reason;FWCS_FFOCONVEYORSTATIONACK0001
+Dock;Tor;Muelle;Porte;Portão;Varco;ADVISEDLU00012 CONSIGNMENT00007 CONSIGNMENTACK00012 IBD00008 OBD00010 OBDACK00011 SO00001
+Dual item;Dualartikel;Artículo dual;Article dual;Item dual;Articoli duali;ITEM00012
+Dual quantity unit;Dualmengeneinheit;Unidad dual de medida;Unité de quantité duale;Unidade de quantidade dual;Unità di quantità duale;ITEM00012
+Dual quantity;Dualmenge;Cantidad dual;Quantité duale;Quantidade dual;Quantità duale;ADVISEDLULINE00009 IBDLDETAILACK00006 IBDLUDETAILACK00009 LOADLUDETAILACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008
+Dual warehouse quantity unit;Duallagermengeneinheit;Unidad dual de almacenamiento;Unité de gestion de stock duale;Unidade de quantidade dual de depósito;Unità di quantità duale di magazzino;ITEM00012
+Earliest release time;Früheste Freigabezeit;Primer momento de aprobación posible;Heure de mise à disposition la plus tôt possible;Primeiro prazo de liberação;Momento di approvazione più presto possibile;INVD00007
+Editing remaining dual quantity allowed IG;Editing remaining dual quantity allowed IG;Editing remaining dual quantity allowed IG;Editing remaining dual quantity allowed IG;Editing remaining dual quantity allowed IG;Editing remaining dual quantity allowed IG;ITEM00012
+Editing remaining dual quantity allowed OG;Editing remaining dual quantity allowed OG;Editing remaining dual quantity allowed OG;Editing remaining dual quantity allowed OG;Editing remaining dual quantity allowed OG;Editing remaining dual quantity allowed OG;ITEM00012
+Editing remaining dual quantity allowed;Bearbeiten der Rest-Dualmenge erlaubt;Se permite editar la cantidad dual restante;Éditer la quantité duale restante est permis;Permitido editar a quantidade dual restante;Modifica della quantità duale residua consentita;ITEM00012
+Editing remaining quantity allowed IG;Editing remaining quantity allowed IG;Editing remaining quantity allowed IG;Editing remaining quantity allowed IG;Editing remaining quantity allowed IG;Editing remaining quantity allowed IG;ITEM00012
+Editing remaining quantity allowed OG;Editing remaining quantity allowed OG;Editing remaining quantity allowed OG;Editing remaining quantity allowed OG;Editing remaining quantity allowed OG;Editing remaining quantity allowed OG;ITEM00012
+Editing remaining quantity allowed;Bearbeiten der Restmenge erlaubt;Se permite editar la cantidad restante;Éditer la quantité restante est permis;Permitido editar a quantidade restante;Modifica della quantità residua consentita;ITEM00012
+Email;E-Mail;E-Mail;Courriel;E-Mail;Email;CONSIGNMENTADDRACK00008 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003 SYSUSER00007
+Employee number;Mitarbeiternummer;Número de operario;Numéro de l'employé;Número do colaborador;Numero identificativo personale;SYSUSER00007
+Empties Item number;Empties Item number;Empties Item number;Empties Item number;Empties Item number;Empties Item number;ITEMQTYUNIT00008
+Empties Variant;Empties Variant;Empties Variant;Empties Variant;Empties Variant;Empties Variant;ITEMQTYUNIT00008
+Empty location inventory;Leerplatzinventur;Inventario de ubicación vacía;Inventaire des emplacements vides;Inventário de local vazio;Inventario di un posto vuoto;INVCCACK00007
+Empty location;Leerplatz;Posición vacía;Emplacement vide;Local vazio;Ubicazione vuota;FWCS_FFOPICKACK00001
+Equivalent period strategy;Gleichwertige Periodenstrategie;Estrategia de periodo equivalente;Stratégie de période équivalente;Estratégia de período equivalente;Strategia periodo equivalente;OBDL00007 OBOL00007 PARTNER00008
+Error Category;Fehlerkategorie;Categoría de errores;Catégorie d'erreur;Categoria de erros;Categoria di errori;INSPMLINEACK00001
+Error description;Fehlerbeschreibung;Descripción de error;Désignation d'erreur;Descrição de erro;Descrizione errore;INSPMLINEACK00001
+Excepted Quantities;Freigestellte Mengen;Cantidades exceptuadas;Quantités exceptées;Quantidades exceptuadas;Quantità esenti;DANGGOODS00009
+Exchange partner;Tauschpartner;Socio de cambio;Partenaire d'échange;Trocar parceiro;Partner di scambio;IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008
+Externally authenticated;Extern authentifiziert;Autenticado externamente;Authentifié à l'extérieur;Autenticado externamente;Autenticazione esterna;LOGIN00007
+Externally managed;Extern verwaltet;Gestionado externamente;Gérer à l'extérieure;Administrado externamente;Gestione esterna;LOGIN00007
+FOG graph;WFL-Graph;Grafo de flujo de mercancías;Graphe FDM;Gráfico FLM;Grafo flusso di merci;FWCS_FFO00001
+Fax;Fax;Fax;Fax;Fax;Fax;CONSIGNMENTADDRACK00008 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003
+Finish time;Fertigzeit;Tiempo de terminación;Temps de finalisation;Finalizar tempo;Ora di completamento;FWCS_FFOACK00001 INVDACK00009
+Finishing user;Fertigstellender Benutzer;Cliente de finalización;Utilisateur finalisant;Usuário finalizador;Completamento utente;INVDACK00009
+First name;Vorname;Nombre;Prénom;Nome;Nome;SYSUSER00007
+Freight carrier;Frachtführer;Transportista;Un louageur;Transportadora de carga;Vettore;PARTNER00008
+From Delivery time slot;From Delivery time slot;From Delivery time slot;From Delivery time slot;From Delivery time slot;From Delivery time slot;IBD00008 IBDACK00012
+From Registration time;From Registration time;From Registration time;From Registration time;From Registration time;From Registration time;INVDL00005 INVDLACK00006
+From Requested delivery date;From Requested delivery date;From Requested delivery date;From Requested delivery date;From Requested delivery date;From Requested delivery date;IBOL00007
+Fulfillment order group;Fulfillment order group;Fulfillment order group;Groupe d'ordres d'accomplissement;Fulfillment order group;Fulfillment order group;FWCS_FFO00001
+Fulfillment order stage;Fulfillment-Auftragsstufe;Fulfillment order stage;Phase de l'ordre de sortie de stock;Fulfillment order stage;Fulfillment order stage;FWCS_FFOACK00001
+Fulfillment order;Fulfillment-Auftrag;Orden fulfillment;Ordre d'accomplissement;Pedido de fulfillment;Ordine di fulfillment;FWCS_FFO00001 FWCS_FFOACK00001 FWCS_FFOCANCEL00001 FWCS_FFODEST00001 FWCS_FFODESTCANCEL00001 FWCS_FFOFINALIZE00001 FWCS_FFOITEMLINE00001 FWCS_FFOITEMLINECANCEL00001 FWCS_FFOITEMLINEFINALIZE00001 FWCS_FFOSTATIONLINE00001 FWCS_FFOSTATIONLINECANCEL00001 FWCS_FFOSTATIONLINEFINISH00001
+Full;Voll;Lleno;Plein;Cheio;Pieno;FWCS_FFOACK00001
+GLN;GLN;GLN;GLN;GLN;GLN;CONSIGNMENTADDRACK00008 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003
+GTIN verification interval IG;GTIN verification interval IG;GTIN verification interval IG;GTIN verification interval IG;GTIN verification interval IG;GTIN verification interval IG;ITEM00012
+GTIN verification interval unit IG;GTIN verification interval unit IG;GTIN verification interval unit IG;GTIN verification interval unit IG;GTIN verification interval unit IG;GTIN verification interval unit IG;ITEM00012
+GTIN verification kind IG;GTIN verification kind IG;GTIN verification kind IG;GTIN verification kind IG;GTIN verification kind IG;GTIN verification kind IG;ITEM00012
+Gender;Geschlecht;Género;Sexe;Sexo;Genere;SYSUSER00007
+Goods category;Warengruppe;Grupo de mercancías;Groupe de marchandises;Categoria de mercadorias;Gruppo di merci;INVDL00005 INVDLACK00006 ITEM00012
+Goods owner;Wareneigentümer;Propietario de las mercancías;Propriétaire de la marchandise;Proprietário da mercadoria;Proprietario della merce;ADVISEDLULINE00009 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Goods value unit;Goods value unit;Goods value unit;Goods value unit;Goods value unit;Goods value unit;ITEM00012
+Goods value;Warenwert;Valor de mercancías;Valeur de la marchandise;Valor de mercadoria;Valore della merce;ITEM00012
+Goods volume unit;Goods volume unit;Goods volume unit;Goods volume unit;Goods volume unit;Goods volume unit;LOADLUACK00011
+Goods volume;Warenvolumen;Volumen de mercancía;Volume de la marchandise;Volume de mercadorias;Volume merce;LOADLUACK00011
+Gross weight unit;Gross weight unit;Gross weight unit;Gross weight unit;Gross weight unit;Gross weight unit;ADVISEDLU00012 ADVISEDLULINE00009 IBDLUACK00007 IBDLUDETAILACK00009 ITEMQTYUNIT00008 LOADLUACK00011 OBDLUACK00008 OBDLUDETAILACK00009 SHIPMENTLUACK00003 SHIPMENTLUDETAILACK00002
+Gross weight;Bruttogewicht;Peso bruto;Poids brut;Preso bruto;Peso lordo;ADVISEDLU00012 ADVISEDLULINE00009 FWCS_FFOCONVEYORSTATIONACK0001 FWCS_FFOSTATIONLINEACK00001 IBDLUACK00007 IBDLUDETAILACK00009 ITEMQTYUNIT00008 LOADLUACK00011 OBDLUACK00008 OBDLUDETAILACK00009 SHIPMENTLUACK00003 SHIPMENTLUDETAILACK00002
+Group by BBD grouping;Group by BBD grouping;Group by BBD grouping;Group by BBD grouping;Group by BBD grouping;Group by BBD grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by Batch grouping;Group by Batch grouping;Group by Batch grouping;Group by Batch grouping;Group by Batch grouping;Group by Batch grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 01 grouping;Group by CSIA 01 grouping;Group by CSIA 01 grouping;Group by CSIA 01 grouping;Group by CSIA 01 grouping;Group by CSIA 01 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 02 grouping;Group by CSIA 02 grouping;Group by CSIA 02 grouping;Group by CSIA 02 grouping;Group by CSIA 02 grouping;Group by CSIA 02 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 03 grouping;Group by CSIA 03 grouping;Group by CSIA 03 grouping;Group by CSIA 03 grouping;Group by CSIA 03 grouping;Group by CSIA 03 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 04 grouping;Group by CSIA 04 grouping;Group by CSIA 04 grouping;Group by CSIA 04 grouping;Group by CSIA 04 grouping;Group by CSIA 04 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 05 grouping;Group by CSIA 05 grouping;Group by CSIA 05 grouping;Group by CSIA 05 grouping;Group by CSIA 05 grouping;Group by CSIA 05 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 06 grouping;Group by CSIA 06 grouping;Group by CSIA 06 grouping;Group by CSIA 06 grouping;Group by CSIA 06 grouping;Group by CSIA 06 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 07 grouping;Group by CSIA 07 grouping;Group by CSIA 07 grouping;Group by CSIA 07 grouping;Group by CSIA 07 grouping;Group by CSIA 07 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 08 grouping;Group by CSIA 08 grouping;Group by CSIA 08 grouping;Group by CSIA 08 grouping;Group by CSIA 08 grouping;Group by CSIA 08 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 09 grouping;Group by CSIA 09 grouping;Group by CSIA 09 grouping;Group by CSIA 09 grouping;Group by CSIA 09 grouping;Group by CSIA 09 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 10 grouping;Group by CSIA 10 grouping;Group by CSIA 10 grouping;Group by CSIA 10 grouping;Group by CSIA 10 grouping;Group by CSIA 10 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 11 grouping;Group by CSIA 11 grouping;Group by CSIA 11 grouping;Group by CSIA 11 grouping;Group by CSIA 11 grouping;Group by CSIA 11 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 12 grouping;Group by CSIA 12 grouping;Group by CSIA 12 grouping;Group by CSIA 12 grouping;Group by CSIA 12 grouping;Group by CSIA 12 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 13 grouping;Group by CSIA 13 grouping;Group by CSIA 13 grouping;Group by CSIA 13 grouping;Group by CSIA 13 grouping;Group by CSIA 13 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 14 grouping;Group by CSIA 14 grouping;Group by CSIA 14 grouping;Group by CSIA 14 grouping;Group by CSIA 14 grouping;Group by CSIA 14 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 15 grouping;Group by CSIA 15 grouping;Group by CSIA 15 grouping;Group by CSIA 15 grouping;Group by CSIA 15 grouping;Group by CSIA 15 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 16 grouping;Group by CSIA 16 grouping;Group by CSIA 16 grouping;Group by CSIA 16 grouping;Group by CSIA 16 grouping;Group by CSIA 16 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 17 grouping;Group by CSIA 17 grouping;Group by CSIA 17 grouping;Group by CSIA 17 grouping;Group by CSIA 17 grouping;Group by CSIA 17 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 18 grouping;Group by CSIA 18 grouping;Group by CSIA 18 grouping;Group by CSIA 18 grouping;Group by CSIA 18 grouping;Group by CSIA 18 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 19 grouping;Group by CSIA 19 grouping;Group by CSIA 19 grouping;Group by CSIA 19 grouping;Group by CSIA 19 grouping;Group by CSIA 19 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by CSIA 20 grouping;Group by CSIA 20 grouping;Group by CSIA 20 grouping;Group by CSIA 20 grouping;Group by CSIA 20 grouping;Group by CSIA 20 grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by Client grouping;Group by Client grouping;Group by Client grouping;Group by Client grouping;Group by Client grouping;Group by Client grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by Cross Docking number grouping;Group by Cross Docking number grouping;Group by Cross Docking number grouping;Group by Cross Docking number grouping;Group by Cross Docking number grouping;Group by Cross Docking number grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by Goods owner grouping;Group by Goods owner grouping;Group by Goods owner grouping;Group by Goods owner grouping;Group by Goods owner grouping;Group by Goods owner grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by Inbound delivery line grouping;Group by Inbound delivery line grouping;Group by Inbound delivery line grouping;Group by Inbound delivery line grouping;Group by Inbound delivery line grouping;Group by Inbound delivery line grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by LU compartment grouping;Group by LU compartment grouping;Group by LU compartment grouping;Group by LU compartment grouping;Group by LU compartment grouping;Group by LU compartment grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by LU layout grouping;Group by LU layout grouping;Group by LU layout grouping;Group by LU layout grouping;Group by LU layout grouping;Group by LU layout grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by LU-ID grouping;Group by LU-ID grouping;Group by LU-ID grouping;Group by LU-ID grouping;Group by LU-ID grouping;Group by LU-ID grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by Production date grouping;Group by Production date grouping;Group by Production date grouping;Group by Production date grouping;Group by Production date grouping;Group by Production date grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by Reservation number grouping;Group by Reservation number grouping;Group by Reservation number grouping;Group by Reservation number grouping;Group by Reservation number grouping;Group by Reservation number grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by Storage location grouping;Group by Storage location grouping;Group by Storage location grouping;Group by Storage location grouping;Group by Storage location grouping;Group by Storage location grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by System partner stock group grouping;Group by System partner stock group grouping;Group by System partner stock group grouping;Group by System partner stock group grouping;Group by System partner stock group grouping;Group by System partner stock group grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Group by Warehouse location grouping;Group by Warehouse location grouping;Group by Warehouse location grouping;Group by Warehouse location grouping;Group by Warehouse location grouping;Group by Warehouse location grouping;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Hazard identification number;Nummer zur Kennzeichnung der Gefahr;Número de identificación de peligro;Numéro d'identification du danger;Número de identificação de perigo;Numero d'identificazione del pericolo;DANGGOODS00009
+Height (max.);Höhe (max.);Altura (máx.);Hauteur (max.);Altura (máx.);Altezza (max.);ASRS_ADVISEDLU00001
+Height (min.);Höhe (min.);Altura (mín.);Hauteur (min.);Altura (mín.);Altezza (min.);ASRS_ADVISEDLU00001
+Height unit;Height unit;Height unit;Height unit;Height unit;Height unit;FWCS_PACKAGINGVERSION00001 ITEMQTYUNIT00008
+Height;Höhe;Altura;Hauteur;Altura;Altezza;FWCS_PACKAGINGVERSION00001 ITEMQTYUNIT00008
+ID;ID;ID;ID;ID;ID;STOCKACK00009 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Inbound delivery System partner;Inbound delivery System partner;Inbound delivery System partner;Inbound delivery System partner;Inbound delivery System partner;Inbound delivery System partner;ADVISEDLULINE00009 IBDLUDETAILACK00009 LOADLUDETAILACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008
+Inbound delivery line type;Anlieferungszeilentyp;Tipo de línea de entrega;Type de la ligne de livraison;Tipo de linha de recebimento;Tipo di riga della consegna in arrivo;IBDL00006 IBDLACK00006
+Inbound delivery line;Anlieferungszeile;Línea de entrega;Ligne de livraison;Linha de recebimento;Riga della consegna in arrivo;IBDL2IBOLACK00006 IBDLACK00006 IBDLDETAILACK00006 IBDLDIFFCODEACK00005 IBDLEXTREFACK00007 IBDLUDETAILACK00009 LOADLUDETAILACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008
+Inbound delivery number;Anlieferungsnummer;Número de entrega;Numéro de livraison;Número de recebimento;Numero della consegna in arrivo;ADVISEDLULINE00009 IBD00008 IBDACK00012 IBDEXTREF00006 IBDEXTREFACK00007 IBDL00006 IBDL2IBOLACK00006 IBDLACK00006 IBDLDETAILACK00006 IBDLDIFFCODEACK00005 IBDLEXTREF00006 IBDLEXTREFACK00007 IBDLOADAIDACK00004 IBDLTEXT00001 IBDLUACK00007 IBDLUDETAILACK00009 IBDPARTNER00008 IBDPARTNERACK00008 IBDTEXT00001 LOADLUDETAILACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008
+Inbound delivery partner role;Anlieferungspartnerrolle;Papel de socio de entrega;Rôle de partenaire de livraison;Papel de parceiro de recebimento;Ruolo del partner della consegna in arrivo;IBDPARTNER00008 IBDPARTNERACK00008
+Inbound delivery type;Anlieferungstyp;Tipo de entrega;Type de livraison;Tipo de recebimento;Tipo di consegna in arrivo;IBD00008 IBDACK00012
+Inbound delivery;Anlieferung;Entrega;Livraison;Recebimento;Consegna in arrivo;LAACCOUNTENTRYACK00001
+Inbound order line type;WE-Auftragszeilentyp;Tipo de línea de orden RM;Type de la ligne d'ordre d'entrée de marchandises;Tipo de linha de pedidos de EM;Tipo di riga d'ordine IM;IBOL00007 IBOLACK00006
+Inbound order line;WE-Auftragszeile;Línea de orden RM;Ligne d'ordre d'entrée de marchandises;Linha de pedidos de EM;Riga d'ordine IM;IBDL2IBOLACK00006 IBOLACK00006 IBOLDIFFCODEACK00005 IBOLEXTREFACK00007
+Inbound order number;WE-Auftragsnummer;Número de orden RM;Numéro d'ordre EM;Número de pedidos de EM;Numero dell'ordine IM;IBDL2IBOLACK00006 IBO00008 IBOACK00008 IBOEXTREF00006 IBOEXTREFACK00006 IBOL00007 IBOLACK00006 IBOLDIFFCODEACK00005 IBOLEXTREF00006 IBOLEXTREFACK00007 IBOLTEXT00001 IBOPARTNER00008 IBOPARTNERACK00008 IBOTEXT00001
+Inbound order partner role;WE-Auftragspartnerrolle;Papel de socio de la orden RM;Rôle de partenaire de l'ordre d'entrée de marchandises;Papel de parceiro de pedidos de EM;Ruolo del partner dell'ordine IM;IBOPARTNER00008 IBOPARTNERACK00008
+Inbound order type;WE-Auftragstyp;Tipo de orden RM;Type d'ordre d'entrée de marchandises;Tipo de pedidos de EM;Tipo di ordine IM;IBO00008 IBOACK00008
+Include zero quantities;Nullmengen einschließen;Incluir cantidades cero;Inclure les quantités zéro;Incluir quantidades zero;Includi quantità a zero;STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Incoming goods area;Wareneingangsbereich;Zona de recepción de mercancías;Zone d'entrée de marchandises;Área de entrada de mercadorias;Area d'ingresso merci;ADVISEDLU00012 IBD00008 ITEMWHLOC00005
+Instructions for portable tanks and bulk containers;Anweisungen für ortsbewegliche Tanks und Schüttgut-Container;Instrucciones para cisternas portátiles y contenedores para granel;Instructions pour Citernes mobiles et conteneurs pour vrac;Instruções para cisternas móveis e contentores para granel;Istruzioni per cisterne mobili e container per il trasporto alla rinfusa;DANGGOODS00009
+Inventory area;Inventurbereich;Zona de inventario;Zone d'inventaire;Área de inventário;Area di inventario;INVDL00005 INVDLACK00006
+Inventory demand line;Inventurbedarfszeile;Línea de solicitud de inventario;Ligne de besoin d'inventaire;Linha de necessidade de inventário;Riga di richiesta inventario;INVCCACK00007 INVDLACK00006 STOCKACK00009
+Inventory demand number;Inventurbedarfsnummer;Número de solicitud de inventario;Numéro du besoin d'inventaire;Número da necessidade de inventário;Numero della richiesta inventario;INVCCACK00007 INVD00007 INVDACK00009 INVDLTEXT00001 INVDTEXT00001 STOCKACK00009
+Inventory demand partner role;Inventurbedarf Partnerrolle;Función de socio de necesidad de inventario;Rôle de partenaire du besoin d'inventaire;Papel de parceiro da necessidade de inventário;Ruolo partner richiesta inventario;INVDPARTNER00007
+Inventory demand type;Inventurbedarfstyp;Tipo de solicitud de inventario;Type de besoin d'inventaire;Tipo de necessidade de inventário;Tipo di richiesta inventario;INVD00007 INVDACK00009
+Inventory demand;Inventurbedarf;solicitud de inventario;Besoin d'inventaire;Necessidade de inventário;Richiesta inventario;INVDENDACK00005 INVDL00005 INVDLACK00006 INVDPARTNER00007 STOCKADJ00008
+Inventory error description;Inventurfehlerbeschreibung;Descripción del error de inventario;Désignation de l'erreur d'inventaire;Descrição de erro de inventário;Descrizione dell'errore di inventario;INVCCACK00007
+Inventory error kind;Art des Inventurfehlers;Tipo de error de inventario;Type d'erreur d'inventaire;Tipo de erro de inventário;Tipo di errore di inventario;INVCCACK00007
+Is sales quantity unit;Ist Verkaufsmengeneinheit;Es unidad de medida de venta;Est unité de quantité de vente;É unidade de quantidade de vendas;È l'unità quantitativa di vendita;ITEMQTYUNIT00008
+Item Item number;Item Item number;Item Item number;Item Item number;Item Item number;Item Item number;REPLACEMENTITEM00005
+Item Variant;Item Variant;Item Variant;Item Variant;Item Variant;Item Variant;REPLACEMENTITEM00005
+Item alias kind;Artikel-Aliasart;Tipo de artículo alias;Le type d'article alias;Tipo de adicional de item;Tipo di alias di articolo;FWCS_ITEMALIAS00001 ITEMALIAS00006
+Item alias number;Artikel-Aliasnummer;Número de artículo alias;Le numéro d'article alias;Número de adicional de item;Numero alias di articolo;FWCS_ITEMALIAS00001 ITEMALIAS00006
+Item class;Artikelklasse;Clase de artículo;Classe d'article;Classe de item;Classe di articolo;ITEM00012
+Item description 2;Artikelbezeichnung 2;Denominación de artículo 2;Désignation d'article 2;Descrição de item 2;Descrizione dell'articolo 2;FWCS_ITEMDESC00001 ITEMDESC00005
+Item description;Artikelbezeichnung;Denominación del artículo;La désignation d'article;Descrição de item;Descrizione dell'articolo;FWCS_ITEMDESC00001 ITEMDESC00005
+Item equivalence period unit;Item equivalence period unit;Item equivalence period unit;Item equivalence period unit;Item equivalence period unit;Item equivalence period unit;ITEM00012
+Item equivalence period;Artikelgleichwertigkeitsdauer;Período de equivalencia del artículo;Fenêtre temporelle d'équivalence;Período de equivalência de itens;Periodo di equivalenza degli articoli;ITEM00012
+Item kind;Artikelart;Tipo de artículo;Type d'article;Tipo de item;Tipo di articolo;INVDL00005 INVDLACK00006
+Item number;Artikelnummer;Número de artículo;Le numéro d'article;Número de item;Numero dell'articolo;ADVISEDLULINE00009 ASO00001 DANGGOODS00009 DANGGOODSDESC00006 FWCS_FFOITEMLINE00001 FWCS_FFOITEMLINEACK00001 FWCS_FFOPICKACK00001 FWCS_ITEM00001 FWCS_ITEMALIAS00001 FWCS_ITEMDESC00001 FWCS_PACKAGINGVERSION00001 FWCS_PICKINGLOCASSIGNMENT00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLOADAIDACK00004 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 ITEM00012 ITEMABCCLASSIFICATION00006 ITEMALIAS00006 ITEMDESC00005 ITEMQTYUNIT00008 ITEMWHLOC00005 KIT00001 KITCOMPONENT00001 KITCONSUMABLES00001 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLOADAIDACK00004 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Item type;Artikeltyp;Tipo de artículo;Type d'article;Tipo de item;Tipo di articolo;ITEM00012
+Item;Artikel;Artículo;Article;Item;Articolo;ASOACK00001 ASOCONSUMABLES00001
+Key;Schlüssel;Clave;Clé;Legenda;Nome;IBDEXTREF00006 IBDEXTREFACK00007 IBDLEXTREF00006 IBDLEXTREFACK00007 IBOEXTREF00006 IBOEXTREFACK00006 IBOLEXTREF00006 IBOLEXTREFACK00007 OBDEXTREF00006 OBDEXTREFACK00006 OBDLEXTREF00006 OBDLEXTREFACK00006 OBOEXTREF00006 OBOLEXTREF00006
+Kind of address;Art der Adresse;Tipo de dirección;Type d'adresse;Tipo de endereço;Tipo di indirizzo;CONSIGNMENTADDRACK00008 PARTNERADDR00007
+Kit component item number;Setkomponentenartikelnummer;Número de artículo de componente de kit;Numéro d’article du composant de kit;Número de item de componente de kit;Numero di articolo del componente del kit;ASOCOMPONENT00001 KITCOMPONENT00001
+Kit component number;Setkomponentennummer;Número de componente de kit;Numéro du composant de kit;Número de componente de kit;Numero di componente del kit;ASOCOMPONENT00001 KITCOMPONENT00001
+Kit component variant;Setkomponentenvariante;Variante de componente de kit;Variante du composant de kit;Variante de componente de kit;Variante del componente del kit;ASOCOMPONENT00001 KITCOMPONENT00001
+LA account entry number;Eintragsnummer LHM-Konto;Número de entrada de cuenta MAT;Numéro d’entrée de compte AC;Número de entrada de conta de MAT;Numero voce account BdC;LAACCOUNTENTRYACK00001
+LA exchange state;LHM-Tauschstatus;Estado de cambio de MAT;État d'échange d'AC;Status da troca de MAT;Stato di scambio BdC;IBDACK00012
+LU compartment;LE-Fach;Compartimento de UT;Compartiment UC;Compartimento da UT;Compartimento UdC;STOCKACK00009
+LU kind;LE-Art;Tipo de UT;Type d'UC;Tipo de UT;Tipo di unità di carico;LOADLUACK00011
+LU layout;LE-Layout;Diseño UT;Configuration d'UC;Layout da UT;Layout UdC;STOCKACK00009
+LU origin;LE-Ursprung;Origen de UT;L'origine de l'UC;UT de origem;Origine unità di carico;ADVISEDLU00012
+LU-ID of advised LU;LE-ID der avisierten LE;ID UT de UT avisada;ID UC de l’UC notifiée;ID-UT da UT anunciada;ID UdC dell'UdC preannunciata;ADVISEDLU00012 ADVISEDLULINE00009
+LU-ID;LE-ID;ID UT;ID UC;ID-UT;ID UdC;ASRS_ADVISEDLU00001 ASRS_ADVISEDLUACK00001 ASRS_LUATTRCHANGE00001 ASRS_RELOCATIONREQ00001 FWCS_FFO00001 FWCS_FFOACK00001 IBDLUACK00007 IBDLUDETAILACK00009 INVDL00005 INVDLACK00006 LOADLUACK00011 OBDLUACK00008 OBDLUDETAILACK00009 SHIPMENTLUACK00003 SHIPMENTLUDETAILACK00002 SHIPMENTLUOBOACK00001 SOL00001 STOCKACK00009 STOCKADJ00008
+Labels;Gefahrzettel;Etiquetas;Étiquettes;Etiquetas;Etichette;DANGGOODS00009
+Language;Sprache;Idioma;Langage;Idioma;Lingua;CONSIGNMENTADDRACK00008 DANGGOODSDESC00006 FWCS_ITEMDESC00001 IBDLTEXT00001 IBDPARTNER00008 IBDPARTNERACK00008 IBDTEXT00001 IBOLTEXT00001 IBOPARTNER00008 IBOPARTNERACK00008 IBOTEXT00001 INVDLTEXT00001 INVDPARTNER00007 INVDTEXT00001 ITEMDESC00005 OBDLTEXT00001 OBDPARTNER00008 OBDPARTNERACK00008 OBDTEXT00001 OBOLTEXT00001 OBOPARTNER00008 OBOTEXT00001 PARTNERADDR00007 SHIPMENTLUACK00003
+Last inventory time of loading unit;Letzter Inventurtermin für Ladeeinheit;Último momento de inventario de la unidad de transporte;Dernière date d'inventaire pour l'unité de chargement;Último prazo de inventário da unidade de transporte;Ultimo tempo di inventario dell'unità di carico;INVDL00005 INVDLACK00006
+Last inventory time of stock object;Letzter Inventurtermin für Bestandsobjekt;Ùltimo momento de inventario del objeto de existencias;Heure du dernier inventaire de l'objet du stock;Último prazo de inventário do objeto de estoque;Ultimo tempo di inventario per lo stock object;INVDL00005 INVDLACK00006
+Last inventory time of storage location;Letzter Inventurzeitpunkt Lagerplatz;Último momento de inventario de la ubicación;Heure du dernier inventaire de l'emplacement;Último prazo de inventário do local de depósito;Ultimo tempo di inventario per il posto di stoccaggio;INVDL00005 INVDLACK00006
+Last item inventory time ;Letzter Artikelinventurtermin ;Último momento de inventario de artículo;Dernière date d'inventaire d'article ;Última data de inventário de item;Ultimo tempo di inventario articoli ;INVDL00005 INVDLACK00006
+Last name;Nachname;Apellidos;Nom de famille;Sobrenome;Cognome;SYSUSER00007
+Layer;Ebene;Capa;Couche;Camada;Livello;ITEMQTYUNIT00008
+Length unit;Length unit;Length unit;Length unit;Length unit;Length unit;FWCS_PACKAGINGVERSION00001 ITEMQTYUNIT00008
+Length;Länge;Longitud;Longueur;Comprimento;Lunghezza;FWCS_PACKAGINGVERSION00001 ITEMQTYUNIT00008
+Limited Quantities;Begrenzte Mengen;Cantidades limitadas;Quantités limitées;Quantidades limitadas;Quantità limitate;DANGGOODS00009
+Limits # Dangerous goods points (actual);Limits # Dangerous goods points (actual);Limits # Dangerous goods points (actual);Limits # Dangerous goods points (actual);Limits # Dangerous goods points (actual);Limits # Dangerous goods points (actual);LOADACK00011
+Line;Zeile;Línea;Ligne;Linha;Riga;INSPMLINEACK00001 INVCCACK00007
+Load LU-ID;Ladungs-LE-ID;ID UT de tour;ID-UC de tournée;ID-UT de carregamento;ID UdC di giro;LOADLU00005 LOADLUACK00011 LOADLUDETAILACK00009
+Load loading unit kind;Ladungsladeeinheitenart;Tipo de unidad de transporte de tour;Type d'unité de chargement de tournée;Tipo de unidade de transporte de carga;Tipo di unità di carico di giro;LOADLUACK00011
+Load progress state;Ladungsfortschrittstatus;Estado de progreso de cargamento;État de progression de la tournée;Status do progresso de carregamento;Stato avanzamento giro;LOADACK00011
+Load progress;Ladungsfortschritt;Progreso de cargamento;Progression de la tournée;Progresso de carregamento;Avanzamento del giro;LOADACK00011
+Load type;Ladungstyp;Tipo de carga;Type de tournée;Tipo de carregamento;Tipo di giro;LOAD00008 LOADACK00011
+Load;Laden;Carga;Charger;Carregar;Carica;CONSIGNMENT00007 CONSIGNMENTACK00012 LOAD00008 LOADACK00011 LOADTRANSPORTVEHICLE00006 LOADTRANSPORTVEHICLEACK00006
+Load;Ladung;Tour;Tournée;Tour;Giro;CONSIGNMENTADDRACK00008
+Loading aid account;Ladehilfsmittelkonto;Cuenta de medios auxiliares de transporte;Compte d'auxiliaire de chargement;Conta de meios auxiliares de transporte;Account della base di carico;LAACCOUNTENTRYACK00001 PARTNER00008
+Loading aid ticket;Ladehilfsmittelticket;Ticket de medios auxiliares de transporte;Coupon auxiliaire de chargement;Vale de meio auxiliar de transporte;Ticket per la base di carico;LAACCOUNTENTRYACK00001
+Loading aid;Ladehilfsmittel;Medio auxiliar de transporte;Auxiliaire de chargement;Meio auxiliar de transporte;Base di carico;ADVISEDLU00012 ASRS_ADVISEDLU00001 FWCS_FFO00001 IBDLOADAIDACK00004 IBDLUACK00007 LAACCOUNTENTRYACK00001 LOADLUACK00011 OBDLOADAIDACK00004 OBDLUACK00008 SHIPMENTLUACK00003
+Loading sequence;Verladereihenfolge;El orden de carga;Ordre séquentiel du chargement;Sequência de carregamento;Sequenza caricamento;CONSIGNMENT00007 CONSIGNMENTACK00012
+Loading state;Verladestatus;Estado de transporte;État de chargement;Estado de carregamento;Stato di caricamento;OBDACK00011
+Loading time;Verladetermin;Hora de carga;Date et heure de chargement;Tempo de carga;Ora di caricamento;CONSIGNMENT00007 CONSIGNMENTACK00012 OBD00010 OBDACK00011
+Loading unit cubature;Ladeeinheitenkubatur;Cubicación de unidades de transporte;Cubature d'unité de chargement;Cubatura da unidade de transporte;Cubatura dell'unità di carico;ADVISEDLU00012 FWCS_FFO00001 IBDLUACK00007 LOADLUACK00011 OBDLUACK00008 SHIPMENTLUACK00003
+Loading unit height (max.) unit;Loading unit height (max.) unit;Loading unit height (max.) unit;Loading unit height (max.) unit;Loading unit height (max.) unit;Loading unit height (max.) unit;PARTNER00008
+Loading unit height (max.);Ladeeinheitenhöhe (max.);Altura de unidad de transporte (máx.);Hauteur de l'unité de chargement (max.);Altura da unidade de transporte (máx.);Altezza unità di carico (max.);PARTNER00008
+Loading unit weight (max.) unit;Loading unit weight (max.) unit;Loading unit weight (max.) unit;Loading unit weight (max.) unit;Loading unit weight (max.) unit;Loading unit weight (max.) unit;PARTNER00008
+Loading unit weight (max.);Ladeeinheitengewicht (max.);Peso de unidad de transporte (máx.);Poids de l'unité de chargement (max.);Peso da unidade de transporte (máx.);Peso unità di carico (max.);PARTNER00008
+Locked;Gesperrt;Bloqueado;Bloqué;Bloqueado;Bloccato;LOGIN00007
+Login expires on;Login läuft ab am;El login caduca el;Login expire le;O login expira em;Il login scade il;LOGIN00007
+Login;Login;Login;Login;Login;Login;LOGIN00007 LOGIN2ROLE00005
+Lower tolerance Absolute value;Lower tolerance Absolute value;Lower tolerance Absolute value;Lower tolerance Absolute value;Lower tolerance Absolute value;Lower tolerance Absolute value;ITEM00012
+Lower tolerance Percentage;Lower tolerance Percentage;Lower tolerance Percentage;Lower tolerance Percentage;Lower tolerance Percentage;Lower tolerance Percentage;ITEM00012
+Lower tolerance [%];Unterer Toleranzwert [%];Tolerancia inferior [%];Tolérance inférieure [%];Tolerância inferior [%];Tolleranza inferiore [%];IBDL00006 IBOL00007 ITEM00012 OBDL00007 OBDLACK00009 OBOL00007
+Main state;Hauptstatus;Estado principal;État principal;Estado principal;Stato principale;ASOACK00001 ASRS_ADVISEDLUACK00001 IBDACK00012 IBOACK00008 LOADACK00011 OBDACK00011 OBOACK00011
+Master LU-ID;Träger-LE-ID;ID UT portadora;ID UC maître;ID-UT principal;Numero di identificazione dell'unità di carico principale;ADVISEDLU00012 IBDLUACK00007 LOADLUACK00011 OBDLUACK00008 SHIPMENTLUACK00003 STOCKACK00009 STOCKADJ00008
+Master record type;Hauptdatensatztyp;Tipo de registros maestros;Type d'enregistrement de données de base;Tipo de registro mestre;Tipo di record di dati anagrafici;INSPMACK00001
+Max. remaining shelf life IG;Max. remaining shelf life IG;Max. remaining shelf life IG;Max. remaining shelf life IG;Max. remaining shelf life IG;Max. remaining shelf life IG;ITEM00012
+Max. remaining shelf life unit IG;Max. remaining shelf life unit IG;Max. remaining shelf life unit IG;Max. remaining shelf life unit IG;Max. remaining shelf life unit IG;Max. remaining shelf life unit IG;ITEM00012
+Middle name;Zweiter Vorname;Segundo nombre;Second prénom;Nome do meio;Secondo nome;SYSUSER00007
+Min. remaining shelf life IG;Min. remaining shelf life IG;Min. remaining shelf life IG;Min. remaining shelf life IG;Min. remaining shelf life IG;Min. remaining shelf life IG;ITEM00012
+Min. remaining shelf life unit IG;Min. remaining shelf life unit IG;Min. remaining shelf life unit IG;Min. remaining shelf life unit IG;Min. remaining shelf life unit IG;Min. remaining shelf life unit IG;ITEM00012
+Minimum stock level (BQU);Minimale Bestandsebene (BME);Nivel de existencias mínimo (UE);Taux minimal de stock (UQB);Nível de estoque mínimo (UBQ);Livello di scorta minimo (UQB);ITEMWHLOC00005
+Mixed packing provisions;Zusammenpackung;Disposiciones relativas al embalaje en común;Dispositions relatives à l'emballage en commun;Disposições relativas à embalagem em comum;Disposizioni concernenti l'imballaggio in comune;DANGGOODS00009
+Monitoring interval IG;Monitoring interval IG;Monitoring interval IG;Monitoring interval IG;Monitoring interval IG;Monitoring interval IG;ITEM00012
+Monitoring interval unit IG;Monitoring interval unit IG;Monitoring interval unit IG;Monitoring interval unit IG;Monitoring interval unit IG;Monitoring interval unit IG;ITEM00012
+Monitoring kind IG;Monitoring kind IG;Monitoring kind IG;Monitoring kind IG;Monitoring kind IG;Monitoring kind IG;ITEM00012
+Name 2;Name 2;Nombre 2;Nom 2;Nome 2;Nome 2;CONSIGNMENTADDRACK00008 FWCS_PARTNER00001 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003
+Name 3;Name 3;Nombre 3;Nom 3;Nome 3;Nome 3;CONSIGNMENTADDRACK00008 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003
+Name 4;Name 4;Nombre 4;Nom 4;Nome 4;Nome 4;CONSIGNMENTADDRACK00008 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003
+Name;Name;Nombre;Nom;Nome;Nome;CONSIGNMENTADDRACK00008 FWCS_PARTNER00001 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003
+Numerator;Zähler;Numerador;Numérateur;Numerador;Numeratore;ITEMQTYUNIT00008
+Order time;Bestellzeit;Hora de la orden;Heure de commande;Prazo de pedido;Tempo dell'ordine;IBO00008 IBOACK00008 OBO00009 OBOACK00011
+Ordered LU-ID;Bestellte LE-ID;ID UT pedido;ID UC commandé;ID-UT solicitado;ID UdC ordinata;IBDL00006 IBDLACK00006 IBOL00007 IBOLACK00006 OBDL00007 OBDLACK00009 OBOL00007
+Ordered quantity;Bestellmenge;Cantidad pedida;Quantité commandée;Quantidade encomendada;Quantità ordinata;FWCS_FFOITEMLINE00001 FWCS_FFOITEMLINEACK00001 FWCS_FFOPICKACK00001 IBDL00006 IBDLACK00006 IBOL00007 IBOLACK00006 OBDL00007 OBDLACK00009 OBOL00007
+Origin of gross weight;Quelle des Bruttogewichts;Origen de peso bruto;Origine du poids brut;Origem do peso bruto;Origine del peso lordo;ADVISEDLU00012 IBDLUACK00007 OBDLUACK00008 SHIPMENTLUACK00003
+Outbound delivery block OG;Outbound delivery block OG;Outbound delivery block OG;Outbound delivery block OG;Outbound delivery block OG;Outbound delivery block OG;ITEM00012
+Outbound delivery block;Ausliefersperre;Bloqueo de suministro;Interdiction de livraison;Bloqueio de expedição;Blocco di fornitura;PARTNER00008
+Outbound delivery line type;Auslieferungszeilentyp;Tipo de línea de suministro;Type de la ligne de distribution;Tipo de linha de expedição;Tipo di riga di consegna in uscita;OBDL00007 OBDLACK00009
+Outbound delivery line;Auslieferungszeile;Línea de suministro;Ligne de distribution;Linha de expedição;Riga di consegna in uscita;OBDL2OBOLACK00005 OBDLACK00009 OBDLDETAILACK00008 OBDLDIFFCODEACK00005 OBDLEXTREFACK00006
+Outbound delivery number;Auslieferungsnummer;Número de suministro;Numéro de distribution;Número de expedição;Numero della consegna in uscita;OBD00010 OBDACK00011 OBDEXTREF00006 OBDEXTREFACK00006 OBDL00007 OBDL2OBOLACK00005 OBDLACK00009 OBDLDETAILACK00008 OBDLDIFFCODEACK00005 OBDLEXTREF00006 OBDLEXTREFACK00006 OBDLOADAIDACK00004 OBDLTEXT00001 OBDLUACK00008 OBDLUDETAILACK00009 OBDPARTNER00008 OBDPARTNERACK00008 OBDTEXT00001 SHIPMENTLUACK00003 SHIPMENTLUDETAILACK00002
+Outbound delivery partner role;Auslieferungspartnerrolle;Papel de socio de suministro;Rôle de partenaire de distribution;Papel de parceiro de expedição;Ruolo del partner della consegna in uscita;OBDPARTNER00008 OBDPARTNERACK00008 SHIPMENTLUACK00003
+Outbound delivery type;Auslieferungstyp;Tipo de suministro;Type de distribution;Tipo de expedição;Tipo di consegna in uscita;OBD00010 OBDACK00011
+Outbound delivery;Auslieferung;Suministro;Distribution;Expedição;Consegna in uscita;LAACCOUNTENTRYACK00001
+Outbound order line type;WA-Auftragszeilentyp;Tipo de línea de orden EM;Type d'ordre SM;Tipo de linha de pedido de SM;Tipo di riga d'ordine UM;OBOL00007
+Outbound order line;WA-Auftragszeile;Línea de orden EM;Ligne d'ordre de sortie de marchandises;Linha de pedido de SM;Riga d'ordine UM;OBDL2OBOLACK00005
+Outbound order number;WA-Auftragsnummer;Número de orden EM;Numéro d'ordre de sortie;Número de pedido de SM;Numero dell'ordine UM;OBDL2OBOLACK00005 OBO00009 OBOACK00011 OBOEXTREF00006 OBOL00007 OBOLEXTREF00006 OBOLTEXT00001 OBOPARTNER00008 OBOTEXT00001 SHIPMENTLUOBOACK00001
+Outbound order partner role;WA-Auftragspartnerrolle;Papel de socio de la orden EM;Rôle de partenaire de l'ordre de sortie de marchandises;Papel de parceiro de pedido de SM;Ruolo del partner dell'ordine di uscita merci;OBOPARTNER00008
+Outbound order type;WA-Auftragstyp;Tipo de orden EM;Type d'ordre SM;Tipo de pedido de SM;Tipo di ordine UM;OBO00009 OBOACK00011
+Outgoing goods area;Warenausgangsbereich;Zona de expedición de mercancías;Zone de sortie de marchandises;Área de saída de mercadorias;Area di uscita merci;CONSIGNMENT00007 CONSIGNMENTACK00012 OBD00010 OBDACK00011 SO00001
+Over-delivery allowed IG;Over-delivery allowed IG;Over-delivery allowed IG;Over-delivery allowed IG;Over-delivery allowed IG;Over-delivery allowed IG;ITEM00012
+Over-delivery allowed;Überlieferung erlaubt;Exceso de suministro permitido;Livraison excédentaire autorisée;Fornecimento excessivo permitido;Consegna in eccesso ammessa;PARTNER00008
+Packaging version BQU / WQU;Packaging version BQU / WQU;Packaging version BQU / WQU;Packaging version BQU / WQU;Packaging version BQU / WQU;Packaging version BQU / WQU;INVDL00005 INVDLACK00006
+Packaging version Item number;Packaging version Item number;Packaging version Item number;Packaging version Item number;Packaging version Item number;Packaging version Item number;INVDL00005 INVDLACK00006
+Packaging version Variant;Packaging version Variant;Packaging version Variant;Packaging version Variant;Packaging version Variant;Packaging version Variant;INVDL00005 INVDLACK00006
+Packing group;Verpackungsgruppe;Grupo de embalaje;Groupe d'emballage;Grupo de embalagem;Gruppo d'imballaggio;DANGGOODS00009 LOADLUDETAILACK00009 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 SHIPMENTLUDETAILACK00002
+Packing instructions;Verpackungsanweisungen;Instrucciones de embalaje;Instructions d'emballage;Instruções de embalagem;Istruzioni di imballaggio;DANGGOODS00009
+Packing sequence;Packreihenfolge;Orden de empaquetado;Séquence d’emballage;Sequência de empacotamento;Sequenza di imballaggio;ITEM00012
+Partner category;Partnergruppe;Categoría de socio;Groupe du partenaire;Categoria de parceiro;Gruppo di partner;PARTNER00008
+Partner item description 2;Partnerartikelbezeichnung 2;Denominación de artículo del socio 2;Désignation d'article de partenaire 2;Descrição de item do parceiro 2;Descrizione dell'articolo del partner 2;PARTNERITEM00005
+Partner item description;Partnerartikelbezeichnung;Denominación de artículo del socio;Désignation d'article partenaire;Descrição de item do parceiro;Descrizione dell'articolo del partner;PARTNERITEM00005
+Partner item number;Partnerartikelnummer;Número de artículo del socio;Numéro d'article partenaire;Número de item do parceiro;Numero dell'articolo del partner;PARTNERITEM00005
+Partner;Partner;Socio;Partenaire;Parceiro;Partner;ASO00001 ASOPARTNER00001 CONSIGNMENTADDRACK00008 FWCS_FFO00001 FWCS_PARTNER00001 IBDLOADAIDACK00004 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 LAACCOUNTENTRYACK00001 OBDLOADAIDACK00004 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNER00008 PARTNERADDR00007 PARTNERITEM00005 SHIPMENTLUACK00003
+Password changed on;Passwort geändert am;Se ha cambiado la contraseña el;Mot de passe modifié le;Senha alterada em;Password modificata il;LOGIN00007
+Password policy;Passwortrichtlinie;Password policy;Politique de mot de passe;Password policy;Password policy;LOGIN00007
+Password;Passwort;Contraseña;Mot de passe;Senha;Password;LOGIN00007
+Phone;Telefon;Teléfono;Téléphone;Telefone;Telefono;CONSIGNMENTADDRACK00008 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003 SYSUSER00007
+Physical warehouse area;Physischer Lagerbereich;Zona de almacén física;Zone d'entrepôt physique;Área física de depósito;Area magazzino fisica;INVDL00005 INVDLACK00006
+Picking area;Kommissionierbereich;Zona de picking;Zone de prélèvement;Área de separação de pedidos;Area di picking;FWCS_FFOPICKACK00001 FWCS_PICKINGLOCASSIGNMENT00001
+Picking group;Kommissioniergruppe;Grupo de picking;Groupe de prélèvement;Grupo de separação de pedidos;Gruppo di picking;LOADLUACK00011 OBDL00007 OBOL00007
+Picking location assignment;Kommissionierplatzzuordnung;Asignación de ubicaciones de picking;Affectation des postes de prélèvement;Atribuição do local de separação de pedidos;Assegnazione dei posti di picking;INVDL00005 INVDLACK00006
+Picking state;Kommissionierstatus;Estado de picking;État de prélèvement;Estado de separação de pedidos;Stato di picking;OBDACK00011
+Plan load Departure time;Plan load Departure time;Plan load Departure time;Plan load Departure time;Plan load Departure time;Plan load Departure time;OBD00010
+Plan load Load template;Plan load Load template;Plan load Load template;Plan load Load template;Plan load Load template;Plan load Load template;OBD00010
+Plan load Load;Plan load Load;Plan load Load;Plan load Load;Plan load Load;Plan load Load;OBD00010
+Plan load Loading sequence;Plan load Loading sequence;Plan load Loading sequence;Plan load Loading sequence;Plan load Loading sequence;Plan load Loading sequence;OBD00010
+Plan load System partner;Plan load System partner;Plan load System partner;Plan load System partner;Plan load System partner;Plan load System partner;OBD00010
+Plan load Unloading sequence;Plan load Unloading sequence;Plan load Unloading sequence;Plan load Unloading sequence;Plan load Unloading sequence;Plan load Unloading sequence;OBD00010
+Plan loading unit stage;Plan-Ladeeinheiten-Stufe;Etapa de unidad de transporte planificada;Stage d'unité de chargement de planification;Etapa do plano da unidade de transporte;Fase unità di carico pianificata;LOADLUACK00011
+Planned # Lines;Planned # Lines;Planned # Lines;Planned # Lines;Planned # Lines;Planned # Lines;OBDACK00011
+Planned # Picking plan LUs;Planned # Picking plan LUs;Planned # Picking plan LUs;Planned # Picking plan LUs;Planned # Picking plan LUs;Planned # Picking plan LUs;OBDACK00011
+Planned # Primary lines;Planned # Primary lines;Planned # Primary lines;Planned # Primary lines;Planned # Primary lines;Planned # Primary lines;OBDACK00011
+Planned # Shipment plan LUs;Planned # Shipment plan LUs;Planned # Shipment plan LUs;Planned # Shipment plan LUs;Planned # Shipment plan LUs;Planned # Shipment plan LUs;OBDACK00011
+Planned # WQU;Planned # WQU;Planned # WQU;Planned # WQU;Planned # WQU;Planned # WQU;OBDACK00011
+Planned # Whole plan LUs;Planned # Whole plan LUs;Planned # Whole plan LUs;Planned # Whole plan LUs;Planned # Whole plan LUs;Planned # Whole plan LUs;OBDACK00011
+Planned Total dangerous goods points;Planned Total dangerous goods points;Planned Total dangerous goods points;Planned Total dangerous goods points;Planned Total dangerous goods points;Planned Total dangerous goods points;OBDACK00011
+Planned Total gross weight unit;Planned Total gross weight unit;Planned Total gross weight unit;Planned Total gross weight unit;Planned Total gross weight unit;Planned Total gross weight unit;OBDACK00011
+Planned Total gross weight;Planned Total gross weight;Planned Total gross weight;Planned Total gross weight;Planned Total gross weight;Planned Total gross weight;OBDACK00011
+Planned Total volume unit;Planned Total volume unit;Planned Total volume unit;Planned Total volume unit;Planned Total volume unit;Planned Total volume unit;OBDACK00011
+Planned Total volume;Planned Total volume;Planned Total volume;Planned Total volume;Planned Total volume;Planned Total volume;OBDACK00011
+Planned quantity;Planmenge;Cantidad planificada;Quantité planifiée;Quantidade planejada;Quantità pianificata;ASOACK00001
+Planning stage;Planungsstufe;Etapa de planificación;Phase de planification;Fase de planejamento;Fase di pianificazione;OBDACK00011
+Posting key;Buchungsschlüssel;Código de registro;Clé de comptabilisation;Código de reserva;Chiave registrazione;STOCKADJ00008
+Pre-registered LU;Vorerfasste LE;UT preregistrada;UC pré-enregistrée;UT pré-registrada;UdC pregregistrata...;IBDLUDETAILACK00009
+Printing requested;Drucken angefordert;Printing requested;Impression demandée;Printing requested;Printing requested;FWCS_FFO00001
+Priority;Priorität;Prioridad;Priorité;Prioridade;Priorità;CONSIGNMENT00007 CONSIGNMENTACK00012 IBD00008 IBDACK00012 IBO00008 IBOACK00008 INVD00007 OBD00010 OBDACK00011 OBO00009 OBOACK00011
+Production date From;Production date From;Production date From;Production date From;Production date From;Production date From;INVDL00005 INVDLACK00006 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Production date To;Production date To;Production date To;Production date To;Production date To;Production date To;INVDL00005 INVDLACK00006 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Production date registration IG;Production date registration IG;Production date registration IG;Production date registration IG;Production date registration IG;Production date registration IG;ITEM00012
+Production date registration OG;Production date registration OG;Production date registration OG;Production date registration OG;Production date registration OG;Production date registration OG;ITEM00012
+Production date registration;Produktionsdatumsregistrierung;Registro de fecha de producción;Enregistrement de la date de production;Registro de data de fabricação;Registrazione della data di produzione;ITEM00012
+Production date;Produktionsdatum;Fecha de producción;Date de production;Data de produção;Data di produzione;ADVISEDLULINE00009 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008
+Profile identifier;Profil-ID;Identificador del perfil;Identificateur de profil;Identificador de perfil;Identificazione profilo;SYSUSER00007
+Quantity per kit;Menge pro Set;Cantidad por kit;Quantité par kit;Quantidade por kit;Quantità per ogni kit;ASOCOMPONENT00001 KITCOMPONENT00001
+Quantity unit;Mengeneinheit;Unidad de medida;Unité de quantité;Unidade de quantidade;Unità quantitativa;FWCS_ITEMALIAS00001 ITEMALIAS00006 ITEMQTYUNIT00008
+Quantity;Menge;Cantidad;Quantité;Quantidade;Quantità;ADVISEDLULINE00009 ASO00001 IBDLDETAILACK00006 IBDLDIFFCODEACK00005 IBDLUDETAILACK00009 IBOLDIFFCODEACK00005 LAACCOUNTENTRYACK00001 LOADLUDETAILACK00009 OBDLDETAILACK00008 OBDLDIFFCODEACK00005 OBDLUDETAILACK00009 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008
+Reduction allowed;Reduktion erlaubt;Reducción permitida;Réduction autorisée;Redução permitida;Riduzione consentita;OBD00010 OBO00009 PARTNER00008
+Reference number;Referenznummer;Reference number;Numéro de référence;Reference number;Reference number;FWCS_FFO00001 FWCS_FFOACK00001
+Reference quantity unit;Referenzmengeneinheit;Unidad de medida de referencia;Unité de quantité de référence;Unidade de quantidade de referência;Unità quantitativa di riferimento;ITEMQTYUNIT00008
+Region;Region;Región;Région;Região;Regione;CONSIGNMENTADDRACK00008 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003 SYSUSER00007
+Release state;Freigabestatus;Estado de aprobación;État de mise à disposition;Estado de liberação;Stato di approvazione;OBDACK00011 OBOACK00011
+Release;Freigeben;Versión;Validation;Liberar;Approva;ASRS_RETRORDER00001
+Released # Dangerous goods points;Released # Dangerous goods points;Released # Dangerous goods points;Released # Dangerous goods points;Released # Dangerous goods points;Released # Dangerous goods points;OBOACK00011
+Released # Lines;Released # Lines;Released # Lines;Released # Lines;Released # Lines;Released # Lines;OBOACK00011
+Released # Primary lines;Released # Primary lines;Released # Primary lines;Released # Primary lines;Released # Primary lines;Released # Primary lines;OBOACK00011
+Released # WQU;Released # WQU;Released # WQU;Released # WQU;Released # WQU;Released # WQU;OBOACK00011
+Released Total gross weight unit;Released Total gross weight unit;Released Total gross weight unit;Released Total gross weight unit;Released Total gross weight unit;Released Total gross weight unit;OBOACK00011
+Released Total gross weight;Released Total gross weight;Released Total gross weight;Released Total gross weight;Released Total gross weight;Released Total gross weight;OBOACK00011
+Released Total volume unit;Released Total volume unit;Released Total volume unit;Released Total volume unit;Released Total volume unit;Released Total volume unit;OBOACK00011
+Released Total volume;Released Total volume;Released Total volume;Released Total volume;Released Total volume;Released Total volume;OBOACK00011
+Released dual quantity;Freigegebene Dualmenge;Cantidad dual aprobada;Quantité duale validée;Quantidade dual liberada;Quantità duale approvata;IBDLACK00006
+Released quantity;Freigabemenge;Cantidad aprobada;Quantité validée;Quantidade liberada;Quantità approvata;IBDLACK00006 IBOLACK00006 OBDLACK00009
+Remaining shelf life OG;Remaining shelf life OG;Remaining shelf life OG;Remaining shelf life OG;Remaining shelf life OG;Remaining shelf life OG;ITEM00012
+Remaining shelf life check during picking OG;Remaining shelf life check during picking OG;Remaining shelf life check during picking OG;Remaining shelf life check during picking OG;Remaining shelf life check during picking OG;Remaining shelf life check during picking OG;ITEM00012
+Remaining shelf life unit OG;Remaining shelf life unit OG;Remaining shelf life unit OG;Remaining shelf life unit OG;Remaining shelf life unit OG;Remaining shelf life unit OG;ITEM00012
+Remaining shelf life unit;Remaining shelf life unit;Remaining shelf life unit;Remaining shelf life unit;Remaining shelf life unit;Remaining shelf life unit;OBDL00007 OBDLACK00009 OBOL00007
+Remaining shelf life;Resthaltbarkeit;Durabilidad restante;Durée de conservation restante;Vida de prateleira restante;Durata residua;OBDL00007 OBDLACK00009 OBOL00007
+Replacement for line;Ersatz für Zeile;Sustitución para la línea;Remplaçant pour ligne;Substituição para a linha;Sostituzione per la riga;OBDLACK00009
+Replacement goods owner;Ersatzwareneigentümer;Propietario de las mercancías de sustitución;Propriétaire de la marchandise de remplacement;Proprietário da mercadoria substituto;Proprietario della merce di sostituzione;OBDL00007 OBOL00007 PARTNER00008
+Replacement item Item number;Replacement item Item number;Replacement item Item number;Replacement item Item number;Replacement item Item number;Replacement item Item number;REPLACEMENTITEM00005
+Replacement item Variant;Replacement item Variant;Replacement item Variant;Replacement item Variant;Replacement item Variant;Replacement item Variant;REPLACEMENTITEM00005
+Replacement item;Ersatzartikel;Artículo sustitutorio;Article de remplacement;Item substituto;Articolo di sostituzione;OBDL00007 OBOL00007 PARTNER00008
+Replacement stock rating;Ersatzbestandsklassifizierung;Clasificación de existencias de sustitución;Classification de stock de remplacement;Classificação de estoque de reposição;Classificazione della scorta di sostituzione;OBDL00007 OBOL00007 PARTNER00008
+Request number;Anforderungsnummer;Solicitar número;Numéro de demande;Número de solicitação;Numero richiesta;ASRS_LUREPORTREQ00001
+Requested delivery date (from);Requested delivery date (von);Requested delivery date (desde);Requested delivery date (de);Requested delivery date (de);Requested delivery date (da);OBOL00007
+Requested delivery date (to);Requested delivery date (bis);Requested delivery date (hasta);Requested delivery date (à);Requested delivery date (até);Requested delivery date (a);OBOL00007
+Requested shipping category;Angeforderte Versandkategorie;Categoría de envío solicitada;Catégorie d'expédition demandée;Categoria de remessa solicitada;Categoria di spedizione richiesta;OBD00010 OBDACK00011 OBO00009 OBOACK00011
+Requested shipping method;Angeforderte Versandart;Tipo de envío solicitado;Type d'expédition demandé;Tipo de envio solicitado;Tipo di spedizione richiesto;OBD00010 OBO00009 OBOACK00011
+Required loading aid;Erforderliches Ladehilfsmittel;Medio auxiliar de transporte necesario;Auxiliaire de chargement requis;Meio auxiliar de transporte necessário;Base di carico necessaria;ITEM00012
+Reservation number;Reservierungsnummer;Número de reserva;Numéro de réserv.;Número de reserva;Numero prenotazione;ADVISEDLULINE00009 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Retrieval order number;Auslagerauftragsnummer;Retrieval order number;Numéro d'ordre de sortie de stock;Retrieval order number;Retrieval order number;ASRS_RETRORDER00001
+Reviewed;Geprüft;Revisado;Consulté;Revisado;Rivisto;LOAD00008 LOADACK00011
+Role;Rolle;Función;Rôle;Papel;Ruolo;LOGIN2ROLE00005
+Rounding by Rules;Nach Regeln runden;Redondeo según las normas;Arrondir par règles;Arredondamento segundo as regras;Regole di arrotondamento;OBD00010 OBO00009 PARTNER00008
+SCP quantity unit;SCP Mengeneinheit;SCP quantity unit;Unité de quantité de SCP;SCP quantity unit;SCP quantity unit;ITEM00012
+Sequence number;Reihenfolgenummer;Número de secuencia;Numéro d'ordre;Número Sequencial;Numero di sequenza;SOL00001
+Sequence;Reihenfolge;Orden;Ordre séquentiel;Sequência;Sequenza;IBDLTEXT00001 IBDTEXT00001 IBOLTEXT00001 IBOTEXT00001 INVDLTEXT00001 INVDTEXT00001 LOADTRANSPORTVEHICLE00006 LOADTRANSPORTVEHICLEACK00006 OBDLTEXT00001 OBDTEXT00001 OBOLTEXT00001 OBOTEXT00001 REPLACEMENTITEM00005
+Shipment plan LU;Versand-Plan-LE;UT planificada de envío;UC plan E;Plano de expedição da UT;Unità di carico pianificata per la spedizione;LOADLUACK00011
+Shipping method;Versandart;Tipo de envío;Type d'expédition;Tipo de envio;Tipo di spedizione;LOAD00008 LOADACK00011 OBDACK00011
+Shipping order line;Shipping order line;Shipping order line;Shipping order line;Shipping order line;Shipping order line;SOL00001
+Shipping order number;Shipping order number;Shipping order number;Shipping order number;Shipping order number;Shipping order number;SO00001 SOL00001
+Single instance;Einfachanmeldung;Instancia única;Instance singulière;Instância individual;Istanza singola;LOGIN00007
+Special packing provisions;Sonderverpackungsvorschriften;Disposiciones especiales de envase/embalaje;Dispositions spéciales d'emballage;Disposições especiais de embalagem;Disposizioni speciali di imballaggio;DANGGOODS00009
+Special provisions for ADR tanks;Sondervorschriften für ADR Tanks;Disposiciones especiales para cisternas ADR;Mises à disposition spéciales pour les citernes ADR;Disposições especiais para cisternas ADR;Disposizioni speciali relative alle cisterne ADR;DANGGOODS00009
+Special provisions for carriage - Bulk;Sondervorschriften für die Beförderung – lose Schüttung;Disposiciones especiales relativas al transporte - Granel;Dispositions spéciales pour chariot - Vrac;Disposições especiais relativas ao transporte - Granel;Disposizioni speciali relative al trasporto - Rinfusa;DANGGOODS00009
+Special provisions for carriage - Loading, unloading and handling;Sondervorschriften für die Beförderung – Be- und Entladung, Handhabung;Disposiciones especiales relativas al transporte - Carga, descarga y manipulación;Dispositions spéciales relatives au transport - chargement, déchargement et manipulation;Disposições especiais relativas ao transporte - carregamento, descarga e manuseio;Disposizioni speciali relative al trasporto - Carico, scarico e gestione;DANGGOODS00009
+Special provisions for carriage - Operation;Sondervorschriften für die Beförderung - Betrieb;Disposiciones especiales relativas al transporte - Explotación;Dispositions spéciales pour chariot - Opération;Disposições especiais relativas ao transporte - Operação;Disposizioni speciali relative al trasporto - Esercizio;DANGGOODS00009
+Special provisions for carriage - Packages;Sondervorschriften für die Beförderung - Versandstücke;Disposiciones especiales relativas al transporte - Bultos;Dispositions spéciales relatives au transport - Colis;Disposições especiais relativas ao transporte - Volumes;Disposizioni speciali relative al trasporto - Colli;DANGGOODS00009
+Special provisions for portable tanks and bulk containers;Sondervorschriften für ortsbewegliche Tanks und Schüttgut-Container;Disposiciones especiales para cisternas portátiles y contenedores para granel;Dispositions spéciales pour citernes mobiles et conteneurs pour vrac;Disposições especiais para cisternas móveis e contentores para granel;Disposizioni speciali per cisterne mobili e container per il trasporto alla rinfusa;DANGGOODS00009
+Special provisions;Sondervorschriften;Disposiciones especiales;Dispositions spéciales;Disposições especiais;Disposizioni speciali;DANGGOODS00009 LOADLUDETAILACK00009 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 SHIPMENTLUDETAILACK00002
+Split allowed;Splitten erlaubt;División permitida;Fractionnement autorisé;Permitido desmembrar;Frammentazione consentita;CONSIGNMENTACK00012 OBD00010 OBO00009 PARTNER00008
+Stacking category;Stapelkategorie;Categoría de apilado;Catégorie d'empilage;Categoria de empilhamento;Categoria di pila;ITEM00012
+Stacking factor;Stapelfaktor;Factor de apilado;Facteur d'empilage;Fator de empilhamento;Fattore di pila;ITEMQTYUNIT00008
+Staging area;Bereitstellfläche;Zona de disposición;Surface de mise à disposition;Área de disposição;Area di approntamento;ADVISEDLU00012 CONSIGNMENT00007 CONSIGNMENTACK00012 FWCS_FFO00001 IBD00008 OBD00010 OBDACK00011
+Staging time;Bereitstelltermin;Hora de disposición;Date de mise à disposition;Prazo de disponibilização;Termine di approntamento;CONSIGNMENT00007 CONSIGNMENTACK00012 FWCS_FFO00001 OBD00010 OBDACK00011
+Standard loading aid;Standard-Ladehilfsmittel;Medio auxiliar de transporte estándar;Auxiliaire de chargement standard;Meio auxiliar de transporte padrão;Base di carico standard;ITEM00012
+Start time;Startzeit;Hora de inicio;Heure de démarrage;Hora de início;Ora di inizio;FWCS_FFOACK00001
+State;Status;Estado;État;Estado;Stato;INSPMACK00001
+Stock on storage location From;Stock on storage location From;Stock on storage location From;Stock on storage location From;Stock on storage location From;Stock on storage location From;INVDL00005 INVDLACK00006
+Stock on storage location Quantity unit kind;Stock on storage location Quantity unit kind;Stock on storage location Quantity unit kind;Stock on storage location Quantity unit kind;Stock on storage location Quantity unit kind;Stock on storage location Quantity unit kind;INVDL00005 INVDLACK00006
+Stock on storage location To;Stock on storage location To;Stock on storage location To;Stock on storage location To;Stock on storage location To;Stock on storage location To;INVDL00005 INVDLACK00006
+Stock query attributes;Bestandsuchattribute;Atributos de la consulta de existencias;Attributs de recherche de stock;Atributos de consulta de estoque;Attributi della query della scorta;ASO00001
+Stock rating;Bestandsklassifizierung;Clasificación de existencias;Classification de stock;Classificação de estoque;Classificazione della scorta;ASO00001
+Storage attribute 1;Lagerattribut 1;Atributo de almacenamiento 1;Attribut d'entreposage 1;Atributo de incorporação 1;Attributo di stoccaggio 1;ASRS_ADVISEDLU00001 ASRS_LUATTRCHANGE00001
+Storage attribute 2;Lagerattribut 2;Atributo de almacenamiento 2;Attribut d'entreposage 2;Atributo de incorporação 2;Attributo di stoccaggio 2;ASRS_ADVISEDLU00001 ASRS_LUATTRCHANGE00001
+Storage attribute 3;Lagerattribut 3;Atributo de almacenamiento 3;Attribut d'entreposage 3;Atributo de incorporação 3;Attributo di stoccaggio 3;ASRS_ADVISEDLU00001 ASRS_LUATTRCHANGE00001
+Storage compartment group number;Lagerfachgruppennummer;Número de grupo de compartimentos de almacenaje;Numéro du groupe de compartiment d’entreposage;Número de grupo de compartimentos de depósito;Numero gruppo di compartimenti;INVDL00005 INVDLACK00006
+Storage compartment group segment;Lagerfachgruppensegment;Segmento del grupo de compartimentos de almacenaje;Segment du groupe de compartiment d’entreposage;Segmento de grupo de compartimentos de depósito;Segmento gruppo di compartimenti;INVDL00005 INVDLACK00006
+Storage compartment;Lagerfach;Compartimento de almacenaje;Compartiment d'entreposage;Compartimento;Compartimento;INVDL00005 INVDLACK00006
+Storage duration;Lagerdauer;Duración de almacenamiento;Durée d'entreposage;Duração de armazenamento;Durata di stoccaggio;ASRS_ADVISEDLU00001 ASRS_LUATTRCHANGE00001
+Storage location;Lagerplatz;Ubicación;Emplacement;Local de depósito;Posto di stoccaggio;ADVISEDLU00012 CONSIGNMENT00007 CONSIGNMENTACK00012 FWCS_FFODEST00001 FWCS_FFODESTCANCEL00001 FWCS_FFOITEMLINE00001 FWCS_FFOPICKACK00001 FWCS_PICKINGLOCASSIGNMENT00001 IBD00008 INVDL00005 INVDLACK00006 OBD00010 OBDACK00011 STOCKACK00009 STOCKADJ00008
+Strategic warehouse area;Strategischer Lagerbereich;Zona de almacén estratégica;Zone d'entrepôt stratégique;Área de depósito estratégica;Area di magazzino strategica;ITEMABCCLASSIFICATION00006
+Street;Straße;Calle;Rue;Rua;Via;CONSIGNMENTADDRACK00008 FWCS_PARTNER00001 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003 SYSUSER00007
+Superuser;Super-User;Superusuario;Superutilisateur;Super usuário;Superutente;LOGIN00007
+Supplier;Lieferant;Proveedor;Fournisseur;Fornecedor;Fornitore;PARTNER00008
+System partner Consignment;System partner Consignment;System partner Consignment;System partner Consignment;System partner Consignment;System partner Consignment;CONSIGNMENT00007 CONSIGNMENTACK00012 CONSIGNMENTADDRACK00008 LOADLU00005 LOADLUACK00011 LOADLUDETAILACK00009
+System partner Load loading unit;System partner Load loading unit;System partner Load loading unit;System partner Load loading unit;System partner Load loading unit;System partner Load loading unit;LOADLU00005 LOADLUACK00011 LOADLUDETAILACK00009
+System partner Load;System partner Load;System partner Load;System partner Load;System partner Load;System partner Load;CONSIGNMENT00007 CONSIGNMENTACK00012 CONSIGNMENTADDRACK00008 LOADTRANSPORTVEHICLEACK00006
+System partner line;Systempartnerzeile;Línea del socio de sistemas;Ligne du partenaire système;Linha de parceiro de sistema;Riga del partner di sistema;ADVISEDLULINE00009 FWCS_FFOITEMLINE00001 FWCS_FFOITEMLINEACK00001 FWCS_FFOITEMLINECANCEL00001 FWCS_FFOITEMLINEFINALIZE00001 FWCS_FFOPICKACK00001 IBDL00006 IBDL2IBOLACK00006 IBDLACK00006 IBDLDETAILACK00006 IBDLDIFFCODEACK00005 IBDLEXTREF00006 IBDLEXTREFACK00007 IBDLTEXT00001 IBOL00007 IBOLACK00006 IBOLDIFFCODEACK00005 IBOLEXTREF00006 IBOLEXTREFACK00007 IBOLTEXT00001 INVCCACK00007 INVDL00005 INVDLACK00006 INVDLTEXT00001 OBDL00007 OBDL2OBOLACK00005 OBDLACK00009 OBDLDETAILACK00008 OBDLDIFFCODEACK00005 OBDLEXTREF00006 OBDLEXTREFACK00006 OBDLTEXT00001 OBOL00007 OBOLEXTREF00006 OBOLTEXT00001 STOCKACK00009
+System partner of item;Systempartner von Artikel;Socio de sistemas de artículo;Partenaire système de l'article;Parceiro de sistema do item;Partner di sistema di articolo;STOCKACK00009 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+System partner stock group;Systempartner-Bestandsgruppe;Grupo de existencias de socio de sistemas;Groupe de stocks partenaire système;Grupo de estoque do parceiro de sistema;Gruppo di scorta partner di sistema;ADVISEDLULINE00009 ASO00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 INVDL00005 INVDLACK00006 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+System partner stock rating;Bestandsklassifizierung Systempartner;Clasificación de existencias de socio de sistemas;Classification de stock du partenaire système;Classificação de estoque do parceiro de sistema;Classificazione della scorta del partner di sistema;ADVISEDLULINE00009 IBDL00006 IBOL00007 INVDL00005 INVDLACK00006 OBDL00007 OBOL00007
+System partner;Systempartner;Socio de sistemas;Partenaire système;Parceiro de sistema;Partner di sistema;ASOACK00001 IBDACK00012 IBDEXTREFACK00007 IBDL2IBOLACK00006 IBDLACK00006 IBDLDETAILACK00006 IBDLDIFFCODEACK00005 IBDLEXTREFACK00007 IBDLOADAIDACK00004 IBDLUACK00007 IBDLUDETAILACK00009 IBDPARTNERACK00008 IBOACK00008 IBOEXTREFACK00006 IBOLACK00006 IBOLDIFFCODEACK00005 IBOLEXTREFACK00007 IBOPARTNERACK00008 INVCCACK00007 INVDACK00009 INVDENDACK00005 INVDLACK00006 LOAD00008 LOADACK00011 LOADTRANSPORTVEHICLE00006 OBDACK00011 OBDEXTREFACK00006 OBDL2OBOLACK00005 OBDLACK00009 OBDLDETAILACK00008 OBDLDIFFCODEACK00005 OBDLEXTREFACK00006 OBDLOADAIDACK00004 OBDLUACK00008 OBDLUDETAILACK00009 OBDPARTNERACK00008 OBOACK00011 SHIPMENTLUACK00003 SHIPMENTLUDETAILACK00002 SHIPMENTLUOBOACK00001 STOCKACK00009 STOCKADJ00008
+Tank codes for ADR tanks;Tankcodierung für ADR Tanks;Códigos de cisterna para cisternas ADR;Code-citerne pour les citernes ADR;Códigos-cisternas para as cisternas ADR;Codici cisterna per le cisterne ADR;DANGGOODS00009
+Target dual quantity;Solldualmenge;Cantidad dual de destino;Quantité duale théorique;Quantidade dual de destino;Quantità duale nominale;INVCCACK00007
+Target goods owner;Zielwareneigentümer;Propietario de las mercancías de destino;Propriétaire de la marchandise de destination;Proprietário da mercadoria de destino;Proprietario della merce di destinazione;OBDL00007 OBOL00007
+Target quantity;Sollmenge;Cantidad teórica;Quantité théorique;Quantidade nominal;Quantità nominale;INVCCACK00007
+Terms of delivery;Lieferbedingungen;Condiciones de entrega;Conditions de livraison;Condições de fornecimento;Condizioni di consegna;OBD00010 OBDACK00011
+Text type;Texttyp;Tipo de texto;Type de texte;Tipo de texto;Tipo di testo;IBDLTEXT00001 IBDTEXT00001 IBOLTEXT00001 IBOTEXT00001 INVDLTEXT00001 INVDTEXT00001 OBDLTEXT00001 OBDTEXT00001 OBOLTEXT00001 OBOTEXT00001
+Text;Text;Texto;Texte;Texto;Testo;IBDLTEXT00001 IBDTEXT00001 IBOLTEXT00001 IBOTEXT00001 INVDLTEXT00001 INVDTEXT00001 OBDLTEXT00001 OBDTEXT00001 OBOLTEXT00001 OBOTEXT00001
+Time of diversion;Time of diversion;Time of diversion;Heure du transfert;Time of diversion;Time of diversion;FWCS_FFOCONVEYORSTATIONACK0001 FWCS_FFOSTATIONLINEACK00001
+Time zone;Zeitzone;Zona horaria;Fuseau horaire;Fuso horário;Fuso orario;CONSIGNMENTADDRACK00008 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003 SYSUSER00007
+Time-based access mode;Zeitbezogener Zugriffsmodus;Modo de acceso a base de tiempos;Mode d'accès en fonction du temps;Modo de acesso baseado no tempo;Modo di accesso in base al tempo;ITEM00012
+Title;Titel;Título;Titre;Título;Titolo;CONSIGNMENTADDRACK00008 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003 SYSUSER00007
+To Delivery time slot;To Delivery time slot;To Delivery time slot;To Delivery time slot;To Delivery time slot;To Delivery time slot;IBD00008 IBDACK00012
+To Registration time;To Registration time;To Registration time;To Registration time;To Registration time;To Registration time;INVDL00005 INVDLACK00006
+To Requested delivery date;To Requested delivery date;To Requested delivery date;To Requested delivery date;To Requested delivery date;To Requested delivery date;IBOL00007
+Total dangerous goods points;Gefahrgutpunkte gesamt;Niveles de peligro en total;Total des points de marchandises dangereuses;Pontos totais de materiais perigosos;Punti per merci pericolose totali;CONSIGNMENTACK00012
+Total gross weight unit;Total gross weight unit;Total gross weight unit;Total gross weight unit;Total gross weight unit;Total gross weight unit;CONSIGNMENTACK00012
+Total gross weight;Bruttogewicht gesamt;Peso bruto total;Poids brut;Peso bruto total;Peso lordo totale;CONSIGNMENTACK00012
+Total stock From;Total stock From;Total stock From;Total stock From;Total stock From;Total stock From;INVDL00005 INVDLACK00006
+Total stock Quantity unit kind;Total stock Quantity unit kind;Total stock Quantity unit kind;Total stock Quantity unit kind;Total stock Quantity unit kind;Total stock Quantity unit kind;INVDL00005 INVDLACK00006
+Total stock To;Total stock To;Total stock To;Total stock To;Total stock To;Total stock To;INVDL00005 INVDLACK00006
+Total volume unit;Total volume unit;Total volume unit;Total volume unit;Total volume unit;Total volume unit;CONSIGNMENTACK00012
+Total volume;Gesamtvolumen;Volumen total;Volume total;Volume total;Volume totale;CONSIGNMENTACK00012
+Transaction ID;Transaktions-ID;ID de transacción;ID de transaction;ID de transação;ID transazione;INSPMACK00001 INSPMLINEACK00001
+Transport category;Beförderungskategorie;Categoría de transporte;Catégorie de transport;Categoria de transporte;Categoria di trasporto;DANGGOODS00009 LOADLUDETAILACK00009 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 SHIPMENTLUDETAILACK00002
+Transport vehicle ID;Transport vehicle ID;Transport vehicle ID;Transport vehicle ID;Transport vehicle ID;Transport vehicle ID;LOADTRANSPORTVEHICLE00006 LOADTRANSPORTVEHICLEACK00006
+Transport vehicle type;Transportfahrzeugtyp;Tipo de vehículo de transporte;Type du véhicule de transport;Tipo de veículo de transporte;Tipo di veicolo di trasporto;LOADTRANSPORTVEHICLE00006 LOADTRANSPORTVEHICLEACK00006
+Tunnel restriction code;Tunnelbeschränkungscode;Código de restricciones en túneles;Code de restriction en tunnels;Código de restrição em túneis;Codice di restrizione in galleria;DANGGOODS00009
+UN number;UN Nummer;Número UN;Numéro ONU;Número ONU;Numero ONU;DANGGOODS00009 LOADLUDETAILACK00009 OBDLACK00009 OBDLDETAILACK00008 OBDLUDETAILACK00009 SHIPMENTLUDETAILACK00002
+Unloading sequence;Entladungsreihenfolge;Orden de descarga;Ordre séquentiel de déchargement;Sequência de descarga;Sequenza di scarico;CONSIGNMENT00007 CONSIGNMENTACK00012
+Upper tolerance Absolute value;Upper tolerance Absolute value;Upper tolerance Absolute value;Upper tolerance Absolute value;Upper tolerance Absolute value;Upper tolerance Absolute value;ITEM00012
+Upper tolerance Percentage;Upper tolerance Percentage;Upper tolerance Percentage;Upper tolerance Percentage;Upper tolerance Percentage;Upper tolerance Percentage;ITEM00012
+Upper tolerance [%];Oberer Toleranzwert [%];Tolerancia superior [%];Tolérance supérieure [%];Tolerância superior [%];Tolleranza superiore [%];IBDL00006 IBOL00007 ITEM00012 OBDL00007 OBDLACK00009 OBOL00007
+User identifier;Benutzer-ID;Identificador de usuario;Identification d'utilisateur;Identificador de usuário;Identificazione utente;INVCCACK00007 SYSUSER00007
+VAT ID;UID-Nr;Id. del IVA;ID TVA;ID VAT;Numero di partita IVA;PARTNER00008
+Value 1;Wert 1;Valor 1;Valeur 1;Valor 1;Valore 1;IBDEXTREF00006 IBDEXTREFACK00007 IBDLEXTREF00006 IBDLEXTREFACK00007 IBOEXTREF00006 IBOEXTREFACK00006 IBOLEXTREF00006 IBOLEXTREFACK00007 OBDEXTREF00006 OBDEXTREFACK00006 OBDLEXTREF00006 OBDLEXTREFACK00006 OBOEXTREF00006 OBOLEXTREF00006
+Value 2;Wert 2;Valor 2;Valeur 2;Valor 2;Valore 2;IBDEXTREF00006 IBDEXTREFACK00007 IBDLEXTREF00006 IBDLEXTREFACK00007 IBOEXTREF00006 IBOEXTREFACK00006 IBOLEXTREF00006 IBOLEXTREFACK00007 OBDEXTREF00006 OBDEXTREFACK00006 OBDLEXTREF00006 OBDLEXTREFACK00006 OBOEXTREF00006 OBOLEXTREF00006
+Variant;Variante;Variante;Variante;Variante;Variante;ADVISEDLULINE00009 ASO00001 DANGGOODS00009 DANGGOODSDESC00006 FWCS_FFOITEMLINE00001 FWCS_FFOITEMLINEACK00001 FWCS_FFOPICKACK00001 FWCS_ITEM00001 FWCS_ITEMALIAS00001 FWCS_ITEMDESC00001 FWCS_PACKAGINGVERSION00001 FWCS_PICKINGLOCASSIGNMENT00001 IBDL00006 IBDLACK00006 IBDLDETAILACK00006 IBDLOADAIDACK00004 IBDLUDETAILACK00009 IBOL00007 IBOLACK00006 ITEM00012 ITEMABCCLASSIFICATION00006 ITEMALIAS00006 ITEMDESC00005 ITEMQTYUNIT00008 ITEMWHLOC00005 KIT00001 KITCOMPONENT00001 KITCONSUMABLES00001 LOADLUDETAILACK00009 OBDL00007 OBDLACK00009 OBDLDETAILACK00008 OBDLOADAIDACK00004 OBDLUDETAILACK00009 OBOL00007 SHIPMENTLUDETAILACK00002 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Vehicle for tank carriage;Fahrzeug für die Beförderung in Tanks;Vehículo para el transporte en cisternas;Véhicule pour transport en citernes;Veículo para transporte em cisternas;Veicolo per trasporto in cisterne;DANGGOODS00009
+Volume unit;Volume unit;Volume unit;Volume unit;Volume unit;Volume unit;ITEMQTYUNIT00008
+Volume;Volumen;Volumen;Volume;Volume;Volume;ITEMQTYUNIT00008
+Warehouse location;Lagerstandort;Almacén;Site de stockage;Localidade de depósito;Magazzino;ADVISEDLU00012 ASO00001 ASOACK00001 IBD00008 IBDACK00012 IBO00008 IBOACK00008 INVD00007 INVDACK00009 INVDENDACK00005 ITEMABCCLASSIFICATION00006 ITEMWHLOC00005 LOGIN00007 OBD00010 OBDACK00011 OBO00009 OBOACK00011 SHIPMENTLUACK00003 SO00001 STOCKACK00009 STOCKADJ00008 STOCKBEGIN00009 STOCKEND00008 STOCKREQ00007
+Warehouse quantity unit;Lagermengeneinheit;Unidad de almacenamiento;Unité de gestion de stock;Unidade de quantidade de depósito;Unità quantitativa di magazzino;ITEM00012
+Warehouse quantity units requested;Lagermengeneinheiten angefordert;Unidades de almacenamiento solicitadas;Unités de gestion de stock requise;Solicitadas unidades de quantidade de depósito;Unità quantitative di magazzino richieste;OBOL00007 PARTNER00008
+Website;Website;Página web;Site Internet;Web Page;Sito web;CONSIGNMENTADDRACK00008 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003
+Weight (max.);Gewicht (max.);Peso (máx.);Poids (max.);Peso (máx.);Peso (max.);ASRS_ADVISEDLU00001
+Weight (min.);Gewicht (min.);Peso (mín.);Poids (min.);Peso (mín.);Peso (min.);ASRS_ADVISEDLU00001
+Whole LU reservation mode;Ganz-LE-Reservierungsmodus;Modo de reserva de UT completa;Mode de réservation UC entière;Modo de reserva de UT completa;Modo di prenotazione unità di carico completa;OBDL00007
+Whole loading unit;Ganz-Ladeeinheit;Unidad de transporte completa;Unité de chargement entière;Unidade de transporte completa;Unità di carico completa;ITEMQTYUNIT00008
+Width unit;Width unit;Width unit;Width unit;Width unit;Width unit;FWCS_PACKAGINGVERSION00001 ITEMQTYUNIT00008
+Width;Breite;Ancho;Largeur;Largura;Larghezza;FWCS_PACKAGINGVERSION00001 ITEMQTYUNIT00008
+X unit;X unit;X unit;X unit;X unit;X unit;LOADLUACK00011 OBDLUACK00008 SHIPMENTLUACK00003
+X;X;X;X;X;X;LOADLUACK00011 OBDLUACK00008 SHIPMENTLUACK00003
+Y unit;Y unit;Y unit;Y unit;Y unit;Y unit;LOADLUACK00011 OBDLUACK00008 SHIPMENTLUACK00003
+Y;Y;Y;Y;Y;Y;LOADLUACK00011 OBDLUACK00008 SHIPMENTLUACK00003
+Z unit;Z unit;Z unit;Z unit;Z unit;Z unit;LOADLUACK00011 OBDLUACK00008 SHIPMENTLUACK00003
+Z;Z;Z;Z;Z;Z;LOADLUACK00011 OBDLUACK00008 SHIPMENTLUACK00003
+ZIP code;PLZ;Código postal;Code postal;CEP;CAP;CONSIGNMENTADDRACK00008 FWCS_PARTNER00001 IBDPARTNER00008 IBDPARTNERACK00008 IBOPARTNER00008 IBOPARTNERACK00008 INVDPARTNER00007 OBDPARTNER00008 OBDPARTNERACK00008 OBOPARTNER00008 PARTNERADDR00007 SHIPMENTLUACK00003 SYSUSER00007

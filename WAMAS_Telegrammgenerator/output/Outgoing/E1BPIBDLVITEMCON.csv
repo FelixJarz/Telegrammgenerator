@@ -1,0 +1,8 @@
+# E1BPIBDLVITEMCON;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Inbound delivery number;InboundDelivery;ibdNo;;S;20;0;X;;The inbound delivery number is part of the unique identifier of the inbound delivery.;;DELIV_NUMB
+2;Inbound delivery line;InboundDeliveryLine;line;;S;10;0;X;;The line number is part of the unique identifier of the inbound delivery line.;;DELIV_ITEM
+3;Delivered quantity;InboundDeliveryLine;deliveredAmount;;D;12;3;X;;The actual amount which has been delivered and processed for the particular delivery line. This is the amount that is actually modified during the inbound process.;;DLV_QTY_IMUNIT
+4;Denominator;Item;PackagingVersion.ItemQtyUnit.numBaseQtyUnits.denominator;;N;6;0;X;;The bottom of the fraction.;;FACT_UNIT_DENOM
+5;Numerator;Item;PackagingVersion.ItemQtyUnit.numBaseQtyUnits.numerator;;N;6;0;X;;Defines the number of quantity units in the reference unit. ;;FACT_UNIT_NOM
+6;Base quantity unit;Item;baseQtyUnit.id;;S;5;0;X;X; Is part of the unique identification of a quantity unit. ;;BASE_UOM_ISO
+7;Item number;Item;itemNo;;S;20;0;X;; Is a part of the unique identification of an item. ;;MATERIAL

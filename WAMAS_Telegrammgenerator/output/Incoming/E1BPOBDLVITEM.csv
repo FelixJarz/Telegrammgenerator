@@ -1,0 +1,14 @@
+# E1BPOBDLVITEM;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Outbound order number;OutboundOrder;oboNo;;S;20;0;X;;The outbound order number is part of the unique identifier of the outbound order.;;DELIV_NUMB
+2;Outbound order line;OutboundOrderLine;line;;S;10;0;X;;It is part of the unique identification of the outbound order line. When the line was created via the interface, it is equal to the 'sysPartnerLine'.;;ITM_NUMBER
+3;Item number;Item;itemNo;;S;20;0;X;; Is a part of the unique identification of an item. ;;MATERIAL
+4;Batch;OutboundOrderLine;oga.batch;;S;20;0;;;Batch of the item.;;BATCH
+5;Base quantity unit;Item;baseQtyUnit.id;;S;5;0;X;X; Is part of the unique identification of a quantity unit. ;;BASE_UOM_ISO
+6;Ordered quantity;OutboundOrderLine;orderAmount;;D;12;3;X;;Originally ordered amount.;;DLV_QTY_STOCK
+7;Denominator;Item;PackagingVersion.ItemQtyUnit.numBaseQtyUnits.denominator;;N;6;0;X;;The bottom of the fraction.;;SALES_QTY_DENOM
+8;Numerator;Item;PackagingVersion.ItemQtyUnit.numBaseQtyUnits.numerator;;N;6;0;X;;Defines the number of quantity units in the reference unit. ;;SALES_QTY_NUM
+9;Upper tolerance [%];OutboundOrderLine;deliveryTolerance.upper;;D;3;1;;;Upper tolerance in percentage.;;OVERDELTOL
+10;Lower tolerance [%];OutboundOrderLine;deliveryTolerance.lower;;D;3;1;;;Lower tolerance in percentage.;;UNDER_TOL
+11;SAP special stock type;SysPartnerStockGroup;sapStockAttr.sapSpecStock;;S;1;0;;;Is the unique identification of a SAP special stock type.;;SPEC_STOCK
+12;SAP stock type;SysPartnerStockGroup;sapStockAttr.sapStockType;;S;25;0;;;Is the unique identification of a SAP stock type.;;STOCK_TYPE
+13;Reservation number;OutboundOrderLine;oga.reservationNo;;S;20;0;;;Reservation number of the item.;;SP_STCK_NO

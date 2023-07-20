@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="OBOACK00011">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="canceled" type="boolean" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="clientId" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="delNumWhQtyUnits" type="NUMERIC_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="delTotDanGoodsPoints" type="NUMERIC_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="delTotGrWtUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="delTotGrWtValue" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="delTotVolUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="delTotVolValue" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="mainState" type="ENUM_OboMainState_DNAFE" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="oboNo" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="oboTypeId" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="orderTime" type="WamasDateTime" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="priority" type="NUMERIC_1" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="relNumLines" type="NUMERIC_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="relNumPrimaryLines" type="NUMERIC_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="relNumWhQtyUnits" type="NUMERIC_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="relTotDanGoodsPoints" type="NUMERIC_15" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="relTotGrWtValue" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="relTotVolUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="relTotVolValue" type="DECIMAL_12_3" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="releaseState" type="ENUM_OboReleaseState_NROM" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="shippingCategory" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="shippingMethod" type="STRING_10" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="systemPartner" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="totGrWtUnit" type="STRING_5" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="whLoc" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

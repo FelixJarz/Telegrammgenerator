@@ -1,0 +1,5 @@
+# DCLCGADGETASSOCIATION00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Warehouse location;DcLcGadgetAssociation;associated.line.cfg.WhLoc.whLocId;DcLcGadgetAssociation_associated_line_cfg_WhLoc_whLocId;S;20;0;X;X;The identifier of the warehouse location.;
+2;Line controller ID;DcLcGadgetAssociation;associated.line.cfg.cfgId;DcLcGadgetAssociation_associated_line_cfg_cfgId;S;25;0;X;X;The DC-LC ID.;
+3;Line ID;DcLcGadgetAssociation;associated.line.lineId;DcLcGadgetAssociation_associated_line_lineId;S;5;0;X;X;Id of one Line of a Line Controller.;
+4;Device ID;DcLcGadgetAssociation;associated.gadgetId;DcLcGadgetAssociation_associated_gadgetId;S;5;0;X;X;Id of a Gadget (e.g. PickFace) of a line.;

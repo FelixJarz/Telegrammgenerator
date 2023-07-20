@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This sample file contains a system message with a picking acknowledgement 
+	response from WCS. -->
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<header>
+			<FULL>
+				<HEADER_SOURCE>WCS1</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_TRANSACTIONID>1</HEADER_TRANSACTIONID>
+				<HEADER_SEQUENCE>1</HEADER_SEQUENCE>
+				<HEADER_CREATIONTIME>2014031310394122</HEADER_CREATIONTIME>
+				<HEADER_RECORDTYPENAME>WCS_PICKACK00008</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<WCS_PICKACK00008>
+				<seqNo>1</seqNo>
+				<orderId>70</orderId>
+				<completeFlag>1</completeFlag>
+				<WCS_PICKACKLU00008>
+					<orderId>70</orderId>
+					<luOrigin>Test Center</luOrigin>
+					<luId>LUID#0001</luId>
+					<loadAidId>ISO1</loadAidId>
+					<cubatureId>ISO1_200</cubatureId>
+					<stoLocId>WCS1-OUT-1</stoLocId>
+					<grossWeight>200</grossWeight>
+					<grossWeightUnit>kg</grossWeightUnit>
+					<weightKind>CALCULATED</weightKind>
+					<luFinished>1</luFinished>
+					<WCS_PICKACKSO00008>
+						<orderId>70</orderId>
+						<lineId>1</lineId>
+						<luOrigin>Test Center</luOrigin>
+						<luId>LUID#0001</luId>
+						<clientId>1</clientId>
+						<itemNo>N6-WCS1</itemNo>
+						<variant>00000</variant>
+						<pkv>1</pkv>
+						<baseQty>20</baseQty>
+						<dualQty></dualQty>
+						<gow>1_1</gow>
+						<stockRating>100</stockRating>
+						<bbDate>20141205</bbDate>
+						<batch>C</batch>
+						<prodDate>20131205</prodDate>
+						<reservationNo>12345</reservationNo>
+						<csia1></csia1>
+						<csia2></csia2>
+						<csia3></csia3>
+						<grossWeight>100</grossWeight>
+						<grossWeightUnit>kg</grossWeightUnit>
+					</WCS_PICKACKSO00008>
+				</WCS_PICKACKLU00008>
+			</WCS_PICKACK00008>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>

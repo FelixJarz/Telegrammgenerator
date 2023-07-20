@@ -1,0 +1,10 @@
+# ASOACK00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Client;AssemblyOrder;client.clientId;clientId;S;10;0;X;X;Is the unique identification of a client.;
+2;Assembly order number;AssemblyOrder;orderNo;assemblyOrderNo;S;20;0;X;;The assembly order number is part of the unique identifier of the assembly order.;
+3;System partner;AssemblyOrder;sysPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;Warehouse location;AssemblyOrder;whLoc.whLocId;whLoc;S;20;0;X;X;The identifier of the warehouse location.;
+5;Item;AssemblyOrder;sqa.pkv.Item.itemNo;itemNo;S;20;0;X;X; Is a part of the unique identification of an item. ;
+6;Item;AssemblyOrder;sqa.pkv.Item.variant;variant;S;10;0;X;X; The variant is the most precise description of an item. With the help of the variant, e.g. colours or sizes of clothing can be specified. Is a part of the unique identification of an item. ;
+7;Planned quantity;AssemblyOrder;plannedQty.baseQty.baseQty;assemblyOrderPlannedQty;D;12;3;X;;The item quantity specification in its administration unit (base quantity unit). All state calculations, delivery fulfilled checks and so on are based on the base quantity. The dual quantity has no effect for those calculations. ;
+8;Assembled quantity;AssemblyOrder;assembledQty.baseQty.baseQty;assemblyOrderAssembledQty;D;12;3;X;;The item quantity specification in its administration unit (base quantity unit). All state calculations, delivery fulfilled checks and so on are based on the base quantity. The dual quantity has no effect for those calculations. ;
+9;Main state;AssemblyOrder;state.mainState;mainState;E;8;0;X;;Reflects the current state of the assembly order.;

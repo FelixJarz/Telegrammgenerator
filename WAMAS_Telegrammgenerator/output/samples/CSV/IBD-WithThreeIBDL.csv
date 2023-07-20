@@ -1,0 +1,7 @@
+#This sample file contains an inbound delivery with three inbound delivery lines.
+HOST;WAMAS;1;1;20180921133144;IBD00008;1;1;Test Center;Default;;;;;;;;;;NORMAL
+HOST;WAMAS;1;2;20180921133144;IBDL00006;1;1;1;100010003;00000;12;;100;1_1;;;;;;;;;;;;;;;;;;;;;;;;;;;10;;;Default
+HOST;WAMAS;1;3;20180921133144;IBDPARTNER00008;1;1;SUPPLIER;1_1;UNDEFINED;;;;;;;;;;;;;;;;;eng;;NORMAL
+HOST;WAMAS;1;4;20180921133144;IBDLTEXT00001;1;1;1;1;D-Note;eng;0;Info tet for inbound order line;NORMAL
+HOST;WAMAS;1;5;20180921133144;IBDL00006;1;1;2;100010002;00000;12;;100;1_1;;;;;;;;;;;;;;;;;;;;;;;;;;;10;;;Default
+HOST;WAMAS;1;6;20180921133144;IBDL00006;1;1;3;100010001;00000;10;;100;1_1;;;;;;;;;;;;;;;;;;;;;;;;;;;10;;;Default

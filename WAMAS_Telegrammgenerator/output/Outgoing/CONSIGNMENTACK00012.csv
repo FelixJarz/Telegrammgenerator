@@ -1,0 +1,33 @@
+# CONSIGNMENTACK00012;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Load;Consignment;load.loadId;loadId;S;20;0;X;X;The load ID identifies the load, together with the consecutive number and the system partner, uniquely. The load ID is taken from the shipment frequency or the plan load (outbound delivery) depending on the ‘load creation kind’ of the outbound delivery type.;
+2;Consecutive number;Consignment;load.consecutiveNo;consecutiveNo;N;10;0;X;X;;
+3;System partner Load;Consignment;load.sysPartner.id;loadSystemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;Consignment ID;Consignment;consignmentId;consId;S;20;0;X;;Identifies a consignment (together with the system partner) uniquely.;
+5;System partner Consignment;Consignment;sysPartner.id;consSystemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+6;Loading sequence;Consignment;loadingSeq;loadingSeq;N;5;0;;;The loading sequence determines the order of consignments for loading;
+7;Unloading sequence;Consignment;unloadingSeq;unloadingSeq;N;5;0;;;The unloading sequence defines the order of consignments for unloading.;
+8;Delivery category;Consignment;obd.category.id;category;S;10;0;;X;The identification of the delivery category.;
+9;Staging time;Consignment;obd.stagingTime;stagingTime;DT;14;0;;;The date/time when all loading units of this delivery have to be in the staging area.;
+10;Loading time;Consignment;obd.loadingTime;loadingTime;DT;14;0;;;The date/time when all loading units of this delivery have to be loaded.;
+11;Departure time;Consignment;obd.departureTime;departureTime;DT;14;0;;;The time the delivery leaves the warehouse.;
+12;Delivery time;Consignment;obd.deliveryTime;deliveryTime;DT;14;0;;;The time the delivery reaches the customer.;
+13;Delivery time slot From;Consignment;obd.deliveryTimeSlot.from;deliveryTimeSlotFrom;DT;14;0;;;Date and time without seconds. See: DATETIME;
+14;Delivery time slot To;Consignment;obd.deliveryTimeSlot.to;deliveryTimeSlotTo;DT;14;0;;;Date and time without seconds. See: DATETIME;
+15;# Whole LUs;Consignment;obd.loadInfo.numWholeLUs;numWholeLUs;N;5;0;;;Number of whole LUs that are contained in the outbound delivery. Depending on the 'planning stage' the information isn't available at any time.;
+16;# Picking LUs;Consignment;obd.loadInfo.numPickingLUs;numPickingLUs;N;5;0;;;Number of picking LUs that are contained in the outbound delivery. Depending on the 'planning stage' the information isn't available at any time.;
+17;# Hierarchical LUs;Consignment;obd.loadInfo.numHierarchicalLUs;numHierarchicalLUs;N;5;0;;;Number of hierarchical LUs that are contained in the outbound delivery. Depending on the 'planning stage' the information isn't available at any time.;
+18;# Sub LUs;Consignment;obd.loadInfo.numSubLUs;numSubLUs;N;5;0;;;Number of sub LUs that are contained in the outbound delivery. Depending on the 'planning stage' the information isn't available at any time.;
+19;Total gross weight;Consignment;obd.loadInfo.totGrWt.value;totGrWtValue;D;12;3;;;Specifies the value (or amount) in weight unit which was entered by a user.;
+20;Total gross weight unit;Consignment;obd.loadInfo.totGrWt.unit.id;totGrWtUnit;S;5;0;;X;Uniquely identifies the weight unit.;
+21;Total volume;Consignment;obd.loadInfo.totVol.value;totVolValue;D;12;3;;;Specifies the value (or amount) in volume unit which was entered by a user.;
+22;Total volume unit;Consignment;obd.loadInfo.totVol.unit.id;totVolUnit;S;5;0;;X;Uniquely identifies the volume unit.;
+23;Total dangerous goods points;Consignment;obd.loadInfo.totDanGoodsPoints;totDanGoodsPoints;N;5;0;;;Total dangerous goods points of all load loading units that are part of the outbound delivery.;
+24;# Normalized floor spaces;Consignment;obd.loadInfo.numNormFloorSpace;numNormFloorSpace;D;5;2;;;Number of normalized floor space that is calculated for the outbound delivery contained loading units. Depending on the 'planning stage' the information isn't available at any time.;
+25;Priority;Consignment;obd.priority;priority;N;1;0;;;Defines the priority of this delivery.;
+26;Outgoing goods area;Consignment;obd.loadingPoint.area.areaId;outgoingArea;S;10;0;;X;The unique ID of this area within the WhLoc;
+27;Dock;Consignment;obd.loadingPoint.dock.dockId;dock;S;10;0;;X;The unique ID of the dock;
+28;Staging area;Consignment;obd.loadingPoint.staging.areaId;stagingArea;S;10;0;;X;Unique ID for the staging area.;
+29;Storage location;Consignment;obd.loadingPoint.stoLoc.stoLocId;stoLocId;S;20;0;;X;The identifier of the storage location per warehouse location.;
+30;Split allowed;Consignment;obd.obdRestr.splitAllowed;Consignment_obd_obdRestr_splitAllowed;B;1;0;X;;Defines whether splitting an OBO or OBD is allowed.;
+31;Canceled;Consignment;obd.state.canceled;canceled;B;1;0;X;;Is set to true if the outbound delivery has been canceled.;
+32;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

@@ -1,0 +1,5 @@
+# WCS_TRANSPORTREQDEST00005;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Transport order;TransportDestination;TransportOrder.orderId;orderId;N;10;0;X;X;Unique ID for a transport order.;
+2;Transport destination group;TransportDestination;destinationGroup;destinationGroup;S;50;0;;;A transport destination group allows to group several transport destinations. All destinations with the same group identifier are in a group. Destinations in one group are treated optional (one out of n).;
+3;Sequence;TransportDestination;sequence;sequence;N;7;0;;;Defines the sequence in which order the destinations are approached.;
+4;Storage location;TransportDestination;destinationLoc.stoLocId;stoLocId;S;20;0;X;X;The identifier of the storage location per warehouse location.;

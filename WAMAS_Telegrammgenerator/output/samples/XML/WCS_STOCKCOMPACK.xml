@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This sample file contains a system message with a stock comparison acknowledgement 
+	response from WCS. -->
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<header>
+			<FULL>
+				<HEADER_SOURCE>WCS1</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_CREATIONTIME>20140508163512</HEADER_CREATIONTIME>
+				<HEADER_SEQUENCE>1</HEADER_SEQUENCE>
+				<HEADER_RECORDTYPENAME>WCS_STOCKCOMPACK00006</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<WCS_STOCKCOMPACK00006>
+				<requestNo>1</requestNo>
+				<WCS_STOCKCOMPACKLINE00006>
+					<requestNo>1</requestNo>
+					<pkv>1</pkv>
+					<clientId>1</clientId>
+					<itemNo>100010001</itemNo>
+					<variant>00000</variant>
+					<gow>1_1</gow>
+					<prodDate></prodDate>
+					<bbDate></bbDate>
+					<stockRating>100</stockRating>
+					<batch>A</batch>
+					<reservationNo></reservationNo>
+					<csia1>ABC</csia1>
+					<csia2>123</csia2>
+					<csia3>true</csia3>
+					<baseQty>200</baseQty>
+					<dualQty>0</dualQty>
+				</WCS_STOCKCOMPACKLINE00006>
+				<WCS_STOCKCOMPACKLINE00006>
+					<requestNo>1</requestNo>
+					<pkv>1</pkv>
+					<clientId>1</clientId>
+					<itemNo>100010001</itemNo>
+					<variant>00000</variant>
+					<gow>1_1</gow>
+					<prodDate></prodDate>
+					<bbDate></bbDate>
+					<stockRating>100</stockRating>
+					<batch>B</batch>
+					<reservationNo></reservationNo>
+					<csia1>ABCD</csia1>
+					<csia2>1234</csia2>
+					<csia3>false</csia3>
+					<baseQty>300</baseQty>
+					<dualQty>0</dualQty>
+				</WCS_STOCKCOMPACKLINE00006>
+				<WCS_STOCKCOMPACKEND00005>
+					<requestNo>1</requestNo>
+				</WCS_STOCKCOMPACKEND00005>
+			</WCS_STOCKCOMPACK00006>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>

@@ -1,0 +1,3 @@
+# E1BPE1VARKEY;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Function message;;;;S;3;0;X;;;;FUNCTION
+2;Item number;Item;itemNo;;S;20;0;X;; Is a part of the unique identification of an item. ;;VARIANT

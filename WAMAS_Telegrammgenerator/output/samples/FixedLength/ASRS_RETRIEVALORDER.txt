@@ -1,0 +1,3 @@
+HOST      WAMAS     2                             120210520000000ASRS_RETRORDER00001           10                  0
+HOST      WAMAS     2                             120210414000000ASRS_RETRORDERLINE00001         10                  000000300000000247  This is line 1                                                                                      
+HOST      WAMAS     2                             120210414000000ASRS_RETRORDERDEST00001       10                  HRA05X004Y05Z11     

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<!--This sample file contains one load with one consignment. -->
+		<header>
+			<FULL>
+				<HEADER_SOURCE>HOST</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_SEQUENCE>0</HEADER_SEQUENCE>
+				<HEADER_CREATIONTIME>20180924143413</HEADER_CREATIONTIME>
+				<HEADER_RECORDTYPENAME>LOAD00008</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<LOAD00008>
+				<loadId>LD1000001</loadId>
+				<consecutiveNo>1</consecutiveNo>
+				<systemPartner>WAMAS</systemPartner>
+				<departureTime>20180924143421</departureTime>
+				<loadTypeId>Default</loadTypeId>
+				<shippingMethod>Default</shippingMethod>
+				<reviewed>0</reviewed>
+				<recordState>NORMAL</recordState>
+				<CONSIGNMENT00007>
+					<loadId>LD1000001</loadId>
+					<consecutiveNo>1</consecutiveNo>
+					<loadSystemPartner>WAMAS</loadSystemPartner>
+					<consId>1000001</consId>
+					<consSystemPartner>WAMAS</consSystemPartner>
+					<loadingSeq>1</loadingSeq>
+					<unloadingSeq>1</unloadingSeq>
+					<category></category>
+					<stagingTime>20180924154143</stagingTime>
+					<loadingTime>20180924144143</loadingTime>
+					<deliveryTime>20180924144143</deliveryTime>
+					<priority>0</priority>
+					<outgoingArea>OG</outgoingArea>
+					<dock></dock>
+					<stagingArea>SA 1</stagingArea>
+					<stoLocId>OG-01</stoLocId>
+				</CONSIGNMENT00007>
+				<LOADTRANSPORTVEHICLE00006>
+					<loadId>LD1000001</loadId>
+					<consecutiveNo>1</consecutiveNo>
+					<systemPartner>WAMAS</systemPartner>
+					<vehicleId>1</vehicleId>
+					<vehicleTypeId>Truck</vehicleTypeId>
+					<sequence>0</sequence>
+					<recordState>NORMAL</recordState>
+				</LOADTRANSPORTVEHICLE00006>
+			</LOAD00008>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>

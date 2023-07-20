@@ -1,0 +1,2 @@
+# SYSMSGCATEGORY00001;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;System message category;SysMsgCategory;msgCategoryId;msgCategoryId;S;50;0;X;;The system message category ID identifies the the category a system message belongs.;

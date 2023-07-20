@@ -1,0 +1,5 @@
+# E1BPEXTC;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Custom field 1;;;;S;250;0;X;;;;FIELD1
+2;Custom field 2;;;;S;250;0;X;;;;FIELD2
+3;Custom field 3;;;;S;250;0;X;;;;FIELD3
+4;Custom field 4;;;;S;250;0;X;;;;FIELD4

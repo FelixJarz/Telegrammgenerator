@@ -1,0 +1,16 @@
+# LOGIN00007;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Login;Login;loginId;loginId;S;20;0;X;;A unique name which allows identifying the system user when logging into a system domain.;
+2;Application;Login;applicationId;applicationId;E;7;0;X;;The application identifier.;
+3;Change password;Login;authN.changeRequest;changeRequest;B;1;0;X;;Indicates that the user has to change the password on next login;
+4;Password changed on;Login;authN.changedAt;changedAt;DA;8;0;;;Stores the date of the last change.;
+5;Password;Login;authN.password;password;S;150;0;;;The encrypted password of the user.;
+6;Superuser;Login;superuser;superuser;B;1;0;X;;Defines whether or not any permission related checks are carried out.Thus if set, the user might access all dialogs, actions, etc. in the application.;
+7;Login expires on;Login;expireAt;expireAt;DA;8;0;;;Store the expiration date of a particular login.Null (or DEFAULT) means no expiration date set.;
+8;Single instance;Login;singleInstance;singleInstance;B;1;0;X;;If true, the login is bound to a single instance of the particular application. It means that it is not possible to log in on more than one terminal with the same login at the same time.;
+9;Externally managed;Login;externalManaged;externalManaged;B;1;0;X;;This flag indicates whether or not the properties of this login are managed by an external system (e.g.: LDAP).In case this flag is {@code true} then the login is read-only in the application an cannot be changed within WAMAS.;
+10;Externally authenticated;Login;externalAuthenticated;externalAuthenticated;B;1;0;X;;This flag indicates whether or not the authentication is done by WAMAS or must be delegated to an external system (e.g.: LDAP).In case this flag is set to {@code true} then WAMAS does not know and maintain the password of this login. If the external systemis not available the user is unable to sing-in.;
+11;Locked;Login;locked;locked;B;1;0;X;;If set the login cannot be used any more to access the application.;
+12;Data access profile;Login;dataAccessProfile;dataAccessProfile;N;10;0;;;The data access profile of this login. Used to define which data is visible.;
+13;Client;Login;defaultClient.clientId;clientId;S;10;0;;X;Is the unique identification of a client.;
+14;Warehouse location;Login;defaultWhLoc.whLocId;whLoc;S;20;0;;X;The identifier of the warehouse location.;
+15;Password policy;Login;passwordPolicy;passwordPolicy;N;18;0;;;The password policy that is applied for this login. Mandatory unless externalAuthenticated is set to TRUE;

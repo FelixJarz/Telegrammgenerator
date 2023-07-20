@@ -1,0 +1,4 @@
+# WCS_PICKACK00008;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Sequence number;WcsPickAck;seqNo;seqNo;N;5;0;X;;The sequence number of pick acknowledge for the same picking order;
+2;Picking order;PickingOrder;orderId;orderId;S;10;0;X;;The unique ID of this picking order.;
+3;Picking order finished;WcsPickAck;finished;completeFlag;B;1;0;X;;Represents a boolean value, which is false by default.;

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--BEGIN include existing XSD schemas-->
+	<xsd:include schemaLocation="outTypeDefinition.xsd"/>
+	<xsd:include schemaLocation="header.xsd"/>
+	<xsd:include schemaLocation="ASOACK00001.xsd"/>
+	<xsd:include schemaLocation="ASRS_ADVISEDLUACK00001.xsd"/>
+	<xsd:include schemaLocation="ASRS_LUINFOACK00001.xsd"/>
+	<xsd:include schemaLocation="ASRS_LUREPORTREQACK00001.xsd"/>
+	<xsd:include schemaLocation="ASRS_RELOCATIONREQACK00001.xsd"/>
+	<xsd:include schemaLocation="ASRS_RETRORDERACK00001.xsd"/>
+	<xsd:include schemaLocation="FWCS_FFOACK00001.xsd"/>
+	<xsd:include schemaLocation="IBDACK00012.xsd"/>
+	<xsd:include schemaLocation="IBOACK00008.xsd"/>
+	<xsd:include schemaLocation="INSPMACK00001.xsd"/>
+	<xsd:include schemaLocation="INVDACK00009.xsd"/>
+	<xsd:include schemaLocation="LAACCOUNTENTRYACK00001.xsd"/>
+	<xsd:include schemaLocation="LOADACK00011.xsd"/>
+	<xsd:include schemaLocation="LOGIN2ROLE00005.xsd"/>
+	<xsd:include schemaLocation="MBGMCR03.xsd"/>
+	<xsd:include schemaLocation="OBDACK00011.xsd"/>
+	<xsd:include schemaLocation="OBOACK00011.xsd"/>
+	<xsd:include schemaLocation="ROUTECFG0001.xsd"/>
+	<xsd:include schemaLocation="SHIPMENTLUACK00003.xsd"/>
+	<xsd:include schemaLocation="SHP_IBDLV_CONFIRM_DECENTRAL03.xsd"/>
+	<xsd:include schemaLocation="SHP_OBDLV_CONFIRM_DECENTRAL04.xsd"/>
+	<xsd:include schemaLocation="SHP_OBDLV_SPLIT_DECENTRAL01.xsd"/>
+	<xsd:include schemaLocation="STOCKADJ00008.xsd"/>
+	<xsd:include schemaLocation="STOCKBEGIN00009.xsd"/>
+	<xsd:include schemaLocation="SYSUSER00007.xsd"/>
+	<xsd:include schemaLocation="WCS_INVENTORYREQ00007.xsd"/>
+	<xsd:include schemaLocation="WCS_ITEM00009.xsd"/>
+	<xsd:include schemaLocation="WCS_PICKREQ00010.xsd"/>
+	<xsd:include schemaLocation="WCS_REPLDEMANDACK00006.xsd"/>
+	<xsd:include schemaLocation="WCS_STOCKATTRCHGREQ00006.xsd"/>
+	<xsd:include schemaLocation="WCS_STOCKCOMPREQ00005.xsd"/>
+	<xsd:include schemaLocation="WCS_STOCKTRANSFERREQ00009.xsd"/>
+	<xsd:include schemaLocation="WCS_STOCKTRANSFERREQCANCEL00007.xsd"/>
+	<xsd:include schemaLocation="WCS_TRANSPORTREQ00007.xsd"/>
+	<xsd:include schemaLocation="WCS_TRANSPORTREQCANCEL00006.xsd"/>
+	<xsd:include schemaLocation="WVINVE03.xsd"/>
+	<!--END include existing XSD schemas-->
+	<xsd:element name="DI_TELEGRAMS" type="DI_TELEGRAMS"></xsd:element>
+	<xsd:complexType name="DI_TELEGRAMS">
+		<xsd:sequence>
+			<xsd:element name="DI_TELEGRAM" type="DI_TELEGRAM" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="DI_TELEGRAM">
+		<xsd:sequence>
+			<xsd:element name="header" type="header" minOccurs="1" maxOccurs="1"></xsd:element>
+			<xsd:element name="body" type="body" minOccurs="1" maxOccurs="1"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="body">
+		<xsd:sequence minOccurs="1" maxOccurs="1">
+			<xsd:choice minOccurs="1" maxOccurs="1">
+				<xsd:element name="ASOACK00001" type="ASOACK00001" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="ASRS_ADVISEDLUACK00001" type="ASRS_ADVISEDLUACK00001" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="ASRS_LUINFOACK00001" type="ASRS_LUINFOACK00001" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="ASRS_LUREPORTREQACK00001" type="ASRS_LUREPORTREQACK00001" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="ASRS_RELOCATIONREQACK00001" type="ASRS_RELOCATIONREQACK00001" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="ASRS_RETRORDERACK00001" type="ASRS_RETRORDERACK00001" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="FWCS_FFOACK00001" type="FWCS_FFOACK00001" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="IBDACK00012" type="IBDACK00012" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="IBOACK00008" type="IBOACK00008" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="INSPMACK00001" type="INSPMACK00001" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="INVDACK00009" type="INVDACK00009" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="LAACCOUNTENTRYACK00001" type="LAACCOUNTENTRYACK00001" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="LOADACK00011" type="LOADACK00011" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="LOGIN2ROLE00005" type="LOGIN2ROLE00005" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="MBGMCR03" type="MBGMCR03" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="OBDACK00011" type="OBDACK00011" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="OBOACK00011" type="OBOACK00011" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="ROUTECFG0001" type="ROUTECFG0001" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="SHIPMENTLUACK00003" type="SHIPMENTLUACK00003" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="SHP_IBDLV_CONFIRM_DECENTRAL03" type="SHP_IBDLV_CONFIRM_DECENTRAL03" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="SHP_OBDLV_CONFIRM_DECENTRAL04" type="SHP_OBDLV_CONFIRM_DECENTRAL04" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="SHP_OBDLV_SPLIT_DECENTRAL01" type="SHP_OBDLV_SPLIT_DECENTRAL01" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="STOCKADJ00008" type="STOCKADJ00008" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="STOCKBEGIN00009" type="STOCKBEGIN00009" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="SYSUSER00007" type="SYSUSER00007" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="WCS_INVENTORYREQ00007" type="WCS_INVENTORYREQ00007" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="WCS_ITEM00009" type="WCS_ITEM00009" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="WCS_PICKREQ00010" type="WCS_PICKREQ00010" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="WCS_REPLDEMANDACK00006" type="WCS_REPLDEMANDACK00006" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="WCS_STOCKATTRCHGREQ00006" type="WCS_STOCKATTRCHGREQ00006" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="WCS_STOCKCOMPREQ00005" type="WCS_STOCKCOMPREQ00005" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="WCS_STOCKTRANSFERREQ00009" type="WCS_STOCKTRANSFERREQ00009" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="WCS_STOCKTRANSFERREQCANCEL00007" type="WCS_STOCKTRANSFERREQCANCEL00007" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="WCS_TRANSPORTREQ00007" type="WCS_TRANSPORTREQ00007" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="WCS_TRANSPORTREQCANCEL00006" type="WCS_TRANSPORTREQCANCEL00006" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="WVINVE03" type="WVINVE03" minOccurs="1" maxOccurs="1"/>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

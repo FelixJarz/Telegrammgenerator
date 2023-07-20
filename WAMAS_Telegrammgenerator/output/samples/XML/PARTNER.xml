@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<!--This sample file contains one item. -->
+		<header>
+			<FULL>
+				<HEADER_SOURCE>HOST</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_TRANSACTIONID>1</HEADER_TRANSACTIONID>
+				<HEADER_SEQUENCE>0</HEADER_SEQUENCE>
+				<HEADER_CREATIONTIME>20180817154415</HEADER_CREATIONTIME>
+				<HEADER_RECORDTYPENAME>PARTNER00008</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<PARTNER00008>
+				<clientId>1</clientId>
+				<partnerId>1_99</partnerId>
+				<supplier>1</supplier>
+				<igOverDeliveryAllowed>YES</igOverDeliveryAllowed>
+				<PARTNERADDR00007>
+					<clientId>1</clientId>
+					<partnerId>1_99</partnerId>
+					<addresskind>PARTNER</addresskind>
+					<name>Pink Inc.</name>
+					<city>Sheffield</city>
+					<country>GB</country>
+					<language>eng</language>
+					<timeZone>Europe/London</timeZone>
+				</PARTNERADDR00007>
+			</PARTNER00008>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>

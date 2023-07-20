@@ -1,0 +1,2 @@
+# WCS_STOCKTRANSFERREQREPL00008;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;ID;WcsReplDemand;replDemandId;id;N;18;0;X;;Replenishment demand id;

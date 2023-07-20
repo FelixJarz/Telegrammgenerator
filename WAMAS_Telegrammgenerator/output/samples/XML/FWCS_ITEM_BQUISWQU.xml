@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<!--This sample file contains one item, having BQU = WQU.-->
+		<header>
+			<FULL>
+				<HEADER_SOURCE>WMS</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_TRANSACTIONID>1</HEADER_TRANSACTIONID>
+				<HEADER_SEQUENCE>0</HEADER_SEQUENCE>
+				<HEADER_CREATIONTIME>20210817154415</HEADER_CREATIONTIME>
+				<HEADER_RECORDTYPENAME>FWCS_ITEM00001</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<FWCS_ITEM00001>
+				<clientId>1</clientId>
+				<itemNo>100010015</itemNo>
+				<variant>00000</variant>				
+				<recordState>NORMAL</recordState>				
+				<FWCS_ITEMALIAS00001>
+					<clientId>1</clientId>
+					<itemNo>100010015</itemNo>
+					<variant>00000</variant>
+					<kind>GTIN</kind>
+					<itemAliasNo>110001001514</itemAliasNo>
+					<numBquWqu>1</numBquWqu>
+					<recordState>NORMAL</recordState>
+				</FWCS_ITEMALIAS00001>				
+				<FWCS_ITEMALIAS00001>
+					<clientId>1</clientId>
+					<itemNo>100010015</itemNo>
+					<variant>00000</variant>
+					<kind>VC</kind>
+					<itemAliasNo>16</itemAliasNo>
+					<numBquWqu>1</numBquWqu>
+					<recordState>NORMAL</recordState>
+				</FWCS_ITEMALIAS00001>
+				<FWCS_PACKAGINGVERSION00001>
+					<clientId>1</clientId>
+					<itemNo>100010015</itemNo>
+					<variant>00000</variant>				
+					<numBquWqu>1</numBquWqu>
+					<itemWeight>61</itemWeight>
+					<itemWeightUnit>kg</itemWeightUnit>
+					<itemLength>45</itemLength>
+					<itemLengthUnit>cm</itemLengthUnit>
+					<itemWidth>60</itemWidth>
+					<itemWidthUnit>cm</itemWidthUnit>
+					<itemHeight>85</itemHeight>
+					<itemHeightUnit>cm</itemHeightUnit>
+					<recordState>NORMAL</recordState>
+				</FWCS_PACKAGINGVERSION00001>
+				<FWCS_ITEMDESC00001>
+					<clientId>1</clientId>
+					<itemNo>100010015</itemNo>
+					<variant>00000</variant>
+					<description>Laundrymachine, 7kg</description>
+					<description2>7 kg, 1400 U/Min.</description2>
+					<language>eng-US</language>
+					<recordState>NORMAL</recordState>
+				</FWCS_ITEMDESC00001>			
+			</FWCS_ITEM00001>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>

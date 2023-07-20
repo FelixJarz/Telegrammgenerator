@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DI_TELEGRAMS>
+	<DI_TELEGRAM>
+		<!--This sample file contains one picking location assignment. -->
+		<header>
+			<FULL>
+				<HEADER_SOURCE>HOST</HEADER_SOURCE>
+				<HEADER_DESTINATION>WAMAS</HEADER_DESTINATION>
+				<HEADER_SEQUENCE>0</HEADER_SEQUENCE>
+				<HEADER_CREATIONTIME>20180924160729</HEADER_CREATIONTIME>
+				<HEADER_RECORDTYPENAME>PICKINGLOCASSIGNMENT00008</HEADER_RECORDTYPENAME>
+			</FULL>
+		</header>
+		<body>
+			<PICKINGLOCASSIGNMENT00008>
+				<whLoc>Test Center</whLoc>
+				<areaId>pWHA2</areaId>
+				<groupId>pgWHA2a</groupId>
+				<stoLocId></stoLocId>
+				<clientId>1</clientId>
+				<itemNo>100010001</itemNo>
+				<variant>00000</variant>
+				<numBquWqu>10</numBquWqu>
+				<goodsCategory></goodsCategory>
+				<validityFrom></validityFrom>
+				<validityTo></validityTo>
+				<minPickQty>2</minPickQty>
+				<minPickUnitKind>BQU</minPickUnitKind>
+				<minPickUnitId></minPickUnitId>
+				<wholeQtyUnitKind>BQU</wholeQtyUnitKind>
+				<wholeQtyUnitId></wholeQtyUnitId>
+				<replNormThQty></replNormThQty>
+				<replNormThUnitKind>BQU</replNormThUnitKind>
+				<replNormThUnitId></replNormThUnitId>
+				<replNormThPerc></replNormThPerc>
+				<replCritThQty></replCritThQty>
+				<replCritThUnitKind>BQU</replCritThUnitKind>
+				<replCritThUnitId></replCritThUnitId>
+				<replCritThPerc></replCritThPerc>
+				<replCritPrioIncrement></replCritPrioIncrement>
+				<manuReplBlock4Mobile>0</manuReplBlock4Mobile>
+				<blockAutoRepl>0</blockAutoRepl>
+				<invPickThQty></invPickThQty>
+				<invPickThUnitKind>BQU</invPickThUnitKind>
+				<invPickThUnitId></invPickThUnitId>
+				<invPickThPerc></invPickThPerc>
+				<invReplThQty></invReplThQty>
+				<invReplThUnitKind>BQU</invReplThUnitKind>
+				<invReplThUnitId></invReplThUnitId>
+				<invReplThPerc></invReplThPerc>
+				<removeWholeLuFlag>0</removeWholeLuFlag>
+				<enableNegativeStock>0</enableNegativeStock>
+				<cdNo>0</cdNo>
+				<gow></gow>
+				<stockRating></stockRating>
+				<PLAGOODSOWNER00006>
+					<clientId>1</clientId>
+					<gow>1_1</gow>
+				</PLAGOODSOWNER00006>
+				<PLASTOCKRATING00006>
+					<clientId>1</clientId>
+					<stockRating>100</stockRating>
+				</PLASTOCKRATING00006>
+			</PICKINGLOCASSIGNMENT00008>
+		</body>
+	</DI_TELEGRAM>
+</DI_TELEGRAMS>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="DEBMAS07">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="CreationDate" type="WamasDate" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="CreationTime" type="xsd:time" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Extension" type="STRING_30" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="IDocNumber" type="STRING_16" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="IDocType" type="STRING_30" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Mandt" type="STRING_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="MessageType" type="STRING_30" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvpor" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvprn" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Rcvprt" type="STRING_2" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Serial" type="STRING_20" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndpor" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndprn" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Sndprt" type="STRING_2" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+			<!--BEGIN sub record element-->
+			<xsd:element name="E1KNA1M" type="DEBMAS07_E1KNA1M" minOccurs="0" maxOccurs="unbounded"/>
+			<!--END sub record element-->
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="DEBMAS07_E1KNA1M">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<!--BEGIN attributes-->
+			<xsd:element name="FirstPartOfGLN" type="STRING_7" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="LangKeyOfPartner" type="STRING_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="LangKeyOfPartnerIso" type="STRING_6" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="MessageFunction" type="STRING_3" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_Partner_partnerId" type="STRING_15" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_Country_countryId" type="STRING_2" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_city" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_district" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_fax" type="STRING_40" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_name" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_name2" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_name3" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_name4" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_phone" type="STRING_40" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_region" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_street" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_title" type="STRING_35" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="PartnerAddress_addr_zipCode" type="STRING_10" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="Partner_state" type="STRING_1" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="SecondPartOfGLN" type="STRING_5" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="ThirdPartOfGLN" type="STRING_1" minOccurs="1" maxOccurs="1"/>
+			<!--END attributes-->
+		</xsd:choice>
+	</xsd:complexType>
+</xsd:schema>

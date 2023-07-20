@@ -1,0 +1,2 @@
+#This sample file finish one FWCS fulfillment order station line
+WMS       WAMAS     1                             120210823000000FWCS_FFOSTATIONLINEFINISH000011         4                   PBL-02                                  NORMAL

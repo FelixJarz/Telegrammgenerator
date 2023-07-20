@@ -1,0 +1,5 @@
+# E1BPE1MAKTRT;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Function message;;;;S;3;0;X;;;;FUNCTION
+2;Item number;Item;itemNo;;S;20;0;X;; Is a part of the unique identification of an item. ;;MATERIAL
+3;Item description;Item;ItemDesc.description;;S;40;0;X;;First line of the item description.;;MATL_DESC
+4;Language;Item;ItemDesc.Language.langId;;S;6;0;X;X;Is the unique identifaction of a language, in compliance with ISO 639-2/B Alpha 3 Code. In case ISO specifies more than one code, the B-Code variant is used (ger instead of deu). If a particular language has regional differences, the 2-character country code according to ISO-3166 is used (eng-US, eng-UK, ger-CH, ger-AT, ger-DE).Info: ISO 639 is the set of international standards that lists short codes for language names.See also: LANGISOALPHA2ID.;;LANGU_ISO

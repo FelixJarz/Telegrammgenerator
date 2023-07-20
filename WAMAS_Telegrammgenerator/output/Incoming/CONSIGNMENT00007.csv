@@ -1,0 +1,17 @@
+# CONSIGNMENT00007;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Load;Consignment;load.loadId;loadId;S;20;0;X;X;The load ID identifies the load, together with the consecutive number and the system partner, uniquely. The load ID is taken from the shipment frequency or the plan load (outbound delivery) depending on the ‘load creation kind’ of the outbound delivery type.;
+2;Consecutive number;Consignment;load.consecutiveNo;consecutiveNo;N;10;0;X;X;;
+3;System partner Load;Consignment;load.sysPartner.id;loadSystemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;Consignment ID;Consignment;consignmentId;consId;S;20;0;X;;Identifies a consignment (together with the system partner) uniquely.;
+5;System partner Consignment;Consignment;sysPartner.id;consSystemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+6;Loading sequence;Consignment;loadingSeq;loadingSeq;N;5;0;;;The loading sequence determines the order of consignments for loading;
+7;Unloading sequence;Consignment;unloadingSeq;unloadingSeq;N;5;0;;;The unloading sequence defines the order of consignments for unloading.;
+8;Delivery category;Consignment;obd.category.id;category;S;10;0;;X;The identification of the delivery category.;
+9;Staging time;Consignment;obd.stagingTime;stagingTime;DT;14;0;X;;The date/time when all loading units of this delivery have to be in the staging area.;
+10;Loading time;Consignment;obd.loadingTime;loadingTime;DT;14;0;;;The date/time when all loading units of this delivery have to be loaded.;
+11;Delivery time;Consignment;obd.deliveryTime;deliveryTime;DT;14;0;X;;The time the delivery reaches the customer.;
+12;Priority;Consignment;obd.priority;priority;N;1;0;;;Defines the priority of this delivery.;
+13;Outgoing goods area;Consignment;obd.loadingPoint.area.areaId;outgoingArea;S;10;0;;X;The unique ID of this area within the WhLoc;
+14;Dock;Consignment;obd.loadingPoint.dock.dockId;dock;S;10;0;;X;The unique ID of the dock;
+15;Staging area;Consignment;obd.loadingPoint.staging.areaId;stagingArea;S;10;0;;X;Unique ID for the staging area.;
+16;Storage location;Consignment;obd.loadingPoint.stoLoc.stoLocId;stoLocId;S;20;0;;X;The identifier of the storage location per warehouse location.;

@@ -1,0 +1,8 @@
+# LOADTRANSPORTVEHICLEACK00006;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Load;LoadTransportVehicle;Load.loadId;loadId;S;20;0;X;X;The load ID identifies the load, together with the consecutive number and the system partner, uniquely. The load ID is taken from the shipment frequency or the plan load (outbound delivery) depending on the ‘load creation kind’ of the outbound delivery type.;
+2;Consecutive number;LoadTransportVehicle;Load.consecutiveNo;consecutiveNo;N;10;0;X;X;;
+3;System partner Load;LoadTransportVehicle;Load.sysPartner.id;systemPartner;S;10;0;X;X;Unique identification of a system partner (see SystemPartner).;
+4;Transport vehicle ID;LoadTransportVehicle;vehicleId;vehicleId;N;10;0;X;;The ID of the load transport vehicle defines a load transport vehicle uniquely together with the ID of the load.;
+5;Transport vehicle type;LoadTransportVehicle;type.vehicleTypeId;vehicleTypeId;S;10;0;X;X;Unique identifier of a transport vehicle type.;
+6;Sequence;LoadTransportVehicle;sequence;sequence;N;7;0;;;A long value used for attributes, which specify a sequence used for ordering or sorting (see guideline "Rules and Recommendations for the Data Model"). Is not related with an Oracle sequence, which is represented by the IDENTIFIER model element.;
+7;Data state;;;recordState;E;6;0;;;;com.wamas.wms.core.di.recordtypes.RecordState

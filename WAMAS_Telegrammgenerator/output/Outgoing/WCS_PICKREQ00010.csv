@@ -1,0 +1,13 @@
+# WCS_PICKREQ00010;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Picking order;PickingOrder;orderId;orderId;S;10;0;X;;The unique ID of this picking order.;
+2;Priority;PickingOrder;priority;priority;N;1;0;;;Represents the priority of this picking order. The higher the value the more important is the picking order.;
+3;Staging time;PickingOrder;stagingTime;stagingTime;DT;14;0;;;Staging time.;
+4;Outgoing goods area;OutboundDelivery;loadingPoint.area.areaId;outgoingArea;S;10;0;;X;The unique ID of this area within the WhLoc;
+5;Dock;OutboundDelivery;loadingPoint.dock.dockId;dock;S;10;0;;X;The unique ID of the dock;
+6;Staging area;OutboundDelivery;loadingPoint.staging.areaId;stagingArea;S;10;0;;X;Unique ID for the staging area.;
+7;Storage location;OutboundDelivery;loadingPoint.stoLoc.stoLocId;stoLocId;S;20;0;;X;The identifier of the storage location per warehouse location.;
+8;Allowed new LUs;;;newLuAllowed;B;1;0;X;;;
+9;LU-ID;LoadUnit;luId;luId;S;20;0;;;Is part of the unique identification of a stock object bundle.;
+10;Transfer location;StoLoc;stoLocId;handoverLocId;S;20;0;;;The identifier of the storage location per warehouse location.;
+11;Update;;;update;B;1;0;X;;;
+12;Picking reason;;;pickingReason;E;15;0;X;;;com.wamas.wms.biz.wcs.picking.WcsPickReqReason

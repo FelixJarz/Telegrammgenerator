@@ -1,0 +1,11 @@
+# WCS_STOCKTRANSFERREQLU00008;Description;Tablename;Fieldname (WAMAS);Shortname (xml relevant);Datatype (WAMAS);Length (WAMAS);Decimalplaces (WAMAS);Mandatory;Foreignkey;Documentation;ERP relevant;Fieldname (SAP);Datatype (SAP);Length (SAP);Decimalplaces (SAP)
+1;Request number;;;requestNo;N;7;0;X;;;
+2;LU-ID;LoadUnit;luId;luId;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+3;LU origin;LoadUnit;luOrigin;luOrigin;S;20;0;X;;Is part of the unique identification of a stock object bundle.;
+4;Loading aid;LoadUnit;LoadAid.loadAidId;loadAidId;S;10;0;X;X;Unique identification of a loading aid (see LoadAid).;
+5;Loading unit cubature;LoadUnit;LoadUnitCubature.cubatureId;cubatureId;S;10;0;X;X;Unique identifier of the loading unit cubature.;
+6;Gross weight;StockObjectBundle;keyData.grossWeight.value;grossWeight;D;12;3;;;Specifies the value (or amount) in weight unit which was entered by a user.;
+7;Gross weight unit;StockObjectBundle;keyData.grossWeight.unit.id;grossWeightUnit;S;5;0;;X;Uniquely identifies the weight unit.;
+8;Origin of gross weight;StockObjectBundle;keyData.weightKind;weightKind;E;10;0;;;The kind of the gross weight.;
+9;Master loading unit LU origin;LoadUnit;master.luOrigin;masterLuOrigin;S;20;0;;X;Is part of the unique identification of a stock object bundle.;
+10;Master loading unit LU-ID;LoadUnit;luId;masterLuId;S;20;0;;;Is part of the unique identification of a stock object bundle.;

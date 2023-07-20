@@ -1,0 +1,8 @@
+#This sample file contains a FWCS item with four item aliases, an item description and a packaging version.
+WMS       WAMAS     1                             120210810103000FWCS_ITEM00001                1         100010014           00000     NORMAL
+WMS       WAMAS     1                             220210810103000FWCS_ITEMDESC00001            1         100010014           00000     Bio Apple, 1kg                                                                  eng-USNORMAL
+WMS       WAMAS     1                             320210810103000FWCS_PACKAGINGVERSION00001    1         100010014           00000     000000020000000000020000kg   000000030000cm   000000025000cm   000000011000cm   NORMAL
+WMS       WAMAS     1                             420210810103000FWCS_ITEMALIAS00001           1         100010014           00000     110001001415                  GTIN PCS  000000001000NORMAL
+WMS       WAMAS     1                             520210810103000FWCS_ITEMALIAS00001           1         100010014           00000     22                            VC   PCS  000000001000NORMAL
+WMS       WAMAS     1                             620210810103000FWCS_ITEMALIAS00001           1         100010014           00000     110001001422                  GTIN PKG  000000020000NORMAL
+WMS       WAMAS     1                             720210810103000FWCS_ITEMALIAS00001           1         100010014           00000     15                            VC   PCS  000000001000NORMAL
