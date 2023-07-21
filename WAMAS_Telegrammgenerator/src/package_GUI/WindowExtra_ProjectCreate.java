@@ -135,7 +135,6 @@ public class WindowExtra_ProjectCreate {
 		
 		//In case the button is pressed -> Go to the next window 
 		buttonNext.addSelectionListener(new SelectionAdapter() {
-
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				if(textProjectName.getText().isEmpty()) {
