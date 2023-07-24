@@ -160,7 +160,6 @@ public class WindowExtra_ProjectCreate {
 			}
 				
 		});
-		
 		buttonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		buttonNext.setText("Next");
 	
