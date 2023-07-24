@@ -53,11 +53,13 @@ public class WindowExtra_ProjectCreate {
 	 * @wbp.parser.entryPoint
 	 */
 	protected void createContents() {
+		// Create the window and its components
 		shell = new Shell();
 		shell.setSize(450, 265);
 		shell.setText("Extra Window");
 		shell.setLayout(new GridLayout(4, false));
 		
+		// Label and text field for project name
 		Label labelProjectName = new Label(shell, SWT.NONE);
 		labelProjectName.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
 		labelProjectName.setText("Project name:");
@@ -69,6 +71,7 @@ public class WindowExtra_ProjectCreate {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
+		// Label and text field for version number
 		Label labelVersion = new Label(shell, SWT.NONE);
 		labelVersion.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
 		labelVersion.setText("Version:");
@@ -80,6 +83,7 @@ public class WindowExtra_ProjectCreate {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
+		// Label and text field for Interface Exports directory
 		Label labelInterfaceExports = new Label(shell, SWT.NONE);
 		labelInterfaceExports.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
 		labelInterfaceExports.setText("Interface Exports:");
@@ -90,11 +94,13 @@ public class WindowExtra_ProjectCreate {
 		
 //-----------------------------------------------Buttons with Listener / Labels-------------------------------------------------------------------
 		//In case the button is pressed -> File Explorer opens and you can choose a location 
+		// Button to choose Interface Exports directory using File Explorer
 		Button buttonLocationIE = new Button(shell, SWT.NONE);
 		buttonLocationIE.addSelectionListener(new SelectionAdapter() {
 			
 			@Override
 			public void widgetSelected(SelectionEvent e) {
+				// Open File Explorer and let the user select a directory
 				JFileChooser chooser = new JFileChooser();
 				String windowTitle = "Explorer";
 				chooser.setDialogTitle(windowTitle);
@@ -117,6 +123,7 @@ public class WindowExtra_ProjectCreate {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
+		// Button to return to the previous window
 		Button buttonReturn = new Button(shell, SWT.NONE);
 		buttonReturn.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		
@@ -124,6 +131,7 @@ public class WindowExtra_ProjectCreate {
 		buttonReturn.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
+				// Close the current window and open the previous window (WindowMain_1_ProjectSelect)
 				shell.close();
 				WindowMain_1_ProjectSelect windowMain_1_ProjectSelect = new WindowMain_1_ProjectSelect();
 				windowMain_1_ProjectSelect.open();
@@ -137,6 +145,7 @@ public class WindowExtra_ProjectCreate {
 		buttonNext.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
+				// Check if all required fields are filled, and if so, proceed to the next window
 				if(textProjectName.getText().isEmpty()) {
 					textProjectName.setMessage("All fields must be filled!");
 					textVersionNumber.setMessage("All fields must be filled!");
