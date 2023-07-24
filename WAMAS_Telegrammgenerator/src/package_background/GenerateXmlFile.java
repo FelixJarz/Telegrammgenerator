@@ -11,42 +11,42 @@ import java.util.Date;
 
 public class GenerateXmlFile {
 
+    // Instance variables
     private String selectedMasterrecordType = "placeholder";
     private String headerSource;
     private String headerDestination;
     private int headerSequence;
-
     private String headerRecordTypeName;
     private String headerOrderType;
     private String filePath;
     private String selectedOrderType;
 
+    // Constructor to initialize the instance variables
     public GenerateXmlFile(String selectedMasterrecordType, String selectedOrderType, String headerSource, String headerDestination,
-                           String headerRecordTypeName, int headerSequence,  String headerOrderType, String filePath) {
-
+                           String headerRecordTypeName, int headerSequence, String headerOrderType, String filePath) {
         this.selectedMasterrecordType = selectedMasterrecordType;
         this.selectedOrderType = selectedOrderType;
-
         this.headerSource = headerSource;
         this.headerDestination = headerDestination;
         this.headerSequence = headerSequence;
-
         this.headerRecordTypeName = headerRecordTypeName;
         this.headerOrderType = headerOrderType;
-
         this.filePath = filePath;
     }
 
+    // Method to generate XML file
     public void generateXmlFile() {
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         try {
+            // Create a new XML document
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.newDocument();
 
+            // Root element: "Masterrecords"
             Element rootElement = doc.createElement("Masterrecords");
             doc.appendChild(rootElement);
 
-
+            // Create "header" element and its sub-elements
             Element headerElement = doc.createElement("header");
             rootElement.appendChild(headerElement);
 
@@ -75,15 +75,17 @@ public class GenerateXmlFile {
             headerOrderTypeElement.appendChild(doc.createTextNode(headerOrderType));
             headerElement.appendChild(headerOrderTypeElement);
 
+            // Create "Masterrecord" element and set its "Type" attribute
             Element masterrecordElement = doc.createElement("Masterrecord");
             rootElement.appendChild(masterrecordElement);
             masterrecordElement.setAttribute("Type", selectedMasterrecordType);
 
+            // Create "OrderType" element and set its "Type" attribute
             Element orderTypeElement = doc.createElement("OrderType");
             rootElement.appendChild(orderTypeElement);
             orderTypeElement.setAttribute("Type", selectedOrderType);
 
-
+            // Add additional fields for the Masterrecord (Replace with actual values)
             Element field1Element = doc.createElement("Field1");
             field1Element.appendChild(doc.createTextNode("Value1")); // Replace with field1Value
             masterrecordElement.appendChild(field1Element);
@@ -92,11 +94,11 @@ public class GenerateXmlFile {
             field2Element.appendChild(doc.createTextNode("123")); // Replace with field2Value
             masterrecordElement.appendChild(field2Element);
 
+            // Prepare and write the XML to the specified file path
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
             DOMSource source = new DOMSource(doc);
-
 
             StreamResult result = new StreamResult(new File(filePath));
             transformer.transform(source, result);
@@ -108,6 +110,7 @@ public class GenerateXmlFile {
     }
 
     public static void main(String[] args) {
+        // Input parameters
         String selectedMasterrecordType = "MasterrecordType1";
         String selectedOrderType = "OrderType1";
         String headerSource = "HOST";
@@ -117,6 +120,7 @@ public class GenerateXmlFile {
         String headerOrderType = selectedOrderType;
         String filePath = "C:\\wamas\\workspace\\Telegrammgenerator Material\\XML_Test.xml";
 
+        // Create an instance of GenerateXmlFile and generate the XML
         GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrderType, headerSource, headerDestination, headerRecordTypeName,
                 headerSequence, headerOrderType, filePath);
         generator.generateXmlFile();

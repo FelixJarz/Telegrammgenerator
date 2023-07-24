@@ -50,7 +50,7 @@ public class WindowMain_3_FillHeader {
 	}
 //-----------------------------------------------GUI Objects-------------------------------------------------------------------
 	protected void createContents() {
-		
+		// Create the window and its components
 		shell = new Shell();
 		shell.setSize(500, 361);
 		shell.setText("Fill Odertype");
@@ -64,6 +64,7 @@ public class WindowMain_3_FillHeader {
 		
 		labelFillFull = new Label(shell, SWT.CENTER);
 		labelFillFull.setText("Fill full");
+		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -238,15 +239,17 @@ public class WindowMain_3_FillHeader {
 		new Label(shell, SWT.NONE);
 		
 //-----------------------------------------------Buttons with Listener-------------------------------------------------------------------
+		// Button to return to the previous window (WindowMain_2_ChooseOrdertype)
 		buttonReturn = new Button(shell, SWT.BORDER);
 		buttonReturn.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, false, false, 1, 1));
 		buttonReturn.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseUp(MouseEvent e) {
+				// Close the current window and open the previous window (WindowMain_2_ChooseOrdertype)
 				display.close();
-				WindowMain_2_ChooseOrdertype  windowMain_2_ChooseOdtertype = new WindowMain_2_ChooseOrdertype();
+				WindowMain_2_ChooseOrdertype windowMain_2_ChooseOdtertype = new WindowMain_2_ChooseOrdertype();
 				windowMain_2_ChooseOdtertype.open();
-				}
+			}
 		});
 		
 		buttonReturn.setText("Return");
@@ -262,11 +265,13 @@ public class WindowMain_3_FillHeader {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
+		// Button to proceed to the next window (WindowMain_4_FillBody)
 		buttonNext = new Button(shell, SWT.BORDER);
 		buttonNext.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, false, false, 1, 1));
 		buttonNext.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseUp(MouseEvent e) {
+				// Close the current window and open the next window (WindowMain_4_FillBody)
 				display.close();
 				WindowMain_4_FillBody nw = new WindowMain_4_FillBody();
 				nw.open();		

@@ -23,6 +23,7 @@ public class WindowMain_2_ChooseOrdertype {
 	protected int prevOrdertypeSize = 3;
 	
 	public void open() {
+		// Open the window
 		createContents();
 		shell.open();
 		shell.layout();
@@ -35,40 +36,40 @@ public class WindowMain_2_ChooseOrdertype {
 
 //-----------------------------------------------GUI Objects-------------------------------------------------------------------
 	protected void createContents() {
+		// Create the window and its components
 		shell = new Shell();
 		shell.setSize(450, 229);
 		shell.setText("SWT Application");
 		shell.setLayout(new GridLayout(3, false));
 		
+		// Label for choosing Ordertype
 		Label labelChooseOdertype = new Label(shell, SWT.NONE);
 		labelChooseOdertype.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
 		labelChooseOdertype.setText("Choose Ordertype");
 				
-		//Start class ProjectSelector to sort all the ordertypes
-//		ProjectSelector select = new ProjectSelector();
-//		select.getFinishedProjectList();
-		
+		// Get a list of Ordertypes from the ProjectSelector
 		String[] listOfOdertypes = ProjectSelector.getString();
 		
-		//fill the dropdown menu with the ordertypes
+		// Create a dropdown menu (Combo) and fill it with the Ordertypes
 		Combo combo = new Combo(shell, SWT.NONE);
 		combo.setItems(ProjectSelector.getRecordTypeList());
 		combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		
-		//Previous Odertypes will be shown
+		// Create arrays to store previous and new Ordertypes
 		String[] prevOrdertypes = new String[prevOrdertypeSize];
 		String[] newOrdertypes = new String[10];
 		for(int i = 0; i < 10 - 1; i++) {
 			newOrdertypes[i] = "Ordertype" + (i+1);
 		}
 		
+		// Add a SelectionListener to the Combo to update the previous Ordertypes array
 		combo.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				for(int i = 0; i < prevOrdertypeSize - 1; i++) {
 					if(i == prevOrdertypeSize - 1) {
 						prevOrdertypes[i] = newOrdertypes[i];
-					}else {
+					} else {
 						newOrdertypes[i+1] = prevOrdertypes[i];
 					}
 				}
@@ -79,6 +80,7 @@ public class WindowMain_2_ChooseOrdertype {
 			}
 		});
 		
+		// Create labels to display the previous Ordertypes
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -101,13 +103,14 @@ public class WindowMain_2_ChooseOrdertype {
 		labelOrdertype3.setText(newOrdertypes[2]);
 		
 		new Label(shell, SWT.NONE);
-		//ButtonNext.setEnabled(false);
-		
+
 //-----------------------------------------------Buttons with Listener-------------------------------------------------------------------
+		// Button to return to the previous window
 		Button buttonReturn = new Button(shell, SWT.NONE);
 		buttonReturn.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
+				// Close the current window and open the previous window (WindowMain_1_ProjectSelect)
 				shell.close();
 				WindowMain_1_ProjectSelect windowMain_1_ProjectSelect = new WindowMain_1_ProjectSelect();
 				windowMain_1_ProjectSelect.open();
@@ -117,10 +120,12 @@ public class WindowMain_2_ChooseOrdertype {
 		buttonReturn.setText("Return");
 		new Label(shell, SWT.NONE);
 		
+		// Button to proceed to the next window
 		Button buttonNext = new Button(shell, SWT.NONE);
 		buttonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		buttonNext.setEnabled(false);
 		
+		// Enable the Next button when an Ordertype is selected from the Combo
 		combo.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -128,28 +133,29 @@ public class WindowMain_2_ChooseOrdertype {
 			}
 		});
 		
+		// Add a SelectionListener to the Next button to perform actions and open the next window
 		buttonNext.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-			String selectedText = combo.getText();
+				// Get the selected Ordertype from the Combo
+				String selectedText = combo.getText();
+				String selectedOrdertype = selectedText;
+			
+				// Generate an XML file with selected parameters
+				String headerSource = "HOST";
+				String headerDestination = "WAMAS";
+				int headerSequence = 0;
+				String headerOrdertype = selectedOrdertype;
+				String filePath = "C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\XMLOutput_Test\\Test.xml";
+				String selectedMasterrecordType = null;
+				GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrdertype, headerSource,
+						headerDestination, filePath, headerSequence, headerOrdertype, filePath);
+				generator.generateXmlFile();
 				
-			String selectedOrdertype = selectedText;
-			
-			String headerSource = "HOST";
-			String headerDestination = "WAMAS";
-			int headerSequence = 0;
-			
-			String headerOrdertype = selectedOrdertype;
-			String filePath = "C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\XMLOutput_Test\\Test.xml";
-
-			String selectedMasterrecordType = null;
-			GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrdertype, headerSource,
-					headerDestination, filePath, headerSequence, headerOrdertype, filePath);
-			generator.generateXmlFile();
-			
-			display.close();
-			WindowMain_3_FillHeader window3 = new WindowMain_3_FillHeader();
-			window3.open();
+				// Close the current window and open the next window (WindowMain_3_FillHeader)
+				display.close();
+				WindowMain_3_FillHeader window3 = new WindowMain_3_FillHeader();
+				window3.open();
 			}
 		});
 		buttonNext.setText("Next");
