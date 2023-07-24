@@ -160,7 +160,7 @@ public class WindowExtra_ProjectCreate {
 					
 					projectSel.createFolder();
 					projectSel.unzipFolder(textIEDir.getText());
-					//projectSel.removeOutgoingTypes(); // Das ist die getFinishedProjectList -> xsd alle outgoing raus
+					projectSel.getFinishedProjectList(); // Das ist die getFinishedProjectList -> xsd alle outgoing raus
 					
 					WindowMain_1_ProjectSelect project = new WindowMain_1_ProjectSelect();
 					shell.close();
@@ -169,7 +169,6 @@ public class WindowExtra_ProjectCreate {
 			}
 				
 		});
-		
 		buttonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		buttonNext.setText("Next");
 	
