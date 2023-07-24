@@ -24,34 +24,42 @@ public class ProjectSelector {
 	
 
 //-----------------------------------------------read xsd folder-------------------------------------------------------------------
+//	
+//	
+//	static File folderXSD = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\xsd");
+//    String[] strXSD = folderXSD.list();
+//
+////-----------------------------------------------read Incoming folder-------------------------------------------------------------------
+//    File folderIncoming = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\Incoming");
+//	String[] strIncoming = folderIncoming.list(); 
+//	
+//-----------------------------------------------Function for sorting all the Header-------------------------------------------------------------------
 	private static ArrayList<String> tempList = new ArrayList<String>();
 	
-	static File folderXSD = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\xsd");
-    String[] strXSD = folderXSD.list();
-
-//-----------------------------------------------read Incoming folder-------------------------------------------------------------------
-    File folderIncoming = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\Incoming");
-	String[] strIncoming = folderIncoming.list(); 
-	
-//-----------------------------------------------Function for sorting all the Header-------------------------------------------------------------------
 	public static void getFinishedProjectList() {
+		
+
 		
 		SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
 		ProjectSelector projectSel = new ProjectSelector("test"); 
 		
-		//File folderXSD = new File(sessionData.getSelectedProjectPath());
+		File folderXSD = new File(sessionData.getSelectedProjectPath() + File.separator + "xsd");
 		String[] strXSD = folderXSD.list();
+		
+		File folderIncoming = new File(sessionData.getSelectedProjectPath() + File.separator + "Incoming");
+		String[] strIncoming = folderIncoming.list();
+		
 		File[] files = folderXSD.listFiles();
-				if(strXSD.equals(projectSel.strIncoming)) {	
+				if(strXSD.equals(strIncoming)) {	
 					//In case the folders match -> Saves the entire compare-process
-					System.out.println(projectSel.strIncoming);
+					System.out.println(strIncoming);
 					//Convert to array list for setString-function
 					ArrayList<String> arrMatch = new ArrayList<String>(); 
-		        	for(int i = 0; i <= projectSel.strIncoming.length - 1; i++) {
-			        	arrMatch.add(projectSel.strIncoming[i]);  
+		        	for(int i = 0; i <= strIncoming.length - 1; i++) {
+			        	arrMatch.add(strIncoming[i]);  
 		 			} 
 					projectSel.setString(arrMatch);
-				}else if(projectSel.strIncoming.equals("")) {	
+				}else if(strIncoming.equals("")) {	
 					//If the "Incoming"-folder is empty
 					System.out.println("The Incoming-folder is empty."); 
 				}else{ 								
@@ -61,9 +69,9 @@ public class ProjectSelector {
 		        	for (int i = 0; i <= strXSD.length - 1; i++) {
 		        		strXSDRemoved[i] = strXSD[i].substring(0,strXSD[i].lastIndexOf("."));
 		        	}
-		        	String[] strIncomingRemoved = projectSel.folderIncoming.list();
-		        	for (int i = 0; i <= projectSel.strIncoming.length - 1; i++) {
-		        		strIncomingRemoved[i] = projectSel.strIncoming[i].substring(0,projectSel.strIncoming[i].lastIndexOf("."));
+		        	String[] strIncomingRemoved = folderIncoming.list();
+		        	for (int i = 0; i <= strIncoming.length - 1; i++) {
+		        		strIncomingRemoved[i] = strIncoming[i].substring(0,strIncoming[i].lastIndexOf("."));
 		        	}
 		        	
 		        	//Convert the string arrays to array lists 
@@ -82,9 +90,18 @@ public class ProjectSelector {
 					System.out.println("Finished List: " + arrMatchedList);
 					projectSel.setString(arrMatchedList);
 					
-					java.nio.file.Path srcDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + "\\" + sessionData.getSelectedProject() + "\\XSD");
-					java.nio.file.Path destDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + "\\" + sessionData.getSelectedProject() + "\\XSD2");
-
+					java.nio.file.Path srcDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + File.separator +"xsd");
+					java.nio.file.Path destDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + File.separator + "XSD2");
+					
+					File srcDir2 = new File(sessionData.getSelectedProjectPath() + File.separator + sessionData.getSelectedProject() + File.separator +"xsd");					
+					File destDir2 = new File(sessionData.getSelectedProjectPath() + File.separator + sessionData.getSelectedProject() + File.separator + "XSD2");
+					
+		//			File destDir2 = new File("C:\\Telegrammgenerator\\Projects\\test1");
+					
+					if(!destDir2.exists()){
+						destDir2.mkdirs();
+					}
+					
 					try {
 						Files.copy(srcDir, destDir);
 					} catch (IOException e) {

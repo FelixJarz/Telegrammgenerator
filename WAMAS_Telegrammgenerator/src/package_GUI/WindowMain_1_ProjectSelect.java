@@ -100,6 +100,7 @@ public class WindowMain_1_ProjectSelect {
 				SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
 				sessionData.setSelectedProject(combo.getText());
 				
+				ProjectSelector.getFinishedProjectList();
 			}
 		});
 		buttonNext1.addSelectionListener(new SelectionAdapter() {

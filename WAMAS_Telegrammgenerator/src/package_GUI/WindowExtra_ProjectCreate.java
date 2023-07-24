@@ -160,7 +160,7 @@ public class WindowExtra_ProjectCreate {
 					
 					projectSel.createFolder();
 					projectSel.unzipFolder(textIEDir.getText());
-					projectSel.getFinishedProjectList(); // Das ist die getFinishedProjectList -> xsd alle outgoing raus
+					 // Das ist die getFinishedProjectList -> xsd alle outgoing raus
 					
 					WindowMain_1_ProjectSelect project = new WindowMain_1_ProjectSelect();
 					shell.close();
