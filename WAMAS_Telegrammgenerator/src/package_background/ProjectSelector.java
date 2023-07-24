@@ -3,7 +3,9 @@ package package_background;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FilenameFilter;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -73,9 +75,19 @@ public class ProjectSelector {
 					ArrayList<String> arrMatchedList = new ArrayList<String>(arrIncoming);
 					arrMatchedList.retainAll(arrXSD);
 					System.out.println("Finished List: " + arrMatchedList);
-					String strExtension = ".xsd"; 
-					arrMatchedList = arrMatchedList.add(0, strExtension);
 					projectSel.setString(arrMatchedList);
+					
+					File[] files = folderXSD.listFiles();
+					for (File f : files)
+					{
+						for(int i = 0; i <= strXSDRemoved.length - 1; i++) {
+							String s = strXSDRemoved[i]; 
+							if (f.getName().contains(s) == false)
+							{
+								f.delete();
+							}
+						}
+					}
 				}
 		}
 	
