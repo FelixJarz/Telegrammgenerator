@@ -73,6 +73,8 @@ public class ProjectSelector {
 					ArrayList<String> arrMatchedList = new ArrayList<String>(arrIncoming);
 					arrMatchedList.retainAll(arrXSD);
 					System.out.println("Finished List: " + arrMatchedList);
+					String strExtension = ".xsd"; 
+					arrMatchedList = arrMatchedList.add(0, strExtension);
 					projectSel.setString(arrMatchedList);
 				}
 		}
