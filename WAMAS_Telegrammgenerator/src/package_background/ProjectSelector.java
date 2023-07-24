@@ -82,7 +82,6 @@ public class ProjectSelector {
 		tempList = alllist;
 		return tempList;
 	}
-	
 //------------Getter function to get the finished list (converted to string array) from outside this class -----------------------------
 	public static String[] getString() {
 		
