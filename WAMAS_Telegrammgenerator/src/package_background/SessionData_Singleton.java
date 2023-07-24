@@ -10,6 +10,7 @@ public class SessionData_Singleton {
 	
 	static private SessionData_Singleton instance = null;
 	private String selectedProject;
+	private String[] finishedProjectList; 
 	
 	
 	
@@ -35,6 +36,14 @@ public class SessionData_Singleton {
 	
 	public String getSelectedProjectPath() {
 		return PROJECT_FOLDER + File.separator + selectedProject;
+	}
+	
+	public void setFinishedProjectList(String[] finList) {
+		finishedProjectList = finList; 
+	}
+	
+	public String[] getFinishedProjectList() {
+		return finishedProjectList;
 	}
 	
 }
