@@ -149,9 +149,9 @@ public class WindowExtra_ProjectCreate {
 				}else {		
 					ProjectSelector projectSel = new ProjectSelector(textProjectName.getText() + textVersionNumber.getText());
 					
-					projectSel.createFolder(SessionData_Singleton.PROJECT_FOLDER + File.separator + textProjectName.getText() + textVersionNumber.getText());
+					projectSel.createFolder();
 					projectSel.unzipFolder(textIEDir.getText());
-					//projectSel.removeOutgoingTypes(); // Das ist die getFinishedProjectList -> xsd alle outgoing raus
+					projectSel.getFinishedProjectList(); // Das ist die getFinishedProjectList -> xsd alle outgoing raus
 					
 					WindowMain_1_ProjectSelect project = new WindowMain_1_ProjectSelect();
 					shell.close();

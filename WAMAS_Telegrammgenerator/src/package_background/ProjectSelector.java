@@ -1,14 +1,18 @@
 package package_background;
 
+import java.nio.file.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FilenameFilter;
 import java.io.IOException;
+import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
+
+import org.eclipse.core.runtime.Path;
 
 public class ProjectSelector {
 	
@@ -22,7 +26,7 @@ public class ProjectSelector {
 //-----------------------------------------------read xsd folder-------------------------------------------------------------------
 	private static ArrayList<String> tempList = new ArrayList<String>();
 	
-	File folderXSD = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\xsd");
+	static File folderXSD = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\xsd");
     String[] strXSD = folderXSD.list();
 
 //-----------------------------------------------read Incoming folder-------------------------------------------------------------------
@@ -35,8 +39,9 @@ public class ProjectSelector {
 		SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
 		ProjectSelector projectSel = new ProjectSelector("test"); 
 		
-		File folderXSD = new File(sessionData.getSelectedProjectPath());
+		//File folderXSD = new File(sessionData.getSelectedProjectPath());
 		String[] strXSD = folderXSD.list();
+		File[] files = folderXSD.listFiles();
 				if(strXSD.equals(projectSel.strIncoming)) {	
 					//In case the folders match -> Saves the entire compare-process
 					System.out.println(projectSel.strIncoming);
@@ -77,24 +82,37 @@ public class ProjectSelector {
 					System.out.println("Finished List: " + arrMatchedList);
 					projectSel.setString(arrMatchedList);
 					
-					//Get same names in File type 
-					File[] files = folderXSD.listFiles();
-					for (File f : files)
-					{
-						for(int i = 0; i <= strXSDRemoved.length - 1; i++) {
-							String s = strXSDRemoved[i]; 
-							if (f.getName().contains(s) == false)
-							{
-								f.delete();
-							}
-						}
+					java.nio.file.Path srcDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + "\\" + sessionData.getSelectedProject() + "\\XSD");
+					java.nio.file.Path destDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + "\\" + sessionData.getSelectedProject() + "\\XSD2");
+
+					try {
+						Files.copy(srcDir, destDir);
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
 					}
-					//Generate folder
-					File projPath = new File(folderXSD + "\\XSD2");
-					if (!projPath.exists()) {
-						projPath.mkdirs();
-					}
-					//projectSel.createFolder(sessionData.getSelectedProjectPath());
+					
+//					for(int i = 0; i <= strXSD.length - 1; i++) {
+//						java.nio.file.Path path = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + "\\" + sessionData.getSelectedProject() + "\\XSD\\" + strXSD[i]);
+//						try {
+//							Files.copy(srcDir, destDir);
+//						} catch (IOException e) {
+//							// TODO Auto-generated catch block
+//							e.printStackTrace();
+//						}
+//					}
+					
+//					//Get same names in File type
+//					for (File f : files)
+//					{
+//						for(int i = 0; i <= strXSDRemoved.length - 1; i++) {
+//							String s = strXSDRemoved[i]; 
+//							if (f.getName().contains(s) == false)
+//							{
+//								f.delete();
+//							}
+//						}
+//					}
 				}
 		}
 	
@@ -113,9 +131,9 @@ public class ProjectSelector {
 		}
 		return tempStr;   
 	}
-	public void createFolder(String path)
+	public void createFolder()
 	{
-			String folderPathGenerated = path;
+			String folderPathGenerated = SessionData_Singleton.PROJECT_FOLDER + File.separator + projectName;
 				File folder = new File(folderPathGenerated);
 				
 	        if (!folder.exists()) {
