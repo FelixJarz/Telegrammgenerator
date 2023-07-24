@@ -45,14 +45,14 @@ public class WindowMain_2_ChooseOrdertype {
 		labelChooseOdertype.setText("Choose Ordertype");
 				
 		//Start class ProjectSelector to sort all the ordertypes
-		ProjectSelector select = new ProjectSelector();
-		select.getFinishedProjectList();
+//		ProjectSelector select = new ProjectSelector();
+//		select.getFinishedProjectList();
 		
 		String[] listOfOdertypes = ProjectSelector.getString();
 		
 		//fill the dropdown menu with the ordertypes
 		Combo combo = new Combo(shell, SWT.NONE);
-		combo.setItems(listOfOdertypes);
+		combo.setItems(ProjectSelector.getRecordTypeList());
 		combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		
 		//Previous Odertypes will be shown

@@ -4,6 +4,8 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Button;
 import java.io.File;
+import java.io.IOException;
+
 import javax.swing.JFileChooser;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
@@ -96,11 +98,15 @@ public class WindowExtra_ProjectCreate {
 				JFileChooser chooser = new JFileChooser();
 				String windowTitle = "Explorer";
 				chooser.setDialogTitle(windowTitle);
-				chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+				chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 				if (chooser.showOpenDialog(chooser) == JFileChooser.APPROVE_OPTION) { 
-					File f = chooser.getSelectedFile();
-					String ieDir = f.getAbsolutePath();	
-					textIEDir.setText(ieDir);
+					try {
+						File f = chooser.getSelectedFile();
+						textIEDir.setText(f.getCanonicalPath());
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 				      }
 				else {
 				    System.out.println("No Selection ");
@@ -126,56 +132,38 @@ public class WindowExtra_ProjectCreate {
 		buttonReturn.setText("Return");
 		
 		Button buttonNext = new Button(shell, SWT.NONE);
-		buttonNext.setEnabled(false);
 		
 		//In case the button is pressed -> Go to the next window 
 		buttonNext.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				
-				filePath = "C:\\Telegrammgenerator\\Projects"; 
-				fileName = textProjectName.getText();
-				fileVersionNumber = textVersionNumber.getText();
-				fileFullName = fileName + "_" + fileVersionNumber;
-				
-				ProjectSelector.CreateFolder(filePath, fileFullName);
-				ProjectSelector.getProjectname(fileFullName);
-				ProjectSelector.UnzipFolder(textIEDir.getText(), "interfaceExport", "C:\\Telegrammgenerator\\Output"); 
-				
-				WindowMain_1_ProjectSelect project = new WindowMain_1_ProjectSelect();
-				shell.close();
-				project.open();
+				if(textProjectName.getText().isEmpty()) {
+					textProjectName.setMessage("All fields must be filled!");
+					textVersionNumber.setMessage("All fields must be filled!");
+					textIEDir.setMessage("All fields must be filled!");
+				}else if(textVersionNumber.getText().isEmpty()){
+					textVersionNumber.setMessage("All fields must be filled!");
+					textIEDir.setMessage("All fields must be filled!");
+				}else if(textIEDir.getText().isEmpty()) {
+					textIEDir.setMessage("All fields must be filled!");
+				}else {		
+					ProjectSelector projectSel = new ProjectSelector(textProjectName.getText() + textVersionNumber.getText());
+					
+					projectSel.createFolder();
+					projectSel.unzipFolder(textIEDir.getText());
+					//projectSel.removeOutgoingTypes(); // Das ist die getFinishedProjectList -> xsd alle outgoing raus
+					
+					WindowMain_1_ProjectSelect project = new WindowMain_1_ProjectSelect();
+					shell.close();
+					project.open();
+				}
 			}
+				
 		});
 		
 		buttonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		buttonNext.setText("Next");
 	
-		//Button to confirm if all necessary fields are filled 
-		Button buttonConfirm = new Button(shell, SWT.NONE);
-		buttonConfirm.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 2, 1));
-		buttonConfirm.addSelectionListener(new SelectionAdapter() {
-			
-			@Override
-			public void widgetSelected(SelectionEvent e) {
-				if(textProjectName.getText().isEmpty()) {
-					buttonNext.setEnabled(false);
-					textProjectName.setMessage("All fields must be filled!");
-					textVersionNumber.setMessage("All fields must be filled!");
-					textIEDir.setMessage("All fields must be filled!");
-				}else if(textVersionNumber.getText().isEmpty()){
-					buttonNext.setEnabled(false);
-					textVersionNumber.setMessage("All fields must be filled!");
-					textIEDir.setMessage("All fields must be filled!");
-				}else if(textIEDir.getText().isEmpty()) {
-					buttonNext.setEnabled(false);
-					textIEDir.setMessage("All fields must be filled!");
-				}else {		
-					buttonNext.setEnabled(true);
-				}
-			}
-		});
-		buttonConfirm.setText("Confirm");
 	}
 }
 

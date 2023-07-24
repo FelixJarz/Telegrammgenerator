@@ -2,6 +2,10 @@ package package_GUI;
 
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
+
+import package_background.ProjectSelector;
+import package_background.SessionData_Singleton;
+
 import org.eclipse.swt.widgets.Button;
 
 import org.eclipse.swt.SWT;
@@ -85,11 +89,17 @@ public class WindowMain_1_ProjectSelect {
 		buttonNext1.setLayoutData(new GridData(SWT.RIGHT, SWT.FILL, false, false, 1, 1));
 		buttonNext1.setEnabled(false);
 		
-		//combo.setItems(ProjectDir);
+		combo.setItems(ProjectSelector.getProjectList());
 		combo.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				buttonNext1.setEnabled(true);
+				
+				System.out.println("Selected Project: " + combo.getText());
+				
+				SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
+				sessionData.setSelectedProject(combo.getText());
+				
 			}
 		});
 		buttonNext1.addSelectionListener(new SelectionAdapter() {
