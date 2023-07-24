@@ -5,7 +5,7 @@ import java.io.File;
 public class SessionData_Singleton {
 	
 	static final String ROOT_DIR = "C:\\Telegrammgenerator";
-	static final String PROJECT_FOLDER = ROOT_DIR + "\\Projects";
+	public static final String PROJECT_FOLDER = ROOT_DIR + "\\Projects";
 	static final String OUTPUT_FOLDER = ROOT_DIR + "\\Output";
 	
 	static private SessionData_Singleton instance = null;

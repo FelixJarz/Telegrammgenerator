@@ -77,6 +77,7 @@ public class ProjectSelector {
 					System.out.println("Finished List: " + arrMatchedList);
 					projectSel.setString(arrMatchedList);
 					
+					//Get same names in File type 
 					File[] files = folderXSD.listFiles();
 					for (File f : files)
 					{
@@ -88,6 +89,12 @@ public class ProjectSelector {
 							}
 						}
 					}
+					//Generate folder
+					File projPath = new File(folderXSD + "\\XSD2");
+					if (!projPath.exists()) {
+						projPath.mkdirs();
+					}
+					//projectSel.createFolder(sessionData.getSelectedProjectPath());
 				}
 		}
 	
@@ -106,9 +113,9 @@ public class ProjectSelector {
 		}
 		return tempStr;   
 	}
-	public void createFolder()
+	public void createFolder(String path)
 	{
-			String folderPathGenerated = SessionData_Singleton.PROJECT_FOLDER + File.separator + projectName;
+			String folderPathGenerated = path;
 				File folder = new File(folderPathGenerated);
 				
 	        if (!folder.exists()) {

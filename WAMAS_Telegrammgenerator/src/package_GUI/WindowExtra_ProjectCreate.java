@@ -149,7 +149,7 @@ public class WindowExtra_ProjectCreate {
 				}else {		
 					ProjectSelector projectSel = new ProjectSelector(textProjectName.getText() + textVersionNumber.getText());
 					
-					projectSel.createFolder();
+					projectSel.createFolder(SessionData_Singleton.PROJECT_FOLDER + File.separator + textProjectName.getText() + textVersionNumber.getText());
 					projectSel.unzipFolder(textIEDir.getText());
 					//projectSel.removeOutgoingTypes(); // Das ist die getFinishedProjectList -> xsd alle outgoing raus
 					
