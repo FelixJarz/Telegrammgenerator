@@ -156,10 +156,16 @@ public class WindowExtra_ProjectCreate {
 				}else if(textIEDir.getText().isEmpty()) {
 					textIEDir.setMessage("All fields must be filled!");
 				}else {		
-					ProjectSelector projectSel = new ProjectSelector(textProjectName.getText() + textVersionNumber.getText());
+					ProjectSelector projectSel = new ProjectSelector(textProjectName.getText() + "_" + textVersionNumber.getText());
 					
 					projectSel.createFolder();
 					projectSel.unzipFolder(textIEDir.getText());
+					
+					SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
+					sessionData.setSelectedProject(textProjectName.getText() + "_" + textVersionNumber.getText());
+					
+					ProjectSelector.getFinishedProjectList();
+					
 					 // Das ist die getFinishedProjectList -> xsd alle outgoing raus
 					
 					WindowMain_1_ProjectSelect project = new WindowMain_1_ProjectSelect();
