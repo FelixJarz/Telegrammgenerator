@@ -90,6 +90,12 @@ public class ProjectSelector {
 					java.nio.file.Path srcDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + File.separator +"xsd");
 					java.nio.file.Path destDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + File.separator + "xsd2");
 					
+					File srcDir2 = new File(sessionData.getSelectedProjectPath() + File.separator + sessionData.getSelectedProject() + File.separator +"xsd");                    
+                    File destDir2 = new File(sessionData.getSelectedProjectPath() + File.separator + sessionData.getSelectedProject() + File.separator + "XSD2");
+
+                    File[] filesSrcDir = srcDir2.listFiles();
+                    File[] filesMatching = folderIncoming.listFiles();
+					
 					for (int i = 0; i <= filesSrcDir.length - 1; i++) {
 						for (int i2 = 0; i2 <= arrMatchedList.toArray().length - 1; i2++) {
 							File f = new File(sessionData.getSelectedProjectPath() + File.separator + sessionData.getSelectedProject() + File.separator + "XSD2" + arrMatchedList.toArray()[i2]);
