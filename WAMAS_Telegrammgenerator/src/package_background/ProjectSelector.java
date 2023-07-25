@@ -8,8 +8,10 @@ import java.io.IOException;
 import java.nio.file.CopyOption;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
+
 import java.nio.file.Path;
 import java.nio.file.Paths;
+
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -38,6 +40,7 @@ public class ProjectSelector {
 //	
 //-----------------------------------------------Function for sorting all the Header-------------------------------------------------------------------
 	private static ArrayList<String> tempList = new ArrayList<String>();
+
 
 	public void saveIncomingRecordTypes() throws FileNotFoundException {
 
@@ -72,6 +75,7 @@ public class ProjectSelector {
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
+
 					}
 					break;
 				}
