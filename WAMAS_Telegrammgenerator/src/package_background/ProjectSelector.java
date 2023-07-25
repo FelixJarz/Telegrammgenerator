@@ -1,13 +1,10 @@
 package package_background;
 
-import java.nio.file.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FilenameFilter;
 import java.io.IOException;
 import java.nio.file.FileSystems;
-import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -91,34 +88,15 @@ public class ProjectSelector {
 					java.nio.file.Path srcDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + File.separator +"xsd");
 					java.nio.file.Path destDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + File.separator + "xsd2");
 					
-					try {
-						Files.copy(srcDir, destDir);
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
+					for (int i = 0; i <= filesSrcDir.length - 1; i++) {
+						for (int i2 = 0; i2 <= arrMatchedList.toArray().length - 1; i2++) {
+							File f = new File(sessionData.getSelectedProjectPath() + File.separator + sessionData.getSelectedProject() + File.separator + "XSD2" + arrMatchedList.toArray()[i2]);
+							if(filesSrcDir[i].getName() == f.getName()) {
+								System.out.println("The 2 files are the same");
+								filesMatching[i] = f; 
+							}
+						}
 					}
-					
-//					for(int i = 0; i <= strXSD.length - 1; i++) {
-//						java.nio.file.Path path = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + "\\" + sessionData.getSelectedProject() + "\\XSD\\" + strXSD[i]);
-//						try {
-//							Files.copy(srcDir, destDir);
-//						} catch (IOException e) {
-//							// TODO Auto-generated catch block
-//							e.printStackTrace();
-//						}
-//					}
-					
-//					//Get same names in File type
-//					for (File f : files)
-//					{
-//						for(int i = 0; i <= strXSDRemoved.length - 1; i++) {
-//							String s = strXSDRemoved[i]; 
-//							if (f.getName().contains(s) == false)
-//							{
-//								f.delete();
-//							}
-//						}
-//					}
 				}
 		}
 	
@@ -154,7 +132,6 @@ public class ProjectSelector {
 	        }
 	  }
 	
-
 	public void unzipFolder(String folderPath) {
 	    File zipFile = new File(folderPath);
 	    
