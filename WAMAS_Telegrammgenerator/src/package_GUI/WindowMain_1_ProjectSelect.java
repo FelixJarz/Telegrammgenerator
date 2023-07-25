@@ -8,6 +8,8 @@ import package_background.SessionData_Singleton;
 
 import org.eclipse.swt.widgets.Button;
 
+import java.io.FileNotFoundException;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Label;
@@ -100,7 +102,12 @@ public class WindowMain_1_ProjectSelect {
 				SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
 				sessionData.setSelectedProject(combo.getText());
 				
-				ProjectSelector.getFinishedProjectList();
+				try {
+					ProjectSelector.getFinishedProjectList();
+				} catch (FileNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		});
 		buttonNext1.addSelectionListener(new SelectionAdapter() {

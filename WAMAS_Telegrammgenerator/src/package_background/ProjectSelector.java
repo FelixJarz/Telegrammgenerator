@@ -2,9 +2,11 @@ package package_background;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.FileSystems;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -31,7 +33,7 @@ public class ProjectSelector {
 //-----------------------------------------------Function for sorting all the Header-------------------------------------------------------------------
 	private static ArrayList<String> tempList = new ArrayList<String>();
 	
-	public static void getFinishedProjectList() {
+	public static void getFinishedProjectList() throws FileNotFoundException {
 		
 
 		
@@ -99,8 +101,18 @@ public class ProjectSelector {
 							File f = new File(sessionData.getSelectedProjectPath() + File.separator + sessionData.getSelectedProject() + File.separator + "XSD2" + arrMatchedList.toArray()[i2]);
 							if(filesSrcDir[i].getName() == f.getName()) {
 								System.out.println("The 2 files are the same");
-								filesMatching[i] = f; 
+								//FileOutputStream outputStream = new FileOutputStream(new File(destDir2, f.toString())); 
+								filesMatching[i] = f;	
 							}
+						}
+					}
+					for (int i = 0; i <= filesMatching.length - 1; i++) {
+						java.nio.file.Path matchingDir = filesMatching[i].toPath(); 
+						try {
+							Files.copy(matchingDir, destDir);
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
 						}
 					}
 				}
