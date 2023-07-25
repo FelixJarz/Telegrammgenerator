@@ -112,6 +112,7 @@ public class ProjectSelector {
 							}
 						}
 					}
+					
 					for (int i = 0; i <= filesMatching.length - 1; i++) {
 						java.nio.file.Path matchingDir = filesMatching[i].toPath(); 
 						try {
