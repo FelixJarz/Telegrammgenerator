@@ -5,20 +5,26 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.CopyOption;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 public class ProjectSelector {
-	
+
 	String projectName;
-	
+
 	public ProjectSelector(String pN) {
 		projectName = pN;
 	}
-	
 
 //-----------------------------------------------read xsd folder-------------------------------------------------------------------
 //	
@@ -32,188 +38,170 @@ public class ProjectSelector {
 //	
 //-----------------------------------------------Function for sorting all the Header-------------------------------------------------------------------
 	private static ArrayList<String> tempList = new ArrayList<String>();
-	
-	@SuppressWarnings("null")
-	public static void getFinishedProjectList() throws FileNotFoundException {
-		
 
-		
-		SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
-		ProjectSelector projectSel = new ProjectSelector("test"); 
-		
-		File folderXSD = new File(sessionData.getSelectedProjectPath() + File.separator + "xsd");
-		String[] strXSD = folderXSD.list();
-		
-		File folderIncoming = new File(sessionData.getSelectedProjectPath() + File.separator + "Incoming");
-		String[] strIncoming = folderIncoming.list();
-		
-		File[] files = folderXSD.listFiles();
-				if(strXSD.equals(strIncoming)) {	
-					//In case the folders match -> Saves the entire compare-process
-					System.out.println(strIncoming);
-					//Convert to array list for setString-function
-					ArrayList<String> arrMatch = new ArrayList<String>(); 
-		        	for(int i = 0; i <= strIncoming.length - 1; i++) {
-			        	arrMatch.add(strIncoming[i]);  
-		 			} 
-					projectSel.setString(arrMatch);
-				}else if(strIncoming.equals("")) {	
-					//If the "Incoming"-folder is empty
-					System.out.println("The Incoming-folder is empty."); 
-				}else{ 								
-					//Compares the two folders and finds matching elements
-					//Remove the extensions
-					String[] strXSDRemoved = folderXSD.list();
-		        	for (int i = 0; i <= strXSD.length - 1; i++) {
-		        		strXSDRemoved[i] = strXSD[i].substring(0,strXSD[i].lastIndexOf("."));
-		        	}
-		        	String[] strIncomingRemoved = folderIncoming.list();
-		        	for (int i = 0; i <= strIncoming.length - 1; i++) {
-		        		strIncomingRemoved[i] = strIncoming[i].substring(0,strIncoming[i].lastIndexOf("."));
-		        	}
-		        	
-		        	//Convert the string arrays to array lists 
-		        	ArrayList<String> arrXSD = new ArrayList<String>(); 
-		        	for(int i = 0; i <= strXSDRemoved.length - 1; i++) {
-			        	arrXSD.add(strXSDRemoved[i]); 
-		 			} 
-		        	ArrayList<String> arrIncoming = new ArrayList<String>(); 
-		        	for(int i = 0; i <= strIncomingRemoved.length - 1; i++) {
-			        	arrIncoming.add(strIncomingRemoved[i]); 
-		 			} 
-				
-					//Save the matching elements in a new array list 
-					ArrayList<String> arrMatchedList = new ArrayList<String>(arrIncoming);
-					arrMatchedList.retainAll(arrXSD);
-					System.out.println("Finished List: " + arrMatchedList);
-					projectSel.setString(arrMatchedList);
-					
-					java.nio.file.Path srcDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + File.separator +"xsd");
-					java.nio.file.Path destDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + File.separator + "xsd2");
-					
-					File srcDir2 = new File(sessionData.getSelectedProjectPath() + File.separator + "xsd");                    
-                    //File destDir2 = new File(sessionData.getSelectedProjectPath() + File.separator + "xsd2");
-                    
-                    File[] filesSrcDir = srcDir2.listFiles();
-                    File[] filesMatching;
-                    
-                    for(int i = 0; i <= arrMatchedList.toArray().length - 1; i++) {
-                    	arrMatchedList.add(i, arrMatchedList.toString() + ".xsd");
-                    	filesMatching[i] = arrMatchedList;
-                    }
-                    
-					for (int i = 0; i <= filesSrcDir.length - 1; i++) {
-						for (int i2 = 0; i2 <= arrMatchedList.toArray().length - 1; i2++) {
-							File f = new File(sessionData.getSelectedProjectPath() + File.separator + sessionData.getSelectedProject() + File.separator + "XSD2" + arrMatchedList.toArray()[i2]);
-							if(filesSrcDir[i].getName() == f.getName()) {
-								System.out.println("The 2 files are the same");
-								//FileOutputStream outputStream = new FileOutputStream(new File(destDir2, f.toString())); 
-								 filesMatching[i] = f;	
-							}
-						}
-					}
-					
-					for (int i = 0; i <= filesMatching.length - 1; i++) {
-						java.nio.file.Path matchingDir = filesMatching[i].toPath(); 
-						try {
-							File destDir2 = new File(sessionData.getSelectedProjectPath() + File.separator + "xsd2" + File.separator + filesMatching[i]);
-							Files.copy(matchingDir, destDir2.toPath());
-						} catch (IOException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
-					}
-				}
+	public void saveIncomingRecordTypes() throws FileNotFoundException {
+
+		File folderXSD = new File(SessionData_Singleton.TEMP_FOLDER + SessionData_Singleton.XSD);
+		List<File> filesXSD = Arrays.asList(folderXSD.listFiles());
+
+		File folderIncoming = new File(SessionData_Singleton.TEMP_FOLDER + SessionData_Singleton.INCOMING);
+		List<File> filesIncoming = Arrays.asList(folderIncoming.listFiles());
+
+		File destDirXSD = new File(
+				SessionData_Singleton.PROJECT_FOLDER + File.separator + projectName + File.separator + SessionData_Singleton.XSD);
+
+		if (!destDirXSD.exists()) {
+			destDirXSD.mkdir();
 		}
-	
-	
-	//Set an outside-variable to the matching list
+
+		for (File fileXSD : filesXSD) {
+			for (File fileIncoming : filesIncoming) {
+				System.out.println("Comparing file: "
+						+ fileXSD.toString().substring(fileXSD.toString().lastIndexOf('\\') + 1,
+								fileXSD.toString().indexOf('.'))
+						+ " - " + fileIncoming.toString().substring(fileIncoming.toString().lastIndexOf('\\') + 1,
+								fileIncoming.toString().indexOf('.')));
+				if (fileXSD.toString()
+						.substring(fileXSD.toString().lastIndexOf('\\') + 1, fileXSD.toString().indexOf('.'))
+						.equals(fileIncoming.toString().substring(fileIncoming.toString().lastIndexOf('\\') + 1,
+								fileIncoming.toString().indexOf('.')))) {
+
+					try {
+						Path destination = Paths.get(destDirXSD.toString() + File.separator + fileXSD.getName());
+						Files.copy(fileXSD.toPath(), destination);
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					break;
+				}
+			}
+		}
+		
+		File destDirIncoming = new File(
+				SessionData_Singleton.PROJECT_FOLDER + File.separator + projectName + File.separator + SessionData_Singleton.INCOMING);
+
+		if (!destDirIncoming.exists()) {
+			destDirIncoming.mkdir();
+		}
+		
+		for (File fileIncoming : filesIncoming) {
+			
+			Path destination = Paths.get(destDirIncoming.toString() + File.separator + fileIncoming.getName());
+			try {
+				Files.copy(fileIncoming.toPath(), destination);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+	}
+
+	// Set an outside-variable to the matching list
 	public ArrayList<String> setString(ArrayList<String> alllist) {
 		tempList = alllist;
 		return tempList;
 	}
+
 //------------Getter function to get the finished list (converted to string array) from outside this class -----------------------------
 	public static String[] getString() {
-		
+
 		String[] tempStr = new String[tempList.size()];
 
 		for (int i = 0; i < tempList.size(); i++) {
-            tempStr[i] = tempList.get(i);
+			tempStr[i] = tempList.get(i);
 		}
-		return tempStr;   
+		return tempStr;
 	}
-	public void createFolder()
-	{
-			String folderPathGenerated = SessionData_Singleton.PROJECT_FOLDER + File.separator + projectName;
-				File folder = new File(folderPathGenerated);
-				
-	        if (!folder.exists()) {
-	            boolean created = folder.mkdirs();
-	            if (created) {
-	                System.out.println("Ordner wurde erfolgreich erstellt.");
-	            } else {
-	                System.out.println("Fehler beim Erstellen des Ordners.");
-	            }
-	        } else {
-	            System.out.println("Der Ordner existiert bereits.");
-	        }
-	  }
-	
-	public void unzipFolder(String folderPath) {
-	    File zipFile = new File(folderPath);
-	    
-	    if (!zipFile.exists() || !zipFile.isFile()) {
-	        System.out.println("Die angegebene Datei ist keine ZIP-Datei.");
-	        return;
-	    }
-	    
-	    byte[] buffer = new byte[1024];
-	    try (ZipInputStream zipInputStream = new ZipInputStream(new FileInputStream(zipFile))) {
-	     
-	        ZipEntry zipEntry = zipInputStream.getNextEntry();
-	        while (zipEntry != null) {
-	            String entryPath = SessionData_Singleton.PROJECT_FOLDER + File.separator + projectName + File.separator + zipEntry.getName(); 
-	            if (!zipEntry.isDirectory()) {
-	                File entryFile = new File(entryPath); 
-	                entryFile.getParentFile().mkdirs();
-	                
-	                try (FileOutputStream outputStream = new FileOutputStream(entryFile)) {
-	                    int length;
-	                    while ((length = zipInputStream.read(buffer)) > 0) {
-	                        outputStream.write(buffer, 0, length);
-	                    }
-	                }
-	            } else {
-	                File dir = new File(entryPath);
-	                dir.mkdirs();
-	            }
-	            
-	            zipEntry = zipInputStream.getNextEntry();
-	        }
-	        
-	        System.out.println("Die ZIP-Datei wurde erfolgreich entpackt.");
-	    } catch (IOException e) {
-	        System.out.println("Fehler beim Entpacken der ZIP-Datei: " + e.getMessage());
-	    }
-	    
-	}
-	
-    public static String[] getProjectList() {
-    	
-    	File projectFolder = new File(SessionData_Singleton.PROJECT_FOLDER);
-        
-		return projectFolder.list();
-    	
-    }
-    
-    public static String[] getRecordTypeList() {
-    	
-    	SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
-    	File projectFolderIncoming = new File(sessionData.getSelectedProjectPath() + File.separator + "xsd");
-        
-		return projectFolderIncoming.list();
-    	
-    }
-    
-}
 
+	public void createFolder() {
+		String folderPathGenerated = SessionData_Singleton.PROJECT_FOLDER + File.separator + projectName;
+		File folder = new File(folderPathGenerated);
+
+		if (!folder.exists()) {
+			boolean created = folder.mkdirs();
+			if (created) {
+				System.out.println("Ordner wurde erfolgreich erstellt.");
+			} else {
+				System.out.println("Fehler beim Erstellen des Ordners.");
+			}
+		} else {
+			System.out.println("Der Ordner existiert bereits.");
+		}
+	}
+
+	public void unzipFolder(String folderPath) {
+		File zipFile = new File(folderPath);
+
+		if (!zipFile.exists() || !zipFile.isFile()) {
+			System.out.println("Die angegebene Datei ist keine ZIP-Datei.");
+			return;
+		}
+
+		byte[] buffer = new byte[1024];
+		try (ZipInputStream zipInputStream = new ZipInputStream(new FileInputStream(zipFile))) {
+
+			ZipEntry zipEntry = zipInputStream.getNextEntry();
+			while (zipEntry != null) {
+				String entryPath = SessionData_Singleton.TEMP_FOLDER + File.separator + zipEntry.getName();
+				if (!zipEntry.isDirectory()) {
+					File entryFile = new File(entryPath);
+					entryFile.getParentFile().mkdirs();
+
+					try (FileOutputStream outputStream = new FileOutputStream(entryFile)) {
+						int length;
+						while ((length = zipInputStream.read(buffer)) > 0) {
+							outputStream.write(buffer, 0, length);
+						}
+					}
+				} else {
+					File dir = new File(entryPath);
+					dir.mkdirs();
+				}
+
+				zipEntry = zipInputStream.getNextEntry();
+			}
+
+			System.out.println("Die ZIP-Datei wurde erfolgreich entpackt.");
+		} catch (IOException e) {
+			System.out.println("Fehler beim Entpacken der ZIP-Datei: " + e.getMessage());
+		}
+
+	}
+
+	public void clearTempFolder() {
+		Path dir = Paths.get(SessionData_Singleton.TEMP_FOLDER); // path to the directory
+		try {
+			Files.walk(dir) // Traverse the file tree in depth-first order
+					.sorted(Comparator.reverseOrder()).forEach(path -> {
+						try {
+							Files.delete(path); // delete each file or directory
+						} catch (IOException e) {
+							e.printStackTrace();
+						}
+					});
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public static String[] getProjectList() {
+
+		File projectFolder = new File(SessionData_Singleton.PROJECT_FOLDER);
+
+		return projectFolder.list();
+
+	}
+
+	public static String[] getRecordTypeList() {
+
+		SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
+		File projectFolderIncoming = new File(sessionData.getSelectedProjectPath() + SessionData_Singleton.XSD);
+
+		return projectFolderIncoming.list();
+
+	}
+
+}

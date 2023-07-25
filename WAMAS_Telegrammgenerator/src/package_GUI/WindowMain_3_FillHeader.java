@@ -247,7 +247,7 @@ public class WindowMain_3_FillHeader {
 			public void mouseUp(MouseEvent e) {
 				// Close the current window and open the previous window (WindowMain_2_ChooseOrdertype)
 				display.close();
-				WindowMain_2_ChooseOrdertype windowMain_2_ChooseOdtertype = new WindowMain_2_ChooseOrdertype();
+				WindowMain_2_ChooseRecordtype windowMain_2_ChooseOdtertype = new WindowMain_2_ChooseRecordtype();
 				windowMain_2_ChooseOdtertype.open();
 			}
 		});

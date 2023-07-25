@@ -6,7 +6,10 @@ public class SessionData_Singleton {
     
     static final String ROOT_DIR = "C:\\Telegrammgenerator";
     static final String PROJECT_FOLDER = ROOT_DIR + "\\Projects";
+    static final String TEMP_FOLDER = ROOT_DIR + "\\Temp";
     static final String OUTPUT_FOLDER = ROOT_DIR + "\\Output";
+    static final String XSD = "\\xsd";
+    static final String INCOMING = "\\Incoming";
     
     private static SessionData_Singleton instance = null;
     private String selectedProject;

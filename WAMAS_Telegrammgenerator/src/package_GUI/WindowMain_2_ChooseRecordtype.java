@@ -15,7 +15,7 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 
-public class WindowMain_2_ChooseOrdertype {
+public class WindowMain_2_ChooseRecordtype {
 
 	protected Shell shell;
 	Display display = Display.getDefault();
@@ -35,6 +35,9 @@ public class WindowMain_2_ChooseOrdertype {
 	}
 
 //-----------------------------------------------GUI Objects-------------------------------------------------------------------
+	/**
+	 * @wbp.parser.entryPoint
+	 */
 	protected void createContents() {
 		// Create the window and its components
 		shell = new Shell();
@@ -42,14 +45,11 @@ public class WindowMain_2_ChooseOrdertype {
 		shell.setText("SWT Application");
 		shell.setLayout(new GridLayout(3, false));
 		
-		// Label for choosing Ordertype
+		// Label for choosing Recordtype
 		Label labelChooseOdertype = new Label(shell, SWT.NONE);
 		labelChooseOdertype.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		labelChooseOdertype.setText("Choose Ordertype");
-				
-		// Get a list of Ordertypes from the ProjectSelector
-		String[] listOfOdertypes = ProjectSelector.getString();
-		
+		labelChooseOdertype.setText("Choose Recordtype");
+					
 		// Create a dropdown menu (Combo) and fill it with the Ordertypes
 		Combo combo = new Combo(shell, SWT.NONE);
 		combo.setItems(ProjectSelector.getRecordTypeList());
@@ -59,7 +59,7 @@ public class WindowMain_2_ChooseOrdertype {
 		String[] prevOrdertypes = new String[prevOrdertypeSize];
 		String[] newOrdertypes = new String[10];
 		for(int i = 0; i < 10 - 1; i++) {
-			newOrdertypes[i] = "Ordertype" + (i+1);
+			newOrdertypes[i] = "Recordtype" + (i+1);
 		}
 		
 		// Add a SelectionListener to the Combo to update the previous Ordertypes array
@@ -125,7 +125,7 @@ public class WindowMain_2_ChooseOrdertype {
 		buttonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		buttonNext.setEnabled(false);
 		
-		// Enable the Next button when an Ordertype is selected from the Combo
+		// Enable the Next button when an Recordtype is selected from the Combo
 		combo.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -137,7 +137,7 @@ public class WindowMain_2_ChooseOrdertype {
 		buttonNext.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				// Get the selected Ordertype from the Combo
+				// Get the selected Recordtype from the Combo
 				String selectedText = combo.getText();
 				String selectedOrdertype = selectedText;
 			

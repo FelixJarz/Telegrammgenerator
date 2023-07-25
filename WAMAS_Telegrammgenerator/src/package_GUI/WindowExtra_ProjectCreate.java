@@ -161,18 +161,14 @@ public class WindowExtra_ProjectCreate {
 					
 					projectSel.createFolder();
 					projectSel.unzipFolder(textIEDir.getText());
-					
-					SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
-					sessionData.setSelectedProject(textProjectName.getText() + "_" + textVersionNumber.getText());
-					
 					try {
-						ProjectSelector.getFinishedProjectList();
+						projectSel.saveIncomingRecordTypes();
 					} catch (FileNotFoundException e1) {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
 					
-					 // Das ist die getFinishedProjectList -> xsd alle outgoing raus
+					projectSel.clearTempFolder();
 					
 					WindowMain_1_ProjectSelect project = new WindowMain_1_ProjectSelect();
 					shell.close();

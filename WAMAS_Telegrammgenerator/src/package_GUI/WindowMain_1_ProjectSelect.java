@@ -100,21 +100,13 @@ public class WindowMain_1_ProjectSelect {
 				
 				SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
 				sessionData.setSelectedProject(combo.getText());
-				
-				try {
-					ProjectSelector.getFinishedProjectList();
-				} catch (FileNotFoundException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
-
 			}
 		});
 		buttonNext1.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e){
 				shell.close();
-				WindowMain_2_ChooseOrdertype window2 = new WindowMain_2_ChooseOrdertype();
+				WindowMain_2_ChooseRecordtype window2 = new WindowMain_2_ChooseRecordtype();
 				window2.open();
 			}
 		});
