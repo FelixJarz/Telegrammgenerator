@@ -138,7 +138,6 @@ public class ProjectSelector {
 	        }
 	  }
 	
-
 	public void unzipFolder(String folderPath) {
 	    File zipFile = new File(folderPath);
 	    
