@@ -118,6 +118,7 @@ public class ProjectSelector {
 				}
 		}
 	
+	
 	//Set an outside-variable to the matching list
 	public ArrayList<String> setString(ArrayList<String> alllist) {
 		tempList = alllist;
