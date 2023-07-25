@@ -84,7 +84,6 @@ public class WindowMain_1_ProjectSelect {
 		buttonCreateNewProject.setText("Create new project");
 		new Label(shell, SWT.NONE);
 		Button buttonNext1 = new Button(shell, SWT.CENTER);
-				
 						
 		buttonNext1.setLayoutData(new GridData(SWT.RIGHT, SWT.FILL, false, false, 1, 1));
 		buttonNext1.setEnabled(false);
@@ -99,8 +98,7 @@ public class WindowMain_1_ProjectSelect {
 				
 				SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
 				sessionData.setSelectedProject(combo.getText());
-				
-				ProjectSelector.getFinishedProjectList();
+	
 			}
 		});
 		buttonNext1.addSelectionListener(new SelectionAdapter() {

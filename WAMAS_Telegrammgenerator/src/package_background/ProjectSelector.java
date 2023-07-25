@@ -12,8 +12,6 @@ import java.util.ArrayList;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import org.eclipse.core.runtime.Path;
-
 public class ProjectSelector {
 	
 	String projectName;
@@ -91,16 +89,7 @@ public class ProjectSelector {
 					projectSel.setString(arrMatchedList);
 					
 					java.nio.file.Path srcDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + File.separator +"xsd");
-					java.nio.file.Path destDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + File.separator + "XSD2");
-					
-					File srcDir2 = new File(sessionData.getSelectedProjectPath() + File.separator + sessionData.getSelectedProject() + File.separator +"xsd");					
-					File destDir2 = new File(sessionData.getSelectedProjectPath() + File.separator + sessionData.getSelectedProject() + File.separator + "XSD2");
-					
-		//			File destDir2 = new File("C:\\Telegrammgenerator\\Projects\\test1");
-					
-					if(!destDir2.exists()){
-						destDir2.mkdirs();
-					}
+					java.nio.file.Path destDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + File.separator + "xsd2");
 					
 					try {
 						Files.copy(srcDir, destDir);
