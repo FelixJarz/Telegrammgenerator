@@ -98,6 +98,7 @@ public class ProjectSelector {
 					
 					for (int i = 0; i <= filesSrcDir.length - 1; i++) {
 						for (int i2 = 0; i2 <= arrMatchedList.toArray().length - 1; i2++) {
+							arrMatchedList.add(i, arrMatchedList.toString() + ".xsd");
 							File f = new File(sessionData.getSelectedProjectPath() + File.separator + sessionData.getSelectedProject() + File.separator + "XSD2" + arrMatchedList.toArray()[i2]);
 							if(filesSrcDir[i].getName() == f.getName()) {
 								System.out.println("The 2 files are the same");
