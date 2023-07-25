@@ -5,8 +5,10 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.CopyOption;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -87,11 +89,10 @@ public class ProjectSelector {
 					System.out.println("Finished List: " + arrMatchedList);
 					projectSel.setString(arrMatchedList);
 					
-					java.nio.file.Path srcDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + File.separator +"xsd");
 					java.nio.file.Path destDir = FileSystems.getDefault().getPath(sessionData.getSelectedProjectPath() + File.separator + "xsd2");
 					
-					File srcDir2 = new File(sessionData.getSelectedProjectPath() + File.separator + sessionData.getSelectedProject() + File.separator +"xsd");                    
-                    File destDir2 = new File(sessionData.getSelectedProjectPath() + File.separator + sessionData.getSelectedProject() + File.separator + "XSD2");
+					File srcDir2 = new File(sessionData.getSelectedProjectPath() + File.separator + "xsd");                    
+                   
 
                     File[] filesSrcDir = srcDir2.listFiles();
                     File[] filesMatching = folderIncoming.listFiles();
@@ -109,7 +110,7 @@ public class ProjectSelector {
 					for (int i = 0; i <= filesMatching.length - 1; i++) {
 						java.nio.file.Path matchingDir = filesMatching[i].toPath(); 
 						try {
-							Files.copy(matchingDir, destDir);
+							Files.copy(matchingDir, destDir, StandardCopyOption.REPLACE_EXISTING);
 						} catch (IOException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
