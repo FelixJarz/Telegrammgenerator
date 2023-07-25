@@ -94,12 +94,12 @@ public class ProjectSelector {
 					
 					File srcDir2 = new File(sessionData.getSelectedProjectPath() + File.separator + "xsd");                    
                     File[] filesSrcDir = srcDir2.listFiles();
-                    File[] filesMatching;
                     
                     for(int i = 0; i <= arrMatchedList.toArray().length - 1; i++) {
                     	arrMatchedList.add(i, arrMatchedList.toString() + ".xsd");
-                    	filesMatching[i] = arrMatchedList;
                     }
+                    
+                    File[] filesMatching = (File[]) arrMatchedList.clone();
                     
 					for (int i = 0; i <= filesSrcDir.length - 1; i++) {
 						for (int i2 = 0; i2 <= arrMatchedList.toArray().length - 1; i2++) {
