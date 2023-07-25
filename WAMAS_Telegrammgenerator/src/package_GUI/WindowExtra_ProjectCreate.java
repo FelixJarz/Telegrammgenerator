@@ -4,6 +4,7 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Button;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import javax.swing.JFileChooser;
@@ -164,7 +165,12 @@ public class WindowExtra_ProjectCreate {
 					SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
 					sessionData.setSelectedProject(textProjectName.getText() + "_" + textVersionNumber.getText());
 					
-					ProjectSelector.getFinishedProjectList();
+					try {
+						ProjectSelector.getFinishedProjectList();
+					} catch (FileNotFoundException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 					
 					 // Das ist die getFinishedProjectList -> xsd alle outgoing raus
 					
