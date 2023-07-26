@@ -13,7 +13,7 @@ public class SessionData_Singleton {
     
     private static SessionData_Singleton instance = null;
     private String selectedProject;
-    private String[] finishedProjectList; 
+    private String selectedRecordtype; 
     
     private SessionData_Singleton(){
         // Private constructor prevents creating instances from outside this class
@@ -32,6 +32,10 @@ public class SessionData_Singleton {
         selectedProject = selProject;
     }
     
+    public void setSelectedRecordtype(String recType) {
+    	selectedRecordtype = recType; 
+    }
+    
     public String getSelectedProject() {
         // Get the name of the selected project
         return selectedProject;
@@ -42,13 +46,7 @@ public class SessionData_Singleton {
         return PROJECT_FOLDER + File.separator + selectedProject;
     }
     
-    public void setFinishedProjectList(String[] finList) {
-        // Set the list of finished projects
-        finishedProjectList = finList; 
-    }
-    
-    public String[] getFinishedProjectList() {
-        // Get the list of finished projects
-        return finishedProjectList;
+    public String getSelectedRecordtype() {
+		return selectedRecordtype;
     }
 }
