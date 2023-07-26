@@ -49,4 +49,5 @@ public class SessionData_Singleton {
     public String getSelectedRecordtype() {
 		return selectedRecordtype;
     }
+    
 }
