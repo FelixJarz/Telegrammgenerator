@@ -41,8 +41,8 @@ public class WindowMain_2_ChooseRecordtype {
 	protected void createContents() {
 		// Create the window and its components
 		shell = new Shell();
-		shell.setSize(450, 229);
-		shell.setText("SWT Application");
+		shell.setText("Choose Recordtype");
+		shell.setSize(450, 148);
 		shell.setLayout(new GridLayout(3, false));
 		
 		// Label for choosing Recordtype
@@ -84,24 +84,6 @@ public class WindowMain_2_ChooseRecordtype {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label labelPreviousOrdertypes = new Label(shell, SWT.NONE);
-		labelPreviousOrdertypes.setText("Previous Ordertypes:");
-		
-		Label labelOrdertype1 = new Label(shell, SWT.NONE);
-		labelOrdertype1.setText(newOrdertypes[0]);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label labelOrdertype2 = new Label(shell, SWT.NONE);
-		labelOrdertype2.setText(newOrdertypes[1]);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label labelOrdertype3 = new Label(shell, SWT.NONE);
-		labelOrdertype3.setText(newOrdertypes[2]);
-		
 		new Label(shell, SWT.NONE);
 
 //-----------------------------------------------Buttons with Listener-------------------------------------------------------------------

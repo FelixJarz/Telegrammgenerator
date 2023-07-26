@@ -36,7 +36,6 @@ public class WindowMain_3_FillHeader {
 	private Text text8;
 	private Text text10;
 	private Text text12;
-	private Label labelFillFull;
 	
 	Display display = Display.getDefault();
 
@@ -57,19 +56,9 @@ public class WindowMain_3_FillHeader {
 	protected void createContents() {
 		// Create the window and its components
 		shell = new Shell();
-		shell.setSize(733, 355);
-		shell.setText("Fill Odertype");
-		shell.setLayout(new GridLayout(7, false));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		labelFillFull = new Label(shell, SWT.CENTER);
-		labelFillFull.setText("Fill full");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
+		shell.setSize(733, 326);
+		shell.setText("Fill Recordtype");
+		shell.setLayout(new GridLayout(6, false));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -84,7 +73,6 @@ public class WindowMain_3_FillHeader {
 		
 		text1 = new Text(shell, SWT.BORDER);
 		text1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
@@ -104,7 +92,6 @@ public class WindowMain_3_FillHeader {
 		text3.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		
 		label4 = new Label(shell, SWT.NONE);
 		label4.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
@@ -119,7 +106,6 @@ public class WindowMain_3_FillHeader {
 		
 		text5 = new Text(shell, SWT.BORDER);
 		text5.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
@@ -138,7 +124,6 @@ public class WindowMain_3_FillHeader {
 		text7.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		
 		label8 = new Label(shell, SWT.NONE);
 		label8.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
@@ -153,7 +138,6 @@ public class WindowMain_3_FillHeader {
 		
 		text9 = new Text(shell, SWT.BORDER);
 		text9.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
@@ -172,7 +156,6 @@ public class WindowMain_3_FillHeader {
 		text11.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		
 		label12 = new Label(shell, SWT.NONE);
 		label12.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
@@ -180,7 +163,6 @@ public class WindowMain_3_FillHeader {
 		
 		text12 = new Text(shell, SWT.BORDER);
 		text12.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -203,7 +185,6 @@ public class WindowMain_3_FillHeader {
 		});
 		
 		buttonReturn.setText("Return");
-		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);

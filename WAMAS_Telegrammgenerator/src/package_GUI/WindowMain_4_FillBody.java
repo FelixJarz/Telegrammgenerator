@@ -19,7 +19,6 @@ public class WindowMain_4_FillBody {
 	
 	Display display = Display.getDefault();
 	protected Shell shell;
-	private Text textNumber;
 	private Text text1;
 	private Text text3;
 	private Text text5;
@@ -52,30 +51,22 @@ public class WindowMain_4_FillBody {
 //-----------------------------------------------GUI Objects-------------------------------------------------------------------
 	protected void createContents() {
 		shell = new Shell();
-		shell.setSize(700, 400);
-		shell.setText("Fill Body and select Subheader");
-		shell.setLayout(new GridLayout(9, false));
+		shell.setSize(700, 364);
+		shell.setText("Fill Subheader");
+		shell.setLayout(new GridLayout(6, false));
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
-		Label LabelFillSubheader = new Label(shell, SWT.NONE);
-		LabelFillSubheader.setText("Fill Subheader");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
+		List listOfSubheader = new List(shell, SWT.BORDER);
+		listOfSubheader.setItems(new String[] {"Subheader_1", "Subheader_2", "Subheader_3", "Subheader_4", "Subheader_5", "Subheader_6", "Subheader_7", "Subheader_8", "Subheader_9", "Subheader_10"});
+		GridData gd_listOfSubheader = new GridData(SWT.LEFT, SWT.CENTER, false, false, 1, 7);
+		
+		gd_listOfSubheader.widthHint = 126;
+		listOfSubheader.setLayoutData(gd_listOfSubheader);
 		new Label(shell, SWT.NONE);
 		
 		Label label1 = new Label(shell, SWT.NONE);
@@ -92,16 +83,6 @@ public class WindowMain_4_FillBody {
 		text2 = new Text(shell, SWT.BORDER);
 		text2.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		List listOfSubheader = new List(shell, SWT.BORDER);
-		listOfSubheader.setItems(new String[] {"Subheader_1", "Subheader_2", "Subheader_3", "Subheader_4", "Subheader_5", "Subheader_6", "Subheader_7", "Subheader_8", "Subheader_9", "Subheader_10"});
-		GridData gd_listOfSubheader = new GridData(SWT.LEFT, SWT.CENTER, false, false, 1, 7);
-		
-		gd_listOfSubheader.widthHint = 145;
-		listOfSubheader.setLayoutData(gd_listOfSubheader);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		
 		Label label3 = new Label(shell, SWT.NONE);
 		label3.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
@@ -116,9 +97,6 @@ public class WindowMain_4_FillBody {
 		
 		text4 = new Text(shell, SWT.BORDER);
 		text4.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
 		Label label5 = new Label(shell, SWT.NONE);
@@ -135,9 +113,6 @@ public class WindowMain_4_FillBody {
 		text6 = new Text(shell, SWT.BORDER);
 		text6.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		
 		Label label7 = new Label(shell, SWT.NONE);
 		label7.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
@@ -152,9 +127,6 @@ public class WindowMain_4_FillBody {
 		
 		text8 = new Text(shell, SWT.BORDER);
 		text8.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
 		Label label9 = new Label(shell, SWT.NONE);
@@ -171,9 +143,6 @@ public class WindowMain_4_FillBody {
 		text10 = new Text(shell, SWT.BORDER);
 		text10.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		
 		Label label11 = new Label(shell, SWT.NONE);
 		label11.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
@@ -188,9 +157,6 @@ public class WindowMain_4_FillBody {
 		
 		text12 = new Text(shell, SWT.BORDER);
 		text12.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
 		Label label13 = new Label(shell, SWT.NONE);
@@ -209,12 +175,7 @@ public class WindowMain_4_FillBody {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		String[] a = {"1","2","3"};
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -234,34 +195,24 @@ public class WindowMain_4_FillBody {
 		});
 		buttonReturn.setText("Return");
 		new Label(shell, SWT.NONE);
-		
-		Label labelNumber = new Label(shell, SWT.NONE);
-		labelNumber.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		labelNumber.setText("Number:");
-		
-		textNumber = new Text(shell, SWT.BORDER);
-		textNumber.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		
-		Label labelSubheader = new Label(shell, SWT.NONE);
-		labelSubheader.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		labelSubheader.setText("Subheader:");
-		
-		Combo combo = new Combo(shell, SWT.NONE);
-		combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		combo.setItems(a);
+		new Label(shell, SWT.NONE);
 		
 		Button buttonAdd = new Button(shell, SWT.NONE);
+		buttonAdd.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+			}
+		});
+		buttonAdd.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		buttonAdd.setText("add");
 		new Label(shell, SWT.NONE);
 		
 		Button buttonNext = new Button(shell, SWT.BORDER);
-		buttonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
+		buttonNext.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
 		buttonNext.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				display.close();
-				WindowMain_5_FillSubheader windowMain_4_FillSubheader = new WindowMain_5_FillSubheader();
-				windowMain_4_FillSubheader.open();		
 			}
 		});
 		buttonNext.setText("Next");
