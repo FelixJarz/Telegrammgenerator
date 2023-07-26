@@ -35,6 +35,9 @@ public class WindowMain_4_FillBody {
 	private Text text12;
 	private Text text14;
 
+	/**
+	 * @wbp.parser.entryPoint
+	 */
 	public void open() {
 		createContents();
 		shell.open();

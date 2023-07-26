@@ -141,16 +141,16 @@ public class WindowMain_2_ChooseRecordtype {
 				String selectedText = combo.getText();
 				String selectedOrdertype = selectedText;
 			
-				// Generate an XML file with selected parameters
-				String headerSource = "HOST";
-				String headerDestination = "WAMAS";
-				int headerSequence = 0;
-				String headerOrdertype = selectedOrdertype;
-				String filePath = "C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\XMLOutput_Test\\Test.xml";
-				String selectedMasterrecordType = null;
-				GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrdertype, headerSource,
-						headerDestination, filePath, headerSequence, headerOrdertype, filePath);
-				generator.generateXmlFile();
+//				// Generate an XML file with selected parameters
+//				String headerSource = "HOST";
+//				String headerDestination = "WAMAS";
+//				int headerSequence = 0;
+//				String headerOrdertype = selectedOrdertype;
+//				String filePath = "C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\XMLOutput_Test\\Test.xml";
+//				String selectedMasterrecordType = null;
+//				GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrdertype, headerSource,
+//						headerDestination, filePath, headerSequence, headerOrdertype, filePath);
+//				generator.generateXmlFile();
 				
 				// Close the current window and open the next window (WindowMain_3_FillHeader)
 				display.close();
