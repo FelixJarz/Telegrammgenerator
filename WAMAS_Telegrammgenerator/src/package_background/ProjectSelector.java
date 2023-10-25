@@ -33,7 +33,7 @@ public class ProjectSelector {
 //    File folderIncoming = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\Incoming");
 //	String[] strIncoming = folderIncoming.list(); 
 //	
-//-----------------------------------------------Function for sorting all the Header-------------------------------------------------------------------
+//-----------------------------------------------Function for sorting all the Header-------------------------------------------------------
 	private static ArrayList<String> tempList = new ArrayList<String>();
 
 	public void saveIncomingRecordTypes() throws FileNotFoundException {
