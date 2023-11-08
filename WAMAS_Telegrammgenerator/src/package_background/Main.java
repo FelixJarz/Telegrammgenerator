@@ -7,10 +7,8 @@ public class Main {
 public static void main(String[] args) {
 		
 		try {
-			
 			WindowMain_1_ProjectSelect window = new WindowMain_1_ProjectSelect();
 			window.open();
-			System.out.println("test");
 			} catch (Exception e) {
 			e.printStackTrace();
 		}
