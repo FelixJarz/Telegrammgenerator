@@ -105,7 +105,7 @@ public class GenerateXmlFile {
 
 //5th Highest hierarchy (add fields to subrecord)
             
-            // Add additional fields for the Masterrecord (Replace with actual values)
+            // Add additional fields for the Masterrecord/Subrecords (Replace with actual values)
             Element field1Element = doc.createElement("Field1");
             field1Element.appendChild(doc.createTextNode("Value1")); // Replace with field1Value
             field1Element.appendChild(field1Element);
