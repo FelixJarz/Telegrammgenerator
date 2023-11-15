@@ -1,0 +1,26 @@
+- ## Datum: 12.07.2023
+- ## Was wurde gemacht:
+- Erstellen des Repositories auf Github,
+- Installieren von Eclipse und passenden Packages
+---
+- ## Datum: 13.07.2023
+- ## Was wurde gemacht:
+- Erstellen und arbeiten von Klassen für GUI (Fill Subheader)
+- Mehrmalige Umbennenungen der Klassen
+- Kleine Verbesserungen der Klassen + GUI Design
+---
+- ## Datum: 14.07.2023
+- ## Was wurde gemacht:
+- Erstellen und arbeiten von Klassen für GUI (Ordertype, Project Create)
+- Kleine Verbesserungen der Klassen + GUI Design
+---
+- ## Datum: 17.07.2023
+- ## Was wurde gemacht:
+- Erstellen und arbeiten von Klassen für Hintergrundfunktionen (XML-File Generation)
+- Verbesserung der Klassen- und Variablennamen + Verbesserung der Kommentare für Funktionen
+- Kleine Verbesserung der GUI
+---
+- ## Datum: 18.07.2023
+- ## Was wurde gemacht:
+- Erstellen und arbeiten von Klassen für Hintergrundfunktionen (Select and unzip Files)
+---

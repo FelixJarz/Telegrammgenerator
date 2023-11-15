@@ -5,12 +5,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.CopyOption;
-import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -36,7 +33,7 @@ public class ProjectSelector {
 //    File folderIncoming = new File("C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\interfaceExport\\Incoming");
 //	String[] strIncoming = folderIncoming.list(); 
 //	
-//-----------------------------------------------Function for sorting all the Header-------------------------------------------------------------------
+//-----------------------------------------------Function for sorting all the Header-------------------------------------------------------
 	private static ArrayList<String> tempList = new ArrayList<String>();
 
 	public void saveIncomingRecordTypes() throws FileNotFoundException {
