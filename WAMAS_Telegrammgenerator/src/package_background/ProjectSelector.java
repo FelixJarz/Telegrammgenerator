@@ -111,7 +111,7 @@ public class ProjectSelector {
 
 		for (int i = 0; i < tempList.size(); i++) {
 			tempStr[i] = tempList.get(i);
-		}
+		} 
 		return tempStr;
 	}
 

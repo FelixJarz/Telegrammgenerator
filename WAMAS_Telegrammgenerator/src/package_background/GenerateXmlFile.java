@@ -12,20 +12,22 @@ import java.util.Date;
 public class GenerateXmlFile {
 
     // Instance variables
-    private String selectedMasterrecordType = "placeholder";
+    private String selectedMasterrecordType;
     private String headerSource;
     private String headerDestination;
     private int headerSequence;
     private String headerRecordTypeName;
     private String headerOrderType;
     private String filePath;
-    private String selectedOrderType;
+    //private String selectedOrderType;
+    private String selectedSubrecordType; 
 
     // Constructor to initialize the instance variables
     public GenerateXmlFile(String selectedMasterrecordType, String selectedOrderType, String headerSource, String headerDestination,
-                           String headerRecordTypeName, int headerSequence, String headerOrderType, String filePath) {
+                           String headerRecordTypeName, int headerSequence, String headerOrderType, String filePath, String selectedSubrecordType) {
         this.selectedMasterrecordType = selectedMasterrecordType;
-        this.selectedOrderType = selectedOrderType;
+        //this.selectedOrderType = selectedOrderType; -> Rename to selected Master Record Type 
+        this.selectedSubrecordType = selectedSubrecordType;
         this.headerSource = headerSource;
         this.headerDestination = headerDestination;
         this.headerSequence = headerSequence;
@@ -42,58 +44,77 @@ public class GenerateXmlFile {
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.newDocument();
 
-            // Root element: "Masterrecords"
-            Element rootElement = doc.createElement("Masterrecords");
+//1st Highest hierarchy 
+            
+            
+            // Root element: Document Name
+            Element rootElement = doc.createElement("Name of Document"); //actually document name
             doc.appendChild(rootElement);
 
+//2nd Highest hierarchy
+            
             // Create "header" element and its sub-elements
             Element headerElement = doc.createElement("header");
             rootElement.appendChild(headerElement);
-
+            
+            Element bodyElement = doc.createElement("body");
+            rootElement.appendChild(bodyElement);
+            
+//3rd Highest hierarchy 
+            
+            Element fullElement = doc.createElement("FULL");
+            headerElement.appendChild(fullElement);
+            
+            Element masterrecordElement = doc.createElement(selectedMasterrecordType);
+            bodyElement.appendChild(masterrecordElement);
+            
+//4th Highest hierarchy
+            
+  //Header (maybe read all reqiered field from a file) 
+            
             Element headerSourceElement = doc.createElement("HEADER_SOURCE");
             headerSourceElement.appendChild(doc.createTextNode(headerSource));
-            headerElement.appendChild(headerSourceElement);
+            fullElement.appendChild(headerSourceElement);
 
             Element headerDestinationElement = doc.createElement("HEADER_DESTINATION");
             headerDestinationElement.appendChild(doc.createTextNode(headerDestination));
-            headerElement.appendChild(headerDestinationElement);
+            fullElement.appendChild(headerDestinationElement);
 
             Element headerSequenceElement = doc.createElement("HEADER_SEQUENCE");
             headerSequenceElement.appendChild(doc.createTextNode(String.valueOf(headerSequence)));
-            headerElement.appendChild(headerSequenceElement);
+            fullElement.appendChild(headerSequenceElement);
 
             Element headerCreationTimeElement = doc.createElement("HEADER_CREATIONTIME");
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             headerCreationTimeElement.appendChild(doc.createTextNode(dateFormat.format(new Date())));
-            headerElement.appendChild(headerCreationTimeElement);
+            fullElement.appendChild(headerCreationTimeElement);
 
             Element headerRecordTypeNameElement = doc.createElement("HEADER_RECORDTYPENAME");
             headerRecordTypeNameElement.appendChild(doc.createTextNode(headerRecordTypeName));
-            headerElement.appendChild(headerRecordTypeNameElement);
+            fullElement.appendChild(headerRecordTypeNameElement);
 
             Element headerOrderTypeElement = doc.createElement("HEADER_ORDERTYPE");
             headerOrderTypeElement.appendChild(doc.createTextNode(headerOrderType));
-            headerElement.appendChild(headerOrderTypeElement);
+            fullElement.appendChild(headerOrderTypeElement);
+            
+  //Body (add fields for masterrecord)
+            
+            // Create SelectedSubrecordType(s)
+            Element subrecordElement = doc.createElement(selectedSubrecordType);
+            masterrecordElement.appendChild(subrecordElement);
 
-            // Create "Masterrecord" element and set its "Type" attribute
-            Element masterrecordElement = doc.createElement("Masterrecord");
-            rootElement.appendChild(masterrecordElement);
-            masterrecordElement.setAttribute("Type", selectedMasterrecordType);
-
-            // Create "OrderType" element and set its "Type" attribute
-            Element orderTypeElement = doc.createElement("OrderType");
-            rootElement.appendChild(orderTypeElement);
-            orderTypeElement.setAttribute("Type", selectedOrderType);
-
+//5th Highest hierarchy (add fields to subrecord)
+            
             // Add additional fields for the Masterrecord (Replace with actual values)
             Element field1Element = doc.createElement("Field1");
             field1Element.appendChild(doc.createTextNode("Value1")); // Replace with field1Value
-            masterrecordElement.appendChild(field1Element);
+            field1Element.appendChild(field1Element);
 
             Element field2Element = doc.createElement("Field2");
             field2Element.appendChild(doc.createTextNode("123")); // Replace with field2Value
             masterrecordElement.appendChild(field2Element);
 
+            
             // Prepare and write the XML to the specified file path
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
