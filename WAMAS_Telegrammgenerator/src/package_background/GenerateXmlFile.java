@@ -23,7 +23,7 @@ public class GenerateXmlFile {
     private String selectedSubrecordType; 
 
     // Constructor to initialize the instance variables
-    public GenerateXmlFile(String selectedMasterrecordType, String selectedOrderType, String headerSource, String headerDestination,
+    public GenerateXmlFile(String selectedMasterrecordType, String headerSource, String headerDestination,
                            String headerRecordTypeName, int headerSequence, String headerOrderType, String filePath, String selectedSubrecordType) {
         this.selectedMasterrecordType = selectedMasterrecordType;
         //this.selectedOrderType = selectedOrderType; -> Rename to selected Master Record Type 
@@ -70,7 +70,7 @@ public class GenerateXmlFile {
             
 //4th Highest hierarchy
             
-  //Header (maybe read all reqiered field from a file) 
+  //Header (maybe read all required fields from a file) 
             
             Element headerSourceElement = doc.createElement("HEADER_SOURCE");
             headerSourceElement.appendChild(doc.createTextNode(headerSource));
@@ -130,20 +130,20 @@ public class GenerateXmlFile {
         }
     }
 
-    public static void main(String[] args) {
+    public void main(String[] args) {	//needs finetuning 
         // Input parameters
-        String selectedMasterrecordType = "MasterrecordType1";
-        String selectedOrderType = "OrderType1";
+        String selectedMasterrecordTypeName = selectedMasterrecordType;
         String headerSource = "HOST";
         String headerDestination = "WAMAS";
         int headerSequence = 0;
-        String headerRecordTypeName = selectedMasterrecordType;
-        String headerOrderType = selectedOrderType;
+        String headerRecordTypeName = selectedMasterrecordTypeName;
+        String headerOrderType = "headerOrderType";
         String filePath = "C:\\wamas\\workspace\\Telegrammgenerator Material\\XML_Test.xml";
+        String headerSubrecordTypeName = selectedSubrecordType; 
 
         // Create an instance of GenerateXmlFile and generate the XML
-        GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrderType, headerSource, headerDestination, headerRecordTypeName,
-                headerSequence, headerOrderType, filePath);
+        GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, headerSource, headerDestination, headerRecordTypeName,
+                headerSequence, headerOrderType, filePath, headerSubrecordTypeName);
         generator.generateXmlFile();
     }
 }
