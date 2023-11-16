@@ -15,7 +15,7 @@ import org.eclipse.swt.events.MouseEvent;
 import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.List;
 
-public class WindowMain_4_FillBody {
+public class WindowMain_5_FillSubrecords {
 	
 	Display display = Display.getDefault();
 	protected Shell shell;
@@ -52,7 +52,7 @@ public class WindowMain_4_FillBody {
 	protected void createContents() {
 		shell = new Shell();
 		shell.setSize(700, 364);
-		shell.setText("Fill Subheader");
+		shell.setText("Fill Subrecords");
 		shell.setLayout(new GridLayout(6, false));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);

@@ -106,7 +106,7 @@ public class WindowMain_1_ProjectSelect {
 			@Override
 			public void widgetSelected(SelectionEvent e){
 				shell.close();
-				WindowMain_2_ChooseRecordtype window2 = new WindowMain_2_ChooseRecordtype();
+				WindowMain_2_ChooseMasterrecordtype window2 = new WindowMain_2_ChooseMasterrecordtype();
 				window2.open();
 			}
 		});

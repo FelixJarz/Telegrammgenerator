@@ -57,7 +57,7 @@ public class WindowMain_3_FillHeader {
 		// Create the window and its components
 		shell = new Shell();
 		shell.setSize(733, 326);
-		shell.setText("Fill Recordtype");
+		shell.setText("Fill Header");
 		shell.setLayout(new GridLayout(6, false));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -179,7 +179,7 @@ public class WindowMain_3_FillHeader {
 			public void mouseUp(MouseEvent e) {
 				// Close the current window and open the previous window (WindowMain_2_ChooseOrdertype)
 				display.close();
-				WindowMain_2_ChooseRecordtype windowMain_2_ChooseOdtertype = new WindowMain_2_ChooseRecordtype();
+				WindowMain_2_ChooseMasterrecordtype windowMain_2_ChooseOdtertype = new WindowMain_2_ChooseMasterrecordtype();
 				windowMain_2_ChooseOdtertype.open();
 			}
 		});
@@ -203,7 +203,7 @@ public class WindowMain_3_FillHeader {
 			public void mouseUp(MouseEvent e) {
 				// Close the current window and open the next window (WindowMain_4_FillBody)
 				display.close();
-				WindowMain_4_FillBody nw = new WindowMain_4_FillBody();
+				WindowMain_4_FillMasterrecord nw = new WindowMain_4_FillMasterrecord();
 				nw.open();		
 			}
 		});	

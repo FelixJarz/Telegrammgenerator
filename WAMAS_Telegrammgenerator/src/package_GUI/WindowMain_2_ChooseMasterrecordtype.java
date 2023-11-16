@@ -15,7 +15,7 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 
-public class WindowMain_2_ChooseRecordtype {
+public class WindowMain_2_ChooseMasterrecordtype {
 
 	protected Shell shell;
 	Display display = Display.getDefault();
@@ -41,14 +41,14 @@ public class WindowMain_2_ChooseRecordtype {
 	protected void createContents() {
 		// Create the window and its components
 		shell = new Shell();
-		shell.setText("Choose Recordtype");
+		shell.setText("Choose Masterrecordtype");
 		shell.setSize(450, 148);
 		shell.setLayout(new GridLayout(3, false));
 		
 		// Label for choosing Recordtype
 		Label labelChooseOdertype = new Label(shell, SWT.NONE);
 		labelChooseOdertype.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		labelChooseOdertype.setText("Choose Recordtype");
+		labelChooseOdertype.setText("Choose Masterrecord");
 					
 		// Create a dropdown menu (Combo) and fill it with the Ordertypes
 		Combo combo = new Combo(shell, SWT.NONE);
@@ -123,16 +123,17 @@ public class WindowMain_2_ChooseRecordtype {
 				String selectedText = combo.getText();
 				String selectedOrdertype = selectedText;
 			
-//				// Generate an XML file with selected parameters
-//				String headerSource = "HOST";
-//				String headerDestination = "WAMAS";
-//				int headerSequence = 0;
-//				String headerOrdertype = selectedOrdertype;
-//				String filePath = "C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\XMLOutput_Test\\Test.xml";
-//				String selectedMasterrecordType = null;
-//				GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, selectedOrdertype, headerSource,
-//						headerDestination, filePath, headerSequence, headerOrdertype, filePath);
-//				generator.generateXmlFile();
+				// Generate an XML file with selected parameters
+				//String headerSource = "HOST";
+				//String headerDestination = "WAMAS";
+				//int headerSequence = 0;
+				//String headerOrdertype = selectedOrdertype;
+				//String filePath = "C:\\Users\\jhaase\\git\\Telegrammgenerator_Material\\XMLOutput_Test\\Test.xml";
+				//String selectedMasterrecordType = null;
+				//String selectedSubrecordType = null;
+				//GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, headerSource,
+				//		headerDestination, filePath, headerSequence, headerOrdertype, filePath, selectedSubrecordType);
+				//generator.generateXmlFile();
 				
 				// Close the current window and open the next window (WindowMain_3_FillHeader)
 				display.close();
