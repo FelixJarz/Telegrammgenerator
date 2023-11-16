@@ -1,26 +1,53 @@
 - ## Datum: 12.07.2023
 - ## Was wurde gemacht:
-- Erstellen des Repositories auf Github,
+- Erstellen des Repositories auf Github
 - Installieren von Eclipse und passenden Packages
+- Planung der GUI
 ---
 - ## Datum: 13.07.2023
 - ## Was wurde gemacht:
-- Erstellen und arbeiten von Klassen für GUI (Fill Subheader)
+- Erstellen und arbeiten von Klassen für GUI 
 - Mehrmalige Umbennenungen der Klassen
 - Kleine Verbesserungen der Klassen + GUI Design
 ---
 - ## Datum: 14.07.2023
 - ## Was wurde gemacht:
-- Erstellen und arbeiten von Klassen für GUI (Ordertype, Project Create)
+- Erstellen und arbeiten von Klassen für GUI 
 - Kleine Verbesserungen der Klassen + GUI Design
 ---
 - ## Datum: 17.07.2023
 - ## Was wurde gemacht:
-- Erstellen und arbeiten von Klassen für Hintergrundfunktionen (XML-File Generation)
+- Erstellen und arbeiten von Klassen für Hintergrundfunktionen 
 - Verbesserung der Klassen- und Variablennamen + Verbesserung der Kommentare für Funktionen
 - Kleine Verbesserung der GUI
 ---
 - ## Datum: 18.07.2023
 - ## Was wurde gemacht:
-- Erstellen und arbeiten von Klassen für Hintergrundfunktionen (Select and unzip Files)
+- Arbeiten an Klassen für Hintergrundfunktionen 
 ---
+- ## Datum: 20.07.2023
+- ## Was wurde gemacht:
+- Arbeiten an Klassen für Hintergrundfunktionen 
+---
+- ## Datum: 24.07.2023
+- ## Was wurde gemacht:
+- Arbeiten an Klassen für Hintergrundfunktionen
+---
+- ## Datum: 24.07.2023
+- ## Was wurde gemacht:
+- Hintergrund funktionen fertig für Folder auslesen und damit arbeiten
+- Kleine Verbesserungen im Code + Kleine Verbesserungen der GUI
+---
+- ## Datum: 25.07.2023
+- ## Was wurde gemacht:
+- Vollendung der Hälfte des Programms (Design + Funktion von 3 Fenstern)
+---
+- ## Datum: 08.11.2023
+- ## Was wurde gemacht:
+- Implementation von SSH im Github Projekt
+---
+- ## Datum: 15.11.2023
+- ## Was wurde gemacht:
+- Erstellung des Projekttagebuchs auf Github
+- Weiterarbeiten am Code
+- Schreiben der Dokumentation
