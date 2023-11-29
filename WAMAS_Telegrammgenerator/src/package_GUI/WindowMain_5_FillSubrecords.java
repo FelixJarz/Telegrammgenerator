@@ -188,7 +188,7 @@ public class WindowMain_5_FillSubrecords {
 			public void mouseUp(MouseEvent e) {
 				
 				shell.close();
-				WindowMain_3_FillHeader nw = new WindowMain_3_FillHeader();
+				WindowMain_4_FillMasterrecord nw = new WindowMain_4_FillMasterrecord();
 				nw.open();
 				
 			}
