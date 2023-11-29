@@ -10,6 +10,11 @@ public class SessionData_Singleton {
     static final String OUTPUT_FOLDER = ROOT_DIR + "\\Output";
     static final String XSD = "\\xsd";
     static final String INCOMING = "\\Incoming";
+    static String HEADER_SOURCE = "";
+    static String HEADER_DESTINATION = "";
+    static String HEADER_SEQUENCE = "";
+    static String HEADER_CREATIONTIME = "";
+    static String HEADER_RECORDTYPENAME = ""; 
     
     private static SessionData_Singleton instance = null;
     private String selectedProject;
@@ -48,6 +53,28 @@ public class SessionData_Singleton {
     
     public String getSelectedRecordtype() {
 		return selectedRecordtype;
+    }
+    
+    //GenerateXMLFile.java-Class Data
+    
+    public void setHeaderSource(String headerSource) {
+    	HEADER_SOURCE = headerSource; 
+    }
+    
+    public void setHeaderDestination(String headerDestination) {
+    	HEADER_DESTINATION = headerDestination; 
+    }
+    
+    public void setHeaderSequence(String headerSequence) {
+    	HEADER_SEQUENCE = headerSequence; 
+    }
+    
+    public void setHeaderCreationtime(String headerCreationtime) {
+    	HEADER_CREATIONTIME = headerCreationtime; 
+    }
+    
+    public void setHeaderRecordtypename(String headerRecordtypename) {
+    	HEADER_RECORDTYPENAME = headerRecordtypename; 
     }
     
 }
