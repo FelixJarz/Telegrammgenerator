@@ -6,6 +6,7 @@ import org.eclipse.swt.widgets.Shell;
 
 import package_background.GenerateXmlFile;
 import package_background.ProjectSelector;
+import package_background.SessionData_Singleton;
 
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Combo;
@@ -120,9 +121,10 @@ public class WindowMain_2_ChooseMasterrecordtype {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				// Get the selected Recordtype from the Combo
-				String selectedText = combo.getText();
-				String selectedOrdertype = selectedText;
-			
+				String selectedOrdertype = combo.getText();
+				
+				SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
+				sessionData.setSelectedRecordtype(selectedOrdertype);
 				// Generate an XML file with selected parameters
 				//String headerSource = "HOST";
 				//String headerDestination = "WAMAS";
