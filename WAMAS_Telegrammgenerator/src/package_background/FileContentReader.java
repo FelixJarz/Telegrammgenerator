@@ -5,31 +5,166 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 import java.util.Iterator;
+import java.util.List;
 
-import org.apache.poi.sl.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import com.ibm.icu.impl.Row;
-
 public class FileContentReader {
+	SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
+
 
 	public FileContentReader() {
 		
 	}
 	
-	public void ReadContent() {
+	private void Rename() {
+		// Path of folder where files are located 
+        String folder_path = 
+               sessionData.getSelectedProjectPath() + SessionData_Singleton.XSD; 
+  
+        // creating new folder 
+        File myfolder = new File(folder_path); 
+  
+        File[] file_array = myfolder.listFiles(); 
+        for (int i = 0; i < file_array.length; i++) 
+        { 
+  
+            if (file_array[i].isFile()) 
+            { 
+  
+                File myfile = new File(folder_path + 
+                         "\\" + file_array[i].getName()); 
+                String long_file_name = file_array[i].getName(); 
+                String new_file_name = long_file_name.replace(".xsd", ".xlsx"); 
+                //System.out.println(long_file_name); 
+                //System.out.print(new_file_name); 
+  
+                // file name format: "Snapshot 11 (12-05-2017 11-57).png" 
+                // To Shorten it to "11.png", get the substring which 
+                // starts after the first space character in the long 
+                // _file_name. 
+                myfile.renameTo(new File(folder_path + 
+                             "\\" + new_file_name)); 
+            } 
+        } 
+	}
+	
+	public List<ArrayList> ReadContent() {
+		if(sessionData.getSelectedRecordtype().contains(".xsd")) {
+			Rename();
+		}
+		//String ext = ".xsd";
+		//String filePath = sessionData.getSelectedRecordtype();
+		//String fileName = filePath.replace(".csv", "");
+		//File file = new File(filePath);
+		//file.renameTo(new File(fileName + ext));
 		
-		SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
-		File selFile = new File(sessionData.getSelectedProjectPath() + SessionData_Singleton.INCOMING + File.separator + sessionData.getSelectedRecordtype());
+		String fileName = sessionData.getSelectedRecordtype();
+		String newFileName = fileName.replace(".xsd", ".xlsx"); 
+		
+		
+		File selFile = new File(sessionData.getSelectedProjectPath() + SessionData_Singleton.XSD + File.separator + newFileName);
+		//open file via stream
+		FileInputStream inputStream = null;
+		try {
+			inputStream = new FileInputStream(selFile);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		//get the workbook from the file 
+		XSSFWorkbook workbook = null;
+		try {
+			workbook = new XSSFWorkbook(inputStream);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//get the sheet
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		//get the cells in the sheet -> find out rows and columns 
+		/*
+		int rows = sheet.getLastRowNum();
+		int cols = sheet.getRow(0).getLastCellNum(); //-> # of columns in this particular row 
+		//save contents of rows and cols
+		for(int r = 0; r <= rows; r++) {
+			XSSFRow row = sheet.getRow(r); 
+			for(int c = 0; c <= cols; c++) {
+				XSSFCell cell = row.getCell(c);
+				//find out type of data in cell ->String,Int,Boolean,...
+				switch(cell.getCellType()) {
+				case STRING: System.out.println(cell.getStringCellValue()); break;
+				case NUMERIC: System.out.println(cell.getNumericCellValue()); break;
+				case BOOLEAN: System.out.println(cell.getBooleanCellValue()); break;
+				}
+				System.out.println(", "); //divider
+			}
+			System.out.println();
+		}
+		*/
+		
+		//with iterator instead of for
+		Iterator<?> iterator = sheet.iterator(); //cycles through rows
+		int cellCount; 
+		int rowCount = -1;
+		ArrayList<String> descriptions= new ArrayList<String>();	//list for all description names
+		ArrayList<String> shortnames= new ArrayList<String>();		//list for all shortnames shown in the xml file
+		ArrayList<String> mandatoryCells = new ArrayList<String>(); //list for all mandatory cells 
+		while (iterator.hasNext()) {
+			rowCount++; 
+			XSSFRow row = (XSSFRow) iterator.next(); //reads the values of the entire row
+			Iterator<?> cellIterator = row.cellIterator(); //will capture all cells in this row
+			cellCount = -1; 
+			while(cellIterator.hasNext()) {
+				XSSFCell cell = (XSSFCell) cellIterator.next();	//reads the value of the cell in the row from above
+				cellCount++; 
+				switch(rowCount) {
+				case 0: break;
+				default:
+					switch(cellCount) {
+					case 1:
+						switch(cell.getCellType()) {
+						case STRING: descriptions.add(cell.getStringCellValue()); break;
+						case NUMERIC: System.out.println("Descriprion is a numeric value"); break;
+						case BOOLEAN: System.out.println("Description is a boolean value"); break;
+						default: System.out.println("Description has no value"); break; 
+						}
+					case 4:  
+						switch(cell.getCellType()) {
+						case STRING: shortnames.add(cell.getStringCellValue()); break;
+						case NUMERIC: System.out.println("Shortname is a numeric value"); break;
+						case BOOLEAN: System.out.println("Shortname is a boolean value"); break;
+						default: System.out.println("Shortname has no value"); break; 
+						}
+					case 8:
+						if(cell.equals("X")) {
+							mandatoryCells.add(descriptions.get(rowCount)); 
+						}
+					}
+				}
+			}
+		}
+		List<ArrayList> returnList = new ArrayList<ArrayList>(); 
+		returnList.add(descriptions);
+		returnList.add(shortnames);
+		returnList.add(mandatoryCells);
+		try {
+			inputStream.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			workbook.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return returnList;
 
 		//Try 1 (uses Scanners and uses the csv)
 		/*
@@ -53,7 +188,8 @@ public class FileContentReader {
 			
 			
 			//Try 2 (uses Excel Workbook Sheet (extra libs) and uses xcs) 
-			try {
+		/*	
+		try {
 	            Workbook wb = WorkbookFactory.create(inputStream);
 	            Sheet sheet = (Sheet) wb.getSheetAt(0);
 	            org.apache.poi.ss.usermodel.Row row = ((org.apache.poi.ss.usermodel.Sheet) sheet).getRow(0);
@@ -98,6 +234,7 @@ public class FileContentReader {
 	        catch (IOException xIo) {
 	            xIo.printStackTrace();
 	        }
+	        */
 			
 			//Try 3
 			/*
@@ -132,54 +269,6 @@ public class FileContentReader {
 			value=cell.getStringCellValue();    //getting cell value  
 			return value;               //returns the cell value  
 			}  
-			*/
-			
-			//Try 4 (step by step)
-			//open file via stream
-			FileInputStream inputStream = new FileInputStream(selFile); 
-			//get the workbook from the file 
-			XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
-			//get the sheet
-			XSSFSheet sheet = workbook.getSheetAt(0);
-			//get the cells in the sheet -> find out rows and columns 
-			/*
-			int rows = sheet.getLastRowNum();
-			int cols = sheet.getRow(0).getLastCellNum(); //-> # of columns in this particular row 
-			//save contents of rows and cols
-			for(int r = 0; r <= rows; r++) {
-				XSSFRow row = sheet.getRow(r); 
-				for(int c = 0; c <= cols; c++) {
-					XSSFCell cell = row.getCell(c);
-					//find out type of data in cell ->String,Int,Boolean,...
-					switch(cell.getCellType()) {
-					case STRING: System.out.println(cell.getStringCellValue()); break;
-					case NUMERIC: System.out.println(cell.getNumericCellValue()); break;
-					case BOOLEAN: System.out.println(cell.getBooleanCellValue()); break;
-					}
-					System.out.println(", "); //divider
-				}
-				System.out.println();
-			}
-			*/
-			
-			//with iterator instead of for
-			Iterator iterator = sheet.iterator(); //cycles through rows
-			while (iterator.hasNext()) {
-				XSSFRow row = (XSSFRow) iterator.next(); //reads the values of the entire row
-				Iterator cellIterator = row.cellIterator(); //will capture all cells in this row
-				while(cellIterator.hasNext()) {
-					XSSFCell cell = (XSSFCell) cellIterator.next();	//reads the value of the cell in the row from above 
-					switch(cell.getCellType()) {
-					case STRING: System.out.println(cell.getStringCellValue()); break;
-					case NUMERIC: System.out.println(cell.getNumericCellValue()); break;
-					case BOOLEAN: System.out.println(cell.getBooleanCellValue()); break;
-					}
-					System.out.println(", "); //divider
-				}
-				System.out.println();
-			}
-			
-			
-			
+			*/	
 	}
 }

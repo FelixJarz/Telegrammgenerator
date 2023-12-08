@@ -9,6 +9,7 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
 import package_background.ProjectSelector;
+import package_background.FileContentReader;
 
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Label;
@@ -67,6 +68,7 @@ public class WindowMain_4_FillMasterrecord {
 		shell.setText("Choose Masterrecordtype");
 		shell.setSize(708, 287);
 		shell.setLayout(new GridLayout(8, false));
+		FileContentReader fileContentReader = new FileContentReader();
 		
 		
 		// Create labels to display the previous Ordertypes
@@ -82,7 +84,7 @@ public class WindowMain_4_FillMasterrecord {
 		
 		Label lblNewLabel = new Label(shell, SWT.NONE);
 		lblNewLabel.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		lblNewLabel.setText("New Label");
+		lblNewLabel.setText("(Mandatory)" + fileContentReader.ReadContent().get(2).get(0));
 		
 		text = new Text(shell, SWT.BORDER);
 		text.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
