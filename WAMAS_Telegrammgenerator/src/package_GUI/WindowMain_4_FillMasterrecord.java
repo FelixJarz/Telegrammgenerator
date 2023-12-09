@@ -66,7 +66,7 @@ public class WindowMain_4_FillMasterrecord {
 		shell = new Shell();
 		shell.setText("Fill Masterrecordtype");
 		shell.setSize(708, 287);
-		shell.setLayout(new GridLayout(8, false));
+		shell.setLayout(new GridLayout(9, false));
 		SessionData_Singleton sessionData = SessionData_Singleton.getInstance(); 
 		FileContentReader fileContentReader = new FileContentReader();
 		GUIAdaption guiAdaption = new GUIAdaption(); 
@@ -87,8 +87,9 @@ public class WindowMain_4_FillMasterrecord {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
 		
-		Label lblNewLabel = new Label(shell, SWT.NONE);
+		/*Label lblNewLabel = new Label(shell, SWT.NONE);
 		guiAdaption.setVisibilityLabel(lblNewLabel, 0); 
 		lblNewLabel.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
 		
@@ -96,10 +97,11 @@ public class WindowMain_4_FillMasterrecord {
 		guiAdaption.setVisibilityText(text, 0); 
 		text.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);*/
 		
 		Label label = new Label(shell, SWT.NONE);
 		label.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		new Label(shell, SWT.NONE);
 		//label.setText("(Mandatory)" + sessionData.getMasterrecordDescriptions().get(2) + ": ");
 		
 		text_4 = new Text(shell, SWT.BORDER);
@@ -119,6 +121,7 @@ public class WindowMain_4_FillMasterrecord {
 		Label lblNewLabel_4 = new Label(shell, SWT.NONE);
 		lblNewLabel_4.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
 		lblNewLabel_4.setText("New Label");
+		new Label(shell, SWT.NONE);
 		
 		text_5 = new Text(shell, SWT.BORDER);
 		text_5.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
@@ -137,6 +140,7 @@ public class WindowMain_4_FillMasterrecord {
 		Label lblNewLabel_5 = new Label(shell, SWT.NONE);
 		lblNewLabel_5.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
 		lblNewLabel_5.setText("New Label");
+		new Label(shell, SWT.NONE);
 		
 		text_6 = new Text(shell, SWT.BORDER);
 		text_6.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
@@ -155,6 +159,7 @@ public class WindowMain_4_FillMasterrecord {
 		Label lblNewLabel_6 = new Label(shell, SWT.NONE);
 		lblNewLabel_6.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
 		lblNewLabel_6.setText("New Label");
+		new Label(shell, SWT.NONE);
 		
 		text_7 = new Text(shell, SWT.BORDER);
 		text_7.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
@@ -162,11 +167,7 @@ public class WindowMain_4_FillMasterrecord {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
+				new Label(shell, SWT.NONE);
 		
 		//-----------------------------------------------Buttons with Listener-------------------------------------------------------------------
 				// Button to return to the previous window
@@ -182,6 +183,7 @@ public class WindowMain_4_FillMasterrecord {
 				});
 				buttonReturn.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, true, true, 1, 1));
 				buttonReturn.setText("Return");
+		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
