@@ -1,23 +1,21 @@
 package package_GUI;
 
+import java.util.ArrayList;
+
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.events.MouseAdapter;
-import org.eclipse.swt.events.MouseEvent;
-import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.widgets.Combo;
-import org.eclipse.swt.widgets.Display;
-import org.eclipse.swt.widgets.Shell;
-
-import package_background.ProjectSelector;
-import package_background.SessionData_Singleton;
-import package_background.FileContentReader;
-
-import org.eclipse.swt.layout.GridLayout;
-import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
+
+import package_background.FileContentReader;
+import package_background.SessionData_Singleton;
+import package_background.GUIAdaption;
 
 public class WindowMain_4_FillMasterrecord {
 
@@ -71,7 +69,12 @@ public class WindowMain_4_FillMasterrecord {
 		shell.setLayout(new GridLayout(8, false));
 		SessionData_Singleton sessionData = SessionData_Singleton.getInstance(); 
 		FileContentReader fileContentReader = new FileContentReader();
+		GUIAdaption guiAdaption = new GUIAdaption(); 
 		fileContentReader.ReadContent();
+		
+		ArrayList<String> des= new ArrayList<String>();
+		sessionData.setMasterrecordDescriptions(des);
+		sessionData.setTotalEntries(des.size());
 		
 		
 		// Create labels to display the previous Ordertypes
@@ -86,17 +89,18 @@ public class WindowMain_4_FillMasterrecord {
 		new Label(shell, SWT.NONE);
 		
 		Label lblNewLabel = new Label(shell, SWT.NONE);
+		guiAdaption.setVisibilityLabel(lblNewLabel, 0); 
 		lblNewLabel.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		lblNewLabel.setText("(Mandatory)" + sessionData.getMasterrecordDescriptions().get(1) + ": ");
 		
 		text = new Text(shell, SWT.BORDER);
+		guiAdaption.setVisibilityText(text, 0); 
 		text.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
 		Label label = new Label(shell, SWT.NONE);
 		label.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		label.setText("(Mandatory)" + sessionData.getMasterrecordDescriptions().get(2) + ": ");
+		//label.setText("(Mandatory)" + sessionData.getMasterrecordDescriptions().get(2) + ": ");
 		
 		text_4 = new Text(shell, SWT.BORDER);
 		text_4.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
