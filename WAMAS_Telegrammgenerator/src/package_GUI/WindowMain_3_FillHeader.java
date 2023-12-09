@@ -75,6 +75,8 @@ public class WindowMain_3_FillHeader {
 		label1.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
 		label1.setText("Source:");
 		
+		//TEST RANDOM DELETE LATER
+		
 		text1 = new Text(shell, SWT.BORDER);
 		text1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 		sessionDataSingleton.setHeaderSource(text1.getText());
