@@ -51,3 +51,13 @@
 - Erstellung des Projekttagebuchs auf Github
 - Weiterarbeiten am Code
 - Schreiben der Dokumentation
+---
+- ## Datum: 08.12.2023
+- ## Was wurde gemacht:
+- Klasse "FileContentReader" erstellt zum auslesen der Header aus den CSV dateien
+- Mehrere Librearies zur Klasse "FileContentReader" hinzugefügt
+---
+- ## Datum: 09.12.2023
+- ## Was wurde gemacht:
+- Weitergearbietet an Klasse "FileContentReader", Funktionalität geändert auf CSV angepasst
+- Automatisierung der Labels und Textfelder muss noch herausgefunden werden
