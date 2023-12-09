@@ -18,6 +18,7 @@ import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 
+import package_background.GUIAdaption;
 import package_background.SessionData_Singleton;
 
 public class WindowMain_3_FillHeader { 	
@@ -63,6 +64,11 @@ public class WindowMain_3_FillHeader {
 		new Label(shell, SWT.NONE);
 		
 		SessionData_Singleton sessionDataSingleton = SessionData_Singleton.getInstance(); 
+		
+		//-----------------------------------------------Test erstellen von labels und textfeldern---------------------------------------------
+		//GUIAdaption.createLabelWithFunction(shell, SWT.NONE, "TEST");
+		//GUIAdaption.createTextField(shell, SWT.NONE);
+		//-----------------------------------------------Test erstellen von labels und textfeldern---------------------------------------------
 		
 		Label label1 = new Label(shell, SWT.CENTER);
 		label1.setAlignment(SWT.CENTER);

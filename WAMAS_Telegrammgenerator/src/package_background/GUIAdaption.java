@@ -26,4 +26,16 @@ public class GUIAdaption {
 		}
 		return txt;
 	}
+	
+    public static org.eclipse.swt.widgets.Label createLabelWithFunction(org.eclipse.swt.widgets.Shell parent, int style, String text) {
+    	org.eclipse.swt.widgets.Label label = new org.eclipse.swt.widgets.Label(parent, style);
+        label.setText(text);
+        return label;
+    }
+    
+   	 public static org.eclipse.swt.widgets.Text createTextField(org.eclipse.swt.widgets.Shell parent, int style) {
+   		org.eclipse.swt.widgets.Text text = new org.eclipse.swt.widgets.Text(parent, style);
+        return text;
+    }
 }
+
