@@ -7,10 +7,18 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
+
+import org.xmlet.xsdparser.core.XsdParser;
+import org.xmlet.xsdparser.xsdelements.XsdChoice;
+import org.xmlet.xsdparser.xsdelements.XsdComplexType;
+import org.xmlet.xsdparser.xsdelements.XsdElement;
+import org.xmlet.xsdparser.xsdelements.XsdSchema;
 
 public class FileContentReader {
 	SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
 	private String path = sessionData.getSelectedProjectPath() + sessionData.INCOMING + File.separator + sessionData.getSelectedRecordtype(); 
+	private String xsdPath = sessionData.getSelectedProjectPath() + sessionData.XSD + File.separator + "ADVISEDLU00012.xsd"; //-> Eig Subrecord Type
 	private String csvPath = path.replace(".xsd", ".csv");
 	private String line = ""; 
 	private ArrayList<String> descriptions= new ArrayList<String>();	//list for all description names
@@ -53,6 +61,30 @@ public class FileContentReader {
                              "\\" + new_file_name)); 
             } 
         } 
+	}
+	
+	public ArrayList<String> ReadXSDContent(){
+		
+        XsdParser parserInstance1 = new XsdParser(xsdPath);
+		
+        Stream<XsdElement> elementsStream = parserInstance1.getResultXsdElements();
+        Stream<XsdSchema> schemasStream = parserInstance1.getResultXsdSchemas();
+                
+        XsdElement htmlElement = elementsStream.findFirst().get();
+        //1
+        XsdComplexType htmlComplexType = htmlElement.getXsdComplexType();
+        System.out.println(htmlComplexType);
+        //2
+        XsdChoice choiceElement = htmlComplexType.getChildAsChoice();
+        System.out.println(choiceElement);
+        //3
+        XsdElement elements = choiceElement.getChildrenElements().findFirst().get();
+        ArrayList<String> elementsList = new ArrayList<String>();
+        elementsList.add(elements.toString());
+        
+        System.out.println(elementsList);
+        
+        return elementsList; 
 	}
 	
 	public List<ArrayList> ReadContent() {

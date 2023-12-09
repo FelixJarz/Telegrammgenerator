@@ -65,6 +65,7 @@ public class WindowMain_4_FillMasterrecord {
 		FileContentReader fileContentReader = new FileContentReader();
 		GUIAdaption guiAdaption = new GUIAdaption(); 
 		fileContentReader.ReadContent();
+		fileContentReader.ReadXSDContent(); 
 		
 		for(int i = 0; i <= 10; i++) {
 			if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9 ) {
