@@ -1,30 +1,32 @@
 package package_background;
 
+import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class FileContentReader {
 	SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
+	private String path = sessionData.getSelectedProjectPath() + sessionData.INCOMING + File.separator + sessionData.getSelectedRecordtype(); 
+	private String csvPath = path.replace(".xsd", ".csv");
+	private String line = ""; 
+	private ArrayList<String> descriptions= new ArrayList<String>();	//list for all description names
+	private ArrayList<String> shortnames= new ArrayList<String>();		//list for all shortnames shown in the xml file
+	private ArrayList<String> mandatoryCells = new ArrayList<String>(); //list for all mandatory cells 
 
 
 	public FileContentReader() {
 		
 	}
 	
-	private void Rename() {
+	//not needed anymore 
+	private void RenameToXLSX() {
 		// Path of folder where files are located 
         String folder_path = 
-               sessionData.getSelectedProjectPath() + SessionData_Singleton.XSD; 
+               sessionData.getSelectedProjectPath() + SessionData_Singleton.INCOMING; 
   
         // creating new folder 
         File myfolder = new File(folder_path); 
@@ -39,7 +41,7 @@ public class FileContentReader {
                 File myfile = new File(folder_path + 
                          "\\" + file_array[i].getName()); 
                 String long_file_name = file_array[i].getName(); 
-                String new_file_name = long_file_name.replace(".xsd", ".xlsx"); 
+                String new_file_name = long_file_name.replace(".csv", ".xlsx"); 
                 //System.out.println(long_file_name); 
                 //System.out.print(new_file_name); 
   
@@ -54,8 +56,52 @@ public class FileContentReader {
 	}
 	
 	public List<ArrayList> ReadContent() {
+		
+		//
+		//Read CSV File via Reader
+		//
+		//if file not found -> try/catch
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(csvPath));
+			while((line = br.readLine()) != null) {
+				String[] values = line.split(";"); 
+				System.out.println("Description: " + values[1] + " | " + "Shortname: " + values[4] + " | " + "Mandatory: " + values[8]);
+				descriptions.add(values[1]);
+				shortnames.add(values[4]);
+				if(values[8].equals("X")) {
+					mandatoryCells.add(values[1]);
+				}
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println(mandatoryCells);
+		
+		List<ArrayList> returnList = new ArrayList<ArrayList>(); 
+		sessionData.setMasterrecordDescriptions(descriptions);
+		sessionData.setMasterrecordShortnames(shortnames);
+		sessionData.setMasterrecordMandatory(mandatoryCells);
+		sessionData.setTotalEntries(descriptions.size());
+		return returnList; 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//
+//Read xsd File via Apache POI 
+//
+
+		/*
 		if(sessionData.getSelectedRecordtype().contains(".xsd")) {
-			Rename();
+			RenameToXLSX();
 		}
 		//String ext = ".xsd";
 		//String filePath = sessionData.getSelectedRecordtype();
@@ -67,7 +113,7 @@ public class FileContentReader {
 		String newFileName = fileName.replace(".xsd", ".xlsx"); 
 		
 		
-		File selFile = new File(sessionData.getSelectedProjectPath() + SessionData_Singleton.XSD + File.separator + newFileName);
+		File selFile = new File(sessionData.getSelectedProjectPath() + SessionData_Singleton.INCOMING + File.separator + newFileName);
 		//open file via stream
 		FileInputStream inputStream = null;
 		try {
@@ -86,26 +132,6 @@ public class FileContentReader {
 		}
 		//get the sheet
 		XSSFSheet sheet = workbook.getSheetAt(0);
-		//get the cells in the sheet -> find out rows and columns 
-		/*
-		int rows = sheet.getLastRowNum();
-		int cols = sheet.getRow(0).getLastCellNum(); //-> # of columns in this particular row 
-		//save contents of rows and cols
-		for(int r = 0; r <= rows; r++) {
-			XSSFRow row = sheet.getRow(r); 
-			for(int c = 0; c <= cols; c++) {
-				XSSFCell cell = row.getCell(c);
-				//find out type of data in cell ->String,Int,Boolean,...
-				switch(cell.getCellType()) {
-				case STRING: System.out.println(cell.getStringCellValue()); break;
-				case NUMERIC: System.out.println(cell.getNumericCellValue()); break;
-				case BOOLEAN: System.out.println(cell.getBooleanCellValue()); break;
-				}
-				System.out.println(", "); //divider
-			}
-			System.out.println();
-		}
-		*/
 		
 		//with iterator instead of for
 		Iterator<?> iterator = sheet.iterator(); //cycles through rows
@@ -165,110 +191,6 @@ public class FileContentReader {
 			e.printStackTrace();
 		}
 		return returnList;
-
-		//Try 1 (uses Scanners and uses the csv)
-		/*
-			Scanner sc;
-			try {
-				sc = new Scanner(selFile);
-				sc.useDelimiter(";");
-				while(sc.hasNext()) {
-					String s = sc.next();
-					int ind = s.indexOf("Decimalplaces (SAP)\r\n");
-					if(ind != -1) {
-						String contentOfFile = s.substring(ind); 
-					}
-				}
-				sc.close();
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			*/
-			
-			
-			//Try 2 (uses Excel Workbook Sheet (extra libs) and uses xcs) 
-		/*	
-		try {
-	            Workbook wb = WorkbookFactory.create(inputStream);
-	            Sheet sheet = (Sheet) wb.getSheetAt(0);
-	            org.apache.poi.ss.usermodel.Row row = ((org.apache.poi.ss.usermodel.Sheet) sheet).getRow(0);
-	            List<String> columnNames = new ArrayList<>();
-	            //get column names  
-	            for (java.util.Iterator<Cell> iterator = row.cellIterator();iterator.hasNext();) {
-	                Cell cell = iterator.next();
-	                String value = cell.getStringCellValue();
-	                columnNames.add(value);
-	            }
-	            //idk
-	            Iterator<Row> iterator = sheet.iterator();
-	            if (iterator.hasNext()) {
-	                iterator.next();
-	            }
-	            //take all elements which are mandatory 
-	            for (java.util.Iterator<Cell> iteratorMandatory = row.cellIterator();iterator.hasNext();) {
-	            	if(iteratorMandatory.equals("Mandatory")) {
-	            		
-	            }
-	            
-	            List<String> rows = new ArrayList<>();
-	            while (iterator.hasNext()) {
-	                row = (org.apache.poi.ss.usermodel.Row) iterator.next();
-	                Cell code = row.getCell(0);
-	                double d = code.getNumericCellValue();
-	                int k = Double.valueOf(d).intValue();
-	                StringBuilder sb = new StringBuilder();
-	                for (int i = 1; i < columnNames.size(); i++) {
-	                    sb = new StringBuilder();
-	                    sb.append(k);
-	                    sb.append(',');
-	                    sb.append(columnNames.get(i));
-	                    sb.append(',');
-	                    Cell cell = row.getCell(i);
-	                    sb.append(String.format("%.2f", cell.getNumericCellValue()));
-	                    rows.add(sb.toString());
-	                }
-	            }
-	            rows.forEach(System.out::println);
-	        }
-	        catch (IOException xIo) {
-	            xIo.printStackTrace();
-	        }
-	        */
-			
-			//Try 3
-			/*
-			ReadCellExample rc=new ReadCellExample();   //object of the class  
-			//reading the value of 2nd row and 2nd column  
-			String vOutput=rc.ReadCellData(2, 2);   
-			System.out.println(vOutput);  
-			}  
-			//method defined for reading a cell  
-			public String ReadCellData(int vRow, int vColumn)  
-			{  
-			String value=null;          //variable for storing the cell value  
-			Workbook wb=null;           //initialize Workbook null  
-			try  
-			{  
-			//reading data from a file in the form of bytes  
-			FileInputStream fis=new FileInputStream("C:\\demo\\EmployeeData.xlsx");  
-			//constructs an XSSFWorkbook object, by buffering the whole stream into the memory  
-			wb=new XSSFWorkbook(fis);  
-			}  
-			catch(FileNotFoundException e)  
-			{  
-			e.printStackTrace();  
-			}  
-			catch(IOException e1)  
-			{  
-			e1.printStackTrace();  
-			}  
-			Sheet sheet=wb.getSheetAt(0);   //getting the XSSFSheet object at given index  
-			Row row=sheet.getRow(vRow); //returns the logical row  
-			Cell cell=row.getCell(vColumn); //getting the cell representing the given column  
-			value=cell.getStringCellValue();    //getting cell value  
-			return value;               //returns the cell value  
-			}  
-			*/	
+		*/
 	}
 }

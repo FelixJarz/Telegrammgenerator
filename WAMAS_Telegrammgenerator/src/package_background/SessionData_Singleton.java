@@ -1,6 +1,7 @@
 package package_background;
 
 import java.io.File;
+import java.util.ArrayList;
 
 public class SessionData_Singleton {
     
@@ -19,6 +20,10 @@ public class SessionData_Singleton {
     private static SessionData_Singleton instance = null;
     private String selectedProject;
     private String selectedRecordtype; 
+    private ArrayList<String> masterrecordDescriptions = new ArrayList<String>();
+    private ArrayList<String> masterrecordShortnames = new ArrayList<String>(); 
+    private ArrayList<String> masterrecordMandatory = new ArrayList<String>();
+    private int totalEntries = 0; 
     
     private SessionData_Singleton(){
         // Private constructor prevents creating instances from outside this class
@@ -30,7 +35,7 @@ public class SessionData_Singleton {
             instance = new SessionData_Singleton();
         }
         return instance;
-    }    
+    }  
     
     public void setSelectedProject(String selProject) {
         // Set the name of the selected project
@@ -75,6 +80,40 @@ public class SessionData_Singleton {
     
     public void setHeaderRecordtypename(String headerRecordtypename) {
     	HEADER_RECORDTYPENAME = headerRecordtypename; 
+    }
+    
+    //FileContentReader.java-Class Data
+    
+    public void setMasterrecordDescriptions(ArrayList<String> masterrecDes) {
+    	masterrecordDescriptions = masterrecDes; 
+    }
+    
+    public void setMasterrecordShortnames(ArrayList<String> masterrecShort) {
+    	masterrecordShortnames = masterrecShort; 
+    }
+    
+    public void setMasterrecordMandatory(ArrayList<String> masterrecMan) {
+    	masterrecordMandatory = masterrecMan; 
+    }
+    
+    public void setTotalEntries(int entries) {
+    	totalEntries = entries;
+    }
+    
+    public ArrayList<String> getMasterrecordDescriptions() {
+    	return masterrecordDescriptions; 
+    }
+    
+    public ArrayList<String> getMasterrecordShortnames() {
+    	return masterrecordShortnames; 
+    }
+    
+    public ArrayList<String> getMasterrecordMandatory() {
+    	return masterrecordMandatory; 
+    }
+    
+    public int getTotalEntries() {
+    	return totalEntries; 
     }
     
 }
