@@ -126,7 +126,7 @@ public class WindowExtra_ProjectCreate {
 		
 		// Button to return to the previous window
 		Button buttonReturn = new Button(shell, SWT.NONE);
-		buttonReturn.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
+		buttonReturn.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, false, true, 1, 1));
 		
 		//In case the button is pressed -> Go back to the previous window 
 		buttonReturn.addSelectionListener(new SelectionAdapter() {
@@ -139,6 +139,8 @@ public class WindowExtra_ProjectCreate {
 			}
 		});
 		buttonReturn.setText("Return");
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
 		
 		Button buttonNext = new Button(shell, SWT.NONE);
 		
@@ -177,7 +179,7 @@ public class WindowExtra_ProjectCreate {
 			}
 				
 		});
-		buttonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
+		buttonNext.setLayoutData(new GridData(SWT.RIGHT, SWT.BOTTOM, false, true, 1, 1));
 		buttonNext.setText("Next");
 	
 	}

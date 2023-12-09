@@ -44,7 +44,8 @@ public class WindowMain_2_ChooseMasterrecordtype {
 		shell = new Shell();
 		shell.setText("Choose Masterrecordtype");
 		shell.setSize(450, 148);
-		shell.setLayout(new GridLayout(3, false));
+		shell.setLocation(500, 300);
+		shell.setLayout(new GridLayout(2, false));
 		
 		// Label for choosing Recordtype
 		Label labelChooseOdertype = new Label(shell, SWT.NONE);
@@ -80,10 +81,6 @@ public class WindowMain_2_ChooseMasterrecordtype {
 				}
 			}
 		});
-		
-		// Create labels to display the previous Ordertypes
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 
@@ -99,22 +96,13 @@ public class WindowMain_2_ChooseMasterrecordtype {
 				windowMain_1_ProjectSelect.open();
 			}
 		});
-		buttonReturn.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
+		buttonReturn.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, false, true, 1, 1));
 		buttonReturn.setText("Return");
-		new Label(shell, SWT.NONE);
 		
 		// Button to proceed to the next window
 		Button buttonNext = new Button(shell, SWT.NONE);
-		buttonNext.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
 		buttonNext.setEnabled(false);
-		
-		// Enable the Next button when an Recordtype is selected from the Combo
-		combo.addSelectionListener(new SelectionAdapter() {
-			@Override
-			public void widgetSelected(SelectionEvent e) {
-				buttonNext.setEnabled(true);
-			}
-		});
+		buttonNext.setLayoutData(new GridData(SWT.RIGHT, SWT.BOTTOM, false, true, 1, 1));
 		
 		// Add a SelectionListener to the Next button to perform actions and open the next window
 		buttonNext.addSelectionListener(new SelectionAdapter() {
@@ -144,5 +132,13 @@ public class WindowMain_2_ChooseMasterrecordtype {
 			}
 		});
 		buttonNext.setText("Next");
+		
+		// Enable the Next button when an Recordtype is selected from the Combo
+		combo.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				buttonNext.setEnabled(true);
+			}
+		});
 	}
 }

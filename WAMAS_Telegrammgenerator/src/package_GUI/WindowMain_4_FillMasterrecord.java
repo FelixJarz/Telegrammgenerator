@@ -22,13 +22,6 @@ public class WindowMain_4_FillMasterrecord {
 	protected Shell shell;
 	Display display = Display.getDefault();
 	private Text text;
-	private Text text_1;
-	private Text text_2;
-	private Text text_3;
-	private Text text_4;
-	private Text text_5;
-	private Text text_6;
-	private Text text_7;
 
 	/**
 	 * Launch the application.
@@ -66,11 +59,39 @@ public class WindowMain_4_FillMasterrecord {
 		shell = new Shell();
 		shell.setText("Fill Masterrecordtype");
 		shell.setSize(708, 287);
-		shell.setLayout(new GridLayout(9, false));
+		shell.setLocation(500, 300);
+		shell.setLayout(new GridLayout(7, false));
 		SessionData_Singleton sessionData = SessionData_Singleton.getInstance(); 
 		FileContentReader fileContentReader = new FileContentReader();
 		GUIAdaption guiAdaption = new GUIAdaption(); 
 		fileContentReader.ReadContent();
+		
+		for(int i = 0; i <= 10; i++) {
+			if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9 ) {
+				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
+				GUIAdaption.createTextField(shell, SWT.BORDER);
+				new Label(shell, SWT.NONE);
+				new Label(shell, SWT.NONE);
+			}else {
+				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
+				GUIAdaption.createTextField(shell, SWT.BORDER);
+				new Label(shell, SWT.NONE);
+				}
+			}
+		
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		
+		
 		
 		ArrayList<String> des= new ArrayList<String>();
 		sessionData.setMasterrecordDescriptions(des);
@@ -78,96 +99,7 @@ public class WindowMain_4_FillMasterrecord {
 		
 		
 		// Create labels to display the previous Ordertypes
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		/*Label lblNewLabel = new Label(shell, SWT.NONE);
-		guiAdaption.setVisibilityLabel(lblNewLabel, 0); 
-		lblNewLabel.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		
-		text = new Text(shell, SWT.BORDER);
-		guiAdaption.setVisibilityText(text, 0); 
-		text.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);*/
-		
-		Label label = new Label(shell, SWT.NONE);
-		label.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		//label.setText("(Mandatory)" + sessionData.getMasterrecordDescriptions().get(2) + ": ");
-		
-		text_4 = new Text(shell, SWT.BORDER);
-		text_4.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label lblNewLabel_1 = new Label(shell, SWT.NONE);
-		lblNewLabel_1.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		lblNewLabel_1.setText("New Label");
-		
-		text_1 = new Text(shell, SWT.BORDER);
-		text_1.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label lblNewLabel_4 = new Label(shell, SWT.NONE);
-		lblNewLabel_4.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		lblNewLabel_4.setText("New Label");
-		new Label(shell, SWT.NONE);
-		
-		text_5 = new Text(shell, SWT.BORDER);
-		text_5.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label lblNewLabel_2 = new Label(shell, SWT.NONE);
-		lblNewLabel_2.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		lblNewLabel_2.setText("New Label");
-		
-		text_2 = new Text(shell, SWT.BORDER);
-		text_2.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label lblNewLabel_5 = new Label(shell, SWT.NONE);
-		lblNewLabel_5.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		lblNewLabel_5.setText("New Label");
-		new Label(shell, SWT.NONE);
-		
-		text_6 = new Text(shell, SWT.BORDER);
-		text_6.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label lblNewLabel_3 = new Label(shell, SWT.NONE);
-		lblNewLabel_3.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		lblNewLabel_3.setText("New Label");
-		
-		text_3 = new Text(shell, SWT.BORDER);
-		text_3.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		
-		Label lblNewLabel_6 = new Label(shell, SWT.NONE);
-		lblNewLabel_6.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		lblNewLabel_6.setText("New Label");
-		new Label(shell, SWT.NONE);
-		
-		text_7 = new Text(shell, SWT.BORDER);
-		text_7.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-				new Label(shell, SWT.NONE);
+
 		
 		//-----------------------------------------------Buttons with Listener-------------------------------------------------------------------
 				// Button to return to the previous window
@@ -181,19 +113,15 @@ public class WindowMain_4_FillMasterrecord {
 						window3.open();
 					}
 				});
-				buttonReturn.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, true, true, 1, 1));
+				buttonReturn.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, false, true, 1, 1));
 				buttonReturn.setText("Return");
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		
 		// Button to proceed to the next window
 		Button buttonNext = new Button(shell, SWT.NONE);
-		buttonNext.setLayoutData(new GridData(SWT.RIGHT, SWT.BOTTOM, true, true, 1, 1));
+		buttonNext.setLayoutData(new GridData(SWT.RIGHT, SWT.BOTTOM, false, true, 1, 1));
 		
 
 		
@@ -207,5 +135,6 @@ public class WindowMain_4_FillMasterrecord {
 			}
 		});
 		buttonNext.setText("Next");
+		new Label(shell, SWT.NONE);
 	}
 }

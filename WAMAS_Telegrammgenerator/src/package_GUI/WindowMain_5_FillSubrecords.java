@@ -52,6 +52,7 @@ public class WindowMain_5_FillSubrecords {
 	protected void createContents() {
 		shell = new Shell();
 		shell.setSize(700, 364);
+		shell.setLocation(500, 300);
 		shell.setText("Fill Subrecords");
 		shell.setLayout(new GridLayout(6, false));
 		new Label(shell, SWT.NONE);

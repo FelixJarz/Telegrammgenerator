@@ -20,6 +20,7 @@ import org.eclipse.swt.events.SelectionEvent;
 
 import package_background.GUIAdaption;
 import package_background.SessionData_Singleton;
+import org.eclipse.swt.widgets.Composite;
 
 public class WindowMain_3_FillHeader { 	
 
@@ -52,7 +53,8 @@ public class WindowMain_3_FillHeader {
 	protected void createContents() {
 		// Create the window and its components
 		shell = new Shell();
-		shell.setSize(733, 232);
+		shell.setSize(733, 317);
+		shell.setLocation(500, 300);
 		shell.setText("Fill Header");
 		shell.setLayout(new GridLayout(7, false));
 		new Label(shell, SWT.NONE);
@@ -81,24 +83,16 @@ public class WindowMain_3_FillHeader {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		
 //-----------------------------------------------Buttons with Listener-------------------------------------------------------------------
 		// Button to return to the previous window (WindowMain_2_ChooseOrdertype)
 		buttonReturn = new Button(shell, SWT.BORDER);
-		buttonReturn.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, false, false, 1, 1));
+		buttonReturn.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+			}
+		});
+		buttonReturn.setLayoutData(new GridData(SWT.LEFT, SWT.BOTTOM, false, true, 1, 1));
 		buttonReturn.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseUp(MouseEvent e) {
@@ -113,8 +107,6 @@ public class WindowMain_3_FillHeader {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
-		new Label(shell, SWT.NONE);
 		
 		// Button to proceed to the next window (WindowMain_4_FillBody)
 		buttonNext = new Button(shell, SWT.BORDER);
@@ -123,7 +115,7 @@ public class WindowMain_3_FillHeader {
 			public void widgetSelected(SelectionEvent e) {
 			}
 		});
-		buttonNext.setLayoutData(new GridData(SWT.RIGHT, SWT.BOTTOM, false, false, 1, 1));
+		buttonNext.setLayoutData(new GridData(SWT.RIGHT, SWT.BOTTOM, false, true, 1, 1));
 		buttonNext.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseUp(MouseEvent e) {
@@ -134,5 +126,6 @@ public class WindowMain_3_FillHeader {
 			}
 		});	
 		buttonNext.setText("Next");
+		new Label(shell, SWT.NONE);
 	}
 }
