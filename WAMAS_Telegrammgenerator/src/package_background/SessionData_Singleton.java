@@ -11,7 +11,6 @@ public class SessionData_Singleton {
     static final String OUTPUT_FOLDER = ROOT_DIR + "\\Output";
     static final String XSD = "\\xsd";
     static final String INCOMING = "\\Incoming";
-    static ArrayList <String> HEADER_NAMES; 
     static String HEADER_SOURCE = "";
     static String HEADER_DESTINATION = "";
     static String HEADER_SEQUENCE = "";
@@ -62,10 +61,6 @@ public class SessionData_Singleton {
     }
     
     //GenerateXMLFile.java-Class Data
-    
-    public void setHeaderNames(int pos, String name) {
-    	HEADER_NAMES.add(pos, name); 
-    }
     
     public void setHeaderSource(String headerSource) {
     	HEADER_SOURCE = headerSource; 

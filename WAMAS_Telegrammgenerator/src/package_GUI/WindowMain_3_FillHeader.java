@@ -34,12 +34,6 @@ public class WindowMain_3_FillHeader {
 	private Button buttonReturn;
 	
 	Display display = Display.getDefault();
-	private Text text;
-	private Label lblNewLabel;
-	private Text text_1;
-	private Label lblNewLabel_1;
-	private Label lblNewLabel_2;
-	private Text text_2;
 
 	/**
 	 * @wbp.parser.entryPoint
@@ -93,7 +87,35 @@ public class WindowMain_3_FillHeader {
 		GUIAdaption.getHashMap().get("textField0").addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
-				
+				sessionDataSingleton.setHeaderSource(GUIAdaption.getHashMap().get("textField0").getText());
+			}
+		});
+		
+		GUIAdaption.getHashMap().get("textField1").addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				sessionDataSingleton.setHeaderDestination(GUIAdaption.getHashMap().get("textField1").getText());
+			}
+		});
+		
+		GUIAdaption.getHashMap().get("textField2").addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				sessionDataSingleton.setHeaderSequence(GUIAdaption.getHashMap().get("textField2").getText());
+			}
+		});
+		
+		GUIAdaption.getHashMap().get("textField3").addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				sessionDataSingleton.setHeaderCreationtime(GUIAdaption.getHashMap().get("textField3").getText());
+			}
+		});
+		
+		GUIAdaption.getHashMap().get("textField4").addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				sessionDataSingleton.setHeaderRecordtypename(GUIAdaption.getHashMap().get("textField4").getText());
 			}
 		});
 			
