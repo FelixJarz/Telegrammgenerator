@@ -7,9 +7,14 @@ package package_GUI;
 import org.eclipse.swt.widgets.Display;
 
 import org.eclipse.swt.widgets.Shell;
+
+import java.util.ArrayList;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.events.KeyAdapter;
+import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.MouseAdapter;
 import org.eclipse.swt.events.MouseEvent;
 import org.eclipse.swt.layout.GridLayout;
@@ -66,19 +71,32 @@ public class WindowMain_3_FillHeader {
 		GUIAdaption.createTextField(shell, SWT.NONE);
 		-----------------------------------------------Test erstellen von labels und textfeldern---------------------------------------------*/
 		
-		for(int i = 0; i <= 10; i++) {
-			if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9 ) {
-				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
-				GUIAdaption.createTextField(shell, SWT.BORDER);
+		String[] headerNameList = {"Source", "Destination", "Sequence", "Creation Time", "Recordtype Name"};
+		
+		
+		for(int i = 0; i < 5; i++) {
+			int pos = i; 
+			if(i%2 == 1) {
+				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, headerNameList[i]);
+				GUIAdaption.createTextField(pos, shell, SWT.BORDER);
+				
 				new Label(shell, SWT.NONE);
 				new Label(shell, SWT.NONE);
 			}else {
-				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
-				GUIAdaption.createTextField(shell, SWT.BORDER);
+				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, headerNameList[i]);
+				GUIAdaption.createTextField(pos, shell, SWT.BORDER);
+				
 				new Label(shell, SWT.NONE);
 				}
 			}
 		
+		GUIAdaption.getHashMap().get("textField0").addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				
+			}
+		});
+			
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -120,6 +138,7 @@ public class WindowMain_3_FillHeader {
 			@Override
 			public void mouseUp(MouseEvent e) {
 				// Close the current window and open the next window (WindowMain_4_FillBody)
+				System.out.print(GUIAdaption.getHashMap().get("textField1") + "\n"); 
 				display.close();
 				WindowMain_4_FillMasterrecord nw = new WindowMain_4_FillMasterrecord();
 				nw.open();		

@@ -1,9 +1,18 @@
 package package_background;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 
 public class GUIAdaption {
+	
+	static org.eclipse.swt.widgets.Text textField; 
+	static org.eclipse.swt.widgets.Label labelField; 
+	static Map<String, org.eclipse.swt.widgets.Text> mapText = new HashMap<>();
 	
 	
 	public GUIAdaption() {
@@ -36,16 +45,31 @@ public class GUIAdaption {
         label.setText(text);
         label.setAlignment(SWT.CENTER);
 		label.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+		labelField = label; 
         return label;
     }
     
-   	 public static org.eclipse.swt.widgets.Text createTextField(org.eclipse.swt.widgets.Shell parent, int style) {
+   	 public static void createTextField(int pos, org.eclipse.swt.widgets.Shell parent, int style) {
    		SessionData_Singleton sessionData = SessionData_Singleton.getInstance(); 
    		
    		org.eclipse.swt.widgets.Text text = new org.eclipse.swt.widgets.Text(parent, style);
    		text.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
    		sessionData.setHeaderSource(text.getText());
-        return text;
+   		textField = text; 
+   		
+        mapText.put("textField" + pos, textField);
     }
+   	 
+   	 public static Map<String, org.eclipse.swt.widgets.Text> getHashMap(){
+   		return mapText; 
+   	 }
+   	 
+   	 public static org.eclipse.swt.widgets.Text getTextField(){
+   		 return textField; 
+   	 }
+   	 
+   	public static org.eclipse.swt.widgets.Label getLabel(){
+  		 return labelField; 
+  	 }
 }
 

@@ -68,14 +68,15 @@ public class WindowMain_4_FillMasterrecord {
 		fileContentReader.ReadXSDContent(); 
 		
 		for(int i = 0; i <= 10; i++) {
+			int pos = i;
 			if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9 ) {
 				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
-				GUIAdaption.createTextField(shell, SWT.BORDER);
+				GUIAdaption.createTextField(pos, shell, SWT.BORDER);
 				new Label(shell, SWT.NONE);
 				new Label(shell, SWT.NONE);
 			}else {
 				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
-				GUIAdaption.createTextField(shell, SWT.BORDER);
+				GUIAdaption.createTextField(pos, shell, SWT.BORDER);
 				new Label(shell, SWT.NONE);
 				}
 			}
