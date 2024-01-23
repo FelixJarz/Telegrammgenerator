@@ -40,7 +40,7 @@ public class WindowMain_5_FillSubrecords {
 //-----------------------------------------------GUI Objects-------------------------------------------------------------------
 	protected void createContents() {
 		shell = new Shell();
-		shell.setSize(700, 364);
+		shell.setSize(700, 438);
 		shell.setLocation(500, 300);
 		shell.setText("Fill Subrecords");
 		shell.setLayout(new GridLayout(5, false));
@@ -90,7 +90,6 @@ public class WindowMain_5_FillSubrecords {
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
-		String[] a = {"1","2","3"};
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
@@ -115,7 +114,10 @@ public class WindowMain_5_FillSubrecords {
 		Button buttonAdd = new Button(shell, SWT.NONE);
 		buttonAdd.addSelectionListener(new SelectionAdapter() {
 			@Override
-			public void widgetSelected(SelectionEvent e) {
+			public void widgetSelected(SelectionEvent e) {	
+			}
+			@Override
+			public void widgetDefaultSelected(SelectionEvent e) {
 			}
 		});
 		buttonAdd.setLayoutData(new GridData(SWT.FILL, SWT.BOTTOM, false, true, 1, 1));

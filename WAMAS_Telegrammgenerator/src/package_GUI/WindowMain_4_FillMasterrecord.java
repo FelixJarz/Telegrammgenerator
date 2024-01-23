@@ -58,7 +58,7 @@ public class WindowMain_4_FillMasterrecord {
 		// Create the window and its components
 		shell = new Shell();
 		shell.setText("Fill Masterrecordtype");
-		shell.setSize(708, 287);
+		shell.setSize(708, 335);
 		shell.setLocation(500, 300);
 		shell.setLayout(new GridLayout(7, false));
 		SessionData_Singleton sessionData = SessionData_Singleton.getInstance(); 
@@ -135,6 +135,10 @@ public class WindowMain_4_FillMasterrecord {
 			}
 		});
 		buttonNext.setText("Next");
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 	}
 }
