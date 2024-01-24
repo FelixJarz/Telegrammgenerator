@@ -98,9 +98,9 @@ public class FileContentReader {
 			while((line = br.readLine()) != null) {
 				String[] values = line.split(";"); 
 				System.out.println("Description: " + values[1] + " | " + "Shortname: " + values[4] + " | " + "Mandatory: " + values[8]);
-				if(values[1].equals("Description") == false) {descriptions.add(values[1]);}
-				if(values[1].equals("Description") == false) {shortnames.add(values[4]);}
 				if(values[1].equals("Description") == false) {
+					descriptions.add(values[1]);
+					shortnames.add(values[4]);
 					if(values[8].equals("X")) {
 						mandatoryCells.add(values[1]);
 					}else {
