@@ -69,53 +69,52 @@ public class WindowMain_3_FillHeader {
 		
 		
 		for(int i = 0; i < 5; i++) {
-			int pos = i; 
 			if(i%2 == 1) {
-				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, headerNameList[i]);
-				GUIAdaption.createTextField(pos, shell, SWT.BORDER);
+				GUIAdaption.createLabelWithFunction("header", i, shell, SWT.CENTER, headerNameList[i]);
+				GUIAdaption.createTextField(shell, SWT.BORDER, headerNameList[i]);
 				
 				new Label(shell, SWT.NONE);
 				new Label(shell, SWT.NONE);
 			}else {
-				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, headerNameList[i]);
-				GUIAdaption.createTextField(pos, shell, SWT.BORDER);
+				GUIAdaption.createLabelWithFunction("header", i, shell, SWT.CENTER, headerNameList[i]);
+				GUIAdaption.createTextField(shell, SWT.BORDER, headerNameList[i]);
 				
 				new Label(shell, SWT.NONE);
 				}
 			}
 		
-		GUIAdaption.getHashMap().get("textField0").addKeyListener(new KeyAdapter() {
+		GUIAdaption.getHashMap().get("textFieldSource").addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
-				sessionDataSingleton.setHeaderSource(GUIAdaption.getHashMap().get("textField0").getText());
+				sessionDataSingleton.setHeaderSource(GUIAdaption.getHashMap().get("textFieldSource").getText());
 			}
 		});
 		
-		GUIAdaption.getHashMap().get("textField1").addKeyListener(new KeyAdapter() {
+		GUIAdaption.getHashMap().get("textFieldDestination").addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
-				sessionDataSingleton.setHeaderDestination(GUIAdaption.getHashMap().get("textField1").getText());
+				sessionDataSingleton.setHeaderDestination(GUIAdaption.getHashMap().get("textFieldDestination").getText());
 			}
 		});
 		
-		GUIAdaption.getHashMap().get("textField2").addKeyListener(new KeyAdapter() {
+		GUIAdaption.getHashMap().get("textFieldSequence").addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
-				sessionDataSingleton.setHeaderSequence(GUIAdaption.getHashMap().get("textField2").getText());
+				sessionDataSingleton.setHeaderSequence(GUIAdaption.getHashMap().get("textFieldSequence").getText());
 			}
 		});
 		
-		GUIAdaption.getHashMap().get("textField3").addKeyListener(new KeyAdapter() {
+		GUIAdaption.getHashMap().get("textFieldCreation Time").addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
-				sessionDataSingleton.setHeaderCreationtime(GUIAdaption.getHashMap().get("textField3").getText());
+				sessionDataSingleton.setHeaderCreationtime(GUIAdaption.getHashMap().get("textFieldCreation Time").getText());
 			}
 		});
 		
-		GUIAdaption.getHashMap().get("textField4").addKeyListener(new KeyAdapter() {
+		GUIAdaption.getHashMap().get("textFieldRecordtype Name").addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
-				sessionDataSingleton.setHeaderRecordtypename(GUIAdaption.getHashMap().get("textField4").getText());
+				sessionDataSingleton.setHeaderRecordtypename(GUIAdaption.getHashMap().get("textFieldRecordtype Name").getText());
 			}
 		});
 			
@@ -160,7 +159,6 @@ public class WindowMain_3_FillHeader {
 			@Override
 			public void mouseUp(MouseEvent e) {
 				// Close the current window and open the next window (WindowMain_4_FillBody)
-				System.out.print(GUIAdaption.getHashMap().get("textField1") + "\n"); 
 				display.close();
 				WindowMain_4_FillMasterrecord nw = new WindowMain_4_FillMasterrecord();
 				nw.open();		

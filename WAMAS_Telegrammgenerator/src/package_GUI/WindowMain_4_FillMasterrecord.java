@@ -3,6 +3,8 @@ package package_GUI;
 import java.util.ArrayList;
 
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.KeyAdapter;
+import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.layout.GridData;
@@ -57,30 +59,44 @@ public class WindowMain_4_FillMasterrecord {
 	protected void createContents() {
 		// Create the window and its components
 		shell = new Shell();
-		shell.setText("Fill Masterrecordtype");
+		SessionData_Singleton sessionData = SessionData_Singleton.getInstance(); 
+		shell.setText("Fill Masterrecordtype - " + sessionData.getSelectedRecordtype());
 		shell.setSize(708, 287);
 		shell.setLocation(500, 300);
 		shell.setLayout(new GridLayout(7, false));
-		SessionData_Singleton sessionData = SessionData_Singleton.getInstance(); 
 		FileContentReader fileContentReader = new FileContentReader();
 		GUIAdaption guiAdaption = new GUIAdaption(); 
 		fileContentReader.ReadContent();
-		fileContentReader.ReadXSDContent(); 
+		//fileContentReader.ReadXSDContent(); 
 		
-		for(int i = 0; i <= 10; i++) {
-			int pos = i;
-			if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9 ) {
-				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
-				GUIAdaption.createTextField(pos, shell, SWT.BORDER);
+		ArrayList <String> masterrecordNameList = sessionData.getMasterrecordDescriptions();		
+		
+		
+		for(int i = 0; i < (sessionData.getTotalEntries()-1); i++) {
+			if(i%2 == 1) {
+				GUIAdaption.createLabelWithFunction("masterrecord", i, shell, SWT.CENTER, masterrecordNameList.get(i));
+				GUIAdaption.createTextField(shell, SWT.BORDER, masterrecordNameList.get(i));
+				
 				new Label(shell, SWT.NONE);
 				new Label(shell, SWT.NONE);
 			}else {
-				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
-				GUIAdaption.createTextField(pos, shell, SWT.BORDER);
+				GUIAdaption.createLabelWithFunction("masterrecord", i, shell, SWT.CENTER, masterrecordNameList.get(i));
+				GUIAdaption.createTextField(shell, SWT.BORDER, masterrecordNameList.get(i));
+				
 				new Label(shell, SWT.NONE);
 				}
 			}
 		
+		for(int i = 0; i < (masterrecordNameList.size() - 1); i++) {
+			int pos = i;
+			GUIAdaption.getHashMap().get("textField" + masterrecordNameList.get(i)).addKeyListener(new KeyAdapter() {
+				@Override
+				public void keyPressed(KeyEvent e) {
+						sessionData.setMasterrecordList(GUIAdaption.getHashMap().get("textField" + masterrecordNameList.get(pos)).getText(), pos);
+				}
+			});
+		}
+				
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);

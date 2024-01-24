@@ -17,6 +17,7 @@ public class SessionData_Singleton {
     static String HEADER_CREATIONTIME = "";
     static String HEADER_RECORDTYPENAME = ""; 
     
+    private String[] masterrecordList = {}; 
     private static SessionData_Singleton instance = null;
     private String selectedProject;
     private String selectedRecordtype; 
@@ -114,6 +115,16 @@ public class SessionData_Singleton {
     
     public int getTotalEntries() {
     	return totalEntries; 
+    }
+    
+    //WindowMain_4_FillMasterrecord
+    
+    public void setMasterrecordList(String s, int i) {
+    	masterrecordList[i] = s; 
+    }
+    
+    public String getMasterrecordList(int i) {
+    	return masterrecordList[i];
     }
     
 }
