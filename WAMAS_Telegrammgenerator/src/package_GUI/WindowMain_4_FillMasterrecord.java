@@ -62,6 +62,7 @@ public class WindowMain_4_FillMasterrecord {
 		SessionData_Singleton sessionData = SessionData_Singleton.getInstance(); 
 		shell.setText("Fill Masterrecordtype - " + sessionData.getSelectedRecordtype());
 		shell.setSize(708, 287);
+
 		shell.setLocation(500, 300);
 		shell.setLayout(new GridLayout(7, false));
 		FileContentReader fileContentReader = new FileContentReader();
@@ -153,6 +154,10 @@ public class WindowMain_4_FillMasterrecord {
 			}
 		});
 		buttonNext.setText("Next");
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
+		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 	}
 }
