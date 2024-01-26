@@ -54,6 +54,12 @@ public class GUIAdaption {
         	}else {
         		label.setText(text + "*");
         	}
+    	case "subrecord":	//not finished 
+    		if(sessionData.getMasterrecordMandatory().get(pos).equals("")){
+            	label.setText(text);
+        	}else {
+        		label.setText(text + "*");
+        	}
     	}
         label.setAlignment(SWT.CENTER);
 		label.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
@@ -68,6 +74,31 @@ public class GUIAdaption {
    		
         mapText.put("textField" + name, textField);
     }
+
+   	private void walkerButtonActionPerformed(java.awt.event.ActionEvent evt, ) {                                             
+
+   	    // if walker button is disabled exit the method
+   	    if (!walkerButton.isEnabled()) {
+   	        return;
+   	    }       
+
+   	    // Disable the button before starting the loop
+   	    walkerButton.setEnabled(false);
+
+   	    int steps = 20;
+   	    int stepDistance = 2;        
+
+   	    while (steps > 0) {  
+   	        // Set the walker button new location          
+   	        int x = walkerButton.getX() + stepDistance;
+   	        int y = walkerButton.getY() + stepDistance;
+   	        walkerButton.setLocation(x, y);
+   	        steps--;
+   	    }  
+
+   	    // Enable the button after the loop execution
+   	    walkerButton.setEnabled(true);
+   	} 
    	 
    	 public static Map<String, org.eclipse.swt.widgets.Text> getHashMap(){
    		return mapText; 

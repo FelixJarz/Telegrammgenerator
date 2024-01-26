@@ -53,19 +53,21 @@ public class WindowMain_5_FillSubrecords {
 		new Label(shell, SWT.NONE);
 		
 		List listOfSubheader = new List(shell, SWT.BORDER);
+		List listOfTags = new List(shell, SWT.BORDER);
 		listOfSubheader.setItems(new String[] {"Subheader_1", "Subheader_2", "Subheader_3", "Subheader_4", "Subheader_5", "Subheader_6", "Subheader_7", "Subheader_8", "Subheader_9", "Subheader_10"});
+		listOfTags.setItems(new String[] {""});
 		GridData gd_listOfSubheader = new GridData(SWT.LEFT, SWT.CENTER, false, false, 1, 7);
 		
 		gd_listOfSubheader.widthHint = 126;
 		listOfSubheader.setLayoutData(gd_listOfSubheader);
 		
-		for(int i = 0; i <= 10; i++) {
-			if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9 ) {
-				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
-				GUIAdaption.createTextField(shell, SWT.BORDER);
+		for(int i = 0; i < 5; i++) {
+			if(i%2 == 1) {
+				GUIAdaption.createLabelWithFunction("subrecord", i, shell, SWT.CENTER, "Test");
+				GUIAdaption.createTextField(shell, SWT.BORDER, "Test");
 			}else {
-				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
-				GUIAdaption.createTextField(shell, SWT.BORDER);
+				GUIAdaption.createLabelWithFunction("subrecord", i, shell, SWT.CENTER, "Test");
+				GUIAdaption.createTextField(shell, SWT.BORDER, "Test");
 				}
 			}
 		
