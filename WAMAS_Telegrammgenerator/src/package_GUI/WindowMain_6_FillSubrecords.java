@@ -20,7 +20,7 @@ import org.eclipse.swt.widgets.List;
 import org.eclipse.swt.events.KeyAdapter;
 import org.eclipse.swt.events.KeyEvent;
 
-public class WindowMain_5_FillSubrecords {
+public class WindowMain_6_FillSubrecords {
 	
 	Display display = Display.getDefault();
 	protected Shell shell;

@@ -26,17 +26,28 @@ import java.awt.Choice;
 import java.awt.TextArea;
 import javax.swing.JPopupMenu;
 import java.awt.Component;
+import java.awt.Container;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.ArrayList;
+
 import javax.swing.JMenuItem;
 import javax.swing.JMenu;
+import javax.swing.DefaultListModel;
+import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JSeparator;
 
+import package_background.ProjectSelector;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
-public class WindowExtra_SelectMasterRecord {
+
+public class WindowMain_5_SelectSubRecord {
 
 	private JFrame frame;
+	private final Button Return = new Button("buttonReturn");
+	private final Button Next = new Button("buttonNext");
 
 	/**
 	 * Launch the application.
@@ -45,7 +56,7 @@ public class WindowExtra_SelectMasterRecord {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					WindowExtra_SelectMasterRecord window = new WindowExtra_SelectMasterRecord();
+					WindowMain_5_SelectSubRecord window = new WindowMain_5_SelectSubRecord();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -57,7 +68,7 @@ public class WindowExtra_SelectMasterRecord {
 	/**
 	 * Create the application.
 	 */
-	public WindowExtra_SelectMasterRecord() {
+	public WindowMain_5_SelectSubRecord() {
 		initialize();
 	}
 
@@ -68,13 +79,25 @@ public class WindowExtra_SelectMasterRecord {
 		frame = new JFrame();
 		frame.getContentPane().setLayout(new GridLayout(1, 0, 0, 0));
 		
-		JList list = new JList();
-		SessionData_Singleton session_data = SessionData_Singleton.getInstance();
-		session_data.
-		frame.getContentPane().add(list);
+		SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
+		
+		DefaultListModel listModel = new DefaultListModel<String>();
+		
+		String interessen[] = {ProjectSelector.getRecordTypeList().toString()};
+		
+		JList list_2 = new JList(interessen);
+		frame.getContentPane().add(list_2);
+		Return.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				WindowMain_4_FillMasterrecord window4 = new WindowMain_4_FillMasterrecord();
+				window4.open();
+			}
+		}	);
+		frame.getContentPane().add(Return);
 		
 		JSeparator separator = new JSeparator();
 		frame.getContentPane().add(separator);
+		frame.getContentPane().add(Next);
 		
 		JList list_1 = new JList();
 		frame.getContentPane().add(list_1);

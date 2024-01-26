@@ -149,8 +149,8 @@ public class WindowMain_4_FillMasterrecord {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				display.close();
-				WindowMain_5_FillSubrecords window3 = new WindowMain_5_FillSubrecords();
-				window3.open();
+				WindowMain_5_SelectSubRecord window5 = new WindowMain_5_SelectSubRecord();
+				window5.open();
 			}
 		});
 		buttonNext.setText("Next");

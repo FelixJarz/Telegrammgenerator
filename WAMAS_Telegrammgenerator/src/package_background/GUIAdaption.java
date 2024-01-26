@@ -75,7 +75,7 @@ public class GUIAdaption {
         mapText.put("textField" + name, textField);
     }
 
-   	private void walkerButtonActionPerformed(java.awt.event.ActionEvent evt, ) {                                             
+   	/*private void walkerButtonActionPerformed(java.awt.event.ActionEvent evt, ) {                                             
 
    	    // if walker button is disabled exit the method
    	    if (!walkerButton.isEnabled()) {
@@ -98,7 +98,7 @@ public class GUIAdaption {
 
    	    // Enable the button after the loop execution
    	    walkerButton.setEnabled(true);
-   	} 
+   	} */
    	 
    	 public static Map<String, org.eclipse.swt.widgets.Text> getHashMap(){
    		return mapText; 
