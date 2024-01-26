@@ -17,6 +17,8 @@ import org.eclipse.swt.events.MouseAdapter;
 import org.eclipse.swt.events.MouseEvent;
 import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.List;
+import org.eclipse.swt.events.KeyAdapter;
+import org.eclipse.swt.events.KeyEvent;
 
 public class WindowMain_5_FillSubrecords {
 	

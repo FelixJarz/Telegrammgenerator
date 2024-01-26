@@ -195,7 +195,7 @@ public class ProjectSelector {
 	public static String[] getRecordTypeList() {
 
 		SessionData_Singleton sessionData = SessionData_Singleton.getInstance();
-		File projectFolderIncoming = new File(sessionData.getSelectedProjectPath() + SessionData_Singleton.XSD);
+		File projectFolderIncoming = new File(sessionData.getSelectedProjectPath() + SessionData_Singleton.INCOMING);
 
 		return projectFolderIncoming.list();
 

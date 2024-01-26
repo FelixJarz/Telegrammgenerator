@@ -7,9 +7,14 @@ package package_GUI;
 import org.eclipse.swt.widgets.Display;
 
 import org.eclipse.swt.widgets.Shell;
+
+import java.util.ArrayList;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.events.KeyAdapter;
+import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.MouseAdapter;
 import org.eclipse.swt.events.MouseEvent;
 import org.eclipse.swt.layout.GridLayout;
@@ -29,12 +34,6 @@ public class WindowMain_3_FillHeader {
 	private Button buttonReturn;
 	
 	Display display = Display.getDefault();
-	private Text text;
-	private Label lblNewLabel;
-	private Text text_1;
-	private Label lblNewLabel_1;
-	private Label lblNewLabel_2;
-	private Text text_2;
 
 	/**
 	 * @wbp.parser.entryPoint
@@ -66,19 +65,59 @@ public class WindowMain_3_FillHeader {
 		GUIAdaption.createTextField(shell, SWT.NONE);
 		-----------------------------------------------Test erstellen von labels und textfeldern---------------------------------------------*/
 		
-		for(int i = 0; i <= 10; i++) {
-			if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9 ) {
-				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
-				GUIAdaption.createTextField(shell, SWT.BORDER);
+		String[] headerNameList = {"Source", "Destination", "Sequence", "Creation Time", "Recordtype Name"};
+		
+		
+		for(int i = 0; i < 5; i++) {
+			if(i%2 == 1) {
+				GUIAdaption.createLabelWithFunction("header", i, shell, SWT.CENTER, headerNameList[i]);
+				GUIAdaption.createTextField(shell, SWT.BORDER, headerNameList[i]);
+				
 				new Label(shell, SWT.NONE);
 				new Label(shell, SWT.NONE);
 			}else {
-				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
-				GUIAdaption.createTextField(shell, SWT.BORDER);
+				GUIAdaption.createLabelWithFunction("header", i, shell, SWT.CENTER, headerNameList[i]);
+				GUIAdaption.createTextField(shell, SWT.BORDER, headerNameList[i]);
+				
 				new Label(shell, SWT.NONE);
 				}
 			}
 		
+		GUIAdaption.getHashMap().get("textFieldSource").addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				sessionDataSingleton.setHeaderSource(GUIAdaption.getHashMap().get("textFieldSource").getText());
+			}
+		});
+		
+		GUIAdaption.getHashMap().get("textFieldDestination").addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				sessionDataSingleton.setHeaderDestination(GUIAdaption.getHashMap().get("textFieldDestination").getText());
+			}
+		});
+		
+		GUIAdaption.getHashMap().get("textFieldSequence").addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				sessionDataSingleton.setHeaderSequence(GUIAdaption.getHashMap().get("textFieldSequence").getText());
+			}
+		});
+		
+		GUIAdaption.getHashMap().get("textFieldCreation Time").addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				sessionDataSingleton.setHeaderCreationtime(GUIAdaption.getHashMap().get("textFieldCreation Time").getText());
+			}
+		});
+		
+		GUIAdaption.getHashMap().get("textFieldRecordtype Name").addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				sessionDataSingleton.setHeaderRecordtypename(GUIAdaption.getHashMap().get("textFieldRecordtype Name").getText());
+			}
+		});
+			
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
