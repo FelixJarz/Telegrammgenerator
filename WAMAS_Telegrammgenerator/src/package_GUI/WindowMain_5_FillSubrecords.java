@@ -61,15 +61,16 @@ public class WindowMain_5_FillSubrecords {
 		gd_listOfSubheader.widthHint = 126;
 		listOfSubheader.setLayoutData(gd_listOfSubheader);
 		
-		for(int i = 0; i < 5; i++) {
-			if(i%2 == 1) {
-				GUIAdaption.createLabelWithFunction("subrecord", i, shell, SWT.CENTER, "Test");
-				GUIAdaption.createTextField(shell, SWT.BORDER, "Test");
+
+		/*for(int i = 0; i <= 10; i++) {
+			if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9 ) {
+				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
+				GUIAdaption.createTextField(shell, SWT.BORDER);
 			}else {
 				GUIAdaption.createLabelWithFunction("subrecord", i, shell, SWT.CENTER, "Test");
 				GUIAdaption.createTextField(shell, SWT.BORDER, "Test");
 				}
-			}
+			}*/
 		
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);

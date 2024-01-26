@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class SessionData_Singleton {
     
-    static final String ROOT_DIR = "C:\\Diplomarbeit\\Telegrammgenerator";
+    static final String ROOT_DIR = "C:\\Telegrammgenerator";
     static final String PROJECT_FOLDER = ROOT_DIR + "\\Projects";
     static final String TEMP_FOLDER = ROOT_DIR + "\\Temp";
     static final String OUTPUT_FOLDER = ROOT_DIR + "\\Output";

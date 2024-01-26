@@ -11,6 +11,9 @@ import javax.swing.JPanel;
 import java.awt.BorderLayout;
 import javax.swing.JScrollPane;
 import javax.swing.JToolBar;
+
+import package_background.SessionData_Singleton;
+
 import javax.swing.JTextField;
 import javax.swing.JSplitPane;
 import javax.swing.JComboBox;
@@ -27,7 +30,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JMenuItem;
 import javax.swing.JMenu;
-import com.jgoodies.forms.factories.DefaultComponentFactory;
+import javax.swing.JCheckBox;
+import javax.swing.JSeparator;
+
 
 public class WindowExtra_SelectMasterRecord {
 
@@ -60,10 +65,18 @@ public class WindowExtra_SelectMasterRecord {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();		
+		frame = new JFrame();
+		frame.getContentPane().setLayout(new GridLayout(1, 0, 0, 0));
 		
-		List list = new List();
-		//Zum hinzufügen zu der liste für die Masterrecords list.add();
-		frame.getContentPane().add(list, BorderLayout.CENTER);
+		JList list = new JList();
+		SessionData_Singleton session_data = SessionData_Singleton.getInstance();
+		session_data.
+		frame.getContentPane().add(list);
+		
+		JSeparator separator = new JSeparator();
+		frame.getContentPane().add(separator);
+		
+		JList list_1 = new JList();
+		frame.getContentPane().add(list_1);
 	}
 }
