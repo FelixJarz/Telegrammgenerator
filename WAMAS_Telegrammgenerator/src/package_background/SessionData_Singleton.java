@@ -24,6 +24,7 @@ public class SessionData_Singleton {
     private ArrayList<String> masterrecordDescriptions = new ArrayList<String>();
     private ArrayList<String> masterrecordShortnames = new ArrayList<String>(); 
     private ArrayList<String> masterrecordMandatory = new ArrayList<String>();
+    private ArrayList<String> masterrecordNonMandatory = new ArrayList<String>();
     private int totalEntries = 0; 
     
     private SessionData_Singleton(){
@@ -97,6 +98,10 @@ public class SessionData_Singleton {
     	masterrecordMandatory = masterrecMan; 
     }
     
+    public void setMasterrecordNonMandatory(ArrayList<String> masterrecNonMan) {
+    	masterrecordNonMandatory = masterrecNonMan; 
+    }
+    
     public void setTotalEntries(int entries) {
     	totalEntries = entries;
     }
@@ -111,6 +116,10 @@ public class SessionData_Singleton {
     
     public ArrayList<String> getMasterrecordMandatory() {
     	return masterrecordMandatory; 
+    }
+    
+    public ArrayList<String> getMasterrecordNonMandatory() {
+    	return masterrecordNonMandatory; 
     }
     
     public int getTotalEntries() {

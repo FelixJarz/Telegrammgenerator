@@ -24,6 +24,7 @@ public class FileContentReader {
 	private ArrayList<String> descriptions= new ArrayList<String>();	//list for all description names
 	private ArrayList<String> shortnames= new ArrayList<String>();		//list for all shortnames shown in the xml file
 	private ArrayList<String> mandatoryCells = new ArrayList<String>(); //list for all mandatory cells 
+	private ArrayList<String> nonMandatoryCells = new ArrayList<String>(); //list for all mandatory cells 
 
 
 	public FileContentReader() {
@@ -103,8 +104,10 @@ public class FileContentReader {
 					shortnames.add(values[4]);
 					if(values[8].equals("X")) {
 						mandatoryCells.add(values[1]);
+						nonMandatoryCells.add(""); 
 					}else {
 						mandatoryCells.add("");
+						nonMandatoryCells.add(values[1]); 
 					}
 				}
 			}
@@ -120,6 +123,7 @@ public class FileContentReader {
 		sessionData.setMasterrecordDescriptions(descriptions);
 		sessionData.setMasterrecordShortnames(shortnames);
 		sessionData.setMasterrecordMandatory(mandatoryCells);
+		sessionData.setMasterrecordNonMandatory(nonMandatoryCells);
 		sessionData.setTotalEntries(descriptions.size());
 		return returnList; 
 		
