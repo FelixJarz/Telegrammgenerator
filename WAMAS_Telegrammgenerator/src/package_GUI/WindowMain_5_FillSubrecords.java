@@ -59,7 +59,7 @@ public class WindowMain_5_FillSubrecords {
 		gd_listOfSubheader.widthHint = 126;
 		listOfSubheader.setLayoutData(gd_listOfSubheader);
 		
-		for(int i = 0; i <= 10; i++) {
+		/*for(int i = 0; i <= 10; i++) {
 			if(i == 1 || i == 3 || i == 5 || i == 7 || i == 9 ) {
 				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
 				GUIAdaption.createTextField(shell, SWT.BORDER);
@@ -67,7 +67,7 @@ public class WindowMain_5_FillSubrecords {
 				GUIAdaption.createLabelWithFunction(shell, SWT.CENTER, "TEST: " + i);
 				GUIAdaption.createTextField(shell, SWT.BORDER);
 				}
-			}
+			}*/
 		
 		new Label(shell, SWT.NONE);
 		new Label(shell, SWT.NONE);
