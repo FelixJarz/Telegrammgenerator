@@ -83,9 +83,9 @@ public class WindowMain_5_SelectSubRecord {
 		
 		DefaultListModel listModel = new DefaultListModel<String>();
 		
-		String interessen[] = {ProjectSelector.getRecordTypeList().toString()};
+		String RecordTypes[] = {ProjectSelector.getRecordTypeList().toString()};
 		
-		JList list_2 = new JList(interessen);
+		JList list_2 = new JList(RecordTypes);
 		frame.getContentPane().add(list_2);
 		Return.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
