@@ -61,3 +61,15 @@
 - ## Was wurde gemacht:
 - Weitergearbietet an Klasse "FileContentReader", Funktionalität geändert auf CSV angepasst
 - Automatisierung der Labels und Textfelder muss noch herausgefunden werden
+---
+- ## Datum: 24.01.2024
+- ## Was wurde gemacht:
+- Erkennung des eingegebenen Textes in Textfelder
+- Neues Window für Masterrecords hinzugefügt
+- dynamisches erstellen von Textfeldern + Labels für Window 4 fertig
+- Speichern in Singleton Klasse
+---
+- ## Datum: 25.01.2024
+- ## Was wurde gemacht:
+- Window für Masterrecords aktualisiert und mit Singelton verbunden
+- Arbeiten an dynamischen erstellen für auswählen von NonMandatory Masterrecordtypes
