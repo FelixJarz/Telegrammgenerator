@@ -149,7 +149,7 @@ public class WindowMain_4_FillMasterrecord {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				display.close();
-				WindowMain_5_SelectSubRecord window5 = new WindowMain_5_SelectSubRecord();
+				WindowMain_5_SelectSubrecord_SWT_Simple window5 = new WindowMain_5_SelectSubrecord_SWT_Simple();
 				window5.open();
 			}
 		});

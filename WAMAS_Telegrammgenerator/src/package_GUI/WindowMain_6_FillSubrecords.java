@@ -108,7 +108,7 @@ public class WindowMain_6_FillSubrecords {
 			public void mouseUp(MouseEvent e) {
 				
 				shell.close();
-				WindowMain_4_FillMasterrecord nw = new WindowMain_4_FillMasterrecord();
+				WindowMain_5_SelectSubrecord_SWT_Simple nw = new WindowMain_5_SelectSubrecord_SWT_Simple();
 				nw.open();
 				
 			}

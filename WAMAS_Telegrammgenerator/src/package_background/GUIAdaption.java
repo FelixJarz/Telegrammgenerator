@@ -1,8 +1,6 @@
 package package_background;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.eclipse.swt.SWT;
@@ -75,30 +73,21 @@ public class GUIAdaption {
         mapText.put("textField" + name, textField);
     }
 
-   	/*private void walkerButtonActionPerformed(java.awt.event.ActionEvent evt, ) {                                             
+   	public static void listActionPerformed(org.eclipse.swt.widgets.List list, org.eclipse.swt.widgets.List list_1) {                                             
 
    	    // if walker button is disabled exit the method
-   	    if (!walkerButton.isEnabled()) {
+   	    if (!list_1.isEnabled()) {
    	        return;
    	    }       
 
    	    // Disable the button before starting the loop
-   	    walkerButton.setEnabled(false);
+   	    list_1.setEnabled(false);
 
-   	    int steps = 20;
-   	    int stepDistance = 2;        
-
-   	    while (steps > 0) {  
-   	        // Set the walker button new location          
-   	        int x = walkerButton.getX() + stepDistance;
-   	        int y = walkerButton.getY() + stepDistance;
-   	        walkerButton.setLocation(x, y);
-   	        steps--;
-   	    }  
+   	    list_1.setItems(list.getSelection());
 
    	    // Enable the button after the loop execution
-   	    walkerButton.setEnabled(true);
-   	} */
+   	    list_1.setEnabled(true);
+   	} 
    	 
    	 public static Map<String, org.eclipse.swt.widgets.Text> getHashMap(){
    		return mapText; 
