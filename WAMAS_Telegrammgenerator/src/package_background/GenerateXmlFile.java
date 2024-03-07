@@ -1,38 +1,33 @@
 package package_background;
 
-import org.w3c.dom.*;
-import javax.xml.parsers.*;
-import javax.xml.transform.*;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+
+
+
 public class GenerateXmlFile {
 
     // Instance variables
-    private String selectedMasterrecordType;
-    private String headerSource;
-    private String headerDestination;
-    private int headerSequence;
-    private String headerRecordTypeName;
-    private String headerOrderType;
     private String filePath;
-    //private String selectedOrderType;
-    private String selectedSubrecordType; 
+    
+	SessionData_Singleton sessionData = SessionData_Singleton.getInstance(); 
+	FileContentReader fileContentReader = new FileContentReader();
+
 
     // Constructor to initialize the instance variables
-    public GenerateXmlFile(String selectedMasterrecordType, String headerSource, String headerDestination,
-                           String headerRecordTypeName, int headerSequence, String headerOrderType, String filePath, String selectedSubrecordType) {
-        this.selectedMasterrecordType = selectedMasterrecordType;
-        //this.selectedOrderType = selectedOrderType; -> Rename to selected Master Record Type 
-        this.selectedSubrecordType = selectedSubrecordType;
-        this.headerSource = headerSource;
-        this.headerDestination = headerDestination;
-        this.headerSequence = headerSequence;
-        this.headerRecordTypeName = headerRecordTypeName;
-        this.headerOrderType = headerOrderType;
+    public GenerateXmlFile(String filePath) {
         this.filePath = filePath;
     }
 
@@ -48,7 +43,7 @@ public class GenerateXmlFile {
             
             
             // Root element: Document Name
-            Element rootElement = doc.createElement("Name of Document"); //actually document name
+            Element rootElement = doc.createElement(sessionData.getSelectedProject()); 
             doc.appendChild(rootElement);
 
 //2nd Highest hierarchy
@@ -65,23 +60,23 @@ public class GenerateXmlFile {
             Element fullElement = doc.createElement("FULL");
             headerElement.appendChild(fullElement);
             
-            Element masterrecordElement = doc.createElement(selectedMasterrecordType);
+            Element masterrecordElement = doc.createElement(sessionData.getSelectedRecordtype());
             bodyElement.appendChild(masterrecordElement);
             
 //4th Highest hierarchy
             
-  //Header (maybe read all required fields from a file) 
+  //Header
             
             Element headerSourceElement = doc.createElement("HEADER_SOURCE");
-            headerSourceElement.appendChild(doc.createTextNode(headerSource));
+            headerSourceElement.appendChild(doc.createTextNode(sessionData.getHeaderSource()));
             fullElement.appendChild(headerSourceElement);
 
             Element headerDestinationElement = doc.createElement("HEADER_DESTINATION");
-            headerDestinationElement.appendChild(doc.createTextNode(headerDestination));
+            headerDestinationElement.appendChild(doc.createTextNode(sessionData.getHeaderDestination()));
             fullElement.appendChild(headerDestinationElement);
 
             Element headerSequenceElement = doc.createElement("HEADER_SEQUENCE");
-            headerSequenceElement.appendChild(doc.createTextNode(String.valueOf(headerSequence)));
+            headerSequenceElement.appendChild(doc.createTextNode(String.valueOf(sessionData.getHeaderSequence())));
             fullElement.appendChild(headerSequenceElement);
 
             Element headerCreationTimeElement = doc.createElement("HEADER_CREATIONTIME");
@@ -90,29 +85,38 @@ public class GenerateXmlFile {
             fullElement.appendChild(headerCreationTimeElement);
 
             Element headerRecordTypeNameElement = doc.createElement("HEADER_RECORDTYPENAME");
-            headerRecordTypeNameElement.appendChild(doc.createTextNode(headerRecordTypeName));
+            headerRecordTypeNameElement.appendChild(doc.createTextNode(sessionData.getSelectedRecordtype()));
             fullElement.appendChild(headerRecordTypeNameElement);
 
-            Element headerOrderTypeElement = doc.createElement("HEADER_ORDERTYPE");
-            headerOrderTypeElement.appendChild(doc.createTextNode(headerOrderType));
-            fullElement.appendChild(headerOrderTypeElement);
+  //Body
             
-  //Body (add fields for masterrecord)
+            for(int j = 0; j < sessionData.getSelectedSubrecords().size(); j++) {
+  			    Element subrecordElement = doc.createElement(sessionData.getSelectedSubrecords().get(j));
+  			    masterrecordElement.appendChild(subrecordElement); 
+            }
             
-            // Create SelectedSubrecordType(s)
-            Element subrecordElement = doc.createElement(selectedSubrecordType);
-            masterrecordElement.appendChild(subrecordElement);
+            //masterrec tags
+    		String pathMaster = sessionData.getSelectedProjectPath() + sessionData.INCOMING + File.separator + sessionData.getSelectedRecordtype(); 
+  			fileContentReader.ReadContent(pathMaster.replace(".xsd", ".csv"));
+            for(int i = 0; i < (sessionData.getTotalEntries()-1); i++) {
+                Element subrecordTag = doc.createElement(sessionData.getMasterrecordShortnames().get(i));
+                subrecordTag.appendChild(doc.createTextNode(/*enter text from user*/sessionData.getMasterrecordList(i))); //not sure if it works 
+                masterrecordElement.appendChild(subrecordTag); 
+            }
+            
 
 //5th Highest hierarchy (add fields to subrecord)
             
-            // Add additional fields for the Masterrecord/Subrecords (Replace with actual values)
-            Element field1Element = doc.createElement("Field1");
-            field1Element.appendChild(doc.createTextNode("Value1")); // Replace with field1Value
-            field1Element.appendChild(field1Element);
-
-            Element field2Element = doc.createElement("Field2");
-            field2Element.appendChild(doc.createTextNode("123")); // Replace with field2Value
-            masterrecordElement.appendChild(field2Element);
+            //maybe works
+            for(int j = 0; j < sessionData.getSelectedSubrecords().size(); j++) {
+  			    String pathSub = sessionData.getSelectedProjectPath() + sessionData.INCOMING + File.separator + sessionData.getSelectedSubrecords().get(j); 
+            	fileContentReader.ReadContent(pathSub.replace(".xsd", ".csv"));
+            	for(int i = 0; i < (sessionData.getTotalEntries()-1); i++) {
+                	Element subrecordTag = doc.createElement(sessionData.getMasterrecordShortnames().get(i));
+                	subrecordTag.appendChild(doc.createTextNode(/*enter text from user*/null));
+                	masterrecordElement.appendChild(subrecordTag); 
+                }
+            }
 
             
             // Prepare and write the XML to the specified file path
@@ -128,22 +132,5 @@ public class GenerateXmlFile {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public void main(String[] args) {	//needs finetuning 
-        // Input parameters
-        String selectedMasterrecordTypeName = selectedMasterrecordType;
-        String headerSource = "HOST";
-        String headerDestination = "WAMAS";
-        int headerSequence = 0;
-        String headerRecordTypeName = selectedMasterrecordTypeName;
-        String headerOrderType = "headerOrderType";
-        String filePath = "C:\\wamas\\workspace\\Telegrammgenerator Material\\XML_Test.xml";
-        String headerSubrecordTypeName = selectedSubrecordType; 
-
-        // Create an instance of GenerateXmlFile and generate the XML
-        GenerateXmlFile generator = new GenerateXmlFile(selectedMasterrecordType, headerSource, headerDestination, headerRecordTypeName,
-                headerSequence, headerOrderType, filePath, headerSubrecordTypeName);
-        generator.generateXmlFile();
     }
 }

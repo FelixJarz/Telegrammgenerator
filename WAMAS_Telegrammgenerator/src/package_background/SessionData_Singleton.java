@@ -5,12 +5,12 @@ import java.util.ArrayList;
 
 public class SessionData_Singleton {
     
-    static final String ROOT_DIR = "E:\\Diplomarbeit\\Telegrammgenerator";
+    static final String ROOT_DIR = "C:\\Diplomarbeit\\Telegrammgenerator";
     static final String PROJECT_FOLDER = ROOT_DIR + "\\Projects";
     static final String TEMP_FOLDER = ROOT_DIR + "\\Temp";
     static final String OUTPUT_FOLDER = ROOT_DIR + "\\Output";
     static final String XSD = "\\xsd";
-    static final String INCOMING = "\\Incoming";
+    public static final String INCOMING = "\\Incoming";
     static String HEADER_SOURCE = "";
     static String HEADER_DESTINATION = "";
     static String HEADER_SEQUENCE = "";
@@ -25,6 +25,7 @@ public class SessionData_Singleton {
     private ArrayList<String> masterrecordShortnames = new ArrayList<String>(); 
     private ArrayList<String> masterrecordMandatory = new ArrayList<String>();
     private ArrayList<String> masterrecordNonMandatory = new ArrayList<String>();
+	private ArrayList<String> selectedSubrecords = new ArrayList<String>(); 
     private int totalEntries = 0; 
     
     private SessionData_Singleton(){
@@ -68,20 +69,40 @@ public class SessionData_Singleton {
     	HEADER_SOURCE = headerSource; 
     }
     
+    public String getHeaderSource() {
+    	return HEADER_SOURCE;
+    }
+    
     public void setHeaderDestination(String headerDestination) {
     	HEADER_DESTINATION = headerDestination; 
+    }
+    
+    public String getHeaderDestination() {
+    	return HEADER_DESTINATION;
     }
     
     public void setHeaderSequence(String headerSequence) {
     	HEADER_SEQUENCE = headerSequence; 
     }
     
+    public String getHeaderSequence() {
+    	return HEADER_SEQUENCE;
+    }
+    
     public void setHeaderCreationtime(String headerCreationtime) {
     	HEADER_CREATIONTIME = headerCreationtime; 
     }
     
+    public String getHeaderCreationtime() {
+    	return HEADER_CREATIONTIME;
+    }
+    
     public void setHeaderRecordtypename(String headerRecordtypename) {
     	HEADER_RECORDTYPENAME = headerRecordtypename; 
+    }
+    
+    public String getHeaderRecordtypename() {
+    	return HEADER_RECORDTYPENAME;
     }
     
     //FileContentReader.java-Class Data
@@ -134,6 +155,16 @@ public class SessionData_Singleton {
     
     public String getMasterrecordList(int i) {
     	return masterrecordList[i];
+    }
+    
+    //WindowMain_5_SelectSubrecords
+    
+    public void setSelectedSubrecords(ArrayList<String> list) {
+    	selectedSubrecords = list; 
+    }
+    
+    public ArrayList<String> getSelectedSubrecords(){
+    	return selectedSubrecords;
     }
     
 }

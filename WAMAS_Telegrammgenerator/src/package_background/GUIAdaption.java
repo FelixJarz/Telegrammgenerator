@@ -52,7 +52,7 @@ public class GUIAdaption {
         	}else {
         		label.setText(text + "*");
         	}
-    	case "subrecord":	//not finished 
+    	case "subrecord":
     		if(sessionData.getMasterrecordMandatory().get(pos).equals("")){
             	label.setText(text);
         	}else {

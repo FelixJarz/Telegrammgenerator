@@ -1,5 +1,6 @@
 package package_GUI;
 
+import java.io.File;
 import java.util.ArrayList;
 
 import org.eclipse.swt.SWT;
@@ -66,12 +67,11 @@ public class WindowMain_4_FillMasterrecord {
 		shell.setLocation(500, 300);
 		shell.setLayout(new GridLayout(7, false));
 		FileContentReader fileContentReader = new FileContentReader();
-		GUIAdaption guiAdaption = new GUIAdaption(); 
-		fileContentReader.ReadContent();
+		String path = sessionData.getSelectedProjectPath() + sessionData.INCOMING + File.separator + sessionData.getSelectedRecordtype(); 
+		fileContentReader.ReadContent(path.replace(".xsd", ".csv"));
 		//fileContentReader.ReadXSDContent(); 
 		
 		ArrayList <String> masterrecordNameList = sessionData.getMasterrecordDescriptions();		
-		
 		
 		for(int i = 0; i < (sessionData.getTotalEntries()-1); i++) {
 			if(i%2 == 1) {

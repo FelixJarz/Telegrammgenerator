@@ -1,19 +1,18 @@
 package package_GUI;
 
-import org.eclipse.swt.widgets.Display;
-import org.eclipse.swt.widgets.Shell;
-import org.eclipse.swt.widgets.Button;
-
 import java.util.ArrayList;
-import java.util.List;
 
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.widgets.Combo;
-import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Combo;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Text;
 
 import package_background.ProjectSelector;
+import package_background.SessionData_Singleton;
 
 
 public class WindowMain_5_SelectSubrecord_SWT_Simple {
@@ -22,6 +21,7 @@ public class WindowMain_5_SelectSubrecord_SWT_Simple {
 	Display display = Display.getDefault();
 	private Text text;
 	int len = 0;
+	SessionData_Singleton sessionData = SessionData_Singleton.getInstance(); 
 	//save via sessionData and not temp like this
 	ArrayList<String> selectedSubrecords = new ArrayList<String>(); 
 
@@ -101,7 +101,8 @@ public class WindowMain_5_SelectSubrecord_SWT_Simple {
 			public void widgetSelected(SelectionEvent e) {
 				System.out.println(selectedSubrecords);
 				display.close();
-				WindowMain_6_FillSubrecords window6 = new WindowMain_6_FillSubrecords();
+				sessionData.setSelectedSubrecords(selectedSubrecords);
+				WindowMain_6_FillSubrecords_Simple window6 = new WindowMain_6_FillSubrecords_Simple();
 				window6.open();
 			}
 		});

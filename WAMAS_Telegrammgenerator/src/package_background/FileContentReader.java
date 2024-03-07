@@ -88,14 +88,14 @@ public class FileContentReader {
         return elementsList; 
 	}
 	
-	public List<ArrayList> ReadContent() {
+	public List<ArrayList> ReadContent(String path) {
 		
 		//
 		//Read CSV File via Reader
 		//
 		//if file not found -> try/catch
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(csvPath));
+			BufferedReader br = new BufferedReader(new FileReader(path));
 			while((line = br.readLine()) != null) {
 				String[] values = line.split(";"); 
 				System.out.println("Description: " + values[1] + " | " + "Shortname: " + values[4] + " | " + "Mandatory: " + values[8]);
